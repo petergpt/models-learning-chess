@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.07"]
+[Round "23"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[FEN "4r1k1/3b1p1p/p2P1qp1/1pp5/5Pn1/3Br1P1/P1P1N2P/R2R1Q1K w - - 0 28"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "sol-long-context-max"]
+[GameId "sol-long-context-max/practice/000023"]
+[OpponentSetting "practice-skill-10"]
+[Termination "checkmate"]
+
+28. h3 Bc6+ 29. Kg1 Rxg3+ 30. Nxg3 Qd4+ 31. Qf2 Re1+ 32. Rxe1 Qxf2# 0-1

@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "95"]
+[White "claude-opus-5-5"]
+[Black "Stockfish 19"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "opus"]
+[GameId "opus/benchmark/000095"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "checkmate"]
+
+1. e4 d5 2. exd5 Nf6 3. d4 g6 4. c4 Bf5 5. Nc3 Bg7 6. Nf3 c6 7. dxc6 Nxc6 8. Be2 O-O 9. O-O Ne4 10. Be3 e6 11. Nxe4 Nxd4 12. Nxd4 e5 13. Nxf5 gxf5 14. Qxd8 Rfxd8 15. Nc5 e4 16. Nxb7 Rdb8 17. Nc5 Rxb2 18. Bh5 h6 19. Rfd1 Rc8 20. Rd7 Kh8 21. Rxf7 f4 22. Bxf4 Rxc5 23. Bg4 Rxf2 24. Kxf2 Bxa1 25. Bxh6 Rc6 26. Bf4 Kg8 27. Rxa7 Bd4+ 28. Be3 Rf6+ 29. Ke2 Bxa7 30. Bxa7 Ra6 31. Bd4 Rd6 32. Ke3 Rd8 33. Kxe4 Rxd4+ 34. Kxd4 Kh8 35. c5 Kg8 36. c6 Kh8 37. c7 Kg8 38. c8=Q+ Kf7 39. Qe6+ Kg7 40. Ke5 Kf8 41. Qd7 Kg8 42. Kf6 Kf8 43. Qf7# 1-0

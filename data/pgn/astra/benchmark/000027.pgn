@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.09.30"]
+[Round "27"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "astra"]
+[GameId "astra/benchmark/000027"]
+[OpponentSetting "skill-0"]
+[Termination "checkmate"]
+
+1. d4 e6 2. c4 Nf6 3. Nf3 c6 4. Nc3 Be7 5. e4 d5 6. Bd3 c5 7. O-O dxc4 8. Bxc4 Nc6 9. Be3 Nxd4 10. Nxd4 O-O 11. Nf3 b5 12. Bxb5 Nxe4 13. Nxe4 f5 14. Nxc5 f4 15. Bd4 Qb6 16. Bc4 Bxc5 17. Bxc5 Rd8 18. Bxb6 Rd5 19. Bxd5 Bd7 20. Bxa8 axb6 21. Qxd7 h6 22. Qe8+ Kh7 23. Be4+ g6 24. Qxg6+ Kh8 25. Qh7# 1-0

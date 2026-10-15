@@ -1,0 +1,146 @@
+{
+  "scope": "Mechanical legality of predeclared supplied moves only; no move menu, search, engine, attack map or evaluation.",
+  "results": [
+    {
+      "id": "137-sideways-pawn",
+      "valid": true,
+      "initial_fen": "3r4/3Pkp2/8/4P2K/B7/1P4rP/8/8 w - - 0 53",
+      "supplied_moves": [
+        {
+          "uci": "h3g3",
+          "expected_legal": false,
+          "actual_legal": false,
+          "matches": true
+        }
+      ],
+      "final_fen": "3r4/3Pkp2/8/4P2K/B7/1P4rP/8/8 w - - 0 53",
+      "all_predictions_match": true
+    },
+    {
+      "id": "138-king-now-defends-f3",
+      "valid": true,
+      "initial_fen": "8/6p1/2p1p2p/p2k3P/P5Pn/2B2P2/5K2/8 b - - 1 37",
+      "supplied_moves": [
+        {
+          "uci": "h4f3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "f2f3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "8/6p1/2p1p2p/p2k3P/P5P1/2B2K2/8/8 b - - 0 38",
+      "all_predictions_match": true
+    },
+    {
+      "id": "138-knight-escape",
+      "valid": true,
+      "initial_fen": "8/4B3/2p5/1k2p1pP/6Pn/4K3/8/8 b - - 1 44",
+      "supplied_moves": [
+        {
+          "uci": "h4g2",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        },
+        {
+          "uci": "e3f3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "g2f4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "f3f4",
+          "expected_legal": false,
+          "actual_legal": false,
+          "matches": true
+        }
+      ],
+      "final_fen": "8/4B3/2p5/1k2p1pP/5nP1/5K2/8/8 w - - 4 46",
+      "all_predictions_match": true
+    },
+    {
+      "id": "138-cooperative-f8-route",
+      "valid": true,
+      "initial_fen": "8/8/2p2B2/4n1KP/2k5/8/8/8 b - - 2 51",
+      "supplied_moves": [
+        {
+          "uci": "e5d7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "h5h6",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "d7f8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "h6h7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "f8h7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        }
+      ],
+      "final_fen": "8/7n/2p2B2/6K1/2k5/8/8/8 w - - 0 54",
+      "all_predictions_match": true
+    },
+    {
+      "id": "138-bishop-closes-f8",
+      "valid": true,
+      "initial_fen": "8/3n2B1/2p5/6KP/2k5/8/8/8 b - - 4 52",
+      "supplied_moves": [
+        {
+          "uci": "d7f8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "g7f8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "5B2/8/2p5/6KP/2k5/8/8/8 b - - 0 53",
+      "all_predictions_match": true
+    }
+  ]
+}

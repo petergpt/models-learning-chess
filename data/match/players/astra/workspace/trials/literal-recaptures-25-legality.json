@@ -1,0 +1,164 @@
+[
+  {
+    "game": 173,
+    "ply": 80,
+    "fen": "1r6/4kp2/p1pNb3/2P5/1P1P2rP/4R1p1/1P1R2P1/5K2 w - - 9 41",
+    "lines": [
+      {
+        "label": "failed backward recapture",
+        "moves": [
+          {
+            "uci": "e3g3",
+            "legal": true,
+            "san": "Rxg3"
+          },
+          {
+            "uci": "g4g3",
+            "legal": true,
+            "san": "Rxg3"
+          },
+          {
+            "uci": "h4g3",
+            "legal": false
+          }
+        ],
+        "final_fen": "1r6/4kp2/p1pNb3/2P5/1P1P3P/6r1/1P1R2P1/5K2 w - - 0 42"
+      },
+      {
+        "label": "one chosen alternative",
+        "moves": [
+          {
+            "uci": "e3f3",
+            "legal": true,
+            "san": "Rf3"
+          },
+          {
+            "uci": "g4g6",
+            "legal": true,
+            "san": "Rg6"
+          },
+          {
+            "uci": "d6e4",
+            "legal": true,
+            "san": "Ne4"
+          }
+        ],
+        "final_fen": "1r6/4kp2/p1p1b1r1/2P5/1P1PN2P/5Rp1/1P1R2P1/5K2 b - - 12 42"
+      }
+    ]
+  },
+  {
+    "game": 173,
+    "ply": 112,
+    "fen": "5r2/4k2r/2pN3K/2P5/p2P4/8/1P5R/1b6 w - - 0 57",
+    "lines": [
+      {
+        "label": "failed rook path",
+        "moves": [
+          {
+            "uci": "h2h7",
+            "legal": false
+          }
+        ],
+        "final_fen": "5r2/4k2r/2pN3K/2P5/p2P4/8/1P5R/1b6 w - - 0 57"
+      },
+      {
+        "label": "one chosen escape line",
+        "moves": [
+          {
+            "uci": "h6g5",
+            "legal": true,
+            "san": "Kg5"
+          },
+          {
+            "uci": "h7g7",
+            "legal": true,
+            "san": "Rg7+"
+          },
+          {
+            "uci": "g5h4",
+            "legal": true,
+            "san": "Kh4"
+          }
+        ],
+        "final_fen": "5r2/4k1r1/2pN4/2P5/p2P3K/8/1P5R/1b6 b - - 3 58"
+      }
+    ]
+  },
+  {
+    "game": 172,
+    "ply": 35,
+    "fen": "3r1rk1/1ppq1bpp/p4b2/5P2/1P1p4/P2P4/2QBBPPP/2R2RK1 b - - 0 18",
+    "lines": [
+      {
+        "label": "failed bishop geometry",
+        "moves": [
+          {
+            "uci": "f7f5",
+            "legal": false
+          }
+        ],
+        "final_fen": "3r1rk1/1ppq1bpp/p4b2/5P2/1P1p4/P2P4/2QBBPPP/2R2RK1 b - - 0 18"
+      },
+      {
+        "label": "actual legal alternative",
+        "moves": [
+          {
+            "uci": "d7f5",
+            "legal": true,
+            "san": "Qxf5"
+          },
+          {
+            "uci": "c2c7",
+            "legal": true,
+            "san": "Qxc7"
+          },
+          {
+            "uci": "f5d7",
+            "legal": true,
+            "san": "Qd7"
+          }
+        ],
+        "final_fen": "3r1rk1/1pQq1bpp/p4b2/8/1P1p4/P2P4/3BBPPP/2R2RK1 w - - 1 20"
+      }
+    ]
+  },
+  {
+    "game": 174,
+    "ply": 71,
+    "fen": "8/pp2R3/1k3npr/6N1/6Pr/6KP/P2R4/8 b - - 2 36",
+    "lines": [
+      {
+        "label": "actual exchange sequence",
+        "moves": [
+          {
+            "uci": "f6h7",
+            "legal": true,
+            "san": "Nh7"
+          },
+          {
+            "uci": "e7h7",
+            "legal": true,
+            "san": "Rxh7"
+          },
+          {
+            "uci": "h6h7",
+            "legal": true,
+            "san": "Rxh7"
+          },
+          {
+            "uci": "g5h7",
+            "legal": true,
+            "san": "Nxh7"
+          },
+          {
+            "uci": "h4h7",
+            "legal": true,
+            "san": "Rxh7"
+          }
+        ],
+        "final_fen": "8/pp5r/1k4p1/8/6P1/6KP/P2R4/8 w - - 0 39"
+      }
+    ]
+  }
+]

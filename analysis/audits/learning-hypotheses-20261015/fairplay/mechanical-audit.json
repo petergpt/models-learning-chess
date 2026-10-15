@@ -1,0 +1,254 @@
+{
+  "scope": "Operator audit of frozen measurement ledgers, retained workspace snapshots, prior Opus tool audit, Fable structured tool inputs only.",
+  "opus": {
+    "ledger": {
+      "records": 14896,
+      "errors": [],
+      "head": "898659a0133208d2acfb37b5fe6000e180e410287e209b6991561bebe3d68ecb",
+      "firstTimestamp": "2026-10-02T21:03:09.397466+00:00",
+      "lastTimestamp": "2026-10-05T01:22:20.453109+00:00"
+    },
+    "practice": {
+      "records": 65,
+      "errors": [],
+      "head": "e15789d2424ff728e4c66c61dca7eacdcc30cf06fae2273135163c99fe3326c5",
+      "firstTimestamp": "2026-10-02T23:08:14.798013+00:00",
+      "lastTimestamp": "2026-10-02T23:14:53.532495+00:00"
+    },
+    "snapshots": {
+      "count": 362,
+      "errors": [],
+      "helperFiles": {
+        "tools/fen2board.py": 2,
+        "tools/gamepos.py": 1,
+        "tools/mv": 5,
+        "tools/pmv": 1
+      }
+    },
+    "startedGames": 200,
+    "results": 200,
+    "startedGameIdsConsecutive": true,
+    "exactlyOneResultForEveryStartedGame": true,
+    "opponentRotationErrors": [],
+    "resultReasons": {
+      "resignation": 97,
+      "checkmate": 93,
+      "stalemate": 1,
+      "insufficient_material": 1,
+      "threefold_repetition": 8
+    },
+    "drawResults": [
+      {
+        "game": 35,
+        "illegal_attempts": 3,
+        "kind": "result",
+        "plies": 127,
+        "previous": "ed13aca00cc0a0a2db286ad5cc692d1147dd64a87c36d2ce2bc050362168b9a5",
+        "reason": "stalemate",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 2749,
+        "sha256": "e2462285432fcaf32e74d6fd17e8e2bdf0f2bc69156fad05dfc59aa4008f1f1c",
+        "snapshot": "b8166dd2807b77afa2800480c1a9fb27b665c1cff1b727b45e8ab2ed681f341a",
+        "timestamp": "2026-10-03T03:41:54.408215+00:00"
+      },
+      {
+        "game": 52,
+        "illegal_attempts": 1,
+        "kind": "result",
+        "plies": 180,
+        "previous": "f1d48e84a9053b93005f42618051f1c47515573f6426798b55ca94f95a82d3f7",
+        "reason": "insufficient_material",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 4107,
+        "sha256": "5b2ea0b490d4c585add24bef883ab8eb6659f87761cb75a50c5104f1a6090baa",
+        "snapshot": "0c8ce10dfb3978c078434a705503b182e75d20301bb8123348da81f99ae8c761",
+        "timestamp": "2026-10-03T06:34:54.125954+00:00"
+      },
+      {
+        "game": 76,
+        "illegal_attempts": 1,
+        "kind": "result",
+        "plies": 212,
+        "previous": "765c63dfed10cf6bea4159a6f3a3515ea53ad4f65528b93ff7794a682a28492a",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 5914,
+        "sha256": "32e683bc8cf5805216fcba2ed1ab6bf6ebe4219b7d9bc6e71e632a2bc1ce33af",
+        "snapshot": "b93a1770c55af3765caab00d0e7ca9ee16f2be2d908f77854b8df0fe3c63bad6",
+        "timestamp": "2026-10-03T11:18:49.137207+00:00"
+      },
+      {
+        "game": 83,
+        "illegal_attempts": 1,
+        "kind": "result",
+        "plies": 73,
+        "previous": "fd521a2fc8670ef84866c3d32aa76fa7c2fb22117615a4a749b0e2ec0a5384a7",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 6434,
+        "sha256": "128a8d1821448bd2b11895b233b0a9271dc573cc265471741fea16a99c3d9649",
+        "snapshot": "096097a940af0a55b0091c04b3527452a7734a734ae95e637ca4d21c40d41ac1",
+        "timestamp": "2026-10-03T17:03:37.334394+00:00"
+      },
+      {
+        "game": 84,
+        "illegal_attempts": 1,
+        "kind": "result",
+        "plies": 136,
+        "previous": "6371f36f78578a56718f1b46ab5d1c0b36b27fa96827936c83a69f18c17f5b2c",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 6573,
+        "sha256": "a75b5b75d0e1688da2bd1ef06fd04b95060d097baa63386d352d9998a2e1f796",
+        "snapshot": "ba04be6894718a0b6ef55c97cf3997b8569f7df81dba4a08eaf70317b27c8c69",
+        "timestamp": "2026-10-03T17:48:09.650486+00:00"
+      },
+      {
+        "game": 100,
+        "illegal_attempts": 1,
+        "kind": "result",
+        "plies": 162,
+        "previous": "29def0cfccb161944f9734478f2f36a8d95a15b088c63d64666d2b0e9aff5966",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 7696,
+        "sha256": "156c2315dc0349849df28a3ad85a989c347fb7a86d4bc48e753c4ba5535d4e68",
+        "snapshot": "83122e1392bead4de1dc1dade6c98ce13a3443c1509c61046714d5ca8c27c93b",
+        "timestamp": "2026-10-03T21:51:09.847966+00:00"
+      },
+      {
+        "game": 113,
+        "illegal_attempts": 0,
+        "kind": "result",
+        "plies": 171,
+        "previous": "31a7d2909d2e049209de1ac3255ed8074fbd37968d41a89c17d16efa7c4578f2",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 8627,
+        "sha256": "2e0ca5a07c1f6f8b7ed9f52d2415ce3b50c71dd7d1a0dea938e874eb8e14de11",
+        "snapshot": "398866fca6bdf9725680600f85da830c515cea83abd791c484f00c0f42c707c7",
+        "timestamp": "2026-10-04T01:04:59.976857+00:00"
+      },
+      {
+        "game": 126,
+        "illegal_attempts": 0,
+        "kind": "result",
+        "plies": 112,
+        "previous": "3c039056b9815ac9c30379fe79b0101a273291728a7fefd4d68347b166119a95",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 9565,
+        "sha256": "a94ed753779d718b1adb135936ecdafd8308c39cfe9897c1a8ba5b7530f53ff7",
+        "snapshot": "855159c0a26690eb4ff3a113767650d31b931920a02b1effe85475ded51b740b",
+        "timestamp": "2026-10-04T05:08:42.394688+00:00"
+      },
+      {
+        "game": 166,
+        "illegal_attempts": 1,
+        "kind": "result",
+        "plies": 141,
+        "previous": "8f435ee2245dd56b9b9809d455551670a07a54f8e957b5f48f371ae2295c59bf",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 12403,
+        "sha256": "d7639175ebabd5cb45cd79be768a999f803992f1543a36ff170380eb0c5114d8",
+        "snapshot": "c363a21f6b16b313fc0555d785b4f9d94ef9a57424bd5bac2e18f55a9f0ebde2",
+        "timestamp": "2026-10-04T16:12:26.046779+00:00"
+      },
+      {
+        "game": 186,
+        "illegal_attempts": 0,
+        "kind": "result",
+        "plies": 21,
+        "previous": "efc5ca95de7d89d349bc3eba8d44b3b75a4944317e9f1261c0ea6500d239f455",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 13808,
+        "sha256": "a859a72f9e8a993f3df3ddce5add9b075b4c77f8df15903e6accbf36fe407d9d",
+        "snapshot": "f149073d55765a59ecbd319c7b99400dbaeae578d9998d9305703e75decda78d",
+        "timestamp": "2026-10-04T21:57:44.503870+00:00"
+      }
+    ]
+  },
+  "fable": {
+    "ledger": {
+      "records": 3524,
+      "errors": [],
+      "head": "7b9eef00a69cb89a2b7100c8928cfbd762fa2725c1142d849879f9100d52631d",
+      "firstTimestamp": "2026-10-03T22:42:28.298315+00:00",
+      "lastTimestamp": "2026-10-06T09:55:46.451992+00:00"
+    },
+    "practice": {
+      "records": 258,
+      "errors": [],
+      "head": "bcbd645c0d111d58201322f26cbc760046cd03b2a4176354d45900453d2f9304",
+      "firstTimestamp": "2026-10-04T01:40:59.534871+00:00",
+      "lastTimestamp": "2026-10-05T23:15:49.543317+00:00"
+    },
+    "snapshots": {
+      "count": 57,
+      "errors": [],
+      "helperFiles": {}
+    },
+    "startedGames": 45,
+    "results": 45,
+    "startedGameIdsConsecutive": true,
+    "exactlyOneResultForEveryStartedGame": true,
+    "opponentRotationErrors": [],
+    "resultReasons": {
+      "resignation": 15,
+      "checkmate": 29,
+      "threefold_repetition": 1
+    },
+    "drawResults": [
+      {
+        "game": 22,
+        "illegal_attempts": 1,
+        "kind": "result",
+        "plies": 123,
+        "previous": "1676e79d25f20d69b7c623a593b6c96b760665cbddb6aaecdf5bb3532de61096",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 1826,
+        "sha256": "cf76f0429cb26d4369b375f1105884df6f61e52965c723106af9d9315fd8535d",
+        "snapshot": "abe65706036634f77c976cf1437d2a443da9592e62a1701362ad198e7215fb7c",
+        "timestamp": "2026-10-05T23:06:24.060312+00:00"
+      }
+    ],
+    "nativeTools": {
+      "nativeSource": "/home/peter/.claude/projects/-home-peter-Chess-Learning-Chess---Fable-5-5/d4fbd079-59d8-4240-8bbe-6f08113188a3.jsonl",
+      "nativeSourceBytes": 41048464,
+      "nativeSourceSha256": "da5d9f970d9bdc64bb844af7d637394941c8a026442dfe43160838c928f38869",
+      "rows": 16128,
+      "invalidRows": 0,
+      "duplicateToolIds": 0,
+      "toolCalls": 2126,
+      "toolNames": {
+        "Bash": 2125,
+        "Write": 1
+      },
+      "nonroutineCalls": 171,
+      "flags": {
+        "engineOrAutomatedChess": 1,
+        "networkOrDelegation": 0,
+        "otherExperimentsOrState": 14,
+        "possibleProtectedMutation": 51,
+        "codeExecution": 89
+      },
+      "firstToolAt": "2026-10-03T22:33:01.752Z",
+      "lastToolAt": "2026-10-06T09:56:32.880Z",
+      "thinkingPromptOrResponseContentInspected": false
+    }
+  }
+}

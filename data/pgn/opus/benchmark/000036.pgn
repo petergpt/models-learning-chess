@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "36"]
+[White "Stockfish 19"]
+[Black "claude-opus-5-5"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "opus"]
+[GameId "opus/benchmark/000036"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "resignation"]
+
+1. e3 d5 2. c4 Nf6 3. Nf3 e6 4. Be2 Be7 5. Nc3 O-O 6. O-O c5 7. d4 Nc6 8. h3 dxc4 9. Bxc4 a6 10. dxc5 Bxc5 11. Bd3 b5 12. Re1 Bb7 13. Bf1 b4 14. Nb1 Rc8 15. Qe2 Qb6 16. Rd1 Rfd8 17. Rxd8+ Rxd8 18. Nbd2 Nd5 19. Rb1 h6 20. Nc4 Qb5 21. Bd2 Na5 22. b3 Nb6 23. a4 bxa3 24. Bxa5 Rc8 25. Bxb6 Bxb6 26. Nfd2 Bc5 27. Qd3 Bd5 28. Nf3 Bb4 29. Nd4 Qc5 30. Rd1 Rd8 31. Qc2 Rc8 32. Qb1 e5 33. Nf3 e4 34. Nd4 Bc3 35. Nc2 Rd8 36. N2xa3 Kh7 37. Be2 f5 38. Rc1 Bb4 39. Qa1 Qe7 40. Nc2 Bc5 41. Rd1 Qg5 42. g3 Bd6 43. Nxd6 Rxd6 44. Nd4 h5 45. Kh1 h4 46. Rg1 hxg3 47. Rxg3 Qf6 48. Rg1 g6 49. Qc1 Qe7 50. Qc5 Kg7 51. Bf1 Qf6 52. Qc7+ Kh6 53. Qc3 Kh7 54. Qc7+ Kh6 55. Rg2 Qe5 56. Qb8 Qg7 57. Nxf5+ gxf5 58. Qxd6+ 1-0

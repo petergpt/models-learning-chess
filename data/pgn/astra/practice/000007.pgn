@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.01"]
+[Round "7"]
+[White "Stockfish 19"]
+[Black "gpt-6-astra"]
+[Result "*"]
+[Mode "practice"]
+[RunId "astra"]
+[GameId "astra/practice/000007"]
+[OpponentSetting "practice-elo-1600"]
+[Termination "stopped_by_learner_not_a_result"]
+
+1. d4 d5 2. Nf3 Nf6 3. Bf4 e6 4. c3 Bd6 5. Bg3 O-O 6. e3 c5 7. Bd3 Nc6 8. Bc2 Qc7 9. O-O e5 10. Bxe5 Bxe5 11. Nxe5 Nxe5 12. dxe5 Qxe5 13. h3 Bf5 14. Nd2 Rfe8 15. Bxf5 Qxf5 16. Qa4 Ne4 17. Qd1 Rad8 18. Qf3 Qxf3 19. Nxf3 c4 20. g3 Nc5 21. Rab1 Nd3 22. b4 b5 23. Kg2 Kf8 24. a4 a6 25. Ra1 Ra8 26. Nd4 bxa4 27. Rxa4 Ke7 28. Ra5 Kd6 29. Rfa1 Re7 30. Nf5+ Ke6 31. Nd4+ Kd7 32. h4 Ke8 33. g4 Rea7 34. Rxd5 Rc7 35. Kg3 Ke7 36. Rda5 g6 37. f4 Kf6 38. Rxa6+ Rxa6 39. Rxa6+ Ke7 40. Kf3 h5 41. g5 Ne1+ 42. Ke2 Ng2 43. Kf2 Nxh4 44. b5 Rb7 45. e4 f5 46. gxf6+ *

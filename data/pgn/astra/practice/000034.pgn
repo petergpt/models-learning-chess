@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "34"]
+[White "Stockfish 19"]
+[Black "gpt-6-astra"]
+[Result "1/2-1/2"]
+[FEN "8/1p5p/2n2kp1/P7/1PB4P/4K3/8/8 b - - 0 1"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "astra"]
+[GameId "astra/practice/000034"]
+[OpponentSetting "practice-elo-1800"]
+[Termination "insufficient_material"]
+
+1... Nxb4 2. Kf4 h5 3. Be2 Nc6 4. Bc4 Nxa5 5. Bd3 Nc6 6. Be4 Ne5 7. Bxb7 Ke6 8. Kg3 Kf5 9. Ba6 Ke4 10. Bb5 Nf3 11. Be8 g5 12. Bxh5 Ne5 13. hxg5 Kf5 14. Bf7 Kxg5 15. Kh3 Nxf7 1/2-1/2

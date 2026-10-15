@@ -1,0 +1,45 @@
+{
+  "scope": "Known-example practice after game 47: supplied-move legality, check status and boards only; no move generation, search, scoring, checker enumeration or selection.",
+  "branches": [
+    {
+      "id": "actual_double_check_rejected_capture",
+      "kind": "remembered",
+      "fen": "br4k1/2p2pp1/B3p3/1P1qP2p/P2n2r1/4R3/1B1K1P1Q/R7 b - - 1 40",
+      "expected_initial_check": false,
+      "moves": [
+        {"uci": "d4f3", "expected_legal": true, "expected_check_after": true},
+        {"uci": "e3f3", "expected_legal": false, "expected_check_after": true}
+      ]
+    },
+    {
+      "id": "actual_king_escape_and_queen_loss",
+      "kind": "remembered",
+      "fen": "br4k1/2p2pp1/B3p3/1P1qP2p/P2n2r1/4R3/1B1K1P1Q/R7 b - - 1 40",
+      "expected_initial_check": false,
+      "moves": [
+        {"uci": "d4f3", "expected_legal": true, "expected_check_after": true},
+        {"uci": "d2c2", "expected_legal": true, "expected_check_after": false},
+        {"uci": "f3h2", "expected_legal": true, "expected_check_after": false}
+      ]
+    },
+    {
+      "id": "added_d3_pawn_blocks_queen",
+      "kind": "self-composed known contrast",
+      "fen": "br4k1/2p2pp1/B3p3/1P1qP2p/P2n2r1/3PR3/1B1K1P1Q/R7 b - - 1 40",
+      "expected_initial_check": false,
+      "moves": [
+        {"uci": "d4f3", "expected_legal": true, "expected_check_after": true},
+        {"uci": "e3f3", "expected_legal": true, "expected_check_after": false}
+      ]
+    },
+    {
+      "id": "static_king_c2_contrast",
+      "kind": "self-composed known contrast; no assertion of the same prior move history",
+      "fen": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/4Rn2/1BK2P1Q/R7 w - - 2 41",
+      "expected_initial_check": false,
+      "moves": [
+        {"uci": "e3f3", "expected_legal": true, "expected_check_after": false}
+      ]
+    }
+  ]
+}

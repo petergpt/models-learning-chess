@@ -1,0 +1,28 @@
+{
+  "verifiedAt": "2026-10-04T21:12:13.052446+00:00",
+  "artifact": "deliverables/chess-learning-assessment-20261004-211004.html",
+  "sourceRevision": "59041465b05a909328f55c97e9aa38fee8ede717f6d5d3d24e5888add638e650",
+  "checks": {
+    "unitTests": {
+      "passed": 9,
+      "failed": 0
+    },
+    "reportJavaScript": {
+      "allFiveModelSelections": true,
+      "viewSwitches": true,
+      "plotPathsWithoutInvalidNumbers": true,
+      "headlineEloChanges": true,
+      "earlySampleGuard": true
+    },
+    "legalBenchmarkPlies": 33281,
+    "legalPracticePlies": 1832,
+    "ledgerHashChains": "verified for all benchmark and practice ledgers",
+    "settings": "fixed rotation, colors, options and one million nodes per move"
+  },
+  "browserVisualVerification": {
+    "completed": false,
+    "reason": "Native T3 preview reported automation snapshot/navigation failures after opening and retrying. No alternative browser used."
+  },
+  "learnerFilesModified": false,
+  "liveDeploymentModified": false
+}

@@ -1,0 +1,10 @@
+#!/bin/sh
+# Convenience wrapper around the referee: submit a move (or 'board') and print a trimmed view
+# (FEN, side to move, check flag, last ~16 plies, ASCII board). Pure output formatting; no chess logic.
+root=$(CDPATH= cd -- "$(dirname -- "$0")/../.." && pwd)
+cd "$root" || exit 1
+if [ "$1" = "board" ]; then out=$(./play practice board 2>&1); else out=$(./play practice move "$@" 2>&1); fi
+printf '%s\n' "$out" | grep -v '^t3-job' | awk '
+/"moves":/ { n=split($0,a," "); s=""; start=(n>18)?n-15:3; for(i=start;i<=n;i++) s=s" "a[i]; print "  last:" s; next }
+/"game":|"you":|"opponent":|"turn":|^\{$|^\}$/ { next }
+{ print }'

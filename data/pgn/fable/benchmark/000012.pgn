@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.04"]
+[Round "12"]
+[White "Stockfish 19"]
+[Black "claude-fable-5-1"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "fable"]
+[GameId "fable/benchmark/000012"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. d4 Nf6 3. Bf4 e6 4. e3 Bd6 5. c3 Bxf4 6. exf4 O-O 7. Nbd2 c5 8. dxc5 Qa5 9. Ne5 Qxc5 10. Qc2 Nc6 11. Bd3 Qd6 12. O-O Nxe5 13. fxe5 Qxe5 14. Rfe1 Qd6 15. h3 Bd7 16. a4 Rac8 17. Qb3 Bc6 18. Bf1 e5 19. Nf3 e4 20. Nd4 Rfe8 21. a5 Qe5 22. Qc2 Nh5 23. Rad1 Nf4 24. g3 Ne6 25. Qd2 Nxd4 26. Qxd4 Qxd4 27. Rxd4 f5 28. h4 Kf7 29. c4 Rcd8 30. a6 bxa6 31. Ra1 Bb7 32. Rad1 Ke7 33. Bh3 g6 34. cxd5 Kd6 35. Ra4 Rc8 36. Bf1 Rc5 37. Rda1 Kxd5 38. R4a3 Rc2 39. Bxa6 Bxa6 40. Ra5+ Kd6 41. Rxa6+ Kc7 42. R1a3 Rxb2 43. Kg2 e3 44. Kh3 Rxf2 45. Rxa7+ Kb6 46. R7a6+ Kb7 47. Ra7+ Kc6 48. R7a6+ Kd7 49. Rd3+ Kc7 50. Rc3+ Kb7 51. Rca3 e2 52. Ra7+ Kc6 53. Rc3+ Kd5 54. Rd7+ Ke4 55. Rd2 e1=Q 56. Rxf2 Qxf2 57. Rc4+ Kf3 58. Rf4+ Ke3 59. Rxf2 Kxf2 60. g4 Re3+ 61. Kh2 fxg4 62. Kh1 Rh3# 0-1

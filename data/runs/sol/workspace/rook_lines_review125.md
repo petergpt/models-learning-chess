@@ -1,0 +1,28 @@
+# Benchmark 125 / Trial 200 review
+
+White, nominal1800, LOSS by 85...Rd1#, 170 plies, one illegal attempt. Result seq10162, timestamp2026-10-08T06:41:09.043438+00:00. Full completed referee PGN and status read. All records retained. Now125 scored:35W/6D/84L; full0/0/42, skill0 30/3/9, nominal1800 5/3/33. Provisional1510[1390,1640], conditional95% Bayesian credible interval using nominal anchors/model, latest50of83rated,42full excluded. Not human Elo; anchor calibration uncertainty excluded. No causal improvement claim.
+
+The predeclared d4/Nf3/c4/Bf4/e3/Nc3 approach developed the last minor on8 and castled10. Fair B/KN3 and KN3 pairs, and recovery of c4 on17, restored nominal material equality. I checked actual pawn attacks and several first bodies locally, including Qd8's newly opened guard of Na5 after ...c5. This did not establish whole-game safety.
+
+30Rd1-d3 was rejected because my own queen on d2 blocked the rook. Qd5 was the accepted correction. Rd3 became legal only after the queen exchange. This was an actual illegal submission, not just a discarded mental candidate.
+
+Passed d6/d7 required both defender and attacker counts. ...Nb7 added a second attacker; Rcd1 initially added a root rook. Bxe4+ then forced Rf3 away, leaving d6/d7 with fewer defenders. Be8 added a bishop guard, but ...Ke7 added a cheap king attacker. Bxd7 eventually took the passer. The captured pawn had also been Be8's cheap guard; Bh5 saved that bishop. Kingf2 unpinned Rf3 but occupied its backward exit while Be3 and Pg3 blocked sideways exits.
+
+48Bxh6/Rxd1 lost a WHOLE rook5, not a fair rook pair or an exchange2. My imagined Bh5-d1 guard was false: Bh5-g4-f3-e2-d1 stopped at my own rook on f3. Kingf2 did not guard d1; that is a knight-shaped distance. Re3 then saved the surviving rook. Bxc6 later took a whole enemy bishop3 after ...Nd6 failed to defend c6. Rxc4 took my undefended c-pawn. These opponent choices limit claims about the opening or middlegame method.
+
+The long ending contained some correct local responses. Knight attacks on Bd5/Bc6 were addressed before taking a3. Be6 was protected by Pf5 against the adjacent enemy king. Kxa3 removed the outside passer. Nd4+ forked kingb3 and rookf3; Bxd4/exd4 was a fair bishop/knight pair. ...c4 cheaply chased Rd3; Rf3 saved it but released a3, later taken by Rxa3+. Rf1 covered d1 rather than taking an attacked rook and allowing immediate promotion. Kxd2 captured the undefended passed d-pawn. Rg1 guarded g3, then g4, while g4 guarded f5/h5.
+
+The decisive final failure: after83...Kb4, own Kb1/Rg1/Be6/Pf5/Pg4/Ph5 versus enemy Kb4/Rd4/Rc2/Pb3/Pc4/Pf6. Rg1's clear first-rank line to d1 was the answer to ...Rd1+. 84g5/fxg5 removed the pawn blocker but created the temptation to recapture. 85Rxg5 moved the only first-rank defender away. 85...Rd1# followed. Ka1/c1 were checked along rank1, a2 was covered by b3, b2 by Rc2, and c2 by b3 (also occupied by the defended rook). My bishop could neither capture Rd1 nor interpose on c1. Equal pawn counts and a valid recapture did not make the move king-safe. This is another sole-defender release, related to122's king blocking a rook rank. The attempted counterplay was not a successful repair.
+
+Private branches were again long, with late commentary updates. No efficiency improvement asserted. Every move and assessment was my own; no analysis code, delegated help, outside lookups during play, engine advice, or foreign material.
+
+## Trial201 predeclaration
+
+Practice100, White/MAX, own125 after ply168 (84...fxg5), six own moves or earlier termination. Try85Rh1, preserving first-rank defence rather than85Rxg5, and seek h-pawn counterplay only while the king's necessary defence remains real. Success criterion: no checkmate or whole rook/bishop loss within this short bound; explicitly inspect changed first bodies and the enemy king's adjacent guards. This is known-position retention only, not a claim of a full save or transfer. Stop and read the full practice PGN, then fixed126 Black/nominal1800 with formal126 review. Endpoint200 scored; no token budget.
+
+
+## Trial201 / practice100 actual outcome
+
+White/MAX from own125 ply168, LOSS by88...Rxd1#, eight plies/four own moves, zero illegal, excluded from benchmark Elo. Result seq995, timestamp2026-10-08T06:48:32.230892+00:00. Full practice PGN read:85Rh1/c3 86h6/Rcd2 87h7/Rd1+ 88Rxd1/Rxd1#. First-rank preservation alone FAILED local king retention. Rh1 avoided the exact immediate ...Rd1# of the benchmark but did not solve the position. The enemy c-pawn moved to c3, now guarding b2; b3 already guarded a2/c2. The c-rook reached d2/d1 supported by the other rook on d4. I had to exchange my rook for the front rook and the root rook recaptured on d1 with mate. My earlier mental claims of an undefended checking rook missed the actual second rook on the same file. Fair rook5 pairs and an h-pawn on h7 were insufficient for king safety. No full-save or transfer claim. All choices own, no external advice or exposure.
+
+Decision: before releasing or relying on a sole defender, inspect the opponent's second rook/recapture and every flight affected by the last pawn move. A prospective promotion does not answer a current check. Do not infer a successful repair from the first safe move. Trial202: fixed126 Black/nominal1800, actual-board forcing/cheap-pawn/first-body/second-recapture check before pawn speculation; e6/d5/Nf6 development scaffold when actual replies permit, then castle. Finish126 and conduct formal126 review using fresh status and an actual goal usage counter. Return to evaluation now; endpoint200 scored.

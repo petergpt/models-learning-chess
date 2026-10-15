@@ -1,0 +1,86 @@
+{
+  "scope": "Known-example practice after game 47: supplied-move legality, check status and boards only; no move generation, search, scoring, checker enumeration or selection.",
+  "mismatches": 0,
+  "branches": [
+    {
+      "id": "actual_double_check_rejected_capture",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "d4f3",
+          "legal": true,
+          "check_after": true,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/4Rn2/1B1K1P1Q/R7 w - - 2 41"
+        },
+        {
+          "uci": "e3f3",
+          "legal": false,
+          "check_after": true,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/4Rn2/1B1K1P1Q/R7 w - - 2 41"
+        }
+      ],
+      "final_board": "b r . . . . k .\n. . p . . p p .\nB . . . p . . .\n. P . q P . . p\nP . . . . . r .\n. . . . R n . .\n. B . K . P . Q\nR . . . . . . ."
+    },
+    {
+      "id": "actual_king_escape_and_queen_loss",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "d4f3",
+          "legal": true,
+          "check_after": true,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/4Rn2/1B1K1P1Q/R7 w - - 2 41"
+        },
+        {
+          "uci": "d2c2",
+          "legal": true,
+          "check_after": false,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/4Rn2/1BK2P1Q/R7 b - - 3 41"
+        },
+        {
+          "uci": "f3h2",
+          "legal": true,
+          "check_after": false,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/4R3/1BK2P1n/R7 w - - 0 42"
+        }
+      ],
+      "final_board": "b r . . . . k .\n. . p . . p p .\nB . . . p . . .\n. P . q P . . p\nP . . . . . r .\n. . . . R . . .\n. B K . . P . n\nR . . . . . . ."
+    },
+    {
+      "id": "added_d3_pawn_blocks_queen",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "d4f3",
+          "legal": true,
+          "check_after": true,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/3PRn2/1B1K1P1Q/R7 w - - 2 41"
+        },
+        {
+          "uci": "e3f3",
+          "legal": true,
+          "check_after": false,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/3P1R2/1B1K1P1Q/R7 b - - 0 41"
+        }
+      ],
+      "final_board": "b r . . . . k .\n. . p . . p p .\nB . . . p . . .\n. P . q P . . p\nP . . . . . r .\n. . . P . R . .\n. B . K . P . Q\nR . . . . . . ."
+    },
+    {
+      "id": "static_king_c2_contrast",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "e3f3",
+          "legal": true,
+          "check_after": false,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/5R2/1BK2P1Q/R7 b - - 0 41"
+        }
+      ],
+      "final_board": "b r . . . . k .\n. . p . . p p .\nB . . . p . . .\n. P . q P . . p\nP . . . . . r .\n. . . . . R . .\n. B K . . P . Q\nR . . . . . . ."
+    }
+  ]
+}

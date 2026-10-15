@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.01"]
+[Round "83"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "astra"]
+[GameId "astra/benchmark/000083"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "checkmate"]
+
+1. e4 c5 2. Nf3 a6 3. d4 d5 4. exd5 e6 5. Nc3 exd5 6. dxc5 Nf6 7. Be2 Bxc5 8. O-O h6 9. Bf4 Be6 10. Qd2 Nc6 11. Rad1 O-O 12. Ne5 Qe7 13. Bf3 Nd4 14. Be2 Ne4 15. Nxe4 f6 16. Nxc5 Qxc5 17. Nd3 Nxe2+ 18. Qxe2 Qe7 19. Be3 Qd7 20. Nc5 Qc8 21. Nxe6 Qxe6 22. Rfe1 g6 23. Bd4 Qxe2 24. Rxe2 Rfd8 25. Bxf6 Rf8 26. Be7 Rf4 27. Rxd5 Rf5 28. Rxf5 Re8 29. Rfe5 a5 30. Bf6 Rc8 31. Re8+ Rxe8 32. Rxe8+ Kf7 33. Re7+ Kxf6 34. Rxb7 a4 35. Ra7 g5 36. Rxa4 Kg7 37. b4 g4 38. b5 Kh7 39. b6 Kg7 40. b7 g3 41. b8=Q gxh2+ 42. Kxh2 Kg6 43. Qf4 h5 44. Ra6+ Kg7 45. Qf6+ Kh7 46. Ra7+ Kg8 47. Qg7# 1-0

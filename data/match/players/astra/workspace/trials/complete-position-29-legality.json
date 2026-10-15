@@ -1,0 +1,106 @@
+[
+  {
+    "game": 198,
+    "ply": 33,
+    "label": "played",
+    "start_fen": "3r1r1k/1pp1q1pp/p1n1bb2/3n4/1P1P1p2/P4N2/1BQNBPPP/2R1R1K1 b - - 0 17",
+    "start_board": ". . . r . r . k\n. p p . q . p p\np . n . b b . .\n. . . n . . . .\n. P . P . p . .\nP . . . . N . .\n. B Q N B P P P\n. . R . R . K .",
+    "moves": [
+      {
+        "uci": "e6f5",
+        "legal": true
+      },
+      {
+        "uci": "c2f5",
+        "legal": true
+      }
+    ],
+    "end_fen": "3r1r1k/1pp1q1pp/p1n2b2/3n1Q2/1P1P1p2/P4N2/1B1NBPPP/2R1R1K1 b - - 0 18",
+    "end_board": ". . . r . r . k\n. p p . q . p p\np . n . . b . .\n. . . n . Q . .\n. P . P . p . .\nP . . . . N . .\n. B . N B P P P\n. . R . R . K ."
+  },
+  {
+    "game": 198,
+    "ply": 33,
+    "label": "chosen alternative",
+    "start_fen": "3r1r1k/1pp1q1pp/p1n1bb2/3n4/1P1P1p2/P4N2/1BQNBPPP/2R1R1K1 b - - 0 17",
+    "start_board": ". . . r . r . k\n. p p . q . p p\np . n . b b . .\n. . . n . . . .\n. P . P . p . .\nP . . . . N . .\n. B Q N B P P P\n. . R . R . K .",
+    "moves": [
+      {
+        "uci": "e6f7",
+        "legal": true
+      },
+      {
+        "uci": "b4b5",
+        "legal": true
+      },
+      {
+        "uci": "a6b5",
+        "legal": true
+      }
+    ],
+    "end_fen": "3r1r1k/1pp1qbpp/2n2b2/1p1n4/3P1p2/P4N2/1BQNBPPP/2R1R1K1 w - - 0 19",
+    "end_board": ". . . r . r . k\n. p p . q b p p\n. . n . . b . .\n. p . n . . . .\n. . . P . p . .\nP . . . . N . .\n. B Q N B P P P\n. . R . R . K ."
+  },
+  {
+    "game": 197,
+    "ply": 90,
+    "label": "played",
+    "start_fen": "8/2P2p1k/3B1Pp1/p3p1P1/P3P3/1P6/7K/8 w - - 1 46",
+    "start_board": ". . . . . . . .\n. . P . . p . k\n. . . B . P p .\np . . . p . P .\nP . . . P . . .\n. P . . . . . .\n. . . . . . . K\n. . . . . . . .",
+    "moves": [
+      {
+        "uci": "c7c8q",
+        "legal": true
+      }
+    ],
+    "end_fen": "2Q5/5p1k/3B1Pp1/p3p1P1/P3P3/1P6/7K/8 b - - 0 46",
+    "end_board": ". . Q . . . . .\n. . . . . p . k\n. . . B . P p .\np . . . p . P .\nP . . . P . . .\n. P . . . . . .\n. . . . . . . K\n. . . . . . . ."
+  },
+  {
+    "game": 197,
+    "ply": 90,
+    "label": "chosen alternative",
+    "start_fen": "8/2P2p1k/3B1Pp1/p3p1P1/P3P3/1P6/7K/8 w - - 1 46",
+    "start_board": ". . . . . . . .\n. . P . . p . k\n. . . B . P p .\np . . . p . P .\nP . . . P . . .\n. P . . . . . .\n. . . . . . . K\n. . . . . . . .",
+    "moves": [
+      {
+        "uci": "d6e7",
+        "legal": true
+      },
+      {
+        "uci": "h7h8",
+        "legal": true
+      },
+      {
+        "uci": "c7c8q",
+        "legal": true
+      },
+      {
+        "uci": "h8h7",
+        "legal": true
+      },
+      {
+        "uci": "c8h3",
+        "legal": true
+      },
+      {
+        "uci": "h7g8",
+        "legal": true
+      },
+      {
+        "uci": "e7d8",
+        "legal": true
+      },
+      {
+        "uci": "g8f8",
+        "legal": true
+      },
+      {
+        "uci": "h3h8",
+        "legal": true
+      }
+    ],
+    "end_fen": "3B1k1Q/5p2/5Pp1/p3p1P1/P3P3/1P6/7K/8 b - - 6 50",
+    "end_board": ". . . B . k . Q\n. . . . . p . .\n. . . . . P p .\np . . . p . P .\nP . . . P . . .\n. P . . . . . .\n. . . . . . . K\n. . . . . . . ."
+  }
+]

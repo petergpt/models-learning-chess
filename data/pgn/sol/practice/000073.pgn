@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.07"]
+[Round "73"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "0-1"]
+[FEN "3q4/5kbp/p1br2p1/1p6/3p1P2/P1P1r2P/1P3KP1/8 b - - 3 33"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "sol"]
+[GameId "sol/practice/000073"]
+[OpponentSetting "practice-elo-1800"]
+[Termination "checkmate"]
+
+33... Qh4+ 34. Kf1 Re1# 0-1

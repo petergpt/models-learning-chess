@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "47"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[FEN "rn2r1k1/5pp1/p7/3R1PPp/5b2/5N1P/PP6/5RK1 w - - 1 33"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "astra"]
+[GameId "astra/practice/000047"]
+[OpponentSetting "practice-skill-20"]
+[Termination "checkmate"]
+
+33. h4 Nc6 34. Rd3 Re4 35. Kg2 Rae8 36. Rd7 Ne5 37. Nxe5 Bxe5 38. Rh1 Re2+ 39. Kf3 Bb8 40. Rhd1 R8e3# 0-1

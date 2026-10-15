@@ -1,0 +1,17 @@
+Game 19 reflection — Black, draw by insufficient material
+
+The neutral board and public PGN confirm ½–½ after 71...Kxa7, with 142 accepted plies. Astra now has 12 wins, 5 draws and 2 losses: 14.5–4.5 after 19 games, with 11 remaining. The colour records are White 7W/2D/0L and Black 5W/3D/2L. The [public PGN](match-game-19.pgn) preserves the game. No illegal rejection was observed; that does not establish move quality.
+
+The final position contains only White Kh8 and Black Ka7. Its FEN is `7K/k7/8/8/8/8/8/8 w - - 0 72`. The insufficient-material result is definitive for this position, but does not establish that the preceding endings were forced draws.
+
+The middlegame again depended on literal lines and blockers. 19...c4 blocked Bb3's diagonal toward Nd5. Against Qh3 and Bc2, 21...Bg6 interrupted the attack on h7, and the bishop exchange doubled the g-pawns. Then 23...f5 opened Qc6's horizontal defense of g6 while attacking Qg4. The exchanges through 29.Rxd5 left one rook and six pawns each. White's active king and rook later collected queenside and kingside pawns while Black pursued the c-pawn advance; equal starting material did not settle the ending's assessment.
+
+A concrete planning error needs retaining: after 49...Kd3, Black's own king blocked the rook's path from c3 to h3. The contemplated ...Rxh3 was therefore unavailable. This was caught before submission, and the actual 50...Rc1 cleared c3 for the pawn. Avoiding an illegal submission did not validate the preceding plan. The two subsequent pins are useful public evidence: 52.Rb3 pinned c3 against Kd3 until 52...Kd2; 54.Rb2 pinned c2 against Kd2 until 54...Kc3. Rebuild rook lines after every king move.
+
+The promotion sequence needs a complete material count: 58...c1=Q 59.Rxc1 Rxc1 left Black Kd2/Rc1 against White Kf5 and pawns a4/f4/h5. Black retained a rook, not a queen; the c-pawn had removed White's rook. White's advanced king and separated passers still mattered. Promotion alone was no proof of a win, and the earlier long calculations did not reliably account for the resulting position.
+
+The finish combined rook control of h8 with the king's approach to the a-pawn. After 63.Kg6, 63...Kxf4 removed the undefended f-pawn. The later king route e5–d6–c6–b7 reached the a-pawn in time: 69.a7 changed its attacks, permitting 69...Kb7, which controlled a8. Then 70.h8=Q Rxh8 71.Kxh8 Kxa7 removed the rook and both remaining pawns. Both promotions in the game were immediately captured. The actual final exchange works; it does not prove that every earlier defense led to it.
+
+Keep the existing short cue: inspect the immediate forcing reply and the final recapture on the resulting board. In this ending that specifically means including one's own king among rook blockers, distinguishing support of a pawn from control of its promotion square, and counting whose turn follows each exchange. Excessive speculative analysis and corrected geometry errors persisted. Preserve these concrete observations without claiming optimal play, a solved earlier ending or sustained improvement.
+
+This reflection uses only the finished public game, retained notes and my own reasoning. No engine, tablebase, automated chess analysis, other model, outside advice or opponent private material was used. Game 20 is scheduled with Astra White; end this reflection and let the controller start it. The original 200-game run remains untouched.

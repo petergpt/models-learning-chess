@@ -1,0 +1,222 @@
+{
+  "scope": "Mechanical legality of predeclared supplied moves only; no move menu, search, engine, attack map or evaluation.",
+  "results": [
+    {
+      "id": "155-rook-still-defends-a6",
+      "valid": true,
+      "initial_fen": "5k2/2r2ppp/bR2pn2/8/2P5/5N2/r3BPPP/2R3K1 w - - 0 27",
+      "supplied_moves": [
+        {
+          "uci": "b6a6",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "a2a6",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "5k2/2r2ppp/r3pn2/8/2P5/5N2/4BPPP/2R3K1 w - - 0 28",
+      "all_predictions_match": true
+    },
+    {
+      "id": "151-central-pawn-fork",
+      "valid": true,
+      "initial_fen": "r2qkb1r/pp2pppp/2n2n2/3p4/8/3BQ2P/PPP2PP1/RNB2RK1 w kq - 2 10",
+      "supplied_moves": [
+        {
+          "uci": "b1c3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "d5d4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "e3g3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "d4c3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "b2c3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "r2qkb1r/pp2pppp/2n2n2/8/8/2PB2QP/P1P2PP1/R1B2RK1 b kq - 0 12",
+      "all_predictions_match": true
+    },
+    {
+      "id": "156-f5-forks-two-minors",
+      "valid": true,
+      "initial_fen": "r2qrnk1/1p3ppp/1p1pb3/2p5/P1PpPPP1/3P4/1P1B2BP/R2Q1RK1 b - - 0 17",
+      "supplied_moves": [
+        {
+          "uci": "f8g6",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "f4f5",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "e6c4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "d3c4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "g6e5",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "r2qr1k1/1p3ppp/1p1p4/2p1nP2/P1PpP1P1/8/1P1B2BP/R2Q1RK1 w - - 1 20",
+      "all_predictions_match": true
+    },
+    {
+      "id": "156-controlled-open-f-file",
+      "valid": true,
+      "initial_fen": "6k1/rp3p1p/1p1prP2/2p1nqP1/P1P2B2/1PQp3P/6B1/4RRK1 w - - 9 33",
+      "supplied_moves": [
+        {
+          "uci": "f4e5",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "d6e5",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "f1f5",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "6k1/rp3p1p/1p2rP2/2p1pRP1/P1P5/1PQp3P/6B1/4R1K1 b - - 0 34",
+      "all_predictions_match": true
+    },
+    {
+      "id": "156-supported-rook-mate",
+      "valid": true,
+      "initial_fen": "8/rp3p1B/1p1p4/2p1k3/P1P5/1P1p3P/3B4/4RK2 b - - 0 41",
+      "supplied_moves": [
+        {
+          "uci": "e5d4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "e1e4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        }
+      ],
+      "final_fen": "8/rp3p1B/1p1p4/2p5/P1PkR3/1P1p3P/3B4/5K2 b - - 2 42",
+      "all_predictions_match": true
+    },
+    {
+      "id": "154-clear-rook-mate-defender",
+      "valid": true,
+      "initial_fen": "6kr/ppp3pp/2n3q1/3bb3/3p2P1/1P5r/P1P1RP2/1RB3K1 w - - 0 25",
+      "supplied_moves": [
+        {
+          "uci": "e2e4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "d5e4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "c1f4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "h3h1",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        }
+      ],
+      "final_fen": "6kr/ppp3pp/2n3q1/4b3/3pbBP1/1P6/P1P2P2/1R4Kr w - - 2 27",
+      "all_predictions_match": true
+    },
+    {
+      "id": "practice-A-setup-only",
+      "valid": true,
+      "initial_fen": "1r4k1/p3bp2/7p/8/2B5/7P/P4P2/3R2K1 w - - 0 1",
+      "supplied_moves": [],
+      "final_fen": "1r4k1/p3bp2/7p/8/2B5/7P/P4P2/3R2K1 w - - 0 1",
+      "all_predictions_match": true
+    },
+    {
+      "id": "practice-B-setup-only",
+      "valid": true,
+      "initial_fen": "2k3r1/1p2p2p/3b4/8/8/4B3/1P2P2P/2K4R b - - 0 1",
+      "supplied_moves": [],
+      "final_fen": "2k3r1/1p2p2p/3b4/8/8/4B3/1P2P2P/2K4R b - - 0 1",
+      "all_predictions_match": true
+    }
+  ]
+}

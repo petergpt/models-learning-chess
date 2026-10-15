@@ -1,0 +1,3 @@
+# Continuation after 167
+
+167 scored benchmarks complete; 33 remain to the limit of 200. No active benchmark or practice. Game 167 loss, practice 148 stopped unfinished after a failed repair. See review167.md for verified result, rating, and chosen trial 281. Next benchmark is 168, Black versus nominal 1800 in the fixed rotation. Next formal review: after 168. Use ./play start, choose every move independently, finish before separate learning. No search, scoring, engine analysis, or delegated advice. Work only in this folder; edits only workspace/. Do not use export because it previously printed a path outside this experiment. No token budget or invented usage figures. Goal remains active until exactly 200 scored games, then summarize and mark complete.

@@ -1,0 +1,164 @@
+{
+  "scope": "Mechanical legality of predeclared supplied moves only; no move menu, search, engine, attack map or evaluation.",
+  "results": [
+    {
+      "id": "141-open-e-file",
+      "valid": true,
+      "initial_fen": "3rr3/3n1pk1/p4qp1/1p1P3n/2pN4/4Q2P/PPB2PP1/2R1R1K1 b - - 0 24",
+      "supplied_moves": [
+        {
+          "uci": "e8e3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "f2e3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "3r4/3n1pk1/p4qp1/1p1P3n/2pN4/4P2P/PPB3P1/2R1R1K1 b - - 0 25",
+      "all_predictions_match": true
+    },
+    {
+      "id": "141-king-capture-not-pawn",
+      "valid": true,
+      "initial_fen": "7r/3R1pk1/p2P2B1/8/1ppN4/7P/PP4PK/5q2 b - - 0 41",
+      "supplied_moves": [
+        {
+          "uci": "g7g6",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "7r/3R1p2/p2P2k1/8/1ppN4/7P/PP4PK/5q2 w - - 0 42",
+      "all_predictions_match": true
+    },
+    {
+      "id": "142-king-takes-checker",
+      "valid": true,
+      "initial_fen": "r3r1k1/ppp2ppp/3pb3/1B6/4P2P/8/PqPn1PP1/2K4R w - - 0 16",
+      "supplied_moves": [
+        {
+          "uci": "c1b2",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "r3r1k1/ppp2ppp/3pb3/1B6/4P2P/8/PKPn1PP1/7R b - - 0 16",
+      "all_predictions_match": true
+    },
+    {
+      "id": "143-other-knight-fork",
+      "valid": true,
+      "initial_fen": "1r1r4/4kp1p/2p1pnp1/p1N5/Pn1P4/2R1K3/1P3PPP/3BR3 b - - 11 30",
+      "supplied_moves": [
+        {
+          "uci": "f6d5",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        },
+        {
+          "uci": "e3e4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "d5c3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        },
+        {
+          "uci": "b2c3",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "1r1r4/4kp1p/2p1p1p1/p1N5/Pn1PK3/2P5/5PPP/3BR3 b - - 0 32",
+      "all_predictions_match": true
+    },
+    {
+      "id": "144-actual-open-b-file",
+      "valid": true,
+      "initial_fen": "3rr1k1/1p3pp1/pq1b1Bbp/3p4/8/Pn1PP1P1/5P1P/RR1QNBK1 b - - 0 25",
+      "supplied_moves": [
+        {
+          "uci": "b3a1",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "b1b6",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "g7f6",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "3rr1k1/1p3p2/pR1b1pbp/3p4/8/P2PP1P1/5P1P/n2QNBK1 w - - 0 27",
+      "all_predictions_match": true
+    },
+    {
+      "id": "144-imagined-cooperative-reply",
+      "valid": true,
+      "initial_fen": "3rr1k1/1p3pp1/pq1b1Bbp/3p4/8/Pn1PP1P1/5P1P/RR1QNBK1 b - - 0 25",
+      "supplied_moves": [
+        {
+          "uci": "b3a1",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "f6d8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "e8d8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "b1a1",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "3r2k1/1p3pp1/pq1b2bp/3p4/8/P2PP1P1/5P1P/R2QNBK1 b - - 0 27",
+      "all_predictions_match": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Own review after benchmark123
+
+Trial196 White/skill0 WIN by24Qc8#,47plies,zero illegal. Referee result sequence9916,timestamp2026-10-08T04:01:50.190324+00:00; full finished PGN and status actually read. Total123:35W/6D/82L. Full0/0/42; skill0 30/3/8; nominal1800 5/3/32. Provisional1540[1410,1660], latest50of81rated,42full excluded, conditional nominal anchors/model, not human Elo. Intervals overlap120/114; no causal rating improvement asserted.
+
+Own d4/Nf3/c4/Bf4/e3/Nc3 developed with e3's real Bf4/d4 guards. cxd4/Nxd4 fairly exchanged pawns. e5 forked Nd4/Bf4 with a cheaper pawn; Nxc6 countercaptured the other knight and threatened the queen. Black Qc7 declined the fair b-pawn recapture. Nxe5 removed the fork pawn and moved the attacked knight under Bf4's guard. g5 attacked Bf4; Bg3 preserved the same g3-f4-e5 diagonal rather than abandoning Ne5. Black Qxe5/Bxe5 then lost its queen. That large opponent mistake dominates the win's transfer limits. The earlier captured black knight and my knight taken on e5 balance as minors; no fair queen exchange claim.
+
+Bg4 attacked Qd1. Be2 blocked the line and developed the final bishop12; castle13; Bxe2/Qxe2 fairly exchanged bishops. Rad1 activated both rooks; cxd5 made a supported passer. Nd7 attacked Be5; Bg3 retained cheap f2/h2 pawn guards and the d6 diagonal without blocking Rd1. Rg6 added pressure on d6. d6/Rxd6/Bxd6 spent pawn1 for enemy rook5 with Bd6 still guarded by Rd1. Ne5 cleared the black d7 body, restoring Rd8's line toward Bd6, but placed the undefended knight under Bd6's capture. Bxe5 saved the bishop and won that knight whole. Rxd1/Rxd1 fairly exchanged rooks. Bf6 was later undefended and lost whole to Bxf6. No systematic all-opponent material strength inferred from these gifts.
+
+Qc4 used a clear c-file after a6 covered b5. Bxf6 removed the last enemy minor, controlled e7/g7 and blocked f7's pawn advance. b5 attacked Qc4 but Qc8# used the clear eighth rank, d-file rook and bishop controls; the referee verified mate. Final own queen/rook/bishop/knight/six pawns versus five pawns, nominal own margin21. Fair guards and conversion held locally in a new skill0 game; queen/rook/knight/bishop gifts prevent a strong or causal transfer claim. Full0/42 remains stagnation. Long unplayed branches and late updates continued; efficiency and whole-game reliability remain unresolved. All reasoning own; no external/delegated/automated chess assistance or other-experiment exposure.
+
+## Trial197 predeclaration
+
+White/MAX from own123ply14, after7...e5 pawn fork. Try8Nxc6 countercapture, then adapt actual recapture/queen reply and bishop attack. Do not assume Qc7 or Qxe5 gifts. Six own moves or natural completion; explicitly end if active. Test fair fork response and material retention in a known position only. Then Trial198 fixed124 Black/skill0. Formal126; endpoint200 scored; no token budget.
+
+## Trial197 / practice98 actual outcome
+
+Practice98 stopped unscored after six own moves/twelve plies, zero illegal. Full referee PGN read. Sequence970 at2026-10-08T04:13:45.424763+00:00. Actual8Nxc6/bxc6 9Bxe5/Bd6 10Bxd6/Qxd6 11Be2/Qb4 12Qb3/Qxb3 13axb3/Be6*. Fair knight exchange removed Nc6's real guard of e5; Bxe5 took the now-unguarded fork pawn. Fair bishop and queen exchanges followed. Qb3 defended Nc3 and b2 against Qb4, with a2's cheap pawn recapture available. Final own king e1, two rooks, Be2/Nc3, seven pawns versus king e8, two rooks, Be6/Nf6, six pawns. Own nominal plus one pawn; king still uncastled. Be6 is blocked by its own d5 pawn and does not yet attack c4; c4 is guarded by b3 and Be2. Local material retention held without the skill0 queen gift. King safety, continuation and full-game result remain untested; no new-game transfer claim. All reasoning own.
+
+## Trial198 predeclaration
+
+Fixed benchmark124 Black/skill0. Try a different central structure: against1e4 choose1...c5, then develop with e6/Nf6/d6/Be7 and castle when the actual replies allow. Against1d4 use d5/Nf6/e6. This is an exploratory comparison with122's equal-material king failure, not a proved opening system. Apply cheaper-attacker, actual pawn direction, released guard and king-blocks-rook checks to actual positions. Finish the game; choose the next learning trial from observed errors. Formal evaluation126; bounded endpoint200 scored, no token budget.

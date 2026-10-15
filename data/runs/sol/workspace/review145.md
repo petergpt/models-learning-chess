@@ -1,0 +1,9 @@
+# Benchmark145 and trial247
+
+145 White/max: resignation after33...Rfc8,66plies,0illegal. Total145 39W7D99L. Full0/0/49, skill32/4/12, nominal7/3/38; Elo1540[1410,1660], unchanged because full strength excluded as uncalibrated. No sustained improvement established.
+
+Trial246 mixed early evidence: caught Qd5-e4-f3-g2-h1 rook attack, interposed Nf3 then fair queen exchange; all surviving majors/minors retained through20. Lost e4 to Bc2 double attack and a2 undefended. 26.Kd2 allowed Nb3+ king/rook fork, losing exchange after Nxa1/Rxa1. At30...b4 I explicitly considered pawn pressure but missed vacated b5 opening Bc4-b5-a6 to my rook. 31.cxb4 Bxa6 whole last-rook loss. Pawn later took Bc5, Rxc5+; final deficit6, no own rooks, Bc3 pinned against king by two rooks. Resignation is my judgment, not a forced-loss proof. No mate occurred, but no evidence royal safety solved.
+
+Trial247 predeclared: remembered145 ply60, max White, test31.Ra5 instead of pawn capture. Three own moves, targets no mate/no whole rook loss/final nominal material deficit at most5 (baseline4). Mechanism: last pawn move source reveals slider attack; address own rook before pawn capture. Next measured benchmark146 and formal review remains146.
+
+Trial247 outcome: practice127 max White, Ra5 Bb6 Ra4 a5 cxb4 Bb5+. Stopped unfinished after three own/six plies/0illegal. No mate, no whole rook loss, final deficit3 all locally met. But final check from Rc8 was discovered by Bc4-b5, and Bb5 also attacks Ra4. These horizon targets conceal an unresolved fork; not convincing repair or transfer. Trial248 benchmark146: focus on last-move source and destination together, rebuild every actual slider ray involving own exposed pieces, answer direct attacks before unrelated pawn exchanges. Formal146 review will assess recurrence honestly.

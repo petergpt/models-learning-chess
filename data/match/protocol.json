@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "id": "astra-opus-30",
+  "games": 30,
+  "firstWhite": "opus",
+  "colors": "alternate; 15 white and 15 black each",
+  "position": "standard chess initial position",
+  "scoring": {
+    "win": 1,
+    "draw": 0.5,
+    "loss": 0
+  },
+  "earlyStop": false,
+  "tie": "drawn match; no sudden-death or speed tiebreak",
+  "reasoning": "max for both, explicitly supplied on every turn",
+  "context": "each native post-200 conversation branch; original provider context settings retained",
+  "learning": "persistent match conversations; own notes and self-reflection allowed between games",
+  "assistance": "no engines, automated search/scoring, tablebases, outside chess advice or opponent private material",
+  "tools": "identical board/history and legality-only referee; no legal-move menu or evaluations",
+  "draws": "stalemate, insufficient material, automatic fivefold/75-move rules; automatically claim completed threefold/50-move positions; mutual agreement",
+  "illegalMoves": "third distinct illegal submission at the same position forfeits; transport retries are idempotent",
+  "timeControl": "untimed chess; response and elapsed times recorded; provider outages never award chess points",
+  "infraRecovery": "preserve the same game and position; retry failed provider requests with backoff; explicit user interruption pauses",
+  "safetyLimit": "400 plies: unfinished, no points and match pauses for review; no hidden replacement game",
+  "originals": "no original native session, goal, workspace or benchmark ledger is advanced",
+  "rating": "head-to-head points are separate from nominal Stockfish Elo",
+  "isolation": "separate native threads and player folders under one Unix account; rules and audit, not a security sandbox",
+  "sources": {
+    "astra": {
+      "model": "gpt-6-astra",
+      "sourceGames": 200,
+      "nativeSource": "01a0ef25-69a0-7b31-b0f2-b8042b854a79",
+      "nativeFork": "01a112fb-d69c-7be3-96f2-dce8ecce30a8",
+      "workspaceManifestSha256": "2fa6c3240d154865b6da42c68a2a28763fa842c0167531a3f5b1688aba6fc080",
+      "ledgerSha256": "cec94a01e184831a4f89b2df07e746e9aa54013c6a36b18ab29fe5d1253814cf"
+    },
+    "opus": {
+      "model": "claude-opus-5-5",
+      "sourceGames": 200,
+      "nativeSource": "02b17840-e0cf-436c-a088-3a7d29464975",
+      "nativeFork": "6603596e-acab-402f-87ef-29eb78acb1d0",
+      "workspaceManifestSha256": "18b74169cc0c8ebd085ee730c91c2d314e74b66882710b8cbf06206578dd9e45",
+      "ledgerSha256": "a3b8b761c8d73ab5d545296c37f27c85fd565d85f95551bce822b6a8e79e8c83"
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "scope": "Only explicitly supplied moves for between-game practice; no move generation or evaluation.",
+  "cases": [
+    {
+      "id": "1a_remembered_lost_rook",
+      "fen": "6R1/4K2k/8/P4r2/8/8/8/8 w - - 0 68",
+      "moves": [
+        {
+          "uci": "a5a6",
+          "expected_legal": true
+        },
+        {
+          "uci": "h7g8",
+          "expected_legal": true
+        }
+      ]
+    },
+    {
+      "id": "1b_rook_retreat",
+      "fen": "6R1/4K2k/8/P4r2/8/8/8/8 w - - 0 68",
+      "moves": [
+        {
+          "uci": "g8a8",
+          "expected_legal": true
+        }
+      ]
+    },
+    {
+      "id": "2_remembered_battery_exchange",
+      "fen": "3r3k/1p4p1/2nbpqrp/p3p3/1P2Q2P/P3PPP1/1R4K1/1BB2R2 w - - 2 26",
+      "moves": [
+        {
+          "uci": "e4g6",
+          "expected_legal": true
+        },
+        {
+          "uci": "f6g6",
+          "expected_legal": true
+        },
+        {
+          "uci": "b1g6",
+          "expected_legal": true
+        }
+      ]
+    },
+    {
+      "id": "3_remembered_blocked_bishop",
+      "fen": "3r3k/1p4p1/3bp2p/4p3/1n2B2P/p3PPP1/R5K1/2B2R2 w - - 2 30",
+      "moves": [
+        {
+          "uci": "a2a3",
+          "expected_legal": true
+        },
+        {
+          "uci": "d6a3",
+          "expected_legal": false
+        }
+      ]
+    },
+    {
+      "id": "4_knight_on_c6",
+      "fen": "3r3k/1p4p1/2nbp2p/4p3/4B2P/p3PPP1/R5K1/2B2R2 w - - 2 30",
+      "moves": [
+        {
+          "uci": "a2a3",
+          "expected_legal": true
+        },
+        {
+          "uci": "d6a3",
+          "expected_legal": true
+        },
+        {
+          "uci": "c1a3",
+          "expected_legal": true
+        }
+      ]
+    },
+    {
+      "id": "5_bishop_on_a2",
+      "fen": "3r3k/1p4p1/2nbpqrp/p3p3/1P2Q2P/P3PPP1/BR4K1/2B2R2 w - - 2 26",
+      "moves": [
+        {
+          "uci": "e4g6",
+          "expected_legal": true
+        },
+        {
+          "uci": "f6g6",
+          "expected_legal": true
+        },
+        {
+          "uci": "a2g6",
+          "expected_legal": false
+        }
+      ]
+    },
+    {
+      "id": "6_king_protects_g8",
+      "fen": "6R1/5K1k/8/P7/8/8/8/r7 w - - 0 1",
+      "moves": [
+        {
+          "uci": "a5a6",
+          "expected_legal": true
+        },
+        {
+          "uci": "h7g8",
+          "expected_legal": false
+        }
+      ]
+    },
+    {
+      "id": "7a_stalemate_test_g8",
+      "fen": "7k/5KRP/5r2/P7/8/8/8/8 w - - 3 66",
+      "moves": [
+        {
+          "uci": "f7f6",
+          "expected_legal": true
+        },
+        {
+          "uci": "h8g8",
+          "expected_legal": false
+        }
+      ]
+    },
+    {
+      "id": "7b_stalemate_test_g7",
+      "fen": "7k/5KRP/5r2/P7/8/8/8/8 w - - 3 66",
+      "moves": [
+        {
+          "uci": "f7f6",
+          "expected_legal": true
+        },
+        {
+          "uci": "h8g7",
+          "expected_legal": false
+        }
+      ]
+    },
+    {
+      "id": "7c_stalemate_test_h7",
+      "fen": "7k/5KRP/5r2/P7/8/8/8/8 w - - 3 66",
+      "moves": [
+        {
+          "uci": "f7f6",
+          "expected_legal": true
+        },
+        {
+          "uci": "h8h7",
+          "expected_legal": false
+        }
+      ]
+    },
+    {
+      "id": "8_rook_removed",
+      "fen": "7k/5K1P/5r2/P7/8/8/8/8 w - - 3 66",
+      "moves": [
+        {
+          "uci": "f7f6",
+          "expected_legal": true
+        },
+        {
+          "uci": "h8h7",
+          "expected_legal": true
+        },
+        {
+          "uci": "a5a6",
+          "expected_legal": true
+        },
+        {
+          "uci": "h7h6",
+          "expected_legal": true
+        },
+        {
+          "uci": "a6a7",
+          "expected_legal": true
+        },
+        {
+          "uci": "h6h5",
+          "expected_legal": true
+        },
+        {
+          "uci": "a7a8q",
+          "expected_legal": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# Benchmark186 and trial320
+186 Black1800 lossresignation33plies0illegal,receipt14646 2026-10-10T05:08:00.288228+00:00. Count18650W8D128L.
+Trial319 failed: 15...f5 vacated f7, both queen's pawn defender and diagonal blocker to Kg8. Bc4 attacked Qe6 on c4-d5-e6-f7-g8 and pinned it. Queen-for-bishop Qxc4 Qxc4+ followed, resigned with knight+bishop vs queen+bishop, same rooks and pawns (six-point deficit). No imagined mate claim.
+Trial320 practice169 at186ply29,Black1800: Kh8 O-O-O Qe7 h4,4plies0illegal stopped after2ownmoves. King moved off c4-g8 ray; queen relocated before any pawn break. Retained all material in remembered drill only.
+Trial321 before187: choose defensive regrouping instead of premature central breaks when the pawn shields king or supports queen. Before moving any king pawn, identify the exact opened diagonal and current queen defender. Examine White bishop development as potential attack, not only current occupied square. Next fresh evaluation187; cumulative188. Practice success alone does not reverse185–186 failures.

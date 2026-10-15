@@ -1,0 +1,21 @@
+# Own review after benchmark124
+
+Trial198 Black/skill0 LOSS by36Rxh7#,71plies,zero illegal. Referee result sequence9989 at2026-10-08T04:31:58.863813+00:00. Full finished PGN and actual status read. Total124:35W/6D/83L; full0/0/42, skill0 30/3/9, nominal1800 5/3/32. Provisional1520[1400,1650], latest50of82rated,42full excluded; nominal conditional engine-relative estimate, not human Elo. Apparent rebound reversed; no causal improvement claim.
+
+Exploratory c5/e6 opening: fair c/d pawn exchange, Nc6 gained a queen tempo, but Nf6/e5/Nd5/c4/Nb6 chased the other knight twice. Castle9, queenside bishop later14. d5/exd6 en passant removed my d-pawn. Critical11Bxd6 used Qd8 as the sole, more valuable defender against BOTH White Bf4 and Qd1. Qxd6/Qxd6/Bxd6 fairly exchanged queens but lost my bishop whole. A defender's existence was insufficient; the second attacker won the final target after the recapture. No opening-repair success.
+
+Rd8 saved the rook from Bd6. Bd7 kept the real Nc6 guard; c5 chased Nb6 and Nd5 used e6's real cheap pawn guard. b6 released b7's Nc6 pawn guard but Bd7 remained. bxc5 recovered an unguarded pawn. Ncb4 used c5's cheap pawn guard and Nd5's knight guard. Bc6 developed; Rac8 was initially blocked by Bc6 and did NOT yet guard c5. Nxe3/fxe3 and Bxf3/Rxf3 were fair minor pairs; only then c6 vacated and Rc8 guarded c5. Rd2/Bf1/Rxb2/Rd1/Rxa2 recovered two more pawns; own nominal material temporarily equal despite the extra enemy bishop. Ra2 genuinely guarded a7 up the clear a-file.
+
+Rf8 defended f7 against the two rooks; f6 blocked Be5's g7 line and chased the bishop, while releasing e6's cheap pawn guard. Rc8 saved the rook from Bd6; e5 put that pawn under f6's real guard but cleared e6 for Bc4+ toward g8. Kh8/Rg3 threatened double-rook Rxg7 mate; g6 removed that threat under h7's pawn guard but released f6's g7 pawn guard. Kg7 briefly guarded f6 as an adjacent king. Bd8+ released Be7's body from Rd7's line, checked the king and simultaneously attacked f6. I chose Kh6 without resolving the coming king box; Bxf6 took the pawn. Nc6 guarded e5, but Bg5+/Kh5/Rxh7# used Bg5's h4/h6 controls and Rg3's g4/g5 controls while own g6 occupied an escape. Last king move was legal; mate was not foreseen. Full stagnation remains; skill0 loss exposes both capture accounting and king-flight failure. Prolonged private branching and late updates persisted, no efficiency repair claimed. All reasoning own, no external/automated/delegated assistance or foreign exposure.
+
+## Trial199 predeclaration
+
+Black/MAX practice from own124ply21, after11exd6 en passant. Test11...Bf6 to move the bishop out of the cheaper pawn attack rather than forcing Bxd6's two-attacker loss. Treat d6's passed pawn, both real defenders and c8's possible recapture on d7 explicitly; no assumed solution. Six own moves or natural completion; end any remaining drill unscored. Then fixed125 White/nominal1800 (Trial200),126 Black/nominal1800 and formal126. Endpoint200 scored, no token budget.
+
+## Trial199 / practice99 actual outcome
+
+Black/MAX, stopped after six own moves/twelve plies, zero illegal, unscored. Full referee PGN read:11Bf6/Qd2 12Nd5/cxd5 13exd5/Nxd5 14Be6/Nc7 15Rc8/O-O 16Bd7/h3*. Bf6 retained the bishop but Nd5 ignored the STILL-present White c4 pawn. I mentally imported safety from benchmark124's later c5 position; this drill's actual c4 pawn cheaply captured the knight. exd5 recovered only a pawn for the knight; Nxd5 took the now-unguarded e-pawn. Nc7 forked Ra8/Be6, with d6's pawn guard; Rc8 saved the rook. Bd7 blocks d6's forward advance but conversion is untested. Final own five pawns/one knight/two bishops versus six pawns/two knights/two bishops, same queens and rooks: minus4 nominal. FAILED material retention; no solved opening, full-save or transfer claim. Each move own, no outside assistance. Decision: check cheap pawn attacks on the destination in the ACTUAL board before elaborating a line; a defended knight under a pawn remains a losing trade.
+
+## Trial200 predeclaration
+
+Fixed125 White/nominal1800. Use d4/Nf3/c4/Bf4/e3/Nc3 with actual-reply adaptation; develop and castle, counting both attackers and recaptures before central trades. No inherited guard or pawn placement from earlier games. Finish125, then choose the next brief trial and fixed126; formal126. Endpoint200 scored, no token budget.

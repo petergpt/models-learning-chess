@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.09"]
+[Round "119"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[FEN "3r1bk1/6p1/1R3p1p/1p1q4/pPp2P2/5RN1/1P2KP2/2Q5 w - - 7 39"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "sol"]
+[GameId "sol/practice/000119"]
+[OpponentSetting "practice-skill-20"]
+[Termination "checkmate"]
+
+39. Qe1 Bxb4 40. Qf1 Qd2# 0-1

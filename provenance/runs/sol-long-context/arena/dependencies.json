@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Stockfish",
+    "release": "sf_19",
+    "url": "https://github.com/official-stockfish/Stockfish/releases/download/sf_19/stockfish-linux-x86-64-universal.tar.gz",
+    "archive_sha256": "9defc0d4e55d49c65a6d042f3e571a39fcea499ade6dbe741b53b8c65e03611f"
+  },
+  {
+    "name": "chess",
+    "version": "1.11.2",
+    "url": "https://files.pythonhosted.org/packages/93/09/7d04d7581ae3bb8b598017941781bceb7959dd1b13e3ebf7b6a2cd843bc9/chess-1.11.2.tar.gz",
+    "archive_sha256": "a8b43e5678fdb3000695bdaa573117ad683761e5ca38e591c4826eba6d25bb39"
+  }
+]

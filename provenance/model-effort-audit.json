@@ -1,0 +1,151 @@
+{
+  "verifiedAt": "2026-10-05T18:30:10.529427+00:00",
+  "scope": "Provider metadata only; no reasoning content inspected; no learner settings changed.",
+  "runs": {
+    "astra": {
+      "model": "gpt-6-astra",
+      "observedTurnEfforts": {
+        "max": 68,
+        "medium": 3
+      },
+      "observedEfforts": [
+        "max",
+        "medium"
+      ],
+      "firstContextAt": "2026-09-29T21:50:04.435Z",
+      "lastContextAt": "2026-10-03T16:34:43.408Z",
+      "mediumPeriod": {
+        "start": "2026-10-01T21:39:28.124Z",
+        "end": "2026-10-01T21:54:15.776Z",
+        "turnIds": [
+          "01a0f968-6fea-7040-b0d0-085a1e272617",
+          "01a0f969-ef61-7880-8700-9d9e1a850297"
+        ],
+        "affectedBenchmarkGames": [
+          84
+        ],
+        "acceptedOwnMoves": 11,
+        "plies": [
+          108,
+          110,
+          112,
+          114,
+          116,
+          118,
+          120,
+          122,
+          124,
+          126,
+          128
+        ]
+      },
+      "contextWindow": 258400,
+      "source": "/home/peter/.codex-t3/accounts/pro-vt/sessions/2026/09/29/rollout-2026-09-29T21-50-01-01a0ef25-69a0-7b31-b0f2-b8042b854a79.jsonl",
+      "verification": "Active turn-context effort and collaboration-mode effort agree. Persistent default settings disagree at some compactions; the per-turn context is used for the effort timeline.",
+      "displayLabelRequested": "max",
+      "displayLabelUpdatedAt": "2026-10-05T19:41:33.221960+00:00",
+      "displayLabelPolicy": "Display Max from the final thread selector at the user\u2019s request; retain all observed effort records and the documented Medium interval in this audit."
+    },
+    "sol": {
+      "model": "gpt-6.1-sol",
+      "observedEfforts": [
+        "max"
+      ],
+      "turnContextCounts": {
+        "max": 22
+      },
+      "appliedSettingsCounts": {
+        "max": 21
+      },
+      "contextWindow": 258400,
+      "source": "/home/peter/.codex-t3/accounts/pro-vt/sessions/2026/10/03/rollout-2026-10-03T20-44-16-01a10382-a7c9-7a90-91bd-689af57a0ca1.jsonl"
+    },
+    "opus": {
+      "model": "claude-opus-5-5",
+      "observedEfforts": [
+        "max"
+      ],
+      "uniqueRequestIdsChecked": 7637,
+      "requestEffortPairs": [
+        [
+          "max",
+          "max"
+        ]
+      ],
+      "contextWindow": 1000000,
+      "source": "/home/peter/.claude/projects/-home-peter-Chess-Learning-Chess---Opus-5-5/02b17840-e0cf-436c-a088-3a7d29464975.jsonl"
+    },
+    "fable": {
+      "model": "claude-fable-5-1",
+      "observedEfforts": [
+        "max"
+      ],
+      "uniqueRequestIdsChecked": 790,
+      "requestEffortPairs": [
+        [
+          "max",
+          "max"
+        ]
+      ],
+      "resumedRequestsVerifiedMax": true,
+      "contextWindow": 1000000,
+      "source": "/home/peter/.claude/projects/-home-peter-Chess-Learning-Chess---Fable-5-5/d4fbd079-59d8-4240-8bbe-6f08113188a3.jsonl"
+    },
+    "sol-long-context": {
+      "model": "gpt-6.1-sol",
+      "observedEfforts": [
+        "medium"
+      ],
+      "turnContextCounts": {
+        "medium": 24
+      },
+      "contextWindow": 828400,
+      "source": "/home/peter/.codex-t3/accounts/pro-vt/sessions/2026/10/04/rollout-2026-10-04T09-09-13-01a1062c-ad87-7810-a01f-7fb2815e2f3e.jsonl"
+    },
+    "sol-long-context-max": {
+      "model": "gpt-6.1-sol",
+      "observedEfforts": [
+        "max"
+      ],
+      "turnContextCounts": {
+        "max": 1
+      },
+      "contextWindow": 828400,
+      "verifiedAt": "2026-10-05T22:01:57.825831+00:00",
+      "source": "/home/peter/.codex-t3/accounts/pro-vt/sessions/2026/10/05/rollout-2026-10-05T21-49-43-01a10e0b-4ad1-75d2-9626-9c0df20c8bef.jsonl",
+      "verification": "Native turn effort and collaboration-mode effort both Max. Initial dispatch and every operator continuation explicitly supply Max modelSelection. Per-experiment config also sets Max."
+    }
+  },
+  "labelVerification": {
+    "localFeed": true,
+    "publicFeed": true,
+    "verifiedAt": "2026-10-05T19:42:06.054797+00:00",
+    "threadTitle": "Chess \u2014 GPT-6 Astra (Max) \u00b7 completed run",
+    "snapshots": [
+      {
+        "url": "http://127.0.0.1:8773/data",
+        "updatedAt": "2026-10-05T19:42:03.375068+00:00",
+        "efforts": {
+          "astra": "max",
+          "opus": "max",
+          "sol": "max",
+          "fable": "max",
+          "sol-long-context": "medium"
+        }
+      },
+      {
+        "url": "https://ailearningchess.ai-learning-chess.workers.dev/data",
+        "updatedAt": "2026-10-05T19:41:48.365638+00:00",
+        "efforts": {
+          "astra": "max",
+          "opus": "max",
+          "sol": "max",
+          "fable": "max",
+          "sol-long-context": "medium"
+        }
+      }
+    ],
+    "learnerSettingsChanged": false,
+    "deploymentRequired": false
+  }
+}

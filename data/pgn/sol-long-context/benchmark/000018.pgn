@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.05"]
+[Round "18"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "sol-long-context"]
+[GameId "sol-long-context/benchmark/000018"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "resignation"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. a3 O-O 6. Nc3 d6 7. Bg5 Be6 8. O-O h6 9. Be3 Bxc4 10. Bxc5 dxc5 11. dxc4 Re8 12. Qxd8 Raxd8 13. Rae1 Nd4 14. Nxd4 cxd4 15. Na2 Nd7 16. f3 Nc5 17. Rb1 Kf8 18. Rfd1 Ke7 19. Nb4 f6 20. h4 c6 21. Nd3 Ne6 22. Kf2 Kd6 23. h5 Nc5 24. b3 b6 25. Nxc5 Kxc5 26. g4 a5 27. Kf1 Rb8 28. Ke2 a4 29. Ra1 b5 30. Kd3 bxc4+ 31. bxc4 Rb3+ 32. cxb3 1-0

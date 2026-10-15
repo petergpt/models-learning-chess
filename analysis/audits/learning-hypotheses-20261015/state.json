@@ -1,0 +1,28 @@
+{
+  "task": "Retrospective hypothesis testing of learning, Elo changes, benchmark specificity and reward hacking across six chess runs",
+  "authorized": "User explicitly requested analysis and parallel sub-agents; resumed after T3 server restart",
+  "source_manifest": "measurement/snapshots/manifest.json",
+  "source_captured_at": "2026-10-15T22:09:24.019665+00:00",
+  "completed_benchmarks": {"astra": 200, "opus": 200, "sol": 200, "sol-long": 99, "sol-long-max": 63, "fable": 45},
+  "agents_resumed": {
+    "elo_measurement_resumed": "measurement/",
+    "learning_transfer_resumed": "transfer/",
+    "reward_hacking_resumed": "fairplay/",
+    "quality_controls_resumed": "quality/"
+  },
+  "status": "complete",
+  "delivery": "deliverables/chess-learning-hypotheses-20261015-v4.html and matching .json; verified six charts, sliders, uncertainty toggle and mobile layout through T3 preview evaluate",
+  "boundaries": "Read-only source experiments; do not play, invoke engines, change current runs or supply analysis to learners; no private reasoning transcripts",
+  "external_sources": [
+    "https://official-stockfish.github.io/docs/stockfish-wiki/UCI-Protocol-and-Stockfish-Commands.html",
+    "https://official-stockfish.github.io/docs/stockfish-wiki/Stockfish-FAQ.html"
+  ],
+  "key_prior_findings_to_verify": [
+    "1500 is prior and only most recent 50 skill0/1800 games enter Elo; full-strength excluded",
+    "Astra deteriorated in matched raw results; reasoning usage fell by about half, not causal proof",
+    "Opus gains concentrated against skill0, explicit benchmark score optimisation, no cheating found in prior detailed audit",
+    "Astra beat Opus 24.5-5.5 in completed 30-game post-training match, pending independent current verification",
+    "Sol base 200 games final1390, large amounts of tiny stopped remembered-position drills; fresh transfer unproven",
+    "Context bloat and compaction remain plausible but unproven; important late Astra errors with substantial headroom"
+  ]
+}

@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.01"]
+[Round "74"]
+[White "Stockfish 19"]
+[Black "gpt-6-astra"]
+[Result "1/2-1/2"]
+[Mode "benchmark"]
+[RunId "astra"]
+[GameId "astra/benchmark/000074"]
+[OpponentSetting "full-strength"]
+[Termination "threefold_repetition"]
+
+1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bd3 Bxd3 6. Qxd3 e6 7. Nf3 c5 8. dxc5 Bxc5 9. c4 Ne7 10. Nc3 O-O 11. O-O Nbc6 12. cxd5 Nxd5 13. Ne4 Be7 14. Neg5 Bxg5 15. Nxg5 g6 16. Nxe6 fxe6 17. Qxg6+ Kh8 18. Qh6+ Kg8 19. Qg6+ Kh8 20. Qxh5+ Kg8 21. Qg6+ Kh8 22. Qh6+ Kg8 23. Qg6+ Kh8 24. Qh6+ Kg8 1/2-1/2

@@ -1,0 +1,13 @@
+{
+  "artifact": "/home/peter/Chess Learning/deliverables/chess-learning-hypotheses-20261015-v4.html",
+  "evidence": "/home/peter/Chess Learning/deliverables/chess-learning-hypotheses-20261015-v4.json",
+  "html_sha256": "f693ec13cfa1e220754ca88e878af2132880af13ff930b44d9cc26034bfc4158",
+  "evidence_sha256": "9ac04c4affd9c5c1224599d6a790422390dc35578c4ef79ee4b69b79c05701fb",
+  "embedded_json_matches_external": true,
+  "scored_games": 807,
+  "rated_games": 531,
+  "runs": 6,
+  "hypotheses": 9,
+  "source_mutations": "none; source-verification.json proves original ledgers unchanged since freeze",
+  "browser": "T3 preview evaluate rendered all six runs and controls at390px; direct local navigation/screenshot unavailable after restart, so loaded exact HTML through T3 evaluate"
+}

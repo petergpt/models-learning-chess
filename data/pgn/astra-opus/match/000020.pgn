@@ -1,0 +1,13 @@
+[Event "Astra vs Opus — 30 games"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.09"]
+[Round "20"]
+[White "GPT-6 Astra"]
+[Black "Claude Opus 5.5"]
+[Result "1-0"]
+[Mode "match"]
+[RunId "astra-opus"]
+[GameId "astra-opus/match/000020"]
+[Termination "resignation"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. Bg5 O-O 6. e3 h6 7. Bh4 Ne4 8. Bxe7 Qxe7 9. cxd5 Nxc3 10. bxc3 exd5 11. Bd3 c5 12. O-O Nc6 13. Re1 Qd6 14. e4 dxe4 15. Bxe4 cxd4 16. cxd4 Nb4 17. a3 Nd5 18. Bxd5 Qxd5 19. Re5 Qd6 20. Qb3 Qb6 21. Qxb6 axb6 22. Rb5 Ra6 23. Ne5 Rd8 24. Rb4 Be6 25. Kf1 Bd5 26. g3 Kf8 27. Ke2 Ke7 28. Ke3 f6 29. Ng6+ Kd6 30. Nf4 Bc6 31. d5 Bd7 32. Kd4 Rc8 33. Rc4 Rc5 34. Rxc5 bxc5+ 35. Kc4 b5+ 36. Kb3 g5 37. Nh5 Kxd5 38. Rd1+ Ke6 39. Re1+ Kf7 40. f3 Kg6 41. g4 c4+ 42. Kb2 Rd6 43. Re2 Rd3 44. Rf2 Bc6 45. f4 gxf4 46. Nxf4+ Kg5 47. Nxd3 cxd3 48. h3 Be4 49. Kc3 Bg6 50. Rb2 Be4 51. Rxb5+ Kh4 52. Rh5+ Kg3 53. Rxh6 f5 54. gxf5 Bxf5 55. h4 Kg4 56. Rd6 Kxh4 57. Rxd3 Be4 58. Rd4 1-0

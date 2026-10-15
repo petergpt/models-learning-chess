@@ -1,0 +1,15 @@
+# Benchmark130 / Trial212: win with large opponent gifts
+
+Black, skill0, won33...Qc2#,66plies,zero illegal. Seq10543,time2026-10-08T12:19:15.664643+00:00. Completed PGN/status read. 130 scored36W/6D/88L. Full0/0/44;skill31/3/10;nominal1800 5/3/34. Provisional1500 [1380,1630],latest50 of86rated,44full excluded;conditional nominal model,not human Elo. Formal132 next;stop200.
+
+Central d5/e6 development, Be7/short castle, Nc6/Bd7/Re8, then Bd6. Kingside g/h pawns stayed in place. Bxe5/dxe5 was an equal bishop/knight exchange;...Ne4 kept the remaining knight rooted by d5. White13Na4 ignored recapturing...Nxg3, losing Bg3 outright, and13...Nxh1 then won a rook. These two whole-piece gifts supplied the initial+8. White17Kd2 removed its king attack on f2, letting the h1 knight escape17...Nf2; then18...Ne4+ returned it to the d5 pawn's root.
+
+...e5 cleared Bd7-e6-f5, allowing Qf5 to be rooted by the bishop. White declined the queen trade.21...Ng3+ uncovered Qf5-e4-d3 check and attacked Qe2;22Kc3 allowed22...Nxe2+/Bxe2, winning queen9 for knight3. This was an own forcing tactic, but it was helped by the opponent choosing a king move rather than the pawn interposition considered mentally; do not claim a universal forced queen win from that position.
+
+...d4+/exd4/...exd4+ traded pawns equally and opened the e-file.25...Rxe2 took an unguarded bishop;26Re1 placed White's last rook under the existing Re2 attack, and26...Rxe1 won it. Opponent gifts continued. After...Qe6+/c4,28...Na5+ supplied a knight root for29...Qxc4+. White30Nc3 interposed;...dxc3/bxc3 exchanged pawn1 for its last knight3. The final material lead was25: equal five-pawn counts, Black queen/two rooks/bishop/knight versus no White pieces.
+
+Local conversion:31...Re2+ was protected by Qc4 along d3-e2 and forced White to the first rank.32...Qb3+ was protected by Na5 and, after32Kc1,33...Qc2# was protected by Re2 along d2-c2. The adjacent checking queen controlled b1/d1/b2/d2, and the rook prevented Kxc2. None of White's remaining pawns could capture the queen or interpose. This actual protected mating finish worked; it does not repair the earlier129 own-body mate or establish transfer to stronger settings.
+
+Important ongoing limitation: long unplayed branches and repeated outdated-square/shape/root mistakes in mental work consumed considerable time; some mate plans initially omitted c2 becoming vacant after c4. Those were corrected before accepted moves, but there is no efficiency or reliable-board-tracking claim. Commentary cadence still failed repeatedly. All decisions own, no chess code/external/delegated evaluations, no foreign-experiment exposure.
+
+Trial213 predeclared: fixed131 White/nominal1800. Try e4/Nf3/d3/Be2/Nc3/short castle when actual opponent replies allow; d3 gives e4 a cheap pawn root. Because d3 blocks Bf1-d3-c4, do not assume Bc4 remains available after d3. Prioritize cheap roots, all targets, and explicit royal flights over premature king walks. No new opponent practice before131. Then fixed132 Black/nominal1800 and formal132 review with actual goal counter. This is a test, not a transfer claim.

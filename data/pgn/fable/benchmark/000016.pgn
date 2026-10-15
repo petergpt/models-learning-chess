@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.05"]
+[Round "16"]
+[White "Stockfish 19"]
+[Black "claude-fable-5-1"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "fable"]
+[GameId "fable/benchmark/000016"]
+[OpponentSetting "skill-0"]
+[Termination "checkmate"]
+
+1. d4 d5 2. a3 Nf6 3. Nf3 e6 4. Bf4 c5 5. e3 Nc6 6. Bb5 Qb6 7. Nc3 a6 8. Be2 Qxb2 9. Na4 Qxa1 10. Qxa1 cxd4 11. Kd1 Ne4 12. Ke1 Bd7 13. Nb2 dxe3 14. fxe3 Bd6 15. h4 Bxf4 16. exf4 O-O 17. Nd1 Rac8 18. h5 h6 19. Qb2 Nd6 20. g4 f6 21. Rh2 Rfe8 22. c3 e5 23. Qa2 Be6 24. Qd2 e4 25. Nh4 Nc4 26. Qc2 Nxa3 27. Qb2 Nc4 28. Qb1 b5 29. Qa2 a5 30. Kf1 Rcd8 31. Kf2 d4 32. Qb1 b4 33. cxb4 axb4 34. Qxe4 Bd5 35. Qb1 Ne3 36. Bf3 Bxf3 37. Qb3+ Kh7 38. Kxf3 Nxd1 39. Qd3+ Kh8 40. Qxd1 Re3+ 41. Kf2 Rde8 42. Qa4 Re2+ 43. Kf1 Rxh2 44. Ng6+ Kh7 45. Qb5 Rh1+ 46. Kg2 Rc1 47. Qf5 Rc3 48. Nh4+ Kg8 49. Qd5+ Kh8 50. Qd7 Rg8 51. Kf2 Rc4 52. g5 fxg5 53. fxg5 Rf8+ 54. Ke1 Ne5 55. Qe7 Nf3+ 56. Kf2 Nxh4+ 57. Qxf8+ Kh7 58. Qf7 Rc8 59. Qb7 Rf8+ 60. Ke1 Nf3+ 61. Ke2 Nxg5 62. Qb5 Ne6 63. Qd3+ Kh8 64. Qb5 Nf4+ 65. Ke1 d3 66. Kd2 Rd8 67. Qb6 Rf8 68. Qxb4 Rf7 69. Qb8+ Kh7 70. Qb5 Rf6 71. Kd1 Rd6 72. Qb4 Rf6 73. Qa5 g5 74. Qa7+ Kg8 75. Qa2+ Rf7 76. Qa8+ Kg7 77. Qa1+ Rf6 78. Qd4 Nxh5 79. Qxd3 Nf4 80. Qe4 g4 81. Qe7+ Kg6 82. Qe5 g3 83. Qe8+ Kg5 84. Qb5+ Rf5 85. Qb3 Kg4 86. Qc4 g2 87. Qg8+ Kf3 88. Qb3+ Kf2 89. Qc2+ Kg3 90. Qxf5 g1=Q+ 91. Kd2 Qd4+ 92. Kc2 Qd3+ 93. Qxd3+ Nxd3 94. Kxd3 h5 95. Kd2 Kg2 96. Kd3 h4 97. Ke4 h3 98. Kd5 h2 99. Ke6 h1=Q 100. Ke7 Qh6 101. Kf7 Kf3 102. Ke7 Ke4 103. Kd8 Qg7 104. Kc8 Kd5 105. Kb8 Kc6 106. Ka8 Qb7# 0-1

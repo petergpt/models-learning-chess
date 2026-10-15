@@ -1,0 +1,1388 @@
+{
+  "stats": [
+    {
+      "opponent": "full-strength",
+      "started": 68,
+      "completed": 68,
+      "wins": 0,
+      "draws": 2,
+      "losses": 66,
+      "unfinished": 0,
+      "score": 0.014705882352941176,
+      "rolling_score": 0.01
+    },
+    {
+      "opponent": "skill-0",
+      "started": 66,
+      "completed": 66,
+      "wins": 51,
+      "draws": 2,
+      "losses": 13,
+      "unfinished": 0,
+      "score": 0.7878787878787878,
+      "rolling_score": 0.74
+    },
+    {
+      "opponent": "elo-1800-setting",
+      "started": 66,
+      "completed": 66,
+      "wins": 14,
+      "draws": 2,
+      "losses": 50,
+      "unfinished": 0,
+      "score": 0.22727272727272727,
+      "rolling_score": 0.16
+    }
+  ],
+  "active_game": null,
+  "storage_bytes": 75002074,
+  "elo": {
+    "version": "nominal-stockfish-davidson-v1",
+    "label": "Provisional engine-relative Elo",
+    "estimate": 1400,
+    "lower": 1270,
+    "upper": 1520,
+    "interval_level": 0.95,
+    "interval_type": "Bayesian equal-tail credible interval",
+    "rated_games_total": 132,
+    "rated_games_in_window": 50,
+    "excluded_uncalibrated": 68,
+    "window": 50,
+    "anchors": {
+      "skill-0": 1320,
+      "elo-1800-setting": 1800
+    },
+    "prior": {
+      "distribution": "normal",
+      "mean": 1500,
+      "sd": 800
+    },
+    "draw_prior": "Uniform(0,1) on equal-strength draw probability; 40 midpoint bins",
+    "uncertainty_note": "Conditional on nominal anchors and model assumptions; excludes systematic anchor calibration error. Not FIDE or platform Elo.",
+    "small_sample": false,
+    "history": [
+      {
+        "game": 3,
+        "timestamp": "2026-09-29T22:20:55.212205+00:00",
+        "rated_games": 1,
+        "window_hash": "7f30a212166b06a13d8dac55fd109c11bb86524eb2575fc410b185afd1c5e58d",
+        "estimate": 2070,
+        "lower": 1110,
+        "upper": 3350,
+        "grid_edge_mass": 2.378566138581732e-10
+      },
+      {
+        "game": 4,
+        "timestamp": "2026-09-29T23:39:52.496335+00:00",
+        "rated_games": 2,
+        "window_hash": "f516324df78dde7442b53f2d26c9bfd9ab6df3325119693cd2c5abd35ae3a1eb",
+        "estimate": 2210,
+        "lower": 1370,
+        "upper": 3440,
+        "grid_edge_mass": 3.2094897771009975e-10
+      },
+      {
+        "game": 5,
+        "timestamp": "2026-09-29T23:52:29.980394+00:00",
+        "rated_games": 3,
+        "window_hash": "cbc731c15647f22abf52a4e8af7fab06479bf53df38db2a4c41c6409727f0adb",
+        "estimate": 2430,
+        "lower": 1660,
+        "upper": 3580,
+        "grid_edge_mass": 5.377561933514864e-10
+      },
+      {
+        "game": 6,
+        "timestamp": "2026-09-30T00:35:37.458605+00:00",
+        "rated_games": 4,
+        "window_hash": "ae8fa05ebd55f71855e6f415c9b9b4030117bf6663e17d787ff57e642c239249",
+        "estimate": 1870,
+        "lower": 1410,
+        "upper": 2460,
+        "grid_edge_mass": 1.2180522057638931e-20
+      },
+      {
+        "game": 9,
+        "timestamp": "2026-09-30T02:25:04.737363+00:00",
+        "rated_games": 5,
+        "window_hash": "f5b83447a719cc03886f34db7a7c272db6a084ae714b6e19382a01471b025aa4",
+        "estimate": 1620,
+        "lower": 1230,
+        "upper": 2050,
+        "grid_edge_mass": 2.4190749257605559e-32
+      },
+      {
+        "game": 10,
+        "timestamp": "2026-09-30T02:41:35.557716+00:00",
+        "rated_games": 6,
+        "window_hash": "9dc47d61f89a285c43336c533dad41d93dc50604362a7d0243ae14429b3d3969",
+        "estimate": 1660,
+        "lower": 1310,
+        "upper": 2080,
+        "grid_edge_mass": 3.4003242858957545e-32
+      },
+      {
+        "game": 11,
+        "timestamp": "2026-09-30T03:27:40.690736+00:00",
+        "rated_games": 7,
+        "window_hash": "a5c97d8b2133d9ef7ee981b23aeba56458c041e0ee8b9b69de8d7d50887d9e87",
+        "estimate": 1600,
+        "lower": 1270,
+        "upper": 1940,
+        "grid_edge_mass": 2.9618455591696048e-43
+      },
+      {
+        "game": 12,
+        "timestamp": "2026-09-30T04:16:27.406803+00:00",
+        "rated_games": 8,
+        "window_hash": "89d4bf473fb4f0a662e0f590b4fa803cdc1c42b7b3b8c586cc1b3cfd9436e14e",
+        "estimate": 1560,
+        "lower": 1250,
+        "upper": 1870,
+        "grid_edge_mass": 2.6808243518121722e-43
+      },
+      {
+        "game": 15,
+        "timestamp": "2026-09-30T05:40:52.927200+00:00",
+        "rated_games": 9,
+        "window_hash": "19fcc9d95d71f256071116d58c1148c0174d63a55c48b9a95f60376394a3868f",
+        "estimate": 1590,
+        "lower": 1300,
+        "upper": 1890,
+        "grid_edge_mass": 1.2716734709511664e-52
+      },
+      {
+        "game": 16,
+        "timestamp": "2026-09-30T06:26:13.079611+00:00",
+        "rated_games": 10,
+        "window_hash": "1024fc5c928263b369e8e54356235dce224403bb3f5b17293e06f39244ba45ea",
+        "estimate": 1610,
+        "lower": 1340,
+        "upper": 1900,
+        "grid_edge_mass": 7.721784694988242e-55
+      },
+      {
+        "game": 17,
+        "timestamp": "2026-09-30T07:01:07.945728+00:00",
+        "rated_games": 11,
+        "window_hash": "44556e5e27cd498e5d20cae0c230052724c9e1546025ec4a24f6011ab39a1b29",
+        "estimate": 1690,
+        "lower": 1430,
+        "upper": 1960,
+        "grid_edge_mass": 3.0285047040603e-54
+      },
+      {
+        "game": 18,
+        "timestamp": "2026-09-30T08:54:09.354910+00:00",
+        "rated_games": 12,
+        "window_hash": "c0beb8ee3fe1492205ca43ddb239eadbac9e0a12f0c48b8fdb61168c95ccb6c6",
+        "estimate": 1650,
+        "lower": 1400,
+        "upper": 1910,
+        "grid_edge_mass": 1.0726340595458205e-65
+      },
+      {
+        "game": 21,
+        "timestamp": "2026-09-30T10:45:31.977937+00:00",
+        "rated_games": 13,
+        "window_hash": "8059ae810694aad4889c186bdc6efc041af426d31e0228a308ec40a8a9f8e870",
+        "estimate": 1670,
+        "lower": 1430,
+        "upper": 1910,
+        "grid_edge_mass": 1.3424143753739164e-65
+      },
+      {
+        "game": 22,
+        "timestamp": "2026-09-30T11:24:37.050467+00:00",
+        "rated_games": 14,
+        "window_hash": "4edc4a26e3891c0546a4e423343ab4056975362279a9dc83564772a52ec353e7",
+        "estimate": 1680,
+        "lower": 1450,
+        "upper": 1920,
+        "grid_edge_mass": 1.6508072645961021e-65
+      },
+      {
+        "game": 23,
+        "timestamp": "2026-09-30T11:46:13.357437+00:00",
+        "rated_games": 15,
+        "window_hash": "93debe6ba3fb20de42f7aa005e0e2c62075d33ab087897bc5713d7d415f489a9",
+        "estimate": 1730,
+        "lower": 1500,
+        "upper": 1970,
+        "grid_edge_mass": 5.140671236898797e-65
+      },
+      {
+        "game": 24,
+        "timestamp": "2026-09-30T13:01:50.836769+00:00",
+        "rated_games": 16,
+        "window_hash": "46d6070ab5f8ea7fb98ee2d6a260f626525edd3ca0996f1980527ef863e4d31b",
+        "estimate": 1770,
+        "lower": 1550,
+        "upper": 2000,
+        "grid_edge_mass": 1.3616311923897965e-64
+      },
+      {
+        "game": 27,
+        "timestamp": "2026-09-30T14:48:18.189419+00:00",
+        "rated_games": 17,
+        "window_hash": "0809b723674b433deab736fd3a581dca1c44689bce8fae4a22032bb0ad7c4c44",
+        "estimate": 1780,
+        "lower": 1560,
+        "upper": 2010,
+        "grid_edge_mass": 1.5422701639409745e-64
+      },
+      {
+        "game": 28,
+        "timestamp": "2026-09-30T15:28:10.777447+00:00",
+        "rated_games": 18,
+        "window_hash": "175875952b2cabdf652a22318be02d99f42eb792629d64efdf46882d3aee5fc0",
+        "estimate": 1780,
+        "lower": 1570,
+        "upper": 2010,
+        "grid_edge_mass": 1.7377438751373327e-64
+      },
+      {
+        "game": 29,
+        "timestamp": "2026-09-30T16:12:46.814814+00:00",
+        "rated_games": 19,
+        "window_hash": "00525e3015ef707c97313811f6a922a9100803af93bf9eed2add99d26cdcccd2",
+        "estimate": 1810,
+        "lower": 1610,
+        "upper": 2040,
+        "grid_edge_mass": 3.8951538984813955e-64
+      },
+      {
+        "game": 30,
+        "timestamp": "2026-09-30T18:03:09.139588+00:00",
+        "rated_games": 20,
+        "window_hash": "f26d64773ea953c22dc4e413b4272c877445238405e2f7fa1416b6a5321115be",
+        "estimate": 1780,
+        "lower": 1590,
+        "upper": 1990,
+        "grid_edge_mass": 1.8079630319133276e-75
+      },
+      {
+        "game": 33,
+        "timestamp": "2026-09-30T19:54:22.626515+00:00",
+        "rated_games": 21,
+        "window_hash": "5eab9abdd3fbd77663376cb7b842ef04956d4cfb17c5e03f78d539c99ed11652",
+        "estimate": 1790,
+        "lower": 1600,
+        "upper": 1990,
+        "grid_edge_mass": 2.0147537281200678e-75
+      },
+      {
+        "game": 34,
+        "timestamp": "2026-09-30T20:12:31.123837+00:00",
+        "rated_games": 22,
+        "window_hash": "c4dc8c2d7803f593f6ff08388ef1db5ef4daec798a06a0def6ffea762243725f",
+        "estimate": 1790,
+        "lower": 1600,
+        "upper": 2000,
+        "grid_edge_mass": 2.2376544158234016e-75
+      },
+      {
+        "game": 35,
+        "timestamp": "2026-09-30T21:21:01.162366+00:00",
+        "rated_games": 23,
+        "window_hash": "90dfb7501944d7442a2289497c42ff768a2a75df11b56e55d17f87fa3419e0fe",
+        "estimate": 1770,
+        "lower": 1580,
+        "upper": 1960,
+        "grid_edge_mass": 9.724653064756807e-87
+      },
+      {
+        "game": 36,
+        "timestamp": "2026-09-30T21:50:50.829367+00:00",
+        "rated_games": 24,
+        "window_hash": "2baaf86a5756ac5598bbfd6280b211170e2a2b23a093e03356e31734ff1a435b",
+        "estimate": 1740,
+        "lower": 1570,
+        "upper": 1930,
+        "grid_edge_mass": 3.95318057357056e-98
+      },
+      {
+        "game": 39,
+        "timestamp": "2026-09-30T23:17:08.172723+00:00",
+        "rated_games": 25,
+        "window_hash": "3e143f264b0c19e7dbcb51e234039f6fee525cccfbc96fb3dcee40fe7be33d6a",
+        "estimate": 1750,
+        "lower": 1570,
+        "upper": 1930,
+        "grid_edge_mass": 4.4634314952740705e-98
+      },
+      {
+        "game": 40,
+        "timestamp": "2026-09-30T23:29:27.955375+00:00",
+        "rated_games": 26,
+        "window_hash": "95e1534770fc27074d4f45aeb8158e9bb67c7df00ad726094101afb0b6e07675",
+        "estimate": 1750,
+        "lower": 1580,
+        "upper": 1930,
+        "grid_edge_mass": 5.022482041202504e-98
+      },
+      {
+        "game": 41,
+        "timestamp": "2026-10-01T00:03:49.069132+00:00",
+        "rated_games": 27,
+        "window_hash": "33de19cf6e2cf0e20767ce33e50b2c899b723fc43215fd2efe95795680b2d456",
+        "estimate": 1780,
+        "lower": 1610,
+        "upper": 1950,
+        "grid_edge_mass": 1.208319180761871e-97
+      },
+      {
+        "game": 42,
+        "timestamp": "2026-10-01T00:39:25.358207+00:00",
+        "rated_games": 28,
+        "window_hash": "8366edbdd3eef51faa2590c54e53db17ffe5d119fefe5a709af88f19529bc34d",
+        "estimate": 1800,
+        "lower": 1630,
+        "upper": 1970,
+        "grid_edge_mass": 2.7024957611494164e-97
+      },
+      {
+        "game": 45,
+        "timestamp": "2026-10-01T01:51:00.073255+00:00",
+        "rated_games": 29,
+        "window_hash": "bf739c60916cb4c415f31ddab7533a99ec69f0c9945b3c11b49a3bc357a283cc",
+        "estimate": 1800,
+        "lower": 1640,
+        "upper": 1970,
+        "grid_edge_mass": 2.9591385282320983e-97
+      },
+      {
+        "game": 46,
+        "timestamp": "2026-10-01T02:25:40.657599+00:00",
+        "rated_games": 30,
+        "window_hash": "0612a04216d350da6f79ba54779bd4937ed7f6c99371cfe0e4ada23e0402cdf4",
+        "estimate": 1800,
+        "lower": 1640,
+        "upper": 1980,
+        "grid_edge_mass": 3.2343491798043976e-97
+      },
+      {
+        "game": 47,
+        "timestamp": "2026-10-01T02:53:43.518564+00:00",
+        "rated_games": 31,
+        "window_hash": "c6119088721c1da2733fcbef11ce1598bedbadef78d18f93d06684de94202ca6",
+        "estimate": 1780,
+        "lower": 1630,
+        "upper": 1950,
+        "grid_edge_mass": 1.445946166333219e-108
+      },
+      {
+        "game": 48,
+        "timestamp": "2026-10-01T03:06:28.966670+00:00",
+        "rated_games": 32,
+        "window_hash": "f88e4c1f0b688dae9d874fdb34ed4f627c0bcdc30ad08f41224207438f9ea1b2",
+        "estimate": 1770,
+        "lower": 1610,
+        "upper": 1920,
+        "grid_edge_mass": 6.135723384445319e-120
+      },
+      {
+        "game": 51,
+        "timestamp": "2026-10-01T04:05:20.765072+00:00",
+        "rated_games": 33,
+        "window_hash": "b5b7de50cbc640a6a71ab208e6d28efc6cf9f8958fb30053795ab0a6bec76d1c",
+        "estimate": 1770,
+        "lower": 1620,
+        "upper": 1930,
+        "grid_edge_mass": 6.78861545804595e-120
+      },
+      {
+        "game": 52,
+        "timestamp": "2026-10-01T05:21:51.932188+00:00",
+        "rated_games": 34,
+        "window_hash": "951db56ba67d079082fd3b9b21a0c3d7cd3de96c83636029b2283da90c0d8a72",
+        "estimate": 1770,
+        "lower": 1620,
+        "upper": 1930,
+        "grid_edge_mass": 7.496964166845172e-120
+      },
+      {
+        "game": 53,
+        "timestamp": "2026-10-01T06:03:02.036244+00:00",
+        "rated_games": 35,
+        "window_hash": "d44dd2dc878f5513cc667994ca7b70d7d01d3ba0c2e6c298cf2f2349b0a6578a",
+        "estimate": 1760,
+        "lower": 1610,
+        "upper": 1910,
+        "grid_edge_mass": 3.0863487407522336e-131
+      },
+      {
+        "game": 54,
+        "timestamp": "2026-10-01T06:24:57.793741+00:00",
+        "rated_games": 36,
+        "window_hash": "19651894a2d3141b448752736174f7652aabcf9eb1eb121a1801e2b5666fe25c",
+        "estimate": 1740,
+        "lower": 1600,
+        "upper": 1890,
+        "grid_edge_mass": 1.2242293998213108e-142
+      },
+      {
+        "game": 57,
+        "timestamp": "2026-10-01T08:02:32.790303+00:00",
+        "rated_games": 37,
+        "window_hash": "069bb80534a72b55a29b5e4b4acf8fc122ee66b38f132bb6b832ab19403345b7",
+        "estimate": 1750,
+        "lower": 1600,
+        "upper": 1890,
+        "grid_edge_mass": 1.3667421614865645e-142
+      },
+      {
+        "game": 58,
+        "timestamp": "2026-10-01T08:20:58.087794+00:00",
+        "rated_games": 38,
+        "window_hash": "a0bb8a4932025065796c91d69d8d52ca7d3fd18d0715b13cf6263d76d004521e",
+        "estimate": 1750,
+        "lower": 1610,
+        "upper": 1890,
+        "grid_edge_mass": 1.522930254482901e-142
+      },
+      {
+        "game": 59,
+        "timestamp": "2026-10-01T09:20:44.304651+00:00",
+        "rated_games": 39,
+        "window_hash": "4d9267acfaad64814a76d36e0bb8489cbee5c2077419e2e6e92616facfaf1cdd",
+        "estimate": 1740,
+        "lower": 1600,
+        "upper": 1880,
+        "grid_edge_mass": 5.921793760534972e-154
+      },
+      {
+        "game": 60,
+        "timestamp": "2026-10-01T09:34:57.609823+00:00",
+        "rated_games": 40,
+        "window_hash": "df8fa9fcf2f4fb8bb8bac0df48219a18b9d49fcf78f2f35038746ad665130660",
+        "estimate": 1720,
+        "lower": 1590,
+        "upper": 1860,
+        "grid_edge_mass": 2.238856737077974e-165
+      },
+      {
+        "game": 63,
+        "timestamp": "2026-10-01T10:54:22.702894+00:00",
+        "rated_games": 41,
+        "window_hash": "77e90fa8e9b200ff2e0b8a280a6782a5c9209d53450ad9c29c0b7a3aa680f9ac",
+        "estimate": 1730,
+        "lower": 1590,
+        "upper": 1860,
+        "grid_edge_mass": 2.5192019150933892e-165
+      },
+      {
+        "game": 64,
+        "timestamp": "2026-10-01T11:07:29.560749+00:00",
+        "rated_games": 42,
+        "window_hash": "9bc5bd00e9540402ba5fd13f6fa43c2f65b28ed4cc2526a8994cceb79d99bb65",
+        "estimate": 1730,
+        "lower": 1600,
+        "upper": 1870,
+        "grid_edge_mass": 2.829176688300311e-165
+      },
+      {
+        "game": 65,
+        "timestamp": "2026-10-01T11:51:49.833120+00:00",
+        "rated_games": 43,
+        "window_hash": "1e724ff88f38302ba5b4b967d917a23b8d335321379e514a7082d7cf7fb64203",
+        "estimate": 1720,
+        "lower": 1590,
+        "upper": 1850,
+        "grid_edge_mass": 1.0551573561248567e-176
+      },
+      {
+        "game": 66,
+        "timestamp": "2026-10-01T12:42:10.020912+00:00",
+        "rated_games": 44,
+        "window_hash": "452c3766ab02cd387b85b34b8b87778248f9aad71cb31858251c59fb98b89d06",
+        "estimate": 1710,
+        "lower": 1580,
+        "upper": 1840,
+        "grid_edge_mass": 3.8489265329334844e-188
+      },
+      {
+        "game": 69,
+        "timestamp": "2026-10-01T14:26:40.197083+00:00",
+        "rated_games": 45,
+        "window_hash": "1f3d613d55d582e707f1be984e514e4ee5d1b5aa8115898de43f82b1d67981d9",
+        "estimate": 1710,
+        "lower": 1580,
+        "upper": 1840,
+        "grid_edge_mass": 4.360939152176806e-188
+      },
+      {
+        "game": 70,
+        "timestamp": "2026-10-01T14:52:22.456361+00:00",
+        "rated_games": 46,
+        "window_hash": "9e60d76d3c5f489340b6b53018a0acb9e0432ca490c0630cf83fe7e54dc63766",
+        "estimate": 1710,
+        "lower": 1590,
+        "upper": 1840,
+        "grid_edge_mass": 4.931499076904844e-188
+      },
+      {
+        "game": 71,
+        "timestamp": "2026-10-01T14:56:51.714648+00:00",
+        "rated_games": 47,
+        "window_hash": "1e346bf8159a37a5aee0396969933bf0de8c3d78826a98223a720191d5329cff",
+        "estimate": 1700,
+        "lower": 1580,
+        "upper": 1830,
+        "grid_edge_mass": 1.781697988922264e-199
+      },
+      {
+        "game": 72,
+        "timestamp": "2026-10-01T15:47:46.003165+00:00",
+        "rated_games": 48,
+        "window_hash": "bd60d3d2a2b966d945f9394e89f4c7834c43947b21ebcd606a851e43dffd1a86",
+        "estimate": 1700,
+        "lower": 1570,
+        "upper": 1820,
+        "grid_edge_mass": 6.321481877016548e-211
+      },
+      {
+        "game": 75,
+        "timestamp": "2026-10-01T17:46:28.464405+00:00",
+        "rated_games": 49,
+        "window_hash": "0316fe9c3eedd1c3bff71b65df6bda46cc856ee528cf9e5cc1008297ff8470b0",
+        "estimate": 1700,
+        "lower": 1580,
+        "upper": 1820,
+        "grid_edge_mass": 7.206458008702601e-211
+      },
+      {
+        "game": 76,
+        "timestamp": "2026-10-01T18:14:51.412742+00:00",
+        "rated_games": 50,
+        "window_hash": "6ff7bbf02950fa7b0451d30be4ac3f92981171097b75bb7265ae678bb7d35961",
+        "estimate": 1680,
+        "lower": 1560,
+        "upper": 1800,
+        "grid_edge_mass": 9.483713445582916e-223
+      },
+      {
+        "game": 77,
+        "timestamp": "2026-10-01T19:07:44.969102+00:00",
+        "rated_games": 51,
+        "window_hash": "0fa96d2cb3ddbbe7aaa6b8757041ab4a3ec771f60ff7f8778b4bc65719925933",
+        "estimate": 1670,
+        "lower": 1550,
+        "upper": 1790,
+        "grid_edge_mass": 2.7589602245599383e-234
+      },
+      {
+        "game": 78,
+        "timestamp": "2026-10-01T19:41:21.246018+00:00",
+        "rated_games": 52,
+        "window_hash": "abf5c9ff98ad0bcc8de987804e5e926e946aef9ebdb9a19a5afdc547a57ed1b8",
+        "estimate": 1680,
+        "lower": 1560,
+        "upper": 1800,
+        "grid_edge_mass": 7.585336559266985e-234
+      },
+      {
+        "game": 81,
+        "timestamp": "2026-10-01T20:37:08.587890+00:00",
+        "rated_games": 53,
+        "window_hash": "6b30a8ab16af93bd863acd6e59de7a4708f617b01887d0ba98cec43febbcbd76",
+        "estimate": 1670,
+        "lower": 1550,
+        "upper": 1790,
+        "grid_edge_mass": 2.7589602245599383e-234
+      },
+      {
+        "game": 82,
+        "timestamp": "2026-10-01T20:59:31.395668+00:00",
+        "rated_games": 54,
+        "window_hash": "d1033b70e51bcdecadb957676c47d4ab5f5f662d7225c66bfe2c9c98a2476a01",
+        "estimate": 1680,
+        "lower": 1560,
+        "upper": 1800,
+        "grid_edge_mass": 9.483713445582916e-223
+      },
+      {
+        "game": 83,
+        "timestamp": "2026-10-01T21:13:13.764008+00:00",
+        "rated_games": 55,
+        "window_hash": "e21e9ea0fbed87e9a8adaa7233b0e82b7d537d1bcf59ad587585bd6fa7faaec3",
+        "estimate": 1710,
+        "lower": 1590,
+        "upper": 1830,
+        "grid_edge_mass": 2.0439584931003704e-210
+      },
+      {
+        "game": 84,
+        "timestamp": "2026-10-01T21:43:25.738487+00:00",
+        "rated_games": 56,
+        "window_hash": "886881eac7b5702500623850f8ca57104a0f9f84f7e686ddf8883b3676b8c885",
+        "estimate": 1700,
+        "lower": 1580,
+        "upper": 1820,
+        "grid_edge_mass": 6.501203769093013e-222
+      },
+      {
+        "game": 87,
+        "timestamp": "2026-10-01T22:19:35.282427+00:00",
+        "rated_games": 57,
+        "window_hash": "e02fb6e4b803bcdc55e82e822bbd39d3bb053f2fb195b178f446cf41d24212ac",
+        "estimate": 1710,
+        "lower": 1590,
+        "upper": 1830,
+        "grid_edge_mass": 2.0439584931003704e-210
+      },
+      {
+        "game": 88,
+        "timestamp": "2026-10-01T22:35:06.602149+00:00",
+        "rated_games": 58,
+        "window_hash": "6e70f068770eebf6de0f8be45f0436ad17cdffc40ca81a4f639f0d185a519fd8",
+        "estimate": 1720,
+        "lower": 1600,
+        "upper": 1850,
+        "grid_edge_mass": 6.244411074274478e-199
+      },
+      {
+        "game": 89,
+        "timestamp": "2026-10-01T22:54:44.478847+00:00",
+        "rated_games": 59,
+        "window_hash": "a1863474ab5d478596c4be52563d404048a70b83773281789dc8d29729fdbbef",
+        "estimate": 1710,
+        "lower": 1590,
+        "upper": 1830,
+        "grid_edge_mass": 2.0439584931003704e-210
+      },
+      {
+        "game": 90,
+        "timestamp": "2026-10-01T23:09:28.768686+00:00",
+        "rated_games": 60,
+        "window_hash": "638a33e28fb812b5add13af47dd516f5e74fdd17a2e2eb7fa93564a8980566d2",
+        "estimate": 1720,
+        "lower": 1600,
+        "upper": 1840,
+        "grid_edge_mass": 4.927751825531555e-210
+      },
+      {
+        "game": 93,
+        "timestamp": "2026-10-02T02:25:03.038579+00:00",
+        "rated_games": 61,
+        "window_hash": "2255792a8f266b3e5f7d490ff02c1b7b029cd4e5c8fd61e98bb83a592e7a5bfa",
+        "estimate": 1710,
+        "lower": 1590,
+        "upper": 1830,
+        "grid_edge_mass": 2.0439584931003704e-210
+      },
+      {
+        "game": 94,
+        "timestamp": "2026-10-02T02:31:53.914148+00:00",
+        "rated_games": 62,
+        "window_hash": "3840d98dc69c8a05db140818650f3dadb1a5a449c262f5d4578795ded10131e1",
+        "estimate": 1720,
+        "lower": 1600,
+        "upper": 1850,
+        "grid_edge_mass": 6.244411074274478e-199
+      },
+      {
+        "game": 95,
+        "timestamp": "2026-10-02T02:45:17.881846+00:00",
+        "rated_games": 63,
+        "window_hash": "e7ced207b7b491ba2957237bdd7c07ae4ae68f54354ebeae3260beb8b8a73c06",
+        "estimate": 1710,
+        "lower": 1590,
+        "upper": 1830,
+        "grid_edge_mass": 2.0439584931003704e-210
+      },
+      {
+        "game": 96,
+        "timestamp": "2026-10-02T02:59:15.550455+00:00",
+        "rated_games": 64,
+        "window_hash": "1448d7bdaa01cc09dddf333f42bf61a3e0bd89eb9dc1fc1a19ab93a0f0d20ba4",
+        "estimate": 1700,
+        "lower": 1580,
+        "upper": 1820,
+        "grid_edge_mass": 6.501203769093013e-222
+      },
+      {
+        "game": 99,
+        "timestamp": "2026-10-02T04:24:11.402807+00:00",
+        "rated_games": 65,
+        "window_hash": "93b656a954d29b9edd2f6d37c1abee469591047d8c5f07e873a7ed61aca0beac",
+        "estimate": 1690,
+        "lower": 1570,
+        "upper": 1810,
+        "grid_edge_mass": 2.527273078116882e-222
+      },
+      {
+        "game": 100,
+        "timestamp": "2026-10-02T04:43:47.410427+00:00",
+        "rated_games": 66,
+        "window_hash": "e7cdb8998bd198ae330584d920f4ed2055161206cc4d15b9a231d8d354279964",
+        "estimate": 1680,
+        "lower": 1560,
+        "upper": 1800,
+        "grid_edge_mass": 9.483713445582684e-223
+      },
+      {
+        "game": 101,
+        "timestamp": "2026-10-02T05:08:13.235750+00:00",
+        "rated_games": 67,
+        "window_hash": "255fc673d3e1fb674cec5acba2ada50c484fc0e1f91d3dde5dbca3b46affc6fe",
+        "estimate": 1670,
+        "lower": 1550,
+        "upper": 1790,
+        "grid_edge_mass": 2.758960224559944e-234
+      },
+      {
+        "game": 102,
+        "timestamp": "2026-10-02T05:30:44.747547+00:00",
+        "rated_games": 68,
+        "window_hash": "17782a947d9ab4e617b0b8a2377a83bff46a864d0057187db3b4c74cedfda17e",
+        "estimate": 1660,
+        "lower": 1540,
+        "upper": 1780,
+        "grid_edge_mass": 7.82903089948338e-246
+      },
+      {
+        "game": 105,
+        "timestamp": "2026-10-02T06:44:29.893243+00:00",
+        "rated_games": 69,
+        "window_hash": "3d82f23fd3ae58e2e69282d0415487576b2954b3759b20a3244adda3de2daf52",
+        "estimate": 1650,
+        "lower": 1530,
+        "upper": 1770,
+        "grid_edge_mass": 2.6603322867022107e-246
+      },
+      {
+        "game": 106,
+        "timestamp": "2026-10-02T06:56:21.411452+00:00",
+        "rated_games": 70,
+        "window_hash": "703d79990c7f7a7f835c9ca5c0ad0e063a1c828767ad8337cc6b2ded6ec56b59",
+        "estimate": 1660,
+        "lower": 1540,
+        "upper": 1780,
+        "grid_edge_mass": 9.670289325832593e-235
+      },
+      {
+        "game": 107,
+        "timestamp": "2026-10-02T07:18:29.010145+00:00",
+        "rated_games": 71,
+        "window_hash": "144a620de096c945d1cee304d0e987d95caea9f5a54ef6da96530d233b22e7c1",
+        "estimate": 1670,
+        "lower": 1550,
+        "upper": 1790,
+        "grid_edge_mass": 2.758960224559944e-234
+      },
+      {
+        "game": 108,
+        "timestamp": "2026-10-02T07:30:54.639089+00:00",
+        "rated_games": 72,
+        "window_hash": "78142cc75667723f37094fd91710986d97fe9e49ac4fbc1bd688cc863cf88559",
+        "estimate": 1660,
+        "lower": 1540,
+        "upper": 1780,
+        "grid_edge_mass": 7.82903089948338e-246
+      },
+      {
+        "game": 111,
+        "timestamp": "2026-10-02T08:36:00.987108+00:00",
+        "rated_games": 73,
+        "window_hash": "afd41df45d84241073752a08771735c27f22794530f6625edc3194e74cec3a03",
+        "estimate": 1670,
+        "lower": 1550,
+        "upper": 1790,
+        "grid_edge_mass": 2.758960224559944e-234
+      },
+      {
+        "game": 112,
+        "timestamp": "2026-10-02T08:53:33.274144+00:00",
+        "rated_games": 74,
+        "window_hash": "a937a891f3f2c3a9e548d11c243c5d80b6463fd309cd660bfc81fce0fdf749ce",
+        "estimate": 1660,
+        "lower": 1540,
+        "upper": 1780,
+        "grid_edge_mass": 9.670289325832587e-235
+      },
+      {
+        "game": 113,
+        "timestamp": "2026-10-02T09:35:35.489153+00:00",
+        "rated_games": 75,
+        "window_hash": "2bfc0a0090d2dc64df12e6d04fc3270763aeba734c67ae187aa96d124bfee66f",
+        "estimate": 1650,
+        "lower": 1530,
+        "upper": 1770,
+        "grid_edge_mass": 2.660332286702496e-246
+      },
+      {
+        "game": 114,
+        "timestamp": "2026-10-02T10:50:16.961095+00:00",
+        "rated_games": 76,
+        "window_hash": "181e9c60208a2d7a88e0e497ef7d72ccc18969121678a2bc4d5b39e512ab8940",
+        "estimate": 1640,
+        "lower": 1520,
+        "upper": 1760,
+        "grid_edge_mass": 7.148334176309306e-258
+      },
+      {
+        "game": 117,
+        "timestamp": "2026-10-02T12:22:15.943846+00:00",
+        "rated_games": 77,
+        "window_hash": "c0e947ef7462e264117226c0505e79fe43fb5ee2ca2a179c1d5dc86a3514c5b1",
+        "estimate": 1620,
+        "lower": 1500,
+        "upper": 1750,
+        "grid_edge_mass": 2.266319093599371e-258
+      },
+      {
+        "game": 118,
+        "timestamp": "2026-10-02T13:26:08.833525+00:00",
+        "rated_games": 78,
+        "window_hash": "d56785d2df501fd1ea7ea0d3bbc6ed1af30d9ed890f06928650b4be02d69445c",
+        "estimate": 1590,
+        "lower": 1470,
+        "upper": 1710,
+        "grid_edge_mass": 1.9179432042474254e-256
+      },
+      {
+        "game": 119,
+        "timestamp": "2026-10-02T14:12:01.929032+00:00",
+        "rated_games": 79,
+        "window_hash": "57e13bd1916d550f1661035e75d908a9445bbc011cf13490a40d01e42675d765",
+        "estimate": 1580,
+        "lower": 1460,
+        "upper": 1700,
+        "grid_edge_mass": 5.847721432550979e-247
+      },
+      {
+        "game": 120,
+        "timestamp": "2026-10-02T15:31:28.892030+00:00",
+        "rated_games": 80,
+        "window_hash": "0856cb23cc39fd22ee5d0a47008ac471bea488ee25d4b4ba936b770ba9e52bce",
+        "estimate": 1590,
+        "lower": 1470,
+        "upper": 1710,
+        "grid_edge_mass": 1.3410093759487664e-247
+      },
+      {
+        "game": 123,
+        "timestamp": "2026-10-02T18:00:30.455449+00:00",
+        "rated_games": 81,
+        "window_hash": "c39ec12ab4021829441daf904c3635876a4bce75477ac6c0e761323818fbad49",
+        "estimate": 1590,
+        "lower": 1470,
+        "upper": 1710,
+        "grid_edge_mass": 8.39598924977976e-250
+      },
+      {
+        "game": 124,
+        "timestamp": "2026-10-02T18:14:07.503747+00:00",
+        "rated_games": 82,
+        "window_hash": "ab345fc96d86ef3ed85c85069366d949899d585aa37f5c2fd6808b0b2f97cb74",
+        "estimate": 1600,
+        "lower": 1480,
+        "upper": 1720,
+        "grid_edge_mass": 2.672235536553034e-259
+      },
+      {
+        "game": 125,
+        "timestamp": "2026-10-02T19:18:56.966649+00:00",
+        "rated_games": 83,
+        "window_hash": "78a9f96cc8d4a2aeff026c673938a5a09c1dac30f43e6c5a343e85f30a618933",
+        "estimate": 1590,
+        "lower": 1470,
+        "upper": 1710,
+        "grid_edge_mass": 8.39598924977976e-250
+      },
+      {
+        "game": 126,
+        "timestamp": "2026-10-02T19:45:38.644414+00:00",
+        "rated_games": 84,
+        "window_hash": "b67d21b5b14d677039eb5606276291199322b82784d7b1d82c18c8391d2124d0",
+        "estimate": 1580,
+        "lower": 1460,
+        "upper": 1700,
+        "grid_edge_mass": 2.5784072443182945e-240
+      },
+      {
+        "game": 129,
+        "timestamp": "2026-10-02T20:21:15.188899+00:00",
+        "rated_games": 85,
+        "window_hash": "c73ffe1b95c1217971540bb477fed457e541cd73c5d2a906f383fdcc394b2024",
+        "estimate": 1590,
+        "lower": 1470,
+        "upper": 1710,
+        "grid_edge_mass": 8.39598924977976e-250
+      },
+      {
+        "game": 130,
+        "timestamp": "2026-10-02T20:32:54.240547+00:00",
+        "rated_games": 86,
+        "window_hash": "fa78fb889e7a5367bc44bd05bf73f0cc397c055ac40877fe69aa3e77f20cb556",
+        "estimate": 1580,
+        "lower": 1460,
+        "upper": 1700,
+        "grid_edge_mass": 3.6373371982407893e-249
+      },
+      {
+        "game": 131,
+        "timestamp": "2026-10-02T21:21:16.155747+00:00",
+        "rated_games": 87,
+        "window_hash": "9112606c67e9f62e39ab58aa17989bc2fdc93c4d5b0a1c9a7c8d03c75fc83a97",
+        "estimate": 1590,
+        "lower": 1470,
+        "upper": 1710,
+        "grid_edge_mass": 8.395989249779721e-250
+      },
+      {
+        "game": 132,
+        "timestamp": "2026-10-02T22:03:13.107511+00:00",
+        "rated_games": 88,
+        "window_hash": "b06e7d170670007c0e29c0707f1f1ca3e91433b433f94364b70963bbe7dbf9d3",
+        "estimate": 1580,
+        "lower": 1460,
+        "upper": 1700,
+        "grid_edge_mass": 2.5784072443182444e-240
+      },
+      {
+        "game": 135,
+        "timestamp": "2026-10-02T23:34:40.657300+00:00",
+        "rated_games": 89,
+        "window_hash": "400e156ffae0853eb545defa825d17e9debb898888d807281e649af3f0d1e1b1",
+        "estimate": 1570,
+        "lower": 1450,
+        "upper": 1690,
+        "grid_edge_mass": 1.0829416474668066e-239
+      },
+      {
+        "game": 136,
+        "timestamp": "2026-10-03T00:01:13.920607+00:00",
+        "rated_games": 90,
+        "window_hash": "ef00e63ecb3da8cafea2af8bc5bb0dac6313e024f14649485d7a3172ba9fc546",
+        "estimate": 1580,
+        "lower": 1460,
+        "upper": 1700,
+        "grid_edge_mass": 3.6373371982407893e-249
+      },
+      {
+        "game": 137,
+        "timestamp": "2026-10-03T00:22:23.108728+00:00",
+        "rated_games": 91,
+        "window_hash": "b5c30469f1b07fed34eaabb090cc3278c0d83549a091043e34a0035ce15e397e",
+        "estimate": 1570,
+        "lower": 1450,
+        "upper": 1690,
+        "grid_edge_mass": 1.0829416474668066e-239
+      },
+      {
+        "game": 138,
+        "timestamp": "2026-10-03T00:46:36.855022+00:00",
+        "rated_games": 92,
+        "window_hash": "f31d51a7600fb7424becb0af65156542fae4ef8a6359406060c8cc60cbe8b502",
+        "estimate": 1560,
+        "lower": 1440,
+        "upper": 1680,
+        "grid_edge_mass": 3.151551951841271e-230
+      },
+      {
+        "game": 141,
+        "timestamp": "2026-10-03T01:49:25.748118+00:00",
+        "rated_games": 93,
+        "window_hash": "4b6e48e88a9c702097b264308a4d9ee810c51a240488bd0ff05ab76bf23d38e3",
+        "estimate": 1550,
+        "lower": 1430,
+        "upper": 1670,
+        "grid_edge_mass": 1.2326129064481356e-229
+      },
+      {
+        "game": 142,
+        "timestamp": "2026-10-03T01:55:44.123870+00:00",
+        "rated_games": 94,
+        "window_hash": "d2e2bdb1537dfc75764ef55c6ee506981b26202d4e3be3a55148ce425d0abc30",
+        "estimate": 1560,
+        "lower": 1440,
+        "upper": 1680,
+        "grid_edge_mass": 4.368739800162836e-239
+      },
+      {
+        "game": 143,
+        "timestamp": "2026-10-03T02:14:55.513520+00:00",
+        "rated_games": 95,
+        "window_hash": "d170de3756b2d4d3ad1a3ec62b71e8913d5f13c771289f6372952dadd7ac45fd",
+        "estimate": 1550,
+        "lower": 1430,
+        "upper": 1670,
+        "grid_edge_mass": 1.2326129064481356e-229
+      },
+      {
+        "game": 144,
+        "timestamp": "2026-10-03T02:35:19.364404+00:00",
+        "rated_games": 96,
+        "window_hash": "23a96bcabc9f2a54e88d80f60d08588ce33a6d06edf6166ee3a8cc4eefdefe0c",
+        "estimate": 1540,
+        "lower": 1420,
+        "upper": 1660,
+        "grid_edge_mass": 3.3996588190973387e-220
+      },
+      {
+        "game": 147,
+        "timestamp": "2026-10-03T03:26:25.512560+00:00",
+        "rated_games": 97,
+        "window_hash": "ddf9170f333b35c6c5b5f4541cd08eb6e32d0fe2a8af80d6002eae5700ff7c28",
+        "estimate": 1550,
+        "lower": 1430,
+        "upper": 1670,
+        "grid_edge_mass": 1.2326129064481356e-229
+      },
+      {
+        "game": 148,
+        "timestamp": "2026-10-03T03:38:54.280584+00:00",
+        "rated_games": 98,
+        "window_hash": "0e7ecdce730aef3c7f801af7524d42d9c205f1914b514f6a777c8210cb73888b",
+        "estimate": 1540,
+        "lower": 1420,
+        "upper": 1660,
+        "grid_edge_mass": 4.630512630336536e-229
+      },
+      {
+        "game": 149,
+        "timestamp": "2026-10-03T03:56:24.961481+00:00",
+        "rated_games": 99,
+        "window_hash": "50656f3027d10efd298ec71bc85a35de2023dd862af8194e872f91b8df3d1295",
+        "estimate": 1530,
+        "lower": 1410,
+        "upper": 1650,
+        "grid_edge_mass": 1.238166283335741e-219
+      },
+      {
+        "game": 150,
+        "timestamp": "2026-10-03T04:06:50.401692+00:00",
+        "rated_games": 100,
+        "window_hash": "8965a23570a4c793deef3cfd29bc11a89427276a7d6ed10fde898ae680ee032b",
+        "estimate": 1540,
+        "lower": 1420,
+        "upper": 1660,
+        "grid_edge_mass": 3.3996588190973387e-220
+      },
+      {
+        "game": 153,
+        "timestamp": "2026-10-03T04:48:25.523373+00:00",
+        "rated_games": 101,
+        "window_hash": "c0735af3b7d29775ce250bea7d9e819e0ff15d30a4b9021ce4fc54cdcda8c0db",
+        "estimate": 1530,
+        "lower": 1410,
+        "upper": 1650,
+        "grid_edge_mass": 1.238166283335741e-219
+      },
+      {
+        "game": 154,
+        "timestamp": "2026-10-03T04:58:05.326079+00:00",
+        "rated_games": 102,
+        "window_hash": "2c2dcde1f9d0bada9adef3c253c238b3fec2a81e39f556e7371d3cbcdb358667",
+        "estimate": 1510,
+        "lower": 1390,
+        "upper": 1640,
+        "grid_edge_mass": 4.3329174057472195e-219
+      },
+      {
+        "game": 155,
+        "timestamp": "2026-10-03T05:20:22.373907+00:00",
+        "rated_games": 103,
+        "window_hash": "f448a18b42773f65158d90ad0c8dcdd60240018285035cd9de9aa838e39d5baa",
+        "estimate": 1500,
+        "lower": 1380,
+        "upper": 1630,
+        "grid_edge_mass": 1.0976980106252961e-209
+      },
+      {
+        "game": 156,
+        "timestamp": "2026-10-03T05:44:05.955078+00:00",
+        "rated_games": 104,
+        "window_hash": "028327d3427f41fff3cf0ff2df7807f1cbbfc954ec0607ca26804801284aee71",
+        "estimate": 1500,
+        "lower": 1370,
+        "upper": 1620,
+        "grid_edge_mass": 2.7163538002052086e-200
+      },
+      {
+        "game": 159,
+        "timestamp": "2026-10-03T06:44:20.690103+00:00",
+        "rated_games": 105,
+        "window_hash": "2159c29b6d6b26869eb9c5d957a94e4cc8929125b77c4fa767e9980f67da25e3",
+        "estimate": 1480,
+        "lower": 1360,
+        "upper": 1600,
+        "grid_edge_mass": 8.588788185612986e-200
+      },
+      {
+        "game": 160,
+        "timestamp": "2026-10-03T07:00:16.176504+00:00",
+        "rated_games": 106,
+        "window_hash": "1047c192411e2136bad63af2a4f95dd33b1f90bf5858374924cce57e499f4f7c",
+        "estimate": 1470,
+        "lower": 1350,
+        "upper": 1590,
+        "grid_edge_mass": 2.613895459629994e-199
+      },
+      {
+        "game": 161,
+        "timestamp": "2026-10-03T07:19:10.750321+00:00",
+        "rated_games": 107,
+        "window_hash": "9e3a7632f0c1285b8ae49078f86eb082bf2ef24702d830b5b102fe92ed23772e",
+        "estimate": 1460,
+        "lower": 1340,
+        "upper": 1580,
+        "grid_edge_mass": 5.930331245145137e-190
+      },
+      {
+        "game": 162,
+        "timestamp": "2026-10-03T07:35:33.941759+00:00",
+        "rated_games": 108,
+        "window_hash": "5e64b14a2f9cbd32b155889c070dd54e8b19b718959533af3651974c82015309",
+        "estimate": 1450,
+        "lower": 1330,
+        "upper": 1570,
+        "grid_edge_mass": 1.3114389807140615e-180
+      },
+      {
+        "game": 165,
+        "timestamp": "2026-10-03T08:11:35.352964+00:00",
+        "rated_games": 109,
+        "window_hash": "d4964da4d9874327ef37d5e731e3eb0fc3490af1bf0173db78a502b2a31b4019",
+        "estimate": 1460,
+        "lower": 1340,
+        "upper": 1580,
+        "grid_edge_mass": 5.930331245145137e-190
+      },
+      {
+        "game": 166,
+        "timestamp": "2026-10-03T08:32:42.701120+00:00",
+        "rated_games": 110,
+        "window_hash": "a285e19452c9911202a150fabe7dad49fde83f11123cabfde3fb77cde33ec6d6",
+        "estimate": 1430,
+        "lower": 1310,
+        "upper": 1550,
+        "grid_edge_mass": 9.606006470627042e-180
+      },
+      {
+        "game": 167,
+        "timestamp": "2026-10-03T08:54:37.773284+00:00",
+        "rated_games": 111,
+        "window_hash": "fc130e19d7d8695ae40a2c98c111afa64185bbaa9e1bd0373f3c21c4cdf776ec",
+        "estimate": 1420,
+        "lower": 1290,
+        "upper": 1540,
+        "grid_edge_mass": 1.9406878229736065e-170
+      },
+      {
+        "game": 168,
+        "timestamp": "2026-10-03T09:06:43.208427+00:00",
+        "rated_games": 112,
+        "window_hash": "86e72f42a819df36c72a2a1ffb4c933485831c588e994ebe478adf32ca9e1e63",
+        "estimate": 1410,
+        "lower": 1280,
+        "upper": 1530,
+        "grid_edge_mass": 3.80766147011725e-161
+      },
+      {
+        "game": 171,
+        "timestamp": "2026-10-03T09:48:32.548484+00:00",
+        "rated_games": 113,
+        "window_hash": "27dac7477f916aeea64781dc8d71c1963efd3a29d2397dc9ceae15b3d1bda3c7",
+        "estimate": 1420,
+        "lower": 1290,
+        "upper": 1540,
+        "grid_edge_mass": 1.9406878229736065e-170
+      },
+      {
+        "game": 172,
+        "timestamp": "2026-10-03T10:12:10.490693+00:00",
+        "rated_games": 114,
+        "window_hash": "35cac5a2696e19b13761736284b04160012cd7b7e6587911019ae814050f1091",
+        "estimate": 1410,
+        "lower": 1290,
+        "upper": 1540,
+        "grid_edge_mass": 5.33514830896587e-172
+      },
+      {
+        "game": 173,
+        "timestamp": "2026-10-03T10:42:27.800741+00:00",
+        "rated_games": 115,
+        "window_hash": "999460607065ddcecae184c42e546a64ab27c9ec0acadebfc66e6a144eca80f1",
+        "estimate": 1400,
+        "lower": 1280,
+        "upper": 1530,
+        "grid_edge_mass": 1.0311668870171604e-162
+      },
+      {
+        "game": 174,
+        "timestamp": "2026-10-03T11:07:14.104145+00:00",
+        "rated_games": 116,
+        "window_hash": "9d8490d9b52152a8b7e2921b2b94d6b4aed5b804c1f3884ef27e6604cb3b239e",
+        "estimate": 1390,
+        "lower": 1270,
+        "upper": 1520,
+        "grid_edge_mass": 1.9290471033020036e-153
+      },
+      {
+        "game": 177,
+        "timestamp": "2026-10-03T12:12:41.942485+00:00",
+        "rated_games": 117,
+        "window_hash": "9378ead856483652f5f3db5d93902b134552fa10bee85f910c8caee0dbfdb101",
+        "estimate": 1400,
+        "lower": 1280,
+        "upper": 1530,
+        "grid_edge_mass": 1.0311668870171604e-162
+      },
+      {
+        "game": 178,
+        "timestamp": "2026-10-03T12:17:23.459132+00:00",
+        "rated_games": 118,
+        "window_hash": "a7c81ce71c1b582b3b46ea9d9f4a24ffc0ef3db57560add207ce349f089bb9c7",
+        "estimate": 1410,
+        "lower": 1290,
+        "upper": 1540,
+        "grid_edge_mass": 5.33514830896587e-172
+      },
+      {
+        "game": 179,
+        "timestamp": "2026-10-03T12:24:18.468538+00:00",
+        "rated_games": 119,
+        "window_hash": "1caef0c72b5c2ae55eef059dc9c2bc50583b19629c9e91e3a08da5345b1290ea",
+        "estimate": 1400,
+        "lower": 1280,
+        "upper": 1530,
+        "grid_edge_mass": 1.0311668870171604e-162
+      },
+      {
+        "game": 180,
+        "timestamp": "2026-10-03T12:45:24.208566+00:00",
+        "rated_games": 120,
+        "window_hash": "f4022d2b391fa148192e738e196cdc298a36d6123053df24511f2c629c078ff9",
+        "estimate": 1400,
+        "lower": 1270,
+        "upper": 1520,
+        "grid_edge_mass": 2.4241320830983854e-155
+      },
+      {
+        "game": 183,
+        "timestamp": "2026-10-03T13:51:38.172358+00:00",
+        "rated_games": 121,
+        "window_hash": "7526e764333162f255a74de7bf1d6dc28136f8a4036d71f5323365aa7471d76e",
+        "estimate": 1390,
+        "lower": 1260,
+        "upper": 1510,
+        "grid_edge_mass": 5.8897365385501874e-155
+      },
+      {
+        "game": 184,
+        "timestamp": "2026-10-03T14:00:44.095917+00:00",
+        "rated_games": 122,
+        "window_hash": "bd7c81f1873dd21ed3a2d8a83637372ce13835340290c3ca75eb36241c7f4113",
+        "estimate": 1400,
+        "lower": 1280,
+        "upper": 1520,
+        "grid_edge_mass": 3.197425606345763e-164
+      },
+      {
+        "game": 185,
+        "timestamp": "2026-10-03T14:22:03.496762+00:00",
+        "rated_games": 123,
+        "window_hash": "af5c441e8f50fa26b4d0e79143c9efaa112034721e1104287e6bc7ec116aafcb",
+        "estimate": 1410,
+        "lower": 1290,
+        "upper": 1540,
+        "grid_edge_mass": 1.2736367625736109e-164
+      },
+      {
+        "game": 186,
+        "timestamp": "2026-10-03T14:31:15.706595+00:00",
+        "rated_games": 124,
+        "window_hash": "18fe15267af5e40c428b52f709bf976cea8aa8ab88d289ce966db79b32b342a9",
+        "estimate": 1420,
+        "lower": 1300,
+        "upper": 1550,
+        "grid_edge_mass": 4.914564591201272e-165
+      },
+      {
+        "game": 189,
+        "timestamp": "2026-10-03T15:16:52.432562+00:00",
+        "rated_games": 125,
+        "window_hash": "0a81035c0e8035739ee6aa8df775cfc348a2579d63a2ea580e3261734da3c054",
+        "estimate": 1410,
+        "lower": 1290,
+        "upper": 1540,
+        "grid_edge_mass": 1.2736367625736109e-164
+      },
+      {
+        "game": 190,
+        "timestamp": "2026-10-03T15:23:52.579882+00:00",
+        "rated_games": 126,
+        "window_hash": "06bad7c29555f7837d30c674d400dba1aaab2343b6cff73205111ff6f2a15a2e",
+        "estimate": 1420,
+        "lower": 1300,
+        "upper": 1550,
+        "grid_edge_mass": 6.471382400695489e-174
+      },
+      {
+        "game": 191,
+        "timestamp": "2026-10-03T15:30:48.675353+00:00",
+        "rated_games": 127,
+        "window_hash": "d4e9fec24079576bfa97c5dca9dfac1ab730b21e2ecd9b456d2c1b46fc79e443",
+        "estimate": 1410,
+        "lower": 1290,
+        "upper": 1540,
+        "grid_edge_mass": 1.2736367625736109e-164
+      },
+      {
+        "game": 192,
+        "timestamp": "2026-10-03T15:41:58.983563+00:00",
+        "rated_games": 128,
+        "window_hash": "7f17ea8e3f0b759eb565fe4c53aabcd365969a80a1ef3061dce50f20b4b57ea7",
+        "estimate": 1420,
+        "lower": 1300,
+        "upper": 1550,
+        "grid_edge_mass": 4.914564591201272e-165
+      },
+      {
+        "game": 195,
+        "timestamp": "2026-10-03T16:22:48.583660+00:00",
+        "rated_games": 129,
+        "window_hash": "b39edd64bc7962ecda1b3d4adc5cd926395307bc1e430d35e9e45180317b389c",
+        "estimate": 1410,
+        "lower": 1290,
+        "upper": 1540,
+        "grid_edge_mass": 1.2736367625736109e-164
+      },
+      {
+        "game": 196,
+        "timestamp": "2026-10-03T16:42:46.090879+00:00",
+        "rated_games": 130,
+        "window_hash": "46f816e6bf4f374a3835b3545d3368140b8b8d0adedf758e14a53912c0fef9c2",
+        "estimate": 1400,
+        "lower": 1280,
+        "upper": 1520,
+        "grid_edge_mass": 3.197425606345763e-164
+      },
+      {
+        "game": 197,
+        "timestamp": "2026-10-03T16:52:33.367410+00:00",
+        "rated_games": 131,
+        "window_hash": "00b1a46b3ef05028fd18127a181fd92ed9b60101657bec504af13b70bb829c23",
+        "estimate": 1410,
+        "lower": 1290,
+        "upper": 1540,
+        "grid_edge_mass": 1.2736367625736109e-164
+      },
+      {
+        "game": 198,
+        "timestamp": "2026-10-03T17:02:53.992795+00:00",
+        "rated_games": 132,
+        "window_hash": "e5f1059d82b73f0d4210750ee612f03ca51f075e8e0652b526afd8fe1a08b06d",
+        "estimate": 1400,
+        "lower": 1270,
+        "upper": 1520,
+        "grid_edge_mass": 2.424132083098323e-155
+      }
+    ],
+    "grid_edge_mass": 2.424132083098323e-155
+  },
+  "elo_note": "Provisional engine-relative scale with 95% credible interval; not measured human Elo."
+}

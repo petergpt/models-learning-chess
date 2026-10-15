@@ -1,0 +1,35 @@
+# Own decision card after134 /practice110
+
+134scored38W/6D/90L;full0/0/46,skill31/3/10,nom7/3/34.1530[1400,1650],conditional latest50of88rated,46full excluded;not humanElo. Formal138;endpoint200;goalactive/no tokenbudget.
+
+ACTUAL board/reply. Queen/rook destinations: EVERY actual opposing bishop, knight capture/checkforks, cheapestattacker andfullcapturechain. Pawn-rootedQ9 canstill loseforB3. Pawn directions andFIRST bodiesincludingownpieces. Kingflights after actualforcingchecks includerookchecks retainingqueen/bishop controls and ownbodies.
+
+134failed20-move target:16dxe5 releasedd6,WhitepassedpawncaptBe7;18Qxe7whilePe4shieldedrookfile. Bf4/Rbd8 Bd6/Qe6 overlookedBa2-b3-c4-d5-e6,wholequeenlost;Bxf8/Rxf8 alsocostexchange. Practicalminus9,resigned23Nfd2,45plies0illegal. Full46losses:stagnation.
+
+Practice110Trial220:16Ne8/e6 17fxe6/dxe6 18Bc8/Nc3 19Nc4/Nd5,4own8plies0illegal,unscored*. Fairpawnpair/equalmaterial retained,Q/R targetmetlocally. Be7stillblockadesWhitePe6 andhasQd8root;Pe6blocksRe1. Originald6line not repeated;f6bishopretreat nottested;development/finalpositionunresolved. Nofullgamesaveclaim.
+
+Trial221 fixed135White skill0:actualdevelopment/castle andallbishopdestinationchecks. No wholeQ/Rloss through20ownmoves;recordactualresult. Attemptshorteractual-reply analysis beforedistantbranches;efficiency/updatecadence notprovedrepaired. Formal138.
+
+
+# Own bishop-escape and conversion review after benchmark135
+
+Trial221 White skill0 won34Ra1#,67plies,0illegal. Resultseq10879,2026-10-08T19:35:53.602971+00:00. Completed PGN and fresh status read:135scored39W/6D/90L;full0/0/46,skill32/3/10,nom7/3/34. Provisional engine-relative1540,conditional95% credible interval[1410,1660],latest50of89rated,46full-strength excluded. Nominal anchors/model assumptions and calibration caveats remain;not humanElo. Formal138;endpoint200;goalactive/no tokenbudget.
+
+The20-own-move local target of no wholequeen/rookloss was met andI castled6, but14Rfe1 overlooked a bishop trap. After13exf5/gxf5,14...f4 attackedBe3. Qd2 andf2 blocked backward retreats; d4/f4 were attacked bye5, c5 byd6, g5 byh6, andb6/a7 byNc8. H6 also hadmultiple defenders, includingRh8 throughh7. I chose15Bxf4 expectingexf4/Qxf4 to recover two pawns forB3, a netminus1 by simplepoints. That expected line was NOTplayed. BlackinsteadBxh3 allowed16gxh3 to capturea wholebishop;Nge7 thenagainmissedexf4 and17Bg3 savedmy bishop. These gifts, rather than a demonstrated escape, repairedthe trap. h3/gxh3 removedg2cover; f2 retaineda cheapBg3root.
+
+18Nd4 escapedthee4pawn;19Qxe3 removedthe advancedpawn withoutmovingf2 andwasnotattacked bythe actualg7bishop/knights. 20Ne6 hadcheapd5support andforkedQd8/Bg7. BlackBxc3 ignoredthequeen attack:21Nxd8/Kxd8 gainedQueen9forKnight3;22bxc3 completedthefairB/Npair. 23Qf3 escapedNf5's queen/bishopfork, hadBe2support andattackedtheunrootedknight;BlackRg8 pinnedBg3toKg1 butignoredtheknight, allowing24Qxf5. Arootedking-shield bishop canstillbetrapped:24...h4 attackedpinnedBg3, soitsdirectBxh4 wouldexposeKg1 andwasnotplayed.
+
+25Bg4 interposedtheOTHER bishop, supportedbyh3 andQf5, andopenedRe1's file. Rxg4/Qxg4 gainedR5forB3;this removedthepin. Then27Bxh4+ removedtheh-pawn. No claimthat25Bg4 forcedmate:Blackcouldremoveitsroot orpreparea checking-queen capture, andactualRxg4 didremoveit. AnunplayedQf8+ whileRg8remained wasrejectedmentally becauseRg8xf8 couldcaptureanunrootedqueen.
+
+28Re8 usedtheclearfile. Nb6 exposedRe8toRa8;29Rxa8 waschosenexpectinga fairrookpair withNxa8, butBlackc5 insteadgavea wholelastrook. 30Qg7+ usedRa8's back-rankcontrols andd5's actualc6pawncontrol;Nd7 blockedthecheck. 31Rd8 wasrootedbyBh4-g5-f6-e7-d8, notbythefarqueen. Kb6 releasedNd7's kingroot;32Rxd7 capturedthelastknight withQg7support. 33Rxb7 capturedanunrootedpawn andclearedthequeen's rank7path. ActualKxa4 removedmy a-pawn;34Ra1# usedRa1's a-file andfarRb7's b3/b4/b5controls, withc2/c3 pawncontrols also onb3/b4. Rb7 stayedtoo farforthekingtocaptureit. AnunplayedRb5+ wouldloseits a4-pawnroot ifKxa4 occurred;do notretainrootsaftertheirpawnsarecaptured. FinalsimplematerialWhiteQ9+2R10+B3+5P5=27 versusBlack3P3=3, plus24. Theconversionwasactual,butreliedonseverallargegifts. Nofull-strengthtransferproved;46full lossesstillshowstagnation.
+
+Queen/rookdestinationchecks didnotcatchthereleasedbishopflight problem. Verylongunplayedbranches anddelayedcommentary remainunresolved;therewasno demonstratedtime-efficiencyrepair. Zeroillegal submissions onlyconfirmsacceptedlegality. Allresultskept;no outside/delegated/automated chessadvice, foreignmaterialexposure oroperatorchanges.
+
+Trial222 predeclarednow:MAXWhite practicefromown135ply26, after13...gxf5, four ownmoves or earlier decisivematerial/matefailure. Try14Qd3 insteadRfe1, retainingc2's cheapqueenroot andfreeingd2asBe3's retreatif...f4. Judge actualbishop/queen/rookretention, notan assumedrepeat. Thisisuntestedandmayinviteadifferentreply. Endandretain drill;thenfixed136Blackskill0 andformal138. Trial223 willcarrytheactuallessonaboutreleasedflights/cheaperpawnpushes intoanewgame;do notclaimthiswinprovesthatlesson.
+
+
+## Trial222 / practice111 observed; Trial223
+
+MAXWhite own135ply26, retained drill stoppedatpredeclaredfour-own-move bound:14Qd3/e4 15Nxe4/fxe4 16Qxe4+/Nce7 17Bd4/Nf6. Eightplies,0illegal,unscored*,seq1111 at2026-10-08T19:44:31.817082+00:00; completedpracticePGN read. Qd3 hadc2support andfreedd2, butMAXchosee4, forkingQd3/Nf3 witha pawnrootedbyf5. Nxe4/fxe4/Qxe4+ costKnight3fortwopawns2, netminus1. No claimthatthiswasforcedoroptimal. Thebishop, queenandrooks remainedinthefour-move sample,buttheintendedf4 bishopretreatwasNOTtested. Bd4hadNf3supportandchallengedBg7;Nf6interposedonthatdiagonalandattackedthequeenone4. Finalqueenescape/developmentunresolved. Thiswasnotanequal-materialopeningrepairorafullgamesave;localretentiontargetalonewouldoverstatetheoutcome. AnunplayedQg4nextwouldrunintoBd7-e6-f5-g4 nowthatf5wasvacated;no suchmoveplayed.
+
+Decision:theearlierqueenmovetradedabishoptrapriskforapawnfork. Includeenemycheap-pawnpushforks againsttheproposedarrivalandothercurrentpieces, plusownretreatbodies, beforequietqueen/rookmoves. Trial223 predeclaredfixed136Blackskill0: centraldevelopmentfromactualreplies,castlewhenactualsafe, andinspectthosepawnpushforks/blockedflights. Observablefirst16-own-move target:no wholequeen/rookloss andnomaterialdeficitgreaterthan1simplepoint;recordfinalresult. Attemptoneimmediateforcing-replycheckbeforelongunplayedbranches, butthinking/cadencehaveNOTbeenrepaired. Formal138;endpoint200. Nooutside/delegated/automatedchessadvice orforeignexposure.

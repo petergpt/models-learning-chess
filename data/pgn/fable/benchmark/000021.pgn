@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.05"]
+[Round "21"]
+[White "claude-fable-5-1"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "fable"]
+[GameId "fable/benchmark/000021"]
+[OpponentSetting "skill-0"]
+[Termination "checkmate"]
+
+1. d4 d6 2. Bf4 Nd7 3. Nf3 h6 4. e3 e6 5. Bd3 g5 6. Bg3 Bg7 7. h4 Qe7 8. c3 f5 9. Nbd2 Nb6 10. e4 f4 11. Bh2 e5 12. hxg5 hxg5 13. Qe2 g4 14. Ng1 Nf6 15. dxe5 dxe5 16. O-O-O Bd7 17. Nc4 O-O-O 18. Nxb6+ cxb6 19. Kb1 g3 20. fxg3 fxg3 21. Nf3 gxh2 22. Nxh2 Rhf8 23. Qf3 Rde8 24. Nf1 Kb8 25. Ne3 b5 26. g4 a6 27. g5 Nh7 28. Rxh7 Be6 29. Qh5 Qc5 30. Nf5 Bf7 31. Qh4 Bc4 32. Nxg7 Bxd3+ 33. Rxd3 Qg1+ 34. Kc2 Rf2+ 35. Rd2 Rxd2+ 36. Kxd2 Qg2+ 37. Kc1 Qg1+ 38. Kc2 Qg2+ 39. Kb3 Qe2 40. Nxe8 a5 41. Nd6 Qd1+ 42. Ka3 Qa4# 0-1

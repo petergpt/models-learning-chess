@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.06"]
+[Round "42"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "sol-long-context"]
+[GameId "sol-long-context/benchmark/000042"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "checkmate"]
+
+1. Nf3 d5 2. c3 Nf6 3. d3 c5 4. Bg5 e6 5. Nbd2 Be7 6. e4 Nc6 7. a3 O-O 8. Rc1 d4 9. e5 Nd5 10. Bxe7 Qxe7 11. cxd4 cxd4 12. Nc4 f6 13. Be2 fxe5 14. h4 Qf6 15. g3 Bd7 16. O-O Rae8 17. Ng5 h6 18. Ne4 Qf7 19. Bh5 Qf5 20. Ncd6 Qh7 21. Qg4 Re7 22. Bg6 Qh8 23. Nxb7 h5 24. Qg5 Be8 25. Bxe8 Rfxe8 26. Nbd6 Rf8 27. Rc4 Nb6 28. Rc2 Rf3 29. b4 Rxd3 30. b5 Rc7 31. bxc6 Rxa3 32. Qxe5 Qh6 33. Qxd4 Ra4 34. Qc5 Qh7 35. f3 Qg6 36. Rfc1 Kh7 37. Qe5 Nc8 38. Nb7 Qf7 39. Rf1 Ne7 40. Nbd6 Qg6 41. Ng5+ Kh8 42. Nde4 Rxc6 43. Rb2 Rac4 44. Ra2 a6 45. Rb2 Qf5 46. f4 Ng6 47. Qxf5 exf5 48. Nf2 Kg8 49. Kg2 Kf8 50. Re1 Ne7 51. Rd2 g6 52. Re5 Kg7 53. Rd7 Kf6 54. Rdxe7 Rc2 55. Nh7# 1-0

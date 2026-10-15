@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.07"]
+[Round "99"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "sol"]
+[GameId "sol/benchmark/000099"]
+[OpponentSetting "skill-0"]
+[Termination "checkmate"]
+
+1. e4 d6 2. d4 e5 3. Nf3 Nd7 4. Be2 Be7 5. O-O Ngf6 6. Nc3 O-O 7. Be3 Re8 8. Qd2 Ng4 9. h3 Ngf6 10. Rad1 a6 11. dxe5 dxe5 12. Nd5 Nxe4 13. Nxe7+ Qxe7 14. Qd3 Ndf6 15. Nd2 Bf5 16. Bf3 Red8 17. Qc4 Nxd2 18. Bxd2 Rd4 19. Qb3 c6 20. Bc3 Be6 21. Qa3 Re8 22. Bxd4 exd4 23. Rxd4 Qxa3 24. bxa3 Kf8 25. Re1 Bc8 26. Rxe8+ Nxe8 27. Kf1 Ke7 28. Ke2 c5 29. Re4+ Kf8 30. Kd3 Nd6 31. Re5 b6 32. Rh5 h6 33. h4 Bf5+ 34. Kc3 f6 35. g4 Be6 36. Kb2 f5 37. g5 Bf7 38. gxh6 Kg8 39. Rg5 Kh7 40. Rxg7+ Kxh6 41. Rg3 Nc4+ 42. Kb3 Nd6+ 43. Kc3 Ne4+ 44. Bxe4 Bh5 45. Bxf5 c4 46. Kxc4 b5+ 47. Kc5 Bf7 48. Kb6 Be6 49. Bxe6 a5 50. Kxb5 Kh7 51. Kxa5 Kh8 52. Kb5 Kh7 53. a4 Kh6 54. a5 Kh7 55. a6 Kh6 56. a7 Kh5 57. a8=Q Kxh4 58. Qh8# 1-0

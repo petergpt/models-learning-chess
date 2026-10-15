@@ -1,0 +1,111 @@
+{
+  "subject": "Original GPT-6 Astra 200-game run, context hypothesis",
+  "finding": "Notes and retrieval habits changed markedly. Actual prompt lengths grew modestly and important late errors also occurred with substantial context headroom. Context or memory quality may have contributed, but the recorded evidence does not establish it as the cause of the decline.",
+  "matchedPeriods": {
+    "early": [
+      1,
+      96
+    ],
+    "late": [
+      103,
+      198
+    ],
+    "ratedGamesEach": 64,
+    "sameOpponentAndColorMix": true
+  },
+  "prompt": {
+    "recordedWindow": 258400,
+    "meanEarly": 105157.0612244898,
+    "meanLate": 118627.32046864231,
+    "increasePercent": 12.809657370888438,
+    "fractionAbove90PercentWindowEarly": 0.02040816326530612,
+    "fractionAbove90PercentWindowLate": 0.042384562370778776,
+    "measurement": "Input tokens per model response during rated games, including cached input; not a measure of attention or summary fidelity."
+  },
+  "notes": {
+    "journalWordsBefore31": 14407,
+    "journalWordsBefore199": 101204,
+    "activeChecklistWordsBefore31": 719,
+    "activeChecklistWordsBefore199": 58,
+    "detectedJournalReadCommandsEarly": 68,
+    "detectedJournalReadCommandsLate": 3,
+    "wholeJournalReadsOnlyBeforeBenchmarks": [
+      4,
+      5
+    ],
+    "scope": "Literal, observable commands captured by the static detector, including between-game study. It cannot rule out indirect reads or knowledge retained without rereading."
+  },
+  "compactions": {
+    "total": 65,
+    "early": 41,
+    "late": 22,
+    "interpretation": "Frequent summarisation occurred in both strong and weak phases. Timestamps cannot establish whether useful details were lost; summary contents were not inspected."
+  },
+  "errorExamples": [
+    {
+      "game": 4,
+      "description": "Backward Black-pawn recapture",
+      "kind": "illegal",
+      "uci": "d4c5",
+      "ply": 38,
+      "precedingResponseInputTokens": 43471,
+      "acceptedBenchmarkOwnMovesSinceLastCompaction": 18,
+      "minutesSinceLastCompaction": 8.190584063529968
+    },
+    {
+      "game": 173,
+      "description": "Backward White-pawn recapture",
+      "kind": "illegal",
+      "uci": "h4g3",
+      "ply": 83,
+      "precedingResponseInputTokens": 46523,
+      "acceptedBenchmarkOwnMovesSinceLastCompaction": 20,
+      "minutesSinceLastCompaction": 8.055668433507284
+    },
+    {
+      "game": 173,
+      "description": "Rook path blocked by its own king",
+      "kind": "illegal",
+      "uci": "h2h7",
+      "ply": 113,
+      "precedingResponseInputTokens": 65003,
+      "acceptedBenchmarkOwnMovesSinceLastCompaction": 35,
+      "minutesSinceLastCompaction": 15.409321550528208
+    },
+    {
+      "game": 197,
+      "description": "Queen promotion resulted in stalemate",
+      "kind": "move",
+      "uci": "c7c8q",
+      "ply": 91,
+      "precedingResponseInputTokens": 78908,
+      "acceptedBenchmarkOwnMovesSinceLastCompaction": 72,
+      "minutesSinceLastCompaction": 17.832379984855653
+    },
+    {
+      "game": 198,
+      "description": "Bishop moved to capturable f5 with blocked imagined rook recapture",
+      "kind": "move",
+      "uci": "e6f5",
+      "ply": 34,
+      "precedingResponseInputTokens": 90379,
+      "acceptedBenchmarkOwnMovesSinceLastCompaction": 89,
+      "minutesSinceLastCompaction": 20.890784418582918
+    }
+  ],
+  "reasoningTokensPerOwnMove": {
+    "early": 1071.7599416271435,
+    "late": 512.8419014084507,
+    "interpretation": "A larger relative change than average prompt length. Correlated with the decline, not proof of its cause."
+  },
+  "exploratoryComparisons": "Some higher-context game groups scored worse, including when using context before the first accepted move and balancing colors. Small observational groups and changing procedures prevent causal attribution. No excess short-horizon material losses appeared immediately after compactions in the screened sample, but sparse counts and game-stage confounding make this inconclusive.",
+  "nextControlledTest": "Compare the same model and reasoning setting with original history versus fresh context carrying the same concise frozen notes, using matched opponent strengths and colours. Record input and reasoning use; keep this separate from the active tournament. No such test was started.",
+  "checks": {
+    "nativeAndLedgerHashesUnchanged": true,
+    "10423UniqueUsageRecordsSumToFinalCumulative": true,
+    "hiddenReasoningAndSummaryContentsNotInspected": true,
+    "enginesOrPlayersNotCalled": true
+  },
+  "fullAnalysis": "context-assessment.json",
+  "reproducibleScript": "assess_context.py"
+}

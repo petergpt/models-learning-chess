@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.07"]
+[Round "43"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "*"]
+[FEN "2rnr1k1/2q1bpp1/p2p1n1p/1b1Pp3/1Pp1P2N/2P1B2P/2BNQPP1/R3R1K1 b - - 3 20"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "sol-long-context"]
+[GameId "sol-long-context/practice/000043"]
+[OpponentSetting "practice-skill-5"]
+[Termination "stopped_by_learner_not_a_result"]
+
+20... Nb7 21. g3 Nd7 22. Nf5 Bf8 23. Ba4 Nf6 24. Kh2 *

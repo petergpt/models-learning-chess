@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed chess adaptation evidence",
+  "type": "object",
+  "required": ["model", "reviewedAt", "question", "evidenceLevel", "observation", "sources", "alternativeExplanations"],
+  "properties": {
+    "model": {"enum": ["astra", "opus", "sol", "sol-long-context", "fable"]},
+    "reviewedAt": {"type": "string", "format": "date-time"},
+    "question": {"type": "string"},
+    "strategyId": {"type": ["string", "null"]},
+    "appliesFromGame": {"type": ["integer", "null"], "minimum": 1},
+    "evidenceLevel": {"enum": ["declared-attempt", "observed-behavior", "fresh-game-transfer", "retained-transfer", "causal-test"]},
+    "errorClasses": {"type": "array", "items": {"enum": ["board-geometry", "defender-blocker", "forcing-reply", "king-safety", "conversion", "opening-plan", "execution-economy"]}},
+    "observation": {"type": "string"},
+    "hypothesis": {"type": ["string", "null"]},
+    "sources": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["path"], "properties": {
+      "path": {"type": "string"}, "line": {"type": ["integer", "null"]}, "game": {"type": ["integer", "null"]},
+      "snapshot": {"type": ["string", "null"]}, "ledgerHead": {"type": ["string", "null"]}
+    }}},
+    "alternativeExplanations": {"type": "array", "items": {"type": "string"}},
+    "nextDiscriminatingObservation": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

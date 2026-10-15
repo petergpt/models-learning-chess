@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.07"]
+[Round "31"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "sol-long-context-max"]
+[GameId "sol-long-context-max/benchmark/000031"]
+[OpponentSetting "full-strength"]
+[Termination "resignation"]
+
+1. d4 Nf6 2. Nf3 d5 3. Bf4 c5 4. e3 e6 5. c3 Bd6 6. Bd3 Bxf4 7. exf4 Qb6 8. b3 cxd4 9. cxd4 Bd7 10. O-O Nc6 11. Be2 Rc8 12. Nc3 Nxd4 13. Qxd4 Qxd4 14. Nxd4 Rxc3 15. Nb5 Bxb5 16. Bxb5+ Ke7 17. Rac1 Rhc8 18. Rxc3 Rxc3 19. Rd1 Rc2 20. a3 Rc3 21. Ba4 a6 22. b4 b5 23. Bxb5 axb5 0-1

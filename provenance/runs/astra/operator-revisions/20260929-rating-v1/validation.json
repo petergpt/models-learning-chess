@@ -1,0 +1,27 @@
+{
+  "statistics_tests": 9,
+  "referee_tests": 11,
+  "ui_checks": [
+    [
+      "rating displayed",
+      true
+    ],
+    [
+      "interval displayed",
+      true
+    ],
+    [
+      "credible band or point",
+      true
+    ],
+    [
+      "board intact",
+      true
+    ],
+    [
+      "no overflow",
+      true
+    ]
+  ],
+  "timestamp": "2026-09-29T22:54:43.591818+00:00"
+}

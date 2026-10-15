@@ -1,0 +1,251 @@
+{
+  "at": "2026-10-06T17:01:07.422179+00:00",
+  "engines": [
+    {
+      "opponent": "full-strength",
+      "engine": {
+        "name": "Stockfish 19",
+        "author": "the Stockfish developers (see AUTHORS file)"
+      },
+      "advertisedDefaults": {
+        "Threads": 1,
+        "Hash": 16,
+        "Skill Level": 20,
+        "UCI_LimitStrength": false,
+        "UCI_Elo": 1320
+      },
+      "clientConfiguration": {
+        "Threads": 1,
+        "Hash": 64,
+        "Skill Level": 20,
+        "UCI_LimitStrength": false,
+        "UCI_Elo": 1320
+      },
+      "transmittedOptions": [
+        "setoption name Hash value 64"
+      ],
+      "ready": true
+    },
+    {
+      "opponent": "skill-0",
+      "engine": {
+        "name": "Stockfish 19",
+        "author": "the Stockfish developers (see AUTHORS file)"
+      },
+      "advertisedDefaults": {
+        "Threads": 1,
+        "Hash": 16,
+        "Skill Level": 20,
+        "UCI_LimitStrength": false,
+        "UCI_Elo": 1320
+      },
+      "clientConfiguration": {
+        "Threads": 1,
+        "Hash": 64,
+        "Skill Level": 0,
+        "UCI_LimitStrength": false,
+        "UCI_Elo": 1320
+      },
+      "transmittedOptions": [
+        "setoption name Hash value 64",
+        "setoption name Skill Level value 0"
+      ],
+      "ready": true
+    },
+    {
+      "opponent": "elo-1800-setting",
+      "engine": {
+        "name": "Stockfish 19",
+        "author": "the Stockfish developers (see AUTHORS file)"
+      },
+      "advertisedDefaults": {
+        "Threads": 1,
+        "Hash": 16,
+        "Skill Level": 20,
+        "UCI_LimitStrength": false,
+        "UCI_Elo": 1320
+      },
+      "clientConfiguration": {
+        "Threads": 1,
+        "Hash": 64,
+        "Skill Level": 20,
+        "UCI_LimitStrength": true,
+        "UCI_Elo": 1800
+      },
+      "transmittedOptions": [
+        "setoption name Hash value 64",
+        "setoption name UCI_LimitStrength value true",
+        "setoption name UCI_Elo value 1800"
+      ],
+      "ready": true
+    }
+  ],
+  "positions": [
+    {
+      "game": 12,
+      "opponent": "elo-1800-setting",
+      "learner": "black",
+      "pawnAdvantageBeforeFinalMove": 3,
+      "terminalMoves": "13.Bd5 Bc5 14.Qxf7#",
+      "checkmateVerified": true,
+      "whiteBishopControlsF7": true
+    },
+    {
+      "game": 15,
+      "opponent": "skill-0",
+      "learner": "white",
+      "terminalTactic": "31.Re4 Nc3 32.Rf4 Ne2+ 33.Kh2 Nxf4",
+      "checkingForkAndRookCaptureVerified": true
+    }
+  ],
+  "existingRefereeTests": {
+    "passed": 29,
+    "elapsedSeconds": 5.591
+  },
+  "scope": "Operator checks only; no analysis calls, new benchmark games, or learner feedback.",
+  "publicStructure": {
+    "topKeys": [
+      "runs",
+      "updatedAt",
+      "revision"
+    ],
+    "runsType": "dict"
+  },
+  "publicSolRatings": {
+    "sol": {
+      "label": "GPT-6.1 Sol",
+      "rating": {
+        "estimate": 1410,
+        "lower": 1290,
+        "upper": 1540,
+        "rated_games_total": 59,
+        "excluded_uncalibrated": null
+      },
+      "stats": [
+        {
+          "completed": 30,
+          "draws": 0,
+          "losses": 30,
+          "opponent": "full-strength",
+          "rolling_score": 0.0,
+          "score": 0.0,
+          "started": 30,
+          "unfinished": 0,
+          "wins": 0
+        },
+        {
+          "completed": 30,
+          "draws": 2,
+          "losses": 7,
+          "opponent": "skill-0",
+          "rolling_score": 0.7333333333333333,
+          "score": 0.7333333333333333,
+          "started": 30,
+          "unfinished": 0,
+          "wins": 21
+        },
+        {
+          "completed": 29,
+          "draws": 1,
+          "losses": 26,
+          "opponent": "elo-1800-setting",
+          "rolling_score": 0.08620689655172414,
+          "score": 0.08620689655172414,
+          "started": 30,
+          "unfinished": 0,
+          "wins": 2
+        }
+      ]
+    },
+    "sol-long-context": {
+      "label": "GPT-6.1 Sol \u00b7 828K",
+      "rating": {
+        "estimate": 1570,
+        "lower": 1400,
+        "upper": 1740,
+        "rated_games_total": 27,
+        "excluded_uncalibrated": null
+      },
+      "stats": [
+        {
+          "completed": 14,
+          "draws": 0,
+          "losses": 14,
+          "opponent": "full-strength",
+          "rolling_score": 0.0,
+          "score": 0.0,
+          "started": 14,
+          "unfinished": 0,
+          "wins": 0
+        },
+        {
+          "completed": 14,
+          "draws": 1,
+          "losses": 2,
+          "opponent": "skill-0",
+          "rolling_score": 0.8214285714285714,
+          "score": 0.8214285714285714,
+          "started": 14,
+          "unfinished": 0,
+          "wins": 11
+        },
+        {
+          "completed": 13,
+          "draws": 1,
+          "losses": 10,
+          "opponent": "elo-1800-setting",
+          "rolling_score": 0.19230769230769232,
+          "score": 0.19230769230769232,
+          "started": 14,
+          "unfinished": 0,
+          "wins": 2
+        }
+      ]
+    },
+    "sol-long-context-max": {
+      "label": "GPT-6.1 Sol \u00b7 828K",
+      "rating": {
+        "estimate": 1050,
+        "lower": 540,
+        "upper": 1400,
+        "rated_games_total": 9,
+        "excluded_uncalibrated": null
+      },
+      "stats": [
+        {
+          "completed": 6,
+          "draws": 0,
+          "losses": 6,
+          "opponent": "full-strength",
+          "rolling_score": 0.0,
+          "score": 0.0,
+          "started": 6,
+          "unfinished": 0,
+          "wins": 0
+        },
+        {
+          "completed": 5,
+          "draws": 1,
+          "losses": 3,
+          "opponent": "skill-0",
+          "rolling_score": 0.3,
+          "score": 0.3,
+          "started": 6,
+          "unfinished": 0,
+          "wins": 1
+        },
+        {
+          "completed": 4,
+          "draws": 0,
+          "losses": 4,
+          "opponent": "elo-1800-setting",
+          "rolling_score": 0.0,
+          "score": 0.0,
+          "started": 4,
+          "unfinished": 0,
+          "wins": 0
+        }
+      ]
+    }
+  }
+}

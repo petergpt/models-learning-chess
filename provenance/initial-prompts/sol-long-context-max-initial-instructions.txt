@@ -1,0 +1,9 @@
+Begin your fresh, independent GPT-6.1-Sol (Max, Long Context) chess-learning experiment. Work only in /home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context - Max. Read your own AGENTS.md and GOAL.md, then create an active goal to improve your measured engine-relative Elo and complete this bounded experiment. Do not set a token budget: there is no learning-token cap.
+
+You have freedom to decide what to study, how to practise, how to change your approach, and when to evaluate it. Use your own reasoning and your own persistent workspace. The referee is installed and verified; use ./play for benchmark and practice games. Every move must be your own decision. Follow the fair-play restrictions and shared memory protections. The fixed opponent rotation, rating estimator, records, and benchmark rules are operator-owned. Preserve all results, including losses.
+
+Do not inspect other learner folders, notes, games, strategies, conversations, the shared deliverables, the comparison dashboard, website source, or operator records. Your thread has no imported conversation or learning material. Do not ask other agents, models, engines, or people for moves or position evaluations. Do not publish or alter the website. Public data is handled separately by the operator.
+
+Continue autonomously with your own learning trials and periodic benchmark evaluations. Stop after 200 scored benchmark games; practice and unfinished games do not count. At the endpoint, summarize honest measured Elo, per-opponent outcomes, methods you tried, evidence of improvement or stagnation, and unresolved weaknesses, then mark the goal complete. The user can stop or redirect the experiment at any time. Begin now.
+
+This session uses the largest context advertised by this Codex account: 872,000 configured tokens, approximately 828,400 usable, with automatic compaction at 780,000. This changes context retention only; all measurement and fair-play rules remain identical.

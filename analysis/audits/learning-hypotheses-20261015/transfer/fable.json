@@ -1,0 +1,1069 @@
+{
+  "ledger": {
+    "file": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/fable/data/ledger.jsonl",
+    "sha256": "67e10667424a1877ca29cf692f95363b4224635c2de8e73e9411668a380acaf8",
+    "events": 3524,
+    "head": "7b9eef00a69cb89a2b7100c8928cfbd762fa2725c1142d849879f9100d52631d",
+    "lastTimestamp": "2026-10-06T09:55:46.451992+00:00"
+  },
+  "practiceLedger": {
+    "file": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/fable/data/practice/ledger.jsonl",
+    "sha256": "5ef1a4311b9f05b826eb9c931290458f4a6991d787a1ca68d404509a4aaebfbd",
+    "events": 258,
+    "head": "bcbd645c0d111d58201322f26cbc760046cd03b2a4176354d45900453d2f9304",
+    "lastTimestamp": "2026-10-05T23:15:49.543317+00:00"
+  },
+  "overall": {
+    "gameNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "score": {
+      "games": 45,
+      "wins": 15,
+      "draws": 1,
+      "losses": 29,
+      "points": 15.5,
+      "score": 0.34444444444444444
+    },
+    "behavior": {
+      "ownMoves": 1683,
+      "illegalAttempts": 18,
+      "illegalPer100": 1.0695187165775402,
+      "shortLossCount": 32,
+      "shortLossPer100": 1.9013666072489601,
+      "gamesWithShortLoss": 25,
+      "leadGames": 20,
+      "leadWins": 14,
+      "leadConversion": 0.7,
+      "castleBy10": 0.4318181818181818,
+      "castleEligibleGames": 44,
+      "medianMoveSeconds": 32.2108
+    },
+    "byOpponent": {
+      "full-strength": {
+        "score": {
+          "games": 16,
+          "wins": 0,
+          "draws": 0,
+          "losses": 16,
+          "points": 0,
+          "score": 0
+        },
+        "behavior": {
+          "ownMoves": 312,
+          "illegalAttempts": 7,
+          "illegalPer100": 2.2435897435897436,
+          "shortLossCount": 9,
+          "shortLossPer100": 2.8846153846153846,
+          "gamesWithShortLoss": 8,
+          "leadGames": 1,
+          "leadWins": 0,
+          "leadConversion": 0.0,
+          "castleBy10": 0.13333333333333333,
+          "castleEligibleGames": 15,
+          "medianMoveSeconds": 27.25375
+        }
+      },
+      "skill-0": {
+        "score": {
+          "games": 15,
+          "wins": 9,
+          "draws": 1,
+          "losses": 5,
+          "points": 9.5,
+          "score": 0.6333333333333333
+        },
+        "behavior": {
+          "ownMoves": 721,
+          "illegalAttempts": 4,
+          "illegalPer100": 0.5547850208044383,
+          "shortLossCount": 11,
+          "shortLossPer100": 1.5256588072122053,
+          "gamesWithShortLoss": 8,
+          "leadGames": 10,
+          "leadWins": 8,
+          "leadConversion": 0.8,
+          "castleBy10": 0.4666666666666667,
+          "castleEligibleGames": 15,
+          "medianMoveSeconds": 33.8628
+        }
+      },
+      "elo-1800-setting": {
+        "score": {
+          "games": 14,
+          "wins": 6,
+          "draws": 0,
+          "losses": 8,
+          "points": 6,
+          "score": 0.42857142857142855
+        },
+        "behavior": {
+          "ownMoves": 650,
+          "illegalAttempts": 7,
+          "illegalPer100": 1.0769230769230769,
+          "shortLossCount": 12,
+          "shortLossPer100": 1.8461538461538463,
+          "gamesWithShortLoss": 9,
+          "leadGames": 9,
+          "leadWins": 6,
+          "leadConversion": 0.6666666666666666,
+          "castleBy10": 0.7142857142857143,
+          "castleEligibleGames": 14,
+          "medianMoveSeconds": 33.1339
+        }
+      }
+    },
+    "firstMoves": {
+      "white:d4": 23,
+      "black:c6": 14,
+      "black:d5": 7,
+      "black:e6": 1
+    },
+    "queenMovesFirst10Mean": 1.0444444444444445,
+    "materialLossPhases": {
+      "ownMoves1to15": {
+        "ownMoves": 656,
+        "shortLossCount": 11,
+        "shortLossPer100": 1.676829268292683
+      },
+      "ownMoves16plus": {
+        "ownMoves": 1027,
+        "shortLossCount": 21,
+        "shortLossPer100": 2.044790652385589
+      }
+    }
+  },
+  "matchedHalves": {
+    "rotationsPerWindow": 3,
+    "early": {
+      "gameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "score": {
+        "games": 18,
+        "wins": 6,
+        "draws": 0,
+        "losses": 12,
+        "points": 6,
+        "score": 0.3333333333333333
+      },
+      "behavior": {
+        "ownMoves": 713,
+        "illegalAttempts": 7,
+        "illegalPer100": 0.9817671809256662,
+        "shortLossCount": 17,
+        "shortLossPer100": 2.3842917251051894,
+        "gamesWithShortLoss": 12,
+        "leadGames": 8,
+        "leadWins": 5,
+        "leadConversion": 0.625,
+        "castleBy10": 0.7058823529411765,
+        "castleEligibleGames": 17,
+        "medianMoveSeconds": 38.2505
+      },
+      "byOpponent": {
+        "full-strength": {
+          "score": {
+            "games": 6,
+            "wins": 0,
+            "draws": 0,
+            "losses": 6,
+            "points": 0,
+            "score": 0
+          },
+          "behavior": {
+            "ownMoves": 111,
+            "illegalAttempts": 3,
+            "illegalPer100": 2.7027027027027026,
+            "shortLossCount": 4,
+            "shortLossPer100": 3.6036036036036037,
+            "gamesWithShortLoss": 3,
+            "leadGames": 1,
+            "leadWins": 0,
+            "leadConversion": 0.0,
+            "castleBy10": 0.4,
+            "castleEligibleGames": 5,
+            "medianMoveSeconds": 27.5947
+          }
+        },
+        "skill-0": {
+          "score": {
+            "games": 6,
+            "wins": 5,
+            "draws": 0,
+            "losses": 1,
+            "points": 5,
+            "score": 0.8333333333333334
+          },
+          "behavior": {
+            "ownMoves": 357,
+            "illegalAttempts": 2,
+            "illegalPer100": 0.5602240896358543,
+            "shortLossCount": 7,
+            "shortLossPer100": 1.9607843137254901,
+            "gamesWithShortLoss": 4,
+            "leadGames": 4,
+            "leadWins": 4,
+            "leadConversion": 1.0,
+            "castleBy10": 0.6666666666666666,
+            "castleEligibleGames": 6,
+            "medianMoveSeconds": 42.7349
+          }
+        },
+        "elo-1800-setting": {
+          "score": {
+            "games": 6,
+            "wins": 1,
+            "draws": 0,
+            "losses": 5,
+            "points": 1,
+            "score": 0.16666666666666666
+          },
+          "behavior": {
+            "ownMoves": 245,
+            "illegalAttempts": 2,
+            "illegalPer100": 0.8163265306122449,
+            "shortLossCount": 6,
+            "shortLossPer100": 2.4489795918367347,
+            "gamesWithShortLoss": 5,
+            "leadGames": 3,
+            "leadWins": 1,
+            "leadConversion": 0.3333333333333333,
+            "castleBy10": 1,
+            "castleEligibleGames": 6,
+            "medianMoveSeconds": 35.9751
+          }
+        }
+      },
+      "firstMoves": {
+        "white:d4": 9,
+        "black:c6": 4,
+        "black:d5": 4,
+        "black:e6": 1
+      },
+      "queenMovesFirst10Mean": 1.2777777777777777,
+      "materialLossPhases": {
+        "ownMoves1to15": {
+          "ownMoves": 260,
+          "shortLossCount": 5,
+          "shortLossPer100": 1.9230769230769231
+        },
+        "ownMoves16plus": {
+          "ownMoves": 453,
+          "shortLossCount": 12,
+          "shortLossPer100": 2.6490066225165565
+        }
+      }
+    },
+    "late": {
+      "gameNumbers": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ],
+      "score": {
+        "games": 18,
+        "wins": 8,
+        "draws": 0,
+        "losses": 10,
+        "points": 8,
+        "score": 0.4444444444444444
+      },
+      "behavior": {
+        "ownMoves": 634,
+        "illegalAttempts": 1,
+        "illegalPer100": 0.15772870662460567,
+        "shortLossCount": 9,
+        "shortLossPer100": 1.4195583596214512,
+        "gamesWithShortLoss": 8,
+        "leadGames": 9,
+        "leadWins": 8,
+        "leadConversion": 0.8888888888888888,
+        "castleBy10": 0.3333333333333333,
+        "castleEligibleGames": 18,
+        "medianMoveSeconds": 29.6175
+      },
+      "byOpponent": {
+        "full-strength": {
+          "score": {
+            "games": 6,
+            "wins": 0,
+            "draws": 0,
+            "losses": 6,
+            "points": 0,
+            "score": 0
+          },
+          "behavior": {
+            "ownMoves": 108,
+            "illegalAttempts": 0,
+            "illegalPer100": 0.0,
+            "shortLossCount": 4,
+            "shortLossPer100": 3.7037037037037037,
+            "gamesWithShortLoss": 4,
+            "leadGames": 0,
+            "leadWins": 0,
+            "leadConversion": null,
+            "castleBy10": 0,
+            "castleEligibleGames": 6,
+            "medianMoveSeconds": 29.08005
+          }
+        },
+        "skill-0": {
+          "score": {
+            "games": 6,
+            "wins": 4,
+            "draws": 0,
+            "losses": 2,
+            "points": 4,
+            "score": 0.6666666666666666
+          },
+          "behavior": {
+            "ownMoves": 240,
+            "illegalAttempts": 0,
+            "illegalPer100": 0.0,
+            "shortLossCount": 1,
+            "shortLossPer100": 0.4166666666666667,
+            "gamesWithShortLoss": 1,
+            "leadGames": 4,
+            "leadWins": 4,
+            "leadConversion": 1.0,
+            "castleBy10": 0.3333333333333333,
+            "castleEligibleGames": 6,
+            "medianMoveSeconds": 26.32095
+          }
+        },
+        "elo-1800-setting": {
+          "score": {
+            "games": 6,
+            "wins": 4,
+            "draws": 0,
+            "losses": 2,
+            "points": 4,
+            "score": 0.6666666666666666
+          },
+          "behavior": {
+            "ownMoves": 286,
+            "illegalAttempts": 1,
+            "illegalPer100": 0.34965034965034963,
+            "shortLossCount": 4,
+            "shortLossPer100": 1.3986013986013985,
+            "gamesWithShortLoss": 3,
+            "leadGames": 5,
+            "leadWins": 4,
+            "leadConversion": 0.8,
+            "castleBy10": 0.6666666666666666,
+            "castleEligibleGames": 6,
+            "medianMoveSeconds": 34.27805
+          }
+        }
+      },
+      "firstMoves": {
+        "white:d4": 9,
+        "black:c6": 7,
+        "black:d5": 2
+      },
+      "queenMovesFirst10Mean": 1.1111111111111112,
+      "materialLossPhases": {
+        "ownMoves1to15": {
+          "ownMoves": 263,
+          "shortLossCount": 4,
+          "shortLossPer100": 1.520912547528517
+        },
+        "ownMoves16plus": {
+          "ownMoves": 371,
+          "shortLossCount": 5,
+          "shortLossPer100": 1.3477088948787064
+        }
+      }
+    }
+  },
+  "practice": {
+    "started": 4,
+    "scored": {
+      "games": 3,
+      "wins": 1,
+      "draws": 0,
+      "losses": 2,
+      "points": 1,
+      "score": 0.3333333333333333
+    },
+    "stopped": 1,
+    "active": 0,
+    "origins": {
+      "initial": 4
+    },
+    "opponents": {
+      "practice-elo-1800": 3,
+      "practice-skill-0": 1
+    },
+    "ownMoveLengths": {
+      "n": 4,
+      "sum": 123,
+      "median": 32.0,
+      "min": 22,
+      "max": 37,
+      "counts": {
+        "22": 1,
+        "31": 1,
+        "33": 1,
+        "37": 1
+      }
+    },
+    "scoredOwnMoveLengths": {
+      "n": 3,
+      "sum": 101,
+      "median": 33,
+      "min": 31,
+      "max": 37,
+      "counts": {
+        "31": 1,
+        "33": 1,
+        "37": 1
+      }
+    },
+    "stoppedOwnMoveLengths": {
+      "n": 1,
+      "sum": 22,
+      "median": 22,
+      "min": 22,
+      "max": 22,
+      "counts": {
+        "22": 1
+      }
+    },
+    "firstHalfOwnMoveLengths": {
+      "n": 2,
+      "sum": 64,
+      "median": 32.0,
+      "min": 31,
+      "max": 33,
+      "counts": {
+        "31": 1,
+        "33": 1
+      }
+    },
+    "lastHalfOwnMoveLengths": {
+      "n": 2,
+      "sum": 59,
+      "median": 29.5,
+      "min": 22,
+      "max": 37,
+      "counts": {
+        "22": 1,
+        "37": 1
+      }
+    },
+    "atMost2OwnMoves": 0,
+    "atMost4OwnMoves": 0,
+    "atMost8OwnMoves": 0,
+    "initialMaterial": {
+      "n": 4,
+      "sum": 0,
+      "median": 0.0,
+      "min": 0,
+      "max": 0,
+      "counts": {
+        "0": 4
+      }
+    },
+    "scoredWins": [
+      {
+        "practice": 3,
+        "timestamp": "2026-10-04T08:33:29.083355+00:00",
+        "origin": {
+          "kind": "initial"
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-elo-1800",
+        "note": "Trial 2 practice: White vs 1800 setting, apply procedure v2.6 (C3 forced-reply discovery, two-reply rule, check tagging); my White results vs 1800 are 0/2",
+        "ownMoves": 37,
+        "plies": 73,
+        "illegal": 0,
+        "score": 1,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      }
+    ],
+    "sameCompleteMovePrefixAsSource": 0,
+    "practiceBehavior": {
+      "ownMoves": 123,
+      "illegalAttempts": 2,
+      "illegalPer100": 1.6260162601626016,
+      "shortLossCount": 1,
+      "shortLossPer100": 0.8130081300813008,
+      "gamesWithShortLoss": 1,
+      "leadGames": 2,
+      "leadWins": 1,
+      "leadConversion": 0.5,
+      "castleBy10": 1,
+      "castleEligibleGames": 4,
+      "medianMoveSeconds": 28.1471
+    },
+    "records": [
+      {
+        "practice": 1,
+        "timestamp": "2026-10-04T01:40:59.534871+00:00",
+        "origin": {
+          "kind": "initial"
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-elo-1800",
+        "note": "Trial 1 practice: apply the written attack-scan every move; count scan-caught errors and blunders",
+        "ownMoves": 31,
+        "plies": 63,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [
+          {
+            "ply": 35,
+            "piece": "N",
+            "san": "axb6",
+            "uci": "a5b6",
+            "materialChange": -2
+          }
+        ],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 2,
+        "timestamp": "2026-10-04T02:01:57.668145+00:00",
+        "origin": {
+          "kind": "initial"
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-0",
+        "note": "Trial 1 practice 2: written attack-scan v2.1 every move (incl. pin-legality of replies); London as White",
+        "ownMoves": 33,
+        "plies": 66,
+        "illegal": 2,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 3,
+        "timestamp": "2026-10-04T08:33:29.083355+00:00",
+        "origin": {
+          "kind": "initial"
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-elo-1800",
+        "note": "Trial 2 practice: White vs 1800 setting, apply procedure v2.6 (C3 forced-reply discovery, two-reply rule, check tagging); my White results vs 1800 are 0/2",
+        "ownMoves": 37,
+        "plies": 73,
+        "illegal": 0,
+        "score": 1,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 4,
+        "timestamp": "2026-10-05T23:08:07.689016+00:00",
+        "origin": {
+          "kind": "initial"
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-elo-1800",
+        "note": "Trial 3 rehearsal before benchmark games 23-24: Black vs the 1800 setting; objectives: v3.4 scan on every move (two candidates, written paths, king-square check enumeration), no one-move losses, repetition ledger in any ending",
+        "ownMoves": 22,
+        "plies": 45,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      }
+    ]
+  },
+  "notes": {},
+  "shortLossExamples": [
+    {
+      "game": 1,
+      "opponent": "full-strength",
+      "ply": 36,
+      "piece": "R",
+      "san": "Nxc1",
+      "uci": "a2c1",
+      "materialChange": -2
+    },
+    {
+      "game": 1,
+      "opponent": "full-strength",
+      "ply": 54,
+      "piece": "B",
+      "san": "gxh4",
+      "uci": "g5h4",
+      "materialChange": -2
+    },
+    {
+      "game": 3,
+      "opponent": "skill-0",
+      "ply": 68,
+      "piece": "R",
+      "san": "Qxd2",
+      "uci": "f4d2",
+      "materialChange": -4
+    },
+    {
+      "game": 5,
+      "opponent": "elo-1800-setting",
+      "ply": 30,
+      "piece": "Q",
+      "san": "Rxe5",
+      "uci": "h5e5",
+      "materialChange": -4
+    },
+    {
+      "game": 6,
+      "opponent": "elo-1800-setting",
+      "ply": 37,
+      "piece": "Q",
+      "san": "Rxc7",
+      "uci": "c1c7",
+      "materialChange": -4
+    },
+    {
+      "game": 8,
+      "opponent": "full-strength",
+      "ply": 27,
+      "piece": "Q",
+      "san": "cxd3",
+      "uci": "c2d3",
+      "materialChange": -9
+    },
+    {
+      "game": 10,
+      "opponent": "skill-0",
+      "ply": 91,
+      "piece": "R",
+      "san": "Nxe7",
+      "uci": "f5e7",
+      "materialChange": -2
+    },
+    {
+      "game": 11,
+      "opponent": "elo-1800-setting",
+      "ply": 60,
+      "piece": "R",
+      "san": "Rxd1+",
+      "uci": "c1d1",
+      "materialChange": -5
+    },
+    {
+      "game": 12,
+      "opponent": "elo-1800-setting",
+      "ply": 81,
+      "piece": "B",
+      "san": "Rxa6+",
+      "uci": "a5a6",
+      "materialChange": -3
+    },
+    {
+      "game": 12,
+      "opponent": "elo-1800-setting",
+      "ply": 117,
+      "piece": "Q",
+      "san": "Rxf2",
+      "uci": "f4f2",
+      "materialChange": -4
+    },
+    {
+      "game": 13,
+      "opponent": "full-strength",
+      "ply": 34,
+      "piece": "N",
+      "san": "cxd3",
+      "uci": "c4d3",
+      "materialChange": -2
+    },
+    {
+      "game": 15,
+      "opponent": "skill-0",
+      "ply": 16,
+      "piece": "B",
+      "san": "Kxf7",
+      "uci": "e8f7",
+      "materialChange": -2
+    },
+    {
+      "game": 15,
+      "opponent": "skill-0",
+      "ply": 18,
+      "piece": "N",
+      "san": "Bxe5",
+      "uci": "f4e5",
+      "materialChange": -3
+    },
+    {
+      "game": 16,
+      "opponent": "skill-0",
+      "ply": 19,
+      "piece": "Q",
+      "san": "Qxa1",
+      "uci": "d1a1",
+      "materialChange": -3
+    },
+    {
+      "game": 16,
+      "opponent": "skill-0",
+      "ply": 79,
+      "piece": "N",
+      "san": "Qxd1",
+      "uci": "d3d1",
+      "materialChange": -3
+    },
+    {
+      "game": 16,
+      "opponent": "skill-0",
+      "ply": 113,
+      "piece": "R",
+      "san": "Qxf8+",
+      "uci": "e7f8",
+      "materialChange": -2
+    },
+    {
+      "game": 18,
+      "opponent": "elo-1800-setting",
+      "ply": 57,
+      "piece": "Q",
+      "san": "Rxd7",
+      "uci": "d1d7",
+      "materialChange": -4
+    },
+    {
+      "game": 21,
+      "opponent": "skill-0",
+      "ply": 42,
+      "piece": "B",
+      "san": "gxh2",
+      "uci": "g3h2",
+      "materialChange": -2
+    },
+    {
+      "game": 22,
+      "opponent": "skill-0",
+      "ply": 53,
+      "piece": "N",
+      "san": "cxd6",
+      "uci": "c5d6",
+      "materialChange": -2
+    },
+    {
+      "game": 24,
+      "opponent": "elo-1800-setting",
+      "ply": 27,
+      "piece": "B",
+      "san": "Qxc5",
+      "uci": "b5c5",
+      "materialChange": -3
+    },
+    {
+      "game": 24,
+      "opponent": "elo-1800-setting",
+      "ply": 103,
+      "piece": "B",
+      "san": "Bxf3",
+      "uci": "e2f3",
+      "materialChange": -3
+    },
+    {
+      "game": 25,
+      "opponent": "full-strength",
+      "ply": 26,
+      "piece": "R",
+      "san": "Bxa1",
+      "uci": "b2a1",
+      "materialChange": -5
+    },
+    {
+      "game": 26,
+      "opponent": "full-strength",
+      "ply": 25,
+      "piece": "Q",
+      "san": "Rxb6",
+      "uci": "b1b6",
+      "materialChange": -4
+    },
+    {
+      "game": 27,
+      "opponent": "skill-0",
+      "ply": 66,
+      "piece": "Q",
+      "san": "Rxe7",
+      "uci": "e2e7",
+      "materialChange": -9
+    },
+    {
+      "game": 30,
+      "opponent": "elo-1800-setting",
+      "ply": 53,
+      "piece": "B",
+      "san": "Qxd6",
+      "uci": "h6d6",
+      "materialChange": -3
+    },
+    {
+      "game": 30,
+      "opponent": "elo-1800-setting",
+      "ply": 81,
+      "piece": "R",
+      "san": "Rxd1",
+      "uci": "b1d1",
+      "materialChange": -2
+    },
+    {
+      "game": 31,
+      "opponent": "full-strength",
+      "ply": 22,
+      "piece": "N",
+      "san": "Nxe5",
+      "uci": "c6e5",
+      "materialChange": -2
+    },
+    {
+      "game": 35,
+      "opponent": "elo-1800-setting",
+      "ply": 86,
+      "piece": "N",
+      "san": "gxf3",
+      "uci": "g4f3",
+      "materialChange": -2
+    },
+    {
+      "game": 38,
+      "opponent": "full-strength",
+      "ply": 57,
+      "piece": "R",
+      "san": "Nxd8",
+      "uci": "e6d8",
+      "materialChange": -2
+    },
+    {
+      "game": 41,
+      "opponent": "elo-1800-setting",
+      "ply": 14,
+      "piece": "N",
+      "san": "dxe5",
+      "uci": "d6e5",
+      "materialChange": -2
+    },
+    {
+      "game": 44,
+      "opponent": "full-strength",
+      "ply": 39,
+      "piece": "N",
+      "san": "Rxe5",
+      "uci": "e1e5",
+      "materialChange": -3
+    },
+    {
+      "game": 45,
+      "opponent": "skill-0",
+      "ply": 20,
+      "piece": "B",
+      "san": "Bxd4",
+      "uci": "g7d4",
+      "materialChange": -2
+    }
+  ],
+  "illegalExamples": [
+    {
+      "game": 1,
+      "ply": 35,
+      "submitted": "c1a1",
+      "timestamp": "2026-10-03T22:50:20.713280+00:00"
+    },
+    {
+      "game": 1,
+      "ply": 63,
+      "submitted": "f1c1",
+      "timestamp": "2026-10-03T23:01:23.956106+00:00"
+    },
+    {
+      "game": 8,
+      "ply": 26,
+      "submitted": "f8d6",
+      "timestamp": "2026-10-04T03:05:28.807080+00:00"
+    },
+    {
+      "game": 11,
+      "ply": 23,
+      "submitted": "d3a6",
+      "timestamp": "2026-10-04T05:21:50.378134+00:00"
+    },
+    {
+      "game": 12,
+      "ply": 70,
+      "submitted": "e8c8",
+      "timestamp": "2026-10-04T07:48:01.516436+00:00"
+    },
+    {
+      "game": 16,
+      "ply": 176,
+      "submitted": "f4e3",
+      "timestamp": "2026-10-05T19:44:34.987887+00:00"
+    },
+    {
+      "game": 16,
+      "ply": 200,
+      "submitted": "h1g6",
+      "timestamp": "2026-10-05T19:54:29.944525+00:00"
+    },
+    {
+      "game": 19,
+      "ply": 27,
+      "submitted": "f1g2",
+      "timestamp": "2026-10-05T21:18:10.835067+00:00"
+    },
+    {
+      "game": 19,
+      "ply": 43,
+      "submitted": "h1d1",
+      "timestamp": "2026-10-05T21:23:43.822936+00:00"
+    },
+    {
+      "game": 19,
+      "ply": 65,
+      "submitted": "d1h1",
+      "timestamp": "2026-10-05T21:31:07.387862+00:00"
+    },
+    {
+      "game": 20,
+      "ply": 22,
+      "submitted": "b6e6",
+      "timestamp": "2026-10-05T21:40:20.498241+00:00"
+    },
+    {
+      "game": 22,
+      "ply": 72,
+      "submitted": "h7g8",
+      "timestamp": "2026-10-05T22:36:25.722283+00:00"
+    },
+    {
+      "game": 23,
+      "ply": 11,
+      "submitted": "d1b3",
+      "timestamp": "2026-10-05T23:17:11.179515+00:00"
+    },
+    {
+      "game": 23,
+      "ply": 51,
+      "submitted": "e1e7",
+      "timestamp": "2026-10-05T23:28:15.494015+00:00"
+    },
+    {
+      "game": 23,
+      "ply": 63,
+      "submitted": "e7a7",
+      "timestamp": "2026-10-05T23:33:59.218965+00:00"
+    },
+    {
+      "game": 24,
+      "ply": 32,
+      "submitted": "f5d3",
+      "timestamp": "2026-10-06T00:04:22.336800+00:00"
+    },
+    {
+      "game": 29,
+      "ply": 67,
+      "submitted": "a1a7",
+      "timestamp": "2026-10-06T02:15:04.941713+00:00"
+    },
+    {
+      "game": 45,
+      "ply": 39,
+      "submitted": "h3g4",
+      "timestamp": "2026-10-06T09:53:19.149951+00:00"
+    }
+  ]
+}

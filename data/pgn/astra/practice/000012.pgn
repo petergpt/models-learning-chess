@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.01"]
+[Round "12"]
+[White "Stockfish 19"]
+[Black "gpt-6-astra"]
+[Result "1/2-1/2"]
+[FEN "r7/8/4k3/P4p1p/1P4p1/3K4/6PP/2R5 b - - 0 1"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "astra"]
+[GameId "astra/practice/000012"]
+[OpponentSetting "practice-elo-1800"]
+[Termination "threefold_repetition"]
+
+1... Ke5 2. Rc5+ Kd6 3. Rxf5 h4 4. h3 g3 5. Rf4 Rh8 6. b5 Kc5 7. a6 Kxb5 8. a7 Ra8 9. Ke3 Rxa7 10. Rxh4 Ra2 11. Kf3 Ra3+ 12. Kf4 Kc5 13. Rg4 Kd5 14. Rg5+ Kd4 15. Rxg3 Ra1 16. Kg5 Ra5+ 17. Kg6 Ra6+ 18. Kf5 Ra5+ 19. Ke6 Ra6+ 20. Kf5 Ra5+ 21. Kg6 Ra6+ 1/2-1/2

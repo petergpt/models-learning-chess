@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.06"]
+[Round "43"]
+[White "claude-fable-5-1"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "fable"]
+[GameId "fable/benchmark/000043"]
+[OpponentSetting "full-strength"]
+[Termination "resignation"]
+
+1. d4 Nf6 2. Bf4 d5 3. e3 c5 4. c3 Nc6 5. Nf3 Nh5 6. Bg5 h6 7. Bh4 g5 8. Bg3 g4 9. Ne5 Nxg3 10. hxg3 Nxe5 11. Qa4+ Bd7 12. Qb3 c4 13. Qc2 Nc6 0-1

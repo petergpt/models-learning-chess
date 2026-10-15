@@ -1,0 +1,723 @@
+{
+  "scope": "Manual predictions before checking. Supplied-move legality, check and occupancy only; no automated attack enumeration, move menu, search, scoring, engine or selection.",
+  "results": [
+    {
+      "id": "01_g8_pawn_defender_leaves",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "e5d4",
+          "legal": true,
+          "capture": "P",
+          "check_after": false,
+          "fen_after": "r2qrbk1/1bp2pp1/p1np1n1p/1p6/P2pP3/2P2N1P/BP1N1PP1/R1BQR1K1 w - - 0 14"
+        },
+        {
+          "uci": "c3d4",
+          "legal": true,
+          "capture": "p",
+          "check_after": false,
+          "fen_after": "r2qrbk1/1bp2pp1/p1np1n1p/1p6/P2PP3/5N1P/BP1N1PP1/R1BQR1K1 b - - 0 14"
+        },
+        {
+          "uci": "c6b4",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r2qrbk1/1bp2pp1/p2p1n1p/1p6/Pn1PP3/5N1P/BP1N1PP1/R1BQR1K1 w - - 1 15"
+        },
+        {
+          "uci": "a2b1",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r2qrbk1/1bp2pp1/p2p1n1p/1p6/Pn1PP3/5N1P/1P1N1PP1/RBBQR1K1 b - - 2 15"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "d4": "P",
+        "b4": "n",
+        "c6": null,
+        "e5": null,
+        "e4": "P",
+        "f6": "n"
+      },
+      "final_fen": "r2qrbk1/1bp2pp1/p2p1n1p/1p6/Pn1PP3/5N1P/1P1N1PP1/RBBQR1K1 b - - 2 15",
+      "final_board": "r . . q r b k .\n. b p . . p p .\np . . p . n . p\n. p . . . . . .\nP n . P P . . .\n. . . . . N . P\n. P . N . P P .\nR B B Q R . K ."
+    },
+    {
+      "id": "02_g8_central_forcing_reply",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "e5d4",
+          "legal": true,
+          "capture": "P",
+          "check_after": false,
+          "fen_after": "r2qrbk1/1bp2pp1/p1np1n1p/1p6/P2pP3/2P2N1P/BP1N1PP1/R1BQR1K1 w - - 0 14"
+        },
+        {
+          "uci": "e4e5",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r2qrbk1/1bp2pp1/p1np1n1p/1p2P3/P2p4/2P2N1P/BP1N1PP1/R1BQR1K1 b - - 0 14"
+        },
+        {
+          "uci": "c6e5",
+          "legal": true,
+          "capture": "P",
+          "check_after": false,
+          "fen_after": "r2qrbk1/1bp2pp1/p2p1n1p/1p2n3/P2p4/2P2N1P/BP1N1PP1/R1BQR1K1 w - - 0 15"
+        },
+        {
+          "uci": "f3e5",
+          "legal": true,
+          "capture": "n",
+          "check_after": false,
+          "fen_after": "r2qrbk1/1bp2pp1/p2p1n1p/1p2N3/P2p4/2P4P/BP1N1PP1/R1BQR1K1 b - - 0 15"
+        },
+        {
+          "uci": "e8e5",
+          "legal": true,
+          "capture": "N",
+          "check_after": false,
+          "fen_after": "r2q1bk1/1bp2pp1/p2p1n1p/1p2r3/P2p4/2P4P/BP1N1PP1/R1BQR1K1 w - - 0 16"
+        },
+        {
+          "uci": "e1e5",
+          "legal": true,
+          "capture": "r",
+          "check_after": false,
+          "fen_after": "r2q1bk1/1bp2pp1/p2p1n1p/1p2R3/P2p4/2P4P/BP1N1PP1/R1BQ2K1 b - - 0 16"
+        },
+        {
+          "uci": "d6e5",
+          "legal": true,
+          "capture": "R",
+          "check_after": false,
+          "fen_after": "r2q1bk1/1bp2pp1/p4n1p/1p2p3/P2p4/2P4P/BP1N1PP1/R1BQ2K1 w - - 0 17"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "e5": "p",
+        "d4": "p",
+        "c6": null,
+        "e8": null,
+        "e1": null,
+        "f3": null,
+        "f6": "n",
+        "d2": "N"
+      },
+      "final_fen": "r2q1bk1/1bp2pp1/p4n1p/1p2p3/P2p4/2P4P/BP1N1PP1/R1BQ2K1 w - - 0 17",
+      "final_board": "r . . q . b k .\n. b p . . p p .\np . . . . n . p\n. p . . p . . .\nP . . p . . . .\n. . P . . . . P\nB P . N . P P .\nR . B Q . . K ."
+    },
+    {
+      "id": "03_g17_knight_recapture",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "c4d5",
+          "legal": true,
+          "capture": "p",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/p3pn1p/3P4/3P4/2NBBN2/PPQ2PPP/R2R2K1 b - - 0 13"
+        },
+        {
+          "uci": "f6d5",
+          "legal": true,
+          "capture": "P",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/p3p2p/3n4/3P4/2NBBN2/PPQ2PPP/R2R2K1 w - - 0 14"
+        },
+        {
+          "uci": "c3d5",
+          "legal": true,
+          "capture": "n",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/p3p2p/3N4/3P4/3BBN2/PPQ2PPP/R2R2K1 b - - 0 14"
+        },
+        {
+          "uci": "e6d5",
+          "legal": true,
+          "capture": "N",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/p6p/3p4/3P4/3BBN2/PPQ2PPP/R2R2K1 w - - 0 15"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "d5": "p",
+        "f6": null,
+        "c3": null,
+        "e6": null,
+        "f3": "N",
+        "d7": "n"
+      },
+      "final_fen": "r1bq1rk1/1p1nbpp1/p6p/3p4/3P4/3BBN2/PPQ2PPP/R2R2K1 w - - 0 15",
+      "final_board": "r . b q . r k .\n. p . n b p p .\np . . . . . . p\n. . . p . . . .\n. . . P . . . .\n. . . B B N . .\nP P Q . . P P P\nR . . R . . K ."
+    },
+    {
+      "id": "04_g17_recapture_allows_pawn_fork",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "c4d5",
+          "legal": true,
+          "capture": "p",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/p3pn1p/3P4/3P4/2NBBN2/PPQ2PPP/R2R2K1 b - - 0 13"
+        },
+        {
+          "uci": "e6d5",
+          "legal": true,
+          "capture": "P",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/p4n1p/3p4/3P4/2NBBN2/PPQ2PPP/R2R2K1 w - - 0 14"
+        },
+        {
+          "uci": "f3e5",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/p4n1p/3pN3/3P4/2NBB3/PPQ2PPP/R2R2K1 b - - 1 14"
+        },
+        {
+          "uci": "d7e5",
+          "legal": true,
+          "capture": "N",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p2bpp1/p4n1p/3pn3/3P4/2NBB3/PPQ2PPP/R2R2K1 w - - 0 15"
+        },
+        {
+          "uci": "d4e5",
+          "legal": true,
+          "capture": "n",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p2bpp1/p4n1p/3pP3/8/2NBB3/PPQ2PPP/R2R2K1 b - - 0 15"
+        },
+        {
+          "uci": "d5d4",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p2bpp1/p4n1p/4P3/3p4/2NBB3/PPQ2PPP/R2R2K1 w - - 0 16"
+        },
+        {
+          "uci": "e5f6",
+          "legal": true,
+          "capture": "n",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p2bpp1/p4P1p/8/3p4/2NBB3/PPQ2PPP/R2R2K1 b - - 0 16"
+        },
+        {
+          "uci": "e7f6",
+          "legal": true,
+          "capture": "P",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p3pp1/p4b1p/8/3p4/2NBB3/PPQ2PPP/R2R2K1 w - - 0 17"
+        },
+        {
+          "uci": "e3d2",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p3pp1/p4b1p/8/3p4/2NB4/PPQB1PPP/R2R2K1 b - - 1 17"
+        },
+        {
+          "uci": "d4c3",
+          "legal": true,
+          "capture": "N",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p3pp1/p4b1p/8/8/2pB4/PPQB1PPP/R2R2K1 w - - 0 18"
+        },
+        {
+          "uci": "d2c3",
+          "legal": true,
+          "capture": "p",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p3pp1/p4b1p/8/8/2BB4/PPQ2PPP/R2R2K1 b - - 0 18"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "c3": "B",
+        "d3": "B",
+        "e3": null,
+        "f6": "b",
+        "d4": null,
+        "f3": null,
+        "d7": null,
+        "e7": null
+      },
+      "final_fen": "r1bq1rk1/1p3pp1/p4b1p/8/8/2BB4/PPQ2PPP/R2R2K1 b - - 0 18",
+      "final_board": "r . b q . r k .\n. p . . . p p .\np . . . . b . p\n. . . . . . . .\n. . . . . . . .\n. . B B . . . .\nP P Q . . P P P\nR . . R . . K ."
+    },
+    {
+      "id": "05_g24_rook_still_on_diagonal",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "c5c4",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1b2rk1/pp3ppp/5n2/q2p4/2p5/BP2P2P/P1PNBPP1/2Q2RK1 w - - 0 14"
+        },
+        {
+          "uci": "a3f8",
+          "legal": true,
+          "capture": "r",
+          "check_after": false,
+          "fen_after": "r1b2Bk1/pp3ppp/5n2/q2p4/2p5/1P2P2P/P1PNBPP1/2Q2RK1 b - - 0 14"
+        },
+        {
+          "uci": "g8f8",
+          "legal": true,
+          "capture": "B",
+          "check_after": false,
+          "fen_after": "r1b2k2/pp3ppp/5n2/q2p4/2p5/1P2P2P/P1PNBPP1/2Q2RK1 w - - 0 15"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "f8": "k",
+        "g8": null,
+        "a3": null,
+        "c4": "p",
+        "e2": "B",
+        "d2": "N"
+      },
+      "final_fen": "r1b2k2/pp3ppp/5n2/q2p4/2p5/1P2P2P/P1PNBPP1/2Q2RK1 w - - 0 15",
+      "final_board": "r . b . . k . .\np p . . . p p p\n. . . . . n . .\nq . . p . . . .\n. . p . . . . .\n. P . . P . . P\nP . P N B P P .\n. . Q . . R K ."
+    },
+    {
+      "id": "06_g24_rook_moved_before_exchange",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "f8e8",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1b1r1k1/pp3ppp/5n2/q1pp4/8/BP2P2P/P1PNBPP1/2Q2RK1 w - - 3 14"
+        },
+        {
+          "uci": "a3b2",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1b1r1k1/pp3ppp/5n2/q1pp4/8/1P2P2P/PBPNBPP1/2Q2RK1 b - - 4 14"
+        },
+        {
+          "uci": "f6e4",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1b1r1k1/pp3ppp/8/q1pp4/4n3/1P2P2P/PBPNBPP1/2Q2RK1 w - - 5 15"
+        },
+        {
+          "uci": "d2e4",
+          "legal": true,
+          "capture": "n",
+          "check_after": false,
+          "fen_after": "r1b1r1k1/pp3ppp/8/q1pp4/4N3/1P2P2P/PBP1BPP1/2Q2RK1 b - - 0 15"
+        },
+        {
+          "uci": "d5e4",
+          "legal": true,
+          "capture": "N",
+          "check_after": false,
+          "fen_after": "r1b1r1k1/pp3ppp/8/q1p5/4p3/1P2P2P/PBP1BPP1/2Q2RK1 w - - 0 16"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "e8": "r",
+        "f8": null,
+        "b2": "B",
+        "e4": "p",
+        "d2": null,
+        "f6": null,
+        "c5": "p"
+      },
+      "final_fen": "r1b1r1k1/pp3ppp/8/q1p5/4p3/1P2P2P/PBP1BPP1/2Q2RK1 w - - 0 16",
+      "final_board": "r . b . r . k .\np p . . . p p p\n. . . . . . . .\nq . p . . . . .\n. . . . p . . .\n. P . . P . . P\nP B P . B P P .\n. . Q . . R K ."
+    },
+    {
+      "id": "07_g29_recapture_unmasks_bishop",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "e3e4",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/4pn1p/8/p1BNP2B/2N5/PP2QPPP/R2R2K1 b - - 0 13"
+        },
+        {
+          "uci": "f6e4",
+          "legal": true,
+          "capture": "P",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/4p2p/8/p1BNn2B/2N5/PP2QPPP/R2R2K1 w - - 0 14"
+        },
+        {
+          "uci": "c3e4",
+          "legal": true,
+          "capture": "n",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/4p2p/8/p1BNN2B/8/PP2QPPP/R2R2K1 b - - 0 14"
+        },
+        {
+          "uci": "e7h4",
+          "legal": true,
+          "capture": "B",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1n1pp1/4p2p/8/p1BNN2b/8/PP2QPPP/R2R2K1 w - - 0 15"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "h4": "b",
+        "e4": "N",
+        "e3": null,
+        "f6": null,
+        "e7": null,
+        "c3": null,
+        "d4": "N"
+      },
+      "final_fen": "r1bq1rk1/1p1n1pp1/4p2p/8/p1BNN2b/8/PP2QPPP/R2R2K1 w - - 0 15",
+      "final_board": "r . b q . r k .\n. p . n . p p .\n. . . . p . . p\n. . . . . . . .\np . B N N . . b\n. . . . . . . .\nP P . . Q P P P\nR . . R . . K ."
+    },
+    {
+      "id": "08_g29_alternative_capture_fork",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "e3e4",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/4pn1p/8/p1BNP2B/2N5/PP2QPPP/R2R2K1 b - - 0 13"
+        },
+        {
+          "uci": "f6e4",
+          "legal": true,
+          "capture": "P",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/4p2p/8/p1BNn2B/2N5/PP2QPPP/R2R2K1 w - - 0 14"
+        },
+        {
+          "uci": "h4e7",
+          "legal": true,
+          "capture": "b",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nBpp1/4p2p/8/p1BNn3/2N5/PP2QPPP/R2R2K1 b - - 0 14"
+        },
+        {
+          "uci": "e4c3",
+          "legal": true,
+          "capture": "N",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nBpp1/4p2p/8/p1BN4/2n5/PP2QPPP/R2R2K1 w - - 0 15"
+        },
+        {
+          "uci": "b2c3",
+          "legal": true,
+          "capture": "n",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nBpp1/4p2p/8/p1BN4/2P5/P3QPPP/R2R2K1 b - - 0 15"
+        },
+        {
+          "uci": "d8e7",
+          "legal": true,
+          "capture": "B",
+          "check_after": false,
+          "fen_after": "r1b2rk1/1p1nqpp1/4p2p/8/p1BN4/2P5/P3QPPP/R2R2K1 w - - 0 16"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "c3": "P",
+        "e7": "q",
+        "h4": null,
+        "e4": null,
+        "f6": null,
+        "c8": "b",
+        "d7": "n",
+        "d4": "N"
+      },
+      "final_fen": "r1b2rk1/1p1nqpp1/4p2p/8/p1BN4/2P5/P3QPPP/R2R2K1 w - - 0 16",
+      "final_board": "r . b . . r k .\n. p . n q p p .\n. . . . p . . p\n. . . . . . . .\np . B N . . . .\n. . P . . . . .\nP . . . Q P P P\nR . . R . . K ."
+    },
+    {
+      "id": "09_g29_bishop_retreat_and_pawn_exchange",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "h4g3",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/4pn1p/8/p1BN4/2N1P1B1/PP2QPPP/R2R2K1 b - - 1 13"
+        },
+        {
+          "uci": "a4a3",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/4pn1p/8/2BN4/p1N1P1B1/PP2QPPP/R2R2K1 w - - 0 14"
+        },
+        {
+          "uci": "b2a3",
+          "legal": true,
+          "capture": "p",
+          "check_after": false,
+          "fen_after": "r1bq1rk1/1p1nbpp1/4pn1p/8/2BN4/P1N1P1B1/P3QPPP/R2R2K1 b - - 0 14"
+        },
+        {
+          "uci": "a8a3",
+          "legal": true,
+          "capture": "P",
+          "check_after": false,
+          "fen_after": "2bq1rk1/1p1nbpp1/4pn1p/8/2BN4/r1N1P1B1/P3QPPP/R2R2K1 w - - 0 15"
+        },
+        {
+          "uci": "c3b5",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "2bq1rk1/1p1nbpp1/4pn1p/1N6/2BN4/r3P1B1/P3QPPP/R2R2K1 b - - 1 15"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "g3": "B",
+        "a3": "r",
+        "b5": "N",
+        "b2": null,
+        "c3": null,
+        "a4": null,
+        "c4": "B"
+      },
+      "final_fen": "2bq1rk1/1p1nbpp1/4pn1p/1N6/2BN4/r3P1B1/P3QPPP/R2R2K1 b - - 1 15",
+      "final_board": ". . b q . r k .\n. p . n b p p .\n. . . . p n . p\n. N . . . . . .\n. . B N . . . .\nr . . . P . B .\nP . . . Q P P P\nR . . R . . K ."
+    },
+    {
+      "id": "10_g54_actual_defender_relocated",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "f5e5",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "3r1r1k/ppp3pp/2n5/2N1q3/4p3/Q3P2P/PPP3P1/R4RK1 w - - 12 23"
+        },
+        {
+          "uci": "f1f8",
+          "legal": true,
+          "capture": "r",
+          "check_after": true,
+          "fen_after": "3r1R1k/ppp3pp/2n5/2N1q3/4p3/Q3P2P/PPP3P1/R5K1 b - - 0 23"
+        },
+        {
+          "uci": "d8f8",
+          "legal": true,
+          "capture": "R",
+          "check_after": false,
+          "fen_after": "5r1k/ppp3pp/2n5/2N1q3/4p3/Q3P2P/PPP3P1/R5K1 w - - 0 24"
+        },
+        {
+          "uci": "c5d7",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "5r1k/pppN2pp/2n5/4q3/4p3/Q3P2P/PPP3P1/R5K1 b - - 1 24"
+        },
+        {
+          "uci": "e5e7",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "5r1k/pppNq1pp/2n5/8/4p3/Q3P2P/PPP3P1/R5K1 w - - 2 25"
+        },
+        {
+          "uci": "a3e7",
+          "legal": true,
+          "capture": "q",
+          "check_after": false,
+          "fen_after": "5r1k/pppNQ1pp/2n5/8/4p3/4P2P/PPP3P1/R5K1 b - - 0 25"
+        },
+        {
+          "uci": "c6e7",
+          "legal": true,
+          "capture": "Q",
+          "check_after": false,
+          "fen_after": "5r1k/pppNn1pp/8/8/4p3/4P2P/PPP3P1/R5K1 w - - 0 26"
+        },
+        {
+          "uci": "d7f8",
+          "legal": true,
+          "capture": "r",
+          "check_after": false,
+          "fen_after": "5N1k/ppp1n1pp/8/8/4p3/4P2P/PPP3P1/R5K1 b - - 0 26"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "f8": "N",
+        "e7": "n",
+        "c5": null,
+        "d8": null,
+        "a3": null,
+        "e4": "p",
+        "a1": "R"
+      },
+      "final_fen": "5N1k/ppp1n1pp/8/8/4p3/4P2P/PPP3P1/R5K1 b - - 0 26",
+      "final_board": ". . . . . N . k\np p p . n . p p\n. . . . . . . .\n. . . . . . . .\n. . . . p . . .\n. . . . P . . P\nP P P . . . P .\nR . . . . . K ."
+    },
+    {
+      "id": "11_g54_prevention_keeps_rook_escape",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "f5g6",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "3r1r1k/ppp3pp/2n3q1/2N5/4p3/Q3P2P/PPP3P1/R4RK1 w - - 12 23"
+        },
+        {
+          "uci": "f1f8",
+          "legal": true,
+          "capture": "r",
+          "check_after": true,
+          "fen_after": "3r1R1k/ppp3pp/2n3q1/2N5/4p3/Q3P2P/PPP3P1/R5K1 b - - 0 23"
+        },
+        {
+          "uci": "d8f8",
+          "legal": true,
+          "capture": "R",
+          "check_after": false,
+          "fen_after": "5r1k/ppp3pp/2n3q1/2N5/4p3/Q3P2P/PPP3P1/R5K1 w - - 0 24"
+        },
+        {
+          "uci": "c5d7",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "5r1k/pppN2pp/2n3q1/8/4p3/Q3P2P/PPP3P1/R5K1 b - - 1 24"
+        },
+        {
+          "uci": "f8g8",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "6rk/pppN2pp/2n3q1/8/4p3/Q3P2P/PPP3P1/R5K1 w - - 2 25"
+        },
+        {
+          "uci": "d7f8",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "5Nrk/ppp3pp/2n3q1/8/4p3/Q3P2P/PPP3P1/R5K1 b - - 3 25"
+        },
+        {
+          "uci": "g6f5",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "5Nrk/ppp3pp/2n5/5q2/4p3/Q3P2P/PPP3P1/R5K1 w - - 4 26"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "g8": "r",
+        "f8": "N",
+        "f5": "q",
+        "e4": "p",
+        "c6": "n",
+        "c5": null,
+        "h8": "k",
+        "a3": "Q"
+      },
+      "final_fen": "5Nrk/ppp3pp/2n5/5q2/4p3/Q3P2P/PPP3P1/R5K1 w - - 4 26",
+      "final_board": ". . . . . N r k\np p p . . . p p\n. . n . . . . .\n. . . . . q . .\n. . . . p . . .\nQ . . . P . . P\nP P P . . . P .\nR . . . . . K ."
+    },
+    {
+      "id": "12_g54_other_white_reply",
+      "initial_valid": true,
+      "initial_check": false,
+      "moves": [
+        {
+          "uci": "f5g6",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "3r1r1k/ppp3pp/2n3q1/2N5/4p3/Q3P2P/PPP3P1/R4RK1 w - - 12 23"
+        },
+        {
+          "uci": "f1f8",
+          "legal": true,
+          "capture": "r",
+          "check_after": true,
+          "fen_after": "3r1R1k/ppp3pp/2n3q1/2N5/4p3/Q3P2P/PPP3P1/R5K1 b - - 0 23"
+        },
+        {
+          "uci": "d8f8",
+          "legal": true,
+          "capture": "R",
+          "check_after": false,
+          "fen_after": "5r1k/ppp3pp/2n3q1/2N5/4p3/Q3P2P/PPP3P1/R5K1 w - - 0 24"
+        },
+        {
+          "uci": "c5e4",
+          "legal": true,
+          "capture": "p",
+          "check_after": false,
+          "fen_after": "5r1k/ppp3pp/2n3q1/8/4N3/Q3P2P/PPP3P1/R5K1 b - - 0 24"
+        },
+        {
+          "uci": "f8e8",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "4r2k/ppp3pp/2n3q1/8/4N3/Q3P2P/PPP3P1/R5K1 w - - 1 25"
+        },
+        {
+          "uci": "e4d2",
+          "legal": true,
+          "capture": null,
+          "check_after": false,
+          "fen_after": "4r2k/ppp3pp/2n3q1/8/8/Q3P2P/PPPN2P1/R5K1 b - - 2 25"
+        }
+      ],
+      "mismatches": [],
+      "end_squares": {
+        "e8": "r",
+        "d2": "N",
+        "e4": null,
+        "g6": "q",
+        "c6": "n",
+        "a3": "Q"
+      },
+      "final_fen": "4r2k/ppp3pp/2n3q1/8/8/Q3P2P/PPPN2P1/R5K1 b - - 2 25",
+      "final_board": ". . . . r . . k\np p p . . . p p\n. . n . . . q .\n. . . . . . . .\n. . . . . . . .\nQ . . . P . . P\nP P P N . . P .\nR . . . . . K ."
+    }
+  ]
+}

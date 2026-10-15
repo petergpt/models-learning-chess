@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.07"]
+[Round "83"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "1-0"]
+[FEN "rn1qk2r/pp3pp1/2p1n3/3pPN1p/3P4/8/PPP2PP1/R1BQK2R b KQkq - 2 14"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "sol"]
+[GameId "sol/practice/000083"]
+[OpponentSetting "practice-skill-20"]
+[Termination "checkmate"]
+
+14... O-O 15. Qxh5 Qc7 16. Qh7# 1-0

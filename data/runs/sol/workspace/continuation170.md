@@ -1,0 +1,3 @@
+# Continue after 170
+
+170/200 scored, 30 remain. No active game or practice. Next fixed benchmark 171 White skill 0. Trial 287: check enemy pawn captures on major-piece destinations before longer calculation, then bishop rays and collateral defenders. Next evaluation after 172. See review170.md. Goal remains active. Independent mental chess only, ./play opponent/referee, no external/automated/delegated position advice. Work only this experiment, edits workspace/. Avoid export. At exactly 200 scored stop, verify full results, summarize honest measured Elo/uncertainty/per-opponent outcomes/methods/transfer or stagnation/weaknesses, then complete goal. No 201.

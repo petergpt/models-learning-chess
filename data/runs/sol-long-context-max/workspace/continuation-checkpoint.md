@@ -1,0 +1,12 @@
+# Continuation checkpoint — 2026-10-10
+Only own independent experiment directory/workspace. Read/followAGENTS.md/GOAL.md. EverymoveOWNmentalreasoning;./play soleRef/opponent,noengine/search/scoring/tactical/move-selectioncode,advisers,otherlearner/comparison/operator/site/state material. Preserveallresults/operatorfiles. Activegoal,no learning-tokenbudget,endpointEXACTLY200SCORED. No currentinfrastructurefault.
+
+63scored9W4D50L,zero unfinished. Maximum0/0/22,skill0 8/3/10score0.4523809524,nominal1800 1/1/18score0.075. White8/3/21 Black1/1/29. Officialprovisionalengine-relativeElo1280[1120,1420]95%BayesianCI,41calibrated,22maxexcluded,not humanElo. Sustainedstagnation:estimates36/42/48/54/60all1290,fourblocks37–60eachonepoint;61–63threeLosses. Fourhistoricalbenchmarkillegals,none37–63.
+
+63finishedWhiteSkill0actual40...Rxg1#,80plies0illegal. 10Nf3vacatede5QQE7screenlostundefBe4;13h3localh2batteryblock;20Bxf5gxf5evenN/Bswap;26c5 trappedBd6butNd3forkedbothROs,cxd6/cxd6/Rf1/Nxc1/Rxc1 leftQ/R/BvsQ/2R;Rxf5lostPN;32Bxh6usedg7RoyalpinbyQg6toKg8Pawnwin;35BlackRfe5brokebriefrepetition;36Bd4blockedRd1guardd5,Rxd5PNloss;Qg4Rg5pinnedQQtoKG2;Qg3Qc6+Kf1Qh1+Qg1Rxg1# (ACTUALrookcapturesQueenmate,notimaginedQxg1). Targeterrorsrecurring,noimprovementclaim.
+
+Noactivebenchmark/practice. Practice36justexplicitstopped*,skill10Whitefrom63ply76:39Kh2b4 40h4Rxg3*,4plies2Ownmoves0illegal. Noimmediatemateovercap,butqueenlost9;noOwnKing/pawnrecaptureplayed. Retainedunfinished/excluded,failedmaterialpreservation,norepair/transferclaim. Practice35prioractual18Qh7#skill10Blackfrom60ply27,8plies4Ownmoves0illegal,retainedpracticeLOSSnotstopped.
+
+Trial61chosenBEFORE64,recordedlearning/current-method: resolvealreadyattackedQQ/RObeforequietRoyal/pawnplan; cheapguardian0/1doesnotmakeQQ9forR5affordable; actualsliderblockers/legalKingflights;no furtherremembereddrillbefore64–66. Nextaction./playstart fixed64expectedBlackSkill0,inspectactualstate,OWNmoves;fullreview66 thenownnexttrialpersistto200.
+
+LatestactualcontrollerACTIVE at63 tokensUsed29843965,time323112,no budget; notnewusageentered,lastrecordedusage60actual29387019explicitolderblockedperiodsfrozehistoricaltally/noinputoutput/moveleveldetail. Allreportedprivatehypothesesunverified;discardlongghostfutureboards/falsegeometryasfacts. Commentarytimely. Do notmarkcompletebefore200 orblockmerelybecausechesshard/slow.

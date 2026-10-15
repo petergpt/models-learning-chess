@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.08"]
+[Round "109"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[FEN "6k1/ppp2ppp/2pr4/5b2/2P1q3/1QP1P1P1/P4P1P/R1B3K1 w - - 3 19"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "sol"]
+[GameId "sol/practice/000109"]
+[OpponentSetting "practice-skill-20"]
+[Termination "resignation"]
+
+19. f3 Qxf3 20. Bb2 Rd2 0-1

@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.01"]
+[Round "10"]
+[White "Stockfish 19"]
+[Black "gpt-6-astra"]
+[Result "1-0"]
+[FEN "2R5/8/4p3/8/5p1P/3K2p1/6k1/8 w - - 0 59"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "astra"]
+[GameId "astra/practice/000010"]
+[OpponentSetting "practice-elo-1800"]
+[Termination "resignation"]
+
+59. Rc1 f3 60. Ke3 f2 61. Ke2 Kh2 62. h5 f1=Q+ 63. Rxf1 g2 64. Rb1 g1=Q 65. Rxg1 Kxg1 66. h6 1-0

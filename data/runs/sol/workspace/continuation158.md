@@ -1,0 +1,13 @@
+# Authoritative continuation checkpoint:158 scored
+
+2026-10-09 after158 andpractice138. Verified158scored43W8D107L. Fullstrength54L; skill0 36W4D12L; nominal1800 7W4D41L. Elo1540[1410,1660] conditional95%Bayesiancredibleinterval, latest50of104rated,54fullstrengthexcludeduncalibrated. Noactivebenchmarkorpractice. 42scoredremain,next159 Whiteskill0; then160Blackskill0,161White1800,162Black1800 formalreview. GoalACTIVE,no cap (verifiedget_goalpreviousgoalturn). Keepfull200goal,don'treplaceorcompleteearly. No knowninfrastructureblock.
+
+Previousgoalturnprogress: completedbenchmark158lossandretainedpractice138failedrepair; ownreview158 exactdetails. This supersedescontinuation157. Noexternal/delegated/automatedchessadvice/search/evaluation, nootherlearnerexposure. All chessmoves mental ownchoicesviarefereeonly. Onlywriteworkspace.Nevermodifyoperatorplay/.arena/AGENTS/GOAL/data.
+
+158 Blackmaxloss17Qxg8+,33plies0illegal,resultseq12645 timestamp2026-10-09T23:26:17.918428+00:00. History e4 c6 d4 d5 e5 Bf5 h4 h6 g4 Bh7 e6 fxe6 Bd3 Nf6 Bxh7 Rxh7 Qd3 Qa5+ Bd2 Qb6 Nc3 g6 Nf3 Bg7 Qxg6+ Kd8 g5 Rh8 Qxg7 Rg8 gxf6 exf6 Qxg8+. Bg7blockedplannedRf7interposition. g5attackedNf6rootingRh7; Rh8leftBg7unguarded,Qxg7. Rg8wasrootedNf6butgxf6removeddefenderandrootedQg7withnewPF6. exf6thenQxg8+lostrook. DeficitR+2minors offsetpawn,nominal10;practicalresignnotforcedlossproof. Allresultsretained.
+
+Trial264 remembered158after16gxf6ply31, practice138--max--colorblack(refereelabelpractice-skill20). Re8 f7 Qxb2 Rb1 Qa3 fxe8=Q+ Kxe8 Qh8+. Extended3ownmoves to4tocapturepromotedqueen.8plies0illegal,stoppedunfinishedincheck seq1361 timestamp23:29:13.005772. Protectedrookstilltrappedbyf7/Queencoveredescape squares. Rooklostdespitekingdefender; repairfailed. No soundness/transfer claim. Practiceexcludedbenchmark.
+
+Trial265 revisionchosenafterfailedpractice: earlierdevelopmentandking safety beforequeenexcursions/pawnstorms; recomputeactualdefendersafterlatestopponentmove,theninspectimmediatechecking/capturingrepliesonthemajorpiece'schosen destination. Target159-162:no majorpiecehangduetostaledefender/discoveredfork,compareactualrecurrenceandmeasuredElo. Procedure itselfnotlearningevidence. Return159now, formal162.
+
+Recentoverall learningstagnates: 154recoverywinwitherrors,155lostexchangequeen,156minorblunders,157discoveredcheckforklostexchange,158stale-defenderrookhang. Savedrepairslimitedandlatestfailed. Don'tclaimlongerthinking/checklist/oneweakwin/rollingEloestablishesimprovement. At200stop(no201),summaryhonestElointerval/peropponent/trials/evidence/weaknesses andmarkgoalcomplete. No fabricatedtokenusage.

@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.10"]
+[Round "192"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "sol"]
+[GameId "sol/benchmark/000192"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "checkmate"]
+
+1. c4 e5 2. b3 Nf6 3. e3 d5 4. cxd5 Nxd5 5. a3 Nc6 6. Bb2 Bd6 7. d3 O-O 8. g3 Be6 9. Nd2 Qe7 10. Bh3 Rad8 11. Bxe6 Qxe6 12. Rc1 Nf6 13. Ngf3 e4 14. Nxe4 Nxe4 15. Bxg7 Kxg7 16. dxe4 Qxe4 17. Rc2 Ne5 18. Kf1 Nxf3 19. h3 Ne5 20. f3 Qxf3+ 21. Qxf3 Nxf3 22. a4 Ne5 23. Ke2 Kf6 24. b4 Bxb4 25. Rb1 Be7 26. e4 Rb8 27. Rf1+ Ke6 28. Rxf7 Kxf7 29. Kf1 Ke6+ 30. Kg1 Rf3 31. a5 Rd8 32. Kg2 Rf6 33. h4 Nd3 34. Re2 Rdf8 35. a6 Rf2+ 36. Kh3 Rxe2 37. axb7 Rb8 38. e5 Rxb7 39. h5 Nxe5 40. g4 Re3+ 41. Kg2 Rbb3 42. h6 Re2+ 43. Kf1 Rb1+ 44. Kxe2 Nxg4 45. Kf3 Ne5+ 46. Kg2 a5 47. Kh2 a4 48. Kg2 a3 49. Kh2 a2 50. Kh3 a1=Q 51. Kg3 Qd4 52. Kh2 Qh4+ 53. Kg2 Rb2+ 54. Kf1 Qf2# 0-1

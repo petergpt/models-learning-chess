@@ -1,0 +1,82 @@
+[
+  {
+    "game": 166,
+    "ply": 51,
+    "start": "5r2/2p1n1pk/p3Bn1p/8/1PR5/P1prP2P/5PPK/R1B5 b - - 4 26",
+    "line": [
+      {
+        "uci": "d3d6",
+        "legal": true
+      },
+      {
+        "uci": "e6f5",
+        "legal": true
+      },
+      {
+        "uci": "h7g8",
+        "legal": true
+      }
+    ],
+    "end": "5rk1/2p1n1p1/p2r1n1p/5B2/1PR5/P1p1P2P/5PPK/R1B5 w - - 7 28"
+  },
+  {
+    "game": 167,
+    "ply": 46,
+    "start": "3r1rk1/5pp1/p3p2p/1pb1BP2/2bN4/P7/1PP3PP/3R1R1K w - - 5 24",
+    "line": [
+      {
+        "uci": "f1f2",
+        "legal": true
+      },
+      {
+        "uci": "c4e2",
+        "legal": true
+      },
+      {
+        "uci": "d1d2",
+        "legal": true
+      }
+    ],
+    "end": "3r1rk1/5pp1/p3p2p/1pb1BP2/3N4/P7/1PPRbRPP/7K b - - 8 25"
+  },
+  {
+    "game": 168,
+    "ply": 59,
+    "start": "3r2r1/7k/pq5p/2p1pP2/3pP1nR/1P3B2/2PQ1P2/R4K2 b - - 1 30",
+    "line": [
+      {
+        "uci": "g4f6",
+        "legal": true
+      },
+      {
+        "uci": "h4h6",
+        "legal": true
+      },
+      {
+        "uci": "h7g7",
+        "legal": true
+      }
+    ],
+    "end": "3r2r1/6k1/pq3n1R/2p1pP2/3pP3/1P3B2/2PQ1P2/R4K2 w - - 1 32"
+  },
+  {
+    "game": 168,
+    "ply": 77,
+    "start": "8/8/6P1/1Bp1p3/4k3/1P2p3/2Pr4/5K2 b - - 1 39",
+    "line": [
+      {
+        "uci": "d2d8",
+        "legal": true
+      },
+      {
+        "uci": "g6g7",
+        "legal": true
+      },
+      {
+        "uci": "d8g8",
+        "legal": true
+      }
+    ],
+    "end": "6r1/6P1/8/1Bp1p3/4k3/1P2p3/2P5/5K2 w - - 1 41"
+  }
+]

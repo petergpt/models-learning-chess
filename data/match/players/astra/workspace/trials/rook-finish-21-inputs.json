@@ -1,0 +1,129 @@
+[
+  {
+    "id": "147-king-takes-bishop",
+    "game": 147,
+    "ply": 47,
+    "moves": [
+      [
+        "g8g7",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "147-check-removes-defender",
+    "game": 147,
+    "ply": 68,
+    "moves": [
+      [
+        "f7f8",
+        true
+      ],
+      [
+        "d8e7",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "147-controlled-separated-rooks",
+    "game": 147,
+    "ply": 68,
+    "moves": [
+      [
+        "e7a7",
+        true
+      ],
+      [
+        "d8e8",
+        true
+      ],
+      [
+        "f7h7",
+        true
+      ],
+      [
+        "e8f8",
+        true
+      ],
+      [
+        "a7a8",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "149-pawn-capture-promotion",
+    "game": 149,
+    "ply": 89,
+    "moves": [
+      [
+        "a2b1q",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "150-open-d-file",
+    "game": 150,
+    "ply": 35,
+    "moves": [
+      [
+        "d5c4",
+        true
+      ],
+      [
+        "d1d7",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "150-remove-f7-defender",
+    "game": 150,
+    "ply": 57,
+    "moves": [
+      [
+        "f8d8",
+        true
+      ],
+      [
+        "b3f7",
+        true
+      ],
+      [
+        "g8h8",
+        true
+      ],
+      [
+        "f7g7",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "148-open-fifth-rank",
+    "game": 148,
+    "ply": 97,
+    "moves": [
+      [
+        "e5e4",
+        true
+      ],
+      [
+        "c8c5",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "practice-A-setup-only",
+    "fen": "8/1p4p1/4k3/8/R6R/8/8/6K1 w - - 0 1",
+    "moves": []
+  },
+  {
+    "id": "practice-B-setup-only",
+    "fen": "7k/8/8/1r3r2/8/2K5/P5P1/8 b - - 0 1",
+    "moves": []
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "game": 176,
+    "ply": 65,
+    "fen": "r1q1rbk1/5p1p/pPPp2p1/3Pp2n/R1N1P3/4BQ1P/5PP1/R4NK1 b - - 0 33",
+    "lines": [
+      {
+        "label": "actual queen loss",
+        "moves": [
+          {
+            "uci": "c8c6",
+            "legal": true,
+            "san": "Qxc6"
+          },
+          {
+            "uci": "d5c6",
+            "legal": true,
+            "san": "dxc6"
+          }
+        ],
+        "final_fen": "r3rbk1/5p1p/pPPp2p1/4p2n/R1N1P3/4BQ1P/5PP1/R4NK1 b - - 0 34"
+      },
+      {
+        "label": "chosen retreat line",
+        "moves": [
+          {
+            "uci": "c8d8",
+            "legal": true,
+            "san": "Qd8"
+          },
+          {
+            "uci": "c6c7",
+            "legal": true,
+            "san": "c7"
+          },
+          {
+            "uci": "d8d7",
+            "legal": true,
+            "san": "Qd7"
+          }
+        ],
+        "final_fen": "r3rbk1/2Pq1p1p/pP1p2p1/3Pp2n/R1N1P3/4BQ1P/5PP1/R4NK1 w - - 1 35"
+      }
+    ]
+  },
+  {
+    "game": 179,
+    "ply": 64,
+    "fen": "rn2r1k1/5pp1/p7/3R1PPp/5b2/5N1P/PP6/5RK1 w - - 1 33",
+    "lines": [
+      {
+        "label": "actual checking fork",
+        "moves": [
+          {
+            "uci": "d5d4",
+            "legal": true,
+            "san": "Rd4"
+          },
+          {
+            "uci": "f4e3",
+            "legal": true,
+            "san": "Be3+"
+          },
+          {
+            "uci": "g1h1",
+            "legal": true,
+            "san": "Kh1"
+          },
+          {
+            "uci": "e3d4",
+            "legal": true,
+            "san": "Bxd4"
+          },
+          {
+            "uci": "f3d4",
+            "legal": true,
+            "san": "Nxd4"
+          }
+        ],
+        "final_fen": "rn2r1k1/5pp1/p7/5PPp/3N4/7P/PP6/5R1K b - - 0 35"
+      },
+      {
+        "label": "chosen quiet line",
+        "moves": [
+          {
+            "uci": "h3h4",
+            "legal": true,
+            "san": "h4"
+          },
+          {
+            "uci": "f4e3",
+            "legal": true,
+            "san": "Be3+"
+          },
+          {
+            "uci": "g1h1",
+            "legal": true,
+            "san": "Kh1"
+          }
+        ],
+        "final_fen": "rn2r1k1/5pp1/p7/3R1PPp/7P/4bN2/PP6/5R1K b - - 2 34"
+      }
+    ]
+  },
+  {
+    "game": 180,
+    "ply": 41,
+    "fen": "4r1k1/1ppb1ppp/3p1q2/r2PP3/3p4/P4B2/2Q2PPP/RR4K1 b - - 0 21",
+    "lines": [
+      {
+        "label": "actual queen fork",
+        "moves": [
+          {
+            "uci": "d6e5",
+            "legal": true,
+            "san": "dxe5"
+          },
+          {
+            "uci": "c2c7",
+            "legal": true,
+            "san": "Qxc7"
+          },
+          {
+            "uci": "a5a8",
+            "legal": true,
+            "san": "Raa8"
+          },
+          {
+            "uci": "c7d7",
+            "legal": true,
+            "san": "Qxd7"
+          }
+        ],
+        "final_fen": "r3r1k1/1p1Q1ppp/5q2/3Pp3/3p4/P4B2/5PPP/RR4K1 b - - 0 23"
+      },
+      {
+        "label": "chosen retreat line",
+        "moves": [
+          {
+            "uci": "f6e7",
+            "legal": true,
+            "san": "Qe7"
+          },
+          {
+            "uci": "e5d6",
+            "legal": true,
+            "san": "exd6"
+          },
+          {
+            "uci": "e7d6",
+            "legal": true,
+            "san": "Qxd6"
+          }
+        ],
+        "final_fen": "4r1k1/1ppb1ppp/3q4/r2P4/3p4/P4B2/2Q2PPP/RR4K1 w - - 0 23"
+      }
+    ]
+  }
+]

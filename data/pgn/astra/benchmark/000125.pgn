@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.02"]
+[Round "125"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "astra"]
+[GameId "astra/benchmark/000125"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "resignation"]
+
+1. d4 e6 2. Nf3 f5 3. e3 c6 4. Be2 Be7 5. O-O a5 6. c4 d5 7. Nc3 Nf6 8. Bd2 O-O 9. Rc1 Ne4 10. Re1 Bd6 11. Nxe4 dxe4 12. Ne5 c5 13. Bc3 cxd4 14. Bxd4 Qc7 15. f4 exf3 16. Nxf3 Na6 17. c5 Be7 18. Qb3 Nxc5 19. Qc3 b6 20. Be5 Qa7 21. Red1 Bf6 22. Bxf6 Ne4 23. Qe5 Nxf6 24. Rc7 Qb8 25. Rc6 h6 26. Qxb8 Rxb8 27. Ne5 Nd5 28. Kf2 Nf6 29. Bf3 Kh7 30. Nc4 Ng4+ 31. Bxg4 fxg4+ 32. Kg3 b5 33. Ne5 Rf5 34. Nxg4 Bb7 35. Rxe6 Bd5 36. Re5 Rxe5 37. Nxe5 Bxa2 38. Nc6 Bb3 39. Rd6 Re8 40. Kf3 a4 41. Nd4 Bd1+ 42. Kf2 Rf8+ 43. Ke1 Bg4 44. Nxb5 Rb8 45. Nc3 Re8 46. Kd2 Rb8 47. Nxa4 Bh5 48. Kc3 Bg6 49. b4 Re8 50. Kd4 Re4+ 51. Kc5 Rxe3 52. b5 Ra3 53. Nb6 Bd3 54. Nc4 Rc3 55. Rd4 Bf1 56. Kd6 Bxc4 57. b6 Ba6 58. Ra4 Rd3+ 59. Kc7 Rc3+ 60. Kb8 Bb5 61. Ra7 Rc2 62. b7 Kg8 63. Ka8 Bc6 64. Ra6 Kf7 65. Kb8 Bd5 66. Ka7 Bxb7 67. Kxb7 Rb2+ 68. Kc7 Rxg2 69. h4 Rg6 70. Ra4 Re6 71. Kd7 h5 72. Ra5 g6 73. Rg5 Re7+ 74. Kd6 Re4 75. Re5 Rd4+ 76. Kc5 Rg4 77. Kd5 Rxh4 78. Re2 Rf4 79. Ke5 Ra4 80. Rf2+ Kg7 81. Ke6 Ra8 82. Rf7+ Kg8 83. Kf6 Ra6+ 84. Ke7 Ra7+ 85. Ke6 Ra6+ 86. Ke7 Ra7+ 87. Ke6 Rxf7 0-1

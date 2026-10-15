@@ -1,0 +1,659 @@
+[
+  {
+    "snapshot": "114d4635d09218b60d412cfec6d029ed0566a48df5ba55cfb7df627a2e3a5c73",
+    "eventTimestamp": "2026-10-02T21:03:09.397466+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 4,
+    "text": "- Rotation per 6 games: full-strength W,B; skill-0 W,B; elo-1800 W,B. Engine: 1M nodes/move."
+  },
+  {
+    "snapshot": "114d4635d09218b60d412cfec6d029ed0566a48df5ba55cfb7df627a2e3a5c73",
+    "eventTimestamp": "2026-10-02T21:03:09.397466+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 5,
+    "text": "- Elo uses ONLY skill-0 (anchor 1320) and 1800-setting games; rolling window = last 50 rated games."
+  },
+  {
+    "snapshot": "114d4635d09218b60d412cfec6d029ed0566a48df5ba55cfb7df627a2e3a5c73",
+    "eventTimestamp": "2026-10-02T21:03:09.397466+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 7,
+    "text": "- Full-strength games are benchmark evidence but excluded from Elo."
+  },
+  {
+    "snapshot": "114d4635d09218b60d412cfec6d029ed0566a48df5ba55cfb7df627a2e3a5c73",
+    "eventTimestamp": "2026-10-02T21:03:09.397466+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 11,
+    "text": "illegal-move submissions, sloppy conversion (stalemate/repetition), long games burning budget."
+  },
+  {
+    "snapshot": "9612c069dedfbdf587bbd0c2744419e20de7ef56c34cd4f3c2b2342bb24d13e5",
+    "eventTimestamp": "2026-10-02T22:16:25.647102+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 22,
+    "text": "  from my own line errors). Elo 1870 [1410,2460] after 4 rated games. Tokens used ~508k (too many: ~85k/game)."
+  },
+  {
+    "snapshot": "9612c069dedfbdf587bbd0c2744419e20de7ef56c34cd4f3c2b2342bb24d13e5",
+    "eventTimestamp": "2026-10-02T22:16:25.647102+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 25,
+    "text": "  Observable: 0 illegal attempts; fewer self-inflicted material losses in rated games (block 1: G6 had 3);"
+  },
+  {
+    "snapshot": "e2b86202be8119572f962ec4aa42cd3b92f60c4d5992205f1e735a8f1b0b2872",
+    "eventTimestamp": "2026-10-02T23:07:56.146300+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 31,
+    "text": "  KING RULE for endgames. Full-strength games: lighter version, resign hopeless positions early."
+  },
+  {
+    "snapshot": "8d50fc12a0c47f1eaa5e16a4ce08f590066300a267f1be7caa3a13870a71e6e2",
+    "eventTimestamp": "2026-10-03T00:54:11.810650+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 36,
+    "text": "- T2 RESULT (G13-18): rated 3/4 (was 0/4); Elo 1560 [1310,1810] after 12 rated. Blunder rate ~1/rated game (target"
+  },
+  {
+    "snapshot": "8d50fc12a0c47f1eaa5e16a4ce08f590066300a267f1be7caa3a13870a71e6e2",
+    "eventTimestamp": "2026-10-03T00:54:11.810650+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 38,
+    "text": "- T3 (games 19-24): COMPACT protocol + token budget. Each move: (1) census of every enemy line from the piece that just"
+  },
+  {
+    "snapshot": "8d50fc12a0c47f1eaa5e16a4ce08f590066300a267f1be7caa3a13870a71e6e2",
+    "eventTimestamp": "2026-10-03T00:54:11.810650+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 41,
+    "text": "  Budget <=60K tokens/game (185 games left need ~74K/game). Resign lost positions vs full/1800 at once."
+  },
+  {
+    "snapshot": "79a27a5ccfecbc969ce27a48c15bf4803f0c61ded8c08c6e27b85b0e7e106645",
+    "eventTimestamp": "2026-10-03T01:43:01.934621+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 44,
+    "text": "- T3 RESULT (G19-24): tokens ~44K/game (met), but rated 1/4, Elo 1490 [1270,1700] after 16 rated; blunders >1/game,"
+  },
+  {
+    "snapshot": "79a27a5ccfecbc969ce27a48c15bf4803f0c61ded8c08c6e27b85b0e7e106645",
+    "eventTimestamp": "2026-10-03T01:43:01.934621+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 46,
+    "text": "- T4 (games 25-30): budget by opponent (full ~20K, rated ~90K) + a mandatory written LINES note on every rated move:"
+  },
+  {
+    "snapshot": "79a27a5ccfecbc969ce27a48c15bf4803f0c61ded8c08c6e27b85b0e7e106645",
+    "eventTimestamp": "2026-10-03T01:43:01.934621+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 49,
+    "text": "  + back-rank status + path squares read from FEN. Observable: <=1 decisive blunder in the 4 rated games, 0 illegal."
+  },
+  {
+    "snapshot": "e60761af83837e5f5d1b255caa21f7dcd090cef7d5e2c578df3e3818f91ea4a7",
+    "eventTimestamp": "2026-10-03T02:27:03.491338+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 51,
+    "text": "- T4 RESULT (G25-30): rated 2/4, Elo 1500 [1310,1700] after 20 rated; 0 illegal moves (path check works);"
+  },
+  {
+    "snapshot": "e60761af83837e5f5d1b255caa21f7dcd090cef7d5e2c578df3e3818f91ea4a7",
+    "eventTimestamp": "2026-10-03T02:27:03.491338+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 55,
+    "text": "  Rated games may use ~60K tokens, full-strength ~20K. Observable: 0 lost-material blunders from enemy captures."
+  },
+  {
+    "snapshot": "d268bfa7889a1251b83b66554759921d04468ed7ddfc51ece8a74fc9a090891d",
+    "eventTimestamp": "2026-10-03T03:59:49.429291+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 56,
+    "text": "- T5 RESULT (G31-36): rated 2.5/4 (W,W,D,L), Elo 1540 [1360,1710] after 24 rated; but NOT met: 4 material-losing"
+  },
+  {
+    "snapshot": "d268bfa7889a1251b83b66554759921d04468ed7ddfc51ece8a74fc9a090891d",
+    "eventTimestamp": "2026-10-03T03:59:49.429291+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 57,
+    "text": "  misses (G31 Nb3, G34 Qxc2, G35 c6, G36 bxa3/Nxf5+) and 5 illegal attempts; ~85K tokens/game (over budget)."
+  },
+  {
+    "snapshot": "d268bfa7889a1251b83b66554759921d04468ed7ddfc51ece8a74fc9a090891d",
+    "eventTimestamp": "2026-10-03T03:59:49.429291+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 63,
+    "text": "  Plus: when ahead, trade pieces; vs full strength resign at -3. Budget: full <=15K, rated <=70K."
+  },
+  {
+    "snapshot": "d268bfa7889a1251b83b66554759921d04468ed7ddfc51ece8a74fc9a090891d",
+    "eventTimestamp": "2026-10-03T03:59:49.429291+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 64,
+    "text": "  Observable: 0 illegal attempts and <=1 material-losing miss over the 4 rated games. Evaluate after G42."
+  },
+  {
+    "snapshot": "e010a11e0f8e1a85f85fac603d468e8deaf35d90317dfe35c217df0fd78174eb",
+    "eventTimestamp": "2026-10-03T04:39:47.002852+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 65,
+    "text": "- T6 RESULT (G37-42): 0/6, rated 0/4 (2 losses to skill 0!), Elo 1460 [1300,1620] after 28 rated. ~36K tokens/game:"
+  },
+  {
+    "snapshot": "e010a11e0f8e1a85f85fac603d468e8deaf35d90317dfe35c217df0fd78174eb",
+    "eventTimestamp": "2026-10-03T04:39:47.002852+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 68,
+    "text": "- Budget check: 12.34M tokens / 158 games left. Full-strength games (~53) at <=12K each leave ~110K per rated game."
+  },
+  {
+    "snapshot": "e010a11e0f8e1a85f85fac603d468e8deaf35d90317dfe35c217df0fd78174eb",
+    "eventTimestamp": "2026-10-03T04:39:47.002852+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 69,
+    "text": "- T7 (games 43-48): SPEND the budget on rated games (target 90-120K each, no compact mode) and run the FULL check on"
+  },
+  {
+    "snapshot": "e010a11e0f8e1a85f85fac603d468e8deaf35d90317dfe35c217df0fd78174eb",
+    "eventTimestamp": "2026-10-03T04:39:47.002852+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 73,
+    "text": "  Exactly one move command per turn. Full-strength: quick play, resign at -3."
+  },
+  {
+    "snapshot": "af1532fd8f4f5bb4f7af3fba82c8307bab37ed62350b458a4ec080ddec595240",
+    "eventTimestamp": "2026-10-03T05:30:43.541658+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 75,
+    "text": "- T7 RESULT (G43-48): rated 2/4 (G45 W, G46 L, G47 W, G48 L), Elo 1470 [1320,1620] after 32 rated (13.5/32)."
+  },
+  {
+    "snapshot": "af1532fd8f4f5bb4f7af3fba82c8307bab37ed62350b458a4ec080ddec595240",
+    "eventTimestamp": "2026-10-03T05:30:43.541658+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 78,
+    "text": "- Budget check: 12.04M tokens / 152 games left -> full-strength ~10K each (~510K), rated ~110K each."
+  },
+  {
+    "snapshot": "af1532fd8f4f5bb4f7af3fba82c8307bab37ed62350b458a4ec080ddec595240",
+    "eventTimestamp": "2026-10-03T05:30:43.541658+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 82,
+    "text": "  now shares with an enemy piece) is written for EVERY rated move including development and recaptures; the scan"
+  },
+  {
+    "snapshot": "75685100500623d77efe263b2249ab47c927a8457e8aba0c068bcb0138323aa5",
+    "eventTimestamp": "2026-10-03T07:00:24.063822+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 85,
+    "text": "- T8 RESULT (G49-54): rated 1.5/4 (G51 W, G52 D, G53 L from +2, G54 L), Elo 1470 after 36 rated. NOT met. Rendering"
+  },
+  {
+    "snapshot": "75685100500623d77efe263b2249ab47c927a8457e8aba0c068bcb0138323aa5",
+    "eventTimestamp": "2026-10-03T07:00:24.063822+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 93,
+    "text": "  losses and zero illegal attempts in rated games; rated >= 2/4. Evaluate after G60."
+  },
+  {
+    "snapshot": "fd80ff879086f6d294a3cff23aa03fb511b99f0a3f59e7e3b685e122d7ab95ee",
+    "eventTimestamp": "2026-10-03T07:43:49.184824+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 94,
+    "text": "- T9 RESULT (G55-60): rated 2/4 (G57 W mate, G58 L, G59 L, G60 W mate), Elo 1480 after 40 rated. Met: rated >= 2/4,"
+  },
+  {
+    "snapshot": "fd80ff879086f6d294a3cff23aa03fb511b99f0a3f59e7e3b685e122d7ab95ee",
+    "eventTimestamp": "2026-10-03T07:43:49.184824+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 95,
+    "text": "  0 illegal in rated games. Not met: 2 one-move material losses (x-ray rook battery; vacated-line queen loss)."
+  },
+  {
+    "snapshot": "fd80ff879086f6d294a3cff23aa03fb511b99f0a3f59e7e3b685e122d7ab95ee",
+    "eventTimestamp": "2026-10-03T07:43:49.184824+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 100,
+    "text": "  on the same line (doubled rooks, Q+B, Q+R). Observable: zero one-move material losses in rated games, 0 illegal,"
+  },
+  {
+    "snapshot": "d0cca5180ceb8fef9f982672b4a1c8f07d72487c26e9ea853a82eb560af5ec1f",
+    "eventTimestamp": "2026-10-03T08:58:14.469952+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 102,
+    "text": "- T10 RESULT (G61-66): rated 3/4 (G63 W, G64 W, G65 W vs 1800, G66 L vs 1800), Elo 1510 [1380,1640] after 44 rated"
+  },
+  {
+    "snapshot": "d0cca5180ceb8fef9f982672b4a1c8f07d72487c26e9ea853a82eb560af5ec1f",
+    "eventTimestamp": "2026-10-03T08:58:14.469952+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 106,
+    "text": "- Budget check: 10.76M tokens / 134 games -> ~80K per game average; keep full-strength games short (~12K)."
+  },
+  {
+    "snapshot": "d0cca5180ceb8fef9f982672b4a1c8f07d72487c26e9ea853a82eb560af5ec1f",
+    "eventTimestamp": "2026-10-03T08:58:14.469952+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 111,
+    "text": "  for retreats too. Observable: no discovered-attack or fork losses, 0 illegal in rated games, rated >= 2/4."
+  },
+  {
+    "snapshot": "17c47ad6956d5371cbb47c1c37c3a559ff304ffeebc544cec6d663ea9595b6d5",
+    "eventTimestamp": "2026-10-03T10:08:39.544708+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 113,
+    "text": "- T11 RESULT (G67-72): rated 2/4 (G69 W, G70 L from +5, G71 W vs 1800, G72 L vs 1800), Elo 1510 [1390,1640]"
+  },
+  {
+    "snapshot": "17c47ad6956d5371cbb47c1c37c3a559ff304ffeebc544cec6d663ea9595b6d5",
+    "eventTimestamp": "2026-10-03T10:08:39.544708+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 121,
+    "text": "  pieces near the rim. Observable: zero one-move material losses in rated games, rated >= 2/4. Evaluate after G78."
+  },
+  {
+    "snapshot": "11a212485dbac4e6954bcec3984a6610bd2b050373729ac4dbb9f7a923e3258a",
+    "eventTimestamp": "2026-10-03T11:19:29.655061+00:00",
+    "game": 77,
+    "eventKind": "start",
+    "file": "GAMES.md",
+    "line": 80,
+    "text": "| 76 | skill0 | B | 1/2 threefold | 212 | Caro/...; I was better until 37...Rxa3?? (a3 covered by Nc4) lost a rook; fought back with ...fxg3/...Nxd3 to R+N v N+4P; held a knight-on-e6 fortress (N guards c5/g5/g7, K beside it) for ~50 moves, gave up a/c pawns, ended N+2P v R+N; referee auto-claimed repetition (White's Ra7 would repeat a 3rd time). 1 illegal attempt (f7-f5 through my own K on f6) |"
+  },
+  {
+    "snapshot": "3c826dcc264764cc2d57f923a3969ddc404260c7fb09208cbe9016ca3a998e4d",
+    "eventTimestamp": "2026-10-03T15:59:43.170725+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 123,
+    "text": "  Elo 1490 [1370,1620] after 52 rated (flat since T9). 0 illegal in rated games except G76 (1)."
+  },
+  {
+    "snapshot": "3c826dcc264764cc2d57f923a3969ddc404260c7fb09208cbe9016ca3a998e4d",
+    "eventTimestamp": "2026-10-03T15:59:43.170725+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 138,
+    "text": "  Observable: zero one-move material losses in rated games; rated >= 2/4. Evaluate after G84."
+  },
+  {
+    "snapshot": "f9168fbdb08a57867edb39225f9bd4d8ea324f6b22a5dcd05a0465bffc28650d",
+    "eventTimestamp": "2026-10-03T17:03:57.247966+00:00",
+    "game": 84,
+    "eventKind": "start",
+    "file": "GAMES.md",
+    "line": 87,
+    "text": "| 83 | 1800 | W | 1/2 threefold | 73 | 1.e4 e5 Nf3 Qe7 Nc3 d6 d4 exd4 Nxd4 Nc6 Bb5 Qd7 O-O a6 Bxc6 bxc6 Bf4 Ne7 Re1 f6 Qh5+ g6 Qf3 Qg4 Qxg4 Bxg4; quiet endgame; 23.g4? allowed hxg3 e.p. and Rxh3+ (Bd7 guarded h3) = -1; rook trade, Rh5/Rh8 vs Kg6/Kg7 repetition. 1 illegal (Rd1-h1 through my own Re1) |"
+  },
+  {
+    "snapshot": "3a139709ae3291133d212faf1ec05e7c8f7272603787a5c1dc56a708d0ce6ded",
+    "eventTimestamp": "2026-10-03T17:49:13.084000+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "GAMES.md",
+    "line": 88,
+    "text": "| 84 | 1800 | B | 1/2 threefold | 136 | 1.Nf3 d5 e3 Nf6 c4 c6 Be2 Bf5 Nh4 Bg6 cxd5 cxd5 Qb3 Qc7 Qa4+ Nbd7 Nc3 e6 d4 a6 a3 Bd6 Nb5 Qb8 Nxd6+ Qxd6 O-O O-O Bd2 Ne4 16.Bb4! skewered Qd6/Rf8 (exchange down); 36.Bxg6+ (Kxg6 illegal: Qc2 diagonal), 39.fxg4 (g4 guarded by Qe2); defended: 49...Nc7 (double guard e6), 51...Rf8 (forced Q trade), R v N+P; 57...b5? would lose to axb6 e.p. (caught), 58...Nc4 fork regained a5/e3, Kg8 only safe square vs g7, Rc7+/Rc8+ repetition. 1 illegal (Qd6-f6 through my own e6) |"
+  },
+  {
+    "snapshot": "3a139709ae3291133d212faf1ec05e7c8f7272603787a5c1dc56a708d0ce6ded",
+    "eventTimestamp": "2026-10-03T17:49:13.084000+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 140,
+    "text": "  Elo 1510 [1390,1640] after 56 rated (flat since T9, within noise). NOT met: zero one-move losses"
+  },
+  {
+    "snapshot": "518aaa2eed66632059d3f84ea1fa95a8e5cb7c4dbae03a79f533011340add826",
+    "eventTimestamp": "2026-10-03T19:15:13.010065+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 154,
+    "text": "  Zero one-move material losses in rated games. Elo 1560 [1440,1680] after 60 rated (+50 from 1510)."
+  },
+  {
+    "snapshot": "d8cf2009927e2e998616235a13aa2fb3840b8c1d92061485ad8e781e68d12869",
+    "eventTimestamp": "2026-10-03T20:24:23.214979+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 158,
+    "text": "- T15 RESULT (G91-96): full 0/2; rated 4/4 (G93 W, G94 W skill0; G95 W, G96 W 1800). Elo 1610 [1480,1730]"
+  },
+  {
+    "snapshot": "47d322104faa459d5798a11fef1c677e0bd42d3cd1898d9a84a4aca0fc949bd2",
+    "eventTimestamp": "2026-10-03T22:15:10.479457+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 169,
+    "text": "- T16 RESULT (G97-102): full 0/2; rated 2.5/4 (G99 W, G100 D, G101 W, G102 L). Elo 1640 [1520,1770] after"
+  },
+  {
+    "snapshot": "675d13324a41e3a44e34b7fe8a0f5b78797bc8968b2f1e4131f56d1436742bc9",
+    "eventTimestamp": "2026-10-03T23:54:49.647097+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 181,
+    "text": "- T17 RESULT (G103-108): full 0/2; rated 2/4 (G105 W, G106 W skill0; G107 L, G108 L 1800). Elo 1620 [1490,1740]"
+  },
+  {
+    "snapshot": "9d467faf59a0eb67e565ebdeaf8e0521544f5f036587d446cffa55d53a679138",
+    "eventTimestamp": "2026-10-04T01:05:12.701231+00:00",
+    "game": 114,
+    "eventKind": "start",
+    "file": "GAMES.md",
+    "line": 117,
+    "text": "| 113 | 1800 | W | 1/2 threefold | 171 | Alapin 2...d5 exd5 Qxd5 d4 cxd4 cxd4 e6 Nf3 a6 Nc3 Bb4 Bd2 Qd8 Bd3 Nf6 O-O Nc6 Be3 h6 a3 Be7 Qe2 Nd5 Nxd5 Qxd5 15.Bc4 (15.Be4?? would hang: Qe2 blocked by Be3) Qd6 Rfd1 O-O 17.d5 Ne5 18.dxe6 Nxf3+ Qxf3 fxe6 20.Qg4 Qe5 21.Bd4 (threat Qxg7#) Qg5 Qxg5 hxg5 ... (27.Rd8+?? Bxd8 avoided) ... won g5/f4, +4 by move 50, 58.Re4?? (Rg4 had guarded g2) Rxg2, then a2/e-pawn counterplay; 69.Ra1! (Rb1 threat) e2 Bxe2 ... Rxa2 Kxh3 = R+B vs R, draw by repetition. 0 illegal |"
+  },
+  {
+    "snapshot": "b854985ac6404bf842e71a3a74ee1c40ae988e63069af7c841640fc2f30f94a4",
+    "eventTimestamp": "2026-10-04T02:18:34.452432+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 196,
+    "text": "- T18 RESULT (G109-114): full 0/2; rated 1.5/4 (G111 W, G112 L skill0; G113 D, G114 L 1800). Elo 1640 [1520,1770]"
+  },
+  {
+    "snapshot": "6c15da4dc190c920755dd4adbee652b078fd49ac5c1c7d14bf32356c0f36f0b7",
+    "eventTimestamp": "2026-10-04T03:22:06.583337+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 209,
+    "text": "- T19 RESULT (G115-120): full 0/2; rated 2/4 (G117 W, G118 W skill0; G119 L, G120 L 1800). Elo 1660 [1540,1790]"
+  },
+  {
+    "snapshot": "a840c121e21311f96a0a56c3a16d48547285549116806a5dab78bfc6f57961a2",
+    "eventTimestamp": "2026-10-04T05:09:37.171581+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "GAMES.md",
+    "line": 130,
+    "text": "| 126 | 1800 | B | 1/2 threefold | 112 | Reti 1.Nf3 d5 c4 c6 e3 Nf6 Nc3 Bf5 cxd5 cxd5 6.Qb3 Qb6 7.Bb5+ Nc6 8.Nxd5 (Bb5 blocked my Qxb3 defence) Nxd5 Qxd5 e6 Bxc6+ bxc6 11.Qe5 Qb5? (rank attack missed; c6 made it a queen trade) 12.Qxb5 cxb5 ... 22.Nc4 Bc7 ... 25.Nb6 (Rc8 overloaded: Bc7 shielded it on the c-file) Kd8 Nxc8 Kxc8 27.Bf4 e5 ... 32...exd4?? rejected (opens g3-c7) 38...Bxa4?? rejected (Rc7+ Rxe7) 41...b3 Rg1 b2 Rb1 Bc3 Ba3 44...Bc2! 45.Rxb2+ Bxb2 Bxb2: opposite bishops, 50...Bd3 pinned e4, repetition. 0 illegal |"
+  },
+  {
+    "snapshot": "a840c121e21311f96a0a56c3a16d48547285549116806a5dab78bfc6f57961a2",
+    "eventTimestamp": "2026-10-04T05:09:37.171581+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 221,
+    "text": "- T20 RESULT (G121-126): full 0/2; rated 3.5/4 (G123 W, G124 W skill0; G125 W, G126 D 1800). Elo 1690 [1560,1810]"
+  },
+  {
+    "snapshot": "a8dbff243cce2e0a87f67cf4f3af71d1d0f0239c87e8f36f0536dae79f9ebb4d",
+    "eventTimestamp": "2026-10-04T08:14:30.020035+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 230,
+    "text": "- T21 RESULT (G127-132): full 0/2; rated 4/4 (G129 W, G130 W skill0; G131 W, G132 W 1800). Elo 1760 [1630,1890]"
+  },
+  {
+    "snapshot": "30113d4a6839070284cb994669a018e5ec5ad31d0a9333537969c7d8e26f20d3",
+    "eventTimestamp": "2026-10-04T10:00:41.794618+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 240,
+    "text": "- T22 RESULT (G133-138): full 0/2; rated 3/4 (G135 W, G136 W skill0; G137 W, G138 L 1800). Elo 1760 [1630,1890]"
+  },
+  {
+    "snapshot": "4126a6ec853e99eaaf59eeb99b16aabc989f52ece64ce5bc355fbc3fb7468211",
+    "eventTimestamp": "2026-10-04T10:54:06.383258+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 250,
+    "text": "- T23 RESULT (G139-144): full 0/2; rated 2/4 (G141 W, G142 W skill0; G143 L, G144 L 1800). Elo 1760 [1630,1890]"
+  },
+  {
+    "snapshot": "225e4ec3b1628451c78922fb5844e3e7af5a4ce464247c40a15fa13ca27add4a",
+    "eventTimestamp": "2026-10-04T12:25:10.909168+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 258,
+    "text": "- T24 RESULT (G145-150): full 0/2; rated 4/4, best block so far. Elo 1790 [1670,1930] after 100 rated (+30)."
+  },
+  {
+    "snapshot": "9488fc7df14fdfa735f9f97bd685d2f01335b325a423758dcdeef3e8004cd4eb",
+    "eventTimestamp": "2026-10-04T13:23:34.152375+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 266,
+    "text": "- T25 RESULT (G151-156): full 0/2; rated 3/4; Elo 1840 [1720,1980] after 104 rated (+50, highest so far)."
+  },
+  {
+    "snapshot": "de3d4e7e5baf985ad7f532c970f8d25745623a91ea69998b6a7ef3e0d9acf2cc",
+    "eventTimestamp": "2026-10-04T15:12:25.496073+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 273,
+    "text": "- T26 RESULT (G157-162): full 0/2; rated 2/4 (skill0 2/2, 1800 0/2); Elo 1810 [1690,1940] after 108 rated (-30)."
+  },
+  {
+    "snapshot": "362e80cab27b4de9a1d10f815ee0b358a7a6ddb289e12bd728a4dfb3326212b3",
+    "eventTimestamp": "2026-10-04T17:21:56.973621+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 283,
+    "text": "- T27 RESULT (G163-168): full 0/2; rated 2.5/4 (skill0 1.5/2: W, D; 1800 1/2: W, L); Elo 1780 [1650,1910] after"
+  },
+  {
+    "snapshot": "6e4987a18a0b7f3096c597dfc5e96a14e93e6aa2c3c324ab478f0d31f78be937",
+    "eventTimestamp": "2026-10-04T18:43:08.276770+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 293,
+    "text": "- T28 RESULT (G169-174): full 0/2; rated 2/4 (skill0 2/2: W, W; 1800 0/2: L, L); Elo 1740 [1620,1870] after 116"
+  },
+  {
+    "snapshot": "4f80ec9f8473040447feb87202ca3c6daca6b5b8bcfaa50213e84a649ea2efef",
+    "eventTimestamp": "2026-10-04T20:23:25.417392+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 303,
+    "text": "- T29 RESULT (G175-180): full 0/2; rated 2/4 (skill0 1/2: W, L; 1800 1/2: W, L); Elo 1720 [1600,1840] after 120"
+  },
+  {
+    "snapshot": "4450e5184f6c73f940463da715573694b425140c87a8ba32eae97893cb851e73",
+    "eventTimestamp": "2026-10-04T21:58:17.264239+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "GAMES.md",
+    "line": 190,
+    "text": "| 186 | 1800 | B | 1/2 repetition | 21 | 1.c4 Nf6 2.d4 e6 3.Nf3 d5 4.Nc3 Be7 5.cxd5 exd5 6.Bf4 c6 7.Rc1 Bf5 8.Nh4 Be6 9.Nf3 Bf5 10.Nh4 Be6 - threefold repetition; I deliberately repeated (a draw scores above my expectation vs this setting). 0 illegal |"
+  },
+  {
+    "snapshot": "4450e5184f6c73f940463da715573694b425140c87a8ba32eae97893cb851e73",
+    "eventTimestamp": "2026-10-04T21:58:17.264239+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 313,
+    "text": "- T30 RESULT (G181-186): full 0/2; rated 1.5/4 (skill0 1/2: W, L; 1800 0.5/2: L, D); Elo 1730 [1610,1860] after 124"
+  },
+  {
+    "snapshot": "4450e5184f6c73f940463da715573694b425140c87a8ba32eae97893cb851e73",
+    "eventTimestamp": "2026-10-04T21:58:17.264239+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 318,
+    "text": "  piece gains a capture or check through it, reject. Against the 1800 setting accept a repetition when the position"
+  },
+  {
+    "snapshot": "fb1aba984f15f2edf727356422abf71830dd41c7b156e422b33bfa41f19b0d26",
+    "eventTimestamp": "2026-10-04T23:29:26.354869+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 321,
+    "text": "- T31 RESULT (G187-192): full 0/2; rated 4/4 (skill0 2/2: W, W; 1800 2/2: W, W); Elo 1760 [1640,1890] after 128"
+  },
+  {
+    "snapshot": "8f6ff93d1e986c7c00ff04302de575b7965aeea2c0ef1d86b554c28c6e86ee42",
+    "eventTimestamp": "2026-10-05T01:02:24.098229+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "PLAN.md",
+    "line": 329,
+    "text": "- T32 RESULT (G193-198): full 0/2; rated 2/4 (skill0 2/2: W, W; 1800 0/2: L, L); Elo 1760 [1640,1890] after 132"
+  },
+  {
+    "snapshot": "96e766dcf2e34e32a24f0e21d7fe3797f0f5ec3da5ebdbb678e27fe76d289c37",
+    "eventTimestamp": "2026-10-05T01:22:01.806798+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "FINAL.md",
+    "line": 14,
+    "text": "Referee Elo (provisional engine-relative scale, not human Elo): **1760 [1640, 1890] after 132 rated games**."
+  },
+  {
+    "snapshot": "96e766dcf2e34e32a24f0e21d7fe3797f0f5ec3da5ebdbb678e27fe76d289c37",
+    "eventTimestamp": "2026-10-05T01:22:01.806798+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "FINAL.md",
+    "line": 16,
+    "text": "Game endings: 97 resignations, 93 checkmates, 8 threefold repetitions, 1 stalemate, 1 insufficient material."
+  },
+  {
+    "snapshot": "96e766dcf2e34e32a24f0e21d7fe3797f0f5ec3da5ebdbb678e27fe76d289c37",
+    "eventTimestamp": "2026-10-05T01:22:01.806798+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "FINAL.md",
+    "line": 26,
+    "text": "Elo trajectory at block checkpoints (rated games in brackets): about 1490-1560 for the first 56 [12-56];"
+  },
+  {
+    "snapshot": "96e766dcf2e34e32a24f0e21d7fe3797f0f5ec3da5ebdbb678e27fe76d289c37",
+    "eventTimestamp": "2026-10-05T01:22:01.806798+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "FINAL.md",
+    "line": 33,
+    "text": "- T3: compact protocol under a self-imposed token budget (worse, 1/4); T7 dropped the budget for rated games."
+  },
+  {
+    "snapshot": "96e766dcf2e34e32a24f0e21d7fe3797f0f5ec3da5ebdbb678e27fe76d289c37",
+    "eventTimestamp": "2026-10-05T01:22:01.806798+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "FINAL.md",
+    "line": 38,
+    "text": "- T14-T15: enemy-diagonal and recapture scans: rated 8/8 over two blocks; Elo 1510 to 1610."
+  },
+  {
+    "snapshot": "96e766dcf2e34e32a24f0e21d7fe3797f0f5ec3da5ebdbb678e27fe76d289c37",
+    "eventTimestamp": "2026-10-05T01:22:01.806798+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "FINAL.md",
+    "line": 42,
+    "text": "  that cost material in the previous block; repetition accepted against the 1800 setting when level or worse."
+  },
+  {
+    "snapshot": "96e766dcf2e34e32a24f0e21d7fe3797f0f5ec3da5ebdbb678e27fe76d289c37",
+    "eventTimestamp": "2026-10-05T01:22:01.806798+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "FINAL.md",
+    "line": 45,
+    "text": "- Transfer: the rated score rose from 42% (G1-50) to 63-68% (G51-150), Elo from about 1490 to 1760-1840,"
+  },
+  {
+    "snapshot": "96e766dcf2e34e32a24f0e21d7fe3797f0f5ec3da5ebdbb678e27fe76d289c37",
+    "eventTimestamp": "2026-10-05T01:22:01.806798+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "FINAL.md",
+    "line": 53,
+    "text": "  fixed inference-token budget."
+  }
+]

@@ -1,0 +1,596 @@
+[
+  {
+    "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+    "eventTimestamp": "2026-10-03T22:42:28.298315+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "README.md",
+    "line": 6,
+    "text": "- Rotation: game n -> opponent index ((n-1)//2) % 3 in [full-strength, skill-0, elo-1800-setting]; I am White on odd game numbers, Black on even. So 1-2 full, 3-4 skill-0, 5-6 elo-1800, repeat. 200 games ~ 68/66/66."
+  },
+  {
+    "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+    "eventTimestamp": "2026-10-03T22:42:28.298315+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "README.md",
+    "line": 7,
+    "text": "- Elo estimator (rating.py): Bradley-Terry-Davidson posterior, anchors skill-0=1320, elo-1800=1800, prior N(1500,800), **window = last 50 rated games**. Full-strength games are uncalibrated (excluded). Final reported Elo depends on roughly the last 75 benchmark games (50 rated)."
+  },
+  {
+    "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+    "eventTimestamp": "2026-10-03T22:42:28.298315+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "README.md",
+    "line": 8,
+    "text": "- Draws by repetition / 50-move rule are claimed automatically. 400 plies = unfinished (not scored, does not count toward 200)."
+  },
+  {
+    "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+    "eventTimestamp": "2026-10-03T22:42:28.298315+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "README.md",
+    "line": 13,
+    "text": "1. Rated games (skill-0, elo-1800) decide Elo: maximize score there. Full-strength games: play solidly, resign only when objectively hopeless; they still count toward 200 but not Elo."
+  },
+  {
+    "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+    "eventTimestamp": "2026-10-03T22:42:28.298315+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "README.md",
+    "line": 14,
+    "text": "2. My main risks as a language-model player: misreading the board, hanging pieces, missing opponent threats, illegal moves, and draws by repetition/50-move in won positions. The move procedure (procedure.md) targets these."
+  },
+  {
+    "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+    "eventTimestamp": "2026-10-03T22:42:28.298315+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "opponents.md",
+    "line": 6,
+    "text": "  - **full-strength**: skill 20, 1M nodes ~ very strong (well above 3000). Any inaccuracy is punished."
+  },
+  {
+    "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+    "eventTimestamp": "2026-10-03T22:42:28.298315+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "opponents.md",
+    "line": 10,
+    "text": "- skill-0: develop safely, create multiple threats, attack the king; take everything that is free; convert cleanly; never gamble on it responding sensibly. Avoid stalemate/repetition."
+  },
+  {
+    "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+    "eventTimestamp": "2026-10-03T22:42:28.298315+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "opponents.md",
+    "line": 12,
+    "text": "- full-strength: solid London/Caro/Slav, trade when possible, no pawn grabs, resign when hopeless."
+  },
+  {
+    "snapshot": "47aa89012a1e062d7020284fcb91078d841ae0d5bf9f0e0f2466ce15928b1f02",
+    "eventTimestamp": "2026-10-04T00:26:22.274625+00:00",
+    "game": 5,
+    "eventKind": "start",
+    "file": "opponents.md",
+    "line": 15,
+    "text": "- full-strength (games 1-2): punished every inaccuracy; found knight-harassment (…Na2) and a mating net with Q+2N. No chances unless I play flawlessly."
+  },
+  {
+    "snapshot": "5913d747764f30c61b6b10bf13b73d98517c0ab16aa154d7c5750b06d51b7880",
+    "eventTimestamp": "2026-10-04T01:40:59.257063+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 9,
+    "text": "Results: full-strength 0-2 (losses, expected). skill-0: 1-1 (G3 loss: hung a knight to a line I opened myself, then hung a rook to a queen diagonal; G4 win). elo-1800: 0-2 (G5: queen trapped on f5, then allowed Qxg2# by skipping the king-safety check; G6: lost queen to a discovered attack, knight to a queen diagonal, then a Q+B mating net)."
+  },
+  {
+    "snapshot": "5913d747764f30c61b6b10bf13b73d98517c0ab16aa154d7c5750b06d51b7880",
+    "eventTimestamp": "2026-10-04T01:40:59.257063+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 22,
+    "text": "Evaluation point: after games 7-12 (block 2). Success criteria: zero pieces lost to a one-move capture in rated games; score >= 1.5/2 vs skill-0 and >= 1/2 vs elo-1800; Elo estimate rising over block 2. If the oversight class recurs >= 2 times in block 2, revise (e.g. shorter candidate lists, scan the top-2 candidates fully)."
+  },
+  {
+    "snapshot": "5ed13e7b8ec5d79eaf58d633084e23084c40e6f299a5e5604def812e59a1f62e",
+    "eventTimestamp": "2026-10-04T02:57:54.876836+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 28,
+    "text": "- G7 (W, full-strength): LOSS by resignation at move 8 — 8.Qc2?? Bxc2 lost the queen to the f5-bishop's diagonal, which I had noted in the move-6 scan. Scan skipped because I moved immediately after an interface nudge. Procedure v2.3: nudges never trigger a move; UCI typed only after written A-D. Review: games/007.md."
+  },
+  {
+    "snapshot": "30bacb4171cbe0aa12df1e35fa288f5f9a33c1c37dc7964a60fa61dd935fbcbf",
+    "eventTimestamp": "2026-10-04T03:23:30.745679+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 29,
+    "text": "- G8 (B, full-strength): LOSS by resignation at move 20. 10...Qxb2?! again unscanned after a nudge (3rd lapse; rule zero-b added: after a nudge the first tool call is `./play board`). 12...Qxd3?? relied on a recapture (Bxd6) blocked by my own knight -> Nd6+ forced Kd8 and my king never got a flight square; mating net on f7. 1 illegal attempt (same path error). Scan did catch 12...cxb5?? (Qxa3), 15...Nf5 (pinned), 20...Bh6/Bg7 (Bxe7#). Procedure v2.4: reply legality + king-air rule. Review: games/008.md."
+  },
+  {
+    "snapshot": "30bacb4171cbe0aa12df1e35fa288f5f9a33c1c37dc7964a60fa61dd935fbcbf",
+    "eventTimestamp": "2026-10-04T03:23:30.745679+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 30,
+    "text": "- Block 2 vs full-strength: 0/2 as expected, but both games were lost to my own scan lapses, not to engine strength. Measured games 9-12 (skill-0, elo-1800) are the Trial 1 test."
+  },
+  {
+    "snapshot": "19fa82bd0102c85504635bb5a107c5da3eb4fc66de16b38672835466141d994a",
+    "eventTimestamp": "2026-10-04T05:17:28.311728+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 33,
+    "text": "- Block 2 so far: full-strength 0/2 (both my own scan lapses), skill-0 2/2. Two games left in the block: G11 (W vs 1800), G12 (B vs 1800)."
+  },
+  {
+    "snapshot": "219630c678bec38ca86cba0b39ee02513ed197fea9bb18b9bf4aa18a0bbf2e09",
+    "eventTimestamp": "2026-10-04T08:33:15.909828+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 38,
+    "text": "Results: full-strength 0/2 (G7, G8, both lost to unscanned moves after interface nudges), skill-0 2/2 (G9, G10), elo-1800 1/2 (G11 loss, G12 win). Elo estimate 1240 (640-1700) after game 6 -> 1560 (1250-1870) after game 12, 8 rated games."
+  },
+  {
+    "snapshot": "219630c678bec38ca86cba0b39ee02513ed197fea9bb18b9bf4aa18a0bbf2e09",
+    "eventTimestamp": "2026-10-04T08:33:15.909828+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 39,
+    "text": "Criteria: (1) zero pieces lost to a one-move tactic in rated games — NOT met (G11 back-rank mate, decisive; G10 exchange by sign error; G12 queen-for-rook by forced-reply discovery, not decisive). (2) >= 1.5/2 vs skill-0 — met (2/2). (3) >= 1/2 vs elo-1800 — met (1/2). (4) Elo rising — met."
+  },
+  {
+    "snapshot": "219630c678bec38ca86cba0b39ee02513ed197fea9bb18b9bf4aa18a0bbf2e09",
+    "eventTimestamp": "2026-10-04T08:33:15.909828+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 47,
+    "text": "Observable success criteria at the evaluation point (after game 18): zero material lost to a one-move tactic, including after a forced reply, in games 15-18 (skill-0 and elo-1800); score >= 1.5/2 vs skill-0 and >= 1/2 vs elo-1800 in block 3; Elo estimate after game 18 at or above 1560. If a written-but-superficial scan line again decides a rated game, Trial 3 will restrict candidate moves to those whose full scan has been written (max two candidates per move, both fully scanned)."
+  },
+  {
+    "snapshot": "ad9ceaa91485a128cc22ceb7202f2502c0890964e2ee7b66176b7bb8be4374fe",
+    "eventTimestamp": "2026-10-04T09:08:08.154464+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 49,
+    "text": "- Practice 3 (W vs elo-1800, Trial 2 rehearsal): WIN by checkmate in 37 moves, 0 illegal attempts. Won a rook on move 19 after Black's loose play; all checks tagged, no dangerous check arose so C3 was not stressed; one omission (did not register that 21.Qxa7 was check, harmless). Review: games/practice-003.md. Decision: proceed to block 3 (game 13, W vs full-strength) with procedure v2.6."
+  },
+  {
+    "snapshot": "b7dd357d1b3734ee27affb76fa87f485f9dcb4b1339f6a43aea4094b1bb1a09a",
+    "eventTimestamp": "2026-10-04T09:24:17.182225+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 52,
+    "text": "- G13 (W, full-strength): LOSS by resignation at move 19 (0 illegal). Queenless, balanced London position; 15...Ne7 removed my e5-knight's last retreat and 16...f6 trapped it (my 14.f3 had blocked f3). Not the one-move class — a two-move piece trap. Procedure v2.7: mobility line E (count safe squares of advanced pieces after the candidate move and after the natural reply; never pawn-block my own knight's retreat). Review: games/013.md."
+  },
+  {
+    "snapshot": "a52104d2ca22c3569b293987c027a983d7177eae0f6720b1c3606f5148e9176a",
+    "eventTimestamp": "2026-10-04T09:38:04.500471+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 53,
+    "text": "- G14 (B, full-strength): LOSS by resignation at move 13 (0 illegal). Caro-Kann Advance, pawn regained by move 10; after 11.b4 Nxb4 12.axb4 I played 12...Bxb4?? and 13.Rxa5 took my queen along the a-file that the a-pawn's departure had just opened. Scan written but line B said \"a3 vacated: nothing\" — attacker enumeration was by nearby pieces, not by line. Same class as G3/G6/G7. Procedure v2.8: attackers enumerated by line (file, rank, two diagonals, knight hops) for every valuable piece; a pawn capture/advance by the opponent re-opens its file and diagonals, which must be named in line B; and \"which of my pieces is attacked right now?\" asked before every non-forced move. Review: games/014.md."
+  },
+  {
+    "snapshot": "a52104d2ca22c3569b293987c027a983d7177eae0f6720b1c3606f5148e9176a",
+    "eventTimestamp": "2026-10-04T09:38:04.500471+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 54,
+    "text": "- Block 3 vs full-strength: 0/2 (G13 two-move knight trap, G14 one-move queen loss on an opened file). Games 15-18 (skill-0, elo-1800) are the Trial 2 measurement."
+  },
+  {
+    "snapshot": "41652c4e3d848ba53c4597f4b3bf554950d944ffac55c9b88a20de21a7282091",
+    "eventTimestamp": "2026-10-05T18:03:31.032861+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 55,
+    "text": "- G15 (W, skill-0): WIN by checkmate (38 moves, 0 illegal). 9.Ne5+?? lost a knight to the f4 bishop's adjacent diagonal (missed in line A despite the v2.8 by-line rule — execution failure). Then held a difficult position (my d5 knight pinned between the queens for ten moves; 22.g3 stopped a Qh2 mate), equalised with 32.Qf2+ 33.Nf6+ 34.Nxh5+ and mated after 35...Kh6?? (36.Qg5+ Kh7 37.Nf6+ Kh8 38.Qh6#). Elo after game 15: 1590 (1300-1890), 9 rated games. Review: games/015.md. Pause requested by the user after this game; resumed on the user's \"continue\" (2026-10-05)."
+  },
+  {
+    "snapshot": "8cc8f45f2091b343c7e52d4a1e7af0bf1ef110642f13bb83ac910f73f706d993",
+    "eventTimestamp": "2026-10-05T19:58:43.043760+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 56,
+    "text": "- G16 (B, skill-0): WIN by checkmate (106 moves, 212 plies, 2 illegal attempts: 88...Nf4-e3?? typed as a knight move, 100...Qh1-g6?? not a line). 9.Na4 trapped my queen — the scan called Qb3 \"safe\" but the c2 pawn covers b3 — queen for R+P. Skill-0 drifted and I won material back (34...Bd5, 35...Ne3, 38...Nxd1, 43...Rxh2); R+N+4P vs Q+P by move 66 even after 56...Nxh4+?? 57.Qxf8+ (discovered check whose uncovered rook could be captured; I had counted Kh8 as defending f8, not adjacent). Endgame: 78...Nxh5 traded d3 for h5 to free g6; the g-pawn ran with the king escorting (Kg6-g5-g4-f3-f2); 89.Qc2+ forked king and the loose Rf5 (rook lost, knight kept); 90...g1=Q+, 92...Qd3+ on the knight-covered square forced the queen trade; K+h-pawn vs K won with 95...Kg2 first; 99...h1=Q; mate on move 106. Elo after game 16: 1610 (1340-1900), 10 rated games. Review: games/016.md. Procedure v2.9: pawn captures named in A/4a, discovered-check capture in C0, king adjacency in C2, new C4 (check-plus-attack forks on a piece left loose), written file/rank differences before UCI, endgame notes."
+  },
+  {
+    "snapshot": "8cc8f45f2091b343c7e52d4a1e7af0bf1ef110642f13bb83ac910f73f706d993",
+    "eventTimestamp": "2026-10-05T19:58:43.043760+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 57,
+    "text": "- Block 3 so far: full-strength 0/2, skill-0 2/2 (criterion met). Trial 2 criterion (1) — zero material lost to one-move tactics in games 15-18 — is already NOT met (G15 knight; G16 queen, rook, rook), though none of these decided a result. Games 17 (W vs elo-1800) and 18 (B vs elo-1800) complete the block; evaluation after game 18 as planned, with Trial 3 (max two fully scanned candidates) the default next step unless 17-18 are clean."
+  },
+  {
+    "snapshot": "719e5b81df669d1d125cb6af684de7086d010fe2c5a78824fb66dc857fc00ce5",
+    "eventTimestamp": "2026-10-05T20:49:53.467759+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 58,
+    "text": "- G17 (W, elo-1800): LOSS by checkmate (32 moves, 0 illegal). London; 16.Nxd5 won a pawn; survived the h-file attack (27.f3 the only move vs ...Qh1#, 29.Nf2, 30.Ke1 avoiding 30.Nxe4?? Rh1#) and stood a pawn up with Qxc6+/Qxa8 ideas, then 32.gxf3?? Qxf2#: my scan wrote \"...Qxf2+ Kxf2\" without noticing that gxf3 had vacated g2 and the h2 rook now guarded f2 (king recapture illegal). 32.Rd2 held everything. Elo after game 17: 1580 (1320-1850), 11 rated games; vs elo-1800 now 1-0-4. Review: games/017.md. Procedure v2.10: king-recapture legality after my own move opens a line (C1), with the reminder that a material-winning capture is the #1 scan-skip trigger."
+  },
+  {
+    "snapshot": "719e5b81df669d1d125cb6af684de7086d010fe2c5a78824fb66dc857fc00ce5",
+    "eventTimestamp": "2026-10-05T20:49:53.467759+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 59,
+    "text": "- Trial 2 status after G17: a written-but-superficial scan line decided a rated game again (G17), so the revision clause has fired. Block 3 ends with G18 (B vs elo-1800); Trial 3 will be defined after it."
+  },
+  {
+    "snapshot": "11ce6168091810d7a2b9f9cc0b76e7e4145c3c128fe094ae1dbe2ec2136265a2",
+    "eventTimestamp": "2026-10-05T21:12:40.041856+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 60,
+    "text": "- G18 (B, elo-1800): LOSS by resignation at move 32 (0 illegal). Semi-Slav; 11...Nxe5? overlooked that White's dxe5 had opened the d-file (d5 attacked twice) -> 12.Nxd5 won a pawn. Held the kingside pressure (17...f6, 20...g6, 22...Rf7) and caught several traps, then 27...Be5?? allowed 28.Bb4 against a queen with no safe square, and 28...Qd7?? (\"attacked twice, defended twice\") was simply taken by the rook: 29.Rxd7 Bxd7 — the value rule (cheapest attacker < target) was ignored. Elo after game 18: 1560 (1310-1810), 12 rated games; vs elo-1800 1-0-5. Review: games/018.md."
+  },
+  {
+    "snapshot": "11ce6168091810d7a2b9f9cc0b76e7e4145c3c128fe094ae1dbe2ec2136265a2",
+    "eventTimestamp": "2026-10-05T21:12:40.041856+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 63,
+    "text": "Results: full-strength 0/2 (G13 knight trap, G14 queen on the a-file), skill-0 2/2 (G15, G16), elo-1800 0/2 (G17 mate after an illegal-recapture assumption, G18 queen lost to a rook attack). Elo 1560 (1250-1870) after game 12 -> 1560 (1310-1810) after game 18, 12 rated games: flat."
+  },
+  {
+    "snapshot": "11ce6168091810d7a2b9f9cc0b76e7e4145c3c128fe094ae1dbe2ec2136265a2",
+    "eventTimestamp": "2026-10-05T21:12:40.041856+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 72,
+    "text": "Practice component: one practice game as Black vs elo-1800 before game 23 (my Black results vs 1800: G6 L, G12 W, G18 L), used to rehearse the two-candidate limit and the queen-escape line. Games 19-20 (full-strength) are played with v3.0 as live rehearsals."
+  },
+  {
+    "snapshot": "fb30980821a84aeefd7cc290bd745c2216cc206cbe52d3dce1246a511511bac3",
+    "eventTimestamp": "2026-10-05T21:36:55.148760+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 73,
+    "text": "- G19 (W, full-strength): LOSS by checkmate (38 moves, 3 illegal attempts: Bf1-g2 onto my own pawn, Rd1-h1 twice through my own knight on f1). Lost e5 on move 11 after a forced sequence left it undefended, held the queenside attack (30.Qb2 vs the ...Ra6/...Qa1# battery), equalised material by move 35, then 36...Bf5 pinned my c2 rook to the b1 king and 37.Qc1?? allowed 37...Ra1+ 38.Kb2 (forced; a1 covered by Qa7, my own king blocked Qxa1) Qa2#. Elo unchanged at 1560 (1310-1810), 12 rated games; full-strength 0-0-7. Review: games/019.md. Procedure v3.1: capture/block claims path-traced through my own pieces; written path list before every slider move; pin alert on lines through my pieces to my king."
+  },
+  {
+    "snapshot": "5e7e5f488d6fa6af6d7503ff1265c372925b622d3e34045b888a06e424689736",
+    "eventTimestamp": "2026-10-05T21:49:39.825695+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 74,
+    "text": "- G20 (B, full-strength): LOSS by checkmate (20 moves, 1 illegal attempt: 11...Qb6-e6 through my own knight). Caro-Kann Advance; 11.e6!? fxe6 12.Qg6+ Kd7 13.Qf7+ Nge7 14.Re1 Nd8 15.Ne5+ Kc7 16.Qe8 Ndc6 17.Qd7+ Kb8 kept an extra pawn, then 18.Bf4 Qc7?? 19.Nxc6+ Nxc6 20.Bxc7#: I counted the f4-c7 diagonal as blocked by the e5 knight, but the knight's own capture opened it (line B must be re-run after the opponent's forcing capture), and Kxc7 was illegal for the same reason. 18...Nd8 held. Elo unchanged 1560 (1310-1810), 12 rated games; full-strength 0-0-8; 20 of 200 scored games. Review: games/020.md. Procedure v3.2: forced-sequence replay (re-count attackers after each enemy check/capture in line C on the lines its mover vacated)."
+  },
+  {
+    "snapshot": "5e7e5f488d6fa6af6d7503ff1265c372925b622d3e34045b888a06e424689736",
+    "eventTimestamp": "2026-10-05T21:49:39.825695+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 75,
+    "text": "- Block 4 rehearsal (games 19-20, full-strength): both lost to one-move oversights inside written lines (a capture claimed through my own king; an attacker count not re-run after a forcing capture). The two-candidate limit was followed in both games. Four illegal attempts in two games were all path errors through my own pieces — the written-path rule (v3.1) must be executed literally. Games 21-24 (skill-0, elo-1800) are the Trial 3 measurement."
+  },
+  {
+    "snapshot": "0f48e8f4398e0ae9e7688756ac3d494f8ca862aaf8b2ef95a294fa9513bc9dc9",
+    "eventTimestamp": "2026-10-05T22:14:23.165713+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 76,
+    "text": "- G21 (W, skill-0): LOSS by checkmate (42 moves, 0 illegal attempts). London vs ...g5/...f5 pawn storm; lost the h2 bishop to the g-pawn (21.Bxg3?? correctly rejected: own Ng1 blocked d1-h1, Rxh1 would have won a rook), then skill-0 hung a knight (28.Rxh7), a bishop (32.Nxg7) and a rook (40.Nxe8): +9 after move 40. 41.Nd6?? Qd1+ 42.Ka3 (forced) Qa4# — I had enumerated only the pawn check ...b4+ from the a3 square, not the queen's checks; a4 is protected by the b5 pawn. 41.Rh1 or 41.Qh1 (guarding d1) kept everything. Elo 1490 (1260-1730), 13 rated games; skill-0 5-0-2; 21 of 200 scored games. Review: games/021.md. Trial 3 criterion 1 (no one-move losses in games 21-24) already failed. Procedure v3.3: king-square check enumeration (all enemy queen/rook/bishop/knight/pawn checks from the king's forced square, with pawn protection of each checking square) and \"neutralise checks before cashing material when ahead\"."
+  },
+  {
+    "snapshot": "6c1038c068a7fc663a50c71e3e8ac680735a76a5d672fcc469c4a4914d835ce6",
+    "eventTimestamp": "2026-10-05T23:08:01.136824+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 77,
+    "text": "- G22 (B, skill-0): DRAW by auto-claimed threefold repetition (62 moves, 1 illegal attempt: 36...Kg8 onto the f8 rook's rank). Semi-Slav vs 1.c4; equal middlegame, then a rook ending a pawn up (32.Rxc4), +2 after 35...Ra2, and rook + e4, g7, g6 vs bare rook after 53...Rxf3. 60...Kf6?? repeated the position after 58...e4; after 61.Ra4 Ke5 62.Ra7 the referee claimed the draw because 62...Kf6 would have been the third occurrence (claim available to the side to move when a legal move reaches a twice-seen position). Elo 1480 (1240-1710), 14 rated games; skill-0 5-1-2; 22 of 200 scored games. Review: games/022.md. Procedure v3.4: repetition ledger in every ending (no position may occur twice when winning; check the opponent's replies too) and king-destination line check."
+  },
+  {
+    "snapshot": "3b6dc8622642313593b1208a6efb9506e25778c3ec1b2368a22b61380a7337db",
+    "eventTimestamp": "2026-10-05T23:50:50.578840+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 79,
+    "text": "- G23 (W, elo-1800): WIN by checkmate (54 moves, 3 illegal attempts on separate turns: Qb3 through c2, Re7 through my Ne5, Rxa7 through my own just-pushed d7 pawn). London vs KID setup; 15.Nxe5/16.Bxh5 gxh5 and 20.Qxg6 hxg6 21.Nxe5 won a pawn; 26.d6/31.d7 passed pawn; my h4 rook was trapped by 36...Bf6 (gave the exchange back with 37.Bg3), then 40.Rh8! forced 40...Rxd7 41.Rxf6+ Kg7 42.Rxb8 (bishop and two pawns up) and a two-rook ladder mate. Elo 1540 (1310-1770), 15 rated games; elo-1800 2-0-5; 23 of 200 scored games. Review: games/023.md. Procedure v3.6: slider paths read from the FEN square by square, naming my own recently moved pieces."
+  },
+  {
+    "snapshot": "0978116da85ad04531d6837e10d34ba4871d493164eff7187033e31c4489d74e",
+    "eventTimestamp": "2026-10-06T00:37:35.792374+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 80,
+    "text": "- G24 (B, elo-1800): LOSS by checkmate (66 moves, 1 illegal attempt: 16...Bd3 through the pawn just pushed to e4). Slav; 9.Qxd5 Qc7! regained the pawn with activity, then 13.Qb5+ Nc6?? blocked my own queen's c7-c6-c5 defence of the bishop and 14.Qxc5 won a piece. Defended for fifty moves with a passed b-pawn; 65...Rh2?? (65...Kc5 was the only square outside the net) allowed 66.Be7#, a bishop check I had not enumerated. Elo 1520 (1300-1740), 16 rated games; elo-1800 2-0-6; 24 of 200 scored games. Review: games/024.md."
+  },
+  {
+    "snapshot": "0978116da85ad04531d6837e10d34ba4871d493164eff7187033e31c4489d74e",
+    "eventTimestamp": "2026-10-06T00:37:35.792374+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 83,
+    "text": "Criteria: (1) zero one-move losses in games 21-24 — NOT MET (G21 Qa4# net, G22 repetition draw from a won ending, G24 self-blocked defence line and Be7# net); (2) >=1.5/2 vs skill-0 — NOT MET (0.5/2: loss, draw); (3) >=1/2 vs elo-1800 — MET (1/2: win G23, loss G24); (4) Elo after game 24 >= 1560 — NOT MET (1520). Block 4 score 1.5/6 (games 19-20 vs full strength lost). The two-candidate limit and the computed-fact lines were followed, but the failures were omissions of whole lines (line B skipped on a recapture, king-square checks not enumerated, slider paths and defence lines written from memory, four illegal attempts in two games). Decision: Trial 4 = a fixed written table per move (T1-T7, procedure v4.0) in which no line may be skipped and every path or defence line is read from the FEN."
+  },
+  {
+    "snapshot": "0978116da85ad04531d6837e10d34ba4871d493164eff7187033e31c4489d74e",
+    "eventTimestamp": "2026-10-06T00:37:35.792374+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 86,
+    "text": "Change: procedure v4.0 replaces the free-form scan with a seven-row table (board from FEN, last move lines, hanging pieces, checks now and after the candidate with flight squares, candidate paths and vacated lines and relied-on defence lines, best reply with forced-sequence replay, repetition ledger in endings). 'Obvious' moves are not exempt. Evaluation point: after game 30. Success criteria: (a) zero illegal attempts in games 25-30; (b) no loss or draw caused by a one-move oversight in a position with equal or better material; (c) >=1.5/2 vs skill-0 (games 27-28); (d) >=1/2 vs elo-1800 (games 29-30); (e) Elo after game 30 >= 1540. Fallback (Trial 5) if (a) or (b) fails: the table is written twice (once before choosing, once after choosing) with the second pass only checking the candidate's T4/T5 rows."
+  },
+  {
+    "snapshot": "9916917df97191dac6faa0e5dc320cc2cf337b126862eb354bbb8c27dd68adf5",
+    "eventTimestamp": "2026-10-06T00:57:07.239406+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 87,
+    "text": "- G25 (W, full-strength): LOSS by resignation at move 21 (0 illegal attempts). London; 9.b3? Ba3! 10.bxc4? Bb2 trapped my a1 rook (b1 covered by Bf5, c1 by the bishop) and won the exchange; the trapped a1 bishop was freed by 17...Ne2+ and 19...Bxd4, leaving me a rook and pawn down. Elo 1520 (1300-1740), 16 rated games (full-strength games unrated); full-strength 0-0-9; 25 of 200 scored games. Review: games/025.md. Trial 4 table: all rows written, no omissions; the error was in judging a pawn break (rule added to T5: rook escape squares vs enemy bishops before opening files near an undeveloped rook)."
+  },
+  {
+    "snapshot": "634172cc37292625c7cc96e834952b9791986a251a0060e44a6afa6777125c4b",
+    "eventTimestamp": "2026-10-06T01:03:15.996095+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 88,
+    "text": "- G26 (B, full-strength): LOSS by resignation at move 14 (0 illegal attempts). Advance Caro-Kann; 11...Qxb2 was fine, but after 12.Rfb1 I retreated 12...Qb6?? 'defended by a7' and 13.Rxb6 axb6 won my queen for a rook — the value rule written in the table was then ignored in the arithmetic. 12...Qa3 held the extra pawn. Elo 1520 (1300-1740), 16 rated games; full-strength 0-0-10; 26 of 200 scored games. Review: games/026.md. Trial 4 criterion (b) (no one-move losses with equal or better material) is already violated in block 5; procedure v4.2 rewrites T3 so that a piece attacked by a lower-value piece is never scored by defender count."
+  },
+  {
+    "snapshot": "bf22661a8943633d1641e39d36ec520b8015d80f603f9c4573e6a127a65ba8a8",
+    "eventTimestamp": "2026-10-06T01:24:33.465387+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 89,
+    "text": "- G27 (W, skill-0): LOSS by resignation at move 36 (0 illegal attempts). London; won a pawn with 21.d5/25.cxd5/28.Qxh6 and had a strong attack, then 32.Qe7?? put the queen on the open e-file facing Black's rook on e2 (a mutual line I had just evaluated from my side only): 32...Qd1+ 33.Kh2 Rxe7. Elo 1480 (1250-1710) after this loss, 17 rated games; skill-0 5-1-3; 27 of 200 scored games. Review: games/027.md. Procedure v4.3: T5 destination attackers are enumerated piece by piece (every enemy rook's file and rank, every bishop's two diagonals, the queen's eight lines, knights, pawns, king), and any piece I attack along a line is written as attacking me along it."
+  },
+  {
+    "snapshot": "a36cd23410a7e2a46123edca367880fc46bdb8ce04a39b24d741962c580d2811",
+    "eventTimestamp": "2026-10-06T01:52:49.439293+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 90,
+    "text": "- G28 (B, skill-0): WIN by checkmate at move 38 (0 illegal attempts). Slav vs 1.Nf3; White's bishop got stuck on c6 and 22.Qb1?? let 22...Rxc6 win a piece; then 25.Qxb6?? dropped the queen to the d8 bishop. Converted with a forced mate (33...Rc1+ 34.Kg2 Qf3+ 35.Kh3 Nxf2+ ... 38...Qf5#). Elo 1520 (1300-1740) after this win, 18 rated games; skill-0 6-1-3; 28 of 200 scored games. Trial 4 criterion (c) = 1/2 vs skill-0 in games 27-28 (target 1.5/2: NOT MET). Review: games/028.md. Next: games 29-30 vs elo-1800 under the same v4.3 table."
+  },
+  {
+    "snapshot": "b658246e3f5c9fc25161edc908c7b9199887e2c1cbed159d4b075017e5aeb195",
+    "eventTimestamp": "2026-10-06T02:15:38.642560+00:00",
+    "game": 29,
+    "eventKind": "result",
+    "file": "log.md",
+    "line": 90,
+    "text": "- G28 (B, skill-0): WIN by checkmate at move 38 (0 illegal attempts). Slav vs 1.Nf3; White's bishop got stuck on c6 and 22.Qb1?? let 22...Rxc6 win a piece; then 25.Qxb6?? dropped the queen to the d8 bishop. Converted with a forced mate (33...Rc1+ 34.Kg2 Qf3+ 35.Kh3 Nxf2+ ... 38...Qf5#). Elo 1500 (1290-1700) after this win, 18 rated games; skill-0 6-1-3; 28 of 200 scored games. Trial 4 criterion (c) = 1/2 vs skill-0 in games 27-28 (target 1.5/2: NOT MET). Review: games/028.md. Next: games 29-30 vs elo-1800 under the same v4.3 table."
+  },
+  {
+    "snapshot": "cdd322bd0821f69132590ee0fc2a74fe2e533a37c3ca1a58d4cddba1af315862",
+    "eventTimestamp": "2026-10-06T02:16:02.800212+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 91,
+    "text": "- G29 (W, elo-1800): WIN by checkmate at move 36 (1 illegal attempt: 34.Ra7 through my opponent's bishop on a5 — the slider-path rule was skipped on an 'obvious' rook lift; the corrected move 34.Rxa5 simply won the bishop). London with an early queen trade; 24.Nd6 / 26.Nxb7 / 28.Nf5 / 29.Bxb8 won material, and the table caught 21.Rb1?? (Bxb1), 27.Nc5? (…Bf6 fork) and a back-rank mate after a careless Rxa3. Elo 1540 (1340-1740), 19 rated games; elo-1800 3-0-6; 29 of 200 scored games. Trial 4 criterion (a) now FAILED (1 illegal attempt in block 5). Review: games/029.md. Next: game 30 (Black vs elo-1800), then the Trial 4 evaluation."
+  },
+  {
+    "snapshot": "18a2632a8b5f729bdd4783250b956ddb83d0838750fe770b1aa37510fc8de4a3",
+    "eventTimestamp": "2026-10-06T02:54:09.970125+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 92,
+    "text": "- G30 (B, elo-1800): LOSS by checkmate at move 43 (0 illegal attempts). Level position until 20...fxe5?? (g6 'defended' by a pinned f7 pawn) 21.Qxg6+; then 26.Qh6+ Kg8 27.Qxd6 (the queen's new attack set after the check was not re-scanned) lost a bishop; 38...b5? allowed 39.Qg6+ Kf8 40.Bb3 (mate threat on f7 plus attack on the queen). Elo 1530 (1340-1720), 20 rated games; elo-1800 3-0-7; 30 of 200 scored games. Review: games/030.md."
+  },
+  {
+    "snapshot": "8586cc64c8eabc92745c4815ef2d4441bfdf8550664cc779b9e92fd5b4d8626b",
+    "eventTimestamp": "2026-10-06T03:03:35.538275+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 102,
+    "text": "- G31 (W, full-strength): LOSS by resignation at move 20 (0 illegal attempts). 10.Qa3 (the only square) was answered by 10...e5!, a discovered attack through the advancing e7 pawn; a knight for a pawn down after 13...cxd3 and a full piece down after 19...Bxa3. Unrated (full-strength); 31 of 200 scored games. Review: games/031.md. Procedure v5.1: pass-2 item P2c (enemy blockers that can move with a threat)."
+  },
+  {
+    "snapshot": "23e499f5aadfe2ecc75347b56ad9a3b1603c36136b35a153b604c33a4809c394",
+    "eventTimestamp": "2026-10-06T03:11:36.342254+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 103,
+    "text": "- G32 (B, full-strength): LOSS by resignation at move 16 (0 illegal attempts). The Advance Caro-Kann queen raid 9...Qxb2 10...Qxa2 was punished by 13.Nb3 14.Ra1 15.Bc1 (queen trapped; 15...Qb4 16.c3 would have lost it for a pawn). Unrated; 32 of 200 scored games. Review: games/032.md. Repertoire note: against full strength, decline the b2 pawn (9...Nd7 or 9...Nf5 instead)."
+  },
+  {
+    "snapshot": "82eb1a133a1ba15d65bd9ca9b53e98b45ef6090cd436e40dc0970472d3767d8c",
+    "eventTimestamp": "2026-10-06T03:53:03.081213+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 104,
+    "text": "- G33 (W, skill-0): WIN by checkmate at move 56 (0 illegal attempts). London with e4/d5 space; 21.d6! and 22.dxc7+ exposed the king; 31.Bxg6 Bxc2 32.Nxc2 won a piece; fork 37.Nc4+; promoted the h-pawn and mated with Rb2/Nc4/Qa8. Elo 1570 (1370-1770), 21 rated games; skill-0 7-1-3; 33 of 200 scored games. Review: games/033.md. Next: game 34 (B vs skill-0)."
+  },
+  {
+    "snapshot": "fab8d829a19e393c2fd8a5f81e4374aeb55a91a091135ffa8a6975474d7dbe92",
+    "eventTimestamp": "2026-10-06T04:16:46.404793+00:00",
+    "game": 34,
+    "eventKind": "result",
+    "file": "log.md",
+    "line": 104,
+    "text": "- G33 (W, skill-0): WIN by checkmate at move 56 (0 illegal attempts). London with e4/d5 space; 21.d6! and 22.dxc7+ exposed the king; 31.Bxg6 Bxc2 32.Nxc2 won a piece; fork 37.Nc4+; promoted the h-pawn and mated with Rb2/Nc4/Qa8. Elo 1540 (1360-1730), 21 rated games; skill-0 7-1-3; 33 of 200 scored games. Review: games/033.md. Next: game 34 (B vs skill-0)."
+  },
+  {
+    "snapshot": "306241f3cef4965a034155052c4a4d77e0834e2b810d7e672a984aa0984da077",
+    "eventTimestamp": "2026-10-06T04:17:12.691076+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 105,
+    "text": "- G34 (B, skill-0): WIN by checkmate at move 51 (0 illegal attempts). Caro-Kann; equal middlegame, the tricky 20.Nc7+ (queen pinned on d7) handled with 20...Kd8, then 23...Bb4! kept material level; the ending won c3 and a4 with the king, White dropped a rook and a bishop, a-pawn promoted, mate. Elo 1560 (1370-1740), 22 rated games; skill-0 8-1-3; 34 of 200 scored games. Trial 5 criterion (c) MET (2/2 vs skill-0 in games 33-34). Review: games/034.md. Next: games 35-36 vs elo-1800."
+  },
+  {
+    "snapshot": "59cc43ea52249845a76786fa0d25201499f59fa68c9b110818921a753cf49a16",
+    "eventTimestamp": "2026-10-06T05:18:14.223485+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 106,
+    "text": "- G35 (W, elo-1800): WIN by checkmate at move 65 (0 illegal attempts). London with an early queen trade; 14.bxc4/15.cxb4 won a pawn, 29.Nxb7 and 31.Nxc8 (bishop left undefended) made it a bishop and two pawns; 39.Nd6! exploited the a8 rook blocked by its own bishop (40.Nxc8, 42.Nxa8); the trapped h4 knight was sold with 43.Nf3+ and 45.fxe4 won Black's knight; pass 2 caught that 45.gxh4+ was illegal (g3 pinned by Bb8 against Kh2). Two rooks and a knight vs pawns, three stalemate traps avoided (a5 tempo move), 64.Ng6+ Ke8 65.Rf8#. Elo 1590 (1420-1780), 23 rated games; elo-1800 4-0-7; 35 of 200 scored games. Trial 5 criterion (d) MET (1/2 vs elo-1800 already reached with game 36 still to play); (a) and (b) still holding (zero illegal attempts and no pinned-defender/mutual-line/after-check losses in games 31-35). Review: games/035.md. Next: game 36 (B vs elo-1800), then the Trial 5 evaluation."
+  },
+  {
+    "snapshot": "73a1474995cb792b5968696e0e8aaaaacdbccedd39a10c5bf98c4c26d11d49db",
+    "eventTimestamp": "2026-10-06T05:50:17.593574+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 107,
+    "text": "- G36 (B, elo-1800): WIN by checkmate at move 41 (0 illegal attempts). Exchange Slav; won the bishop pair with 11...b5 and 12...Na5 (the b3 bishop had no retreat), the c3 pawn with 18...Rc4/20...Qc5/21...Rxc3 (the battery meant 22.Qxc3 or 22.Rxd5 lost the queen), then e5 and f2 (28...Rxf2 immune behind the queen); 33.Qa1?? Rxg2+ 34.Kf1 Qxa1+ won the queen for the rook; 39...e5 40.h5 Bh3 41.Kg1 Qg2#. Pass 2 caught two illegal queen moves through my own pieces before submission and ...Qf3?? into the g2 pawn. Elo 1630 (1450-1810), 24 rated games; elo-1800 5-0-7; 36 of 200 scored games. Review: games/036.md."
+  },
+  {
+    "snapshot": "73a1474995cb792b5968696e0e8aaaaacdbccedd39a10c5bf98c4c26d11d49db",
+    "eventTimestamp": "2026-10-06T05:50:17.593574+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 111,
+    "text": "- (b) no material lost to a pinned defender, a mutual line, or an unscanned attack after a check: MET. The two losses (full-strength, unrated) were a discovered attack through an enemy pawn that advanced with tempo (G31, before P2c existed) and a four-move queen trap after a pawn grab (G32, a strategic misjudgement, not a pass-2 category). No one-move material oversight in games 32-36."
+  },
+  {
+    "snapshot": "73a1474995cb792b5968696e0e8aaaaacdbccedd39a10c5bf98c4c26d11d49db",
+    "eventTimestamp": "2026-10-06T05:50:17.593574+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 116,
+    "text": "- Decision: keep procedure v5.1 (table + second pass) as the standing method. Trial 6 targets the remaining failure type, which only appears against full strength: a queen or rook placed where an enemy pawn or piece move attacks it with tempo or traps it (G25 rook, G26/G32 queen, G31 queen). Transfer is measured on the rated games as before."
+  },
+  {
+    "snapshot": "73a1474995cb792b5968696e0e8aaaaacdbccedd39a10c5bf98c4c26d11d49db",
+    "eventTimestamp": "2026-10-06T05:50:17.593574+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 119,
+    "text": "Change (procedure v5.2): before any queen or rook move onto a square on the opponent's half of the board or adjacent to an enemy pawn, write the opponent's pawn moves and piece moves that would attack that square next move, and the piece's safe retreat squares after each; fewer than two safe retreats means the move is not played unless it wins material by a written forced sequence. Also: material is counted from the FEN at every move (G35 running count was stale for three moves). Evaluation point: after game 42. Success criteria: (a) zero illegal attempts in games 37-42; (b) no material lost to any one-move oversight (pass-2 categories plus blocker/discovered attacks); (c) >= 1.5/2 vs skill-0 (games 39-40); (d) >= 1/2 vs elo-1800 (games 41-42); (e) Elo after game 42 >= 1630; (f) in the full-strength games 37-38, no queen or rook move that is answered by a loss of material within three moves. Fallback if (f) fails: restrict the queen to its own half against full strength until move 20."
+  },
+  {
+    "snapshot": "d72c02f025aac350cc1df810d254ca0c1a35011b8793eff3230ed2c108f70a0a",
+    "eventTimestamp": "2026-10-06T05:56:00.450858+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 120,
+    "text": "- G37 (W, full-strength): LOSS by resignation at move 11 (0 illegal attempts). London, 6.Qb3 Qd7 7.Ngf3 c4 8.Qa4 a6 and then 9.Ne5?? Nxe5 10.Qxd7+ Nexd7: I had tallied only the Nfxd7 recapture (which allows 11.dxe5) and summarised the Nexd7 recapture as \"material equal\" when it leaves me a knight down. Resigned a clean piece down. Unrated (full-strength); full-strength 0-0-13; 37 of 200 scored games. Review: games/037.md. Trial 6 criterion (b) FAILED already (one-move material oversight); criterion (f) (no queen/rook move answered by material loss within three moves) is not violated — the losing move was a knight move. Procedure v5.3: in every forced-sequence replay each branch gets its own numeric material tally for both sides; \"equal\" is never written without the numbers."
+  },
+  {
+    "snapshot": "b78837e4c49c8404e8825fb70573566ff58f7b1360e1df334aae3f3427dedc91",
+    "eventTimestamp": "2026-10-06T06:33:16.560637+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 121,
+    "text": "- G38 (B, full-strength): LOSS by resignation at move 32 (0 illegal attempts). Advance Caro-Kann; a solid defence to move 24 (several traps avoided: Qa3+ ideas, trapped-knight squares), 25.d5 cxd5 26.cxd5 exd5 even won a pawn, but 27.e6! fxe6 28.Nxe6 exploited a rook on d8 with no legal move (boxed by my own queen, knight and king) and the pin 28...Qxe6? 29.Re1; I gave the exchange back (28...Ne7 29.Nxd8 Kxd8) and 32.Rc5 won d5 by force. Unrated; full-strength 0-0-14; 38 of 200 scored games. Review: games/038.md. Procedure v5.4: (E5) a queen capture onto a square that shares a file, rank or diagonal with my king is checked for the enemy rook/bishop/queen that can pin it next move; (E6) every forced-sequence branch ends with the opponent's reply to my last capture, never with my capture; (E7) a rook with zero legal moves is flagged in T5 before any move that boxes it. Next: games 39-40 vs skill-0."
+  },
+  {
+    "snapshot": "18eec3a68a6ac00045eebf290274d3bdf9f6fc0211c4263253b9079bb67b4177",
+    "eventTimestamp": "2026-10-06T06:53:02.745535+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 122,
+    "text": "- G39 (W, skill-0): WIN by checkmate at move 23 (0 illegal attempts). London; the pin 7...Bb4 handled by 8.Qc2 (pass 2 rejected 8.Qb3?? Bxd3, 8.Rc1 and the impossible 8.Bd2), 10.Rb1 (10.axb4?? Qxa1+), 14.Ng5 forked e4/e6, 16.b4 forked queen and knight, 17.bxa5; then 20.Rfd1+ 21.e6+ (discovered check) 22.Qd2 and 23.Qd8#. Elo 1640 (1460-1810), 25 rated games; skill-0 9-1-3; 39 of 200 scored games. Trial 6: (a) holding (0 illegal attempts in 37-39), (b) failed in G37, (c) 1/2 so far needs game 40, (f) not violated. Review: games/039.md. Next: game 40 (B vs skill-0)."
+  },
+  {
+    "snapshot": "abfa039217a5d6e62916aa1fa72f8b5872add44bc925c1e10212d70cf72e192e",
+    "eventTimestamp": "2026-10-06T07:28:45.918416+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 123,
+    "text": "- G40 (B, skill-0): LOSS by resignation at move 38 (0 illegal attempts). Caro-Kann vs 2.d3; won a pawn with 13...Bxf2+ but 17.Re1! (pin on the e-file) and 18.d4! (pawn fork) cost a knight; the queen-vs-rooks fight was level after 32...Qxc3, then 34...Qb2? abandoned the d8/e7 squares, 35.Rf7+ left every king move in a mating net, and 37.Re2+ (discovered check plus attack on the queen) won the queen. Elo 1600 (1430-1770), 26 rated games; skill-0 9-1-4; 40 of 200 scored games. Trial 6: (c) FAILED (1/2 vs skill-0), (b) failed earlier; (a) still 0 illegal attempts in 37-40. Review: games/040.md. Procedure v5.5: (E8) a quiet queen move is checked for the king's flight squares after the opponent's best check (rooks on open files/ranks and a bishop battery near my king count as a net); (E9) when an enemy piece can move with discovered check, the moved piece's full attack set is written for EVERY square it can reach, not only for the check itself. Next: games 41-42 vs elo-1800, then the Trial 6 evaluation."
+  },
+  {
+    "snapshot": "002668d925be1421fd81b11f385c07d7fbbd71d168f8b4e8d78e362994b2be68",
+    "eventTimestamp": "2026-10-06T08:59:42.947082+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 124,
+    "text": "- G41 (W, elo-1800): LOSS by checkmate at move 59 (0 illegal attempts). London; 5.Bd3?/6.c3 allowed 6...e5! (every bishop retreat met by the ...e4 fork), 7.Nxe5 dxe5 8.Bg3 gave a knight for a pawn and 16.Nxc6/17.Qxe7 regained it; a pawn down with the bishop pair I held the queenside (pass 2 rejected Kf1?? into the c4 bishop, Be2?? Bxe2 Rxe2 Nxc3! fork, b3?? losing a piece on b3, Ra1?? b2 fork) until 29.b4?? axb3 en passant (never considered) created a protected passed pawn; 38.h4? gxh4 lost another pawn because the h4 pawn controlled the planned Bg3 recapture square. The bishop on b4, the d-pawn to d6 and the king's raid (53.Kxf5, 55.Kxh4) restored level material by move 55, then 56.Kg5?/57.Kf6? walked into 57...Rg7! and 58.Rd2?? Rf8+ 59.Ke6 (only move) Nf4#. Elo 1590 (1420-1760), 27 rated games; elo-1800 5-0-8; 41 of 200 scored games. Trial 6: (a) still 0 illegal attempts in 37-41; (b) and (c) failed earlier; (d) needs a win in game 42; (e) needs Elo >= 1630 after game 42 (now 1590). Review: games/041.md. Procedure v5.6: (E10) before a pawn double-step, write whether an enemy pawn stands beside the destination (en passant), and after any pawn move that invites a pawn capture, write the capturing pawn's new control squares before relying on a recapture route; (E11) before and during any stay of my king on the opponent's half, write every enemy check and the flight squares after each, including flight squares a quiet enemy move can remove; one flight square against a rook check plus a knight that can cover it with check is a net. Next: game 42 (B vs elo-1800), then the Trial 6 evaluation."
+  },
+  {
+    "snapshot": "b1f1e4e84ca593a91255c8db8605d4f9114d60ab46501672241bf831362bdbad",
+    "eventTimestamp": "2026-10-06T09:20:58.791427+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 125,
+    "text": "- G42 (B, elo-1800): WIN by checkmate at move 43 (0 illegal attempts). Exchange Slav with a queen trade; 15.g4? Bxg4 16.fxg4 Rxc1 won a pawn (the c1 bishop was hanging to my rook), 17...Nxg4+ a second, 18...Bh4 and 19...Nf2 forked the boxed-in h1 rook and the d3 bishop; I overlooked that 20.Nf3 opened the h1 rook's line to c1 (21.Rxc1), but 21...Nxc1+ and 22...Nb3+ kept a clean extra piece, four more pawns fell with checks (26...Nxe3+, 28...Nxb2+, 29...Nxa4), 32...Bg5 skewered both knights, the b-pawn promoted and 43...Qg3# finished. Elo 1620 (1460-1780), 28 rated games; elo-1800 6-0-8; 42 of 200 scored games. Review: games/042.md."
+  },
+  {
+    "snapshot": "b1f1e4e84ca593a91255c8db8605d4f9114d60ab46501672241bf831362bdbad",
+    "eventTimestamp": "2026-10-06T09:20:58.791427+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 133,
+    "text": "- (f) full-strength games 37-38, no queen or rook move answered by a loss of material within three moves: MET (both losses came from a knight move and a pawn break)."
+  },
+  {
+    "snapshot": "b1f1e4e84ca593a91255c8db8605d4f9114d60ab46501672241bf831362bdbad",
+    "eventTimestamp": "2026-10-06T09:20:58.791427+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 135,
+    "text": "- Decision: keep E1-E11 (v5.6) and add Trial 7 (procedure v6.0, block 8 = games 43-48): the OPPONENT-MOVE LEDGER. After every opponent move and before any candidate, a fixed four-item line is written: (1) the moved piece's complete attack set from its new square; (2) the vacated square and every enemy slider whose line runs through it, with the first piece of mine on each such line; (3) pawn facts: en passant rights for either side and the moved pawn's new control squares; (4) the opponent's threats ranked (captures, checks, forks/skewers, nets against my king or queen). Candidates are listed only after this line. Success criteria: (a) zero illegal attempts in games 43-48; (b) no material lost to a line opened by the opponent's previous move, to a pawn-rule oversight, or to a king/queen net; (c) >= 1.5/2 vs skill-0 (games 45-46); (d) >= 1/2 vs elo-1800 (games 47-48); (e) Elo after game 48 >= 1640; (f) in the full-strength games 43-44 no clean piece loss before move 25. Evaluation point: after game 48. Fallback if (b) fails: candidate generation is restricted to captures, checks, parries of the ledger's threats, and one quiet move, so that the ledger gets the attention."
+  },
+  {
+    "snapshot": "a43f525f7a23c8827684ae66b187992ebde3c691475bfb1c6c363c573b14731d",
+    "eventTimestamp": "2026-10-06T09:27:36.329222+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 136,
+    "text": "- G43 (W, full-strength): LOSS by resignation at move 14 (0 illegal attempts). London; after 9.Ne5 Nxg3 10.hxg3 Nxe5 the recapture 11.dxe5 was level, but 11.Qa4+? Bd7 12.Qb3 c4! 13.Qc2 Nc6 let the knight escape with two tempo moves against my queen (the pawn push ...c4 attacking b3 was never listed because E1 only covered destinations on the opponent's half). A clean piece down with no compensation, resigned per policy. Unrated; full-strength 0-0-15; 43 of 200 scored games. Review: games/043.md. Trial 7: criterion (f) FAILED (clean piece loss before move 25 in the first full-strength game); (a) 0 illegal attempts holding. Procedure v6.1: (E12) a hanging enemy piece is captured at once; an in-between move is allowed only if every opponent reply that attacks the in-between piece — bishop, knight, pawn push — is written and the capture is still available afterwards; (E13) before any queen or rook move anywhere, write the enemy pawn pushes (one and two squares) and captures that would attack the destination next move; ledger L4 adds enemy pawn pushes that attack my queen or rooks. Next: game 44 (B vs full-strength)."
+  },
+  {
+    "snapshot": "2b78253ec1c9d44636bf9485cc5bb28b0cc0200313ab37d004f32744a10193d5",
+    "eventTimestamp": "2026-10-06T09:43:46.272764+00:00",
+    "game": null,
+    "eventKind": "note",
+    "file": "log.md",
+    "line": 137,
+    "text": "- G44 (B, full-strength): LOSS by checkmate at move 24 (0 illegal attempts). Advance Caro-Kann, level to move 19; 18...Nxe5 (the only defence of f7) was right, but after 19.Qa3 Kg8 I left the e5 knight hanging to the e1 rook (20.Rxe5 — the capture was never listed, only 'f4 next'), and after 21.Ndxf7 Rxf7 22.Rxe6 (level material) 22...Rf6?? ran into 23.Re8+ Rf8 24.Qxf8#, the a3 queen's diagonal to f8 having opened when the d6 knight left; 22...Rf8 held. Unrated; full-strength 0-0-16; 44 of 200 scored games; Elo 1620 (1460-1780), 28 rated. Review: games/044.md. Trial 7: (a) 0 illegal attempts in 43-44 holding; (f) failed in G43; the ledger's L4 failed twice here by listing noticed threats instead of every capture. Procedure v6.2: L4 becomes a capture table (every piece or pawn of mine the opponent can capture next move, with attacker and defender lists, written before anything else), and (E14) when my reply to the opponent's move would be forced (one legal answer to a check, or a single defence), every opponent capture and check on the move after that forced reply is written before I play the move that allows the forcing sequence. Next: games 45-46 vs skill-0."
+  }
+]

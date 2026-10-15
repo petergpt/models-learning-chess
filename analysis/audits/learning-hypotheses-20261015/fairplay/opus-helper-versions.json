@@ -1,0 +1,55 @@
+{
+  "tools/fen2board.py": {
+    "86d79fc4ba61a73f038bea1640a31f5e736c47be528f015bfb90e4c7f9bddc99": {
+      "firstEvent": "2026-10-02T21:03:09.397466+00:00",
+      "firstGame": null,
+      "source": "#!/usr/bin/env python3\n\"\"\"Mechanical FEN -> ASCII rendering for between-game review. No chess logic, search or evaluation.\"\"\"\nimport sys\n\ndef render(fen):\n    rows = fen.split()[0].split('/')\n    out = []\n    for i, row in enumerate(rows):\n        cells = []\n        for ch in row:\n            if ch.isdigit():\n                cells.extend(['.'] * int(ch))\n            else:\n                cells.append(ch)\n        out.append(f\"{8 - i} \" + ' '.join(cells))\n    out.append('  a b c d e f g h')\n    return '\\n'.join(out)\n\nif __name__ == '__main__':\n    for fen in sys.argv[1:] or [sys.stdin.read().strip()]:\n        print(fen)\n        print(render(fen))\n        print()\n"
+    },
+    "17641cc236270bd335966e7d6388225d9aa2d7f1439306e86b9bd1dbe2fd016a": {
+      "firstEvent": "2026-10-03T05:30:43.541658+00:00",
+      "firstGame": null,
+      "source": "#!/usr/bin/env python3\n\"\"\"Mechanical FEN -> ASCII rendering (board with rank/file labels + piece lists).\nPure rendering of the position string: no move generation, search, attack maps or evaluation.\"\"\"\nimport sys\n\nORDER = 'KQRBNP'\n\ndef grid(fen):\n    rows = fen.split()[0].split('/')\n    g = []\n    for row in rows:\n        cells = []\n        for ch in row:\n            if ch.isdigit():\n                cells.extend(['.'] * int(ch))\n            else:\n                cells.append(ch)\n        g.append(cells)\n    return g\n\ndef render(fen):\n    g = grid(fen)\n    out = ['    a b c d e f g h']\n    for i, cells in enumerate(g):\n        out.append(f\"{8 - i}   \" + ' '.join(cells) + f\"   {8 - i}\")\n    out.append('    a b c d e f g h')\n    return '\\n'.join(out)\n\ndef piece_lists(fen):\n    g = grid(fen)\n    found = {'w': {p: [] for p in ORDER}, 'b': {p: [] for p in ORDER}}\n    for i, cells in enumerate(g):\n        for j, ch in enumerate(cells):\n            if ch == '.':\n                continue\n            side = 'w' if ch.isupper() else 'b'\n            found[side][ch.upper()].append('abcdefgh'[j] + str(8 - i))\n    lines = []\n    for side, name in (('w', 'White'), ('b', 'Black')):\n        parts = []\n        for p in ORDER:\n            sq = sorted(found[side][p])\n            if sq:\n                parts.append(p + ' ' + ','.join(sq))\n        lines.append(f\"{name}: \" + ' | '.join(parts))\n    return '\\n'.join(lines)\n\nif __name__ == '__main__':\n    for fen in sys.argv[1:] or [sys.stdin.read().strip()]:\n        print(render(fen))\n        print(piece_lists(fen))\n        fields = fen.split()\n        if len(fields) > 1:\n            print('to move:', 'White' if fields[1] == 'w' else 'Black')\n"
+    }
+  },
+  "tools/gamepos.py": {
+    "20f58c9fffce683655314a8b71858f891caa0610cf2a99bad43874b90f54f016": {
+      "firstEvent": "2026-10-02T21:03:09.397466+00:00",
+      "firstGame": null,
+      "source": "#!/usr/bin/env python3\n\"\"\"Review helper: print the recorded FEN + rendered board after given plies of a benchmark or practice game.\nReads the referee's own ledger records (read-only). Mechanical rendering only: no search, scoring or move suggestions.\nUsage: gamepos.py [--practice] GAME [PLY ...]   (no PLY -> print the SAN move list with ply numbers)\"\"\"\nimport json, sys\nfrom pathlib import Path\nsys.path.insert(0, str(Path(__file__).parent))\nfrom fen2board import render\n\nROOT = Path(__file__).resolve().parents[2]\nargs = sys.argv[1:]\npractice = False\nif args and args[0] == '--practice':\n    practice = True; args = args[1:]\ngame = int(args[0]); plies = [int(x) for x in args[1:]]\nledger = ROOT / 'data' / ('practice/ledger.jsonl' if practice else 'ledger.jsonl')\nmoves, start = [], None\nfor line in ledger.read_text().splitlines():\n    e = json.loads(line)\n    if e.get('game') != game: continue\n    if e['kind'] == 'start': start = e\n    elif e['kind'] == 'move': moves.append(e)\nif start is None: sys.exit('game not found')\ninit = start.get('initial_fen', 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')\nif not plies:\n    print(f\"game {game} you={start['color']} opp={start['opponent']['id']}\")\n    line = []\n    for m in moves:\n        line.append(f\"{m['ply']}:{m['san']}\")\n    print(' '.join(line))\n    sys.exit()\nfor p in plies:\n    fen = init if p == 0 else moves[p-1]['fen']\n    last = moves[p-1]['san'] if p else '-'\n    print(f\"after ply {p} (last {last}):\")\n    print(fen)\n    print(render(fen))\n    print()\n"
+    }
+  },
+  "tools/mv": {
+    "bffd548f2bcaf3fe18904f8ed4d8f44d4e5ab1cd2e1371505fbbb72eda291e40": {
+      "firstEvent": "2026-10-02T22:20:48.059346+00:00",
+      "firstGame": 7,
+      "source": "#!/bin/sh\n# Convenience wrapper around the referee: submit a move (or 'board') and print a trimmed view\n# (FEN, side to move, check flag, last ~16 plies, ASCII board). Pure output formatting; no chess logic.\nroot=$(CDPATH= cd -- \"$(dirname -- \"$0\")/../..\" && pwd)\ncd \"$root\" || exit 1\nif [ \"$1\" = \"board\" ]; then out=$(./play board 2>&1); else out=$(./play move \"$@\" 2>&1); fi\nprintf '%s\\n' \"$out\" | grep -v '^t3-job' | awk '\n/\"moves\":/ { n=split($0,a,\" \"); s=\"\"; start=(n>18)?n-15:3; for(i=start;i<=n;i++) s=s\" \"a[i]; print \"  last:\" s; next }\n/\"game\":|\"you\":|\"opponent\":|\"turn\":|^\\{|^\\}/ { next }\n{ print }'\n"
+    },
+    "0339c8985bd2c91c18f10a4e122d2361b93cf7a8a6c2e14e9bb8bbc95c94edc3": {
+      "firstEvent": "2026-10-02T22:40:57.971602+00:00",
+      "firstGame": 9,
+      "source": "#!/bin/sh\n# Convenience wrapper around the referee: submit a move (or 'board') and print a trimmed view\n# (FEN, side to move, check flag, last ~16 plies, ASCII board). Pure output formatting; no chess logic.\nroot=$(CDPATH= cd -- \"$(dirname -- \"$0\")/../..\" && pwd)\ncd \"$root\" || exit 1\nif [ \"$1\" = \"board\" ]; then out=$(./play board 2>&1); else out=$(./play move \"$@\" 2>&1); fi\nprintf '%s\\n' \"$out\" | grep -v '^t3-job' | awk '\n/\"moves\":/ { n=split($0,a,\" \"); s=\"\"; start=(n>18)?n-15:3; for(i=start;i<=n;i++) s=s\" \"a[i]; print \"  last:\" s; next }\n/\"game\":|\"you\":|\"opponent\":|\"turn\":|^\\{$|^\\}$/ { next }\n{ print }'\n"
+    },
+    "1efb9846dca1809b0a6b55d8bc6043eb49e1988bd79be522cf862d98b67b134f": {
+      "firstEvent": "2026-10-03T05:08:43.484898+00:00",
+      "firstGame": 46,
+      "source": "#!/bin/sh\n# Move wrapper. Guard: refuse a move sent <5s after the previous one (catches batched calls in one turn).\nroot=$(CDPATH= cd -- \"$(dirname -- \"$0\")/../..\" && pwd)\ncd \"$root\" || exit 1\nstamp=\"$root/workspace/tools/.last_move_time\"\nif [ \"$1\" != \"board\" ]; then\n  now=$(date +%s)\n  if [ -f \"$stamp\" ]; then\n    last=$(cat \"$stamp\")\n    if [ $((now - last)) -lt 5 ]; then\n      echo \"REFUSED: move sent $((now - last))s after previous move (batched?). Look at the board first.\"\n      exit 2\n    fi\n  fi\nfi\nif [ \"$1\" = \"board\" ]; then out=$(./play board 2>&1); else out=$(./play move \"$@\" 2>&1); date +%s > \"$stamp\"; fi\nprintf '%s\\n' \"$out\" | grep -v '^t3-job' | awk '\n/\"moves\":/ { n=split($0,a,\" \"); s=\"\"; start=(n>18)?n-15:3; for(i=start;i<=n;i++) s=s\" \"a[i]; print \"  last:\" s; next }\n/\"game\":|\"you\":|\"opponent\":|\"turn\":|^\\{$|^\\}$/ { next }\n{ print }'\n"
+    },
+    "27277da39dd5eaf47d9179fc4c731c1a398a9af53e8f9f7ebbb8b403d5edaeda": {
+      "firstEvent": "2026-10-03T05:13:14.516243+00:00",
+      "firstGame": 47,
+      "source": "#!/bin/sh\n# Move wrapper. Guard: refuse a move sent <1s after the previous one (catches batched calls in one turn).\nroot=$(CDPATH= cd -- \"$(dirname -- \"$0\")/../..\" && pwd)\ncd \"$root\" || exit 1\nstamp=\"$root/workspace/tools/.last_move_time\"\nif [ \"$1\" != \"board\" ]; then\n  now=$(date +%s)\n  if [ -f \"$stamp\" ]; then\n    last=$(cat \"$stamp\")\n    if [ $((now - last)) -lt 1 ]; then\n      echo \"REFUSED: move sent $((now - last))s after previous move (batched?). Look at the board first.\"\n      exit 2\n    fi\n  fi\nfi\nif [ \"$1\" = \"board\" ]; then out=$(./play board 2>&1); else out=$(./play move \"$@\" 2>&1); date +%s > \"$stamp\"; fi\nprintf '%s\\n' \"$out\" | grep -v '^t3-job' | awk '\n/\"moves\":/ { n=split($0,a,\" \"); s=\"\"; start=(n>18)?n-15:3; for(i=start;i<=n;i++) s=s\" \"a[i]; print \"  last:\" s; next }\n/\"game\":|\"you\":|\"opponent\":|\"turn\":|^\\{$|^\\}$/ { next }\n{ print }'\n"
+    },
+    "72c5fcb13078980cf8cbf7777dc52a31fbc0829d710e97201606d95f29e61a1c": {
+      "firstEvent": "2026-10-03T05:30:43.541658+00:00",
+      "firstGame": null,
+      "source": "#!/bin/sh\n# Move wrapper. Guard: refuse a move sent <1s after the previous one (catches batched calls in one turn).\n# Output: referee JSON lines (trimmed) + rank-labelled board and piece lists rendered from the referee FEN.\nroot=$(CDPATH= cd -- \"$(dirname -- \"$0\")/../..\" && pwd)\ncd \"$root\" || exit 1\nstamp=\"$root/workspace/tools/.last_move_time\"\nif [ \"$1\" != \"board\" ]; then\n  now=$(date +%s)\n  if [ -f \"$stamp\" ]; then\n    last=$(cat \"$stamp\")\n    if [ $((now - last)) -lt 1 ]; then\n      echo \"REFUSED: move sent $((now - last))s after previous move (batched?). Look at the board first.\"\n      exit 2\n    fi\n  fi\nfi\nif [ \"$1\" = \"board\" ]; then out=$(./play board 2>&1); else out=$(./play move \"$@\" 2>&1); date +%s > \"$stamp\"; fi\nprintf '%s\\n' \"$out\" | grep -v '^t3-job' | awk '\n/\"moves\":/ { n=split($0,a,\" \"); s=\"\"; start=(n>18)?n-15:3; for(i=start;i<=n;i++) s=s\" \"a[i]; print \"  last:\" s; next }\n/\"game\":|\"you\":|\"opponent\":|\"turn\":|^\\{$|^\\}$/ { next }\n/^[.KQRBNPkqrbnp]( [.KQRBNPkqrbnp])+ *$/ { next }\n/^a b c d e f g h/ { next }\n/^ *$/ { next }\n{ print }'\nfen=$(printf '%s\\n' \"$out\" | sed -n 's/.*\"fen\": *\"\\([^\"]*\\)\".*/\\1/p' | tail -n 1)\n[ -n \"$fen\" ] && python3 \"$root/workspace/tools/fen2board.py\" \"$fen\"\nexit 0\n"
+    }
+  },
+  "tools/pmv": {
+    "d8206966a44d826d6e392653ee10fd77d6a543d3130ebe308fcd108040e56b5e": {
+      "firstEvent": "2026-10-02T23:08:14.798013+00:00",
+      "firstGame": 1,
+      "source": "#!/bin/sh\n# Convenience wrapper around the referee: submit a move (or 'board') and print a trimmed view\n# (FEN, side to move, check flag, last ~16 plies, ASCII board). Pure output formatting; no chess logic.\nroot=$(CDPATH= cd -- \"$(dirname -- \"$0\")/../..\" && pwd)\ncd \"$root\" || exit 1\nif [ \"$1\" = \"board\" ]; then out=$(./play practice board 2>&1); else out=$(./play practice move \"$@\" 2>&1); fi\nprintf '%s\\n' \"$out\" | grep -v '^t3-job' | awk '\n/\"moves\":/ { n=split($0,a,\" \"); s=\"\"; start=(n>18)?n-15:3; for(i=start;i<=n;i++) s=s\" \"a[i]; print \"  last:\" s; next }\n/\"game\":|\"you\":|\"opponent\":|\"turn\":|^\\{$|^\\}$/ { next }\n{ print }'\n"
+    }
+  }
+}

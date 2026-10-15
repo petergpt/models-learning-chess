@@ -1,0 +1,53 @@
+{
+  "scope": "Preselected recorded FENs and board rendering only; no later moves displayed, no attack listing or analysis.",
+  "positions": [
+    {
+      "game": 11,
+      "after_ply": 32,
+      "fen": "r2qr1k1/1b1nbpp1/pp2p2p/n7/3pP3/2NB1NB1/PP2QPPP/3RR1K1 w - - 0 17",
+      "valid": true,
+      "check": false,
+      "board": "r . . q r . k .\n. b . n b p p .\np p . . p . . p\nn . . . . . . .\n. . . p P . . .\n. . N B . N B .\nP P . . Q P P P\n. . . R R . K ."
+    },
+    {
+      "game": 18,
+      "after_ply": 35,
+      "fen": "3rr1k1/pppq2p1/1bn1b2p/4pp2/P4P2/2PP2N1/2P1B1PP/R1B1QR1K b - - 0 18",
+      "valid": true,
+      "check": false,
+      "board": ". . . r r . k .\np p p q . . p .\n. b n . b . . p\n. . . . p p . .\nP . . . . P . .\n. . P P . . N .\n. . P . B . P P\nR . B . Q R . K"
+    },
+    {
+      "game": 23,
+      "after_ply": 40,
+      "fen": "1Nb2rk1/1p2qp2/p2p2p1/2pP4/P1P1P2p/6BP/5PP1/R2QRBK1 w - - 1 21",
+      "valid": true,
+      "check": false,
+      "board": ". N b . . r k .\n. p . . q p . .\np . . p . . p .\n. . p P . . . .\nP . P . P . . p\n. . . . . . B P\n. . . . . P P .\nR . . Q R B K ."
+    },
+    {
+      "game": 30,
+      "after_ply": 35,
+      "fen": "3rr1k1/ppp1bppp/2n2n2/2P5/1PP5/P3P3/4KPBP/1RB3R1 b - - 4 18",
+      "valid": true,
+      "check": false,
+      "board": ". . . r r . k .\np p p . b p p p\n. . n . . n . .\n. . P . . . . .\n. P P . . . . .\nP . . . P . . .\n. . . . K P B P\n. R B . . . R ."
+    },
+    {
+      "game": 60,
+      "after_ply": 39,
+      "fen": "2q2rk1/pp3ppp/5n2/3N4/1Prbp3/PR5P/1B1Q1PP1/4R1K1 b - - 1 20",
+      "valid": true,
+      "check": false,
+      "board": ". . q . . r k .\np p . . . p p p\n. . . . . n . .\n. . . N . . . .\n. P r b p . . .\nP R . . . . . P\n. B . Q . P P .\n. . . . R . K ."
+    },
+    {
+      "game": 59,
+      "after_ply": 128,
+      "fen": "5k2/6p1/3nQ3/2qPp1P1/b1P1Pp2/2P2P2/1K6/8 w - - 15 65",
+      "valid": true,
+      "check": false,
+      "board": ". . . . . k . .\n. . . . . . p .\n. . . n Q . . .\n. . q P p . P .\nb . P . P p . .\n. . P . . P . .\n. K . . . . . .\n. . . . . . . ."
+    }
+  ]
+}

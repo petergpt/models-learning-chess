@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.05"]
+[Round "4"]
+[White "Stockfish 19"]
+[Black "claude-fable-5-1"]
+[Result "*"]
+[Mode "practice"]
+[RunId "fable"]
+[GameId "fable/practice/000004"]
+[OpponentSetting "practice-elo-1800"]
+[Termination "stopped_by_learner_not_a_result"]
+
+1. Nf3 d5 2. d4 c6 3. c4 Nf6 4. Qc2 e6 5. Bf4 Bd6 6. Bg3 O-O 7. c5 Bc7 8. e3 b6 9. Nbd2 Nbd7 10. a3 a5 11. Rb1 bxc5 12. Be2 c4 13. O-O Ba6 14. Rfe1 Bxg3 15. fxg3 Re8 16. b3 cxb3 17. Nxb3 Bxe2 18. Qxe2 Qb6 19. g4 Ne4 20. Qc2 Rac8 21. Nbd2 Nxd2 22. Rxb6 Nxb6 23. Nxd2 *

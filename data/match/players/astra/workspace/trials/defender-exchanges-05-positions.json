@@ -1,0 +1,46 @@
+{
+  "scope": "Only preselected recorded FENs and their board rendering; later moves withheld; no analysis or selection.",
+  "positions": [
+    {
+      "game": 8,
+      "after_ply": 25,
+      "fen": "r2qrbk1/1bp2pp1/p1np1n1p/1p2p3/P2PP3/2P2N1P/BP1N1PP1/R1BQR1K1 b - - 1 13",
+      "valid": true,
+      "check": false,
+      "board": "r . . q r b k .\n. b p . . p p .\np . n p . n . p\n. p . . p . . .\nP . . P P . . .\n. . P . . N . P\nB P . N . P P .\nR . B Q R . K ."
+    },
+    {
+      "game": 17,
+      "after_ply": 24,
+      "fen": "r1bq1rk1/1p1nbpp1/p3pn1p/3p4/2PP4/2NBBN2/PPQ2PPP/R2R2K1 w - - 3 13",
+      "valid": true,
+      "check": false,
+      "board": "r . b q . r k .\n. p . n b p p .\np . . . p n . p\n. . . p . . . .\n. . P P . . . .\n. . N B B N . .\nP P Q . . P P P\nR . . R . . K ."
+    },
+    {
+      "game": 24,
+      "after_ply": 25,
+      "fen": "r1b2rk1/pp3ppp/5n2/q1pp4/8/BP2P2P/P1PNBPP1/2Q2RK1 b - - 2 13",
+      "valid": true,
+      "check": false,
+      "board": "r . b . . r k .\np p . . . p p p\n. . . . . n . .\nq . p p . . . .\n. . . . . . . .\nB P . . P . . P\nP . P N B P P .\n. . Q . . R K ."
+    },
+    {
+      "game": 29,
+      "after_ply": 24,
+      "fen": "r1bq1rk1/1p1nbpp1/4pn1p/8/p1BN3B/2N1P3/PP2QPPP/R2R2K1 w - - 0 13",
+      "valid": true,
+      "check": false,
+      "board": "r . b q . r k .\n. p . n b p p .\n. . . . p n . p\n. . . . . . . .\np . B N . . . B\n. . N . P . . .\nP P . . Q P P P\nR . . R . . K ."
+    },
+    {
+      "game": 54,
+      "after_ply": 43,
+      "fen": "3r1r1k/ppp3pp/2n5/2N2q2/4p3/Q3P2P/PPP3P1/R4RK1 b - - 11 22",
+      "valid": true,
+      "check": false,
+      "board": ". . . r . r . k\np p p . . . p p\n. . n . . . . .\n. . N . . q . .\n. . . . p . . .\nQ . . . P . . P\nP P P . . . P .\nR . . . . R K ."
+    }
+  ],
+  "missing": []
+}

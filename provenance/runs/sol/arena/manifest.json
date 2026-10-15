@@ -1,0 +1,20 @@
+{
+  "play": "a7fe9e372c0aa403b42701b0dafae62c970ccbf580d4d9ee70f060b222f02157",
+  "AGENTS.md": "96006d9856547fcff77f87eefcbc9704807279da4d1252c83f512f5fd1284552",
+  "GOAL.md": "e06c90a7499df95a6b8830f7f5639ea80f61bb60f19dbc8e2f450f02187eae7e",
+  ".arena/arena.py": "e3061238a0ab0fc5f2af327aac7290117e4cb8819dd349ecf8aac3fcb292f551",
+  ".arena/config.json": "af617606fa2cbb9a8158480aa8c06e9fb00b656829d229ce00449f58faee6052",
+  ".arena/viewer.html": "1343d8c69f134390c93fca0093d17b9810e07fc9bec175d09c2edde11745a023",
+  ".arena/dependencies.json": "c071db4805eb54035a371ab555a195335ac7b7bd1084a51a62402fa705aa998f",
+  ".arena/stockfish/stockfish/stockfish-linux-x86-64-universal": "0f83d24cc46d2c66c60f16001af5444873bc112b7d028594513426894c12da19",
+  ".arena/vendor/chess-1.11.2/chess/svg.py": "32840c66e33bf55ea2de49eadc856d45dc3cd661b87a0a1ea99d8b6c3b143b99",
+  ".arena/vendor/chess-1.11.2/chess/variant.py": "fc0b384707fc9ffb9348c4683fc430ee4ed5b601d9cc40cf7fc5ecda2d9cc431",
+  ".arena/vendor/chess-1.11.2/chess/__init__.py": "1fde6a8e932508d14b31f6a584497b49c2969fc3c7cdc675347f819f0d667a5b",
+  ".arena/vendor/chess-1.11.2/chess/polyglot.py": "8dc20733bdc1297a9e8993a76737ba4f328a99185ae94b311ddbb5342fce32fc",
+  ".arena/vendor/chess-1.11.2/chess/syzygy.py": "e10e74b0b8174e85428945a975dfc2d67f521c6c5d941e998bdfca26f9ebf754",
+  ".arena/vendor/chess-1.11.2/chess/gaviota.py": "2ba4d8ebceb5538e52ace325dfbd71358596c52b4799911c77fe666b79df164d",
+  ".arena/vendor/chess-1.11.2/chess/engine.py": "40a1407749ea43b4ed3174f0603e0316a9c971b8943113fbea5be47c82bde22b",
+  ".arena/vendor/chess-1.11.2/chess/pgn.py": "0e280ee44cb3c27cde903c40fe166419df71a030b05793c63f3e0ffffd6ff0c4",
+  ".arena/rating.py": "7587884239ab4ef98b17b33252df2a405d1247cb7f629362325ae909772242d7",
+  ".arena/practice.py": "27d66a611525e7db90e19f338ac97e00ae380b792ff8e20c50a288e251d95758"
+}

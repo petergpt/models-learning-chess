@@ -1,0 +1,5461 @@
+{
+  "ledger": {
+    "file": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long/data/ledger.jsonl",
+    "sha256": "66655718d6910c07af7a1f0a60da7d4a71895bee8421e823e74ee9931694e967",
+    "events": 7434,
+    "head": "1954783dcf327df8972745a1d8a0746b1bafce073d99ce5e22e8a6d7c2c062f1",
+    "lastTimestamp": "2026-10-10T12:26:45.816693+00:00"
+  },
+  "practiceLedger": {
+    "file": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long/data/practice/ledger.jsonl",
+    "sha256": "4af7a9b38cba929a826e7c5b3d1c25f3c16570e9ac35dbccb3255448b669f448",
+    "events": 1044,
+    "head": "c218b57692563d23b3ce857abacfa2af9ca1f19bd9984d6a8f3ad349fd5c71bb",
+    "lastTimestamp": "2026-10-10T09:11:30.270084+00:00"
+  },
+  "overall": {
+    "gameNumbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "score": {
+      "games": 99,
+      "wins": 20,
+      "draws": 4,
+      "losses": 75,
+      "points": 22.0,
+      "score": 0.2222222222222222
+    },
+    "behavior": {
+      "ownMoves": 3573,
+      "illegalAttempts": 20,
+      "illegalPer100": 0.559753708368318,
+      "shortLossCount": 85,
+      "shortLossPer100": 2.378953260565351,
+      "gamesWithShortLoss": 65,
+      "leadGames": 26,
+      "leadWins": 20,
+      "leadConversion": 0.7692307692307693,
+      "castleBy10": 0.9090909090909091,
+      "castleEligibleGames": 99,
+      "medianMoveSeconds": 25.2354
+    },
+    "byOpponent": {
+      "full-strength": {
+        "score": {
+          "games": 34,
+          "wins": 0,
+          "draws": 0,
+          "losses": 34,
+          "points": 0,
+          "score": 0
+        },
+        "behavior": {
+          "ownMoves": 819,
+          "illegalAttempts": 1,
+          "illegalPer100": 0.1221001221001221,
+          "shortLossCount": 29,
+          "shortLossPer100": 3.5409035409035408,
+          "gamesWithShortLoss": 25,
+          "leadGames": 1,
+          "leadWins": 0,
+          "leadConversion": 0.0,
+          "castleBy10": 0.8235294117647058,
+          "castleEligibleGames": 34,
+          "medianMoveSeconds": 18.6176
+        }
+      },
+      "skill-0": {
+        "score": {
+          "games": 33,
+          "wins": 17,
+          "draws": 1,
+          "losses": 15,
+          "points": 17.5,
+          "score": 0.5303030303030303
+        },
+        "behavior": {
+          "ownMoves": 1372,
+          "illegalAttempts": 11,
+          "illegalPer100": 0.8017492711370262,
+          "shortLossCount": 26,
+          "shortLossPer100": 1.8950437317784257,
+          "gamesWithShortLoss": 19,
+          "leadGames": 18,
+          "leadWins": 17,
+          "leadConversion": 0.9444444444444444,
+          "castleBy10": 0.9696969696969697,
+          "castleEligibleGames": 33,
+          "medianMoveSeconds": 25.99295
+        }
+      },
+      "elo-1800-setting": {
+        "score": {
+          "games": 32,
+          "wins": 3,
+          "draws": 3,
+          "losses": 26,
+          "points": 4.5,
+          "score": 0.140625
+        },
+        "behavior": {
+          "ownMoves": 1382,
+          "illegalAttempts": 8,
+          "illegalPer100": 0.5788712011577424,
+          "shortLossCount": 30,
+          "shortLossPer100": 2.170767004341534,
+          "gamesWithShortLoss": 21,
+          "leadGames": 7,
+          "leadWins": 3,
+          "leadConversion": 0.42857142857142855,
+          "castleBy10": 0.9375,
+          "castleEligibleGames": 32,
+          "medianMoveSeconds": 26.99475
+        }
+      }
+    },
+    "firstMoves": {
+      "white:e4": 28,
+      "black:e5": 23,
+      "black:d5": 13,
+      "white:d4": 21,
+      "black:e6": 2,
+      "black:Nf6": 3,
+      "black:c6": 8,
+      "white:Nf3": 1
+    },
+    "queenMovesFirst10Mean": 0.41414141414141414,
+    "materialLossPhases": {
+      "ownMoves1to15": {
+        "ownMoves": 1480,
+        "shortLossCount": 22,
+        "shortLossPer100": 1.4864864864864866
+      },
+      "ownMoves16plus": {
+        "ownMoves": 2093,
+        "shortLossCount": 63,
+        "shortLossPer100": 3.0100334448160537
+      }
+    }
+  },
+  "matchedHalves": {
+    "rotationsPerWindow": 8,
+    "early": {
+      "gameNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "score": {
+        "games": 48,
+        "wins": 15,
+        "draws": 2,
+        "losses": 31,
+        "points": 16.0,
+        "score": 0.3333333333333333
+      },
+      "behavior": {
+        "ownMoves": 1706,
+        "illegalAttempts": 8,
+        "illegalPer100": 0.46893317702227433,
+        "shortLossCount": 36,
+        "shortLossPer100": 2.1101992966002343,
+        "gamesWithShortLoss": 29,
+        "leadGames": 17,
+        "leadWins": 15,
+        "leadConversion": 0.8823529411764706,
+        "castleBy10": 0.9375,
+        "castleEligibleGames": 48,
+        "medianMoveSeconds": 24.08685
+      },
+      "byOpponent": {
+        "full-strength": {
+          "score": {
+            "games": 16,
+            "wins": 0,
+            "draws": 0,
+            "losses": 16,
+            "points": 0,
+            "score": 0
+          },
+          "behavior": {
+            "ownMoves": 386,
+            "illegalAttempts": 1,
+            "illegalPer100": 0.25906735751295334,
+            "shortLossCount": 13,
+            "shortLossPer100": 3.3678756476683938,
+            "gamesWithShortLoss": 12,
+            "leadGames": 0,
+            "leadWins": 0,
+            "leadConversion": null,
+            "castleBy10": 0.8125,
+            "castleEligibleGames": 16,
+            "medianMoveSeconds": 18.9043
+          }
+        },
+        "skill-0": {
+          "score": {
+            "games": 16,
+            "wins": 12,
+            "draws": 1,
+            "losses": 3,
+            "points": 12.5,
+            "score": 0.78125
+          },
+          "behavior": {
+            "ownMoves": 644,
+            "illegalAttempts": 5,
+            "illegalPer100": 0.7763975155279503,
+            "shortLossCount": 11,
+            "shortLossPer100": 1.7080745341614907,
+            "gamesWithShortLoss": 8,
+            "leadGames": 13,
+            "leadWins": 12,
+            "leadConversion": 0.9230769230769231,
+            "castleBy10": 1,
+            "castleEligibleGames": 16,
+            "medianMoveSeconds": 22.38745
+          }
+        },
+        "elo-1800-setting": {
+          "score": {
+            "games": 16,
+            "wins": 3,
+            "draws": 1,
+            "losses": 12,
+            "points": 3.5,
+            "score": 0.21875
+          },
+          "behavior": {
+            "ownMoves": 676,
+            "illegalAttempts": 2,
+            "illegalPer100": 0.2958579881656805,
+            "shortLossCount": 12,
+            "shortLossPer100": 1.7751479289940828,
+            "gamesWithShortLoss": 9,
+            "leadGames": 4,
+            "leadWins": 3,
+            "leadConversion": 0.75,
+            "castleBy10": 1,
+            "castleEligibleGames": 16,
+            "medianMoveSeconds": 26.728299999999997
+          }
+        }
+      },
+      "firstMoves": {
+        "white:e4": 16,
+        "black:e5": 13,
+        "black:d5": 7,
+        "white:d4": 8,
+        "black:e6": 1,
+        "black:Nf6": 1,
+        "black:c6": 2
+      },
+      "queenMovesFirst10Mean": 0.4375,
+      "materialLossPhases": {
+        "ownMoves1to15": {
+          "ownMoves": 720,
+          "shortLossCount": 8,
+          "shortLossPer100": 1.1111111111111112
+        },
+        "ownMoves16plus": {
+          "ownMoves": 986,
+          "shortLossCount": 28,
+          "shortLossPer100": 2.839756592292089
+        }
+      }
+    },
+    "late": {
+      "gameNumbers": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "score": {
+        "games": 48,
+        "wins": 5,
+        "draws": 2,
+        "losses": 41,
+        "points": 6.0,
+        "score": 0.125
+      },
+      "behavior": {
+        "ownMoves": 1778,
+        "illegalAttempts": 12,
+        "illegalPer100": 0.6749156355455568,
+        "shortLossCount": 46,
+        "shortLossPer100": 2.5871766029246346,
+        "gamesWithShortLoss": 34,
+        "leadGames": 8,
+        "leadWins": 5,
+        "leadConversion": 0.625,
+        "castleBy10": 0.8958333333333334,
+        "castleEligibleGames": 48,
+        "medianMoveSeconds": 25.3642
+      },
+      "byOpponent": {
+        "full-strength": {
+          "score": {
+            "games": 16,
+            "wins": 0,
+            "draws": 0,
+            "losses": 16,
+            "points": 0,
+            "score": 0
+          },
+          "behavior": {
+            "ownMoves": 385,
+            "illegalAttempts": 0,
+            "illegalPer100": 0.0,
+            "shortLossCount": 14,
+            "shortLossPer100": 3.6363636363636362,
+            "gamesWithShortLoss": 12,
+            "leadGames": 0,
+            "leadWins": 0,
+            "leadConversion": null,
+            "castleBy10": 0.8125,
+            "castleEligibleGames": 16,
+            "medianMoveSeconds": 16.1177
+          }
+        },
+        "skill-0": {
+          "score": {
+            "games": 16,
+            "wins": 5,
+            "draws": 0,
+            "losses": 11,
+            "points": 5,
+            "score": 0.3125
+          },
+          "behavior": {
+            "ownMoves": 687,
+            "illegalAttempts": 6,
+            "illegalPer100": 0.8733624454148472,
+            "shortLossCount": 14,
+            "shortLossPer100": 2.037845705967977,
+            "gamesWithShortLoss": 10,
+            "leadGames": 5,
+            "leadWins": 5,
+            "leadConversion": 1.0,
+            "castleBy10": 1,
+            "castleEligibleGames": 16,
+            "medianMoveSeconds": 27.1562
+          }
+        },
+        "elo-1800-setting": {
+          "score": {
+            "games": 16,
+            "wins": 0,
+            "draws": 2,
+            "losses": 14,
+            "points": 1.0,
+            "score": 0.0625
+          },
+          "behavior": {
+            "ownMoves": 706,
+            "illegalAttempts": 6,
+            "illegalPer100": 0.8498583569405099,
+            "shortLossCount": 18,
+            "shortLossPer100": 2.54957507082153,
+            "gamesWithShortLoss": 12,
+            "leadGames": 3,
+            "leadWins": 0,
+            "leadConversion": 0.0,
+            "castleBy10": 0.875,
+            "castleEligibleGames": 16,
+            "medianMoveSeconds": 27.3608
+          }
+        }
+      },
+      "firstMoves": {
+        "white:d4": 13,
+        "black:e5": 9,
+        "white:e4": 10,
+        "black:Nf6": 2,
+        "black:c6": 6,
+        "black:e6": 1,
+        "black:d5": 6,
+        "white:Nf3": 1
+      },
+      "queenMovesFirst10Mean": 0.4166666666666667,
+      "materialLossPhases": {
+        "ownMoves1to15": {
+          "ownMoves": 715,
+          "shortLossCount": 12,
+          "shortLossPer100": 1.6783216783216783
+        },
+        "ownMoves16plus": {
+          "ownMoves": 1063,
+          "shortLossCount": 34,
+          "shortLossPer100": 3.1984948259642523
+        }
+      }
+    }
+  },
+  "practice": {
+    "started": 94,
+    "scored": {
+      "games": 12,
+      "wins": 1,
+      "draws": 0,
+      "losses": 11,
+      "points": 1,
+      "score": 0.08333333333333333
+    },
+    "stopped": 82,
+    "active": 0,
+    "origins": {
+      "benchmark": 89,
+      "custom_fen": 5
+    },
+    "opponents": {
+      "practice-skill-3": 1,
+      "practice-skill-0": 3,
+      "practice-elo-1800": 3,
+      "practice-skill-5": 85,
+      "practice-skill-20": 2
+    },
+    "ownMoveLengths": {
+      "n": 94,
+      "sum": 382,
+      "median": 4.0,
+      "min": 0,
+      "max": 10,
+      "counts": {
+        "0": 5,
+        "2": 16,
+        "3": 7,
+        "4": 30,
+        "5": 19,
+        "6": 9,
+        "7": 6,
+        "8": 1,
+        "10": 1
+      }
+    },
+    "scoredOwnMoveLengths": {
+      "n": 12,
+      "sum": 41,
+      "median": 3.0,
+      "min": 2,
+      "max": 6,
+      "counts": {
+        "2": 2,
+        "3": 5,
+        "4": 4,
+        "6": 1
+      }
+    },
+    "stoppedOwnMoveLengths": {
+      "n": 82,
+      "sum": 341,
+      "median": 4.0,
+      "min": 0,
+      "max": 10,
+      "counts": {
+        "0": 5,
+        "2": 14,
+        "3": 2,
+        "4": 26,
+        "5": 19,
+        "6": 8,
+        "7": 6,
+        "8": 1,
+        "10": 1
+      }
+    },
+    "firstHalfOwnMoveLengths": {
+      "n": 47,
+      "sum": 216,
+      "median": 5,
+      "min": 0,
+      "max": 10,
+      "counts": {
+        "0": 2,
+        "2": 2,
+        "3": 6,
+        "4": 11,
+        "5": 15,
+        "6": 6,
+        "7": 3,
+        "8": 1,
+        "10": 1
+      }
+    },
+    "lastHalfOwnMoveLengths": {
+      "n": 47,
+      "sum": 166,
+      "median": 4,
+      "min": 0,
+      "max": 7,
+      "counts": {
+        "0": 3,
+        "2": 14,
+        "3": 1,
+        "4": 19,
+        "5": 4,
+        "6": 3,
+        "7": 3
+      }
+    },
+    "atMost2OwnMoves": 21,
+    "atMost4OwnMoves": 58,
+    "atMost8OwnMoves": 93,
+    "initialMaterial": {
+      "n": 94,
+      "sum": -7,
+      "median": 0.0,
+      "min": -5,
+      "max": 25,
+      "counts": {
+        "-5": 2,
+        "-4": 2,
+        "-3": 7,
+        "-2": 12,
+        "-1": 16,
+        "0": 41,
+        "1": 5,
+        "2": 2,
+        "3": 3,
+        "5": 1,
+        "9": 1,
+        "15": 1,
+        "25": 1
+      }
+    },
+    "scoredWins": [
+      {
+        "practice": 89,
+        "timestamp": "2026-10-10T02:51:44.240161+00:00",
+        "origin": {
+          "game": 94,
+          "kind": "benchmark",
+          "ply": 61
+        },
+        "initialMaterial": 25,
+        "opponent": "practice-skill-5",
+        "note": "Remembered won ending: supported queen cuts g-file; test Rh1/pawn capture and all king escape squares. Four plies or terminal; next benchmark 95, review 96.",
+        "ownMoves": 2,
+        "plies": 3,
+        "illegal": 0,
+        "score": 1,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 1,
+        "sameCompleteMovePrefixAsSource": true,
+        "afterLastBenchmarkResult": false
+      }
+    ],
+    "sameCompleteMovePrefixAsSource": 2,
+    "practiceBehavior": {
+      "ownMoves": 382,
+      "illegalAttempts": 5,
+      "illegalPer100": 1.3089005235602094,
+      "shortLossCount": 8,
+      "shortLossPer100": 2.094240837696335,
+      "gamesWithShortLoss": 8,
+      "leadGames": 0,
+      "leadWins": 0,
+      "leadConversion": null,
+      "castleBy10": 0,
+      "castleEligibleGames": 1,
+      "medianMoveSeconds": 18.0811
+    },
+    "records": [
+      {
+        "practice": 1,
+        "timestamp": "2026-10-04T09:13:10.953907+00:00",
+        "origin": {
+          "game": 1,
+          "kind": "benchmark",
+          "ply": 18
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-3",
+        "note": "Trial 1: central exchange bookkeeping; test my own dxe5 hypothesis against a recorded opponent",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 2,
+        "timestamp": "2026-10-04T09:20:41.632224+00:00",
+        "origin": {
+          "game": 2,
+          "kind": "benchmark",
+          "ply": 39
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-0",
+        "note": "Trial 2: remembered fork position, test my own Bb5 hypothesis and destination safety",
+        "ownMoves": 0,
+        "plies": 1,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 3,
+        "timestamp": "2026-10-04T09:20:50.843420+00:00",
+        "origin": {
+          "game": 2,
+          "kind": "benchmark",
+          "ply": 39
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-0",
+        "note": "Trial 2: test own Bb5 hypothesis from remembered fork position",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 4,
+        "timestamp": "2026-10-04T10:00:30.589788+00:00",
+        "origin": {
+          "game": 6,
+          "kind": "benchmark",
+          "ply": 71
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-elo-1800",
+        "note": "Trial 6: own Rh7 alternative before queen trade, pawn-fork awareness, ten-ply horizon",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 5,
+        "timestamp": "2026-10-04T10:16:46.034192+00:00",
+        "origin": {
+          "game": 7,
+          "kind": "benchmark",
+          "ply": 36
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 7: own Qe2 alternative before blocked rook lift, ten-ply diagnostic",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 6,
+        "timestamp": "2026-10-04T10:36:41.849363+00:00",
+        "origin": {
+          "game": 8,
+          "kind": "benchmark",
+          "ply": 35
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 9: own Rg8 hypothesis, preserve king escape and answer knight checks, ten-ply drill",
+        "ownMoves": 6,
+        "plies": 12,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 7,
+        "timestamp": "2026-10-04T12:02:05.925063+00:00",
+        "origin": {
+          "game": 10,
+          "kind": "benchmark",
+          "ply": 27
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 11: own Bf6 alternative instead of pawn-capturable knight fork, ten-ply horizon",
+        "ownMoves": 6,
+        "plies": 12,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 8,
+        "timestamp": "2026-10-04T18:22:36.224987+00:00",
+        "origin": {
+          "game": 11,
+          "kind": "benchmark",
+          "ply": 106
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Trial 12: keep g4 free for king escape; test Re4 over ten plies",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 1,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 9,
+        "timestamp": "2026-10-05T02:19:27.376410+00:00",
+        "origin": {
+          "game": 18,
+          "kind": "benchmark",
+          "ply": 60
+        },
+        "initialMaterial": 1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 14: own Rb2 alternative; ten-ply destination-capture check, not engine analysis",
+        "ownMoves": 5,
+        "plies": 11,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 10,
+        "timestamp": "2026-10-05T02:31:56.522040+00:00",
+        "origin": {
+          "game": 19,
+          "kind": "benchmark",
+          "ply": 26
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 15: own Bd3 alternative, ten-ply line-opening test",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 11,
+        "timestamp": "2026-10-05T02:50:34.951023+00:00",
+        "origin": {
+          "game": 20,
+          "kind": "benchmark",
+          "ply": 33
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 16: own Bd7 alternative to bishop trap, ten-ply horizon",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 12,
+        "timestamp": "2026-10-05T06:57:30.705699+00:00",
+        "origin": {
+          "game": 21,
+          "kind": "benchmark",
+          "ply": 146
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 17: own Kf4 alternative; twenty-ply pawn-race/central-king drill",
+        "ownMoves": 10,
+        "plies": 20,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 13,
+        "timestamp": "2026-10-05T09:44:50.544980+00:00",
+        "origin": {
+          "game": 23,
+          "kind": "benchmark",
+          "ply": 12
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 19: Qe2 before Nd2, verify real bishop recapture over ten plies",
+        "ownMoves": 6,
+        "plies": 12,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 14,
+        "timestamp": "2026-10-05T10:50:27.579143+00:00",
+        "origin": {
+          "game": 24,
+          "kind": "benchmark",
+          "ply": 36
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 20: Bg6 before f6, retain f7/g7 shield over ten plies",
+        "ownMoves": 0,
+        "plies": 1,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": true,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 15,
+        "timestamp": "2026-10-05T10:50:53.881721+00:00",
+        "origin": {
+          "game": 24,
+          "kind": "benchmark",
+          "ply": 35
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 20 corrected position before f6: Bg6, ten plies, retain f7/g7 shield",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 16,
+        "timestamp": "2026-10-05T12:52:21.099622+00:00",
+        "origin": {
+          "game": 25,
+          "kind": "benchmark",
+          "ply": 26
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 21: Qxd4 before erroneous knight fork; ten plies, real knight geometry and recaptures",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 17,
+        "timestamp": "2026-10-05T13:55:53.379690+00:00",
+        "origin": {
+          "game": 26,
+          "kind": "benchmark",
+          "ply": 39
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 22: b6 before g6, keep Nf6 defender and f5 rook interposer; ten plies",
+        "ownMoves": 7,
+        "plies": 14,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 18,
+        "timestamp": "2026-10-05T17:17:40.878998+00:00",
+        "origin": {
+          "game": 29,
+          "kind": "benchmark",
+          "ply": 62
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 25: Rd2 alternative before the g-file rook loss; ten-ply material-retention test",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0.5,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 19,
+        "timestamp": "2026-10-05T17:20:10.416628+00:00",
+        "origin": {
+          "kind": "custom_fen"
+        },
+        "initialMaterial": 1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 26: Rd2 instead of Be6; defend against Bf2 mate; ten plies",
+        "ownMoves": 7,
+        "plies": 14,
+        "illegal": 1,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 20,
+        "timestamp": "2026-10-05T17:51:29.768414+00:00",
+        "origin": {
+          "game": 30,
+          "kind": "benchmark",
+          "ply": 15
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 27: legal Nc6-e7 alternative after Nd5; ten-ply geometry and material test",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 1,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 21,
+        "timestamp": "2026-10-05T18:33:31.356789+00:00",
+        "origin": {
+          "game": 31,
+          "kind": "benchmark",
+          "ply": 16
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 28: h3 alternative against Ng4; ten-ply central and f2-defense test",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 22,
+        "timestamp": "2026-10-05T18:51:28.552950+00:00",
+        "origin": {
+          "kind": "custom_fen"
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 29: Qe2 after Ne3; avoid the queen trap; ten plies",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [
+          {
+            "ply": 2,
+            "piece": "R",
+            "san": "Bxe1",
+            "uci": "f2e1",
+            "materialChange": -2
+          }
+        ],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 23,
+        "timestamp": "2026-10-05T22:11:49.307464+00:00",
+        "origin": {
+          "game": 32,
+          "kind": "benchmark",
+          "ply": 31
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 30: Kb8 instead of Bxb4; unpin the queen before c-file pressure; ten plies",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 24,
+        "timestamp": "2026-10-05T23:28:57.125475+00:00",
+        "origin": {
+          "game": 33,
+          "kind": "benchmark",
+          "ply": 78
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-0",
+        "note": "Trial 31: king toward f-pawn before minor-piece exchange; ten-ply horizon",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0.5,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 25,
+        "timestamp": "2026-10-05T23:39:02.607150+00:00",
+        "origin": {
+          "game": 33,
+          "kind": "benchmark",
+          "ply": 72
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 32: Nd6 instead of the h6 pawn capture; ten-ply knight retention and passer-defense test",
+        "ownMoves": 6,
+        "plies": 12,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0.5,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 26,
+        "timestamp": "2026-10-06T00:03:48.595350+00:00",
+        "origin": {
+          "game": 35,
+          "kind": "benchmark",
+          "ply": 70
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Trial 33: Ke2 before the Rb2/Rf2 mating net; ten-ply royal safety and bishop retention test",
+        "ownMoves": 3,
+        "plies": 6,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 27,
+        "timestamp": "2026-10-06T00:05:51.282504+00:00",
+        "origin": {
+          "kind": "custom_fen"
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 34: Kf1 from Rc2+ rather than the pawn-enclosed Kd3; ten-ply royal safety test",
+        "ownMoves": 3,
+        "plies": 6,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 28,
+        "timestamp": "2026-10-06T02:25:03.810343+00:00",
+        "origin": {
+          "game": 36,
+          "kind": "benchmark",
+          "ply": 131
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 35: Rc7 before Kd7; ten-ply rook retention and passed-pawn recapture test",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 29,
+        "timestamp": "2026-10-06T02:29:09.541779+00:00",
+        "origin": {
+          "game": 36,
+          "kind": "benchmark",
+          "ply": 131
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 36: Rc6 instead of Rc7 to avoid a rook beyond the king on the checking rank; ten-ply retention test",
+        "ownMoves": 6,
+        "plies": 12,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 30,
+        "timestamp": "2026-10-06T04:46:38.947962+00:00",
+        "origin": {
+          "game": 37,
+          "kind": "benchmark",
+          "ply": 46
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Trial 37: earlier king retreat; ten-ply queen retention and immediate capture check",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 31,
+        "timestamp": "2026-10-06T04:47:20.167077+00:00",
+        "origin": {
+          "kind": "custom_fen"
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Trial 38: Qe3 check interposition in remembered practice failure, ten plies",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 32,
+        "timestamp": "2026-10-06T04:54:34.648348+00:00",
+        "origin": {
+          "game": 38,
+          "kind": "benchmark",
+          "ply": 27
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 39: free b7 before b4 traps Na5; ten-ply piece retention",
+        "ownMoves": 6,
+        "plies": 12,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 33,
+        "timestamp": "2026-10-06T05:17:05.586703+00:00",
+        "origin": {
+          "game": 39,
+          "kind": "benchmark",
+          "ply": 40
+        },
+        "initialMaterial": 15,
+        "opponent": "practice-skill-5",
+        "note": "Trial 40: challenge Bg4 before queen capture; ten-ply queen retention",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 1,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 34,
+        "timestamp": "2026-10-06T06:25:07.072711+00:00",
+        "origin": {
+          "game": 40,
+          "kind": "benchmark",
+          "ply": 73
+        },
+        "initialMaterial": 9,
+        "opponent": "practice-skill-5",
+        "note": "Trial 41: create f8 king flight before another material capture; ten plies",
+        "ownMoves": 3,
+        "plies": 6,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [
+          {
+            "ply": 4,
+            "piece": "Q",
+            "san": "Nxd5",
+            "uci": "f6d5",
+            "materialChange": -6
+          }
+        ],
+        "sourceBenchmarkScore": 1,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 35,
+        "timestamp": "2026-10-06T15:51:14.388302+00:00",
+        "origin": {
+          "game": 41,
+          "kind": "benchmark",
+          "ply": 40
+        },
+        "initialMaterial": 1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 42: h3 before the h-file queen entry; ten-ply king and heavy-piece retention",
+        "ownMoves": 8,
+        "plies": 16,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [
+          {
+            "ply": 14,
+            "piece": "Q",
+            "san": "Rxf2",
+            "uci": "f6f2",
+            "materialChange": -4
+          }
+        ],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 36,
+        "timestamp": "2026-10-06T17:40:46.314226+00:00",
+        "origin": {
+          "game": 42,
+          "kind": "benchmark",
+          "ply": 103
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Trial 43: retreat Ne7-c8 before Kg7; ten-ply knight and rook retention test; benchmark assessment after 48.",
+        "ownMoves": 3,
+        "plies": 6,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 37,
+        "timestamp": "2026-10-06T18:06:43.860430+00:00",
+        "origin": {
+          "game": 43,
+          "kind": "benchmark",
+          "ply": 30
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 44: keep d3 interposer and play h3; ten-ply queen/rook retention and king safety test; evaluation after 48.",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 38,
+        "timestamp": "2026-10-06T18:56:17.799799+00:00",
+        "origin": {
+          "game": 44,
+          "kind": "benchmark",
+          "ply": 43
+        },
+        "initialMaterial": 2,
+        "opponent": "practice-skill-5",
+        "note": "Trial 45: f7-f6 blocks Qg7 and attacks Qe5; track vacated g6 defender; ten-ply queen/rook and no-mate test; evaluation after 48.",
+        "ownMoves": 3,
+        "plies": 6,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [
+          {
+            "ply": 4,
+            "piece": "R",
+            "san": "Bxf8",
+            "uci": "h6f8",
+            "materialChange": -2
+          }
+        ],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 39,
+        "timestamp": "2026-10-06T23:49:16.252624+00:00",
+        "origin": {
+          "game": 45,
+          "kind": "benchmark",
+          "ply": 78
+        },
+        "initialMaterial": 3,
+        "opponent": "practice-skill-5",
+        "note": "Remembered Rb7 failure: trace both bishop diagonals; try Rfd1; eight-ply rook-retention and legality target, return benchmark 46.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 40,
+        "timestamp": "2026-10-07T00:24:49.981607+00:00",
+        "origin": {
+          "game": 47,
+          "kind": "benchmark",
+          "ply": 50
+        },
+        "initialMaterial": -3,
+        "opponent": "practice-skill-5",
+        "note": "Remembered sole-queen-guardian failure: Rfe1 preserves Rd1-Qd4 support. Eight-ply matching-major-trade or retention target; return benchmark 48.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 1,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 41,
+        "timestamp": "2026-10-07T02:33:28.743771+00:00",
+        "origin": {
+          "game": 48,
+          "kind": "benchmark",
+          "ply": 33
+        },
+        "initialMaterial": -3,
+        "opponent": "practice-skill-5",
+        "note": "Remembered interposition trial: actual Bf3-a8 ray after Bxd4; eight-ply major-retention and legality target. Return benchmark 49; broader review 54.",
+        "ownMoves": 7,
+        "plies": 14,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 1,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 42,
+        "timestamp": "2026-10-07T05:23:44.216477+00:00",
+        "origin": {
+          "game": 49,
+          "kind": "benchmark",
+          "ply": 24
+        },
+        "initialMaterial": -3,
+        "opponent": "practice-skill-5",
+        "note": "Trial 50: retain g2 pawn, open queen diagonal with Ng3; eight-ply retention test.",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [
+          {
+            "ply": 2,
+            "piece": "Q",
+            "san": "Bxd1",
+            "uci": "f3d1",
+            "materialChange": -6
+          }
+        ],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 43,
+        "timestamp": "2026-10-07T05:32:46.182575+00:00",
+        "origin": {
+          "game": 50,
+          "kind": "benchmark",
+          "ply": 39
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 51: Nb7 instead of g6; eight-ply shelter and major-retention drill.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 44,
+        "timestamp": "2026-10-07T05:49:13.854462+00:00",
+        "origin": {
+          "game": 51,
+          "kind": "benchmark",
+          "ply": 46
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 52: Kd2 to avoid the checking Nc2 king-rook fork; eight-ply retention test.",
+        "ownMoves": 3,
+        "plies": 6,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 1,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 45,
+        "timestamp": "2026-10-07T06:51:11.096548+00:00",
+        "origin": {
+          "game": 53,
+          "kind": "benchmark",
+          "ply": 60
+        },
+        "initialMaterial": -5,
+        "opponent": "practice-skill-5",
+        "note": "Trial 54: Qxe3 instead of Rxe3; keep first-rank rook and test a flight square before recapturing knight.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 46,
+        "timestamp": "2026-10-07T09:43:21.032620+00:00",
+        "origin": {
+          "game": 54,
+          "kind": "benchmark",
+          "ply": 39
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 55: Nc6 instead of f6, retain f7 royal blocker; eight-ply retention/source-duty test with shorter calculation.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 47,
+        "timestamp": "2026-10-07T12:40:25.258883+00:00",
+        "origin": {
+          "game": 55,
+          "kind": "benchmark",
+          "ply": 48
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 56: queen retreat rather than assuming an optional recapture is forced; eight-ply remembered drill.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 48,
+        "timestamp": "2026-10-07T12:45:56.012583+00:00",
+        "origin": {
+          "game": 56,
+          "kind": "benchmark",
+          "ply": 29
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 57: queen retreat retaining d7 defender duty; eight-ply remembered drill.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 49,
+        "timestamp": "2026-10-07T12:56:05.179603+00:00",
+        "origin": {
+          "game": 57,
+          "kind": "benchmark",
+          "ply": 24
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 58: b3 against the invading c4 knight before b2 harvest; eight-ply remembered drill.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 1,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 50,
+        "timestamp": "2026-10-07T13:47:40.021945+00:00",
+        "origin": {
+          "game": 58,
+          "kind": "benchmark",
+          "ply": 9
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 59: Be7 instead of Bd6 to avoid the e5 pawn fork; eight-ply drill.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 51,
+        "timestamp": "2026-10-07T21:46:55.864454+00:00",
+        "origin": {
+          "game": 59,
+          "kind": "benchmark",
+          "ply": 150
+        },
+        "initialMaterial": 5,
+        "opponent": "practice-skill-5",
+        "note": "Remembered promotion stalemate: protected bishop check before queening; at most eight plies then review before benchmark60",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0.5,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 52,
+        "timestamp": "2026-10-07T21:50:24.423152+00:00",
+        "origin": {
+          "game": 60,
+          "kind": "benchmark",
+          "ply": 34
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Remembered queen destination safety after b4; Qb6 alternative, four-ply horizon, then benchmark61",
+        "ownMoves": 2,
+        "plies": 5,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [
+          {
+            "ply": 3,
+            "piece": "B",
+            "san": "bxc5",
+            "uci": "b4c5",
+            "materialChange": -3
+          }
+        ],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 53,
+        "timestamp": "2026-10-07T21:57:13.998196+00:00",
+        "origin": {
+          "game": 61,
+          "kind": "benchmark",
+          "ply": 16
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Remembered c4 queen/bishop fork: move queen before castling, four new plies then benchmark62",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 54,
+        "timestamp": "2026-10-07T22:03:09.359814+00:00",
+        "origin": {
+          "game": 62,
+          "kind": "benchmark",
+          "ply": 37
+        },
+        "initialMaterial": 1,
+        "opponent": "practice-skill-5",
+        "note": "Remembered h7 attack: g6 diagonal block instead of pawn-attacked Nf6; four new plies, then benchmark63",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 55,
+        "timestamp": "2026-10-07T22:20:08.566211+00:00",
+        "origin": {
+          "game": 63,
+          "kind": "benchmark",
+          "ply": 32
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Retain e3 guard of d4 and Bf4; Rfd1 alternative before e4, four new plies then benchmark64",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 56,
+        "timestamp": "2026-10-07T23:05:03.932587+00:00",
+        "origin": {
+          "game": 64,
+          "kind": "benchmark",
+          "ply": 63
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Remembered g-file mating attack: f5 while retaining g6 blocker, four new plies before benchmark65",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 57,
+        "timestamp": "2026-10-08T04:40:38.151745+00:00",
+        "origin": {
+          "game": 65,
+          "kind": "benchmark",
+          "ply": 120
+        },
+        "initialMaterial": 3,
+        "opponent": "practice-elo-1800",
+        "note": "Trial66: move rook away from Nc6 king-rook fork; four new plies, remembered example",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0.5,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 58,
+        "timestamp": "2026-10-08T04:53:07.286660+00:00",
+        "origin": {
+          "game": 66,
+          "kind": "benchmark",
+          "ply": 33
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-elo-1800",
+        "note": "Trial67: Qc8 rather than poisoned Bd6 interposition; eight new plies, major and bishop retention",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 59,
+        "timestamp": "2026-10-08T05:06:19.455185+00:00",
+        "origin": {
+          "game": 67,
+          "kind": "benchmark",
+          "ply": 20
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-20",
+        "note": "Trial68: Qb1 supports Bd3 before d-file clearance; eight new plies, remembered position",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 60,
+        "timestamp": "2026-10-08T05:56:09.885865+00:00",
+        "origin": {
+          "game": 68,
+          "kind": "benchmark",
+          "ply": 45
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-20",
+        "note": "Trial69: Ne8 keeps g8 available; eight new plies, avoid opening g-file onto king",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 61,
+        "timestamp": "2026-10-08T10:16:38.764060+00:00",
+        "origin": {
+          "game": 69,
+          "kind": "benchmark",
+          "ply": 84
+        },
+        "initialMaterial": -3,
+        "opponent": "practice-skill-5",
+        "note": "Trial70: remembered queen pin and knight geometry; eight new plies, legal moves and material retention",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 62,
+        "timestamp": "2026-10-08T10:46:53.511765+00:00",
+        "origin": {
+          "game": 70,
+          "kind": "benchmark",
+          "ply": 82
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial71: keep Bf5 pawn guard and move Rc3 off knight fork square; eight new plies",
+        "ownMoves": 4,
+        "plies": 9,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 63,
+        "timestamp": "2026-10-08T17:50:36.071984+00:00",
+        "origin": {
+          "game": 71,
+          "kind": "benchmark",
+          "ply": 88
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial72: evacuate c2 rook with Rc1, keep king off fourth-rank checking ray; eight new plies",
+        "ownMoves": 6,
+        "plies": 12,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 64,
+        "timestamp": "2026-10-08T19:06:37.890521+00:00",
+        "origin": {
+          "game": 72,
+          "kind": "benchmark",
+          "ply": 85
+        },
+        "initialMaterial": 2,
+        "opponent": "practice-skill-5",
+        "note": "Trial73: rook reposition before the failed g-pawn break; remembered eight-ply retention drill, then benchmark73 and broad review78",
+        "ownMoves": 0,
+        "plies": 1,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 65,
+        "timestamp": "2026-10-08T19:06:53.704146+00:00",
+        "origin": {
+          "game": 72,
+          "kind": "benchmark",
+          "ply": 85
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Trial73 corrected color: own rook reposition before g-pawn break; eight new plies then benchmark73",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 66,
+        "timestamp": "2026-10-08T19:29:39.962104+00:00",
+        "origin": {
+          "game": 73,
+          "kind": "benchmark",
+          "ply": 28
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial74: clear e-file guards before central pawn break; twelve-ply remembered drill, then fresh74 and broad78",
+        "ownMoves": 7,
+        "plies": 14,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 67,
+        "timestamp": "2026-10-08T20:08:41.539533+00:00",
+        "origin": {
+          "game": 74,
+          "kind": "benchmark",
+          "ply": 27
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial75: retreat rook to h8 before g6 cage; twelve new plies, then fresh benchmark75 and broad78",
+        "ownMoves": 7,
+        "plies": 14,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 68,
+        "timestamp": "2026-10-09T00:48:08.990816+00:00",
+        "origin": {
+          "game": 75,
+          "kind": "benchmark",
+          "ply": 116
+        },
+        "initialMaterial": 3,
+        "opponent": "practice-skill-5",
+        "note": "Trial 76: remembered knight ending; attempt Nd8-c6 against b4; twelve new plies, then benchmark 76",
+        "ownMoves": 6,
+        "plies": 12,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 1,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 69,
+        "timestamp": "2026-10-09T00:54:35.405041+00:00",
+        "origin": {
+          "game": 76,
+          "kind": "benchmark",
+          "ply": 39
+        },
+        "initialMaterial": -3,
+        "opponent": "practice-skill-5",
+        "note": "Trial 77: avoid poisoned Rxe4; try f5; eight new plies then benchmark 77",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 70,
+        "timestamp": "2026-10-09T01:11:36.614581+00:00",
+        "origin": {
+          "game": 77,
+          "kind": "benchmark",
+          "ply": 44
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 78: Kh1 avoids prospective Nxf3 royal/rook fork; ten new plies, then benchmark 78",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 1,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [
+          {
+            "ply": 8,
+            "piece": "N",
+            "san": "Nxc3",
+            "uci": "e4c3",
+            "materialChange": -3
+          }
+        ],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 71,
+        "timestamp": "2026-10-09T01:27:19.881609+00:00",
+        "origin": {
+          "game": 78,
+          "kind": "benchmark",
+          "ply": 11
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 79: Be7 instead of Bb4; retain majors/minors over twelve new plies, then benchmark 79; next broad review 84",
+        "ownMoves": 7,
+        "plies": 14,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 72,
+        "timestamp": "2026-10-09T01:56:52.307111+00:00",
+        "origin": {
+          "game": 79,
+          "kind": "benchmark",
+          "ply": 46
+        },
+        "initialMaterial": -3,
+        "opponent": "practice-skill-5",
+        "note": "Trial 80: Nf1 independent g3 guardian before Ne4 royal fork; ten new plies then benchmark 80, broad review 84",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 73,
+        "timestamp": "2026-10-09T02:23:58.771306+00:00",
+        "origin": {
+          "game": 80,
+          "kind": "benchmark",
+          "ply": 19
+        },
+        "initialMaterial": 1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 81: Nf6 leaves d7 escape against Qg6; ten new plies then benchmark 81; broad review 84",
+        "ownMoves": 6,
+        "plies": 12,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 74,
+        "timestamp": "2026-10-09T17:16:16.335055+00:00",
+        "origin": {
+          "game": 81,
+          "kind": "benchmark",
+          "ply": 112
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Trial 82: rook survival against cheaper pawn captures; eight-ply remembered-position drill, then benchmark 82",
+        "ownMoves": 3,
+        "plies": 6,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 75,
+        "timestamp": "2026-10-09T17:44:26.601575+00:00",
+        "origin": {
+          "game": 82,
+          "kind": "benchmark",
+          "ply": 79
+        },
+        "initialMaterial": -5,
+        "opponent": "practice-skill-5",
+        "note": "Trial 83: create g7 king escape instead of pawn hunting; eight plies then benchmark 83",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 76,
+        "timestamp": "2026-10-09T18:27:16.457277+00:00",
+        "origin": {
+          "game": 83,
+          "kind": "benchmark",
+          "ply": 76
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Trial 84: opposite-color king and rook cue against knight forks; eight plies then benchmark 84",
+        "ownMoves": 0,
+        "plies": 0,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 77,
+        "timestamp": "2026-10-09T18:27:39.879829+00:00",
+        "origin": {
+          "game": 83,
+          "kind": "benchmark",
+          "ply": 74
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Trial 84 corrected source after Ra8: Rb2, opposite-color king/rook cue, eight plies then benchmark 84",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 78,
+        "timestamp": "2026-10-09T19:15:57.521616+00:00",
+        "origin": {
+          "game": 84,
+          "kind": "benchmark",
+          "ply": 75
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 85: remembered pre-mate position, try Re7 to interrupt bishop support for Rf8; eight-ply survival horizon, then benchmark 85.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [
+          {
+            "ply": 2,
+            "piece": "R",
+            "san": "Bxe7",
+            "uci": "b4e7",
+            "materialChange": -2
+          }
+        ],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 79,
+        "timestamp": "2026-10-09T19:27:20.336901+00:00",
+        "origin": {
+          "game": 85,
+          "kind": "benchmark",
+          "ply": 44
+        },
+        "initialMaterial": -3,
+        "opponent": "practice-skill-5",
+        "note": "Trial 86: retain Ra1-a2 guard, try h3 rather than Rc1; eight plies, then benchmark 86.",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 80,
+        "timestamp": "2026-10-09T19:48:32.642519+00:00",
+        "origin": {
+          "game": 86,
+          "kind": "benchmark",
+          "ply": 33
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Trial 87: Re8 instead of Rf6 after Bh6, avoiding the prospective bishop pin and guarding e5; eight plies then benchmark 87.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": 0,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 81,
+        "timestamp": "2026-10-09T21:58:53.001704+00:00",
+        "origin": {
+          "game": 87,
+          "kind": "benchmark",
+          "ply": 46
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 88: Qe2 instead of Qxh6 before the e3/Bxe3+ checking capture; eight plies, then benchmark 88.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 82,
+        "timestamp": "2026-10-09T22:50:01.158294+00:00",
+        "origin": {
+          "kind": "custom_fen"
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Trial 89: hypothetical own-87 variation with Qe2 and retained h6 pawn, after e3 fxe3 Bxe3+; eight plies then benchmark 89.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": null,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 83,
+        "timestamp": "2026-10-10T00:24:21.388170+00:00",
+        "origin": {
+          "game": 89,
+          "kind": "benchmark",
+          "ply": 80
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Remembered game 89 check position; keep rook off d4 knight-fork target. Eight-ply drill; next benchmark 90.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 84,
+        "timestamp": "2026-10-10T00:35:59.286734+00:00",
+        "origin": {
+          "game": 90,
+          "kind": "benchmark",
+          "ply": 57
+        },
+        "initialMaterial": -4,
+        "opponent": "practice-skill-5",
+        "note": "Remembered game 90 before ladder mate; try Qe8 to vacate e7 for king, retain f7 rook. Eight plies, next benchmark 91; broader evaluation 96.",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 85,
+        "timestamp": "2026-10-10T00:48:14.651666+00:00",
+        "origin": {
+          "game": 91,
+          "kind": "benchmark",
+          "ply": 46
+        },
+        "initialMaterial": -2,
+        "opponent": "practice-skill-5",
+        "note": "Remembered game 91 before h3: retain h2 pawn guard of g3, bishop to e2 controls g4. Eight plies; next benchmark 92, broader review 96.",
+        "ownMoves": 4,
+        "plies": 8,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 86,
+        "timestamp": "2026-10-10T00:59:09.845788+00:00",
+        "origin": {
+          "game": 92,
+          "kind": "benchmark",
+          "ply": 9
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Remembered game 92 before Nf6: try Bd7 first, add bishop recapture on c6, retain a8 rook. Eight plies; next benchmark 93, review 96.",
+        "ownMoves": 5,
+        "plies": 10,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 87,
+        "timestamp": "2026-10-10T02:10:30.941806+00:00",
+        "origin": {
+          "game": 93,
+          "kind": "benchmark",
+          "ply": 72
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Remembered game 93 before e5 discovered bishop attack. Try Rh3-f3, four plies; next benchmark 94, broader evaluation 96. Short immediate reply calculation trial.",
+        "ownMoves": 0,
+        "plies": 0,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": null,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 88,
+        "timestamp": "2026-10-10T02:10:58.979565+00:00",
+        "origin": {
+          "game": 93,
+          "kind": "benchmark",
+          "ply": 70
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Corrected remembered setup before Ke2/e5: Rh3-f3 first to avoid discovered c8-h3 ray. Four plies, next benchmark 94, review 96.",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 89,
+        "timestamp": "2026-10-10T02:51:44.240161+00:00",
+        "origin": {
+          "game": 94,
+          "kind": "benchmark",
+          "ply": 61
+        },
+        "initialMaterial": 25,
+        "opponent": "practice-skill-5",
+        "note": "Remembered won ending: supported queen cuts g-file; test Rh1/pawn capture and all king escape squares. Four plies or terminal; next benchmark 95, review 96.",
+        "ownMoves": 2,
+        "plies": 3,
+        "illegal": 0,
+        "score": 1,
+        "reason": "checkmate",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 1,
+        "sameCompleteMovePrefixAsSource": true,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 90,
+        "timestamp": "2026-10-10T06:00:52.885715+00:00",
+        "origin": {
+          "game": 95,
+          "kind": "benchmark",
+          "ply": 96
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Guardian vacancy: retain Bh4 king guard; four-ply remembered drill before benchmark 96",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 91,
+        "timestamp": "2026-10-10T06:27:58.687479+00:00",
+        "origin": {
+          "game": 96,
+          "kind": "benchmark",
+          "ply": 101
+        },
+        "initialMaterial": -4,
+        "opponent": "practice-skill-5",
+        "note": "Four-ply remembered drill: evade Qa7 without offering Rc8 to Rc1; fresh benchmarks through 102 afterward",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 92,
+        "timestamp": "2026-10-10T06:56:53.828635+00:00",
+        "origin": {
+          "game": 97,
+          "kind": "benchmark",
+          "ply": 54
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Four-ply remembered trial Qe2: retain c2/e3 guards, then benchmark 98",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 93,
+        "timestamp": "2026-10-10T07:18:08.216616+00:00",
+        "origin": {
+          "game": 98,
+          "kind": "benchmark",
+          "ply": 19
+        },
+        "initialMaterial": 0,
+        "opponent": "practice-skill-5",
+        "note": "Four-ply remembered king-shield trial: decline Bh6 with Re8; benchmark 99 next",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": false
+      },
+      {
+        "practice": 94,
+        "timestamp": "2026-10-10T09:10:37.335818+00:00",
+        "origin": {
+          "game": 99,
+          "kind": "benchmark",
+          "ply": 60
+        },
+        "initialMaterial": -1,
+        "opponent": "practice-skill-5",
+        "note": "Four-ply remembered trial: h3/Kh2 king route avoids f1 rook pin; benchmark 100 next",
+        "ownMoves": 2,
+        "plies": 4,
+        "illegal": 0,
+        "score": null,
+        "reason": "stopped_by_learner_not_a_result",
+        "shortLosses": [],
+        "sourceBenchmarkScore": 0,
+        "sameCompleteMovePrefixAsSource": false,
+        "afterLastBenchmarkResult": true
+      }
+    ]
+  },
+  "notes": {
+    "source": "Hash-verified authored files within recorded benchmark-start workspace snapshots",
+    "history": [
+      {
+        "game": 1,
+        "timestamp": "2026-10-04T09:09:33.911629+00:00",
+        "snapshot": "281462539c4e6a14a36e8380eba1b07d784a75390c0ffed31173f1be18056a89",
+        "files": {
+          "learning.md": {
+            "bytes": 998,
+            "words": 142,
+            "sha256": "324169581c8bc9d7468b788ce0fc7f0a0bd72f6ac03a6629a00991d8654ffd33"
+          }
+        }
+      },
+      {
+        "game": 2,
+        "timestamp": "2026-10-04T09:14:37.082096+00:00",
+        "snapshot": "dd405eff5da81ed95b0b5a7266154f3a15bd4e6ec9bb679506e2e89c8eddcf53",
+        "files": {
+          "learning.md": {
+            "bytes": 3144,
+            "words": 482,
+            "sha256": "d073a24842148b6fbff7a1d46eac7a0e46099a073c5c32509b88b9cc167121e1"
+          }
+        }
+      },
+      {
+        "game": 3,
+        "timestamp": "2026-10-04T09:22:19.640874+00:00",
+        "snapshot": "62508317d3ec88831f739b4ba0e72a6cf9648badad5e74b60b86642945f77609",
+        "files": {
+          "learning.md": {
+            "bytes": 5074,
+            "words": 790,
+            "sha256": "31d51e6761a2c6b0217fc9704dc0fb8aa528c7974b3ce893d25d05f3e368cafd"
+          }
+        }
+      },
+      {
+        "game": 4,
+        "timestamp": "2026-10-04T09:25:07.406320+00:00",
+        "snapshot": "be92bace2e1e4c6602e0c054f248ed80b1a2a2324e7cf9624e5cdbb5ebdfe78c",
+        "files": {
+          "learning.md": {
+            "bytes": 6539,
+            "words": 1021,
+            "sha256": "6a2dca390af14c0e3adb012b2c436aebdfbccc02a382e6d7360baa558ecac47b"
+          }
+        }
+      },
+      {
+        "game": 5,
+        "timestamp": "2026-10-04T09:31:56.071452+00:00",
+        "snapshot": "879246a78b21155c944abf5a853c852a0f0c6d2585054286bb4bb8a58d4aceda",
+        "files": {
+          "learning.md": {
+            "bytes": 8158,
+            "words": 1274,
+            "sha256": "5ec8bf6f46cb99b8c0ef37113694221b064a9eb07ea62767a618c05efc547b7c"
+          }
+        }
+      },
+      {
+        "game": 6,
+        "timestamp": "2026-10-04T09:42:41.281100+00:00",
+        "snapshot": "9d942ff1661bf83fb1f42f49c3737698bf553f859023067e1426d59cc0ef5e55",
+        "files": {
+          "learning.md": {
+            "bytes": 10371,
+            "words": 1620,
+            "sha256": "43a90b9a96e4611b2e7d864ac369884aa2b54a23e1f6d734c7f2a5e2586bb8d9"
+          }
+        }
+      },
+      {
+        "game": 7,
+        "timestamp": "2026-10-04T10:02:19.994277+00:00",
+        "snapshot": "36f92754c289b9b3ba38a9cc9e34663238e9525ee675319c7076ddfab525128e",
+        "files": {
+          "learning.md": {
+            "bytes": 14160,
+            "words": 2216,
+            "sha256": "f7d7f32024ff115b04eb8423321979f4bcff1df29411153f9968c008fe2d4979"
+          }
+        }
+      },
+      {
+        "game": 8,
+        "timestamp": "2026-10-04T10:20:49.035340+00:00",
+        "snapshot": "b00665bc8025a9d75ae7b479c7e7a5fb5b6175105e80722701aefd183aff2c6f",
+        "files": {
+          "learning.md": {
+            "bytes": 17932,
+            "words": 2835,
+            "sha256": "ba6c758072ab43ba5c7dee10e8fd704547a0293ccfa057d068594d0e5d6cdace"
+          }
+        }
+      },
+      {
+        "game": 9,
+        "timestamp": "2026-10-04T10:40:57.048275+00:00",
+        "snapshot": "da6d31f06c01a06baf286b21a65e9f944d2dd690ff2b73f5be073d758d2f49f7",
+        "files": {
+          "learning.md": {
+            "bytes": 21239,
+            "words": 3345,
+            "sha256": "eb3d173be7c684c2d0a23c4b6ed3c2452c162f2a4212d03e306fadd5e249a164"
+          }
+        }
+      },
+      {
+        "game": 10,
+        "timestamp": "2026-10-04T11:01:20.865406+00:00",
+        "snapshot": "e84194b17ee52ebf7a9240e714324c3fd1d2791304667b811988c008cbc5618c",
+        "files": {
+          "learning.md": {
+            "bytes": 23362,
+            "words": 3684,
+            "sha256": "b7ed4fceb575d8673a97f0ffa18f6541da388a25c560d97f40ffee78f149a294"
+          }
+        }
+      },
+      {
+        "game": 11,
+        "timestamp": "2026-10-04T12:07:43.966551+00:00",
+        "snapshot": "b27beda967bb3d788b89f9a2b2a1bd0b944515a583c3dd994a45de357b28f6c1",
+        "files": {
+          "learning.md": {
+            "bytes": 27329,
+            "words": 4301,
+            "sha256": "396bdf787ab80e743ce952aade57f109f5e2c16754b0b4480b621d1b220c1c07"
+          }
+        }
+      },
+      {
+        "game": 12,
+        "timestamp": "2026-10-04T18:25:40.040793+00:00",
+        "snapshot": "28bacb9d743990b3c60ab8ef1f0f7e2803f749e8243b78e0f8b78a569a1fbb40",
+        "files": {
+          "learning.md": {
+            "bytes": 31082,
+            "words": 4865,
+            "sha256": "0a232d64eae8200aada055be526180604e408ff636f1a3f8de2379402d059eae"
+          }
+        }
+      },
+      {
+        "game": 13,
+        "timestamp": "2026-10-04T18:45:38.041328+00:00",
+        "snapshot": "18bb9a5687f13cc2eeaaee143f885ecbdad707eb9f9626a19348f86cc132ee26",
+        "files": {
+          "learning.md": {
+            "bytes": 35247,
+            "words": 5476,
+            "sha256": "0b81aabd3bbad70d48831d80d50a479deaf804eed8359c96ef549e8b1d68f9ae"
+          }
+        }
+      },
+      {
+        "game": 14,
+        "timestamp": "2026-10-04T19:05:48.748358+00:00",
+        "snapshot": "1fb2aff3cec953e622bd226cf02588128cdca64baaddd86709d9885a0e04c936",
+        "files": {
+          "learning.md": {
+            "bytes": 37265,
+            "words": 5794,
+            "sha256": "85ac57a4e0a0248f2687acd2cec86042ae4875f44775f6de6e19694f6934154d"
+          }
+        }
+      },
+      {
+        "game": 15,
+        "timestamp": "2026-10-04T19:18:06.919138+00:00",
+        "snapshot": "742a654fc75484f53493fcdd8f1a06e4c76758a50a7f81efae40c35dd5f62861",
+        "files": {
+          "learning.md": {
+            "bytes": 39539,
+            "words": 6141,
+            "sha256": "037b95976b98d34b8bf95cf79d0f4f2fb2d4c28e88238b5763f271284d244f99"
+          }
+        }
+      },
+      {
+        "game": 16,
+        "timestamp": "2026-10-04T20:14:21.854923+00:00",
+        "snapshot": "d13360f7699f8c9d5e4ff060909c38adadbebd8e0c3e2b8ec8e59e5aeacd8217",
+        "files": {
+          "learning.md": {
+            "bytes": 42824,
+            "words": 6647,
+            "sha256": "484e10c0ca8a9cdf13542a8f852462f7045f1d1825c71892f985eaede163f2c9"
+          }
+        }
+      },
+      {
+        "game": 17,
+        "timestamp": "2026-10-04T20:44:37.825656+00:00",
+        "snapshot": "634706aff1416eb3fa2de2636630ed8a5d69e969d9605b9db32baba5d5405dcd",
+        "files": {
+          "learning.md": {
+            "bytes": 45938,
+            "words": 7136,
+            "sha256": "a207364d799e2bce8ea3c4b4ae862039807a734a2ceccdb386de1fa1fee7e858"
+          }
+        }
+      },
+      {
+        "game": 18,
+        "timestamp": "2026-10-05T02:11:03.065409+00:00",
+        "snapshot": "feb44af4aeb552db7e9a9e19d5863499aff13a61c99a83313bb201beb7eebcc6",
+        "files": {
+          "learning.md": {
+            "bytes": 48107,
+            "words": 7476,
+            "sha256": "40ca9b7c2baf15647658fdc0ab2a26eaaa39bcfcfb0c12e53238b678a12875b6"
+          }
+        }
+      },
+      {
+        "game": 19,
+        "timestamp": "2026-10-05T02:21:09.534812+00:00",
+        "snapshot": "7db942a044addcc0a057d33f8059f5dfaf54e222853ee2bb13c34d5484236b51",
+        "files": {
+          "learning.md": {
+            "bytes": 52445,
+            "words": 8136,
+            "sha256": "a653d11bd56c3fa8f2b9c4f7324bff712046717ba898615f376dd2b23565d7a7"
+          }
+        }
+      },
+      {
+        "game": 20,
+        "timestamp": "2026-10-05T02:34:27.640350+00:00",
+        "snapshot": "7a26f71b8ba7113295d480189424f2d66ed955c3a8066835b29df39a6cf0fee6",
+        "files": {
+          "learning.md": {
+            "bytes": 56652,
+            "words": 8798,
+            "sha256": "169226efe41405dcf61d8225a52eb72677459b72983a892e7549315816b7190f"
+          }
+        }
+      },
+      {
+        "game": 21,
+        "timestamp": "2026-10-05T02:56:14.750449+00:00",
+        "snapshot": "e4889293dab4cedd67b803f3b243e7ea3ee3df47819a10ef1823a551f1757522",
+        "files": {
+          "learning.md": {
+            "bytes": 60713,
+            "words": 9421,
+            "sha256": "e8a1d807f304b8ca324740eddfc85caeb6d6aacd8e2ab5ed39db6cdc32f851a1"
+          }
+        }
+      },
+      {
+        "game": 22,
+        "timestamp": "2026-10-05T07:42:55.068928+00:00",
+        "snapshot": "fc810b2c5a49ca4d1e028b5d5b3b246ad7313169fb4fd08db221cba0be591c69",
+        "files": {
+          "learning.md": {
+            "bytes": 66480,
+            "words": 10304,
+            "sha256": "dcd0f37830853707e08e2286ce39e9bde21bcde671de5f545d1f503587e9f5f9"
+          }
+        }
+      },
+      {
+        "game": 23,
+        "timestamp": "2026-10-05T09:34:56.329203+00:00",
+        "snapshot": "e2ed153239e8b308881f3b045b964d4c80cd842432f632d1f5b3f235175bb0f0",
+        "files": {
+          "learning.md": {
+            "bytes": 69333,
+            "words": 10747,
+            "sha256": "877ec63825699858447b9fa07e1651d706400e9f12e78ebec732c5b22cc6fc4d"
+          }
+        }
+      },
+      {
+        "game": 24,
+        "timestamp": "2026-10-05T09:45:54.993030+00:00",
+        "snapshot": "62fa7c897870e9b5c0dbcbce8e5c68bdeeeade1892413e434f46101db8cdc017",
+        "files": {
+          "learning.md": {
+            "bytes": 72689,
+            "words": 11272,
+            "sha256": "165fe44abccb73256a427916eaf47955b7831b82db3b2788f35ad10230a86e15"
+          }
+        }
+      },
+      {
+        "game": 25,
+        "timestamp": "2026-10-05T10:58:25.591485+00:00",
+        "snapshot": "f178a3912de9ffc0fbcd40f5870bd598c26eedf1d3b751c0bda239b08f8ef60c",
+        "files": {
+          "learning.md": {
+            "bytes": 79537,
+            "words": 12338,
+            "sha256": "b279cccb5e961df759fff59d66e74a50ff7f455b4ef838df3bf54d6807f15eae"
+          }
+        }
+      },
+      {
+        "game": 26,
+        "timestamp": "2026-10-05T13:04:15.322014+00:00",
+        "snapshot": "61bd292ce4e3893574d8d0631243945300ba91030b2fb281ea86c6c2bb402674",
+        "files": {
+          "learning.md": {
+            "bytes": 85469,
+            "words": 13252,
+            "sha256": "fba4baa64c013ef19b7aa4e81750d8a03f7156c24ee4f8f27609d19604620658"
+          }
+        }
+      },
+      {
+        "game": 27,
+        "timestamp": "2026-10-05T14:41:02.758197+00:00",
+        "snapshot": "c1771d89330e76886286c8539a8fa57861f41cefd227d72c5ee2e1896dfb9d8a",
+        "files": {
+          "learning.md": {
+            "bytes": 90709,
+            "words": 14078,
+            "sha256": "499665502c8ef29426e3c5537acf04b86c48a82b9f9c5689089b05d84ef20cd9"
+          }
+        }
+      },
+      {
+        "game": 28,
+        "timestamp": "2026-10-05T16:40:12.692164+00:00",
+        "snapshot": "90187cfb5f2816cd3b2428ade087b31cb6bbf4d632ef8ab16bca7f443192ab6d",
+        "files": {
+          "learning.md": {
+            "bytes": 93237,
+            "words": 14480,
+            "sha256": "4eb68d9818932fd5146fdb82a2e19a7ae0c6c5cf92b854893d2078fa5ce923c0"
+          }
+        }
+      },
+      {
+        "game": 29,
+        "timestamp": "2026-10-05T16:47:12.815838+00:00",
+        "snapshot": "1a3be534a3953beace861332e750f8a828eaa00ebfc882755a47d22128cd7d54",
+        "files": {
+          "learning.md": {
+            "bytes": 96938,
+            "words": 15042,
+            "sha256": "2eaa6da8347112134f20a911d526e43ac4f5082371a0894b9d1b58a65e2654b4"
+          }
+        }
+      },
+      {
+        "game": 30,
+        "timestamp": "2026-10-05T17:24:51.142952+00:00",
+        "snapshot": "e8886e33ff924a97f714dec3421966352bff3b91aea561f6c1b1ace41fc93118",
+        "files": {
+          "learning.md": {
+            "bytes": 104849,
+            "words": 16263,
+            "sha256": "607b45ba7bddb5190178044413e8d586e0e6f200cbaeaf5d7e9bfb9b21939d0b"
+          }
+        }
+      },
+      {
+        "game": 31,
+        "timestamp": "2026-10-05T17:54:53.674341+00:00",
+        "snapshot": "01e1d0f95b53c0d7f0b81a15c8978a9e181c483ed1c5e489666369b55f70c0dd",
+        "files": {
+          "learning.md": {
+            "bytes": 112296,
+            "words": 17401,
+            "sha256": "472ef8fd22460377fd22baf2c23714faacf432f0ff37c319941600562c5bd519"
+          }
+        }
+      },
+      {
+        "game": 32,
+        "timestamp": "2026-10-05T18:58:19.187007+00:00",
+        "snapshot": "b9ec32b123b917e886f56da017677468ae6195c1a5af37395cbd73f7874599a7",
+        "files": {
+          "learning.md": {
+            "bytes": 119606,
+            "words": 18519,
+            "sha256": "2f014053c08b737f55f6b52f6ac35d4ff85ed26d29d6655385a8123c7e17e434"
+          }
+        }
+      },
+      {
+        "game": 33,
+        "timestamp": "2026-10-05T22:29:59.811234+00:00",
+        "snapshot": "5f756f149deef3cfd2b22a4062c62e445be161e99d4e17d908a61098f6361576",
+        "files": {
+          "learning.md": {
+            "bytes": 125812,
+            "words": 19465,
+            "sha256": "98efe33c901a09a2a98d5f044edc918ec847b27da9fb80abee6b5999926d9f21"
+          }
+        }
+      },
+      {
+        "game": 34,
+        "timestamp": "2026-10-05T23:29:41.258829+00:00",
+        "snapshot": "571cb690157ee8882b0a3eb0e8a625932bf0d3084e2e7dca973b5e4b9f8d5bfb",
+        "files": {
+          "learning.md": {
+            "bytes": 130625,
+            "words": 20220,
+            "sha256": "b4294013c46d3d780c7c03f973d1528e8bfdaa79df7ed07d435945f048322e8b"
+          }
+        }
+      },
+      {
+        "game": 35,
+        "timestamp": "2026-10-05T23:40:27.300807+00:00",
+        "snapshot": "cb4447b206d9f8b666440d13d19757ad551d599e4a3f97c87068ec6d71d001af",
+        "files": {
+          "learning.md": {
+            "bytes": 136572,
+            "words": 21137,
+            "sha256": "b4c075d33569be41874b801bb4e992c01dc83259b7b166bf65eb55758146210a"
+          }
+        }
+      },
+      {
+        "game": 36,
+        "timestamp": "2026-10-06T00:07:48.982122+00:00",
+        "snapshot": "a5e2db33e73aae1e7e48b521abdfd03be88d3429159786aff4502c209be9762f",
+        "files": {
+          "learning.md": {
+            "bytes": 144663,
+            "words": 22356,
+            "sha256": "9ac86c84d845247abdb1ca9a8829649315fd0f89ad1ccc4def0d06adcf74cf87"
+          }
+        }
+      },
+      {
+        "game": 37,
+        "timestamp": "2026-10-06T02:57:07.901031+00:00",
+        "snapshot": "59c63d315b616859518a325e0c6af37dbce6f4f10e14908cbf70685ec4a90e45",
+        "files": {
+          "learning.md": {
+            "bytes": 155223,
+            "words": 23964,
+            "sha256": "18bd1d659c8aeb36d3272f099768689bec707bcc73ef7bdefdabb66533405378"
+          }
+        }
+      },
+      {
+        "game": 38,
+        "timestamp": "2026-10-06T04:48:01.749829+00:00",
+        "snapshot": "39429c494b10f6892a103cdeb253622729aad38ad7e47d0252fc2eb06b374726",
+        "files": {
+          "learning.md": {
+            "bytes": 159955,
+            "words": 24703,
+            "sha256": "e896cce7cf4250529da5dcd136ae2e16d55887e9dd7e272dcb2768a2bfdbfc9d"
+          }
+        }
+      },
+      {
+        "game": 39,
+        "timestamp": "2026-10-06T04:58:18.646751+00:00",
+        "snapshot": "1c3969dc97438331c92f237bc2407f077968d573201be2ebd7a75eefcdd8bcdd",
+        "files": {
+          "learning.md": {
+            "bytes": 164235,
+            "words": 25369,
+            "sha256": "73d9610b4efe8c88acce4dc8fe579bff3404d3372ad1bf87558889ca646767a7"
+          }
+        }
+      },
+      {
+        "game": 40,
+        "timestamp": "2026-10-06T05:19:58.942843+00:00",
+        "snapshot": "a14ee50c4df1db9adfb89b6aa624d301b28014742b4fe00964aa7be1415d31da",
+        "files": {
+          "learning.md": {
+            "bytes": 168804,
+            "words": 26068,
+            "sha256": "2611b0ccc227070910cb871f19e14fb39be6aed678b1ff861642f0abfd368a4a"
+          }
+        }
+      },
+      {
+        "game": 41,
+        "timestamp": "2026-10-06T14:31:00.654443+00:00",
+        "snapshot": "30887a28a7f51be09ade75ad17a670db50b7743895c84ad4a41bd5809aac183a",
+        "files": {
+          "learning.md": {
+            "bytes": 173974,
+            "words": 26844,
+            "sha256": "398f15d4d54387f9aca74f1e7d7639c08f29e48789513115964437c74ffcecd1"
+          }
+        }
+      },
+      {
+        "game": 42,
+        "timestamp": "2026-10-06T16:14:02.302004+00:00",
+        "snapshot": "24b34136111768bb20f6e87479bc1ccb1bcd1c6139b25b1989b6f611a8b3ffb3",
+        "files": {
+          "learning.md": {
+            "bytes": 179117,
+            "words": 27620,
+            "sha256": "71a95d7c8a545cdfcb5f248bfb7d055e8d463e9ff5311362dba0b5884171d90b"
+          }
+        }
+      },
+      {
+        "game": 43,
+        "timestamp": "2026-10-06T17:41:53.769578+00:00",
+        "snapshot": "a2ac897a473fcbc877322243eed3f00a263ae394f54f8fe6f2357812ed77affd",
+        "files": {
+          "learning.md": {
+            "bytes": 185093,
+            "words": 28543,
+            "sha256": "88fb040c63b56068cb589fa24e2bac9f651ed66d0a73163d04fb68a917df06bd"
+          }
+        }
+      },
+      {
+        "game": 44,
+        "timestamp": "2026-10-06T18:10:09.410220+00:00",
+        "snapshot": "c36c7f7de845b057b98f0cfe8032421c1167baffdd9d67694d284c522d90d3e0",
+        "files": {
+          "learning.md": {
+            "bytes": 189343,
+            "words": 29204,
+            "sha256": "a681ca0040441d6313dd44b6b5d33324335d4ba23786f5c453bc13432bf2d22a"
+          }
+        }
+      },
+      {
+        "game": 45,
+        "timestamp": "2026-10-06T19:12:00.925022+00:00",
+        "snapshot": "3e0c6a96713576dcce2955ab1a396761c4d46011d03be49bee20ca26d847148e",
+        "files": {
+          "learning.md": {
+            "bytes": 194094,
+            "words": 29922,
+            "sha256": "936147979cc4382f078ff62ffec17cd20bc32589590e66c396fae32ade1c1e87"
+          }
+        }
+      },
+      {
+        "game": 46,
+        "timestamp": "2026-10-06T23:49:58.453203+00:00",
+        "snapshot": "8eed79461c448274f6f40bf2f9cc3208e731a209ff2017cae958e0653e1ab13d",
+        "files": {
+          "learning.md": {
+            "bytes": 196238,
+            "words": 30242,
+            "sha256": "417b9fb4bf104c75dfbc714263c74356a9673983562a043cda07dde40bfa0848"
+          }
+        }
+      },
+      {
+        "game": 47,
+        "timestamp": "2026-10-07T00:05:49.042541+00:00",
+        "snapshot": "cadd8ad9fc54b717e4fdd6a377ab1023aef62ea6faa645f11ae7dfb2ac38e2fb",
+        "files": {
+          "learning.md": {
+            "bytes": 198383,
+            "words": 30585,
+            "sha256": "7d25554457644480158ec13e2d16c669cd6aee95534eaa90888bc3bc0b6d87ae"
+          }
+        }
+      },
+      {
+        "game": 48,
+        "timestamp": "2026-10-07T00:27:17.688318+00:00",
+        "snapshot": "160712582ddd8c94418252c1b2b4bb451d8129e61edb204fbf88967dd4d8de68",
+        "files": {
+          "learning.md": {
+            "bytes": 200765,
+            "words": 30942,
+            "sha256": "e8134724572c1b1c263461b01c203f13e832c023876ff47326d51c68da6265d4"
+          }
+        }
+      },
+      {
+        "game": 49,
+        "timestamp": "2026-10-07T02:40:12.374677+00:00",
+        "snapshot": "ee690a6111df3c7f99e5bb8d724044ac275ccacece07b1a4215ddf9632684a23",
+        "files": {
+          "learning.md": {
+            "bytes": 205559,
+            "words": 31686,
+            "sha256": "94921d2649871725e96bd05f562de04cb0a3e662dec6be19be00f267d267077e"
+          }
+        }
+      },
+      {
+        "game": 50,
+        "timestamp": "2026-10-07T05:24:05.919796+00:00",
+        "snapshot": "3b7a06910c38973118ef0d6aa2344def65bc927348dbfc153a54af5093516f31",
+        "files": {
+          "learning.md": {
+            "bytes": 207956,
+            "words": 32062,
+            "sha256": "54736788723d3d05dc1701e67815d379ebd15fbc09a66b1472e1b394ed1b59e8"
+          }
+        }
+      },
+      {
+        "game": 51,
+        "timestamp": "2026-10-07T05:33:45.547002+00:00",
+        "snapshot": "61d2ad553836b1d06bfbb680dc0d68bbb7d24a1513b43a8760d6aa82327371ae",
+        "files": {
+          "learning.md": {
+            "bytes": 210418,
+            "words": 32445,
+            "sha256": "2526e17f84592462b0e04a25034686baa0eea3c343cdb6bdd0950697a96fe18f"
+          }
+        }
+      },
+      {
+        "game": 52,
+        "timestamp": "2026-10-07T05:50:55.595009+00:00",
+        "snapshot": "97a8d009c457a4dba0d2ba5e50f2ebb679918f75eeac2261696daf02465b74f8",
+        "files": {
+          "learning.md": {
+            "bytes": 213576,
+            "words": 32931,
+            "sha256": "d52192a30240efbf65459f3e8bf02d7d0ff7e76a18000b43b946821ee2ca83c5"
+          }
+        }
+      },
+      {
+        "game": 53,
+        "timestamp": "2026-10-07T06:07:46.633096+00:00",
+        "snapshot": "105c0abe1b6b856a10dd4b0899115710aedc82f30422b74960d3792f58442c67",
+        "files": {
+          "learning.md": {
+            "bytes": 216380,
+            "words": 33360,
+            "sha256": "78cef150e26ba37b5d033713238ee3cfe4755c679af63482c17b27f5c9701c55"
+          }
+        }
+      },
+      {
+        "game": 54,
+        "timestamp": "2026-10-07T06:53:08.360958+00:00",
+        "snapshot": "752d6e9894f5e6ab056a8aed2be5464155e6b30c3bab5a8202c14f44320063a7",
+        "files": {
+          "learning.md": {
+            "bytes": 220139,
+            "words": 33942,
+            "sha256": "44813a6ff1ea1e039a6740d7d08f318635a5ada47eb610a48c1475eb98c2d0e9"
+          }
+        }
+      },
+      {
+        "game": 55,
+        "timestamp": "2026-10-07T09:47:00.300606+00:00",
+        "snapshot": "b2af1576d46127bc2c58fb48bd94668060d38365bae60486aa517d4ab71bede6",
+        "files": {
+          "learning.md": {
+            "bytes": 224873,
+            "words": 34659,
+            "sha256": "2651073d891fc3fdeaac41e6eaad9cf2935fcd565e09f1c7f3e44b11dde64e57"
+          }
+        }
+      },
+      {
+        "game": 56,
+        "timestamp": "2026-10-07T12:41:21.587721+00:00",
+        "snapshot": "f3ab6bacf0ea238854bc08b30b768b588791f73aff3d7d96c8b970819a37612e",
+        "files": {
+          "learning.md": {
+            "bytes": 226648,
+            "words": 34942,
+            "sha256": "8e262be7f9c5d4fad5bdd6f27b0b5a6ff1f8d32db065f098d5a23bf3df3cd41a"
+          }
+        }
+      },
+      {
+        "game": 57,
+        "timestamp": "2026-10-07T12:46:54.650832+00:00",
+        "snapshot": "56b1504cadcdfc2ba778673874a352206b966eb0730091197593084461194cd6",
+        "files": {
+          "learning.md": {
+            "bytes": 228159,
+            "words": 35181,
+            "sha256": "6634e02badbc382f4a61777164a4e1415bef386f8430c79487a5173964c4c890"
+          }
+        }
+      },
+      {
+        "game": 58,
+        "timestamp": "2026-10-07T12:57:31.757896+00:00",
+        "snapshot": "5e0a0285d5870816f7fd9599722df412cbd37fefa5cb46db18b2d1051a6615ab",
+        "files": {
+          "learning.md": {
+            "bytes": 229722,
+            "words": 35433,
+            "sha256": "bed3a98229a0811a484f052af9df8b6bb747c6d5be2a82cf35cacb1a23c78d10"
+          }
+        }
+      },
+      {
+        "game": 59,
+        "timestamp": "2026-10-07T14:53:02.011556+00:00",
+        "snapshot": "b1dc5878170686d2619a8bc9f6cc7b7ed4464afd74720f22b4680fd0c0dcd799",
+        "files": {
+          "learning.md": {
+            "bytes": 231578,
+            "words": 35728,
+            "sha256": "c6f981f919e7b45bb6b672ef07c509f272131de0363dde19a780b75151710c6b"
+          }
+        }
+      },
+      {
+        "game": 60,
+        "timestamp": "2026-10-07T21:47:18.102960+00:00",
+        "snapshot": "750855318f236ce8c2b835fad80af5df374982c5f9be462ca29c38868ede96ed",
+        "files": {
+          "learning.md": {
+            "bytes": 233503,
+            "words": 35999,
+            "sha256": "21911706df2bbc723637feb4e01995937044fc0c800cc662ffe35f23e620ebc3"
+          }
+        }
+      },
+      {
+        "game": 61,
+        "timestamp": "2026-10-07T21:50:51.823902+00:00",
+        "snapshot": "91c2f1c21f4386ed42fc276cbfd61bab581994a715531602819f8d0fd44a0033",
+        "files": {
+          "learning.md": {
+            "bytes": 235406,
+            "words": 36261,
+            "sha256": "921c315ff066244458f6d65df463a6bfa57dbfc04dc8fea36af4106ae130792c"
+          }
+        }
+      },
+      {
+        "game": 62,
+        "timestamp": "2026-10-07T21:57:31.387194+00:00",
+        "snapshot": "eeb416585258364299be6993b78248761f6991f295a55b512bbf62234b580683",
+        "files": {
+          "learning.md": {
+            "bytes": 236970,
+            "words": 36502,
+            "sha256": "222484e8988d07a8fb36cfc040d3437cf070d7e7779e2da4c66c9c86e35d3e53"
+          }
+        }
+      },
+      {
+        "game": 63,
+        "timestamp": "2026-10-07T22:03:30.708129+00:00",
+        "snapshot": "c8e85d0120b4927c634b6f03790c91fb62d1e099726ba75a34f6d9cb386dc37f",
+        "files": {
+          "learning.md": {
+            "bytes": 238233,
+            "words": 36692,
+            "sha256": "c06256e1b3cda3705ad5ea2195b1d3ee356eedb6f510e50ae2744b0aeb520e7c"
+          }
+        }
+      },
+      {
+        "game": 64,
+        "timestamp": "2026-10-07T22:20:30.297354+00:00",
+        "snapshot": "718cc6de6978adc902b55a48f3deed4e098e934b2e3b514ef62cc2e4bb5ab454",
+        "files": {
+          "learning.md": {
+            "bytes": 240182,
+            "words": 36971,
+            "sha256": "7a211c1cfd60674ed01faf1c32b0cc871eb90b8a7eef37e4ae93191f46b516c9"
+          }
+        }
+      },
+      {
+        "game": 65,
+        "timestamp": "2026-10-07T23:06:39.235325+00:00",
+        "snapshot": "69b68ba63fc5358f1b33b8672712e296c3584f8ef295bf978d5753acc83e075e",
+        "files": {
+          "learning.md": {
+            "bytes": 242128,
+            "words": 37263,
+            "sha256": "14ada1c1c1f5f70ec00539c3adc8261c0c3afa865bb2bf5608dc8863f67c1735"
+          }
+        }
+      },
+      {
+        "game": 66,
+        "timestamp": "2026-10-08T04:41:00.763712+00:00",
+        "snapshot": "61c744e0eb6296fe2218db94180e651df7218370bdc11bc4113bdbec0bdcc090",
+        "files": {
+          "learning.md": {
+            "bytes": 244626,
+            "words": 37620,
+            "sha256": "2c426b45b018d5feb9e9cba0b6f482fcfbab330136a2efc1f951361ea41fd8ec"
+          }
+        }
+      },
+      {
+        "game": 67,
+        "timestamp": "2026-10-08T04:54:11.394447+00:00",
+        "snapshot": "499137ba8f6f4ff17c47d7816660ed8750a7bb3ea0b3795cdb245d75652fd46f",
+        "files": {
+          "learning.md": {
+            "bytes": 247920,
+            "words": 38101,
+            "sha256": "1d29eeac781b33903288cd36d8625ff8721c51a69b6ed2d81ec4ac4a287c72bc"
+          }
+        }
+      },
+      {
+        "game": 68,
+        "timestamp": "2026-10-08T05:08:24.078777+00:00",
+        "snapshot": "5a0208f6150f9b6d6c3efbd73a2a96dff490f53463b6cfaab0fd5909c674a125",
+        "files": {
+          "learning.md": {
+            "bytes": 250144,
+            "words": 38430,
+            "sha256": "c15628d542afb9946ab186f9629d0fa37179c42e734f37e482dcad0a83cc5649"
+          }
+        }
+      },
+      {
+        "game": 69,
+        "timestamp": "2026-10-08T06:00:29.889185+00:00",
+        "snapshot": "1ee54ea19becbe8a108ba26b82ec4e07e922e2838df849039b1aa6ee063ef35f",
+        "files": {
+          "learning.md": {
+            "bytes": 252370,
+            "words": 38765,
+            "sha256": "74178cef2d6bcefb1a1cc9f3ca0055b872b09fc21809d5aba739b2e293f479e0"
+          }
+        }
+      },
+      {
+        "game": 70,
+        "timestamp": "2026-10-08T10:17:36.120662+00:00",
+        "snapshot": "0beb2ed02a74cd3d2eb9cb734d1429dafd9cc28981ca687b4131d0596887fa16",
+        "files": {
+          "learning.md": {
+            "bytes": 255581,
+            "words": 39232,
+            "sha256": "50f216b4670fbc31c2bb7c6a55f57a4348fe080189ae5b9f549732c6245b40e7"
+          }
+        }
+      },
+      {
+        "game": 71,
+        "timestamp": "2026-10-08T10:49:57.326029+00:00",
+        "snapshot": "6b8f662c122c0ed3f2b0cc557715a43786cfbe7843187d24caa611e2b810a9cd",
+        "files": {
+          "learning.md": {
+            "bytes": 258892,
+            "words": 39733,
+            "sha256": "309621debab2b959e95a7ff43a91b85a0bea31fd82bc277f58dba931611372a4"
+          }
+        }
+      },
+      {
+        "game": 72,
+        "timestamp": "2026-10-08T18:40:31.131947+00:00",
+        "snapshot": "65ac47fac92a6e846181bec0168c6c2b1c05eb77e7c8a6678571e3be29db642d",
+        "files": {
+          "learning.md": {
+            "bytes": 262882,
+            "words": 40330,
+            "sha256": "ccdbb3d93e1ab39dd17ccc5e72baa313f8b716ed0ab24d015c04f8c60f3d0890"
+          }
+        }
+      },
+      {
+        "game": 73,
+        "timestamp": "2026-10-08T19:09:31.761961+00:00",
+        "snapshot": "29fe153259fd034e75b69905801a9ce49fcca3f38291b824ceaf222b3a27dff1",
+        "files": {
+          "learning.md": {
+            "bytes": 267562,
+            "words": 41007,
+            "sha256": "75ddc5967d0b6d9d18c8641c01e820f0639520fc52041bea6bf494d8bc0bb700"
+          }
+        }
+      },
+      {
+        "game": 74,
+        "timestamp": "2026-10-08T19:33:10.228200+00:00",
+        "snapshot": "8700da83e518eb702d0354672257423e4eaedc2d9d0237333bfdb547a3b8649f",
+        "files": {
+          "learning.md": {
+            "bytes": 270569,
+            "words": 41457,
+            "sha256": "f5b196b0168e3d13512c066cca5d32ddb746e8b4728c9bf15f6981f232dc534e"
+          }
+        }
+      },
+      {
+        "game": 75,
+        "timestamp": "2026-10-08T20:19:35.522411+00:00",
+        "snapshot": "2844138675f5ec5fad28a560109cf2ded5ba8e4b755ee602cbc0069bec88cc99",
+        "files": {
+          "learning.md": {
+            "bytes": 273924,
+            "words": 41943,
+            "sha256": "19036e396047cf7d9bdcb1ddfe952c572a2a11842d13a3e69a70cbd01a879f9d"
+          }
+        }
+      },
+      {
+        "game": 76,
+        "timestamp": "2026-10-09T00:49:06.640567+00:00",
+        "snapshot": "54bc78f2de613a8dd77549a3646f741004c424d62280039b1fc6cd2d789d29b1",
+        "files": {
+          "learning.md": {
+            "bytes": 276570,
+            "words": 42335,
+            "sha256": "a5ad62f3f374d709a669db91ce56cd0b3c9cda64caa90596d4405e62ebd0c091"
+          }
+        }
+      },
+      {
+        "game": 77,
+        "timestamp": "2026-10-09T00:55:21.108988+00:00",
+        "snapshot": "a64ae1f1f925f8c5d5ecc138dd2e9f7b819fd19408bd65eb7d5345c78e8c8980",
+        "files": {
+          "learning.md": {
+            "bytes": 278937,
+            "words": 42700,
+            "sha256": "e73b0a931137e69dbcf4469008b19ebbfac62b2dc4422e3d0d04d2f819af289f"
+          }
+        }
+      },
+      {
+        "game": 78,
+        "timestamp": "2026-10-09T01:13:30.917689+00:00",
+        "snapshot": "d37eb6f65e62117691d6fd5fd8915bd63ae89bae9faf2fcb20cc7c8d72c52611",
+        "files": {
+          "learning.md": {
+            "bytes": 281986,
+            "words": 43156,
+            "sha256": "6caa4249783b2b17c388e434415629abde98b8db494d388f984d227021449981"
+          }
+        }
+      },
+      {
+        "game": 79,
+        "timestamp": "2026-10-09T01:33:14.313317+00:00",
+        "snapshot": "6fa7fd383dc7e8590906fe70114ce5698104b58d66597d8d807e4404206f33fd",
+        "files": {
+          "learning.md": {
+            "bytes": 286418,
+            "words": 43813,
+            "sha256": "1eb18573d96df218450de7e4424e7b40a9496d549398c86c969e16bb78d36fce"
+          }
+        }
+      },
+      {
+        "game": 80,
+        "timestamp": "2026-10-09T02:02:55.820956+00:00",
+        "snapshot": "955c28b37e7a60d4f16214f14f7422017ca1e901460a79f98b85daba8d2bf4e4",
+        "files": {
+          "learning.md": {
+            "bytes": 289305,
+            "words": 44244,
+            "sha256": "abbaffa9e32ca2b9aa0a201efc4cdbd1c99040163dfcbc505a2697e8432f4113"
+          }
+        }
+      },
+      {
+        "game": 81,
+        "timestamp": "2026-10-09T02:35:23.608807+00:00",
+        "snapshot": "d86271cfd445576f6dfccc3ce5f6a6a32e56caf0458ebd06f17a763c690f54aa",
+        "files": {
+          "learning.md": {
+            "bytes": 292087,
+            "words": 44683,
+            "sha256": "54180a2a6b619b6c0f214fe9cedfb68aa0cb8041ebdb37066cd1da8fd1d4bd46"
+          }
+        }
+      },
+      {
+        "game": 82,
+        "timestamp": "2026-10-09T17:18:23.214680+00:00",
+        "snapshot": "da12fe7492c905748d02a3bf6f586b24f54d15d8a2a48798d9904184fc50f04a",
+        "files": {
+          "learning.md": {
+            "bytes": 294671,
+            "words": 45079,
+            "sha256": "f96222c057ee5f80048100b4e82e754914b746d63ccd3687de951f3306ab6ce8"
+          }
+        }
+      },
+      {
+        "game": 83,
+        "timestamp": "2026-10-09T17:46:42.287517+00:00",
+        "snapshot": "a81a13d8285b6bf8960a8280e526a1e4688f890e0f3a84ecdeb9bc4893b97862",
+        "files": {
+          "learning.md": {
+            "bytes": 297301,
+            "words": 45487,
+            "sha256": "a9cbd4fc8bce04f41af267acdeca7fff68550a386bb09ceeb124569557dda647"
+          }
+        }
+      },
+      {
+        "game": 84,
+        "timestamp": "2026-10-09T19:01:20.400251+00:00",
+        "snapshot": "f989d683f03c68e009d6df8b908264ebf042e68a31b494b081d369b3bf85eb2e",
+        "files": {
+          "learning.md": {
+            "bytes": 314933,
+            "words": 48022,
+            "sha256": "a222d7830b74d21500f4e547465ed3cdb4886a05c9c423f7e706859fa24ff687"
+          }
+        }
+      },
+      {
+        "game": 85,
+        "timestamp": "2026-10-09T19:17:17.256210+00:00",
+        "snapshot": "bc5ce3a15848855ca2123cd03babdb3fbe7cf36ba3584b7cf246b7041339d95b",
+        "files": {
+          "learning.md": {
+            "bytes": 318433,
+            "words": 48564,
+            "sha256": "b3bada55fdc1e98f94a7c9273040948cd22f65c2610a42edc090239623cc11be"
+          }
+        }
+      },
+      {
+        "game": 86,
+        "timestamp": "2026-10-09T19:27:58.387116+00:00",
+        "snapshot": "9c4fc2e0b852840b13f5538b85c4cae67683993d96bcfefc5124642216a183b6",
+        "files": {
+          "learning.md": {
+            "bytes": 321166,
+            "words": 48979,
+            "sha256": "15c3d6009703cfad71bf4b278e3b6061932e74b5f46c9eb0e2a52260e932a113"
+          }
+        }
+      },
+      {
+        "game": 87,
+        "timestamp": "2026-10-09T19:53:26.888474+00:00",
+        "snapshot": "d13629726250130da01f47966561af4844406d71b355e13f364a348d7eca599f",
+        "files": {
+          "learning.md": {
+            "bytes": 324249,
+            "words": 49459,
+            "sha256": "788c70225a13d927491392533084bf001eaae97046efcec2737119c2e21d86a1"
+          }
+        }
+      },
+      {
+        "game": 88,
+        "timestamp": "2026-10-09T22:01:13.551018+00:00",
+        "snapshot": "252039930ee86dda7854df7583b86259284d27a131101c809bce8ba2edda97c1",
+        "files": {
+          "learning.md": {
+            "bytes": 347767,
+            "words": 52788,
+            "sha256": "3a51855cef9a2c041da2ddeda0a2fcaea9512d7f9a2f17447f8eded9b5c4da2c"
+          }
+        }
+      },
+      {
+        "game": 89,
+        "timestamp": "2026-10-09T22:54:57.187171+00:00",
+        "snapshot": "425c471257268b054e703c5271f154a1fdd7f2fa645b994207a8c9f354f9ce88",
+        "files": {
+          "learning.md": {
+            "bytes": 351428,
+            "words": 53329,
+            "sha256": "c5e837b7e1b458427e0a79d178a1a4db604454303a38bcd6d1d55f998be3ccac"
+          }
+        }
+      },
+      {
+        "game": 90,
+        "timestamp": "2026-10-10T00:24:54.837801+00:00",
+        "snapshot": "35d571aba7dd8b32d19ba46b486673b7c744fbc92308e885b3986e787d3b6ea4",
+        "files": {
+          "learning.md": {
+            "bytes": 353647,
+            "words": 53681,
+            "sha256": "92686e314ad600fc9f0a8ab5bb633020e84d1a41e38437cdd79de650414c2e90"
+          }
+        }
+      },
+      {
+        "game": 91,
+        "timestamp": "2026-10-10T00:38:04.361096+00:00",
+        "snapshot": "704cae22d4e493417ce19b99dafa64dfc742639c638facfb0457371064cc8310",
+        "files": {
+          "learning.md": {
+            "bytes": 356246,
+            "words": 54103,
+            "sha256": "f64b38d20ab6ddbd41d7e5ca7bb71efd2182976281e373d73a44ba84ef059036"
+          }
+        }
+      },
+      {
+        "game": 92,
+        "timestamp": "2026-10-10T00:49:33.721197+00:00",
+        "snapshot": "31948869c6cb74512a9a47f856d15f6b02f949c305950d3a36e3e226c6d0fa02",
+        "files": {
+          "learning.md": {
+            "bytes": 358002,
+            "words": 54392,
+            "sha256": "221346062c999ba72fb27f0f873a152ad785536b6b96d09631289e8e36d92c2a"
+          }
+        }
+      },
+      {
+        "game": 93,
+        "timestamp": "2026-10-10T01:00:10.710615+00:00",
+        "snapshot": "82abea8402bfe79357bb2a50df5a8e9ee999c39bff05b0c657f8c42b4301e721",
+        "files": {
+          "learning.md": {
+            "bytes": 360142,
+            "words": 54726,
+            "sha256": "18461fdbc83275bd8e11a15a7cc253510fc909dfcf57819b6c8f6dd02ebe0960"
+          }
+        }
+      },
+      {
+        "game": 94,
+        "timestamp": "2026-10-10T02:11:53.229137+00:00",
+        "snapshot": "33424bbf6fdb80cf3c74ef5bab7b2731b66b59e70b255836072ed53df4d28c88",
+        "files": {
+          "learning.md": {
+            "bytes": 363066,
+            "words": 55197,
+            "sha256": "642f187ab32c087db8b6e54d7cfaf1e3d029777444131c1bb03b9fbe2d3cb7c7"
+          }
+        }
+      },
+      {
+        "game": 95,
+        "timestamp": "2026-10-10T02:52:07.791941+00:00",
+        "snapshot": "da66892a3a4ed47fb121dd8991019827cc3b27ec26a483bd35a5eb2b8d322c89",
+        "files": {
+          "learning.md": {
+            "bytes": 364887,
+            "words": 55487,
+            "sha256": "3717465a300e15127a932e068e90cbe311a3db9548c3b25d8e0ad2afb510eca9"
+          }
+        }
+      },
+      {
+        "game": 96,
+        "timestamp": "2026-10-10T06:01:13.437070+00:00",
+        "snapshot": "ad92d083823e6d5adcb5a44540a2b9bca3e28a9924dea61a1dde7688bff954bf",
+        "files": {
+          "learning.md": {
+            "bytes": 367059,
+            "words": 55833,
+            "sha256": "43b2737ca0a9289c9b3e2c9de40cc737bb5a08185b054ff8ad099baefad6c4e2"
+          }
+        }
+      },
+      {
+        "game": 97,
+        "timestamp": "2026-10-10T06:28:27.750957+00:00",
+        "snapshot": "566f7ecc7ef87d9aeabc362aa00a08703bb81ca4a0738de0d0d054e08c3257d7",
+        "files": {
+          "learning.md": {
+            "bytes": 369826,
+            "words": 56270,
+            "sha256": "58b16c7df03da9607e34a68d1392a167ab742cec25839b96887c45a9933cfec7"
+          }
+        }
+      },
+      {
+        "game": 98,
+        "timestamp": "2026-10-10T06:57:31.326209+00:00",
+        "snapshot": "bb3ac7a135473fbec306daefdfd78646a1285ac1127006e5f5df18b71ef10ee3",
+        "files": {
+          "learning.md": {
+            "bytes": 371931,
+            "words": 56601,
+            "sha256": "6774c396f81b5b3811e47f94d5fd4d114d1461535c8897fe817cfbfb6aa2e95c"
+          }
+        }
+      },
+      {
+        "game": 99,
+        "timestamp": "2026-10-10T07:19:48.458685+00:00",
+        "snapshot": "0fb6544e2eed3522ff474228b218f9da7d186a3d6d9126abdd77cf6b758e35e4",
+        "files": {
+          "learning.md": {
+            "bytes": 374395,
+            "words": 56993,
+            "sha256": "697add0b6f0391c3bcb8b8177cb004ca0b19af0850d06ca035352cd331828400"
+          }
+        }
+      },
+      {
+        "game": 100,
+        "timestamp": "2026-10-10T09:11:53.000590+00:00",
+        "snapshot": "91b1c9f8baa494dad5ed0bd6a45e4db1d9138c2b715f36f8536eabb317f52403",
+        "files": {
+          "learning.md": {
+            "bytes": 376881,
+            "words": 57388,
+            "sha256": "93c8345b17463b62d0e0367f998747ba69c2e2eb040e4744b4ab00eac931e3be"
+          }
+        }
+      }
+    ],
+    "strategyChanges": [
+      {
+        "title": "Destination and fork checks",
+        "file": "learning.md",
+        "marker": "Trial 2: destination-square safety",
+        "target": "Knight forks and rook-line captures",
+        "method": "A remembered-position drill, then checks of the destination and opponent replies.",
+        "firstVerifiedBeforeGame": 3,
+        "source": {
+          "game": 3,
+          "timestamp": "2026-10-04T09:22:19.640874+00:00",
+          "snapshot": "62508317d3ec88831f739b4ba0e72a6cf9648badad5e74b60b86642945f77609",
+          "files": {
+            "learning.md": {
+              "bytes": 5074,
+              "words": 790,
+              "sha256": "31d51e6761a2c6b0217fc9704dc0fb8aa528c7974b3ce893d25d05f3e368cafd"
+            }
+          }
+        },
+        "excerpt": "Trial 2: destination-square safety, focused on knight forks and rook lines. Use the remembered position before 20...Rfc8 in a short skill-0 drill; my hypothesis is 20...Bb5, clearing d7 and avoiding the double-rook fork rather than placing a second rook on a fork square. Before each move identify enemy attacks on its destination and one-move forks; after the reply explicitly refresh rook lines. Observable success: reach ten additional plies without giving away an exchange or minor piece. This only tests a known example. Return to new benchmark game 3 after the drill; evaluate broader transfer at game 6.\n\nTrial 2 setup: practice 2 accidentally defaulted to White and supplied an opponent reply before I stopped it; no learner moves, record retained. Practice 3 explicitly selected Black.\nTrial 2 result (practice 3, ten plies): Bb5 Qd3 Ra4 Qxc3 Rfa8 Bb6 Qd7 Reb1 h6 Bd3. No piece or exchange lost over the chosen horizon, but the c3 pawn was lost: I had assumed the queen on c7 defended it while the white knight on c4 blocked that file. This is a failed defender-accounting assessment despite avoiding the original fork. No transfer claim. Decision: add explicit path checking for sliding defenders; a nominal alignment is not a defense if any piece blocks the path. Carry forward fork and destination checks into benchmark 3. Return to six-game evaluation after this small practice horizon.\n",
+        "localTransfer": {
+          "before": null,
+          "after": null,
+          "retentionNext2Rotations": {
+            "gameNumbers": [
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              30
+            ],
+            "score": {
+              "games": 12,
+              "wins": 4,
+              "draws": 1,
+              "losses": 7,
+              "points": 4.5,
+              "score": 0.375
+            },
+            "behavior": {
+              "ownMoves": 435,
+              "illegalAttempts": 4,
+              "illegalPer100": 0.9195402298850575,
+              "shortLossCount": 11,
+              "shortLossPer100": 2.528735632183908,
+              "gamesWithShortLoss": 9,
+              "leadGames": 5,
+              "leadWins": 4,
+              "leadConversion": 0.8,
+              "castleBy10": 1,
+              "castleEligibleGames": 12,
+              "medianMoveSeconds": 27.4535
+            },
+            "byOpponent": {
+              "full-strength": {
+                "score": {
+                  "games": 4,
+                  "wins": 0,
+                  "draws": 0,
+                  "losses": 4,
+                  "points": 0,
+                  "score": 0
+                },
+                "behavior": {
+                  "ownMoves": 102,
+                  "illegalAttempts": 1,
+                  "illegalPer100": 0.9803921568627451,
+                  "shortLossCount": 3,
+                  "shortLossPer100": 2.9411764705882355,
+                  "gamesWithShortLoss": 3,
+                  "leadGames": 0,
+                  "leadWins": 0,
+                  "leadConversion": null,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 27.51495
+                }
+              },
+              "skill-0": {
+                "score": {
+                  "games": 4,
+                  "wins": 3,
+                  "draws": 0,
+                  "losses": 1,
+                  "points": 3,
+                  "score": 0.75
+                },
+                "behavior": {
+                  "ownMoves": 176,
+                  "illegalAttempts": 2,
+                  "illegalPer100": 1.1363636363636365,
+                  "shortLossCount": 4,
+                  "shortLossPer100": 2.272727272727273,
+                  "gamesWithShortLoss": 3,
+                  "leadGames": 3,
+                  "leadWins": 3,
+                  "leadConversion": 1.0,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 39.1972
+                }
+              },
+              "elo-1800-setting": {
+                "score": {
+                  "games": 4,
+                  "wins": 1,
+                  "draws": 1,
+                  "losses": 2,
+                  "points": 1.5,
+                  "score": 0.375
+                },
+                "behavior": {
+                  "ownMoves": 157,
+                  "illegalAttempts": 1,
+                  "illegalPer100": 0.6369426751592356,
+                  "shortLossCount": 4,
+                  "shortLossPer100": 2.5477707006369426,
+                  "gamesWithShortLoss": 3,
+                  "leadGames": 2,
+                  "leadWins": 1,
+                  "leadConversion": 0.5,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 24.3265
+                }
+              }
+            },
+            "firstMoves": {
+              "white:d4": 3,
+              "black:e5": 4,
+              "white:e4": 3,
+              "black:d5": 2
+            },
+            "queenMovesFirst10Mean": 0.6666666666666666,
+            "materialLossPhases": {
+              "ownMoves1to15": {
+                "ownMoves": 180,
+                "shortLossCount": 3,
+                "shortLossPer100": 1.6666666666666667
+              },
+              "ownMoves16plus": {
+                "ownMoves": 255,
+                "shortLossCount": 8,
+                "shortLossPer100": 3.1372549019607843
+              }
+            }
+          }
+        }
+      },
+      {
+        "title": "Short actual-board safety pass",
+        "file": "learning.md",
+        "marker": "Trial 13, approach change for benchmarks 13",
+        "target": "Long hypothetical lines displacing immediate threats",
+        "method": "Check current threats, the chosen piece's former duties and actual blockers before extending variations.",
+        "firstVerifiedBeforeGame": 13,
+        "source": {
+          "game": 13,
+          "timestamp": "2026-10-04T18:45:38.041328+00:00",
+          "snapshot": "18bb9a5687f13cc2eeaaee143f885ecbdad707eb9f9626a19348f86cc132ee26",
+          "files": {
+            "learning.md": {
+              "bytes": 35247,
+              "words": 5476,
+              "sha256": "0b81aabd3bbad70d48831d80d50a479deaf804eed8359c96ef549e8b1d68f9ae"
+            }
+          }
+        },
+        "excerpt": "Trial 13, approach change for benchmarks 13–18: emphasize a short concrete safety pass on the actual resulting board before extending speculative variations. First identify current checks and immediate captures of my king/queen/rooks and the moved piece; then explicitly remove the mover from its old square, place it on the destination, and inspect newly opened lines in both directions. For exchanges or king captures, inspect the opponent's first forcing reply after the final recapture, including discovered/double checks. If two checks remain, capturing only one checker does not resolve check. Include en passant after a two-square pawn advance alongside ordinary pawn captures. Use a second candidate when the first leaves a major piece loose or blocks the only king flight. This is a self-chosen reasoning method, not a fixed inference budget or automated algorithm. Continue mental calculation for concrete forcing lines, but avoid lengthy hypothetical attacks before these immediate checks.\nObservable fresh-test target: fewer immediate major-piece losses and own-move mating traps over the next complete rotation; record failures explicitly. No new remembered drill before game 13, because repeated drill success has not supplied fresh transfer. Next broad evaluation after benchmark 18; intermediate notes after each game. Next fixed-rotation game 13 is White against full strength. Goal remains active: complete 200 scored games, no token budget; 188 scored games remain. No active benchmark or practice at this checkpoint.\n",
+        "localTransfer": {
+          "before": {
+            "gameNumbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "score": {
+              "games": 12,
+              "wins": 4,
+              "draws": 0,
+              "losses": 8,
+              "points": 4,
+              "score": 0.3333333333333333
+            },
+            "behavior": {
+              "ownMoves": 390,
+              "illegalAttempts": 2,
+              "illegalPer100": 0.5128205128205128,
+              "shortLossCount": 9,
+              "shortLossPer100": 2.3076923076923075,
+              "gamesWithShortLoss": 6,
+              "leadGames": 4,
+              "leadWins": 4,
+              "leadConversion": 1.0,
+              "castleBy10": 0.9166666666666666,
+              "castleEligibleGames": 12,
+              "medianMoveSeconds": 12.3461
+            },
+            "byOpponent": {
+              "full-strength": {
+                "score": {
+                  "games": 4,
+                  "wins": 0,
+                  "draws": 0,
+                  "losses": 4,
+                  "points": 0,
+                  "score": 0
+                },
+                "behavior": {
+                  "ownMoves": 98,
+                  "illegalAttempts": 0,
+                  "illegalPer100": 0.0,
+                  "shortLossCount": 3,
+                  "shortLossPer100": 3.061224489795918,
+                  "gamesWithShortLoss": 2,
+                  "leadGames": 0,
+                  "leadWins": 0,
+                  "leadConversion": null,
+                  "castleBy10": 0.75,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 6.57485
+                }
+              },
+              "skill-0": {
+                "score": {
+                  "games": 4,
+                  "wins": 3,
+                  "draws": 0,
+                  "losses": 1,
+                  "points": 3,
+                  "score": 0.75
+                },
+                "behavior": {
+                  "ownMoves": 111,
+                  "illegalAttempts": 1,
+                  "illegalPer100": 0.9009009009009009,
+                  "shortLossCount": 3,
+                  "shortLossPer100": 2.7027027027027026,
+                  "gamesWithShortLoss": 2,
+                  "leadGames": 3,
+                  "leadWins": 3,
+                  "leadConversion": 1.0,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 13.9619
+                }
+              },
+              "elo-1800-setting": {
+                "score": {
+                  "games": 4,
+                  "wins": 1,
+                  "draws": 0,
+                  "losses": 3,
+                  "points": 1,
+                  "score": 0.25
+                },
+                "behavior": {
+                  "ownMoves": 181,
+                  "illegalAttempts": 1,
+                  "illegalPer100": 0.5524861878453039,
+                  "shortLossCount": 3,
+                  "shortLossPer100": 1.6574585635359116,
+                  "gamesWithShortLoss": 2,
+                  "leadGames": 1,
+                  "leadWins": 1,
+                  "leadConversion": 1.0,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 15.5812
+                }
+              }
+            },
+            "firstMoves": {
+              "white:e4": 6,
+              "black:e5": 4,
+              "black:d5": 2
+            },
+            "queenMovesFirst10Mean": 0.25,
+            "materialLossPhases": {
+              "ownMoves1to15": {
+                "ownMoves": 180,
+                "shortLossCount": 2,
+                "shortLossPer100": 1.1111111111111112
+              },
+              "ownMoves16plus": {
+                "ownMoves": 210,
+                "shortLossCount": 7,
+                "shortLossPer100": 3.3333333333333335
+              }
+            }
+          },
+          "after": {
+            "gameNumbers": [
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "score": {
+              "games": 12,
+              "wins": 3,
+              "draws": 0,
+              "losses": 9,
+              "points": 3,
+              "score": 0.25
+            },
+            "behavior": {
+              "ownMoves": 408,
+              "illegalAttempts": 2,
+              "illegalPer100": 0.49019607843137253,
+              "shortLossCount": 9,
+              "shortLossPer100": 2.2058823529411766,
+              "gamesWithShortLoss": 8,
+              "leadGames": 3,
+              "leadWins": 3,
+              "leadConversion": 1.0,
+              "castleBy10": 1,
+              "castleEligibleGames": 12,
+              "medianMoveSeconds": 34.6185
+            },
+            "byOpponent": {
+              "full-strength": {
+                "score": {
+                  "games": 4,
+                  "wins": 0,
+                  "draws": 0,
+                  "losses": 4,
+                  "points": 0,
+                  "score": 0
+                },
+                "behavior": {
+                  "ownMoves": 92,
+                  "illegalAttempts": 0,
+                  "illegalPer100": 0.0,
+                  "shortLossCount": 4,
+                  "shortLossPer100": 4.3478260869565215,
+                  "gamesWithShortLoss": 4,
+                  "leadGames": 0,
+                  "leadWins": 0,
+                  "leadConversion": null,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 15.4276
+                }
+              },
+              "skill-0": {
+                "score": {
+                  "games": 4,
+                  "wins": 3,
+                  "draws": 0,
+                  "losses": 1,
+                  "points": 3,
+                  "score": 0.75
+                },
+                "behavior": {
+                  "ownMoves": 188,
+                  "illegalAttempts": 2,
+                  "illegalPer100": 1.0638297872340425,
+                  "shortLossCount": 4,
+                  "shortLossPer100": 2.127659574468085,
+                  "gamesWithShortLoss": 3,
+                  "leadGames": 3,
+                  "leadWins": 3,
+                  "leadConversion": 1.0,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 63.492149999999995
+                }
+              },
+              "elo-1800-setting": {
+                "score": {
+                  "games": 4,
+                  "wins": 0,
+                  "draws": 0,
+                  "losses": 4,
+                  "points": 0,
+                  "score": 0
+                },
+                "behavior": {
+                  "ownMoves": 128,
+                  "illegalAttempts": 0,
+                  "illegalPer100": 0.0,
+                  "shortLossCount": 1,
+                  "shortLossPer100": 0.78125,
+                  "gamesWithShortLoss": 1,
+                  "leadGames": 0,
+                  "leadWins": 0,
+                  "leadConversion": null,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 26.179650000000002
+                }
+              }
+            },
+            "firstMoves": {
+              "white:d4": 3,
+              "black:e6": 1,
+              "white:e4": 3,
+              "black:Nf6": 1,
+              "black:e5": 3,
+              "black:d5": 1
+            },
+            "queenMovesFirst10Mean": 0.25,
+            "materialLossPhases": {
+              "ownMoves1to15": {
+                "ownMoves": 180,
+                "shortLossCount": 3,
+                "shortLossPer100": 1.6666666666666667
+              },
+              "ownMoves16plus": {
+                "ownMoves": 228,
+                "shortLossCount": 6,
+                "shortLossPer100": 2.631578947368421
+              }
+            }
+          },
+          "retentionNext2Rotations": {
+            "gameNumbers": [
+              25,
+              26,
+              27,
+              28,
+              29,
+              30,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36
+            ],
+            "score": {
+              "games": 12,
+              "wins": 4,
+              "draws": 2,
+              "losses": 6,
+              "points": 5.0,
+              "score": 0.4166666666666667
+            },
+            "behavior": {
+              "ownMoves": 460,
+              "illegalAttempts": 3,
+              "illegalPer100": 0.6521739130434783,
+              "shortLossCount": 9,
+              "shortLossPer100": 1.9565217391304348,
+              "gamesWithShortLoss": 8,
+              "leadGames": 5,
+              "leadWins": 4,
+              "leadConversion": 0.8,
+              "castleBy10": 0.9166666666666666,
+              "castleEligibleGames": 12,
+              "medianMoveSeconds": 22.2212
+            },
+            "byOpponent": {
+              "full-strength": {
+                "score": {
+                  "games": 4,
+                  "wins": 0,
+                  "draws": 0,
+                  "losses": 4,
+                  "points": 0,
+                  "score": 0
+                },
+                "behavior": {
+                  "ownMoves": 97,
+                  "illegalAttempts": 1,
+                  "illegalPer100": 1.0309278350515463,
+                  "shortLossCount": 3,
+                  "shortLossPer100": 3.0927835051546393,
+                  "gamesWithShortLoss": 3,
+                  "leadGames": 0,
+                  "leadWins": 0,
+                  "leadConversion": null,
+                  "castleBy10": 0.75,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 74.9856
+                }
+              },
+              "skill-0": {
+                "score": {
+                  "games": 4,
+                  "wins": 3,
+                  "draws": 1,
+                  "losses": 0,
+                  "points": 3.5,
+                  "score": 0.875
+                },
+                "behavior": {
+                  "ownMoves": 157,
+                  "illegalAttempts": 1,
+                  "illegalPer100": 0.6369426751592356,
+                  "shortLossCount": 1,
+                  "shortLossPer100": 0.6369426751592356,
+                  "gamesWithShortLoss": 1,
+                  "leadGames": 3,
+                  "leadWins": 3,
+                  "leadConversion": 1.0,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 10.5416
+                }
+              },
+              "elo-1800-setting": {
+                "score": {
+                  "games": 4,
+                  "wins": 1,
+                  "draws": 1,
+                  "losses": 2,
+                  "points": 1.5,
+                  "score": 0.375
+                },
+                "behavior": {
+                  "ownMoves": 206,
+                  "illegalAttempts": 1,
+                  "illegalPer100": 0.4854368932038835,
+                  "shortLossCount": 5,
+                  "shortLossPer100": 2.4271844660194173,
+                  "gamesWithShortLoss": 4,
+                  "leadGames": 2,
+                  "leadWins": 1,
+                  "leadConversion": 0.5,
+                  "castleBy10": 1,
+                  "castleEligibleGames": 4,
+                  "medianMoveSeconds": 29.0726
+                }
+              }
+            },
+            "firstMoves": {
+              "white:d4": 3,
+              "black:e5": 3,
+              "white:e4": 3,
+              "black:d5": 2,
+              "black:c6": 1
+            },
+            "queenMovesFirst10Mean": 0.6666666666666666,
+            "materialLossPhases": {
+              "ownMoves1to15": {
+                "ownMoves": 180,
+                "shortLossCount": 2,
+                "shortLossPer100": 1.1111111111111112
+              },
+              "ownMoves16plus": {
+                "ownMoves": 280,
+                "shortLossCount": 7,
+                "shortLossPer100": 2.5
+              }
+            }
+          }
+        }
+      }
+    ],
+    "latestNoteCopies": {
+      "learning.md": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/transfer/notes/sol-long/learning.md"
+    },
+    "laterReviewFirstAppearance": {},
+    "limitations": [
+      "The final completed game may have notes written afterward, absent from its start snapshot.",
+      "Declarations and short local event studies do not identify causal effects.",
+      "Two-rotation local windows overlap between nearby interventions and are exploratory."
+    ]
+  },
+  "shortLossExamples": [
+    {
+      "game": 2,
+      "opponent": "full-strength",
+      "ply": 43,
+      "piece": "R",
+      "san": "Nxa8",
+      "uci": "b6a8",
+      "materialChange": -2
+    },
+    {
+      "game": 2,
+      "opponent": "full-strength",
+      "ply": 57,
+      "piece": "N",
+      "san": "bxa5",
+      "uci": "b4a5",
+      "materialChange": -2
+    },
+    {
+      "game": 3,
+      "opponent": "skill-0",
+      "ply": 28,
+      "piece": "N",
+      "san": "Qxc7",
+      "uci": "d8c7",
+      "materialChange": -2
+    },
+    {
+      "game": 6,
+      "opponent": "elo-1800-setting",
+      "ply": 77,
+      "piece": "R",
+      "san": "gxh5+",
+      "uci": "g4h5",
+      "materialChange": -4
+    },
+    {
+      "game": 7,
+      "opponent": "full-strength",
+      "ply": 42,
+      "piece": "R",
+      "san": "Nxe1",
+      "uci": "d3e1",
+      "materialChange": -2
+    },
+    {
+      "game": 10,
+      "opponent": "skill-0",
+      "ply": 29,
+      "piece": "N",
+      "san": "fxe3",
+      "uci": "f2e3",
+      "materialChange": -2
+    },
+    {
+      "game": 10,
+      "opponent": "skill-0",
+      "ply": 65,
+      "piece": "R",
+      "san": "Rxa8+",
+      "uci": "a5a8",
+      "materialChange": -2
+    },
+    {
+      "game": 11,
+      "opponent": "elo-1800-setting",
+      "ply": 32,
+      "piece": "N",
+      "san": "Rxc3",
+      "uci": "c8c3",
+      "materialChange": -3
+    },
+    {
+      "game": 11,
+      "opponent": "elo-1800-setting",
+      "ply": 80,
+      "piece": "Q",
+      "san": "Rxg2",
+      "uci": "g4g2",
+      "materialChange": -4
+    },
+    {
+      "game": 13,
+      "opponent": "full-strength",
+      "ply": 44,
+      "piece": "N",
+      "san": "Bxf3",
+      "uci": "e4f3",
+      "materialChange": -3
+    },
+    {
+      "game": 14,
+      "opponent": "full-strength",
+      "ply": 25,
+      "piece": "N",
+      "san": "Bxc5",
+      "uci": "e3c5",
+      "materialChange": -2
+    },
+    {
+      "game": 15,
+      "opponent": "skill-0",
+      "ply": 44,
+      "piece": "B",
+      "san": "Bxh6",
+      "uci": "g7h6",
+      "materialChange": -2
+    },
+    {
+      "game": 19,
+      "opponent": "full-strength",
+      "ply": 30,
+      "piece": "R",
+      "san": "Bxf1",
+      "uci": "a6f1",
+      "materialChange": -2
+    },
+    {
+      "game": 20,
+      "opponent": "full-strength",
+      "ply": 37,
+      "piece": "B",
+      "san": "Nxb5",
+      "uci": "a3b5",
+      "materialChange": -2
+    },
+    {
+      "game": 21,
+      "opponent": "skill-0",
+      "ply": 60,
+      "piece": "B",
+      "san": "Qxf2+",
+      "uci": "f3f2",
+      "materialChange": -3
+    },
+    {
+      "game": 22,
+      "opponent": "skill-0",
+      "ply": 55,
+      "piece": "B",
+      "san": "fxe3",
+      "uci": "f2e3",
+      "materialChange": -2
+    },
+    {
+      "game": 22,
+      "opponent": "skill-0",
+      "ply": 63,
+      "piece": "R",
+      "san": "dxe8=Q+",
+      "uci": "d7e8q",
+      "materialChange": -4
+    },
+    {
+      "game": 23,
+      "opponent": "elo-1800-setting",
+      "ply": 16,
+      "piece": "B",
+      "san": "Bxd3",
+      "uci": "g6d3",
+      "materialChange": -3
+    },
+    {
+      "game": 25,
+      "opponent": "full-strength",
+      "ply": 28,
+      "piece": "R",
+      "san": "Qxa1",
+      "uci": "d4a1",
+      "materialChange": -2
+    },
+    {
+      "game": 28,
+      "opponent": "skill-0",
+      "ply": 41,
+      "piece": "N",
+      "san": "gxf3",
+      "uci": "g2f3",
+      "materialChange": -2
+    },
+    {
+      "game": 29,
+      "opponent": "elo-1800-setting",
+      "ply": 66,
+      "piece": "R",
+      "san": "Rxg2",
+      "uci": "g8g2",
+      "materialChange": -4
+    },
+    {
+      "game": 29,
+      "opponent": "elo-1800-setting",
+      "ply": 112,
+      "piece": "Q",
+      "san": "Rxh8",
+      "uci": "h2h8",
+      "materialChange": -4
+    },
+    {
+      "game": 30,
+      "opponent": "elo-1800-setting",
+      "ply": 55,
+      "piece": "Q",
+      "san": "Rxb2",
+      "uci": "d2b2",
+      "materialChange": -3
+    },
+    {
+      "game": 31,
+      "opponent": "full-strength",
+      "ply": 26,
+      "piece": "R",
+      "san": "Bxe1",
+      "uci": "f2e1",
+      "materialChange": -2
+    },
+    {
+      "game": 32,
+      "opponent": "full-strength",
+      "ply": 37,
+      "piece": "Q",
+      "san": "Rxc1+",
+      "uci": "a1c1",
+      "materialChange": -4
+    },
+    {
+      "game": 35,
+      "opponent": "elo-1800-setting",
+      "ply": 50,
+      "piece": "N",
+      "san": "Nxd7",
+      "uci": "b6d7",
+      "materialChange": -3
+    },
+    {
+      "game": 36,
+      "opponent": "elo-1800-setting",
+      "ply": 137,
+      "piece": "R",
+      "san": "Rxc8",
+      "uci": "g8c8",
+      "materialChange": -4
+    },
+    {
+      "game": 37,
+      "opponent": "full-strength",
+      "ply": 52,
+      "piece": "Q",
+      "san": "Rxg3+",
+      "uci": "g5g3",
+      "materialChange": -4
+    },
+    {
+      "game": 38,
+      "opponent": "full-strength",
+      "ply": 31,
+      "piece": "N",
+      "san": "dxc6",
+      "uci": "d5c6",
+      "materialChange": -2
+    },
+    {
+      "game": 39,
+      "opponent": "skill-0",
+      "ply": 42,
+      "piece": "Q",
+      "san": "Bxh5",
+      "uci": "g4h5",
+      "materialChange": -6
+    },
+    {
+      "game": 42,
+      "opponent": "elo-1800-setting",
+      "ply": 61,
+      "piece": "N",
+      "san": "bxc6",
+      "uci": "b5c6",
+      "materialChange": -2
+    },
+    {
+      "game": 42,
+      "opponent": "elo-1800-setting",
+      "ply": 107,
+      "piece": "N",
+      "san": "Rdxe7",
+      "uci": "d7e7",
+      "materialChange": -3
+    },
+    {
+      "game": 43,
+      "opponent": "full-strength",
+      "ply": 34,
+      "piece": "R",
+      "san": "Bxf1",
+      "uci": "c4f1",
+      "materialChange": -2
+    },
+    {
+      "game": 45,
+      "opponent": "skill-0",
+      "ply": 80,
+      "piece": "R",
+      "san": "Bxb7",
+      "uci": "d5b7",
+      "materialChange": -5
+    },
+    {
+      "game": 45,
+      "opponent": "skill-0",
+      "ply": 86,
+      "piece": "B",
+      "san": "Bxa6",
+      "uci": "b7a6",
+      "materialChange": -2
+    },
+    {
+      "game": 48,
+      "opponent": "elo-1800-setting",
+      "ply": 33,
+      "piece": "N",
+      "san": "Bxd4",
+      "uci": "e3d4",
+      "materialChange": -3
+    },
+    {
+      "game": 49,
+      "opponent": "full-strength",
+      "ply": 28,
+      "piece": "B",
+      "san": "Qxd3",
+      "uci": "d8d3",
+      "materialChange": -2
+    },
+    {
+      "game": 50,
+      "opponent": "full-strength",
+      "ply": 61,
+      "piece": "Q",
+      "san": "Qxg5+",
+      "uci": "h5g5",
+      "materialChange": -9
+    },
+    {
+      "game": 53,
+      "opponent": "elo-1800-setting",
+      "ply": 54,
+      "piece": "R",
+      "san": "Bxd3",
+      "uci": "b5d3",
+      "materialChange": -2
+    },
+    {
+      "game": 53,
+      "opponent": "elo-1800-setting",
+      "ply": 64,
+      "piece": "B",
+      "san": "Rxd1+",
+      "uci": "c1d1",
+      "materialChange": -3
+    },
+    {
+      "game": 55,
+      "opponent": "full-strength",
+      "ply": 50,
+      "piece": "Q",
+      "san": "Rxf4",
+      "uci": "f6f4",
+      "materialChange": -4
+    },
+    {
+      "game": 56,
+      "opponent": "full-strength",
+      "ply": 31,
+      "piece": "N",
+      "san": "Rxd7",
+      "uci": "d1d7",
+      "materialChange": -3
+    },
+    {
+      "game": 57,
+      "opponent": "skill-0",
+      "ply": 30,
+      "piece": "N",
+      "san": "Nxc3",
+      "uci": "a4c3",
+      "materialChange": -3
+    },
+    {
+      "game": 58,
+      "opponent": "skill-0",
+      "ply": 13,
+      "piece": "B",
+      "san": "Nxe5",
+      "uci": "f3e5",
+      "materialChange": -2
+    },
+    {
+      "game": 58,
+      "opponent": "skill-0",
+      "ply": 33,
+      "piece": "N",
+      "san": "Bxd2",
+      "uci": "c1d2",
+      "materialChange": -3
+    },
+    {
+      "game": 58,
+      "opponent": "skill-0",
+      "ply": 43,
+      "piece": "B",
+      "san": "gxf3",
+      "uci": "g2f3",
+      "materialChange": -3
+    },
+    {
+      "game": 61,
+      "opponent": "full-strength",
+      "ply": 20,
+      "piece": "B",
+      "san": "dxc4",
+      "uci": "d5c4",
+      "materialChange": -2
+    },
+    {
+      "game": 61,
+      "opponent": "full-strength",
+      "ply": 28,
+      "piece": "N",
+      "san": "Nxc4",
+      "uci": "b6c4",
+      "materialChange": -2
+    },
+    {
+      "game": 62,
+      "opponent": "full-strength",
+      "ply": 39,
+      "piece": "N",
+      "san": "exf6",
+      "uci": "e5f6",
+      "materialChange": -3
+    },
+    {
+      "game": 63,
+      "opponent": "skill-0",
+      "ply": 36,
+      "piece": "N",
+      "san": "Qxe5",
+      "uci": "d4e5",
+      "materialChange": -3
+    },
+    {
+      "game": 63,
+      "opponent": "skill-0",
+      "ply": 50,
+      "piece": "R",
+      "san": "Qxd1+",
+      "uci": "h5d1",
+      "materialChange": -5
+    },
+    {
+      "game": 64,
+      "opponent": "skill-0",
+      "ply": 45,
+      "piece": "N",
+      "san": "Bxf6",
+      "uci": "b2f6",
+      "materialChange": -3
+    },
+    {
+      "game": 65,
+      "opponent": "elo-1800-setting",
+      "ply": 124,
+      "piece": "R",
+      "san": "Nxa5",
+      "uci": "c6a5",
+      "materialChange": -5
+    },
+    {
+      "game": 66,
+      "opponent": "elo-1800-setting",
+      "ply": 35,
+      "piece": "B",
+      "san": "Rxd6",
+      "uci": "d1d6",
+      "materialChange": -2
+    },
+    {
+      "game": 66,
+      "opponent": "elo-1800-setting",
+      "ply": 59,
+      "piece": "R",
+      "san": "Qxd8+",
+      "uci": "d2d8",
+      "materialChange": -2
+    },
+    {
+      "game": 67,
+      "opponent": "full-strength",
+      "ply": 22,
+      "piece": "B",
+      "san": "Qxd3",
+      "uci": "d8d3",
+      "materialChange": -2
+    },
+    {
+      "game": 68,
+      "opponent": "full-strength",
+      "ply": 51,
+      "piece": "B",
+      "san": "Bxg5",
+      "uci": "e3g5",
+      "materialChange": -3
+    },
+    {
+      "game": 69,
+      "opponent": "skill-0",
+      "ply": 32,
+      "piece": "B",
+      "san": "Qxc4",
+      "uci": "c8c4",
+      "materialChange": -3
+    },
+    {
+      "game": 70,
+      "opponent": "skill-0",
+      "ply": 35,
+      "piece": "B",
+      "san": "Qxd6",
+      "uci": "d1d6",
+      "materialChange": -2
+    },
+    {
+      "game": 71,
+      "opponent": "elo-1800-setting",
+      "ply": 92,
+      "piece": "R",
+      "san": "dxc2",
+      "uci": "d3c2",
+      "materialChange": -4
+    },
+    {
+      "game": 72,
+      "opponent": "elo-1800-setting",
+      "ply": 75,
+      "piece": "R",
+      "san": "exd6",
+      "uci": "e5d6",
+      "materialChange": -4
+    },
+    {
+      "game": 72,
+      "opponent": "elo-1800-setting",
+      "ply": 93,
+      "piece": "Q",
+      "san": "Rxf8+",
+      "uci": "e8f8",
+      "materialChange": -9
+    },
+    {
+      "game": 74,
+      "opponent": "full-strength",
+      "ply": 49,
+      "piece": "Q",
+      "san": "Rxh8",
+      "uci": "h5h8",
+      "materialChange": -4
+    },
+    {
+      "game": 76,
+      "opponent": "skill-0",
+      "ply": 41,
+      "piece": "R",
+      "san": "dxe4",
+      "uci": "d3e4",
+      "materialChange": -2
+    },
+    {
+      "game": 77,
+      "opponent": "elo-1800-setting",
+      "ply": 52,
+      "piece": "R",
+      "san": "Nxe1+",
+      "uci": "f3e1",
+      "materialChange": -2
+    },
+    {
+      "game": 79,
+      "opponent": "full-strength",
+      "ply": 28,
+      "piece": "R",
+      "san": "Nxe1",
+      "uci": "c2e1",
+      "materialChange": -2
+    },
+    {
+      "game": 81,
+      "opponent": "skill-0",
+      "ply": 76,
+      "piece": "R",
+      "san": "dxe2",
+      "uci": "d3e2",
+      "materialChange": -5
+    },
+    {
+      "game": 82,
+      "opponent": "skill-0",
+      "ply": 63,
+      "piece": "N",
+      "san": "Qxg6",
+      "uci": "e4g6",
+      "materialChange": -3
+    },
+    {
+      "game": 83,
+      "opponent": "elo-1800-setting",
+      "ply": 42,
+      "piece": "N",
+      "san": "Bxd6",
+      "uci": "a3d6",
+      "materialChange": -3
+    },
+    {
+      "game": 84,
+      "opponent": "elo-1800-setting",
+      "ply": 69,
+      "piece": "B",
+      "san": "fxe3",
+      "uci": "f2e3",
+      "materialChange": -2
+    },
+    {
+      "game": 86,
+      "opponent": "full-strength",
+      "ply": 39,
+      "piece": "R",
+      "san": "Bxf6+",
+      "uci": "g5f6",
+      "materialChange": -2
+    },
+    {
+      "game": 89,
+      "opponent": "elo-1800-setting",
+      "ply": 36,
+      "piece": "N",
+      "san": "Kxf7",
+      "uci": "g8f7",
+      "materialChange": -2
+    },
+    {
+      "game": 90,
+      "opponent": "elo-1800-setting",
+      "ply": 37,
+      "piece": "R",
+      "san": "Bxg6",
+      "uci": "d3g6",
+      "materialChange": -2
+    },
+    {
+      "game": 90,
+      "opponent": "elo-1800-setting",
+      "ply": 55,
+      "piece": "B",
+      "san": "Rxh4",
+      "uci": "h3h4",
+      "materialChange": -2
+    },
+    {
+      "game": 92,
+      "opponent": "full-strength",
+      "ply": 15,
+      "piece": "R",
+      "san": "Bxa8",
+      "uci": "c6a8",
+      "materialChange": -2
+    },
+    {
+      "game": 92,
+      "opponent": "full-strength",
+      "ply": 27,
+      "piece": "B",
+      "san": "Rxe7",
+      "uci": "e1e7",
+      "materialChange": -2
+    },
+    {
+      "game": 93,
+      "opponent": "skill-0",
+      "ply": 74,
+      "piece": "R",
+      "san": "Bxh3",
+      "uci": "c8h3",
+      "materialChange": -2
+    },
+    {
+      "game": 93,
+      "opponent": "skill-0",
+      "ply": 90,
+      "piece": "R",
+      "san": "Bxd4+",
+      "uci": "e5d4",
+      "materialChange": -2
+    },
+    {
+      "game": 95,
+      "opponent": "elo-1800-setting",
+      "ply": 98,
+      "piece": "B",
+      "san": "Rxh4",
+      "uci": "c4h4",
+      "materialChange": -3
+    },
+    {
+      "game": 96,
+      "opponent": "elo-1800-setting",
+      "ply": 17,
+      "piece": "B",
+      "san": "Bxd6",
+      "uci": "g3d6",
+      "materialChange": -3
+    },
+    {
+      "game": 96,
+      "opponent": "elo-1800-setting",
+      "ply": 19,
+      "piece": "R",
+      "san": "Bxf8",
+      "uci": "d6f8",
+      "materialChange": -2
+    },
+    {
+      "game": 96,
+      "opponent": "elo-1800-setting",
+      "ply": 103,
+      "piece": "R",
+      "san": "Rxc8",
+      "uci": "c1c8",
+      "materialChange": -5
+    },
+    {
+      "game": 98,
+      "opponent": "full-strength",
+      "ply": 23,
+      "piece": "N",
+      "san": "Qxg4+",
+      "uci": "g3g4",
+      "materialChange": -3
+    },
+    {
+      "game": 98,
+      "opponent": "full-strength",
+      "ply": 27,
+      "piece": "B",
+      "san": "hxg5",
+      "uci": "h4g5",
+      "materialChange": -2
+    },
+    {
+      "game": 99,
+      "opponent": "skill-0",
+      "ply": 78,
+      "piece": "R",
+      "san": "Bxd1",
+      "uci": "a4d1",
+      "materialChange": -2
+    }
+  ],
+  "illegalExamples": [
+    {
+      "game": 10,
+      "ply": 34,
+      "submitted": "e7c5",
+      "timestamp": "2026-10-04T11:17:51.811923+00:00"
+    },
+    {
+      "game": 11,
+      "ply": 75,
+      "submitted": "g2d5",
+      "timestamp": "2026-10-04T18:14:08.976899+00:00"
+    },
+    {
+      "game": 21,
+      "ply": 133,
+      "submitted": "e2e3",
+      "timestamp": "2026-10-05T05:59:39.866860+00:00"
+    },
+    {
+      "game": 22,
+      "ply": 68,
+      "submitted": "e8e2",
+      "timestamp": "2026-10-05T09:33:03.195084+00:00"
+    },
+    {
+      "game": 25,
+      "ply": 29,
+      "submitted": "c6a8",
+      "timestamp": "2026-10-05T11:16:41.236418+00:00"
+    },
+    {
+      "game": 30,
+      "ply": 16,
+      "submitted": "c6d5",
+      "timestamp": "2026-10-05T17:27:09.329151+00:00"
+    },
+    {
+      "game": 33,
+      "ply": 99,
+      "submitted": "g5g6",
+      "timestamp": "2026-10-05T23:27:55.102587+00:00"
+    },
+    {
+      "game": 45,
+      "ply": 113,
+      "submitted": "d2d7",
+      "timestamp": "2026-10-06T23:46:31.386723+00:00"
+    },
+    {
+      "game": 51,
+      "ply": 49,
+      "submitted": "a3c2",
+      "timestamp": "2026-10-07T05:40:17.174179+00:00"
+    },
+    {
+      "game": 58,
+      "ply": 66,
+      "submitted": "d5c4",
+      "timestamp": "2026-10-07T13:21:17.630852+00:00"
+    },
+    {
+      "game": 69,
+      "ply": 85,
+      "submitted": "e6f5",
+      "timestamp": "2026-10-08T10:10:32.744801+00:00"
+    },
+    {
+      "game": 69,
+      "ply": 85,
+      "submitted": "g4h5",
+      "timestamp": "2026-10-08T10:10:58.438866+00:00"
+    },
+    {
+      "game": 69,
+      "ply": 113,
+      "submitted": "f4h5",
+      "timestamp": "2026-10-08T10:15:12.961475+00:00"
+    },
+    {
+      "game": 72,
+      "ply": 56,
+      "submitted": "d4c3",
+      "timestamp": "2026-10-08T18:50:38.851887+00:00"
+    },
+    {
+      "game": 77,
+      "ply": 27,
+      "submitted": "d3e5",
+      "timestamp": "2026-10-09T00:58:11.795479+00:00"
+    },
+    {
+      "game": 82,
+      "ply": 26,
+      "submitted": "b7g2",
+      "timestamp": "2026-10-09T17:22:14.229376+00:00"
+    },
+    {
+      "game": 89,
+      "ply": 33,
+      "submitted": "c1b1",
+      "timestamp": "2026-10-09T23:57:55.629037+00:00"
+    },
+    {
+      "game": 89,
+      "ply": 35,
+      "submitted": "e5f6",
+      "timestamp": "2026-10-10T00:10:44.076457+00:00"
+    },
+    {
+      "game": 90,
+      "ply": 56,
+      "submitted": "f7f3",
+      "timestamp": "2026-10-10T00:33:12.862880+00:00"
+    },
+    {
+      "game": 96,
+      "ply": 68,
+      "submitted": "e5c5",
+      "timestamp": "2026-10-10T06:12:15.832896+00:00"
+    }
+  ]
+}

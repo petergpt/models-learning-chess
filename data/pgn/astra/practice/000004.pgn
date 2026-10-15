@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.01"]
+[Round "4"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "*"]
+[FEN "2rb3r/p2k2pp/1p1P4/n3pp2/4N3/2P1B3/PK3PPP/2RR4 w - - 0 22"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "astra"]
+[GameId "astra/practice/000004"]
+[OpponentSetting "practice-elo-1800"]
+[Termination "stopped_by_learner_not_a_result"]
+
+22. Ng5 Nc4+ 23. Kb3 Bf6 24. Nf3 h6 25. Bd2 Rc5 26. Be1 Na5+ 27. Kc2 Rhc8 *

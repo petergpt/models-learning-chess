@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "38"]
+[White "Stockfish 19"]
+[Black "gpt-6-astra"]
+[Result "1-0"]
+[FEN "7k/8/8/1r3r2/8/2K5/P5P1/8 b - - 0 1"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "astra"]
+[GameId "astra/practice/000038"]
+[OpponentSetting "practice-skill-20"]
+[Termination "resignation"]
+
+1... Rf4 2. Kd3 Rb3+ 3. axb3 Rg4 4. Kc3 Rxg2 5. b4 Rb2 6. Kxb2 1-0

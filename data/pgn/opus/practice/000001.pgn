@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.02"]
+[Round "1"]
+[White "Stockfish 19"]
+[Black "claude-opus-5-5"]
+[Result "*"]
+[FEN "6k1/p1p2p1p/1p1r1p2/n2P4/2p5/5B1P/PP3PP1/3R2K1 w - - 0 23"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "opus"]
+[GameId "opus/practice/000001"]
+[OpponentSetting "practice-elo-1800"]
+[Termination "stopped_by_learner_not_a_result"]
+
+23. Rc1 b5 24. Rc3 Nb7 25. a4 a6 26. axb5 axb5 27. b3 Na5 28. bxc4 Nxc4 29. Be4 Ne5 30. h4 Rb6 31. Rxc7 b4 32. g3 b3 33. h5 b2 34. f4 b1=Q+ 35. Bxb1 Rxb1+ 36. Kg2 Nd3 37. h6 Kf8 38. d6 Rb8 39. Kf3 Rd8 40. Rc6 Nb4 41. Rb6 Nd5 42. Ra6 Ke8 43. Kg4 Kd7 44. Kh5 Nb4 45. Ra7+ Kxd6 46. Rxf7 Ke6 47. Rxh7 Rg8 48. g4 Nd5 49. Ra7 Nxf4+ 50. Kh4 Rh8 51. h7 Ng6+ 52. Kh5 Ne7 53. Kh6 *

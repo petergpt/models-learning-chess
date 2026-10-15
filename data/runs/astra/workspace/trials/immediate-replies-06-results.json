@@ -1,0 +1,393 @@
+{
+  "scope": "Only validity, supplied-move legality, captured-piece occupancy, check status and resulting boards. No move generation, attack enumeration, search, scoring, engine calls or selection.",
+  "results": [
+    {
+      "label": "11 rejected retreat and pawn chase",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "c3a4",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "b6b5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "a4": "N",
+        "b5": "p",
+        "c3": null
+      },
+      "final_fen": "r2qr1k1/1b1nbpp1/p3p2p/np6/N2pP3/3B1NB1/PP2QPPP/3RR1K1 w - - 0 18",
+      "final_board": "r . . q r . k .\n. b . n b p p .\np . . . p . . p\nn p . . . . . .\nN . . p P . . .\n. . . B . N B .\nP P . . Q P P P\n. . . R R . K ."
+    },
+    {
+      "label": "11 working retreat and bishop response",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "c3b1",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "d7c5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "d3c2",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "b1": "N",
+        "c5": "n",
+        "c2": "B",
+        "d3": null,
+        "e4": "P"
+      },
+      "final_fen": "r2qr1k1/1b2bpp1/pp2p2p/n1n5/3pP3/5NB1/PPB1QPPP/1N1RR1K1 b - - 3 18",
+      "final_board": "r . . q r . k .\n. b . . b p p .\np p . . p . . p\nn . n . . . . .\n. . . p P . . .\n. . . . . N B .\nP P B . Q P P P\n. N . R R . K ."
+    },
+    {
+      "label": "18 pawn exchange and bishop tempo",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "e5f4",
+          "legal": true,
+          "captured": "P",
+          "check_after": false
+        },
+        {
+          "uci": "c1f4",
+          "legal": true,
+          "captured": "p",
+          "check_after": false
+        },
+        {
+          "uci": "g7g5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "f4d2",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "d2": "B",
+        "g5": "p",
+        "h6": "p",
+        "e5": null,
+        "f4": null
+      },
+      "final_fen": "3rr1k1/pppq4/1bn1b2p/5pp1/P7/2PP2N1/2PBB1PP/R3QR1K b - - 1 20",
+      "final_board": ". . . r r . k .\np p p q . . . .\n. b n . b . . p\n. . . . . p p .\nP . . . . . . .\n. . P P . . N .\n. . P B B . P P\nR . . . Q R . K"
+    },
+    {
+      "label": "23 bishop retreat and open e-file",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "g3f4",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "f7f5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "e4f5",
+          "legal": true,
+          "captured": "p",
+          "check_after": false
+        },
+        {
+          "uci": "e7f7",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "f4": "B",
+        "f5": "P",
+        "f7": "q",
+        "e4": null,
+        "e7": null
+      },
+      "final_fen": "1Nb2rk1/1p3q2/p2p2p1/2pP1P2/P1P2B1p/7P/5PP1/R2QRBK1 w - - 1 23",
+      "final_board": ". N b . . r k .\n. p . . . q . .\np . . p . . p .\n. . p P . P . .\nP . P . . B . p\n. . . . . . . P\n. . . . . P P .\nR . . Q R B K ."
+    },
+    {
+      "label": "30 knight departure and pawn exchange",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "c6e5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "g2b7",
+          "legal": true,
+          "captured": "p",
+          "check_after": false
+        },
+        {
+          "uci": "e5c4",
+          "legal": true,
+          "captured": "P",
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "b7": "B",
+        "c4": "n",
+        "c6": null,
+        "g2": null
+      },
+      "final_fen": "3rr1k1/pBp1bppp/5n2/2P5/1Pn5/P3P3/4KP1P/1RB3R1 w - - 0 20",
+      "final_board": ". . . r r . k .\np B p . b p p p\n. . . . . n . .\n. . P . . . . .\n. P n . . . . .\nP . . . P . . .\n. . . . K P . P\n. R B . . . R ."
+    },
+    {
+      "label": "60 omitted knight check",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "d4b2",
+          "legal": true,
+          "captured": "B",
+          "check_after": false
+        },
+        {
+          "uci": "d5e7",
+          "legal": true,
+          "captured": null,
+          "check_after": true
+        },
+        {
+          "uci": "g8h8",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "e7c8",
+          "legal": true,
+          "captured": "q",
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "h8": "k",
+        "c8": "N",
+        "b2": "b",
+        "f6": "n"
+      },
+      "final_fen": "2N2r1k/pp3ppp/5n2/8/1Pr1p3/PR5P/1b1Q1PP1/4R1K1 b - - 0 22",
+      "final_board": ". . N . . r . k\np p . . . p p p\n. . . . . n . .\n. . . . . . . .\n. P r . p . . .\nP R . . . . . P\n. b . Q . P P .\n. . . . R . K ."
+    },
+    {
+      "label": "60 different checking knight capture",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "d4b2",
+          "legal": true,
+          "captured": "B",
+          "check_after": false
+        },
+        {
+          "uci": "d5f6",
+          "legal": true,
+          "captured": "n",
+          "check_after": true
+        },
+        {
+          "uci": "b2f6",
+          "legal": true,
+          "captured": "N",
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "f6": "b",
+        "c8": "q",
+        "g8": "k",
+        "d5": null
+      },
+      "final_fen": "2q2rk1/pp3ppp/5b2/8/1Pr1p3/PR5P/3Q1PP1/4R1K1 w - - 0 22",
+      "final_board": ". . q . . r k .\np p . . . p p p\n. . . . . b . .\n. . . . . . . .\n. P r . p . . .\nP R . . . . . P\n. . . Q . P P .\n. . . . R . K ."
+    },
+    {
+      "label": "60 remove knight before bishop exchange",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "f6d5",
+          "legal": true,
+          "captured": "N",
+          "check_after": false
+        },
+        {
+          "uci": "b2d4",
+          "legal": true,
+          "captured": "b",
+          "check_after": false
+        },
+        {
+          "uci": "c8d7",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "d5": "n",
+        "d4": "B",
+        "d7": "q",
+        "f6": null
+      },
+      "final_fen": "5rk1/pp1q1ppp/8/3n4/1PrBp3/PR5P/3Q1PP1/4R1K1 w - - 1 22",
+      "final_board": ". . . . . r k .\np p . q . p p p\n. . . . . . . .\n. . . n . . . .\n. P r B p . . .\nP R . . . . . P\n. . . Q . P P .\n. . . . R . K ."
+    },
+    {
+      "label": "59 played queen loss to pawn",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "e6f6",
+          "legal": true,
+          "captured": null,
+          "check_after": true
+        },
+        {
+          "uci": "g7f6",
+          "legal": true,
+          "captured": "Q",
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "f6": "p",
+        "g7": null,
+        "e6": null,
+        "g5": "P"
+      },
+      "final_fen": "5k2/8/3n1p2/2qPp1P1/b1P1Pp2/2P2P2/1K6/8 w - - 0 66",
+      "final_board": ". . . . . k . .\n. . . . . . . .\n. . . n . p . .\n. . q P p . P .\nb . P . P p . .\n. . P . . P . .\n. K . . . . . .\n. . . . . . . ."
+    },
+    {
+      "label": "59 newly rejected queen fork",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "e6e5",
+          "legal": true,
+          "captured": "p",
+          "check_after": false
+        },
+        {
+          "uci": "d6c4",
+          "legal": true,
+          "captured": "P",
+          "check_after": true
+        },
+        {
+          "uci": "b2b1",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "c4e5",
+          "legal": true,
+          "captured": "Q",
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "e5": "n",
+        "b1": "K",
+        "c4": null,
+        "e6": null
+      },
+      "final_fen": "5k2/6p1/8/2qPn1P1/b3Pp2/2P2P2/8/1K6 w - - 0 67",
+      "final_board": ". . . . . k . .\n. . . . . . p .\n. . . . . . . .\n. . q P n . P .\nb . . . P p . .\n. . P . . P . .\n. . . . . . . .\n. K . . . . . ."
+    },
+    {
+      "label": "59 queen retreat against knight check",
+      "initial_valid": true,
+      "initial_check": false,
+      "plies": [
+        {
+          "uci": "e6h3",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "d6c4",
+          "legal": true,
+          "captured": "P",
+          "check_after": true
+        },
+        {
+          "uci": "b2b1",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "mismatches": [],
+      "final": {
+        "h3": "Q",
+        "c4": "n",
+        "b1": "K",
+        "e6": null
+      },
+      "final_fen": "5k2/6p1/8/2qPp1P1/b1n1Pp2/2P2P1Q/8/1K6 b - - 1 66",
+      "final_board": ". . . . . k . .\n. . . . . . p .\n. . . . . . . .\n. . q P p . P .\nb . n . P p . .\n. . P . . P . Q\n. . . . . . . .\n. K . . . . . ."
+    }
+  ]
+}

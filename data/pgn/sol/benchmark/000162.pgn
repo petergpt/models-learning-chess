@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.10"]
+[Round "162"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "sol"]
+[GameId "sol/benchmark/000162"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "checkmate"]
+
+1. e4 e5 2. Ne2 Nf6 3. Nbc3 d5 4. Ng3 d4 5. Nd5 Nxd5 6. exd5 Qxd5 7. c4 dxc3 8. dxc3 Qxd1+ 9. Kxd1 Nc6 10. Bd3 Bc5 11. Rf1 O-O 12. b4 Bd6 13. Ne4 Be6 14. a4 f5 15. Nxd6 cxd6 16. f3 d5 17. Ke1 Rad8 18. Bb5 d4 19. Bxc6 bxc6 20. Bd2 e4 21. fxe4 fxe4 22. Rxf8+ Kxf8 23. cxd4 Rxd4 24. Rc1 Bd5 25. Be3 Rd3 26. Kf2 Ke7 27. b5 Kd6 28. Ke2 Ra3 29. Bc5+ Ke5 30. Bxa3 Kd4 31. Bb2# 1-0

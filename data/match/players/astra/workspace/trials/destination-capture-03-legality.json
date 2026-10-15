@@ -1,0 +1,717 @@
+{
+  "scope": "Between-game practice. Only explicitly supplied moves; no move generation, search, evaluation or engine interface.",
+  "legal_supplied_plies": 30,
+  "illegal_supplied_plies": 2,
+  "mismatches": 0,
+  "cases": [
+    {
+      "id": "1_remembered_c7_capture",
+      "initial_fen": "5rk1/2p4p/p3R1p1/3qB3/3P4/4b3/PPP1Q1PP/1R5K w - - 0 25",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "e6d6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "5rk1/2p4p/p2R2p1/3qB3/3P4/4b3/PPP1Q1PP/1R5K b - - 1 25",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "b1": "R",
+            "h1": "K",
+            "a2": "P",
+            "b2": "P",
+            "c2": "P",
+            "e2": "Q",
+            "g2": "P",
+            "h2": "P",
+            "e3": "b",
+            "d4": "P",
+            "d5": "q",
+            "e5": "B",
+            "a6": "p",
+            "d6": "R",
+            "g6": "p",
+            "c7": "p",
+            "h7": "p",
+            "f8": "r",
+            "g8": "k"
+          }
+        },
+        {
+          "uci": "c7d6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "5rk1/7p/p2p2p1/3qB3/3P4/4b3/PPP1Q1PP/1R5K w - - 0 26",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "b1": "R",
+            "h1": "K",
+            "a2": "P",
+            "b2": "P",
+            "c2": "P",
+            "e2": "Q",
+            "g2": "P",
+            "h2": "P",
+            "e3": "b",
+            "d4": "P",
+            "d5": "q",
+            "e5": "B",
+            "a6": "p",
+            "d6": "p",
+            "g6": "p",
+            "h7": "p",
+            "f8": "r",
+            "g8": "k"
+          }
+        },
+        {
+          "uci": "e2e3",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "5rk1/7p/p2p2p1/3qB3/3P4/4Q3/PPP3PP/1R5K b - - 0 26",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "b1": "R",
+            "h1": "K",
+            "a2": "P",
+            "b2": "P",
+            "c2": "P",
+            "g2": "P",
+            "h2": "P",
+            "e3": "Q",
+            "d4": "P",
+            "d5": "q",
+            "e5": "B",
+            "a6": "p",
+            "d6": "p",
+            "g6": "p",
+            "h7": "p",
+            "f8": "r",
+            "g8": "k"
+          }
+        }
+      ],
+      "final_board": ". . . . . r k .\n. . . . . . . p\np . . p . . p .\n. . . q B . . .\n. . . P . . . .\n. . . . Q . . .\nP P P . . . P P\n. R . . . . . K"
+    },
+    {
+      "id": "2_c7_removed_queen_exchange",
+      "initial_fen": "5rk1/7p/p3R1p1/3qB3/3P4/4b3/PPP1Q1PP/1R5K w - - 0 25",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "e6d6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "5rk1/7p/p2R2p1/3qB3/3P4/4b3/PPP1Q1PP/1R5K b - - 1 25",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "b1": "R",
+            "h1": "K",
+            "a2": "P",
+            "b2": "P",
+            "c2": "P",
+            "e2": "Q",
+            "g2": "P",
+            "h2": "P",
+            "e3": "b",
+            "d4": "P",
+            "d5": "q",
+            "e5": "B",
+            "a6": "p",
+            "d6": "R",
+            "g6": "p",
+            "h7": "p",
+            "f8": "r",
+            "g8": "k"
+          }
+        },
+        {
+          "uci": "d5d6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "5rk1/7p/p2q2p1/4B3/3P4/4b3/PPP1Q1PP/1R5K w - - 0 26",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "b1": "R",
+            "h1": "K",
+            "a2": "P",
+            "b2": "P",
+            "c2": "P",
+            "e2": "Q",
+            "g2": "P",
+            "h2": "P",
+            "e3": "b",
+            "d4": "P",
+            "e5": "B",
+            "a6": "p",
+            "d6": "q",
+            "g6": "p",
+            "h7": "p",
+            "f8": "r",
+            "g8": "k"
+          }
+        },
+        {
+          "uci": "e5d6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "5rk1/7p/p2B2p1/8/3P4/4b3/PPP1Q1PP/1R5K b - - 0 26",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "b1": "R",
+            "h1": "K",
+            "a2": "P",
+            "b2": "P",
+            "c2": "P",
+            "e2": "Q",
+            "g2": "P",
+            "h2": "P",
+            "e3": "b",
+            "d4": "P",
+            "a6": "p",
+            "d6": "B",
+            "g6": "p",
+            "h7": "p",
+            "f8": "r",
+            "g8": "k"
+          }
+        }
+      ],
+      "final_board": ". . . . . r k .\n. . . . . . . p\np . . B . . p .\n. . . . . . . .\n. . . P . . . .\n. . . . b . . .\nP P P . Q . P P\n. R . . . . . K"
+    },
+    {
+      "id": "3a_black_f_pawn",
+      "initial_fen": "6k1/5p1p/6p1/8/8/6R1/8/6K1 w - - 0 1",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "g3g6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "6k1/5p1p/6R1/8/8/8/8/6K1 b - - 0 1",
+          "side_to_move_in_check": true,
+          "occupancy": {
+            "g1": "K",
+            "g6": "R",
+            "f7": "p",
+            "h7": "p",
+            "g8": "k"
+          }
+        },
+        {
+          "uci": "f7g6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "6k1/7p/6p1/8/8/8/8/6K1 w - - 0 2",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "g1": "K",
+            "g6": "p",
+            "h7": "p",
+            "g8": "k"
+          }
+        }
+      ],
+      "final_board": ". . . . . . k .\n. . . . . . . p\n. . . . . . p .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . K ."
+    },
+    {
+      "id": "3b_black_h_pawn",
+      "initial_fen": "6k1/5p1p/6p1/8/8/6R1/8/6K1 w - - 0 1",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "g3g6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "6k1/5p1p/6R1/8/8/8/8/6K1 b - - 0 1",
+          "side_to_move_in_check": true,
+          "occupancy": {
+            "g1": "K",
+            "g6": "R",
+            "f7": "p",
+            "h7": "p",
+            "g8": "k"
+          }
+        },
+        {
+          "uci": "h7g6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "6k1/5p2/6p1/8/8/8/8/6K1 w - - 0 2",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "g1": "K",
+            "g6": "p",
+            "f7": "p",
+            "g8": "k"
+          }
+        }
+      ],
+      "final_board": ". . . . . . k .\n. . . . . p . .\n. . . . . . p .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . K ."
+    },
+    {
+      "id": "4a_white_f_pawn",
+      "initial_fen": "6k1/8/6r1/8/8/6P1/5P1P/6K1 b - - 0 1",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "g6g3",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "6k1/8/8/8/8/6r1/5P1P/6K1 w - - 0 2",
+          "side_to_move_in_check": true,
+          "occupancy": {
+            "g1": "K",
+            "f2": "P",
+            "h2": "P",
+            "g3": "r",
+            "g8": "k"
+          }
+        },
+        {
+          "uci": "f2g3",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "6k1/8/8/8/8/6P1/7P/6K1 b - - 0 2",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "g1": "K",
+            "h2": "P",
+            "g3": "P",
+            "g8": "k"
+          }
+        }
+      ],
+      "final_board": ". . . . . . k .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . P .\n. . . . . . . P\n. . . . . . K ."
+    },
+    {
+      "id": "4b_white_h_pawn",
+      "initial_fen": "6k1/8/6r1/8/8/6P1/5P1P/6K1 b - - 0 1",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "g6g3",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "6k1/8/8/8/8/6r1/5P1P/6K1 w - - 0 2",
+          "side_to_move_in_check": true,
+          "occupancy": {
+            "g1": "K",
+            "f2": "P",
+            "h2": "P",
+            "g3": "r",
+            "g8": "k"
+          }
+        },
+        {
+          "uci": "h2g3",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "6k1/8/8/8/8/6P1/5P2/6K1 b - - 0 2",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "g1": "K",
+            "f2": "P",
+            "g3": "P",
+            "g8": "k"
+          }
+        }
+      ],
+      "final_board": ". . . . . . k .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . P .\n. . . . . P . .\n. . . . . . K ."
+    },
+    {
+      "id": "5a_remembered_king_blocks_rook",
+      "initial_fen": "8/3R4/1p3rp1/1P5p/4k2P/5p2/5K2/8 b - - 3 50",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "f6e6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/3R4/1p2r1p1/1P5p/4k2P/5p2/5K2/8 w - - 4 51",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "h5": "p",
+            "b6": "p",
+            "e6": "r",
+            "g6": "p",
+            "d7": "R"
+          }
+        },
+        {
+          "uci": "d7f7",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/5R2/1p2r1p1/1P5p/4k2P/5p2/5K2/8 b - - 5 51",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "h5": "p",
+            "b6": "p",
+            "e6": "r",
+            "g6": "p",
+            "f7": "R"
+          }
+        },
+        {
+          "uci": "e6e2",
+          "expected_legal": false,
+          "legal": false,
+          "matches": true,
+          "result_fen": "8/5R2/1p2r1p1/1P5p/4k2P/5p2/5K2/8 b - - 5 51",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "h5": "p",
+            "b6": "p",
+            "e6": "r",
+            "g6": "p",
+            "f7": "R"
+          }
+        }
+      ],
+      "final_board": ". . . . . . . .\n. . . . . R . .\n. p . . r . p .\n. P . . . . . p\n. . . . k . . P\n. . . . . p . .\n. . . . . K . .\n. . . . . . . ."
+    },
+    {
+      "id": "5b_remembered_supported_rook",
+      "initial_fen": "8/3R4/1p3rp1/1P5p/4k2P/5p2/5K2/8 b - - 3 50",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "f6e6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/3R4/1p2r1p1/1P5p/4k2P/5p2/5K2/8 w - - 4 51",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "h5": "p",
+            "b6": "p",
+            "e6": "r",
+            "g6": "p",
+            "d7": "R"
+          }
+        },
+        {
+          "uci": "d7f7",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/5R2/1p2r1p1/1P5p/4k2P/5p2/5K2/8 b - - 5 51",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "h5": "p",
+            "b6": "p",
+            "e6": "r",
+            "g6": "p",
+            "f7": "R"
+          }
+        },
+        {
+          "uci": "e6e5",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/5R2/1p4p1/1P2r2p/4k2P/5p2/5K2/8 w - - 6 52",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "e5": "r",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p",
+            "f7": "R"
+          }
+        },
+        {
+          "uci": "f7f3",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/8/1p4p1/1P2r2p/4k2P/5R2/5K2/8 b - - 0 52",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "R",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "e5": "r",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p"
+          }
+        },
+        {
+          "uci": "e4f3",
+          "expected_legal": false,
+          "legal": false,
+          "matches": true,
+          "result_fen": "8/8/1p4p1/1P2r2p/4k2P/5R2/5K2/8 b - - 0 52",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "R",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "e5": "r",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p"
+          }
+        }
+      ],
+      "final_board": ". . . . . . . .\n. . . . . . . .\n. p . . . . p .\n. P . . r . . p\n. . . . k . . P\n. . . . . R . .\n. . . . . K . .\n. . . . . . . ."
+    },
+    {
+      "id": "5c_remembered_rook_exchange",
+      "initial_fen": "8/3R4/1p3rp1/1P5p/4k2P/5p2/5K2/8 b - - 3 50",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "f6e6",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/3R4/1p2r1p1/1P5p/4k2P/5p2/5K2/8 w - - 4 51",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "h5": "p",
+            "b6": "p",
+            "e6": "r",
+            "g6": "p",
+            "d7": "R"
+          }
+        },
+        {
+          "uci": "d7f7",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/5R2/1p2r1p1/1P5p/4k2P/5p2/5K2/8 b - - 5 51",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "h5": "p",
+            "b6": "p",
+            "e6": "r",
+            "g6": "p",
+            "f7": "R"
+          }
+        },
+        {
+          "uci": "e6e5",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/5R2/1p4p1/1P2r2p/4k2P/5p2/5K2/8 w - - 6 52",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "e5": "r",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p",
+            "f7": "R"
+          }
+        },
+        {
+          "uci": "f7f3",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/8/1p4p1/1P2r2p/4k2P/5R2/5K2/8 b - - 0 52",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "R",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "e5": "r",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p"
+          }
+        },
+        {
+          "uci": "e5f5",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/8/1p4p1/1P3r1p/4k2P/5R2/5K2/8 w - - 1 53",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "f3": "R",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "f5": "r",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p"
+          }
+        },
+        {
+          "uci": "f3f5",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/8/1p4p1/1P3R1p/4k2P/8/5K2/8 b - - 0 53",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "f5": "R",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p"
+          }
+        },
+        {
+          "uci": "e4f5",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/8/1p4p1/1P3k1p/7P/8/5K2/8 w - - 0 54",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "f2": "K",
+            "h4": "P",
+            "b5": "P",
+            "f5": "k",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p"
+          }
+        }
+      ],
+      "final_board": ". . . . . . . .\n. . . . . . . .\n. p . . . . p .\n. P . . . k . p\n. . . . . . . P\n. . . . . . . .\n. . . . . K . .\n. . . . . . . ."
+    },
+    {
+      "id": "6_white_king_on_h2",
+      "initial_fen": "8/5R2/1p2r1p1/1P5p/4k2P/5p2/7K/8 b - - 5 51",
+      "initial_valid": true,
+      "steps": [
+        {
+          "uci": "e6e5",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/5R2/1p4p1/1P2r2p/4k2P/5p2/7K/8 w - - 6 52",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "h2": "K",
+            "f3": "p",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "e5": "r",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p",
+            "f7": "R"
+          }
+        },
+        {
+          "uci": "f7f3",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/8/1p4p1/1P2r2p/4k2P/5R2/7K/8 b - - 0 52",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "h2": "K",
+            "f3": "R",
+            "e4": "k",
+            "h4": "P",
+            "b5": "P",
+            "e5": "r",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p"
+          }
+        },
+        {
+          "uci": "e4f3",
+          "expected_legal": true,
+          "legal": true,
+          "matches": true,
+          "result_fen": "8/8/1p4p1/1P2r2p/7P/5k2/7K/8 w - - 0 53",
+          "side_to_move_in_check": false,
+          "occupancy": {
+            "h2": "K",
+            "f3": "k",
+            "h4": "P",
+            "b5": "P",
+            "e5": "r",
+            "h5": "p",
+            "b6": "p",
+            "g6": "p"
+          }
+        }
+      ],
+      "final_board": ". . . . . . . .\n. . . . . . . .\n. p . . . . p .\n. P . . r . . p\n. . . . . . . P\n. . . . . k . .\n. . . . . . . K\n. . . . . . . ."
+    }
+  ]
+}

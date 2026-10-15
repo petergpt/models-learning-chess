@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.10"]
+[Round "190"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "sol"]
+[GameId "sol/benchmark/000190"]
+[OpponentSetting "skill-0"]
+[Termination "resignation"]
+
+1. e4 e6 2. Nc3 d5 3. Nf3 Nf6 4. d3 Be7 5. Bf4 O-O 6. a3 Nc6 7. Be2 b6 8. e5 Nh5 9. Be3 Bb7 10. d4 Na5 11. Nd2 g6 12. b4 Nc6 13. Bxh5 gxh5 14. b5 Na5 15. Qxh5 Kh8 16. Bh6 Rg8 17. Nf3 f6 18. Bf4 c5 19. Ne2 Qd7 20. g4 cxd4 21. Rd1 Bc5 22. Nexd4 Bxd4 23. Rxd4 Rac8 24. exf6 Qf7 25. Ne5 Qxf6 26. Rg1 Rxc2 27. Nf7+ Kg7 28. Bh6+ Qxh6 29. Qxh6+ Kxf7 30. f3 Rg6 31. Rf4+ Ke7 32. Qh4+ Kd7 33. Qxh7+ Kd6 34. Rd4 Rf6 35. f4 e5 36. Qxc2 exd4 37. Qe2 Re6 38. Qxe6+ Kxe6 39. Rg3 Nc4 40. Ke2 Nb2 41. Rh3 d3+ 42. Ke3 Bc6 43. f5+ Kd6 44. bxc6 Kxc6 45. Rg3 Kc5 46. Kd2 Kd4 47. f6 Nc4+ 48. Kc1 d2+ 49. Kd1 Nd6 50. h4 Ne4 51. Rf3 b5 52. g5 a5 53. Ke2 Nc3+ 54. Kxd2 Ne4+ 55. Ke2 1-0

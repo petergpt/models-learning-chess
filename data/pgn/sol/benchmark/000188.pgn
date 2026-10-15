@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.10"]
+[Round "188"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "sol"]
+[GameId "sol/benchmark/000188"]
+[OpponentSetting "full-strength"]
+[Termination "resignation"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. e5 Nfd7 5. f4 c5 6. Nf3 Nc6 7. Be3 Be7 8. a3 O-O 9. dxc5 Nxc5 10. Be2 Bd7 11. O-O Qb6 12. b4 Nxb4 13. axb4 Qxb4 14. Qd2 Na4 15. Nxa4 Bxa4 16. Qxb4 Bxb4 17. Rxa4 Bd6 18. exd6 1-0

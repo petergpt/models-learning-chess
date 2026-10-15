@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.05"]
+[Round "30"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "1-0"]
+[FEN "6k1/pp1rqpp1/7p/2p1B3/4P1Q1/3P4/PPP2P1P/1R5K b - - 3 23"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "sol"]
+[GameId "sol/practice/000030"]
+[OpponentSetting "practice-skill-20"]
+[Termination "checkmate"]
+
+23... Kh7 24. Qxg7# 1-0

@@ -1,0 +1,169 @@
+{
+  "subject": "GPT-6 Astra original 200-game run",
+  "assessment": "The recorded agent's performance deteriorated substantially after the early period. Very uncertain initial Elo and the rolling 50-rated-game calculation magnified the appearance of a continuous decline. The evidence shows attempted learning without reliable transfer, alongside a substantial reduction in recorded reasoning work during games. The data do not establish which workflow changes caused the deterioration.",
+  "validatedScope": {
+    "benchmarkGames": 200,
+    "acceptedMoves": 15521,
+    "practiceSessions": 51,
+    "snapshotArchives": 263,
+    "currentPinnedFiles": 18,
+    "allAcceptedMovesSanFenAndTerminalOutcomesVerified": true,
+    "all200PgnMoveListsAndResultsMatchLedger": true,
+    "benchmarkAndPracticeLedgerHashesRecomputed": true,
+    "fixedOpponentOptionsColorsAndOneMillionNodesVerified": true,
+    "documentedOperatorRevisionChainVerified": true,
+    "originalSessionLedgerAndWorkspaceUnchangedSinceTournamentFork": true,
+    "hiddenReasoningContentReadOrExported": false
+  },
+  "rating": {
+    "afterFirst3RatedGames": {
+      "estimate": 2430,
+      "interval": [
+        1660,
+        3580
+      ]
+    },
+    "firstFull50RatedGameWindow": {
+      "estimate": 1680,
+      "interval": [
+        1560,
+        1800
+      ]
+    },
+    "last50RatedGameWindow": {
+      "estimate": 1400,
+      "interval": [
+        1270,
+        1520
+      ]
+    },
+    "method": "Independently recomputed using the pinned rating.py posterior. Full-strength games excluded throughout. Provisional engine-relative ratings, not human Elo.",
+    "rollingWindowInterpretation": "Stronger early results leave a 50-rated-game window gradually. The last two nonoverlapping 32-rated-game comparison samples each scored 39.0625%, supporting a decline to a poorer overall level rather than uninterrupted deterioration at every later game."
+  },
+  "matchedComparison": {
+    "earlyBenchmarks": [
+      1,
+      96
+    ],
+    "lateBenchmarks": [
+      103,
+      198
+    ],
+    "gamesPerOpponentPerWindow": 32,
+    "balancedColors": true,
+    "skill0": {
+      "earlyWDL": [
+        30,
+        0,
+        2
+      ],
+      "lateWDL": [
+        19,
+        2,
+        11
+      ],
+      "earlyPointScore": 0.9375,
+      "latePointScore": 0.625,
+      "changeBootstrap95": [
+        -0.421875,
+        -0.171875
+      ]
+    },
+    "nominal1800": {
+      "earlyWDL": [
+        10,
+        0,
+        22
+      ],
+      "lateWDL": [
+        4,
+        2,
+        26
+      ],
+      "earlyPointScore": 0.3125,
+      "latePointScore": 0.15625,
+      "changeBootstrap95": [
+        -0.359375,
+        0.046875
+      ]
+    },
+    "combinedRated": {
+      "earlyPointScore": 0.625,
+      "latePointScore": 0.390625,
+      "changeBootstrap95": [
+        -0.3671875,
+        -0.1015625
+      ]
+    },
+    "method": "10,000 resamples of complete paired-color opponent rotations. Observational block bootstrap; not a randomised experiment."
+  },
+  "reasoningUsage": {
+    "source": "Native token_usage_record metadata; 10,423 unique response IDs, no duplicates; sums verified against final thread cumulative usage.",
+    "earlyRatedReasoningTokensPerAcceptedMove": 1071.7599416271435,
+    "lateRatedReasoningTokensPerAcceptedMove": 512.8419014084507,
+    "reductionPercent": 52.149554999242156,
+    "quarterRatedReasoningTokensPerAcceptedMove": [
+      1348.1766342141864,
+      745.6778093883357,
+      644.8279635258359,
+      357.6983632112237
+    ],
+    "scope": "Sum recorded reasoning usage for model responses between each benchmark start and result, normalised by accepted learner moves. Includes in-game overhead; excludes between-game study and separate practice. No reasoning text inspected.",
+    "settings": "Original turn metadata is Max except a brief Medium interval affecting 11 own moves in game 84. The matched late period is Max, so a sustained lower setting does not explain the decline.",
+    "interpretation": "Less recorded reasoning during games is a plausible contributor, but could also reflect changed positions or procedures. This is not causal proof or a measurement of a fixed thinking allowance."
+  },
+  "learningAndTransfer": {
+    "trials": 29,
+    "allTrialFilesPresentBeforeTheirDeclaredBenchmarkBlocks": true,
+    "practiceSources": {
+      "savedBenchmarkPositions": 21,
+      "initialPositions": 9,
+      "customPositions": 21
+    },
+    "practiceOutcomes": {
+      "wins": 5,
+      "draws": 2,
+      "losses": 12,
+      "stoppedUnfinished": 32
+    },
+    "evidence": [
+      "Procedures addressed changing lines, blockers, pawn origins, recaptures, king safety, opening development and conversion. Trials also changed opening choices and queen-exchange preferences, rather than exclusively adding checklists.",
+      "Trial 15 switched White to d4 and Black versus e4 to e6/d5. Trial 16 tested a queen-exchange preference and explicitly discontinued it after continued errors.",
+      "Trial 21 passed supplied legality checks and won one practice from a deliberately chosen two-rook advantage, but its other practice lost both rooks and benchmarks 151-156 went 1 win and 5 losses.",
+      "Benchmarks 169-174 all passed a narrow first-15-move material-loss screen while scoring only 1 win, 1 draw and 4 losses. Opening-process compliance failed to predict later safety.",
+      "Astra's own notes repeatedly acknowledged that known-position correction and legal supplied lines did not establish generalisation."
+    ],
+    "persistentErrors": [
+      {
+        "game": 173,
+        "finding": "Imagined h4xg3 as a White pawn recapture; it is backwards. Lost a rook, then also imagined a rook recapture through its own king.",
+        "source": "workspace/learning-journal.md:3263"
+      },
+      {
+        "game": 197,
+        "finding": "Promoted c8=Q into referee-confirmed stalemate while a bishop and two pawns ahead. The presumed spare opponent pawn move did not exist.",
+        "source": "workspace/learning-journal.md:3503"
+      },
+      {
+        "game": 198,
+        "finding": "Bf5 allowed Qxf5 while its own bishop blocked the imagined rook recapture.",
+        "source": "workspace/learning-journal.md:3510"
+      },
+      {
+        "game": 200,
+        "finding": "Again misstated a rook's pawn defence through an intervening enemy pawn; later surrendered the queen under a king attack.",
+        "source": "workspace/learning-journal.md:3555"
+      }
+    ]
+  },
+  "contextAndInfrastructure": {
+    "nativeCompactions": 65,
+    "compactionsInEarlyComparisonPeriod": 41,
+    "compactionsInLateComparisonPeriod": 22,
+    "journalWordsBeforeGame199": 101204,
+    "interpretation": "Growing history and repeated compaction are possible contributors. They do not independently explain the deterioration: compaction also occurred during the stronger early period, and the active move checklist was shortened.",
+    "moveToolOutputScreen": "No explicit truncation markers found among 3,719 early and 3,727 late observed move-tool outputs. FEN output was commonly present; asynchronous first responses may show only job-admission status. This screen does not certify every output's semantics.",
+    "finding": "No stronger benchmark opponents, node-budget change, corrupted game outcomes or changed rating method were found that explains the deterioration."
+  },
+  "limits": "One evolving run cannot identify a causal effect of practice, strategy changes, inference allocation or memory. It demonstrates lower recorded performance, not deterioration of the underlying model weights."
+}

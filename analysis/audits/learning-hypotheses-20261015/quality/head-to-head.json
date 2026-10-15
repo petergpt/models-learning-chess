@@ -1,0 +1,539 @@
+{
+  "sources": {
+    "database": "Matches/Astra vs Opus - 30 games/.referee/match.sqlite",
+    "read_mode": "SQLite mode=ro, single read transaction",
+    "public_moves_sha256": "b36277a5a59875d3374e13f1753e093464d535681e7a36456bdcd0bedd0a2ee1",
+    "last_event": {
+      "seq": 3190,
+      "at": "2026-10-10T08:08:51.496961+00:00",
+      "kind": "game_ended",
+      "game": 30,
+      "hash": "6ab8970ab2e75566cf898bcf999d87d4727005fdc12122635c4533e4d1609e55"
+    },
+    "protocol_sha256": "59a12adc7b8018c45b61b43f2415d4b444932db7a2e5ce13b2448b951f83de37",
+    "rules_sha256": "0ea3d0904fa7be5125f3f41cbeeb1a2204333929c223ed1ea020bbef5a0e36d3",
+    "setup_sha256": "b876b1f3ec79bc5c5ecb98bf772d3e0ce8e1576de2ca70ed87260c3a865d5fa6",
+    "launch_verification_sha256": "cb63b433b2b07cc5a76f8b32fa954159a61eef290f54cca3760559f1781490c3"
+  },
+  "games": [
+    {
+      "id": 1,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-06T21:03:34.287142+00:00",
+      "ended": "2026-10-06T23:40:45.777082+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 135,
+      "final_fen": "4R3/3k1P2/6P1/p2P4/P3K3/5r2/8/8 b - - 6 68",
+      "all_moves_replayed_legally": true,
+      "astra_score": 0.0
+    },
+    {
+      "id": 2,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-06T23:46:13.790813+00:00",
+      "ended": "2026-10-07T01:26:06.363527+00:00",
+      "result": "1/2-1/2",
+      "reason": "threefold_repetition",
+      "plies": 111,
+      "final_fen": "8/8/1p1k4/pP6/P2K4/8/8/8 b - - 10 56",
+      "all_moves_replayed_legally": true,
+      "astra_score": 0.5
+    },
+    {
+      "id": 3,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-07T01:29:02.329918+00:00",
+      "ended": "2026-10-07T04:01:36.470385+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 121,
+      "final_fen": "8/2RPK3/r7/4P3/1k4Pp/5P1P/8/8 b - - 2 61",
+      "all_moves_replayed_legally": true,
+      "astra_score": 0.0
+    },
+    {
+      "id": 4,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-07T04:06:05.565311+00:00",
+      "ended": "2026-10-07T05:41:08.330809+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 65,
+      "final_fen": "8/1pnk1pp1/p3p1p1/P2pP3/3P4/1P1K1N2/5PPP/2R5 b - - 5 33",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 5,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-07T05:44:25.379223+00:00",
+      "ended": "2026-10-07T09:11:14.921129+00:00",
+      "result": "1/2-1/2",
+      "reason": "threefold_repetition",
+      "plies": 120,
+      "final_fen": "8/8/3b4/2p2k1p/2P3pP/3K2P1/8/4B3 w - - 11 61",
+      "all_moves_replayed_legally": true,
+      "astra_score": 0.5
+    },
+    {
+      "id": 6,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-07T09:16:09.818480+00:00",
+      "ended": "2026-10-07T12:57:14.555854+00:00",
+      "result": "1/2-1/2",
+      "reason": "threefold_repetition",
+      "plies": 100,
+      "final_fen": "8/8/1p4p1/p2k1n1p/4NP1P/5KP1/P7/8 w - - 12 51",
+      "all_moves_replayed_legally": true,
+      "astra_score": 0.5
+    },
+    {
+      "id": 7,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-07T13:01:21.559955+00:00",
+      "ended": "2026-10-07T16:57:49.436199+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 118,
+      "final_fen": "8/4P2p/8/6p1/6P1/2k3q1/1r6/R3N1K1 w - - 4 60",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 8,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-07T17:02:17.518753+00:00",
+      "ended": "2026-10-07T21:40:31.771117+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 119,
+      "final_fen": "r2q2k1/PQ1P4/4Nppp/8/7P/6P1/6PK/8 b - - 2 60",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 9,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-07T21:44:02.409513+00:00",
+      "ended": "2026-10-08T00:53:42.619652+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 116,
+      "final_fen": "8/3n4/1P3p2/6p1/2P5/1K5p/7k/8 w - - 1 59",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 10,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-08T00:57:06.769599+00:00",
+      "ended": "2026-10-08T04:48:39.204174+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 93,
+      "final_fen": "8/5rk1/P4p1p/6p1/2p5/7P/1Q4P1/R6K b - - 0 47",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 11,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-08T04:53:15.605504+00:00",
+      "ended": "2026-10-08T06:19:23.209929+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 48,
+      "final_fen": "4q1k1/p4r1p/1p3pp1/2p5/8/2P4P/PP3PP1/3R2K1 w - - 0 25",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 12,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-08T06:23:29.176885+00:00",
+      "ended": "2026-10-08T15:04:31.907836+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 129,
+      "final_fen": "6k1/5N2/3KP3/8/8/8/8/8 b - - 0 65",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 13,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-08T15:13:31.398952+00:00",
+      "ended": "2026-10-08T19:16:18.657025+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 96,
+      "final_fen": "6k1/6p1/2P4p/1P1r1p2/2n5/7P/3pKPP1/Bq6 w - - 0 49",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 14,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-08T19:22:51.308020+00:00",
+      "ended": "2026-10-08T20:49:49.800823+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 77,
+      "final_fen": "8/5pp1/1p6/p5p1/P2N4/1P2PK1P/1k4P1/8 b - - 0 39",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 15,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-08T20:53:30.153846+00:00",
+      "ended": "2026-10-08T22:42:34.571610+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 104,
+      "final_fen": "8/8/p5p1/1p3p1p/5P1P/PpP3P1/3Kb3/4Bk2 w - - 0 53",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 16,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-08T22:47:04.120589+00:00",
+      "ended": "2026-10-09T01:15:24.826490+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 93,
+      "final_fen": "5r2/1p6/1p5R/1k6/6P1/P5KP/5P2/8 b - - 2 47",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 17,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-09T01:19:53.369249+00:00",
+      "ended": "2026-10-09T02:27:18.742049+00:00",
+      "result": "1/2-1/2",
+      "reason": "agreement",
+      "plies": 92,
+      "final_fen": "8/8/2k4p/1p1b2p1/1Pp2pP1/2P2P1P/2B1K3/8 w - - 1 47",
+      "all_moves_replayed_legally": true,
+      "astra_score": 0.5
+    },
+    {
+      "id": 18,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-09T02:30:22.534164+00:00",
+      "ended": "2026-10-09T06:18:10.821590+00:00",
+      "result": "1-0",
+      "reason": "checkmate",
+      "plies": 129,
+      "final_fen": "1R1kb3/8/3PK1p1/4N2p/7P/5P2/1p1r4/8 b - - 3 65",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 19,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-09T06:24:19.281781+00:00",
+      "ended": "2026-10-09T10:14:45.041562+00:00",
+      "result": "1/2-1/2",
+      "reason": "insufficient_material",
+      "plies": 142,
+      "final_fen": "7K/k7/8/8/8/8/8/8 w - - 0 72",
+      "all_moves_replayed_legally": true,
+      "astra_score": 0.5
+    },
+    {
+      "id": 20,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-09T10:19:22.427869+00:00",
+      "ended": "2026-10-09T12:10:51.272420+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 115,
+      "final_fen": "8/8/8/8/3Rb2k/P1K5/8/8 b - - 2 58",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 21,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-09T12:13:30.559222+00:00",
+      "ended": "2026-10-09T14:42:26.609837+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 114,
+      "final_fen": "8/7p/1k6/7p/P4p1n/2P2P2/5K2/8 w - - 4 58",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 22,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-09T14:45:51.217354+00:00",
+      "ended": "2026-10-09T16:41:32.876421+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 115,
+      "final_fen": "6k1/1p1r2p1/1R3pNp/7P/5PPK/8/8/8 b - - 0 58",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 23,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-09T16:45:30.666635+00:00",
+      "ended": "2026-10-09T17:57:04.962364+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 90,
+      "final_fen": "8/8/p4p2/1p6/2p1k3/P1P4p/1P1B3K/5b2 w - - 4 46",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 24,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-09T18:00:33.648591+00:00",
+      "ended": "2026-10-09T19:32:43.447589+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 85,
+      "final_fen": "8/p5p1/2p2k1p/1p5P/1P2KP2/6R1/8/8 b - - 0 43",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 25,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-09T19:34:48.053908+00:00",
+      "ended": "2026-10-09T22:51:59.271385+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 86,
+      "final_fen": "8/7k/pp1rP1pp/5p2/1P6/5P1P/1P4P1/6K1 w - - 0 44",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 26,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-09T22:54:23.781552+00:00",
+      "ended": "2026-10-10T00:35:38.721176+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 93,
+      "final_fen": "8/5k2/7P/p1p1p1K1/1b6/1P6/5R2/8 b - - 2 47",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 27,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-10T00:38:01.512092+00:00",
+      "ended": "2026-10-10T01:11:34.348420+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 66,
+      "final_fen": "r3r3/5p1k/pnp3pp/1pP1p3/1P2P3/1q2NP1P/1P1R2P1/4R1K1 w - - 0 34",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 28,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-10T01:14:03.598419+00:00",
+      "ended": "2026-10-10T04:04:56.444180+00:00",
+      "result": "1-0",
+      "reason": "resignation",
+      "plies": 125,
+      "final_fen": "8/3KP1R1/1k3r1p/p6P/8/8/8/8 b - - 2 63",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 29,
+      "white": "opus",
+      "black": "astra",
+      "started": "2026-10-10T04:07:50.361839+00:00",
+      "ended": "2026-10-10T06:19:05.516515+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 116,
+      "final_fen": "8/6k1/p1p5/1pPq4/1P1np1P1/6K1/1P3Q2/8 w - - 0 59",
+      "all_moves_replayed_legally": true,
+      "astra_score": 1.0
+    },
+    {
+      "id": 30,
+      "white": "astra",
+      "black": "opus",
+      "started": "2026-10-10T06:21:51.118928+00:00",
+      "ended": "2026-10-10T08:08:51.496042+00:00",
+      "result": "0-1",
+      "reason": "resignation",
+      "plies": 102,
+      "final_fen": "8/5pp1/7p/p6P/Pb1K2k1/1P6/8/8 w - - 0 52",
+      "all_moves_replayed_legally": true,
+      "astra_score": 0.0
+    }
+  ],
+  "completed_games": 30,
+  "astra_points": 24.5,
+  "opus_points": 5.5,
+  "astra_wins": 22,
+  "draws": 5,
+  "astra_losses": 3,
+  "astra_by_color": {
+    "black": {
+      "games": 15,
+      "points": 11.5,
+      "wins": 10,
+      "draws": 3,
+      "losses": 2
+    },
+    "white": {
+      "games": 15,
+      "points": 13.0,
+      "wins": 12,
+      "draws": 2,
+      "losses": 1
+    }
+  },
+  "astra_first15_points": 11.5,
+  "astra_last15_points": 13.0,
+  "astra_score_fraction": 0.8166666666666667,
+  "descriptive_game_bootstrap_score_ci95": [
+    0.6833333333333333,
+    0.9333333333333333
+  ],
+  "public_event_kind_counts": {
+    "draw_offered": 2,
+    "game_ended": 30,
+    "game_started": 30,
+    "illegal_submission": 6,
+    "infrastructure_pause": 5,
+    "infrastructure_resume": 1,
+    "match_created": 1,
+    "move": 3115
+  },
+  "illegal_submissions_by_actor": {
+    "opus": 6
+  },
+  "protocol_conditions": {
+    "reasoning": "max for both, explicitly supplied on every turn",
+    "context": "each native post-200 conversation branch; original provider context settings retained",
+    "learning": "persistent match conversations; own notes and self-reflection allowed between games",
+    "assistance": "no engines, automated search/scoring, tablebases, outside chess advice or opponent private material",
+    "tools": "identical board/history and legality-only referee; no legal-move menu or evaluations",
+    "timeControl": "untimed chess; response and elapsed times recorded; provider outages never award chess points",
+    "position": "standard chess initial position",
+    "rating": "head-to-head points are separate from nominal Stockfish Elo",
+    "isolation": "separate native threads and player folders under one Unix account; rules and audit, not a security sandbox"
+  },
+  "declared_config": {
+    "astra": {
+      "model_selection": {
+        "instanceId": "codex-vt",
+        "model": "gpt-6-astra",
+        "options": [
+          {
+            "id": "reasoningEffort",
+            "value": "max"
+          },
+          {
+            "id": "serviceTier",
+            "value": "default"
+          }
+        ]
+      },
+      "runtime_evidence": {
+        "model": "gpt-6-astra",
+        "effort": "max",
+        "cwd": "/home/peter/Chess Learning/Matches/Astra vs Opus - 30 games/GPT-6 Astra",
+        "turn_id": "01a11301-cad8-7531-ac9c-6c671093f6c1"
+      }
+    },
+    "opus": {
+      "model_selection": {
+        "instanceId": "claudeAgent",
+        "model": "claude-opus-5-5",
+        "options": [
+          {
+            "id": "effort",
+            "value": "max"
+          },
+          {
+            "id": "fastMode",
+            "value": false
+          },
+          {
+            "id": "contextWindow",
+            "value": "1m"
+          }
+        ]
+      },
+      "runtime_evidence": {
+        "effort": "max",
+        "perTurnEffort": "max",
+        "cwd": "/home/peter/Chess Learning/Matches/Astra vs Opus - 30 games/Claude Opus 5.5/workspace",
+        "sessionId": "6603596e-acab-402f-87ef-29eb78acb1d0",
+        "model": "claude-opus-5-5"
+      }
+    }
+  },
+  "existing_effort_verification": {
+    "checked_at": "2026-10-09T21:57:13.098216+00:00",
+    "players": {
+      "astra": {
+        "allNativeEffort": "max",
+        "model": "gpt-6-astra",
+        "sourceGames": 200,
+        "verifiedNativeMetadataEntries": 1385
+      },
+      "opus": {
+        "allNativeEffort": "max",
+        "model": "claude-opus-5-5",
+        "sourceGames": 200,
+        "verifiedNativeMetadataEntries": 5448
+      }
+    },
+    "note": "Existing verification was at game 25, not an independently repeated audit of all 30 native sessions."
+  },
+  "limits": [
+    "Not a frozen-policy transfer evaluation: carried-over post-200 conversations/workspaces and between-game adaptation were permitted.",
+    "Both declared Max effort; provider architectures/context differ and Max effort is not identical compute.",
+    "Astra beating Opus despite lower nominal Stockfish Elo challenges transitive general-strength interpretation, but cannot establish benchmark exploitation or learning causally.",
+    "No pretraining/before-200 head-to-head baseline; opponent-style/nontransitive effects remain plausible.",
+    "Only public move/result data and operator configuration were read; no private match notes or conversation contents were inspected."
+  ]
+}

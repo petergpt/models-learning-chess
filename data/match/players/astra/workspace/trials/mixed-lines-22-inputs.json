@@ -1,0 +1,138 @@
+[
+  {
+    "id": "155-rook-still-defends-a6",
+    "game": 155,
+    "ply": 52,
+    "moves": [
+      [
+        "b6a6",
+        true
+      ],
+      [
+        "a2a6",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "151-central-pawn-fork",
+    "game": 151,
+    "ply": 18,
+    "moves": [
+      [
+        "b1c3",
+        true
+      ],
+      [
+        "d5d4",
+        true
+      ],
+      [
+        "e3g3",
+        true
+      ],
+      [
+        "d4c3",
+        true
+      ],
+      [
+        "b2c3",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "156-f5-forks-two-minors",
+    "game": 156,
+    "ply": 33,
+    "moves": [
+      [
+        "f8g6",
+        true
+      ],
+      [
+        "f4f5",
+        true
+      ],
+      [
+        "e6c4",
+        true
+      ],
+      [
+        "d3c4",
+        true
+      ],
+      [
+        "g6e5",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "156-controlled-open-f-file",
+    "game": 156,
+    "ply": 64,
+    "moves": [
+      [
+        "f4e5",
+        true
+      ],
+      [
+        "d6e5",
+        true
+      ],
+      [
+        "f1f5",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "156-supported-rook-mate",
+    "game": 156,
+    "ply": 81,
+    "moves": [
+      [
+        "e5d4",
+        true
+      ],
+      [
+        "e1e4",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "154-clear-rook-mate-defender",
+    "game": 154,
+    "ply": 48,
+    "moves": [
+      [
+        "e2e4",
+        true
+      ],
+      [
+        "d5e4",
+        true
+      ],
+      [
+        "c1f4",
+        true
+      ],
+      [
+        "h3h1",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "practice-A-setup-only",
+    "fen": "1r4k1/p3bp2/7p/8/2B5/7P/P4P2/3R2K1 w - - 0 1",
+    "moves": []
+  },
+  {
+    "id": "practice-B-setup-only",
+    "fen": "2k3r1/1p2p2p/3b4/8/8/4B3/1P2P2P/2K4R b - - 0 1",
+    "moves": []
+  }
+]

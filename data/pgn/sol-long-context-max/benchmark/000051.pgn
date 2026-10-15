@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.09"]
+[Round "51"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "sol-long-context-max"]
+[GameId "sol-long-context-max/benchmark/000051"]
+[OpponentSetting "skill-0"]
+[Termination "checkmate"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 Nf6 4. Nc3 d5 5. exd5 Nxd5 6. Nxd5 Qxd5 7. c4 Qe6+ 8. Be2 Qg6 9. O-O cxd4 10. Nxd4 e5 11. Nxc6 Bh3 12. Bf3 bxc6 13. Re1 Be7 14. Rxe5 Rd8 15. Bd2 Qf6 16. gxh3 Qg6+ 17. Bg2 Rxd2 18. Qxd2 f6 19. Ree1 Kf7 20. Qe3 Bc5 21. Qxc5 a6 22. Qxc6 Rf8 23. Qd5# 1-0

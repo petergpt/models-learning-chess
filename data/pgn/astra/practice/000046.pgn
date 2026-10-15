@@ -1,0 +1,16 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "46"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "*"]
+[FEN "r7/1k6/1p4PP/p4K2/8/8/7R/8 w - - 0 1"]
+[SetUp "1"]
+[Mode "practice"]
+[RunId "astra"]
+[GameId "astra/practice/000046"]
+[OpponentSetting "practice-skill-20"]
+[Termination "stopped_by_learner_not_a_result"]
+
+1. h7 Rf8+ 2. Kg5 Rc8 3. h8=Q Rc5+ 4. Kf6 Rc6+ 5. Kg7 Rc8 6. Qh4 Rc7+ 7. Kh6 Ka7 8. Qg4 Ka6 9. g7 Rc6+ 10. Kh7 Rc7 *

@@ -1,0 +1,3154 @@
+{
+  "duplicateResponseIds": 0,
+  "usageRecordCount": 10423,
+  "summedUsageMatchesLastCumulative": true,
+  "usageSum": {
+    "input_tokens": 1205032624,
+    "cached_input_tokens": 1182330368,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 8090355,
+    "reasoning_output_tokens": 6720076,
+    "total_tokens": 1213122979
+  },
+  "windows": [
+    {
+      "games": [
+        1,
+        96
+      ],
+      "opponent": "all-rated",
+      "gameCount": 64,
+      "acceptedOwnMoves": 2741,
+      "modelCallsDuringGames": 3283,
+      "reasoningTokensDuringGames": 2937694,
+      "outputTokensDuringGames": 3188718,
+      "reasoningTokensPerAcceptedMove": 1071.7599416271435,
+      "medianPerGameReasoningTokensPerMove": 835.8278409090909
+    },
+    {
+      "games": [
+        1,
+        96
+      ],
+      "opponent": "skill-0",
+      "gameCount": 32,
+      "acceptedOwnMoves": 1227,
+      "modelCallsDuringGames": 1453,
+      "reasoningTokensDuringGames": 1139346,
+      "outputTokensDuringGames": 1248278,
+      "reasoningTokensPerAcceptedMove": 928.5623471882641,
+      "medianPerGameReasoningTokensPerMove": 660.4862938596491
+    },
+    {
+      "games": [
+        1,
+        96
+      ],
+      "opponent": "elo-1800-setting",
+      "gameCount": 32,
+      "acceptedOwnMoves": 1514,
+      "modelCallsDuringGames": 1830,
+      "reasoningTokensDuringGames": 1798348,
+      "outputTokensDuringGames": 1940440,
+      "reasoningTokensPerAcceptedMove": 1187.8124174372524,
+      "medianPerGameReasoningTokensPerMove": 919.1439459930314
+    },
+    {
+      "games": [
+        1,
+        96
+      ],
+      "opponent": "full-strength",
+      "gameCount": 32,
+      "acceptedOwnMoves": 969,
+      "modelCallsDuringGames": 1296,
+      "reasoningTokensDuringGames": 1083568,
+      "outputTokensDuringGames": 1189437,
+      "reasoningTokensPerAcceptedMove": 1118.233230134159,
+      "medianPerGameReasoningTokensPerMove": 945.5416666666666
+    },
+    {
+      "games": [
+        103,
+        198
+      ],
+      "opponent": "all-rated",
+      "gameCount": 64,
+      "acceptedOwnMoves": 2840,
+      "modelCallsDuringGames": 2902,
+      "reasoningTokensDuringGames": 1456471,
+      "outputTokensDuringGames": 1728454,
+      "reasoningTokensPerAcceptedMove": 512.8419014084507,
+      "medianPerGameReasoningTokensPerMove": 420.52083333333337
+    },
+    {
+      "games": [
+        103,
+        198
+      ],
+      "opponent": "skill-0",
+      "gameCount": 32,
+      "acceptedOwnMoves": 1280,
+      "modelCallsDuringGames": 1300,
+      "reasoningTokensDuringGames": 588454,
+      "outputTokensDuringGames": 697234,
+      "reasoningTokensPerAcceptedMove": 459.7296875,
+      "medianPerGameReasoningTokensPerMove": 377.53995601173017
+    },
+    {
+      "games": [
+        103,
+        198
+      ],
+      "opponent": "elo-1800-setting",
+      "gameCount": 32,
+      "acceptedOwnMoves": 1560,
+      "modelCallsDuringGames": 1602,
+      "reasoningTokensDuringGames": 868017,
+      "outputTokensDuringGames": 1031220,
+      "reasoningTokensPerAcceptedMove": 556.4211538461539,
+      "medianPerGameReasoningTokensPerMove": 439.93321428571426
+    },
+    {
+      "games": [
+        103,
+        198
+      ],
+      "opponent": "full-strength",
+      "gameCount": 32,
+      "acceptedOwnMoves": 880,
+      "modelCallsDuringGames": 914,
+      "reasoningTokensDuringGames": 426338,
+      "outputTokensDuringGames": 521547,
+      "reasoningTokensPerAcceptedMove": 484.475,
+      "medianPerGameReasoningTokensPerMove": 430.20707070707067
+    },
+    {
+      "games": [
+        1,
+        50
+      ],
+      "opponent": "all-rated",
+      "gameCount": 32,
+      "acceptedOwnMoves": 1438,
+      "modelCallsDuringGames": 1630,
+      "reasoningTokensDuringGames": 1938678,
+      "outputTokensDuringGames": 2068913,
+      "reasoningTokensPerAcceptedMove": 1348.1766342141864,
+      "medianPerGameReasoningTokensPerMove": 1313.0290346907993
+    },
+    {
+      "games": [
+        1,
+        50
+      ],
+      "opponent": "skill-0",
+      "gameCount": 16,
+      "acceptedOwnMoves": 616,
+      "modelCallsDuringGames": 704,
+      "reasoningTokensDuringGames": 761070,
+      "outputTokensDuringGames": 813597,
+      "reasoningTokensPerAcceptedMove": 1235.5032467532467,
+      "medianPerGameReasoningTokensPerMove": 1170.319955406912
+    },
+    {
+      "games": [
+        1,
+        50
+      ],
+      "opponent": "elo-1800-setting",
+      "gameCount": 16,
+      "acceptedOwnMoves": 822,
+      "modelCallsDuringGames": 926,
+      "reasoningTokensDuringGames": 1177608,
+      "outputTokensDuringGames": 1255316,
+      "reasoningTokensPerAcceptedMove": 1432.6131386861314,
+      "medianPerGameReasoningTokensPerMove": 1321.695701357466
+    },
+    {
+      "games": [
+        1,
+        50
+      ],
+      "opponent": "full-strength",
+      "gameCount": 18,
+      "acceptedOwnMoves": 562,
+      "modelCallsDuringGames": 758,
+      "reasoningTokensDuringGames": 728491,
+      "outputTokensDuringGames": 794621,
+      "reasoningTokensPerAcceptedMove": 1296.247330960854,
+      "medianPerGameReasoningTokensPerMove": 1254.0092460881933
+    },
+    {
+      "games": [
+        51,
+        100
+      ],
+      "opponent": "all-rated",
+      "gameCount": 34,
+      "acceptedOwnMoves": 1406,
+      "modelCallsDuringGames": 1756,
+      "reasoningTokensDuringGames": 1048423,
+      "outputTokensDuringGames": 1175636,
+      "reasoningTokensPerAcceptedMove": 745.6778093883357,
+      "medianPerGameReasoningTokensPerMove": 542.3456038135594
+    },
+    {
+      "games": [
+        51,
+        100
+      ],
+      "opponent": "skill-0",
+      "gameCount": 18,
+      "acceptedOwnMoves": 714,
+      "modelCallsDuringGames": 852,
+      "reasoningTokensDuringGames": 427683,
+      "outputTokensDuringGames": 490512,
+      "reasoningTokensPerAcceptedMove": 598.9957983193277,
+      "medianPerGameReasoningTokensPerMove": 493.8571428571429
+    },
+    {
+      "games": [
+        51,
+        100
+      ],
+      "opponent": "elo-1800-setting",
+      "gameCount": 16,
+      "acceptedOwnMoves": 692,
+      "modelCallsDuringGames": 904,
+      "reasoningTokensDuringGames": 620740,
+      "outputTokensDuringGames": 685124,
+      "reasoningTokensPerAcceptedMove": 897.0231213872833,
+      "medianPerGameReasoningTokensPerMove": 669.0122189638319
+    },
+    {
+      "games": [
+        51,
+        100
+      ],
+      "opponent": "full-strength",
+      "gameCount": 16,
+      "acceptedOwnMoves": 474,
+      "modelCallsDuringGames": 608,
+      "reasoningTokensDuringGames": 381109,
+      "outputTokensDuringGames": 431229,
+      "reasoningTokensPerAcceptedMove": 804.0274261603375,
+      "medianPerGameReasoningTokensPerMove": 790.6603535353536
+    },
+    {
+      "games": [
+        101,
+        150
+      ],
+      "opponent": "all-rated",
+      "gameCount": 34,
+      "acceptedOwnMoves": 1645,
+      "modelCallsDuringGames": 1676,
+      "reasoningTokensDuringGames": 1060742,
+      "outputTokensDuringGames": 1222857,
+      "reasoningTokensPerAcceptedMove": 644.8279635258359,
+      "medianPerGameReasoningTokensPerMove": 487.98037735849056
+    },
+    {
+      "games": [
+        101,
+        150
+      ],
+      "opponent": "skill-0",
+      "gameCount": 16,
+      "acceptedOwnMoves": 677,
+      "modelCallsDuringGames": 685,
+      "reasoningTokensDuringGames": 385206,
+      "outputTokensDuringGames": 443567,
+      "reasoningTokensPerAcceptedMove": 568.9896602658789,
+      "medianPerGameReasoningTokensPerMove": 407.1904761904762
+    },
+    {
+      "games": [
+        101,
+        150
+      ],
+      "opponent": "elo-1800-setting",
+      "gameCount": 18,
+      "acceptedOwnMoves": 968,
+      "modelCallsDuringGames": 991,
+      "reasoningTokensDuringGames": 675536,
+      "outputTokensDuringGames": 779290,
+      "reasoningTokensPerAcceptedMove": 697.8677685950413,
+      "medianPerGameReasoningTokensPerMove": 516.6957516339869
+    },
+    {
+      "games": [
+        101,
+        150
+      ],
+      "opponent": "full-strength",
+      "gameCount": 16,
+      "acceptedOwnMoves": 442,
+      "modelCallsDuringGames": 458,
+      "reasoningTokensDuringGames": 266532,
+      "outputTokensDuringGames": 319336,
+      "reasoningTokensPerAcceptedMove": 603.0135746606335,
+      "medianPerGameReasoningTokensPerMove": 524.6077441077441
+    },
+    {
+      "games": [
+        151,
+        200
+      ],
+      "opponent": "all-rated",
+      "gameCount": 32,
+      "acceptedOwnMoves": 1283,
+      "modelCallsDuringGames": 1316,
+      "reasoningTokensDuringGames": 458927,
+      "outputTokensDuringGames": 574790,
+      "reasoningTokensPerAcceptedMove": 357.6983632112237,
+      "medianPerGameReasoningTokensPerMove": 310.8892195767196
+    },
+    {
+      "games": [
+        151,
+        200
+      ],
+      "opponent": "skill-0",
+      "gameCount": 16,
+      "acceptedOwnMoves": 603,
+      "modelCallsDuringGames": 615,
+      "reasoningTokensDuringGames": 203248,
+      "outputTokensDuringGames": 253667,
+      "reasoningTokensPerAcceptedMove": 337.06135986733,
+      "medianPerGameReasoningTokensPerMove": 295.31141345427056
+    },
+    {
+      "games": [
+        151,
+        200
+      ],
+      "opponent": "elo-1800-setting",
+      "gameCount": 16,
+      "acceptedOwnMoves": 680,
+      "modelCallsDuringGames": 701,
+      "reasoningTokensDuringGames": 255679,
+      "outputTokensDuringGames": 321123,
+      "reasoningTokensPerAcceptedMove": 375.9985294117647,
+      "medianPerGameReasoningTokensPerMove": 351.8785714285714
+    },
+    {
+      "games": [
+        151,
+        200
+      ],
+      "opponent": "full-strength",
+      "gameCount": 18,
+      "acceptedOwnMoves": 496,
+      "modelCallsDuringGames": 516,
+      "reasoningTokensDuringGames": 184220,
+      "outputTokensDuringGames": 229860,
+      "reasoningTokensPerAcceptedMove": 371.41129032258067,
+      "medianPerGameReasoningTokensPerMove": 329.07428571428574
+    }
+  ],
+  "byGame": [
+    {
+      "game": 1,
+      "opponent": "full-strength",
+      "modelCalls": 63,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 2041740,
+        "cached_input_tokens": 2001664,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13224,
+        "reasoning_output_tokens": 9537,
+        "total_tokens": 2054964
+      }
+    },
+    {
+      "game": 2,
+      "opponent": "full-strength",
+      "modelCalls": 65,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 4235921,
+        "cached_input_tokens": 4188160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20183,
+        "reasoning_output_tokens": 15683,
+        "total_tokens": 4256104
+      }
+    },
+    {
+      "game": 3,
+      "opponent": "skill-0",
+      "modelCalls": 26,
+      "ownMoves": 26,
+      "usage": {
+        "input_tokens": 2614838,
+        "cached_input_tokens": 2587136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10874,
+        "reasoning_output_tokens": 9028,
+        "total_tokens": 2625712
+      }
+    },
+    {
+      "game": 4,
+      "opponent": "skill-0",
+      "modelCalls": 67,
+      "ownMoves": 64,
+      "usage": {
+        "input_tokens": 6294050,
+        "cached_input_tokens": 6072064,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 144487,
+        "reasoning_output_tokens": 139687,
+        "total_tokens": 6438537
+      }
+    },
+    {
+      "game": 5,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 35,
+      "ownMoves": 35,
+      "usage": {
+        "input_tokens": 1342886,
+        "cached_input_tokens": 1305472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15455,
+        "reasoning_output_tokens": 13023,
+        "total_tokens": 1358341
+      }
+    },
+    {
+      "game": 6,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 53,
+      "ownMoves": 52,
+      "usage": {
+        "input_tokens": 5301934,
+        "cached_input_tokens": 5089536,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 73552,
+        "reasoning_output_tokens": 69656,
+        "total_tokens": 5375486
+      }
+    },
+    {
+      "game": 7,
+      "opponent": "full-strength",
+      "modelCalls": 31,
+      "ownMoves": 31,
+      "usage": {
+        "input_tokens": 1146711,
+        "cached_input_tokens": 1098368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30351,
+        "reasoning_output_tokens": 27820,
+        "total_tokens": 1177062
+      }
+    },
+    {
+      "game": 8,
+      "opponent": "full-strength",
+      "modelCalls": 32,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 3109803,
+        "cached_input_tokens": 3044352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46671,
+        "reasoning_output_tokens": 44082,
+        "total_tokens": 3156474
+      }
+    },
+    {
+      "game": 9,
+      "opponent": "skill-0",
+      "modelCalls": 62,
+      "ownMoves": 56,
+      "usage": {
+        "input_tokens": 8346287,
+        "cached_input_tokens": 8178432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 106116,
+        "reasoning_output_tokens": 99850,
+        "total_tokens": 8452403
+      }
+    },
+    {
+      "game": 10,
+      "opponent": "skill-0",
+      "modelCalls": 23,
+      "ownMoves": 23,
+      "usage": {
+        "input_tokens": 1878552,
+        "cached_input_tokens": 1838720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25099,
+        "reasoning_output_tokens": 23424,
+        "total_tokens": 1903651
+      }
+    },
+    {
+      "game": 11,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 47,
+      "ownMoves": 45,
+      "usage": {
+        "input_tokens": 6976963,
+        "cached_input_tokens": 6806400,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 77093,
+        "reasoning_output_tokens": 73481,
+        "total_tokens": 7054056
+      }
+    },
+    {
+      "game": 12,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 59,
+      "ownMoves": 57,
+      "usage": {
+        "input_tokens": 4092013,
+        "cached_input_tokens": 3928320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 81232,
+        "reasoning_output_tokens": 76817,
+        "total_tokens": 4173245
+      }
+    },
+    {
+      "game": 13,
+      "opponent": "full-strength",
+      "modelCalls": 21,
+      "ownMoves": 22,
+      "usage": {
+        "input_tokens": 3436065,
+        "cached_input_tokens": 3382912,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41934,
+        "reasoning_output_tokens": 40416,
+        "total_tokens": 3477999
+      }
+    },
+    {
+      "game": 14,
+      "opponent": "full-strength",
+      "modelCalls": 29,
+      "ownMoves": 22,
+      "usage": {
+        "input_tokens": 4236029,
+        "cached_input_tokens": 4016256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 44575,
+        "reasoning_output_tokens": 39473,
+        "total_tokens": 4280604
+      }
+    },
+    {
+      "game": 15,
+      "opponent": "skill-0",
+      "modelCalls": 34,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 2875084,
+        "cached_input_tokens": 2734976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 51939,
+        "reasoning_output_tokens": 49173,
+        "total_tokens": 2927023
+      }
+    },
+    {
+      "game": 16,
+      "opponent": "skill-0",
+      "modelCalls": 32,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 5453224,
+        "cached_input_tokens": 5356160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 77867,
+        "reasoning_output_tokens": 75165,
+        "total_tokens": 5531091
+      }
+    },
+    {
+      "game": 17,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 55,
+      "ownMoves": 55,
+      "usage": {
+        "input_tokens": 3318222,
+        "cached_input_tokens": 3231232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 51128,
+        "reasoning_output_tokens": 46817,
+        "total_tokens": 3369350
+      }
+    },
+    {
+      "game": 18,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 105,
+      "ownMoves": 83,
+      "usage": {
+        "input_tokens": 11968629,
+        "cached_input_tokens": 11424128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 197588,
+        "reasoning_output_tokens": 187936,
+        "total_tokens": 12166217
+      }
+    },
+    {
+      "game": 19,
+      "opponent": "full-strength",
+      "modelCalls": 41,
+      "ownMoves": 40,
+      "usage": {
+        "input_tokens": 2058625,
+        "cached_input_tokens": 1971712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 44581,
+        "reasoning_output_tokens": 41071,
+        "total_tokens": 2103206
+      }
+    },
+    {
+      "game": 20,
+      "opponent": "full-strength",
+      "modelCalls": 39,
+      "ownMoves": 38,
+      "usage": {
+        "input_tokens": 2087462,
+        "cached_input_tokens": 1936384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 66106,
+        "reasoning_output_tokens": 62340,
+        "total_tokens": 2153568
+      }
+    },
+    {
+      "game": 21,
+      "opponent": "skill-0",
+      "modelCalls": 36,
+      "ownMoves": 36,
+      "usage": {
+        "input_tokens": 2066602,
+        "cached_input_tokens": 1986048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 58420,
+        "reasoning_output_tokens": 55501,
+        "total_tokens": 2125022
+      }
+    },
+    {
+      "game": 22,
+      "opponent": "skill-0",
+      "modelCalls": 31,
+      "ownMoves": 31,
+      "usage": {
+        "input_tokens": 4770221,
+        "cached_input_tokens": 4592384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 65653,
+        "reasoning_output_tokens": 63382,
+        "total_tokens": 4835874
+      }
+    },
+    {
+      "game": 23,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 31,
+      "ownMoves": 31,
+      "usage": {
+        "input_tokens": 1321953,
+        "cached_input_tokens": 1273600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29636,
+        "reasoning_output_tokens": 27324,
+        "total_tokens": 1351589
+      }
+    },
+    {
+      "game": 24,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 72,
+      "ownMoves": 66,
+      "usage": {
+        "input_tokens": 10033642,
+        "cached_input_tokens": 9616256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 135316,
+        "reasoning_output_tokens": 127926,
+        "total_tokens": 10168958
+      }
+    },
+    {
+      "game": 25,
+      "opponent": "full-strength",
+      "modelCalls": 37,
+      "ownMoves": 37,
+      "usage": {
+        "input_tokens": 2951589,
+        "cached_input_tokens": 2882048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46856,
+        "reasoning_output_tokens": 43353,
+        "total_tokens": 2998445
+      }
+    },
+    {
+      "game": 26,
+      "opponent": "full-strength",
+      "modelCalls": 49,
+      "ownMoves": 44,
+      "usage": {
+        "input_tokens": 7419839,
+        "cached_input_tokens": 7125248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 115220,
+        "reasoning_output_tokens": 108171,
+        "total_tokens": 7535059
+      }
+    },
+    {
+      "game": 27,
+      "opponent": "skill-0",
+      "modelCalls": 25,
+      "ownMoves": 25,
+      "usage": {
+        "input_tokens": 1750066,
+        "cached_input_tokens": 1689856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15995,
+        "reasoning_output_tokens": 14287,
+        "total_tokens": 1766061
+      }
+    },
+    {
+      "game": 28,
+      "opponent": "skill-0",
+      "modelCalls": 44,
+      "ownMoves": 45,
+      "usage": {
+        "input_tokens": 5839661,
+        "cached_input_tokens": 5743360,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 68311,
+        "reasoning_output_tokens": 64975,
+        "total_tokens": 5907972
+      }
+    },
+    {
+      "game": 29,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 40,
+      "ownMoves": 40,
+      "usage": {
+        "input_tokens": 2403384,
+        "cached_input_tokens": 2302336,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 71629,
+        "reasoning_output_tokens": 68165,
+        "total_tokens": 2475013
+      }
+    },
+    {
+      "game": 30,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 85,
+      "ownMoves": 72,
+      "usage": {
+        "input_tokens": 10307560,
+        "cached_input_tokens": 9648768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 200574,
+        "reasoning_output_tokens": 189423,
+        "total_tokens": 10508134
+      }
+    },
+    {
+      "game": 31,
+      "opponent": "full-strength",
+      "modelCalls": 82,
+      "ownMoves": 42,
+      "usage": {
+        "input_tokens": 6822335,
+        "cached_input_tokens": 6669952,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 64039,
+        "reasoning_output_tokens": 58490,
+        "total_tokens": 6886374
+      }
+    },
+    {
+      "game": 32,
+      "opponent": "full-strength",
+      "modelCalls": 60,
+      "ownMoves": 29,
+      "usage": {
+        "input_tokens": 9872104,
+        "cached_input_tokens": 9620992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 88785,
+        "reasoning_output_tokens": 82925,
+        "total_tokens": 9960889
+      }
+    },
+    {
+      "game": 33,
+      "opponent": "skill-0",
+      "modelCalls": 38,
+      "ownMoves": 38,
+      "usage": {
+        "input_tokens": 2037554,
+        "cached_input_tokens": 1994880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18900,
+        "reasoning_output_tokens": 15975,
+        "total_tokens": 2056454
+      }
+    },
+    {
+      "game": 34,
+      "opponent": "skill-0",
+      "modelCalls": 32,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 3132762,
+        "cached_input_tokens": 3015040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 28803,
+        "reasoning_output_tokens": 26254,
+        "total_tokens": 3161565
+      }
+    },
+    {
+      "game": 35,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 76,
+      "ownMoves": 69,
+      "usage": {
+        "input_tokens": 10276308,
+        "cached_input_tokens": 10088576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 119139,
+        "reasoning_output_tokens": 111507,
+        "total_tokens": 10395447
+      }
+    },
+    {
+      "game": 36,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 35,
+      "ownMoves": 34,
+      "usage": {
+        "input_tokens": 3836187,
+        "cached_input_tokens": 3694592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 47149,
+        "reasoning_output_tokens": 44331,
+        "total_tokens": 3883336
+      }
+    },
+    {
+      "game": 37,
+      "opponent": "full-strength",
+      "modelCalls": 29,
+      "ownMoves": 27,
+      "usage": {
+        "input_tokens": 1119741,
+        "cached_input_tokens": 1069696,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24706,
+        "reasoning_output_tokens": 22573,
+        "total_tokens": 1144447
+      }
+    },
+    {
+      "game": 38,
+      "opponent": "full-strength",
+      "modelCalls": 35,
+      "ownMoves": 34,
+      "usage": {
+        "input_tokens": 3256548,
+        "cached_input_tokens": 3185152,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 50695,
+        "reasoning_output_tokens": 47938,
+        "total_tokens": 3307243
+      }
+    },
+    {
+      "game": 39,
+      "opponent": "skill-0",
+      "modelCalls": 54,
+      "ownMoves": 54,
+      "usage": {
+        "input_tokens": 2847179,
+        "cached_input_tokens": 2785408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26599,
+        "reasoning_output_tokens": 23059,
+        "total_tokens": 2873778
+      }
+    },
+    {
+      "game": 40,
+      "opponent": "skill-0",
+      "modelCalls": 33,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 3459397,
+        "cached_input_tokens": 3424128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15263,
+        "reasoning_output_tokens": 13105,
+        "total_tokens": 3474660
+      }
+    },
+    {
+      "game": 41,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 56,
+      "ownMoves": 56,
+      "usage": {
+        "input_tokens": 9578265,
+        "cached_input_tokens": 9487616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53873,
+        "reasoning_output_tokens": 50173,
+        "total_tokens": 9632138
+      }
+    },
+    {
+      "game": 42,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 117,
+      "ownMoves": 70,
+      "usage": {
+        "input_tokens": 7440876,
+        "cached_input_tokens": 7334272,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46774,
+        "reasoning_output_tokens": 39714,
+        "total_tokens": 7487650
+      }
+    },
+    {
+      "game": 43,
+      "opponent": "full-strength",
+      "modelCalls": 49,
+      "ownMoves": 24,
+      "usage": {
+        "input_tokens": 7820741,
+        "cached_input_tokens": 7777280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25226,
+        "reasoning_output_tokens": 22255,
+        "total_tokens": 7845967
+      }
+    },
+    {
+      "game": 44,
+      "opponent": "full-strength",
+      "modelCalls": 38,
+      "ownMoves": 19,
+      "usage": {
+        "input_tokens": 7474690,
+        "cached_input_tokens": 7446144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15473,
+        "reasoning_output_tokens": 13336,
+        "total_tokens": 7490163
+      }
+    },
+    {
+      "game": 45,
+      "opponent": "skill-0",
+      "modelCalls": 93,
+      "ownMoves": 49,
+      "usage": {
+        "input_tokens": 9520419,
+        "cached_input_tokens": 9422208,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 43306,
+        "reasoning_output_tokens": 36639,
+        "total_tokens": 9563725
+      }
+    },
+    {
+      "game": 46,
+      "opponent": "skill-0",
+      "modelCalls": 74,
+      "ownMoves": 39,
+      "usage": {
+        "input_tokens": 8710677,
+        "cached_input_tokens": 8622336,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 55965,
+        "reasoning_output_tokens": 51566,
+        "total_tokens": 8766642
+      }
+    },
+    {
+      "game": 47,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 43,
+      "ownMoves": 41,
+      "usage": {
+        "input_tokens": 2427837,
+        "cached_input_tokens": 2300928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41451,
+        "reasoning_output_tokens": 38636,
+        "total_tokens": 2469288
+      }
+    },
+    {
+      "game": 48,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 17,
+      "ownMoves": 16,
+      "usage": {
+        "input_tokens": 2035444,
+        "cached_input_tokens": 2013824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13727,
+        "reasoning_output_tokens": 12679,
+        "total_tokens": 2049171
+      }
+    },
+    {
+      "game": 49,
+      "opponent": "full-strength",
+      "modelCalls": 20,
+      "ownMoves": 19,
+      "usage": {
+        "input_tokens": 3348317,
+        "cached_input_tokens": 3311744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29456,
+        "reasoning_output_tokens": 25390,
+        "total_tokens": 3377773
+      }
+    },
+    {
+      "game": 50,
+      "opponent": "full-strength",
+      "modelCalls": 38,
+      "ownMoves": 37,
+      "usage": {
+        "input_tokens": 1569534,
+        "cached_input_tokens": 1497216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26540,
+        "reasoning_output_tokens": 23638,
+        "total_tokens": 1596074
+      }
+    },
+    {
+      "game": 51,
+      "opponent": "skill-0",
+      "modelCalls": 29,
+      "ownMoves": 28,
+      "usage": {
+        "input_tokens": 2744007,
+        "cached_input_tokens": 2710528,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15894,
+        "reasoning_output_tokens": 13816,
+        "total_tokens": 2759901
+      }
+    },
+    {
+      "game": 52,
+      "opponent": "skill-0",
+      "modelCalls": 95,
+      "ownMoves": 88,
+      "usage": {
+        "input_tokens": 12326005,
+        "cached_input_tokens": 12115712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 131256,
+        "reasoning_output_tokens": 119421,
+        "total_tokens": 12457261
+      }
+    },
+    {
+      "game": 53,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 44,
+      "ownMoves": 43,
+      "usage": {
+        "input_tokens": 5320535,
+        "cached_input_tokens": 5229568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 66364,
+        "reasoning_output_tokens": 63044,
+        "total_tokens": 5386899
+      }
+    },
+    {
+      "game": 54,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 52,
+      "ownMoves": 25,
+      "usage": {
+        "input_tokens": 1965841,
+        "cached_input_tokens": 1919616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25087,
+        "reasoning_output_tokens": 22062,
+        "total_tokens": 1990928
+      }
+    },
+    {
+      "game": 55,
+      "opponent": "full-strength",
+      "modelCalls": 63,
+      "ownMoves": 31,
+      "usage": {
+        "input_tokens": 8664259,
+        "cached_input_tokens": 8576512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 61979,
+        "reasoning_output_tokens": 58358,
+        "total_tokens": 8726238
+      }
+    },
+    {
+      "game": 56,
+      "opponent": "full-strength",
+      "modelCalls": 36,
+      "ownMoves": 36,
+      "usage": {
+        "input_tokens": 1476309,
+        "cached_input_tokens": 1422208,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 32024,
+        "reasoning_output_tokens": 29426,
+        "total_tokens": 1508333
+      }
+    },
+    {
+      "game": 57,
+      "opponent": "skill-0",
+      "modelCalls": 36,
+      "ownMoves": 36,
+      "usage": {
+        "input_tokens": 3721669,
+        "cached_input_tokens": 3669248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30703,
+        "reasoning_output_tokens": 28215,
+        "total_tokens": 3752372
+      }
+    },
+    {
+      "game": 58,
+      "opponent": "skill-0",
+      "modelCalls": 36,
+      "ownMoves": 36,
+      "usage": {
+        "input_tokens": 1528302,
+        "cached_input_tokens": 1487104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20811,
+        "reasoning_output_tokens": 18400,
+        "total_tokens": 1549113
+      }
+    },
+    {
+      "game": 59,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 66,
+      "ownMoves": 65,
+      "usage": {
+        "input_tokens": 8785224,
+        "cached_input_tokens": 8637568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 101574,
+        "reasoning_output_tokens": 96853,
+        "total_tokens": 8886798
+      }
+    },
+    {
+      "game": 60,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 48,
+      "ownMoves": 23,
+      "usage": {
+        "input_tokens": 1727591,
+        "cached_input_tokens": 1698560,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10946,
+        "reasoning_output_tokens": 8180,
+        "total_tokens": 1738537
+      }
+    },
+    {
+      "game": 61,
+      "opponent": "full-strength",
+      "modelCalls": 67,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 7765693,
+        "cached_input_tokens": 7708288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30062,
+        "reasoning_output_tokens": 26131,
+        "total_tokens": 7795755
+      }
+    },
+    {
+      "game": 62,
+      "opponent": "full-strength",
+      "modelCalls": 73,
+      "ownMoves": 36,
+      "usage": {
+        "input_tokens": 3278310,
+        "cached_input_tokens": 3215232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 32799,
+        "reasoning_output_tokens": 28421,
+        "total_tokens": 3311109
+      }
+    },
+    {
+      "game": 63,
+      "opponent": "skill-0",
+      "modelCalls": 59,
+      "ownMoves": 34,
+      "usage": {
+        "input_tokens": 5976187,
+        "cached_input_tokens": 5924096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24735,
+        "reasoning_output_tokens": 21244,
+        "total_tokens": 6000922
+      }
+    },
+    {
+      "game": 64,
+      "opponent": "skill-0",
+      "modelCalls": 38,
+      "ownMoves": 19,
+      "usage": {
+        "input_tokens": 5289590,
+        "cached_input_tokens": 5258880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15326,
+        "reasoning_output_tokens": 13098,
+        "total_tokens": 5304916
+      }
+    },
+    {
+      "game": 65,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 69,
+      "ownMoves": 34,
+      "usage": {
+        "input_tokens": 13183369,
+        "cached_input_tokens": 13085056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 68752,
+        "reasoning_output_tokens": 64331,
+        "total_tokens": 13252121
+      }
+    },
+    {
+      "game": 66,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 75,
+      "ownMoves": 73,
+      "usage": {
+        "input_tokens": 6630122,
+        "cached_input_tokens": 6496512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 79667,
+        "reasoning_output_tokens": 74495,
+        "total_tokens": 6709789
+      }
+    },
+    {
+      "game": 67,
+      "opponent": "full-strength",
+      "modelCalls": 34,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 2621961,
+        "cached_input_tokens": 2570624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31712,
+        "reasoning_output_tokens": 29567,
+        "total_tokens": 2653673
+      }
+    },
+    {
+      "game": 68,
+      "opponent": "full-strength",
+      "modelCalls": 21,
+      "ownMoves": 20,
+      "usage": {
+        "input_tokens": 2539499,
+        "cached_input_tokens": 2504832,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30134,
+        "reasoning_output_tokens": 28764,
+        "total_tokens": 2569633
+      }
+    },
+    {
+      "game": 69,
+      "opponent": "skill-0",
+      "modelCalls": 32,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 5757541,
+        "cached_input_tokens": 5696640,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41640,
+        "reasoning_output_tokens": 39692,
+        "total_tokens": 5799181
+      }
+    },
+    {
+      "game": 70,
+      "opponent": "skill-0",
+      "modelCalls": 45,
+      "ownMoves": 36,
+      "usage": {
+        "input_tokens": 5618068,
+        "cached_input_tokens": 5545088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35823,
+        "reasoning_output_tokens": 31201,
+        "total_tokens": 5653891
+      }
+    },
+    {
+      "game": 71,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 13,
+      "ownMoves": 12,
+      "usage": {
+        "input_tokens": 764978,
+        "cached_input_tokens": 754944,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3347,
+        "reasoning_output_tokens": 2416,
+        "total_tokens": 768325
+      }
+    },
+    {
+      "game": 72,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 65,
+      "ownMoves": 65,
+      "usage": {
+        "input_tokens": 7232514,
+        "cached_input_tokens": 7109120,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 79314,
+        "reasoning_output_tokens": 74479,
+        "total_tokens": 7311828
+      }
+    },
+    {
+      "game": 73,
+      "opponent": "full-strength",
+      "modelCalls": 42,
+      "ownMoves": 41,
+      "usage": {
+        "input_tokens": 7217377,
+        "cached_input_tokens": 7141760,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 49454,
+        "reasoning_output_tokens": 46386,
+        "total_tokens": 7266831
+      }
+    },
+    {
+      "game": 74,
+      "opponent": "full-strength",
+      "modelCalls": 40,
+      "ownMoves": 24,
+      "usage": {
+        "input_tokens": 4278121,
+        "cached_input_tokens": 4218368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29122,
+        "reasoning_output_tokens": 23131,
+        "total_tokens": 4307243
+      }
+    },
+    {
+      "game": 75,
+      "opponent": "skill-0",
+      "modelCalls": 55,
+      "ownMoves": 29,
+      "usage": {
+        "input_tokens": 2830914,
+        "cached_input_tokens": 2797312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9407,
+        "reasoning_output_tokens": 6294,
+        "total_tokens": 2840321
+      }
+    },
+    {
+      "game": 76,
+      "opponent": "skill-0",
+      "modelCalls": 98,
+      "ownMoves": 48,
+      "usage": {
+        "input_tokens": 9233861,
+        "cached_input_tokens": 9154304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35989,
+        "reasoning_output_tokens": 30317,
+        "total_tokens": 9269850
+      }
+    },
+    {
+      "game": 77,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 91,
+      "ownMoves": 45,
+      "usage": {
+        "input_tokens": 15819730,
+        "cached_input_tokens": 15699840,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 79372,
+        "reasoning_output_tokens": 74017,
+        "total_tokens": 15899102
+      }
+    },
+    {
+      "game": 78,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 124,
+      "ownMoves": 59,
+      "usage": {
+        "input_tokens": 7544528,
+        "cached_input_tokens": 7431936,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41240,
+        "reasoning_output_tokens": 30848,
+        "total_tokens": 7585768
+      }
+    },
+    {
+      "game": 79,
+      "opponent": "full-strength",
+      "modelCalls": 24,
+      "ownMoves": 23,
+      "usage": {
+        "input_tokens": 4988919,
+        "cached_input_tokens": 4958848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14090,
+        "reasoning_output_tokens": 12118,
+        "total_tokens": 5003009
+      }
+    },
+    {
+      "game": 80,
+      "opponent": "full-strength",
+      "modelCalls": 18,
+      "ownMoves": 17,
+      "usage": {
+        "input_tokens": 587234,
+        "cached_input_tokens": 573824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3478,
+        "reasoning_output_tokens": 2167,
+        "total_tokens": 590712
+      }
+    },
+    {
+      "game": 81,
+      "opponent": "skill-0",
+      "modelCalls": 23,
+      "ownMoves": 23,
+      "usage": {
+        "input_tokens": 1136789,
+        "cached_input_tokens": 1118848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3874,
+        "reasoning_output_tokens": 2213,
+        "total_tokens": 1140663
+      }
+    },
+    {
+      "game": 82,
+      "opponent": "skill-0",
+      "modelCalls": 81,
+      "ownMoves": 81,
+      "usage": {
+        "input_tokens": 7534618,
+        "cached_input_tokens": 7446144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26059,
+        "reasoning_output_tokens": 19882,
+        "total_tokens": 7560677
+      }
+    },
+    {
+      "game": 83,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 47,
+      "ownMoves": 47,
+      "usage": {
+        "input_tokens": 7315461,
+        "cached_input_tokens": 7267712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14507,
+        "reasoning_output_tokens": 10910,
+        "total_tokens": 7329968
+      }
+    },
+    {
+      "game": 84,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 70,
+      "ownMoves": 64,
+      "usage": {
+        "input_tokens": 11493796,
+        "cached_input_tokens": 11163008,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31073,
+        "reasoning_output_tokens": 25441,
+        "total_tokens": 11524869
+      }
+    },
+    {
+      "game": 85,
+      "opponent": "full-strength",
+      "modelCalls": 27,
+      "ownMoves": 26,
+      "usage": {
+        "input_tokens": 2530729,
+        "cached_input_tokens": 2505472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9357,
+        "reasoning_output_tokens": 7474,
+        "total_tokens": 2540086
+      }
+    },
+    {
+      "game": 86,
+      "opponent": "full-strength",
+      "modelCalls": 28,
+      "ownMoves": 26,
+      "usage": {
+        "input_tokens": 3258562,
+        "cached_input_tokens": 3092096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10775,
+        "reasoning_output_tokens": 7932,
+        "total_tokens": 3269337
+      }
+    },
+    {
+      "game": 87,
+      "opponent": "skill-0",
+      "modelCalls": 26,
+      "ownMoves": 25,
+      "usage": {
+        "input_tokens": 3684535,
+        "cached_input_tokens": 3656960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11657,
+        "reasoning_output_tokens": 9110,
+        "total_tokens": 3696192
+      }
+    },
+    {
+      "game": 88,
+      "opponent": "skill-0",
+      "modelCalls": 41,
+      "ownMoves": 41,
+      "usage": {
+        "input_tokens": 7237103,
+        "cached_input_tokens": 7103232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18285,
+        "reasoning_output_tokens": 15455,
+        "total_tokens": 7255388
+      }
+    },
+    {
+      "game": 89,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 35,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 7581882,
+        "cached_input_tokens": 7441536,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 27019,
+        "reasoning_output_tokens": 23962,
+        "total_tokens": 7608901
+      }
+    },
+    {
+      "game": 90,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 41,
+      "ownMoves": 41,
+      "usage": {
+        "input_tokens": 1950987,
+        "cached_input_tokens": 1909248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15609,
+        "reasoning_output_tokens": 12754,
+        "total_tokens": 1966596
+      }
+    },
+    {
+      "game": 91,
+      "opponent": "full-strength",
+      "modelCalls": 38,
+      "ownMoves": 36,
+      "usage": {
+        "input_tokens": 5094778,
+        "cached_input_tokens": 4929408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29607,
+        "reasoning_output_tokens": 26928,
+        "total_tokens": 5124385
+      }
+    },
+    {
+      "game": 92,
+      "opponent": "full-strength",
+      "modelCalls": 27,
+      "ownMoves": 26,
+      "usage": {
+        "input_tokens": 4999927,
+        "cached_input_tokens": 4951296,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30223,
+        "reasoning_output_tokens": 28274,
+        "total_tokens": 5030150
+      }
+    },
+    {
+      "game": 93,
+      "opponent": "skill-0",
+      "modelCalls": 29,
+      "ownMoves": 29,
+      "usage": {
+        "input_tokens": 1050404,
+        "cached_input_tokens": 1027072,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5211,
+        "reasoning_output_tokens": 3468,
+        "total_tokens": 1055615
+      }
+    },
+    {
+      "game": 94,
+      "opponent": "skill-0",
+      "modelCalls": 26,
+      "ownMoves": 26,
+      "usage": {
+        "input_tokens": 1492464,
+        "cached_input_tokens": 1468032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8011,
+        "reasoning_output_tokens": 6450,
+        "total_tokens": 1500475
+      }
+    },
+    {
+      "game": 95,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 33,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 2746070,
+        "cached_input_tokens": 2636544,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20231,
+        "reasoning_output_tokens": 17979,
+        "total_tokens": 2766301
+      }
+    },
+    {
+      "game": 96,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 31,
+      "ownMoves": 31,
+      "usage": {
+        "input_tokens": 3747271,
+        "cached_input_tokens": 3706752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 21022,
+        "reasoning_output_tokens": 18969,
+        "total_tokens": 3768293
+      }
+    },
+    {
+      "game": 97,
+      "opponent": "full-strength",
+      "modelCalls": 41,
+      "ownMoves": 39,
+      "usage": {
+        "input_tokens": 5412777,
+        "cached_input_tokens": 5357824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25958,
+        "reasoning_output_tokens": 17318,
+        "total_tokens": 5438735
+      }
+    },
+    {
+      "game": 98,
+      "opponent": "full-strength",
+      "modelCalls": 29,
+      "ownMoves": 28,
+      "usage": {
+        "input_tokens": 1724899,
+        "cached_input_tokens": 1696128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10455,
+        "reasoning_output_tokens": 8714,
+        "total_tokens": 1735354
+      }
+    },
+    {
+      "game": 99,
+      "opponent": "skill-0",
+      "modelCalls": 56,
+      "ownMoves": 56,
+      "usage": {
+        "input_tokens": 5744272,
+        "cached_input_tokens": 5675136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 31241,
+        "reasoning_output_tokens": 27680,
+        "total_tokens": 5775513
+      }
+    },
+    {
+      "game": 100,
+      "opponent": "skill-0",
+      "modelCalls": 47,
+      "ownMoves": 47,
+      "usage": {
+        "input_tokens": 7345325,
+        "cached_input_tokens": 7136384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24590,
+        "reasoning_output_tokens": 21727,
+        "total_tokens": 7369915
+      }
+    },
+    {
+      "game": 101,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 38,
+      "ownMoves": 37,
+      "usage": {
+        "input_tokens": 7868434,
+        "cached_input_tokens": 7805952,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 39321,
+        "reasoning_output_tokens": 36713,
+        "total_tokens": 7907755
+      }
+    },
+    {
+      "game": 102,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 52,
+      "ownMoves": 51,
+      "usage": {
+        "input_tokens": 2795173,
+        "cached_input_tokens": 2692608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29872,
+        "reasoning_output_tokens": 26485,
+        "total_tokens": 2825045
+      }
+    },
+    {
+      "game": 103,
+      "opponent": "full-strength",
+      "modelCalls": 34,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 5374856,
+        "cached_input_tokens": 5328512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25181,
+        "reasoning_output_tokens": 22365,
+        "total_tokens": 5400037
+      }
+    },
+    {
+      "game": 104,
+      "opponent": "full-strength",
+      "modelCalls": 33,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 6658167,
+        "cached_input_tokens": 6608256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 28655,
+        "reasoning_output_tokens": 26111,
+        "total_tokens": 6686822
+      }
+    },
+    {
+      "game": 105,
+      "opponent": "skill-0",
+      "modelCalls": 47,
+      "ownMoves": 44,
+      "usage": {
+        "input_tokens": 5020886,
+        "cached_input_tokens": 4885376,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24831,
+        "reasoning_output_tokens": 15923,
+        "total_tokens": 5045717
+      }
+    },
+    {
+      "game": 106,
+      "opponent": "skill-0",
+      "modelCalls": 33,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 2219647,
+        "cached_input_tokens": 2186624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11832,
+        "reasoning_output_tokens": 9664,
+        "total_tokens": 2231479
+      }
+    },
+    {
+      "game": 107,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 49,
+      "ownMoves": 49,
+      "usage": {
+        "input_tokens": 5191580,
+        "cached_input_tokens": 5133056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25197,
+        "reasoning_output_tokens": 22043,
+        "total_tokens": 5216777
+      }
+    },
+    {
+      "game": 108,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 25,
+      "ownMoves": 25,
+      "usage": {
+        "input_tokens": 3633306,
+        "cached_input_tokens": 3603968,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13715,
+        "reasoning_output_tokens": 12141,
+        "total_tokens": 3647021
+      }
+    },
+    {
+      "game": 109,
+      "opponent": "full-strength",
+      "modelCalls": 23,
+      "ownMoves": 22,
+      "usage": {
+        "input_tokens": 4880221,
+        "cached_input_tokens": 4845312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20847,
+        "reasoning_output_tokens": 19383,
+        "total_tokens": 4901068
+      }
+    },
+    {
+      "game": 110,
+      "opponent": "full-strength",
+      "modelCalls": 19,
+      "ownMoves": 16,
+      "usage": {
+        "input_tokens": 2872991,
+        "cached_input_tokens": 2814976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22934,
+        "reasoning_output_tokens": 15204,
+        "total_tokens": 2895925
+      }
+    },
+    {
+      "game": 111,
+      "opponent": "skill-0",
+      "modelCalls": 31,
+      "ownMoves": 31,
+      "usage": {
+        "input_tokens": 1669116,
+        "cached_input_tokens": 1603456,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14512,
+        "reasoning_output_tokens": 12189,
+        "total_tokens": 1683628
+      }
+    },
+    {
+      "game": 112,
+      "opponent": "skill-0",
+      "modelCalls": 26,
+      "ownMoves": 26,
+      "usage": {
+        "input_tokens": 2212651,
+        "cached_input_tokens": 2089600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 21273,
+        "reasoning_output_tokens": 19003,
+        "total_tokens": 2233924
+      }
+    },
+    {
+      "game": 113,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 40,
+      "ownMoves": 39,
+      "usage": {
+        "input_tokens": 5558410,
+        "cached_input_tokens": 5478528,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53969,
+        "reasoning_output_tokens": 50451,
+        "total_tokens": 5612379
+      }
+    },
+    {
+      "game": 114,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 81,
+      "ownMoves": 79,
+      "usage": {
+        "input_tokens": 9369791,
+        "cached_input_tokens": 9042176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 97387,
+        "reasoning_output_tokens": 84142,
+        "total_tokens": 9467178
+      }
+    },
+    {
+      "game": 115,
+      "opponent": "full-strength",
+      "modelCalls": 38,
+      "ownMoves": 37,
+      "usage": {
+        "input_tokens": 6666589,
+        "cached_input_tokens": 6610048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 33614,
+        "reasoning_output_tokens": 30676,
+        "total_tokens": 6700203
+      }
+    },
+    {
+      "game": 116,
+      "opponent": "full-strength",
+      "modelCalls": 31,
+      "ownMoves": 30,
+      "usage": {
+        "input_tokens": 5695287,
+        "cached_input_tokens": 5485824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 42288,
+        "reasoning_output_tokens": 33138,
+        "total_tokens": 5737575
+      }
+    },
+    {
+      "game": 117,
+      "opponent": "skill-0",
+      "modelCalls": 41,
+      "ownMoves": 41,
+      "usage": {
+        "input_tokens": 2407352,
+        "cached_input_tokens": 2357888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22883,
+        "reasoning_output_tokens": 19882,
+        "total_tokens": 2430235
+      }
+    },
+    {
+      "game": 118,
+      "opponent": "skill-0",
+      "modelCalls": 64,
+      "ownMoves": 63,
+      "usage": {
+        "input_tokens": 8545017,
+        "cached_input_tokens": 8351360,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 83067,
+        "reasoning_output_tokens": 78184,
+        "total_tokens": 8628084
+      }
+    },
+    {
+      "game": 119,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 53,
+      "ownMoves": 50,
+      "usage": {
+        "input_tokens": 7317994,
+        "cached_input_tokens": 7087872,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 58320,
+        "reasoning_output_tokens": 46750,
+        "total_tokens": 7376314
+      }
+    },
+    {
+      "game": 120,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 81,
+      "ownMoves": 81,
+      "usage": {
+        "input_tokens": 9715163,
+        "cached_input_tokens": 9466624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 102729,
+        "reasoning_output_tokens": 96159,
+        "total_tokens": 9817892
+      }
+    },
+    {
+      "game": 121,
+      "opponent": "full-strength",
+      "modelCalls": 34,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 1904217,
+        "cached_input_tokens": 1864448,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18859,
+        "reasoning_output_tokens": 16479,
+        "total_tokens": 1923076
+      }
+    },
+    {
+      "game": 122,
+      "opponent": "full-strength",
+      "modelCalls": 26,
+      "ownMoves": 26,
+      "usage": {
+        "input_tokens": 2332153,
+        "cached_input_tokens": 2228224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13765,
+        "reasoning_output_tokens": 12029,
+        "total_tokens": 2345918
+      }
+    },
+    {
+      "game": 123,
+      "opponent": "skill-0",
+      "modelCalls": 95,
+      "ownMoves": 93,
+      "usage": {
+        "input_tokens": 13694373,
+        "cached_input_tokens": 13400448,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 110539,
+        "reasoning_output_tokens": 97750,
+        "total_tokens": 13804912
+      }
+    },
+    {
+      "game": 124,
+      "opponent": "skill-0",
+      "modelCalls": 31,
+      "ownMoves": 30,
+      "usage": {
+        "input_tokens": 1925377,
+        "cached_input_tokens": 1853568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14045,
+        "reasoning_output_tokens": 12000,
+        "total_tokens": 1939422
+      }
+    },
+    {
+      "game": 125,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 88,
+      "ownMoves": 87,
+      "usage": {
+        "input_tokens": 12348056,
+        "cached_input_tokens": 12076928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 83561,
+        "reasoning_output_tokens": 77780,
+        "total_tokens": 12431617
+      }
+    },
+    {
+      "game": 126,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 33,
+      "ownMoves": 29,
+      "usage": {
+        "input_tokens": 5157500,
+        "cached_input_tokens": 5099520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 33692,
+        "reasoning_output_tokens": 25679,
+        "total_tokens": 5191192
+      }
+    },
+    {
+      "game": 127,
+      "opponent": "full-strength",
+      "modelCalls": 22,
+      "ownMoves": 21,
+      "usage": {
+        "input_tokens": 2598997,
+        "cached_input_tokens": 2568960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16732,
+        "reasoning_output_tokens": 15102,
+        "total_tokens": 2615729
+      }
+    },
+    {
+      "game": 128,
+      "opponent": "full-strength",
+      "modelCalls": 18,
+      "ownMoves": 18,
+      "usage": {
+        "input_tokens": 2589713,
+        "cached_input_tokens": 2569344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8862,
+        "reasoning_output_tokens": 7691,
+        "total_tokens": 2598575
+      }
+    },
+    {
+      "game": 129,
+      "opponent": "skill-0",
+      "modelCalls": 21,
+      "ownMoves": 21,
+      "usage": {
+        "input_tokens": 3430170,
+        "cached_input_tokens": 3407744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10038,
+        "reasoning_output_tokens": 8702,
+        "total_tokens": 3440208
+      }
+    },
+    {
+      "game": 130,
+      "opponent": "skill-0",
+      "modelCalls": 31,
+      "ownMoves": 31,
+      "usage": {
+        "input_tokens": 5957230,
+        "cached_input_tokens": 5916928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22097,
+        "reasoning_output_tokens": 20004,
+        "total_tokens": 5979327
+      }
+    },
+    {
+      "game": 131,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 93,
+      "ownMoves": 90,
+      "usage": {
+        "input_tokens": 10369223,
+        "cached_input_tokens": 10232704,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 60852,
+        "reasoning_output_tokens": 46267,
+        "total_tokens": 10430075
+      }
+    },
+    {
+      "game": 132,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 54,
+      "ownMoves": 53,
+      "usage": {
+        "input_tokens": 7530754,
+        "cached_input_tokens": 7334656,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53697,
+        "reasoning_output_tokens": 49011,
+        "total_tokens": 7584451
+      }
+    },
+    {
+      "game": 133,
+      "opponent": "full-strength",
+      "modelCalls": 42,
+      "ownMoves": 41,
+      "usage": {
+        "input_tokens": 2812724,
+        "cached_input_tokens": 2692224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19786,
+        "reasoning_output_tokens": 16424,
+        "total_tokens": 2832510
+      }
+    },
+    {
+      "game": 134,
+      "opponent": "full-strength",
+      "modelCalls": 28,
+      "ownMoves": 27,
+      "usage": {
+        "input_tokens": 2847551,
+        "cached_input_tokens": 2810496,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16999,
+        "reasoning_output_tokens": 14846,
+        "total_tokens": 2864550
+      }
+    },
+    {
+      "game": 135,
+      "opponent": "skill-0",
+      "modelCalls": 37,
+      "ownMoves": 37,
+      "usage": {
+        "input_tokens": 5102869,
+        "cached_input_tokens": 4916608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 23947,
+        "reasoning_output_tokens": 21068,
+        "total_tokens": 5126816
+      }
+    },
+    {
+      "game": 136,
+      "opponent": "skill-0",
+      "modelCalls": 57,
+      "ownMoves": 57,
+      "usage": {
+        "input_tokens": 11428576,
+        "cached_input_tokens": 11343744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 45814,
+        "reasoning_output_tokens": 41432,
+        "total_tokens": 11474390
+      }
+    },
+    {
+      "game": 137,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 56,
+      "ownMoves": 53,
+      "usage": {
+        "input_tokens": 3075099,
+        "cached_input_tokens": 3007360,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24195,
+        "reasoning_output_tokens": 12989,
+        "total_tokens": 3099294
+      }
+    },
+    {
+      "game": 138,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 54,
+      "ownMoves": 53,
+      "usage": {
+        "input_tokens": 4998599,
+        "cached_input_tokens": 4933888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29066,
+        "reasoning_output_tokens": 25987,
+        "total_tokens": 5027665
+      }
+    },
+    {
+      "game": 139,
+      "opponent": "full-strength",
+      "modelCalls": 31,
+      "ownMoves": 30,
+      "usage": {
+        "input_tokens": 6262682,
+        "cached_input_tokens": 6227712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16491,
+        "reasoning_output_tokens": 14686,
+        "total_tokens": 6279173
+      }
+    },
+    {
+      "game": 140,
+      "opponent": "full-strength",
+      "modelCalls": 23,
+      "ownMoves": 22,
+      "usage": {
+        "input_tokens": 5328268,
+        "cached_input_tokens": 5302784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10818,
+        "reasoning_output_tokens": 9529,
+        "total_tokens": 5339086
+      }
+    },
+    {
+      "game": 141,
+      "opponent": "skill-0",
+      "modelCalls": 42,
+      "ownMoves": 41,
+      "usage": {
+        "input_tokens": 1824806,
+        "cached_input_tokens": 1789696,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8431,
+        "reasoning_output_tokens": 6187,
+        "total_tokens": 1833237
+      }
+    },
+    {
+      "game": 142,
+      "opponent": "skill-0",
+      "modelCalls": 28,
+      "ownMoves": 28,
+      "usage": {
+        "input_tokens": 1941993,
+        "cached_input_tokens": 1918592,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5698,
+        "reasoning_output_tokens": 4258,
+        "total_tokens": 1947691
+      }
+    },
+    {
+      "game": 143,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 69,
+      "ownMoves": 69,
+      "usage": {
+        "input_tokens": 7303190,
+        "cached_input_tokens": 7185920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20600,
+        "reasoning_output_tokens": 17072,
+        "total_tokens": 7323790
+      }
+    },
+    {
+      "game": 144,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 49,
+      "ownMoves": 48,
+      "usage": {
+        "input_tokens": 7902528,
+        "cached_input_tokens": 7845248,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 23651,
+        "reasoning_output_tokens": 20800,
+        "total_tokens": 7926179
+      }
+    },
+    {
+      "game": 145,
+      "opponent": "full-strength",
+      "modelCalls": 34,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 5394354,
+        "cached_input_tokens": 5195776,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18786,
+        "reasoning_output_tokens": 9314,
+        "total_tokens": 5413140
+      }
+    },
+    {
+      "game": 146,
+      "opponent": "full-strength",
+      "modelCalls": 22,
+      "ownMoves": 22,
+      "usage": {
+        "input_tokens": 1036786,
+        "cached_input_tokens": 1019392,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4719,
+        "reasoning_output_tokens": 3555,
+        "total_tokens": 1041505
+      }
+    },
+    {
+      "game": 147,
+      "opponent": "skill-0",
+      "modelCalls": 52,
+      "ownMoves": 52,
+      "usage": {
+        "input_tokens": 3877289,
+        "cached_input_tokens": 3829760,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12349,
+        "reasoning_output_tokens": 9602,
+        "total_tokens": 3889638
+      }
+    },
+    {
+      "game": 148,
+      "opponent": "skill-0",
+      "modelCalls": 49,
+      "ownMoves": 49,
+      "usage": {
+        "input_tokens": 5543136,
+        "cached_input_tokens": 5498752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12211,
+        "reasoning_output_tokens": 9358,
+        "total_tokens": 5555347
+      }
+    },
+    {
+      "game": 149,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 46,
+      "ownMoves": 45,
+      "usage": {
+        "input_tokens": 7003346,
+        "cached_input_tokens": 6953856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18818,
+        "reasoning_output_tokens": 16129,
+        "total_tokens": 7022164
+      }
+    },
+    {
+      "game": 150,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 30,
+      "ownMoves": 30,
+      "usage": {
+        "input_tokens": 5657523,
+        "cached_input_tokens": 5477376,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10648,
+        "reasoning_output_tokens": 8938,
+        "total_tokens": 5668171
+      }
+    },
+    {
+      "game": 151,
+      "opponent": "full-strength",
+      "modelCalls": 29,
+      "ownMoves": 26,
+      "usage": {
+        "input_tokens": 5236615,
+        "cached_input_tokens": 5199360,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15258,
+        "reasoning_output_tokens": 6083,
+        "total_tokens": 5251873
+      }
+    },
+    {
+      "game": 152,
+      "opponent": "full-strength",
+      "modelCalls": 29,
+      "ownMoves": 28,
+      "usage": {
+        "input_tokens": 1266071,
+        "cached_input_tokens": 1242880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5434,
+        "reasoning_output_tokens": 3634,
+        "total_tokens": 1271505
+      }
+    },
+    {
+      "game": 153,
+      "opponent": "skill-0",
+      "modelCalls": 38,
+      "ownMoves": 37,
+      "usage": {
+        "input_tokens": 2574319,
+        "cached_input_tokens": 2538112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11959,
+        "reasoning_output_tokens": 9430,
+        "total_tokens": 2586278
+      }
+    },
+    {
+      "game": 154,
+      "opponent": "skill-0",
+      "modelCalls": 26,
+      "ownMoves": 26,
+      "usage": {
+        "input_tokens": 2506735,
+        "cached_input_tokens": 2401920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10491,
+        "reasoning_output_tokens": 8638,
+        "total_tokens": 2517226
+      }
+    },
+    {
+      "game": 155,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 51,
+      "ownMoves": 50,
+      "usage": {
+        "input_tokens": 6720233,
+        "cached_input_tokens": 6661120,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25546,
+        "reasoning_output_tokens": 22071,
+        "total_tokens": 6745779
+      }
+    },
+    {
+      "game": 156,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 41,
+      "ownMoves": 41,
+      "usage": {
+        "input_tokens": 7524575,
+        "cached_input_tokens": 7469184,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29214,
+        "reasoning_output_tokens": 26437,
+        "total_tokens": 7553789
+      }
+    },
+    {
+      "game": 157,
+      "opponent": "full-strength",
+      "modelCalls": 31,
+      "ownMoves": 29,
+      "usage": {
+        "input_tokens": 1494405,
+        "cached_input_tokens": 1467392,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7653,
+        "reasoning_output_tokens": 5654,
+        "total_tokens": 1502058
+      }
+    },
+    {
+      "game": 158,
+      "opponent": "full-strength",
+      "modelCalls": 25,
+      "ownMoves": 25,
+      "usage": {
+        "input_tokens": 1731672,
+        "cached_input_tokens": 1710080,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6359,
+        "reasoning_output_tokens": 4846,
+        "total_tokens": 1738031
+      }
+    },
+    {
+      "game": 159,
+      "opponent": "skill-0",
+      "modelCalls": 51,
+      "ownMoves": 51,
+      "usage": {
+        "input_tokens": 5295237,
+        "cached_input_tokens": 5235072,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26020,
+        "reasoning_output_tokens": 22597,
+        "total_tokens": 5321257
+      }
+    },
+    {
+      "game": 160,
+      "opponent": "skill-0",
+      "modelCalls": 35,
+      "ownMoves": 34,
+      "usage": {
+        "input_tokens": 5255965,
+        "cached_input_tokens": 5079296,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18859,
+        "reasoning_output_tokens": 16462,
+        "total_tokens": 5274824
+      }
+    },
+    {
+      "game": 161,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 55,
+      "ownMoves": 54,
+      "usage": {
+        "input_tokens": 10686089,
+        "cached_input_tokens": 10620800,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30170,
+        "reasoning_output_tokens": 26730,
+        "total_tokens": 10716259
+      }
+    },
+    {
+      "game": 162,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 59,
+      "ownMoves": 56,
+      "usage": {
+        "input_tokens": 6219163,
+        "cached_input_tokens": 6150272,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 28215,
+        "reasoning_output_tokens": 16659,
+        "total_tokens": 6247378
+      }
+    },
+    {
+      "game": 163,
+      "opponent": "full-strength",
+      "modelCalls": 25,
+      "ownMoves": 24,
+      "usage": {
+        "input_tokens": 2695990,
+        "cached_input_tokens": 2672000,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8992,
+        "reasoning_output_tokens": 7139,
+        "total_tokens": 2704982
+      }
+    },
+    {
+      "game": 164,
+      "opponent": "full-strength",
+      "modelCalls": 23,
+      "ownMoves": 22,
+      "usage": {
+        "input_tokens": 2974222,
+        "cached_input_tokens": 2949504,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10897,
+        "reasoning_output_tokens": 9151,
+        "total_tokens": 2985119
+      }
+    },
+    {
+      "game": 165,
+      "opponent": "skill-0",
+      "modelCalls": 28,
+      "ownMoves": 28,
+      "usage": {
+        "input_tokens": 4363965,
+        "cached_input_tokens": 4330880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16502,
+        "reasoning_output_tokens": 14571,
+        "total_tokens": 4380467
+      }
+    },
+    {
+      "game": 166,
+      "opponent": "skill-0",
+      "modelCalls": 31,
+      "ownMoves": 30,
+      "usage": {
+        "input_tokens": 5920908,
+        "cached_input_tokens": 5875840,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26842,
+        "reasoning_output_tokens": 24433,
+        "total_tokens": 5947750
+      }
+    },
+    {
+      "game": 167,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 44,
+      "ownMoves": 40,
+      "usage": {
+        "input_tokens": 6681988,
+        "cached_input_tokens": 6620800,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26458,
+        "reasoning_output_tokens": 16251,
+        "total_tokens": 6708446
+      }
+    },
+    {
+      "game": 168,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 41,
+      "ownMoves": 40,
+      "usage": {
+        "input_tokens": 2178950,
+        "cached_input_tokens": 2122112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12525,
+        "reasoning_output_tokens": 9895,
+        "total_tokens": 2191475
+      }
+    },
+    {
+      "game": 169,
+      "opponent": "full-strength",
+      "modelCalls": 29,
+      "ownMoves": 28,
+      "usage": {
+        "input_tokens": 3258577,
+        "cached_input_tokens": 3229568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 11376,
+        "reasoning_output_tokens": 9588,
+        "total_tokens": 3269953
+      }
+    },
+    {
+      "game": 170,
+      "opponent": "full-strength",
+      "modelCalls": 22,
+      "ownMoves": 22,
+      "usage": {
+        "input_tokens": 2982320,
+        "cached_input_tokens": 2958848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10925,
+        "reasoning_output_tokens": 9609,
+        "total_tokens": 2993245
+      }
+    },
+    {
+      "game": 171,
+      "opponent": "skill-0",
+      "modelCalls": 27,
+      "ownMoves": 27,
+      "usage": {
+        "input_tokens": 4327270,
+        "cached_input_tokens": 4300160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10384,
+        "reasoning_output_tokens": 8756,
+        "total_tokens": 4337654
+      }
+    },
+    {
+      "game": 172,
+      "opponent": "skill-0",
+      "modelCalls": 45,
+      "ownMoves": 44,
+      "usage": {
+        "input_tokens": 8822114,
+        "cached_input_tokens": 8620416,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 28762,
+        "reasoning_output_tokens": 25812,
+        "total_tokens": 8850876
+      }
+    },
+    {
+      "game": 173,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 61,
+      "ownMoves": 56,
+      "usage": {
+        "input_tokens": 6897822,
+        "cached_input_tokens": 6817152,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 36572,
+        "reasoning_output_tokens": 24553,
+        "total_tokens": 6934394
+      }
+    },
+    {
+      "game": 174,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 49,
+      "ownMoves": 48,
+      "usage": {
+        "input_tokens": 4487262,
+        "cached_input_tokens": 4349952,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29393,
+        "reasoning_output_tokens": 26225,
+        "total_tokens": 4516655
+      }
+    },
+    {
+      "game": 175,
+      "opponent": "full-strength",
+      "modelCalls": 39,
+      "ownMoves": 39,
+      "usage": {
+        "input_tokens": 6728604,
+        "cached_input_tokens": 6674304,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30271,
+        "reasoning_output_tokens": 27746,
+        "total_tokens": 6758875
+      }
+    },
+    {
+      "game": 176,
+      "opponent": "full-strength",
+      "modelCalls": 34,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 7445195,
+        "cached_input_tokens": 7290752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26258,
+        "reasoning_output_tokens": 24005,
+        "total_tokens": 7471453
+      }
+    },
+    {
+      "game": 177,
+      "opponent": "skill-0",
+      "modelCalls": 30,
+      "ownMoves": 30,
+      "usage": {
+        "input_tokens": 1057550,
+        "cached_input_tokens": 1008256,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3350,
+        "reasoning_output_tokens": 1937,
+        "total_tokens": 1060900
+      }
+    },
+    {
+      "game": 178,
+      "opponent": "skill-0",
+      "modelCalls": 28,
+      "ownMoves": 28,
+      "usage": {
+        "input_tokens": 1500710,
+        "cached_input_tokens": 1456384,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4862,
+        "reasoning_output_tokens": 3513,
+        "total_tokens": 1505572
+      }
+    },
+    {
+      "game": 179,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 36,
+      "ownMoves": 35,
+      "usage": {
+        "input_tokens": 2716003,
+        "cached_input_tokens": 2663680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7595,
+        "reasoning_output_tokens": 5602,
+        "total_tokens": 2723598
+      }
+    },
+    {
+      "game": 180,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 56,
+      "ownMoves": 56,
+      "usage": {
+        "input_tokens": 6322780,
+        "cached_input_tokens": 6244224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 27149,
+        "reasoning_output_tokens": 23893,
+        "total_tokens": 6349929
+      }
+    },
+    {
+      "game": 181,
+      "opponent": "full-strength",
+      "modelCalls": 26,
+      "ownMoves": 25,
+      "usage": {
+        "input_tokens": 4629103,
+        "cached_input_tokens": 4604416,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9372,
+        "reasoning_output_tokens": 7893,
+        "total_tokens": 4638475
+      }
+    },
+    {
+      "game": 182,
+      "opponent": "full-strength",
+      "modelCalls": 30,
+      "ownMoves": 29,
+      "usage": {
+        "input_tokens": 6079826,
+        "cached_input_tokens": 6043904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 17635,
+        "reasoning_output_tokens": 15927,
+        "total_tokens": 6097461
+      }
+    },
+    {
+      "game": 183,
+      "opponent": "skill-0",
+      "modelCalls": 99,
+      "ownMoves": 95,
+      "usage": {
+        "input_tokens": 10530806,
+        "cached_input_tokens": 10400000,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 34883,
+        "reasoning_output_tokens": 22047,
+        "total_tokens": 10565689
+      }
+    },
+    {
+      "game": 184,
+      "opponent": "skill-0",
+      "modelCalls": 28,
+      "ownMoves": 28,
+      "usage": {
+        "input_tokens": 2881184,
+        "cached_input_tokens": 2855168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8788,
+        "reasoning_output_tokens": 7291,
+        "total_tokens": 2889972
+      }
+    },
+    {
+      "game": 185,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 42,
+      "ownMoves": 42,
+      "usage": {
+        "input_tokens": 5698817,
+        "cached_input_tokens": 5647616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 24604,
+        "reasoning_output_tokens": 22238,
+        "total_tokens": 5723421
+      }
+    },
+    {
+      "game": 186,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 25,
+      "ownMoves": 24,
+      "usage": {
+        "input_tokens": 4291917,
+        "cached_input_tokens": 4268672,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8490,
+        "reasoning_output_tokens": 7118,
+        "total_tokens": 4300407
+      }
+    },
+    {
+      "game": 187,
+      "opponent": "full-strength",
+      "modelCalls": 25,
+      "ownMoves": 24,
+      "usage": {
+        "input_tokens": 5659022,
+        "cached_input_tokens": 5633792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9717,
+        "reasoning_output_tokens": 8429,
+        "total_tokens": 5668739
+      }
+    },
+    {
+      "game": 188,
+      "opponent": "full-strength",
+      "modelCalls": 30,
+      "ownMoves": 27,
+      "usage": {
+        "input_tokens": 3268054,
+        "cached_input_tokens": 3234432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12490,
+        "reasoning_output_tokens": 3539,
+        "total_tokens": 3280544
+      }
+    },
+    {
+      "game": 189,
+      "opponent": "skill-0",
+      "modelCalls": 38,
+      "ownMoves": 37,
+      "usage": {
+        "input_tokens": 1949935,
+        "cached_input_tokens": 1918720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7506,
+        "reasoning_output_tokens": 5544,
+        "total_tokens": 1957441
+      }
+    },
+    {
+      "game": 190,
+      "opponent": "skill-0",
+      "modelCalls": 28,
+      "ownMoves": 28,
+      "usage": {
+        "input_tokens": 2098352,
+        "cached_input_tokens": 2075392,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5642,
+        "reasoning_output_tokens": 4240,
+        "total_tokens": 2103994
+      }
+    },
+    {
+      "game": 191,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 28,
+      "ownMoves": 27,
+      "usage": {
+        "input_tokens": 2650289,
+        "cached_input_tokens": 2628096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5245,
+        "reasoning_output_tokens": 3839,
+        "total_tokens": 2655534
+      }
+    },
+    {
+      "game": 192,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 33,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 3843077,
+        "cached_input_tokens": 3811712,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10831,
+        "reasoning_output_tokens": 9085,
+        "total_tokens": 3853908
+      }
+    },
+    {
+      "game": 193,
+      "opponent": "full-strength",
+      "modelCalls": 33,
+      "ownMoves": 32,
+      "usage": {
+        "input_tokens": 5187885,
+        "cached_input_tokens": 5156480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10765,
+        "reasoning_output_tokens": 9066,
+        "total_tokens": 5198650
+      }
+    },
+    {
+      "game": 194,
+      "opponent": "full-strength",
+      "modelCalls": 26,
+      "ownMoves": 25,
+      "usage": {
+        "input_tokens": 4740950,
+        "cached_input_tokens": 4716928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8809,
+        "reasoning_output_tokens": 7497,
+        "total_tokens": 4749759
+      }
+    },
+    {
+      "game": 195,
+      "opponent": "skill-0",
+      "modelCalls": 32,
+      "ownMoves": 31,
+      "usage": {
+        "input_tokens": 6656106,
+        "cached_input_tokens": 6619648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16662,
+        "reasoning_output_tokens": 14927,
+        "total_tokens": 6672768
+      }
+    },
+    {
+      "game": 196,
+      "opponent": "skill-0",
+      "modelCalls": 51,
+      "ownMoves": 49,
+      "usage": {
+        "input_tokens": 6608646,
+        "cached_input_tokens": 6521344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22155,
+        "reasoning_output_tokens": 13050,
+        "total_tokens": 6630801
+      }
+    },
+    {
+      "game": 197,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 46,
+      "ownMoves": 46,
+      "usage": {
+        "input_tokens": 2893226,
+        "cached_input_tokens": 2817024,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8198,
+        "reasoning_output_tokens": 5934,
+        "total_tokens": 2901424
+      }
+    },
+    {
+      "game": 198,
+      "opponent": "elo-1800-setting",
+      "modelCalls": 34,
+      "ownMoves": 33,
+      "usage": {
+        "input_tokens": 3161941,
+        "cached_input_tokens": 3129600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10918,
+        "reasoning_output_tokens": 9149,
+        "total_tokens": 3172859
+      }
+    },
+    {
+      "game": 199,
+      "opponent": "full-strength",
+      "modelCalls": 38,
+      "ownMoves": 37,
+      "usage": {
+        "input_tokens": 4963168,
+        "cached_input_tokens": 4924800,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14840,
+        "reasoning_output_tokens": 12808,
+        "total_tokens": 4978008
+      }
+    },
+    {
+      "game": 200,
+      "opponent": "full-strength",
+      "modelCalls": 22,
+      "ownMoves": 21,
+      "usage": {
+        "input_tokens": 3511012,
+        "cached_input_tokens": 3484928,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12809,
+        "reasoning_output_tokens": 11606,
+        "total_tokens": 3523821
+      }
+    }
+  ],
+  "method": "Sum unique recorded response usage whose timestamp falls between each measured game start and result, then divide by accepted learner moves. Includes model work and overhead during games; excludes between-game study/practice. Token counts only; no private reasoning text."
+}

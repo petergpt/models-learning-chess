@@ -1,0 +1,6 @@
+# Benchmark189 and trials327–328
+189 Whiteskill0 loss38...Ne7#,76plies1illegal,receipt14834 2026-10-10T05:31:40.569299+00:00. Count18950W8D131L.
+Equal material at terminal: R+B+4P vsR+N+4P. Pawn fork e5 handled Qh5+ Kf8 Bxe5 g6 Qe2; opponent declined fxe5. Later Ne6+ Bxe6 Qxe6 valid queen-rooted knight exchange. Qxb6 axb6 safe queensoff; Rf1 Rxf1 Kxf1 safe king-rooted rook exchange. Several recaptures held in fresh play, but no overall strength gain established.
+Kc6 rejected because BlackPb7 attacks c6; correctedKc5. Rookd6 andBishopd4 boxedKingd5 againstRc7c-file andKf5e-file. c4 ignoredNg8e7#, Knightcheck on d5 had no escapes. Own pieces occupiedd4/d6. Ne7 had been legal development throughout, despite long dormancy.
+Trial327 rememberedpractice173189ply74: Rd8 Nh6 Kd6 Rg7,4plies0illegal stopped2ownmoves. Vacatedd6 acceptedkingescape. OpponentdidnotchooseNe7; onlylocalpreservation,noresultproved.
+Trial328before190: king activity must preserve at least one actual escape from an opponent knight check. Count friendly occupancy as a blocked escape. Retain pawn-attack checks; avoid arbitraryking centralization when rook and opposing king confine it. Next benchmark190,checkpoint192. No delegated or engine evaluation.

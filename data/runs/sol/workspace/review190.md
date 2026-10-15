@@ -1,0 +1,6 @@
+# Benchmark 190 and trials 329–330
+Black skill 0, loss by resignation at 109 plies, zero illegal submissions; result seq 14945. Total190: 50W8D132L. Elo1440 [1320,1560], conditional95%, latest50 of126 rated,64 maximum games excluded. Ten scored games remain.
+Qf7 was vulnerable to Qh5xf7, declined by opponent. Nf7+ Kg7 Bh6+ forced Qxh6 Qxh6+ Kxf7, queen for bishop and knight. Rg6 lost pawn shield to Qxh7+, moved Rf6, and e5 permitted Qxc2 exd4, trading rooks. Re6 pinned Qe2 to Ke1; Qxe6+ Kxe6 exchanged remaining rook for queen. Recovered to B+N versus R, one fewer pawn, through opponent concession; no vindication of queen placement.
+Bc6 overlooked Pb5xc6: bishop for pawn. Kxc6, king activity and knight supported passed d-pawn. Nc4+ d2+ blocked by Kd1; Ne4 rooted d2 until Nc3+ removed that root, permitting Kxd2. Resigned N+3P versus R+4P with dangerous protected Pf6. Not claimed forced mate.
+Trial329: practice174, remembered ply83, skill0 Black. Kd6 Kd2 Kc5 g5: four plies, zero illegal; planned two-own-move stop, bishop retained on b7. No full rescue demonstrated.
+Trial330: next evaluation benchmark191. Focus narrowly on enemy pawn capture squares before piece placement, because Bc6 reproduced the Bd6/e5 pawn error from188. A fresh game without that kind of direct pawn capture would be tentative evidence only. Continue fixed rotation.

@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.04"]
+[Round "186"]
+[White "Stockfish 19"]
+[Black "claude-opus-5-5"]
+[Result "1/2-1/2"]
+[Mode "benchmark"]
+[RunId "opus"]
+[GameId "opus/benchmark/000186"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "threefold_repetition"]
+
+1. c4 Nf6 2. d4 e6 3. Nf3 d5 4. Nc3 Be7 5. cxd5 exd5 6. Bf4 c6 7. Rc1 Bf5 8. Nh4 Be6 9. Nf3 Bf5 10. Nh4 Be6 11. Nf3 1/2-1/2

@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.05"]
+[Round "29"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "1/2-1/2"]
+[Mode "benchmark"]
+[RunId "sol-long-context"]
+[GameId "sol-long-context/benchmark/000029"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "threefold_repetition"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. O-O g5 5. d4 f6 6. dxe5 g4 7. Nd4 Nxd4 8. Qxd4 dxe5 9. Qxd8+ Kxd8 10. Nc3 Bd7 11. Be3 Ne7 12. Rad1 Ke8 13. Rfe1 c6 14. f3 gxf3 15. gxf3 b5 16. Bb3 Ng6 17. a4 Bb4 18. Re2 bxa4 19. Nxa4 Nf8 20. c3 Be7 21. Nc5 h5 22. Nxd7 Nxd7 23. Be6 Nc5 24. Bxc5 Bxc5+ 25. Kg2 a5 26. Rd7 Rh6 27. Bf5 Ra7 28. Rxa7 Bxa7 29. Kg3 h4+ 30. Kg4 Bg1 31. h3 Rh8 32. Rg2 Rg8+ 33. Kxh4 Rxg2 34. Kh5 Bf2 35. h4 Kf8 36. b4 a4 37. Bd7 Rg1 38. Bxc6 Rg3 39. Bxa4 Be1 40. c4 Bc3 41. b5 Bb4 42. b6 Rg7 43. Bc6 Rg2 44. b7 Bd6 45. Bd5 Bb8 46. c5 Ke8 47. c6 Bc7 48. Kh6 Ke7 49. h5 Rg5 50. Kh7 Rg3 51. h6 Rxf3 52. Kg7 Rf1 53. h7 Rg1+ 54. Kh6 Rg2 55. h8=Q Rh2+ 56. Kg7 Rxh8 57. Kxh8 Bb8 58. Kg7 Kd8 59. Kxf6 Ke8 60. Ke6 Kd8 61. Kf7 Bd6 62. Ke6 Bb8 63. Kf7 Kc7 64. Ke6 1/2-1/2

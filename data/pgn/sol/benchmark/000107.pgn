@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.07"]
+[Round "107"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "sol"]
+[GameId "sol/benchmark/000107"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "resignation"]
+
+1. d4 Nf6 2. Nf3 g6 3. c4 c5 4. Nc3 Qa5 5. e3 Bg7 6. Be2 Ne4 7. Bd2 Nf6 8. O-O O-O 9. Qc2 Qc7 10. e4 d6 11. Be3 b6 12. d5 e5 13. Rfd1 Na6 14. a3 Qe7 15. Rab1 Ne8 16. b4 Bd7 17. b5 Nac7 18. Nd2 f5 19. f4 a6 20. a4 exf4 21. Bxf4 Bd4+ 22. Kh1 fxe4 23. Ndxe4 Rxf4 24. g3 Rf8 25. Rf1 Bc8 26. Bd3 a5 27. Ne2 Rxf1+ 28. Rxf1 Bh8 29. Nf4 Bd7 30. Qe2 Bd4 31. Qf3 Ng7 32. Nf2 Qf7 33. Qe4 Bxf2 34. Rxf2 Re8 35. Qf3 Bf5 36. Bxf5 Qxf5 37. Qg2 Re1+ 38. Rf1 Rxf1+ 39. Qxf1 h6 40. Qh3 Qe4+ 41. Kg1 Nce8 42. Qxh6 Qe3+ 43. Kg2 Qd2+ 44. Kh3 Qe1 45. Qxg6 Qf1+ 46. Kg4 Qxc4 47. Qg5 Qxa4 0-1

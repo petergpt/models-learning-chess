@@ -1,0 +1,165 @@
+[
+  {
+    "id": "132-knight-capture-before-rook-check",
+    "game": 132,
+    "ply": 104,
+    "moves": [
+      [
+        "c4b6",
+        true
+      ],
+      [
+        "c6b6",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "132-rook-capture-retains-knight-defender",
+    "game": 132,
+    "ply": 104,
+    "moves": [
+      [
+        "d1d6",
+        true
+      ],
+      [
+        "c6c5",
+        true
+      ],
+      [
+        "d6b6",
+        true
+      ],
+      [
+        "c5b6",
+        false
+      ]
+    ]
+  },
+  {
+    "id": "132-knight-capture-after-rook-arrives",
+    "game": 132,
+    "ply": 104,
+    "moves": [
+      [
+        "d1d6",
+        true
+      ],
+      [
+        "c6c5",
+        true
+      ],
+      [
+        "c4b6",
+        true
+      ],
+      [
+        "c5b6",
+        false
+      ]
+    ]
+  },
+  {
+    "id": "132-checking-rook-defended-by-knight",
+    "game": 132,
+    "ply": 104,
+    "moves": [
+      [
+        "d1d6",
+        true
+      ],
+      [
+        "c6d6",
+        false
+      ]
+    ]
+  },
+  {
+    "id": "130-h7-occupied",
+    "game": 130,
+    "ply": 61,
+    "moves": [
+      [
+        "g8h7",
+        false
+      ]
+    ]
+  },
+  {
+    "id": "130-f8-on-rook-rank",
+    "game": 130,
+    "ply": 61,
+    "moves": [
+      [
+        "g8f8",
+        false
+      ]
+    ]
+  },
+  {
+    "id": "130-actual-interposition",
+    "game": 130,
+    "ply": 61,
+    "moves": [
+      [
+        "e4e8",
+        true
+      ],
+      [
+        "c8e8",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "130-h-pawn-on-h6-counterfactual",
+    "game": 130,
+    "ply": 61,
+    "edit": "h7-to-h6",
+    "moves": [
+      [
+        "g8h7",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "128-bishop-prevents-king-capture",
+    "game": 128,
+    "ply": 35,
+    "moves": [
+      [
+        "h8g8",
+        false
+      ]
+    ]
+  },
+  {
+    "id": "128-actual-knight-capture-and-mating-move",
+    "game": 128,
+    "ply": 35,
+    "moves": [
+      [
+        "f6g8",
+        true
+      ],
+      [
+        "g5f7",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "128-bishop-removed-counterfactual",
+    "game": 128,
+    "ply": 35,
+    "edit": "remove-b3-bishop",
+    "moves": [
+      [
+        "h8g8",
+        true
+      ]
+    ]
+  }
+]

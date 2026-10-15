@@ -1,0 +1,104 @@
+[
+  {
+    "id": "141-open-e-file",
+    "game": 141,
+    "ply": 47,
+    "moves": [
+      [
+        "e8e3",
+        true
+      ],
+      [
+        "f2e3",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "141-king-capture-not-pawn",
+    "game": 141,
+    "ply": 81,
+    "moves": [
+      [
+        "g7g6",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "142-king-takes-checker",
+    "game": 142,
+    "ply": 30,
+    "moves": [
+      [
+        "c1b2",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "143-other-knight-fork",
+    "game": 143,
+    "ply": 59,
+    "moves": [
+      [
+        "f6d5",
+        true
+      ],
+      [
+        "e3e4",
+        true
+      ],
+      [
+        "d5c3",
+        true
+      ],
+      [
+        "b2c3",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "144-actual-open-b-file",
+    "game": 144,
+    "ply": 49,
+    "moves": [
+      [
+        "b3a1",
+        true
+      ],
+      [
+        "b1b6",
+        true
+      ],
+      [
+        "g7f6",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "144-imagined-cooperative-reply",
+    "game": 144,
+    "ply": 49,
+    "moves": [
+      [
+        "b3a1",
+        true
+      ],
+      [
+        "f6d8",
+        true
+      ],
+      [
+        "e8d8",
+        true
+      ],
+      [
+        "b1a1",
+        true
+      ]
+    ]
+  }
+]

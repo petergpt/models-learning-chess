@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.04"]
+[Round "126"]
+[White "Stockfish 19"]
+[Black "claude-opus-5-5"]
+[Result "1/2-1/2"]
+[Mode "benchmark"]
+[RunId "opus"]
+[GameId "opus/benchmark/000126"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "threefold_repetition"]
+
+1. Nf3 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. cxd5 cxd5 6. Qb3 Qb6 7. Bb5+ Nc6 8. Nxd5 Nxd5 9. Qxd5 e6 10. Bxc6+ bxc6 11. Qe5 Qb5 12. Qxb5 cxb5 13. a4 b4 14. Ke2 Bd6 15. d3 Rc8 16. e4 Bg6 17. Bd2 Rc2 18. Rhc1 Rxc1 19. Rxc1 Kd7 20. Be3 a5 21. Nd2 Rc8 22. Nc4 Bc7 23. f3 Ke7 24. g4 f6 25. Nb6 Kd8 26. Nxc8 Kxc8 27. Bf4 e5 28. Bg3 Kb7 29. Kd1 Bf7 30. d4 Bb3+ 31. Ke2 Bxa4 32. g5 Bd6 33. gxf6 gxf6 34. Ke3 Bc6 35. f4 exf4+ 36. Bxf4 Be7 37. b3 a4 38. bxa4 Bd8 39. Bd6 Ba5 40. Rb1 Bxa4 41. Rf1 b3 42. Rg1 b2 43. Rb1 Bc3 44. Ba3 Bc2 45. Rxb2+ Bxb2 46. Bxb2 Kc6 47. Kf4 Kd6 48. Kf5 Ke7 49. d5 Kd6 50. Bxf6 Bd3 51. Bh4 h5 52. Bf2 Bc2 53. h4 Bd3 54. Be3 Bc2 55. Bf2 Bd3 56. Ba7 Bc2 1/2-1/2

@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "1-96": {
+      "moveToolOutputs": 3719,
+      "withFen": 2970,
+      "reportingTruncation": 0,
+      "medianOutputCharacters": 1064
+    },
+    "103-198": {
+      "moveToolOutputs": 3727,
+      "withFen": 3687,
+      "reportingTruncation": 0,
+      "medianOutputCharacters": 1090
+    }
+  },
+  "method": "Inspect observable move-tool outputs only; count FEN mentions and explicit output-truncation markers. No assistant reasoning content read. This is a screen, not a semantic audit of all tool output.",
+  "unmatchedCallIds": 0,
+  "flagged": []
+}

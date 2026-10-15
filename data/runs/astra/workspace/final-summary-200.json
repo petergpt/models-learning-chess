@@ -1,0 +1,624 @@
+{
+  "endpoint": "200 scored benchmark games; no further game started",
+  "overall": {
+    "games": 200,
+    "scored": 200,
+    "wins": 65,
+    "draws": 6,
+    "losses": 129,
+    "unfinished": 0,
+    "points": 68.0,
+    "score_percent": 34.0
+  },
+  "opponents": {
+    "full-strength": {
+      "games": 68,
+      "scored": 68,
+      "wins": 0,
+      "draws": 2,
+      "losses": 66,
+      "unfinished": 0,
+      "points": 1.0,
+      "score_percent": 1.4705882352941178
+    },
+    "skill-0": {
+      "games": 66,
+      "scored": 66,
+      "wins": 51,
+      "draws": 2,
+      "losses": 13,
+      "unfinished": 0,
+      "points": 52.0,
+      "score_percent": 78.78787878787878
+    },
+    "elo-1800-setting": {
+      "games": 66,
+      "scored": 66,
+      "wins": 14,
+      "draws": 2,
+      "losses": 50,
+      "unfinished": 0,
+      "points": 15.0,
+      "score_percent": 22.727272727272727
+    }
+  },
+  "by_color": {
+    "white": {
+      "games": 100,
+      "scored": 100,
+      "wins": 35,
+      "draws": 3,
+      "losses": 62,
+      "unfinished": 0,
+      "points": 36.5,
+      "score_percent": 36.5
+    },
+    "black": {
+      "games": 100,
+      "scored": 100,
+      "wins": 30,
+      "draws": 3,
+      "losses": 67,
+      "unfinished": 0,
+      "points": 31.5,
+      "score_percent": 31.5
+    }
+  },
+  "chronological_halves": {
+    "1-100": {
+      "games": 100,
+      "scored": 100,
+      "wins": 42,
+      "draws": 2,
+      "losses": 56,
+      "unfinished": 0,
+      "points": 43.0,
+      "score_percent": 43.0
+    },
+    "101-200": {
+      "games": 100,
+      "scored": 100,
+      "wins": 23,
+      "draws": 4,
+      "losses": 73,
+      "unfinished": 0,
+      "points": 25.0,
+      "score_percent": 25.0
+    }
+  },
+  "equal_count_opponent_halves": {
+    "full-strength": {
+      "first_half": {
+        "games": 34,
+        "scored": 34,
+        "wins": 0,
+        "draws": 2,
+        "losses": 32,
+        "unfinished": 0,
+        "points": 1.0,
+        "score_percent": 2.9411764705882355
+      },
+      "second_half": {
+        "games": 34,
+        "scored": 34,
+        "wins": 0,
+        "draws": 0,
+        "losses": 34,
+        "unfinished": 0,
+        "points": 0,
+        "score_percent": 0.0
+      }
+    },
+    "skill-0": {
+      "first_half": {
+        "games": 33,
+        "scored": 33,
+        "wins": 31,
+        "draws": 0,
+        "losses": 2,
+        "unfinished": 0,
+        "points": 31,
+        "score_percent": 93.93939393939394
+      },
+      "second_half": {
+        "games": 33,
+        "scored": 33,
+        "wins": 20,
+        "draws": 2,
+        "losses": 11,
+        "unfinished": 0,
+        "points": 21.0,
+        "score_percent": 63.63636363636363
+      }
+    },
+    "elo-1800-setting": {
+      "first_half": {
+        "games": 33,
+        "scored": 33,
+        "wins": 10,
+        "draws": 0,
+        "losses": 23,
+        "unfinished": 0,
+        "points": 10,
+        "score_percent": 30.303030303030305
+      },
+      "second_half": {
+        "games": 33,
+        "scored": 33,
+        "wins": 4,
+        "draws": 2,
+        "losses": 27,
+        "unfinished": 0,
+        "points": 5.0,
+        "score_percent": 15.151515151515152
+      }
+    }
+  },
+  "first_50_rated": {
+    "games": 50,
+    "scored": 50,
+    "wins": 31,
+    "draws": 0,
+    "losses": 19,
+    "unfinished": 0,
+    "points": 31,
+    "score_percent": 62.0
+  },
+  "last_50_rated": {
+    "games": 50,
+    "scored": 50,
+    "wins": 16,
+    "draws": 3,
+    "losses": 31,
+    "unfinished": 0,
+    "points": 17.5,
+    "score_percent": 35.0
+  },
+  "first_50_rated_game_span": [
+    3,
+    76
+  ],
+  "last_50_rated_game_span": [
+    125,
+    198
+  ],
+  "benchmark_plies": 15521,
+  "benchmark_own_moves": 7746,
+  "benchmark_illegal_attempts": 15,
+  "benchmark_illegals_by_game": {
+    "1": 1,
+    "4": 2,
+    "12": 1,
+    "47": 1,
+    "78": 1,
+    "80": 1,
+    "95": 1,
+    "124": 1,
+    "157": 1,
+    "172": 1,
+    "173": 2,
+    "183": 2
+  },
+  "benchmark_terminations": {
+    "resignation": 103,
+    "checkmate": 91,
+    "threefold_repetition": 4,
+    "stalemate": 2
+  },
+  "final_8_games": [
+    {
+      "game": 193,
+      "opponent": "full-strength",
+      "color": "white",
+      "score": 0,
+      "reason": "resignation",
+      "plies": 64,
+      "own_moves": 32,
+      "illegal_attempts": 0
+    },
+    {
+      "game": 194,
+      "opponent": "full-strength",
+      "color": "black",
+      "score": 0,
+      "reason": "resignation",
+      "plies": 51,
+      "own_moves": 25,
+      "illegal_attempts": 0
+    },
+    {
+      "game": 195,
+      "opponent": "skill-0",
+      "color": "white",
+      "score": 0,
+      "reason": "resignation",
+      "plies": 62,
+      "own_moves": 31,
+      "illegal_attempts": 0
+    },
+    {
+      "game": 196,
+      "opponent": "skill-0",
+      "color": "black",
+      "score": 1,
+      "reason": "checkmate",
+      "plies": 98,
+      "own_moves": 49,
+      "illegal_attempts": 0
+    },
+    {
+      "game": 197,
+      "opponent": "elo-1800-setting",
+      "color": "white",
+      "score": 0.5,
+      "reason": "stalemate",
+      "plies": 91,
+      "own_moves": 46,
+      "illegal_attempts": 0
+    },
+    {
+      "game": 198,
+      "opponent": "elo-1800-setting",
+      "color": "black",
+      "score": 0,
+      "reason": "resignation",
+      "plies": 67,
+      "own_moves": 33,
+      "illegal_attempts": 0
+    },
+    {
+      "game": 199,
+      "opponent": "full-strength",
+      "color": "white",
+      "score": 0,
+      "reason": "resignation",
+      "plies": 74,
+      "own_moves": 37,
+      "illegal_attempts": 0
+    },
+    {
+      "game": 200,
+      "opponent": "full-strength",
+      "color": "black",
+      "score": 0,
+      "reason": "resignation",
+      "plies": 43,
+      "own_moves": 21,
+      "illegal_attempts": 0
+    }
+  ],
+  "final_8_tally": {
+    "games": 8,
+    "scored": 8,
+    "wins": 1,
+    "draws": 1,
+    "losses": 6,
+    "unfinished": 0,
+    "points": 1.5,
+    "score_percent": 18.75
+  },
+  "trial_29_tally": {
+    "games": 2,
+    "scored": 2,
+    "wins": 0,
+    "draws": 0,
+    "losses": 2,
+    "unfinished": 0,
+    "points": 0,
+    "score_percent": 0.0
+  },
+  "practice": {
+    "games": 51,
+    "scored": 19,
+    "wins": 5,
+    "draws": 2,
+    "losses": 12,
+    "unfinished": 32,
+    "points": 6.0,
+    "score_percent": 31.57894736842105,
+    "illegal_attempts": 5,
+    "source_kinds": {
+      "benchmark": 21,
+      "initial": 9,
+      "custom_fen": 21
+    },
+    "opponents": {
+      "practice-elo-1800": 22,
+      "practice-elo-1600": 2,
+      "practice-skill-20": 27
+    },
+    "terminations": {
+      "stopped_by_learner_not_a_result": 32,
+      "checkmate": 12,
+      "resignation": 5,
+      "threefold_repetition": 1,
+      "insufficient_material": 1
+    }
+  },
+  "trial_count": 29,
+  "trials": [
+    {
+      "number": 1,
+      "file": "workspace/trials/pawn-race-01.md",
+      "title": "Practice trial 01: pawn races before liquidation"
+    },
+    {
+      "number": 2,
+      "file": "workspace/trials/exchange-reconstruction-02.md",
+      "title": "Practice trial 02: reconstruct short exchanges"
+    },
+    {
+      "number": 3,
+      "file": "workspace/trials/destination-capture-03.md",
+      "title": "Practice trial 03: audit the selected destination"
+    },
+    {
+      "number": 4,
+      "file": "workspace/trials/vacated-lines-04.md",
+      "title": "Practice trial 04: reconstruct the changed lines first"
+    },
+    {
+      "number": 5,
+      "file": "workspace/trials/defender-exchanges-05.md",
+      "title": "Practice trial 05: rebuild after the defender is exchanged"
+    },
+    {
+      "number": 6,
+      "file": "workspace/trials/immediate-replies-06.md",
+      "title": "Practice trial 06: finish the immediate replies before following a branch"
+    },
+    {
+      "number": 7,
+      "file": "workspace/trials/opponent-replays-07.md",
+      "title": "Trial 07: short replays against an opponent"
+    },
+    {
+      "number": 8,
+      "file": "workspace/trials/fresh-games-08.md",
+      "title": "Trial 08: longer practice from fresh initial positions"
+    },
+    {
+      "number": 9,
+      "file": "workspace/trials/short-decisions-09.md",
+      "title": "Trial 09: shorter decisions with an observed clock"
+    },
+    {
+      "number": 10,
+      "file": "workspace/trials/endgame-races-10.md",
+      "title": "Trial 10: endgame races and legal recaptures"
+    },
+    {
+      "number": 11,
+      "file": "workspace/trials/king-captures-11.md",
+      "title": "Trial 11 \u2014 opposing-king captures in sparse-board conversions"
+    },
+    {
+      "number": 12,
+      "file": "workspace/trials/minor-pawn-origins-12.md",
+      "title": "Trial 12 \u2014 record pawn origins for minor-piece moves"
+    },
+    {
+      "number": 13,
+      "file": "workspace/trials/capturing-side-13.md",
+      "title": "Trial 13 \u2014 play the capturing side before returning to defense"
+    },
+    {
+      "number": 14,
+      "file": "workspace/trials/king-defenders-14.md",
+      "title": "Trial 14 \u2014 keep the king's defenders usable"
+    },
+    {
+      "number": 15,
+      "file": "workspace/trials/development-first-15.md",
+      "title": "Trial 15 \u2014 complete development before exposing pieces"
+    },
+    {
+      "number": 16,
+      "file": "workspace/trials/queen-exchanges-16.md",
+      "title": "Trial 16 \u2014 safe queen exchanges as a position choice"
+    },
+    {
+      "number": 17,
+      "file": "workspace/trials/rook-activity-17.md",
+      "title": "Trial 17 \u2014 rook activity in sparse positions"
+    },
+    {
+      "number": 18,
+      "file": "workspace/trials/forcing-king-safety-18.md",
+      "title": "Trial 18 \u2014 forcing king safety and recapture contrasts"
+    },
+    {
+      "number": 19,
+      "file": "workspace/trials/minor-mobility-19.md",
+      "title": "Trial 19 \u2014 minor-piece mobility and passed-pawn defense"
+    },
+    {
+      "number": 20,
+      "file": "workspace/trials/heavy-lines-20.md",
+      "title": "Trial 20 \u2014 queen-and-rook lines in sparse positions"
+    },
+    {
+      "number": 21,
+      "file": "workspace/trials/rook-finish-21.md",
+      "title": "Trial 21 \u2014 keep the rooks safe while finishing"
+    },
+    {
+      "number": 22,
+      "file": "workspace/trials/mixed-lines-22.md",
+      "title": "Trial 22 \u2014 direct capture lines in mixed rook/bishop endings"
+    },
+    {
+      "number": 23,
+      "file": "workspace/trials/pawn-directions-23.md",
+      "title": "Trial 23 \u2014 Pawn capture directions and immediate advances"
+    },
+    {
+      "number": 24,
+      "file": "workspace/trials/destination-checks-24.md",
+      "title": "Trial 24 \u2014 verify the destination and opposing checks"
+    },
+    {
+      "number": 25,
+      "file": "workspace/trials/literal-recaptures-25.md",
+      "title": "Trial25 \u2014 literal recaptures (declared 2026-10-03 11:09:25 UTC)"
+    },
+    {
+      "number": 26,
+      "file": "workspace/trials/first-reply-26.md",
+      "title": "Trial 26 \u2014 first opposing reply"
+    },
+    {
+      "number": 27,
+      "file": "workspace/trials/actual-defenders-27.md",
+      "title": "Trial 27 \u2014 actual defenders after a move"
+    },
+    {
+      "number": 28,
+      "file": "workspace/trials/retain-defender-28.md",
+      "title": ""
+    },
+    {
+      "number": 29,
+      "file": "workspace/trials/complete-position-29.md",
+      "title": "Trial 29 \u2014 final bounded review: complete the immediate position"
+    }
+  ],
+  "milestones": [
+    {
+      "game": 30,
+      "timestamp": "2026-09-30T18:03:09.139588+00:00",
+      "rated_games": 20,
+      "window_hash": "f26d64773ea953c22dc4e413b4272c877445238405e2f7fa1416b6a5321115be",
+      "estimate": 1780,
+      "lower": 1590,
+      "upper": 1990,
+      "grid_edge_mass": 1.8079630319133276e-75
+    },
+    {
+      "game": 42,
+      "timestamp": "2026-10-01T00:39:25.358207+00:00",
+      "rated_games": 28,
+      "window_hash": "8366edbdd3eef51faa2590c54e53db17ffe5d119fefe5a709af88f19529bc34d",
+      "estimate": 1800,
+      "lower": 1630,
+      "upper": 1970,
+      "grid_edge_mass": 2.7024957611494164e-97
+    },
+    {
+      "game": 60,
+      "timestamp": "2026-10-01T09:34:57.609823+00:00",
+      "rated_games": 40,
+      "window_hash": "df8fa9fcf2f4fb8bb8bac0df48219a18b9d49fcf78f2f35038746ad665130660",
+      "estimate": 1720,
+      "lower": 1590,
+      "upper": 1860,
+      "grid_edge_mass": 2.238856737077974e-165
+    },
+    {
+      "game": 76,
+      "timestamp": "2026-10-01T18:14:51.412742+00:00",
+      "rated_games": 50,
+      "window_hash": "6ff7bbf02950fa7b0451d30be4ac3f92981171097b75bb7265ae678bb7d35961",
+      "estimate": 1680,
+      "lower": 1560,
+      "upper": 1800,
+      "grid_edge_mass": 9.483713445582916e-223
+    },
+    {
+      "game": 96,
+      "timestamp": "2026-10-02T02:59:15.550455+00:00",
+      "rated_games": 64,
+      "window_hash": "1448d7bdaa01cc09dddf333f42bf61a3e0bd89eb9dc1fc1a19ab93a0f0d20ba4",
+      "estimate": 1700,
+      "lower": 1580,
+      "upper": 1820,
+      "grid_edge_mass": 6.501203769093013e-222
+    },
+    {
+      "game": 120,
+      "timestamp": "2026-10-02T15:31:28.892030+00:00",
+      "rated_games": 80,
+      "window_hash": "0856cb23cc39fd22ee5d0a47008ac471bea488ee25d4b4ba936b770ba9e52bce",
+      "estimate": 1590,
+      "lower": 1470,
+      "upper": 1710,
+      "grid_edge_mass": 1.3410093759487664e-247
+    },
+    {
+      "game": 150,
+      "timestamp": "2026-10-03T04:06:50.401692+00:00",
+      "rated_games": 100,
+      "window_hash": "8965a23570a4c793deef3cfd29bc11a89427276a7d6ed10fde898ae680ee032b",
+      "estimate": 1540,
+      "lower": 1420,
+      "upper": 1660,
+      "grid_edge_mass": 3.3996588190973387e-220
+    },
+    {
+      "game": 180,
+      "timestamp": "2026-10-03T12:45:24.208566+00:00",
+      "rated_games": 120,
+      "window_hash": "f4022d2b391fa148192e738e196cdc298a36d6123053df24511f2c629c078ff9",
+      "estimate": 1400,
+      "lower": 1270,
+      "upper": 1520,
+      "grid_edge_mass": 2.4241320830983854e-155
+    },
+    {
+      "game": 198,
+      "timestamp": "2026-10-03T17:02:53.992795+00:00",
+      "rated_games": 132,
+      "window_hash": "e5f1059d82b73f0d4210750ee612f03ca51f075e8e0652b526afd8fe1a08b06d",
+      "estimate": 1400,
+      "lower": 1270,
+      "upper": 1520,
+      "grid_edge_mass": 2.424132083098323e-155
+    }
+  ],
+  "final_elo": {
+    "version": "nominal-stockfish-davidson-v1",
+    "label": "Provisional engine-relative Elo",
+    "estimate": 1400,
+    "lower": 1270,
+    "upper": 1520,
+    "interval_level": 0.95,
+    "interval_type": "Bayesian equal-tail credible interval",
+    "rated_games_total": 132,
+    "rated_games_in_window": 50,
+    "excluded_uncalibrated": 68,
+    "window": 50,
+    "anchors": {
+      "skill-0": 1320,
+      "elo-1800-setting": 1800
+    },
+    "prior": {
+      "distribution": "normal",
+      "mean": 1500,
+      "sd": 800
+    },
+    "draw_prior": "Uniform(0,1) on equal-strength draw probability; 40 midpoint bins",
+    "uncertainty_note": "Conditional on nominal anchors and model assumptions; excludes systematic anchor calibration error. Not FIDE or platform Elo.",
+    "small_sample": false,
+    "grid_edge_mass": 2.424132083098323e-155
+  },
+  "checks": {
+    "benchmark_starts_and_results": 200,
+    "pgn_result_matches": 200,
+    "rotation_and_colors_match": true,
+    "one_million_nodes_each_game": true,
+    "opponent_options_constant_per_setting": true,
+    "status_totals_match_ledger": true,
+    "benchmark_and_practice_previous_links_and_sequences_match": true,
+    "practice_all_closed": true,
+    "active_benchmark": null,
+    "cryptographic_event_hashes_recomputed": false
+  },
+  "first_benchmark_start": "2026-09-29T21:50:28.868129+00:00",
+  "final_benchmark_result": {
+    "timestamp": "2026-10-03T17:30:23.986370+00:00",
+    "game": 200,
+    "seq": 16121,
+    "sha256": "217e9632fb0ce4b60b03ec3ef074b3215643c556e95515118244362631f8fa1a",
+    "snapshot": "7ebba9502b615050f6a4255c8240c9a3509cd70ce5dc7604c8e114dec542a64b"
+  }
+}

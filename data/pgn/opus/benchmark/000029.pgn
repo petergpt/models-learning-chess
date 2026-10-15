@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "29"]
+[White "claude-opus-5-5"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "opus"]
+[GameId "opus/benchmark/000029"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "resignation"]
+
+1. e4 c5 2. c3 Nc6 3. Nf3 e5 4. Bc4 Na5 5. Be2 Qc7 6. b4 cxb4 7. cxb4 Bxb4 8. Qa4 Qxc1+ 9. Bd1 Nc6 10. O-O Qc5 0-1

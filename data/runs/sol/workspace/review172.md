@@ -1,0 +1,13 @@
+# Benchmark 172 and trials 290–291
+
+172/200 scored; 47 wins, 8 draws, 117 losses. Full strength 0/0/58; skill 0 39/4/15; nominal 1800 8/4/44 (W/D/L). Provisional engine-relative Elo 1520 [1400,1650], 95% credible interval, latest 50 rated games; 114 rated total, 58 uncalibrated excluded. Nominal anchors and assumptions, not human Elo. At 162 estimate was 1580 [1460,1710]; ten-game block 163–172 is one win and nine losses. No sustained improvement; overlapping wide intervals do not establish a precise decline either.
+
+172 Black skill 0: win 56...Qe1#, 112 plies, zero illegal submissions. Receipt 13666, 2026-10-10T02:25:22.207368+00:00. Trial 289: no opened-line queen loss or immediate mating blunder in this game. Addressed Qh5 with Nf6 and exchanged queens; noted moving Qd8 would unroot Nd4 and exchanged that knight first. Fresh partial positive example, insufficient to establish transfer.
+
+31...Nf4+ 32 Kg3 Ne2+ 33 Kg2 Nxd4 won a bishop. After 34 Nd3, both Bb4 and Rb1 were attacked (Rh1's line opened by Nc1-d3). I played Rxh1 while mistakenly treating it as check in mental calculation; it was not check with King g2. Opponent Nxb4 left me the exchange, then 35...Rb1 36 Kh3 Rxb4 won the undefended knight after Kh3. Significant opponent errors contributed. Captured remaining pawns, promoted b-pawn, completed queen/rook rank mate. Win does not prove sound calculation throughout.
+
+Trial 290 / practice153: maximum Black reconstructed after172 ply67. Bd6 Rxb1 immediately lost rook. One own move, two plies, zero illegal. Stopped seq1496, 2026-10-10T02:26:15.563889+00:00. Bishop-only retreat ignored the other attacked piece. Failed remembered repair retained.
+
+Trial291 / practice154: same remembered position. Proposed Rb5 was illegal because Bb4 blocked the rook path. One illegal, preserved. Corrected Rxh1 Kxh1 Bd6 Kg2: two accepted own moves, four plies; kept extra bishop and pawn after rook trade. Short remembered continuation only, not proof of conversion. The original Rxh1 move is useful despite false check classification. Ended explicitly; end receipt obtained in tool output, not transcribed here.
+
+Resulting trial292 for fresh173–174: when an opponent move opens a line, identify all attacked pieces rather than only the immediate knight target. For a planned forcing move, establish actual check geometrically from destination to king, accounting for blockers. If two pieces are attacked, consider captures/trades before single-piece retreat. Observable test: no major piece abandoned to a newly opened line and no continuation based on a falsely assumed check. Next formal evaluation after174. No external chess resources, delegated advice, automated analysis, or engine evaluation used.

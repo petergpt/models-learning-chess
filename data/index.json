@@ -1,0 +1,343 @@
+{
+  "schema_version": "1.0",
+  "snapshot_date": "2026-10-15",
+  "deployed_url": "https://ailearningchess.ai-learning-chess.workers.dev",
+  "totals": {
+    "learning_runs": 6,
+    "benchmark_scored": 807,
+    "benchmark_active": 2,
+    "practice_sessions": 367,
+    "match_games": 30,
+    "game_session_starts": 1206,
+    "accepted_plies": 67332,
+    "workspace_snapshots": 1324,
+    "trace_files": 8,
+    "trace_records": 551684
+  },
+  "runs": [
+    {
+      "run_id": "astra",
+      "label": "GPT-6 Astra",
+      "model": "gpt-6-astra",
+      "source_folder": "Chess - GPT-6-Astra",
+      "config": {
+        "protocol": "chess-learning-v1",
+        "model": "gpt-6-astra",
+        "engine": "stockfish/stockfish/stockfish-linux-x86-64-universal",
+        "nodes_per_move": 1000000,
+        "max_plies": 400,
+        "illegal_attempts_per_turn": 3,
+        "storage_limit_bytes": 2147483648,
+        "opponents": [
+          {
+            "id": "full-strength",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 20,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "skill-0",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 0,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "elo-1800-setting",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "UCI_LimitStrength": true,
+              "UCI_Elo": 1800
+            }
+          }
+        ],
+        "benchmark_game_limit": 200
+      },
+      "benchmark_started": 200,
+      "benchmark_scored": 200,
+      "benchmark_active": 0,
+      "practice_sessions": 51,
+      "workspace_snapshots": 263,
+      "benchmark_events": 16121,
+      "practice_events": 1514
+    },
+    {
+      "run_id": "opus",
+      "label": "Claude Opus 5.5",
+      "model": "claude-opus-5-5",
+      "source_folder": "Chess - Opus-5.5",
+      "config": {
+        "protocol": "chess-learning-v1",
+        "model": "claude-opus-5-5",
+        "engine": "stockfish/stockfish/stockfish-linux-x86-64-universal",
+        "nodes_per_move": 1000000,
+        "max_plies": 400,
+        "illegal_attempts_per_turn": 3,
+        "storage_limit_bytes": 2147483648,
+        "opponents": [
+          {
+            "id": "full-strength",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 20,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "skill-0",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 0,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "elo-1800-setting",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "UCI_LimitStrength": true,
+              "UCI_Elo": 1800
+            }
+          }
+        ],
+        "benchmark_game_limit": 200
+      },
+      "benchmark_started": 200,
+      "benchmark_scored": 200,
+      "benchmark_active": 0,
+      "practice_sessions": 1,
+      "workspace_snapshots": 362,
+      "benchmark_events": 14896,
+      "practice_events": 65
+    },
+    {
+      "run_id": "sol",
+      "label": "GPT-6.1 Sol · 258K",
+      "model": "gpt-6.1-sol",
+      "source_folder": "Chess - GPT-6.1-Sol",
+      "config": {
+        "protocol": "chess-learning-v1",
+        "model": "gpt-6.1-sol",
+        "engine": "stockfish/stockfish/stockfish-linux-x86-64-universal",
+        "nodes_per_move": 1000000,
+        "max_plies": 400,
+        "illegal_attempts_per_turn": 3,
+        "storage_limit_bytes": 2147483648,
+        "opponents": [
+          {
+            "id": "full-strength",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 20,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "skill-0",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 0,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "elo-1800-setting",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "UCI_LimitStrength": true,
+              "UCI_Elo": 1800
+            }
+          }
+        ],
+        "benchmark_game_limit": 200
+      },
+      "benchmark_started": 200,
+      "benchmark_scored": 200,
+      "benchmark_active": 0,
+      "practice_sessions": 181,
+      "workspace_snapshots": 340,
+      "benchmark_events": 15727,
+      "practice_events": 1690
+    },
+    {
+      "run_id": "sol-long-context",
+      "label": "GPT-6.1 Sol · 828K · Medium",
+      "model": "gpt-6.1-sol",
+      "source_folder": "Chess - GPT-6.1-Sol - Long Context",
+      "config": {
+        "protocol": "chess-learning-v1",
+        "model": "gpt-6.1-sol",
+        "engine": "stockfish/stockfish/stockfish-linux-x86-64-universal",
+        "nodes_per_move": 1000000,
+        "max_plies": 400,
+        "illegal_attempts_per_turn": 3,
+        "storage_limit_bytes": 2147483648,
+        "opponents": [
+          {
+            "id": "full-strength",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 20,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "skill-0",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 0,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "elo-1800-setting",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "UCI_LimitStrength": true,
+              "UCI_Elo": 1800
+            }
+          }
+        ],
+        "benchmark_game_limit": 200
+      },
+      "benchmark_started": 100,
+      "benchmark_scored": 99,
+      "benchmark_active": 1,
+      "practice_sessions": 94,
+      "workspace_snapshots": 202,
+      "benchmark_events": 7434,
+      "practice_events": 1044
+    },
+    {
+      "run_id": "sol-long-context-max",
+      "label": "GPT-6.1 Sol · 828K · Max",
+      "model": "gpt-6.1-sol",
+      "source_folder": "Chess - GPT-6.1-Sol - Long Context - Max",
+      "config": {
+        "protocol": "chess-learning-v1",
+        "model": "gpt-6.1-sol",
+        "engine": "stockfish/stockfish/stockfish-linux-x86-64-universal",
+        "nodes_per_move": 1000000,
+        "max_plies": 400,
+        "illegal_attempts_per_turn": 3,
+        "storage_limit_bytes": 2147483648,
+        "opponents": [
+          {
+            "id": "full-strength",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 20,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "skill-0",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 0,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "elo-1800-setting",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "UCI_LimitStrength": true,
+              "UCI_Elo": 1800
+            }
+          }
+        ],
+        "benchmark_game_limit": 200
+      },
+      "benchmark_started": 64,
+      "benchmark_scored": 63,
+      "benchmark_active": 1,
+      "practice_sessions": 36,
+      "workspace_snapshots": 100,
+      "benchmark_events": 4706,
+      "practice_events": 405
+    },
+    {
+      "run_id": "fable",
+      "label": "Claude Fable 5.1",
+      "model": "claude-fable-5-1",
+      "source_folder": "Chess - Fable-5.1",
+      "config": {
+        "protocol": "chess-learning-v1",
+        "model": "claude-fable-5-1",
+        "engine": "stockfish/stockfish/stockfish-linux-x86-64-universal",
+        "nodes_per_move": 1000000,
+        "max_plies": 400,
+        "illegal_attempts_per_turn": 3,
+        "storage_limit_bytes": 2147483648,
+        "opponents": [
+          {
+            "id": "full-strength",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 20,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "skill-0",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "Skill Level": 0,
+              "UCI_LimitStrength": false
+            }
+          },
+          {
+            "id": "elo-1800-setting",
+            "options": {
+              "Threads": 1,
+              "Hash": 64,
+              "UCI_LimitStrength": true,
+              "UCI_Elo": 1800
+            }
+          }
+        ],
+        "benchmark_game_limit": 200
+      },
+      "benchmark_started": 45,
+      "benchmark_scored": 45,
+      "benchmark_active": 0,
+      "practice_sessions": 4,
+      "workspace_snapshots": 57,
+      "benchmark_events": 3524,
+      "practice_events": 258
+    }
+  ],
+  "match": {
+    "run_id": "astra-opus",
+    "games": 30,
+    "scored": 30,
+    "events": 3190,
+    "plies": 3115
+  },
+  "notes": [
+    "Benchmark, practice, and match modes are separate.",
+    "Run names are labels; native turn metadata records settings changes.",
+    "The two match traces inherit history from original learner sessions; do not count inherited events as new activity."
+  ]
+}

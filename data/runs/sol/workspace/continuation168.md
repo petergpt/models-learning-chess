@@ -1,0 +1,3 @@
+# Continuation at 168
+
+168 of 200 scored benchmark games completed, 32 remain. No active benchmark or practice. Next fixed benchmark is 169, White full strength. Trial 283 chosen: inspect the opponent's moved piece and its direct attacks before candidate selection. Next evaluation after 170. Review168.md contains measured results, failures, and practice149 outcome. Goal stays active. All chess decisions must remain my own; no engines except opponent via ./play, no automated search/scoring/selection, no external or delegated position advice. Only this experiment directory; writes under workspace/. Do not use export. Exactly 200 scored games then report final results and complete goal, no 201.

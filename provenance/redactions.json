@@ -1,0 +1,80 @@
+{
+  "policy": "Retain research text, including provider-returned thinking and summaries. Remove credentials and opaque runtime/resume fields. Do not bundle installed agent software, account directories, or authentication files.",
+  "secret_substitutions": [],
+  "opaque_fields_removed": [
+    {
+      "path": "data/traces/astra/events.jsonl.gz",
+      "field": "base_instructions",
+      "count": 1
+    },
+    {
+      "path": "data/traces/astra/events.jsonl.gz",
+      "field": "encrypted_content",
+      "count": 22645
+    },
+    {
+      "path": "data/traces/fable/events.jsonl.gz",
+      "field": "signature",
+      "count": 2925
+    },
+    {
+      "path": "data/traces/match-astra/events.jsonl.gz",
+      "field": "base_instructions",
+      "count": 1
+    },
+    {
+      "path": "data/traces/match-astra/events.jsonl.gz",
+      "field": "encrypted_content",
+      "count": 12004
+    },
+    {
+      "path": "data/traces/match-opus/events.jsonl.gz",
+      "field": "signature",
+      "count": 8873
+    },
+    {
+      "path": "data/traces/opus/events.jsonl.gz",
+      "field": "signature",
+      "count": 7373
+    },
+    {
+      "path": "data/traces/sol-long-context-max/events.jsonl.gz",
+      "field": "base_instructions",
+      "count": 1
+    },
+    {
+      "path": "data/traces/sol-long-context-max/events.jsonl.gz",
+      "field": "encrypted_content",
+      "count": 19482
+    },
+    {
+      "path": "data/traces/sol-long-context/events.jsonl.gz",
+      "field": "base_instructions",
+      "count": 1
+    },
+    {
+      "path": "data/traces/sol-long-context/events.jsonl.gz",
+      "field": "encrypted_content",
+      "count": 23799
+    },
+    {
+      "path": "data/traces/sol/events.jsonl.gz",
+      "field": "base_instructions",
+      "count": 1
+    },
+    {
+      "path": "data/traces/sol/events.jsonl.gz",
+      "field": "encrypted_content",
+      "count": 26756
+    }
+  ],
+  "excluded_source_categories": [
+    "Installed Claude Code and Codex software",
+    "Account/authentication/configuration directories",
+    "Native session-resume files and encrypted/signature fields",
+    "Installed agent/deployment dependency directories, native engine executables, caches and lock files; the upstream browser-engine source archive is retained intact",
+    "Redundant intermediate SDK fork copy",
+    "Unrelated conversations and whole-application databases"
+  ],
+  "original_experiment_files_modified": false
+}

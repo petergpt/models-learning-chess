@@ -1,0 +1,3 @@
+# Continue after 174
+
+174/200 scored,26 remain. No active benchmark; practice156 explicitly stopped. Next fixed175 White full strength. Trial296: verify pawn attack direction (Black lower rank/White higher), then scan enemy slider lines through the origin of a planned move and every attacked piece. Next formal review after176. See review174.md. Goal active, no token budget. Every move own reasoning via ./play; no external/automated/delegated position advice. Own experiment only; edits workspace/. Avoid export. Stop at exactly200 scored; verify and summarize honest Elo/uncertainty/per-opponent outcomes/methods/transfer or stagnation/weaknesses, then complete goal. No201.

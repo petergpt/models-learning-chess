@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "85"]
+[White "claude-opus-5-5"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "opus"]
+[GameId "opus/benchmark/000085"]
+[OpponentSetting "full-strength"]
+[Termination "resignation"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 a6 6. O-O Ba7 7. a4 d6 8. h3 h6 9. Be3 Bxe3 10. fxe3 Ne7 11. Nbd2 Ng6 12. d4 O-O 13. Qe1 b6 14. Qg3 Kh7 15. Bd3 Kg8 16. Nc4 Nh5 17. Qf2 Qe7 18. b4 Bb7 19. d5 Bxd5 20. exd5 e4 21. Bc2 exf3 22. Qxf3 Qg5 23. Qf5 Qxf5 24. Rxf5 Ng3 25. Rf2 Rfe8 26. Kh2 Ne4 27. Bxe4 Rxe4 28. Nd2 Rxe3 29. Nb1 Re1 30. Rd2 Rc1 31. Rb2 Nf4 32. Kg3 Nxd5 33. Rb3 Re8 34. Ra2 g5 0-1

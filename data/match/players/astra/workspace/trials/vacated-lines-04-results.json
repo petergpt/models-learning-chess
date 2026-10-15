@@ -1,0 +1,268 @@
+{
+  "scope": "Own known-example practice: starting validity, legality of supplied moves, check status and rendered occupancy only. No automated attack enumeration, search, scoring, move generation or selection.",
+  "mismatches": 0,
+  "branches": [
+    {
+      "id": "01_actual_48_queen_exposed",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "e5d4",
+          "legal": true,
+          "captured_piece": "P",
+          "check_after": false,
+          "fen_after": "3r1rk1/ppp1b1pp/2nq4/3p4/3p4/P1P2BB1/2P1Q1PP/R4RK1 w - - 0 16"
+        },
+        {
+          "uci": "g3d6",
+          "legal": true,
+          "captured_piece": "q",
+          "check_after": false,
+          "fen_after": "3r1rk1/ppp1b1pp/2nB4/3p4/3p4/P1P2B2/2P1Q1PP/R4RK1 b - - 0 16"
+        },
+        {
+          "uci": "d8d6",
+          "legal": true,
+          "captured_piece": "B",
+          "check_after": false,
+          "fen_after": "5rk1/ppp1b1pp/2nr4/3p4/3p4/P1P2B2/2P1Q1PP/R4RK1 w - - 0 17"
+        }
+      ],
+      "final_board": ". . . . . r k .\np p p . b . p p\n. . n r . . . .\n. . . p . . . .\n. . . p . . . .\nP . P . . B . .\n. . P . Q . P P\nR . . . . R K ."
+    },
+    {
+      "id": "02_queen_b6_contrast",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "e5d4",
+          "legal": true,
+          "captured_piece": "P",
+          "check_after": false,
+          "fen_after": "3r1rk1/ppp1b1pp/1qn5/3p4/3p4/P1P2BB1/2P1Q1PP/R4RK1 w - - 0 16"
+        },
+        {
+          "uci": "g3d6",
+          "legal": true,
+          "captured_piece": null,
+          "check_after": false,
+          "fen_after": "3r1rk1/ppp1b1pp/1qnB4/3p4/3p4/P1P2B2/2P1Q1PP/R4RK1 b - - 1 16"
+        },
+        {
+          "uci": "d8d6",
+          "legal": true,
+          "captured_piece": "B",
+          "check_after": false,
+          "fen_after": "5rk1/ppp1b1pp/1qnr4/3p4/3p4/P1P2B2/2P1Q1PP/R4RK1 w - - 0 17"
+        }
+      ],
+      "final_board": ". . . . . r k .\np p p . b . p p\n. q n r . . . .\n. . . p . . . .\n. . . p . . . .\nP . P . . B . .\n. . P . Q . P P\nR . . . . R K ."
+    },
+    {
+      "id": "03_actual_47_double_check",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "d4f3",
+          "legal": true,
+          "captured_piece": null,
+          "check_after": true,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/4Rn2/1B1K1P1Q/R7 w - - 2 41"
+        },
+        {
+          "uci": "e3f3",
+          "legal": false,
+          "captured_piece": null,
+          "check_after": true,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/4Rn2/1B1K1P1Q/R7 w - - 2 41"
+        }
+      ],
+      "final_board": "b r . . . . k .\n. . p . . p p .\nB . . . p . . .\n. P . q P . . p\nP . . . . . r .\n. . . . R n . .\n. B . K . P . Q\nR . . . . . . ."
+    },
+    {
+      "id": "04_d3_blocker_contrast",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "d4f3",
+          "legal": true,
+          "captured_piece": null,
+          "check_after": true,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/3PRn2/1B1K1P1Q/R7 w - - 2 41"
+        },
+        {
+          "uci": "e3f3",
+          "legal": true,
+          "captured_piece": "n",
+          "check_after": false,
+          "fen_after": "br4k1/2p2pp1/B3p3/1P1qP2p/P5r1/3P1R2/1B1K1P1Q/R7 b - - 0 41"
+        }
+      ],
+      "final_board": "b r . . . . k .\n. . p . . p p .\nB . . . p . . .\n. P . q P . . p\nP . . . . . r .\n. . . P . R . .\n. B . K . P . Q\nR . . . . . . ."
+    },
+    {
+      "id": "05_king_vacates_rook_ray",
+      "initial_valid": true,
+      "initial_check": true,
+      "steps": [
+        {
+          "uci": "f8e7",
+          "legal": true,
+          "captured_piece": null,
+          "check_after": false,
+          "fen_after": "2R4q/4k3/8/8/8/8/8/6K1 w - - 1 2"
+        },
+        {
+          "uci": "c8h8",
+          "legal": true,
+          "captured_piece": "q",
+          "check_after": false,
+          "fen_after": "7R/4k3/8/8/8/8/8/6K1 b - - 0 2"
+        }
+      ],
+      "final_board": ". . . . . . . R\n. . . . k . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . K ."
+    },
+    {
+      "id": "06a_second_blocker_stays",
+      "initial_valid": true,
+      "initial_check": true,
+      "steps": [
+        {
+          "uci": "f8e7",
+          "legal": true,
+          "captured_piece": null,
+          "check_after": false,
+          "fen_after": "2R3bq/4k3/8/8/8/8/8/6K1 w - - 1 2"
+        },
+        {
+          "uci": "c8h8",
+          "legal": false,
+          "captured_piece": null,
+          "check_after": false,
+          "fen_after": "2R3bq/4k3/8/8/8/8/8/6K1 w - - 1 2"
+        }
+      ],
+      "final_board": ". . R . . . b q\n. . . . k . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . K ."
+    },
+    {
+      "id": "06b_capture_second_blocker",
+      "initial_valid": true,
+      "initial_check": true,
+      "steps": [
+        {
+          "uci": "f8e7",
+          "legal": true,
+          "captured_piece": null,
+          "check_after": false,
+          "fen_after": "2R3bq/4k3/8/8/8/8/8/6K1 w - - 1 2"
+        },
+        {
+          "uci": "c8g8",
+          "legal": true,
+          "captured_piece": "b",
+          "check_after": false,
+          "fen_after": "6Rq/4k3/8/8/8/8/8/6K1 b - - 0 2"
+        },
+        {
+          "uci": "h8g8",
+          "legal": true,
+          "captured_piece": "R",
+          "check_after": true,
+          "fen_after": "6q1/4k3/8/8/8/8/8/6K1 w - - 0 3"
+        }
+      ],
+      "final_board": ". . . . . . q .\n. . . . k . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . . .\n. . . . . . K ."
+    },
+    {
+      "id": "07a_white_pawn_capture_unblocks",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "e4d5",
+          "legal": true,
+          "captured_piece": "p",
+          "check_after": false,
+          "fen_after": "6k1/8/6b1/3P4/8/3Q4/8/3R2K1 b - - 0 1"
+        },
+        {
+          "uci": "g6d3",
+          "legal": true,
+          "captured_piece": "Q",
+          "check_after": false,
+          "fen_after": "6k1/8/8/3P4/8/3b4/8/3R2K1 w - - 0 2"
+        },
+        {
+          "uci": "d1d3",
+          "legal": true,
+          "captured_piece": "b",
+          "check_after": false,
+          "fen_after": "6k1/8/8/3P4/8/3R4/8/6K1 b - - 0 2"
+        }
+      ],
+      "final_board": ". . . . . . k .\n. . . . . . . .\n. . . . . . . .\n. . . P . . . .\n. . . . . . . .\n. . . R . . . .\n. . . . . . . .\n. . . . . . K ."
+    },
+    {
+      "id": "07b_white_quiet_pawn_unblocks",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "e4e5",
+          "legal": true,
+          "captured_piece": null,
+          "check_after": false,
+          "fen_after": "6k1/8/6b1/3pP3/8/3Q4/8/3R2K1 b - - 0 1"
+        },
+        {
+          "uci": "g6d3",
+          "legal": true,
+          "captured_piece": "Q",
+          "check_after": false,
+          "fen_after": "6k1/8/8/3pP3/8/3b4/8/3R2K1 w - - 0 2"
+        },
+        {
+          "uci": "d1d3",
+          "legal": true,
+          "captured_piece": "b",
+          "check_after": false,
+          "fen_after": "6k1/8/8/3pP3/8/3R4/8/6K1 b - - 0 2"
+        }
+      ],
+      "final_board": ". . . . . . k .\n. . . . . . . .\n. . . . . . . .\n. . . p P . . .\n. . . . . . . .\n. . . R . . . .\n. . . . . . . .\n. . . . . . K ."
+    },
+    {
+      "id": "08_knight_vacates_bishop_ray",
+      "initial_valid": true,
+      "initial_check": false,
+      "steps": [
+        {
+          "uci": "d4f5",
+          "legal": true,
+          "captured_piece": null,
+          "check_after": false,
+          "fen_after": "6k1/8/1b6/5N2/8/8/5Q2/4R1K1 b - - 1 1"
+        },
+        {
+          "uci": "b6f2",
+          "legal": true,
+          "captured_piece": "Q",
+          "check_after": true,
+          "fen_after": "6k1/8/8/5N2/8/8/5b2/4R1K1 w - - 0 2"
+        },
+        {
+          "uci": "g1f2",
+          "legal": true,
+          "captured_piece": "b",
+          "check_after": false,
+          "fen_after": "6k1/8/8/5N2/8/8/5K2/4R3 b - - 0 2"
+        }
+      ],
+      "final_board": ". . . . . . k .\n. . . . . . . .\n. . . . . . . .\n. . . . . N . .\n. . . . . . . .\n. . . . . . . .\n. . . . . K . .\n. . . . R . . ."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "model": "YOUR_MODEL",
+  "provider": null,
+  "agent_tool": null,
+  "agent_tool_version": null,
+  "requested_reasoning_effort": null,
+  "observed_reasoning_effort": null,
+  "context_window_tokens": null,
+  "compaction_configuration": null,
+  "initial_prompt": "Read AGENTS.md and GOAL.md. Carry out this independent chess-learning experiment.",
+  "started_at": null,
+  "stopped_at": null,
+  "stop_reason": null,
+  "interventions": []
+}

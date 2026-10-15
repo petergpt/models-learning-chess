@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.10"]
+[Round "95"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "sol-long-context"]
+[GameId "sol-long-context/benchmark/000095"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "resignation"]
+
+1. e4 c5 2. Nf3 d6 3. d4 Nf6 4. Nc3 cxd4 5. Nxd4 g6 6. Be3 Nc6 7. Bd3 Nxd4 8. Bxd4 Bg7 9. O-O O-O 10. Re1 Qa5 11. h3 Be6 12. Be3 Rfc8 13. Qf3 a6 14. Bf4 Rab8 15. e5 Nd5 16. Nxd5 Bxd5 17. Qg3 Re8 18. c4 Be6 19. b3 b5 20. Qe3 Rbc8 21. Bg3 bxc4 22. bxc4 Bxc4 23. Bxc4 Rxc4 24. Re2 d5 25. Rc1 Re4 26. Qd2 Qb4 27. Qxb4 Rxb4 28. Rec2 Bh6 29. Re1 Rd8 30. Rce2 e6 31. Kh2 Rc8 32. f3 Rbc4 33. Rf1 Bc1 34. Ref2 h5 35. h4 Ba3 36. f4 Re4 37. Rf3 Bc1 38. Bf2 Bd2 39. Kg3 Rcc4 40. a3 Bxf4+ 41. Kh3 Rc1 42. Rxc1 Bxc1 43. Bg3 g5 44. hxg5 Be3 45. Bh4 Bc1 46. Kg3 a5 47. Rb3 Rc4 48. Rb8+ Kg7 49. Kf3 Rxh4 50. Rb7 Rh1 51. Rb5 Kg6 52. Rxa5 Rg1 53. a4 Rh1 54. Ra6 Bb2 55. a5 Bxe5 56. Ra7 Rf1+ 57. Ke3 Ra1 58. a6 Bg7 59. Rb7 d4+ 60. Ke4 Rxa6 0-1

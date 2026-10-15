@@ -1,0 +1,93 @@
+[
+  {
+    "id": "137-sideways-pawn",
+    "game": 137,
+    "ply": 104,
+    "moves": [
+      [
+        "h3g3",
+        false
+      ]
+    ]
+  },
+  {
+    "id": "138-king-now-defends-f3",
+    "game": 138,
+    "ply": 73,
+    "moves": [
+      [
+        "h4f3",
+        true
+      ],
+      [
+        "f2f3",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "138-knight-escape",
+    "game": 138,
+    "ply": 87,
+    "moves": [
+      [
+        "h4g2",
+        true
+      ],
+      [
+        "e3f3",
+        true
+      ],
+      [
+        "g2f4",
+        true
+      ],
+      [
+        "f3f4",
+        false
+      ]
+    ]
+  },
+  {
+    "id": "138-cooperative-f8-route",
+    "game": 138,
+    "ply": 101,
+    "moves": [
+      [
+        "e5d7",
+        true
+      ],
+      [
+        "h5h6",
+        true
+      ],
+      [
+        "d7f8",
+        true
+      ],
+      [
+        "h6h7",
+        true
+      ],
+      [
+        "f8h7",
+        true
+      ]
+    ]
+  },
+  {
+    "id": "138-bishop-closes-f8",
+    "game": 138,
+    "ply": 103,
+    "moves": [
+      [
+        "d7f8",
+        true
+      ],
+      [
+        "g7f8",
+        true
+      ]
+    ]
+  }
+]

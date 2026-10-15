@@ -1,0 +1,10 @@
+{
+  "chess/__init__.py": "1fde6a8e932508d14b31f6a584497b49c2969fc3c7cdc675347f819f0d667a5b",
+  "chess/engine.py": "40a1407749ea43b4ed3174f0603e0316a9c971b8943113fbea5be47c82bde22b",
+  "chess/gaviota.py": "2ba4d8ebceb5538e52ace325dfbd71358596c52b4799911c77fe666b79df164d",
+  "chess/pgn.py": "0e280ee44cb3c27cde903c40fe166419df71a030b05793c63f3e0ffffd6ff0c4",
+  "chess/polyglot.py": "8dc20733bdc1297a9e8993a76737ba4f328a99185ae94b311ddbb5342fce32fc",
+  "chess/svg.py": "32840c66e33bf55ea2de49eadc856d45dc3cd661b87a0a1ea99d8b6c3b143b99",
+  "chess/syzygy.py": "e10e74b0b8174e85428945a975dfc2d67f521c6c5d941e998bdfca26f9ebf754",
+  "chess/variant.py": "fc0b384707fc9ffb9348c4683fc430ee4ed5b601d9cc40cf7fc5ecda2d9cc431"
+}

@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "147"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "astra"]
+[GameId "astra/benchmark/000147"]
+[OpponentSetting "skill-0"]
+[Termination "checkmate"]
+
+1. d4 d5 2. Nf3 Bf5 3. e3 Nd7 4. Bd3 Bg6 5. O-O c6 6. c4 a6 7. Nc3 Bxd3 8. Qxd3 e6 9. e4 dxe4 10. Nxe4 Ngf6 11. Bf4 Nxe4 12. Qxe4 Be7 13. Rfe1 Nf6 14. Qd3 Rc8 15. Rad1 b5 16. d5 exd5 17. cxd5 O-O 18. d6 Bxd6 19. Bxd6 Nd5 20. Bxf8 Nf4 21. Qxd8 Rxd8 22. Rxd8 Ne2+ 23. Rxe2 h5 24. Bxg7+ Kxg7 25. Re7 Kg6 26. Nh4+ Kg5 27. g3 c5 28. Re5+ Kf6 29. Rf5+ Ke6 30. Rdd5 c4 31. Rde5+ Kd7 32. Rf6 Kc8 33. Re7 Kd8 34. Rfxf7 c3 35. Rf8+ Kxe7 36. bxc3 b4 37. cxb4 Kxf8 38. a4 Kf7 39. b5 Ke8 40. bxa6 Kd8 41. a7 Kd7 42. a8=Q Kd6 43. Qe4 Kc7 44. Qd5 Kb8 45. Qd7 Ka8 46. Kf1 Kb8 47. Ke2 Ka8 48. Kd3 Kb8 49. Kc4 Ka8 50. Kb5 Kb8 51. Kc6 Ka8 52. Qb7# 1-0

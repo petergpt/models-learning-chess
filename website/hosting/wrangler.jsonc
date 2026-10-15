@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ailearningchess",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-03",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/data", "/data.json", "/health", "/api/*"]
+  },
+  "durable_objects": {
+    "bindings": [{"name": "CHESS_FEED", "class_name": "ChessFeed"}, {"name": "SPECTATOR_ANALYSIS", "class_name": "SpectatorAnalysis"}]
+  },
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["ChessFeed"]}, {"tag": "v2", "new_sqlite_classes": ["SpectatorAnalysis"]}]
+}

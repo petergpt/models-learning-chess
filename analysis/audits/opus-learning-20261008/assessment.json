@@ -1,0 +1,1247 @@
+{
+  "assessedAt": "2026-10-08T10:18:49.378049+00:00",
+  "scope": {
+    "benchmarkGames": 200,
+    "acceptedMoves": 14368,
+    "authoredGameNotes": 200,
+    "nativeSessionRows": 41911,
+    "nativeToolCalls": 7658,
+    "nativeToolNames": {
+      "Bash": 7653,
+      "ToolSearch": 2,
+      "Write": 2,
+      "SendMessage": 1
+    },
+    "firstToolAt": "2026-10-02T20:59:32.036Z",
+    "lastToolAt": "2026-10-05T01:22:20.118Z",
+    "invalidNativeLogLines": [],
+    "hiddenReasoningInspectedOrExported": false
+  },
+  "integrity": {
+    "ledger": {
+      "events": 14896,
+      "head": "898659a0133208d2acfb37b5fe6000e180e410287e209b6991561bebe3d68ecb",
+      "lastTimestamp": "2026-10-05T01:22:20.453109+00:00"
+    },
+    "pinnedFilesVerified": 19,
+    "pinnedMismatches": [],
+    "allStartManifestHashesMatch": true,
+    "rotationAndColorVerified": true,
+    "allGamesReplayLegallyAndMatchSavedFenSanAndResult": true,
+    "pgnFilesVerified": 200,
+    "snapshotArchivesVerified": 362,
+    "allSnapshotContentHashesMatch": true
+  },
+  "outcomes": {
+    "full-strength": {
+      "games": 68,
+      "wins": 0,
+      "draws": 0,
+      "losses": 68,
+      "points": 0,
+      "score": 0
+    },
+    "skill-0": {
+      "games": 66,
+      "wins": 49,
+      "draws": 4,
+      "losses": 13,
+      "points": 51.0,
+      "score": 0.7727272727272727
+    },
+    "elo-1800-setting": {
+      "games": 66,
+      "wins": 23,
+      "draws": 6,
+      "losses": 37,
+      "points": 26.0,
+      "score": 0.3939393939393939
+    }
+  },
+  "resultReasons": {
+    "resignation": 97,
+    "checkmate": 93,
+    "stalemate": 1,
+    "insufficient_material": 1,
+    "threefold_repetition": 8
+  },
+  "quarters": [
+    {
+      "games": [
+        1,
+        50
+      ],
+      "byOpponent": {
+        "full-strength": {
+          "games": 18,
+          "wins": 0,
+          "draws": 0,
+          "losses": 18,
+          "points": 0,
+          "score": 0
+        },
+        "skill-0": {
+          "games": 16,
+          "wins": 9,
+          "draws": 0,
+          "losses": 7,
+          "points": 9,
+          "score": 0.5625
+        },
+        "elo-1800-setting": {
+          "games": 16,
+          "wins": 4,
+          "draws": 1,
+          "losses": 11,
+          "points": 4.5,
+          "score": 0.28125
+        }
+      },
+      "rated": {
+        "games": 32,
+        "wins": 13,
+        "draws": 1,
+        "losses": 18,
+        "points": 13.5,
+        "score": 0.421875
+      },
+      "behavior": {
+        "ownMoves": 1859,
+        "illegalAttempts": 21,
+        "illegalPer100": 1.1296395911780528,
+        "shortLossCount": 22,
+        "shortLossPer100": 1.183431952662722,
+        "gamesWithShortLoss": 17,
+        "leadGames": 15,
+        "leadWins": 13,
+        "leadConversion": 0.8666666666666667,
+        "castleBy10": 0.68,
+        "castleEligibleGames": 50,
+        "medianMoveSeconds": 10.7252
+      }
+    },
+    {
+      "games": [
+        51,
+        100
+      ],
+      "byOpponent": {
+        "full-strength": {
+          "games": 16,
+          "wins": 0,
+          "draws": 0,
+          "losses": 16,
+          "points": 0,
+          "score": 0
+        },
+        "skill-0": {
+          "games": 18,
+          "wins": 12,
+          "draws": 3,
+          "losses": 3,
+          "points": 13.5,
+          "score": 0.75
+        },
+        "elo-1800-setting": {
+          "games": 16,
+          "wins": 7,
+          "draws": 2,
+          "losses": 7,
+          "points": 8.0,
+          "score": 0.5
+        }
+      },
+      "rated": {
+        "games": 34,
+        "wins": 19,
+        "draws": 5,
+        "losses": 10,
+        "points": 21.5,
+        "score": 0.6323529411764706
+      },
+      "behavior": {
+        "ownMoves": 1849,
+        "illegalAttempts": 13,
+        "illegalPer100": 0.7030827474310438,
+        "shortLossCount": 27,
+        "shortLossPer100": 1.460248783126014,
+        "gamesWithShortLoss": 22,
+        "leadGames": 24,
+        "leadWins": 19,
+        "leadConversion": 0.7916666666666666,
+        "castleBy10": 0.76,
+        "castleEligibleGames": 50,
+        "medianMoveSeconds": 13.8157
+      }
+    },
+    {
+      "games": [
+        101,
+        150
+      ],
+      "byOpponent": {
+        "full-strength": {
+          "games": 16,
+          "wins": 0,
+          "draws": 0,
+          "losses": 16,
+          "points": 0,
+          "score": 0
+        },
+        "skill-0": {
+          "games": 16,
+          "wins": 15,
+          "draws": 0,
+          "losses": 1,
+          "points": 15,
+          "score": 0.9375
+        },
+        "elo-1800-setting": {
+          "games": 18,
+          "wins": 7,
+          "draws": 2,
+          "losses": 9,
+          "points": 8.0,
+          "score": 0.4444444444444444
+        }
+      },
+      "rated": {
+        "games": 34,
+        "wins": 22,
+        "draws": 2,
+        "losses": 10,
+        "points": 23.0,
+        "score": 0.6764705882352942
+      },
+      "behavior": {
+        "ownMoves": 1716,
+        "illegalAttempts": 11,
+        "illegalPer100": 0.6410256410256411,
+        "shortLossCount": 30,
+        "shortLossPer100": 1.7482517482517483,
+        "gamesWithShortLoss": 23,
+        "leadGames": 28,
+        "leadWins": 22,
+        "leadConversion": 0.7857142857142857,
+        "castleBy10": 0.62,
+        "castleEligibleGames": 50,
+        "medianMoveSeconds": 14.527750000000001
+      }
+    },
+    {
+      "games": [
+        151,
+        200
+      ],
+      "byOpponent": {
+        "full-strength": {
+          "games": 18,
+          "wins": 0,
+          "draws": 0,
+          "losses": 18,
+          "points": 0,
+          "score": 0
+        },
+        "skill-0": {
+          "games": 16,
+          "wins": 13,
+          "draws": 1,
+          "losses": 2,
+          "points": 13.5,
+          "score": 0.84375
+        },
+        "elo-1800-setting": {
+          "games": 16,
+          "wins": 5,
+          "draws": 1,
+          "losses": 10,
+          "points": 5.5,
+          "score": 0.34375
+        }
+      },
+      "rated": {
+        "games": 32,
+        "wins": 18,
+        "draws": 2,
+        "losses": 12,
+        "points": 19.0,
+        "score": 0.59375
+      },
+      "behavior": {
+        "ownMoves": 1750,
+        "illegalAttempts": 8,
+        "illegalPer100": 0.45714285714285713,
+        "shortLossCount": 17,
+        "shortLossPer100": 0.9714285714285714,
+        "gamesWithShortLoss": 13,
+        "leadGames": 21,
+        "leadWins": 18,
+        "leadConversion": 0.8571428571428571,
+        "castleBy10": 0.6,
+        "castleEligibleGames": 50,
+        "medianMoveSeconds": 15.0558
+      }
+    }
+  ],
+  "matchedEarlyLate": {
+    "early": {
+      "games": 64,
+      "wins": 31,
+      "draws": 5,
+      "losses": 28,
+      "points": 33.5,
+      "score": 0.5234375
+    },
+    "late": {
+      "games": 64,
+      "wins": 39,
+      "draws": 4,
+      "losses": 21,
+      "points": 41.0,
+      "score": 0.640625
+    },
+    "earlyBehavior": {
+      "ownMoves": 2818,
+      "illegalAttempts": 25,
+      "illegalPer100": 0.8871540099361249,
+      "shortLossCount": 41,
+      "shortLossPer100": 1.4549325762952448,
+      "gamesWithShortLoss": 32,
+      "leadGames": 36,
+      "leadWins": 31,
+      "leadConversion": 0.8611111111111112,
+      "castleBy10": 0.828125,
+      "castleEligibleGames": 64,
+      "medianMoveSeconds": 12.6953
+    },
+    "lateBehavior": {
+      "ownMoves": 2660,
+      "illegalAttempts": 14,
+      "illegalPer100": 0.5263157894736842,
+      "shortLossCount": 34,
+      "shortLossPer100": 1.2781954887218046,
+      "gamesWithShortLoss": 26,
+      "leadGames": 44,
+      "leadWins": 39,
+      "leadConversion": 0.8863636363636364,
+      "castleBy10": 0.6875,
+      "castleEligibleGames": 64,
+      "medianMoveSeconds": 15.50665
+    },
+    "earlyGames": [
+      3,
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      15,
+      16,
+      17,
+      18,
+      21,
+      22,
+      23,
+      24,
+      27,
+      28,
+      29,
+      30,
+      33,
+      34,
+      35,
+      36,
+      39,
+      40,
+      41,
+      42,
+      45,
+      46,
+      47,
+      48,
+      51,
+      52,
+      53,
+      54,
+      57,
+      58,
+      59,
+      60,
+      63,
+      64,
+      65,
+      66,
+      69,
+      70,
+      71,
+      72,
+      75,
+      76,
+      77,
+      78,
+      81,
+      82,
+      83,
+      84,
+      87,
+      88,
+      89,
+      90,
+      93,
+      94,
+      95,
+      96
+    ],
+    "lateGames": [
+      105,
+      106,
+      107,
+      108,
+      111,
+      112,
+      113,
+      114,
+      117,
+      118,
+      119,
+      120,
+      123,
+      124,
+      125,
+      126,
+      129,
+      130,
+      131,
+      132,
+      135,
+      136,
+      137,
+      138,
+      141,
+      142,
+      143,
+      144,
+      147,
+      148,
+      149,
+      150,
+      153,
+      154,
+      155,
+      156,
+      159,
+      160,
+      161,
+      162,
+      165,
+      166,
+      167,
+      168,
+      171,
+      172,
+      173,
+      174,
+      177,
+      178,
+      179,
+      180,
+      183,
+      184,
+      185,
+      186,
+      189,
+      190,
+      191,
+      192,
+      195,
+      196,
+      197,
+      198
+    ],
+    "rotationsPerWindow": 16,
+    "delta": 0.1171875,
+    "interval": [
+      -0.0546875,
+      0.296875
+    ],
+    "status": "No clear change",
+    "byOpponent": {
+      "full-strength": {
+        "early": {
+          "games": 32,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "points": 0,
+          "score": 0
+        },
+        "late": {
+          "games": 32,
+          "wins": 0,
+          "draws": 0,
+          "losses": 32,
+          "points": 0,
+          "score": 0
+        }
+      },
+      "skill-0": {
+        "early": {
+          "games": 32,
+          "wins": 20,
+          "draws": 2,
+          "losses": 10,
+          "points": 21.0,
+          "score": 0.65625
+        },
+        "late": {
+          "games": 32,
+          "wins": 28,
+          "draws": 1,
+          "losses": 3,
+          "points": 28.5,
+          "score": 0.890625
+        }
+      },
+      "elo-1800-setting": {
+        "early": {
+          "games": 32,
+          "wins": 11,
+          "draws": 3,
+          "losses": 18,
+          "points": 12.5,
+          "score": 0.390625
+        },
+        "late": {
+          "games": 32,
+          "wins": 11,
+          "draws": 3,
+          "losses": 18,
+          "points": 12.5,
+          "score": 0.390625
+        }
+      }
+    }
+  },
+  "opponentBootstrap": {
+    "full-strength": {
+      "pointScoreChange": 0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    "skill-0": {
+      "pointScoreChange": 0.234375,
+      "bootstrap95": [
+        0.046875,
+        0.421875
+      ]
+    },
+    "elo-1800-setting": {
+      "pointScoreChange": 0.0,
+      "bootstrap95": [
+        -0.25,
+        0.25
+      ]
+    }
+  },
+  "recentMatchedWindows": {
+    "early": {
+      "games": 32,
+      "wins": 21,
+      "draws": 2,
+      "losses": 9,
+      "points": 22.0,
+      "score": 0.6875
+    },
+    "late": {
+      "games": 32,
+      "wins": 18,
+      "draws": 2,
+      "losses": 12,
+      "points": 19.0,
+      "score": 0.59375
+    },
+    "earlyBehavior": {
+      "ownMoves": 1303,
+      "illegalAttempts": 9,
+      "illegalPer100": 0.6907137375287797,
+      "shortLossCount": 21,
+      "shortLossPer100": 1.6116653875671527,
+      "gamesWithShortLoss": 16,
+      "leadGames": 24,
+      "leadWins": 21,
+      "leadConversion": 0.875,
+      "castleBy10": 0.65625,
+      "castleEligibleGames": 32,
+      "medianMoveSeconds": 15.7098
+    },
+    "lateBehavior": {
+      "ownMoves": 1357,
+      "illegalAttempts": 5,
+      "illegalPer100": 0.36845983787767134,
+      "shortLossCount": 13,
+      "shortLossPer100": 0.9579955784819455,
+      "gamesWithShortLoss": 10,
+      "leadGames": 20,
+      "leadWins": 18,
+      "leadConversion": 0.9,
+      "castleBy10": 0.71875,
+      "castleEligibleGames": 32,
+      "medianMoveSeconds": 15.2593
+    },
+    "earlyGames": [
+      105,
+      106,
+      107,
+      108,
+      111,
+      112,
+      113,
+      114,
+      117,
+      118,
+      119,
+      120,
+      123,
+      124,
+      125,
+      126,
+      129,
+      130,
+      131,
+      132,
+      135,
+      136,
+      137,
+      138,
+      141,
+      142,
+      143,
+      144,
+      147,
+      148,
+      149,
+      150
+    ],
+    "lateGames": [
+      153,
+      154,
+      155,
+      156,
+      159,
+      160,
+      161,
+      162,
+      165,
+      166,
+      167,
+      168,
+      171,
+      172,
+      173,
+      174,
+      177,
+      178,
+      179,
+      180,
+      183,
+      184,
+      185,
+      186,
+      189,
+      190,
+      191,
+      192,
+      195,
+      196,
+      197,
+      198
+    ],
+    "rotationsPerWindow": 8,
+    "delta": -0.09375,
+    "interval": [
+      -0.296875,
+      0.109375
+    ],
+    "status": "No clear change",
+    "byOpponent": {
+      "full-strength": {
+        "early": {
+          "games": 16,
+          "wins": 0,
+          "draws": 0,
+          "losses": 16,
+          "points": 0,
+          "score": 0
+        },
+        "late": {
+          "games": 16,
+          "wins": 0,
+          "draws": 0,
+          "losses": 16,
+          "points": 0,
+          "score": 0
+        }
+      },
+      "skill-0": {
+        "early": {
+          "games": 16,
+          "wins": 15,
+          "draws": 0,
+          "losses": 1,
+          "points": 15,
+          "score": 0.9375
+        },
+        "late": {
+          "games": 16,
+          "wins": 13,
+          "draws": 1,
+          "losses": 2,
+          "points": 13.5,
+          "score": 0.84375
+        }
+      },
+      "elo-1800-setting": {
+        "early": {
+          "games": 16,
+          "wins": 6,
+          "draws": 2,
+          "losses": 8,
+          "points": 7.0,
+          "score": 0.4375
+        },
+        "late": {
+          "games": 16,
+          "wins": 5,
+          "draws": 1,
+          "losses": 10,
+          "points": 5.5,
+          "score": 0.34375
+        }
+      }
+    }
+  },
+  "perOpponentBehavior": {
+    "full-strength": {
+      "early": {
+        "ownMoves": 739,
+        "illegalAttempts": 8,
+        "illegalPer100": 1.0825439783491204,
+        "shortLossCount": 6,
+        "shortLossPer100": 0.8119079837618404,
+        "gamesWithShortLoss": 6,
+        "leadGames": 1,
+        "leadWins": 0,
+        "leadConversion": 0.0,
+        "castleBy10": 0.53125,
+        "castleEligibleGames": 32,
+        "medianMoveSeconds": 7.4176
+      },
+      "late": {
+        "ownMoves": 689,
+        "illegalAttempts": 5,
+        "illegalPer100": 0.7256894049346879,
+        "shortLossCount": 10,
+        "shortLossPer100": 1.4513788098693758,
+        "gamesWithShortLoss": 8,
+        "leadGames": 4,
+        "leadWins": 0,
+        "leadConversion": 0.0,
+        "castleBy10": 0.5,
+        "castleEligibleGames": 32,
+        "medianMoveSeconds": 11.8695
+      }
+    },
+    "skill-0": {
+      "early": {
+        "ownMoves": 1488,
+        "illegalAttempts": 12,
+        "illegalPer100": 0.8064516129032258,
+        "shortLossCount": 23,
+        "shortLossPer100": 1.5456989247311828,
+        "gamesWithShortLoss": 16,
+        "leadGames": 24,
+        "leadWins": 20,
+        "leadConversion": 0.8333333333333334,
+        "castleBy10": 0.90625,
+        "castleEligibleGames": 32,
+        "medianMoveSeconds": 12.52375
+      },
+      "late": {
+        "ownMoves": 1257,
+        "illegalAttempts": 5,
+        "illegalPer100": 0.39777247414478917,
+        "shortLossCount": 14,
+        "shortLossPer100": 1.1137629276054097,
+        "gamesWithShortLoss": 12,
+        "leadGames": 31,
+        "leadWins": 28,
+        "leadConversion": 0.9032258064516129,
+        "castleBy10": 0.625,
+        "castleEligibleGames": 32,
+        "medianMoveSeconds": 13.3484
+      }
+    },
+    "elo-1800-setting": {
+      "early": {
+        "ownMoves": 1330,
+        "illegalAttempts": 13,
+        "illegalPer100": 0.9774436090225563,
+        "shortLossCount": 18,
+        "shortLossPer100": 1.3533834586466165,
+        "gamesWithShortLoss": 16,
+        "leadGames": 12,
+        "leadWins": 11,
+        "leadConversion": 0.9166666666666666,
+        "castleBy10": 0.75,
+        "castleEligibleGames": 32,
+        "medianMoveSeconds": 12.9226
+      },
+      "late": {
+        "ownMoves": 1403,
+        "illegalAttempts": 9,
+        "illegalPer100": 0.6414825374198146,
+        "shortLossCount": 20,
+        "shortLossPer100": 1.4255167498218104,
+        "gamesWithShortLoss": 14,
+        "leadGames": 13,
+        "leadWins": 11,
+        "leadConversion": 0.8461538461538461,
+        "castleBy10": 0.75,
+        "castleEligibleGames": 32,
+        "medianMoveSeconds": 17.6302
+      }
+    }
+  },
+  "independentRating": {
+    "first50Rated": {
+      "estimate": 1510,
+      "lower": 1390,
+      "upper": 1640,
+      "grid_edge_mass": 3.031347586948004e-213
+    },
+    "last50Rated": {
+      "estimate": 1760,
+      "lower": 1640,
+      "upper": 1890,
+      "grid_edge_mass": 2.795989964713953e-184
+    },
+    "method": "Recomputed with pinned rating.py posterior; no learner cache writes"
+  },
+  "practice": {
+    "integrity": {
+      "events": 65,
+      "head": "e15789d2424ff728e4c66c61dca7eacdcc30cf06fae2273135163c99fe3326c5",
+      "lastTimestamp": "2026-10-02T23:14:53.532495+00:00"
+    },
+    "sessions": 1,
+    "modelMoves": 30,
+    "illegalAttempts": 1,
+    "endings": [
+      "stopped_by_learner_not_a_result"
+    ],
+    "countsTowardBenchmarkRating": false
+  },
+  "trialChronology": [
+    {
+      "trial": 0,
+      "plannedGames": [
+        1,
+        6
+      ],
+      "firstStartSnapshotContainingPlan": 1,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 1,
+      "plannedGames": [
+        7,
+        12
+      ],
+      "firstStartSnapshotContainingPlan": 7,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 2,
+      "plannedGames": [
+        13,
+        18
+      ],
+      "firstStartSnapshotContainingPlan": 13,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 3,
+      "plannedGames": [
+        19,
+        24
+      ],
+      "firstStartSnapshotContainingPlan": 19,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 4,
+      "plannedGames": [
+        25,
+        30
+      ],
+      "firstStartSnapshotContainingPlan": 25,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 5,
+      "plannedGames": [
+        31,
+        36
+      ],
+      "firstStartSnapshotContainingPlan": 31,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 6,
+      "plannedGames": [
+        37,
+        42
+      ],
+      "firstStartSnapshotContainingPlan": 37,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 7,
+      "plannedGames": [
+        43,
+        48
+      ],
+      "firstStartSnapshotContainingPlan": 43,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 8,
+      "plannedGames": [
+        49,
+        54
+      ],
+      "firstStartSnapshotContainingPlan": 49,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 9,
+      "plannedGames": [
+        55,
+        60
+      ],
+      "firstStartSnapshotContainingPlan": 55,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 10,
+      "plannedGames": [
+        61,
+        66
+      ],
+      "firstStartSnapshotContainingPlan": 61,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 11,
+      "plannedGames": [
+        67,
+        72
+      ],
+      "firstStartSnapshotContainingPlan": 67,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 12,
+      "plannedGames": [
+        73,
+        78
+      ],
+      "firstStartSnapshotContainingPlan": 73,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 13,
+      "plannedGames": [
+        79,
+        84
+      ],
+      "firstStartSnapshotContainingPlan": 79,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 14,
+      "plannedGames": [
+        85,
+        90
+      ],
+      "firstStartSnapshotContainingPlan": 85,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 15,
+      "plannedGames": [
+        91,
+        96
+      ],
+      "firstStartSnapshotContainingPlan": 91,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 16,
+      "plannedGames": [
+        97,
+        102
+      ],
+      "firstStartSnapshotContainingPlan": 97,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 17,
+      "plannedGames": [
+        103,
+        108
+      ],
+      "firstStartSnapshotContainingPlan": 103,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 18,
+      "plannedGames": [
+        109,
+        114
+      ],
+      "firstStartSnapshotContainingPlan": 109,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 19,
+      "plannedGames": [
+        115,
+        120
+      ],
+      "firstStartSnapshotContainingPlan": 115,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 20,
+      "plannedGames": [
+        121,
+        126
+      ],
+      "firstStartSnapshotContainingPlan": 121,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 21,
+      "plannedGames": [
+        127,
+        132
+      ],
+      "firstStartSnapshotContainingPlan": 127,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 22,
+      "plannedGames": [
+        133,
+        138
+      ],
+      "firstStartSnapshotContainingPlan": 133,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 23,
+      "plannedGames": [
+        139,
+        144
+      ],
+      "firstStartSnapshotContainingPlan": 139,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 24,
+      "plannedGames": [
+        145,
+        150
+      ],
+      "firstStartSnapshotContainingPlan": 145,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 25,
+      "plannedGames": [
+        151,
+        156
+      ],
+      "firstStartSnapshotContainingPlan": 151,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 26,
+      "plannedGames": [
+        157,
+        162
+      ],
+      "firstStartSnapshotContainingPlan": 157,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 27,
+      "plannedGames": [
+        163,
+        168
+      ],
+      "firstStartSnapshotContainingPlan": 163,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 28,
+      "plannedGames": [
+        169,
+        174
+      ],
+      "firstStartSnapshotContainingPlan": 169,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 29,
+      "plannedGames": [
+        175,
+        180
+      ],
+      "firstStartSnapshotContainingPlan": 175,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 30,
+      "plannedGames": [
+        181,
+        186
+      ],
+      "firstStartSnapshotContainingPlan": 181,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 31,
+      "plannedGames": [
+        187,
+        192
+      ],
+      "firstStartSnapshotContainingPlan": 187,
+      "presentBeforeFirstPlannedGame": true
+    },
+    {
+      "trial": 32,
+      "plannedGames": [
+        193,
+        198
+      ],
+      "firstStartSnapshotContainingPlan": 193,
+      "presentBeforeFirstPlannedGame": true
+    }
+  ],
+  "noteResultNotationMismatches": [
+    {
+      "game": 2,
+      "line": 6,
+      "opponentMatchesLedger": true,
+      "colorMatchesLedger": true,
+      "pliesMatchLedger": true,
+      "notePlies": 41,
+      "ledgerPlies": 41,
+      "resultNotationMatchesLedger": false
+    },
+    {
+      "game": 6,
+      "line": 10,
+      "opponentMatchesLedger": true,
+      "colorMatchesLedger": true,
+      "pliesMatchLedger": false,
+      "notePlies": 128,
+      "ledgerPlies": 129,
+      "resultNotationMatchesLedger": false
+    },
+    {
+      "game": 8,
+      "line": 12,
+      "opponentMatchesLedger": true,
+      "colorMatchesLedger": true,
+      "pliesMatchLedger": true,
+      "notePlies": 39,
+      "ledgerPlies": 39,
+      "resultNotationMatchesLedger": false
+    },
+    {
+      "game": 14,
+      "line": 18,
+      "opponentMatchesLedger": true,
+      "colorMatchesLedger": true,
+      "pliesMatchLedger": true,
+      "notePlies": 39,
+      "ledgerPlies": 39,
+      "resultNotationMatchesLedger": false
+    },
+    {
+      "game": 18,
+      "line": 22,
+      "opponentMatchesLedger": true,
+      "colorMatchesLedger": true,
+      "pliesMatchLedger": true,
+      "notePlies": 89,
+      "ledgerPlies": 89,
+      "resultNotationMatchesLedger": false
+    },
+    {
+      "game": 20,
+      "line": 24,
+      "opponentMatchesLedger": true,
+      "colorMatchesLedger": true,
+      "pliesMatchLedger": true,
+      "notePlies": 45,
+      "ledgerPlies": 45,
+      "resultNotationMatchesLedger": false
+    }
+  ],
+  "noteOtherFactMismatches": [
+    {
+      "game": 6,
+      "line": 10,
+      "opponentMatchesLedger": true,
+      "colorMatchesLedger": true,
+      "pliesMatchLedger": false,
+      "notePlies": 128,
+      "ledgerPlies": 129,
+      "resultNotationMatchesLedger": false
+    },
+    {
+      "game": 164,
+      "line": 168,
+      "opponentMatchesLedger": true,
+      "colorMatchesLedger": true,
+      "pliesMatchLedger": false,
+      "notePlies": 38,
+      "ledgerPlies": 37,
+      "resultNotationMatchesLedger": true
+    }
+  ],
+  "toolScreening": {
+    "patternFlagCounts": {
+      "engineOrAutomatedChess": 0,
+      "networkOrExternalModel": 3,
+      "otherExperimentsOrDashboard": 1,
+      "protectedWriteCommand": 66
+    },
+    "nonSimpleCommandsForReview": 284,
+    "note": "Regex flags are review candidates, not findings of misconduct."
+  },
+  "limitations": [
+    "Recorded activity audit, not an adversarial guarantee: shared Unix account.",
+    "Outcomes and mechanical error counts are not engine best-move analysis.",
+    "Trial changes are sequential, not randomised causal experiments.",
+    "Thinking budgets and opponent behaviours may vary; no claim of weight training."
+  ]
+}

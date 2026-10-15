@@ -1,0 +1,3 @@
+# Continue after175
+
+175/200 scored,25 remain. No active benchmark; practice157 stopped explicitly. Next fixed176 Black full strength. Trial298: complete minor development and verify king escape/back-rank defense before rook relocation; address both front and rear targets of skewers. Formal review after176. See review175.md. Goal active, no token budget. All chess moves own mental decisions via ./play; no delegated/external/automated position advice. Own experiment only; write workspace/. Avoid export. Stop at exactly200 scored, verify and report honest measured Elo/interval/per-opponent outcomes/methods/transfer or stagnation/weaknesses, complete goal. No201.

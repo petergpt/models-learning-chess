@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.06"]
+[Round "27"]
+[White "claude-fable-5-1"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "fable"]
+[GameId "fable/benchmark/000027"]
+[OpponentSetting "skill-0"]
+[Termination "resignation"]
+
+1. d4 e6 2. Bf4 b6 3. Nf3 d5 4. e3 Bd6 5. Bg3 Nf6 6. Bd3 Bb7 7. Nbd2 O-O 8. Qe2 a5 9. e4 Nxe4 10. Nxe4 dxe4 11. Bxe4 Bxe4 12. Qxe4 Nd7 13. O-O h6 14. Rfe1 Nf6 15. Qe2 Bxg3 16. hxg3 Qd6 17. Rad1 Rfe8 18. Ne5 Rad8 19. c4 Nd7 20. Nxd7 Qxd7 21. d5 Qd6 22. Qg4 g6 23. Qh4 exd5 24. Rxe8+ Rxe8 25. cxd5 Re5 26. Qd4 Kf8 27. Qf4 Kg8 28. Qxh6 Re2 29. Rd3 Qf6 30. Rf3 Qd4 31. Qg5 Kg7 32. Qe7 Qd1+ 33. Kh2 Rxe7 34. Rf4 Qh5+ 35. Rh4 Qh7 0-1

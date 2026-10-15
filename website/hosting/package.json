@@ -1,0 +1,11 @@
+{
+  "name": "ai-learning-chess",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 build.py",
+    "dev": "wrangler dev --port 8774",
+    "deploy": "wrangler deploy --durable-objects-code-update-mode immediate"
+  },
+  "devDependencies": {"wrangler": "4.147.0"}
+}

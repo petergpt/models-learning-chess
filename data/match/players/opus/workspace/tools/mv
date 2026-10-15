@@ -1,0 +1,27 @@
+#!/bin/sh
+# Move wrapper. Guard: refuse a move sent <1s after the previous one (catches batched calls in one turn).
+# Output: referee JSON lines (trimmed) + rank-labelled board and piece lists rendered from the referee FEN.
+root=$(CDPATH= cd -- "$(dirname -- "$0")/../.." && pwd)
+cd "$root" || exit 1
+stamp="$root/workspace/tools/.last_move_time"
+if [ "$1" != "board" ]; then
+  now=$(date +%s)
+  if [ -f "$stamp" ]; then
+    last=$(cat "$stamp")
+    if [ $((now - last)) -lt 1 ]; then
+      echo "REFUSED: move sent $((now - last))s after previous move (batched?). Look at the board first."
+      exit 2
+    fi
+  fi
+fi
+if [ "$1" = "board" ]; then out=$(./play board 2>&1); else out=$(./play move "$@" 2>&1); date +%s > "$stamp"; fi
+printf '%s\n' "$out" | grep -v '^t3-job' | awk '
+/"moves":/ { n=split($0,a," "); s=""; start=(n>18)?n-15:3; for(i=start;i<=n;i++) s=s" "a[i]; print "  last:" s; next }
+/"game":|"you":|"opponent":|"turn":|^\{$|^\}$/ { next }
+/^[.KQRBNPkqrbnp]( [.KQRBNPkqrbnp])+ *$/ { next }
+/^a b c d e f g h/ { next }
+/^ *$/ { next }
+{ print }'
+fen=$(printf '%s\n' "$out" | sed -n 's/.*"fen": *"\([^"]*\)".*/\1/p' | tail -n 1)
+[ -n "$fen" ] && python3 "$root/workspace/tools/fen2board.py" "$fen"
+exit 0

@@ -1,0 +1,20 @@
+# Own review after benchmark 131
+
+Trial213, White against nominal1800: won 41.Rb8#, 81 plies, zero illegal submissions. Referee result seq10626, 2026-10-08T14:11:37.484390+00:00. Read completed PGN and status. Total131:37W/6D/88L; full0/0/44, skill31/3/10, nominal6/3/34. Provisional engine-relative1510 [1390,1640], conditional95% Bayesian interval, latest50 of87rated;44uncalibrated full excluded. Not human Elo; no causal improvement claim.
+
+Quiet e4 development adapted to Scandinavian/c6: retained an early extra pawn, queens traded fairly. 19Bxb5/Bxb5/20Nxb5/Rxc2 was a fair bishop trade with a pawn pair. 21Bc3 defended b2 and threatened Be5. 22d6 and23Nxa7/Ra8/24Nb5 gained a7 and restored the knight's d6/Bc3 roots. 24...Bxc3/25bxc3 preserved Nb5's c3 and d6 support. 26d7/27Rad1 faced two attackers after ...Rd8: one rook defender alone no longer guaranteed a favorable recapture.
+
+28Rd6 was supported by Nb5 and attacked undefended Nf6. Rejected mental Nd4 would have blocked Rd1's d7 defense. After ...e3,29fxe3 removed the unrooted passed pawn, opened Rf1 against Nf6, and avoided ...e2 attacking Rf1. Black29...Rb2 left its knight capturable. 30Rfxf6 preserved Rd6 behind d7; ...Rxd7/31Rxd7 additionally gave a whole rook after Nf6 was gone. Black chose ...Rb1+ instead of taking Nb5. 32Kg2/35Kf3 escaped rook checks and added actual royal roots. Black37...Ra1 allowed38Rxa1, giving its last rook. These substantial gifts limit transfer claims.
+
+Connected f6/f7 rooks mattered: Rxh6 before moving Rf7 would have left Rf7 unguarded beside Kg8. 36Ra7 retained a seventh-rank barrier and Nb5 root, then37Rxh6. After the last-rook capture,39Ra7/40Rb6/41Rb8# kept the checking rook distant and barred seventh-rank flights. Local conversion success, not reliable generalized conversion proof. Extremely long mental branches and poor commentary cadence remain unresolved; zero illegal submissions does not repair those weaknesses. No outside assistance or foreign material exposure.
+
+Trial214 planned now: maximum-strength White practice from own131 ply56, before29fxe3, bound six own moves or an earlier decisive material/royal failure. Test retaining material and actual defenses after fxe3 when the opponent is not obliged to give Nf6. All moves own. No predicted win or forced best line. End the retained drill explicitly, then fixed132 Black nominal1800 and formal132 review with an actual cumulative goal counter.
+
+
+## Trial214 observed practice107 and next decision
+
+MAX White from own131ply56, stopped after four own moves/eight plies/zero illegal submissions, seq1072,2026-10-08T14:19:33.847523+00:00. PGN read:29fxe3/Ne4 30Rd4/Nxg3 31Rf2/Ne2+ 32Rxe2/Rxe2. Actual opponent saved Nf6, captured unguarded g3, then knight forked Kg1 and Rd4. Rf2 could capture Ne2 but Rc2 recaptured, costing R5 for KN3. Pawn captures were a fair pair. Ended earlier than six-move bound for the decisive local material failure; final position unresolved, not a scored loss or proved lost game. Initial two extra pawns now offset the exchange by simple material count; no engine evaluation used.
+
+Rd4 had cheap c3/e3 pawn roots, but those did not prevent a royal/rook fork. Rf2 was itself king-supported; Ne2+ forced a decision elsewhere. Earlier mental Rd3 remains an untested alternative: Ne2 does not attack a rook on d3. No solved-position or saved-game claim. Benchmark131's nominal opponent missed this forcing reply and gave whole pieces; maximum drill materially limits transfer confidence.
+
+Trial215 next, fixed132Black nominal1800: normal central development and castle when actual safe. Before an expensive-piece retreat, inspect opponent knight checks and capture forks on their actual arrival squares, including king plus rook; roots alone do not settle an exchange. Keep actual pawn and rook first-body roots, cheap attackers, full capture chain, and king flights. No further practice before132. Formal132 immediately after the benchmark with actual status and cumulative goal counter; endpoint200. No outside/delegated/automated chess assistance or foreign material exposure.

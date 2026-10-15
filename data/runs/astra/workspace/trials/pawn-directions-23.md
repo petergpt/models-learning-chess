@@ -1,0 +1,95 @@
+# Trial 23 — Pawn capture directions and immediate advances
+Declared 2026-10-03 07:36 UTC, after all 162 benchmarks were complete and before this study. Baseline 56W/3D/103L; Elo 1450 [1330,1570]. Fixed next evaluation: games 163–168, all six in the unchanged rotation, no replacement or extension.
+
+Problem: long tactical calculation repeatedly omits ordinary pawn captures, pawn support on the other diagonal, or a one-square pawn fork. Previous longer lists and remembered legality passes did not establish transfer.
+
+Plan: at most 30 minutes total, ending by 08:06:06 UTC. Review four own remembered errors: 160 ...Nxc3/bxc3; 160 ...Rd6/exd6; 161 c4/...e4; 162 ...f5/Rxf5. Read only these own PGNs. Write the pawn origin and both forward capture squares, and distinguish a pawn's attack from its possible forward advance. No automated analysis or new tactical search. These are remembered examples, not fresh test successes.
+
+Then exactly two fresh opponent practices from the normal starting position against maximum strength, White then Black, capped at 16 own legal moves each or the combined deadline. End unfinished drills explicitly; no repeats or extra practices. Normal opening positions address the early pawn forks that the previous sparse mixed endings did not cover. Every move remains my own.
+
+Behaviour to try: before committing a move, briefly account for the opponent pawn nearest the candidate piece, including both capture diagonals and any immediate advance that attacks two pieces; when judging a king capture, include friendly pawn support of the target. This replaces the prior emphasis; no expanded mandatory checklist, speed requirement, or claim of parameter training.
+
+Observable transfer: record unexpected pawn captures/forks, queen/rook losses to pawns, and whether the first 15 own moves avoid unanticipated material loss in games 163–168. A useful result would be fewer such errors than 157–162, especially no queen/rook lost to an omitted pawn capture. Six games are descriptive, not a causal trial. Wins alone, the Elo point estimate, or practice completion cannot establish learning.
+
+## Remembered study completed — 2026-10-03 07:38 UTC
+Read own full PGNs 160, 161, and 162; manually reviewed exactly the four declared examples. No chess-analysis code, external source, or independent fresh test was used.
+- 160: the white b2-pawn captures a3 or c3. Moving Nb1 to d2 did not remove b2; ...Nxc3 therefore still allowed bxc3.
+- 160: the white e5-pawn captures d6 or f6. A bishop defending the rook on d6 permits a later recapture, but does not make giving a rook for that pawn sound. White delayed exd6 for a move and then played it.
+- 161: a black pawn on e5 captures d4/f4; after its ordinary advance to e4 it captures d3/f3. Those were exactly the bishop and knight squares. My c4 move did not address that fork.
+- 162: the white pawn on e4 supports BOTH d5 and f5. ...f5 offered a pawn to Rd5xf5, and the rook remained pawn-protected on f5. My imagined ...Kxf5 was not available. Looking only at the first occupied support square was the error.
+
+These facts are recalled corrections, not four new puzzle solves. I have not proved alternative saving moves or an improvement in play. Proceed to the two predeclared fresh practices.
+
+## Practice 41 — White versus MAX, fresh normal start
+Stopped at the declared 16 own moves / 32 plies, zero illegal submissions, 2026-10-03 07:41:15 UTC. Seq 1283; hash d79b09bf1ce37bfe25f4aa779f25897aad1f84affb4c963fc04a6985dd4459a8. Unfinished, no score. Full PGN read.
+
+Castled 8, all minors developed by 10, Re1 on 11. Anticipated ...dxc4/...cxd4 and recaptured. However 12.d5 concentrated on ...exd5 and omitted the actual ...Nxd5. Bxe7/Ncxe7 did not recover the pawn. First 15 NOT clean. The queen was then chased by ...Nf4/...Neg6. I rejected Qf5 because e6 could capture it, a correct immediate pawn observation, but Qe3 allowed actual ...Nxg2, forking Qe3/Re1. I had considered that fork but did not establish a safe king-capture continuation; none was played before the cap. At stop White QR2BN2/4 pawns against Black QR2BN2/6 pawns, with the black knight on g2. Do not call it a solved loss or draw, or claim a successful defence.
+
+This exposed a scope problem: attention to pawn errors did not replace the need to see ordinary knight captures and forks. No extra moves or repeat of the practice.
+
+## Practice 42 — Black versus MAX, fresh normal start
+Stopped at the declared 16 own moves / 33 total plies (White moved first and replied with 17.c4), zero illegal submissions, 2026-10-03 07:44:26 UTC. Seq 1319; hash a515ad9a1eaee6c59c5165f46c154d5b8fbf6a46c1b7526fb84bff45e9a769c5. Unfinished, no score. Full PGN read.
+
+Castled 8, all minors developed by 9, rook e8 on 10. First 15 clean by the stated material-loss criterion, not a position evaluation. Retained the e5/d6 centre and noticed d5 would attack Nc6. My initial Re8 comment falsely described e5 support through Be7; corrected before Bf8 cleared the line. After a4/Qb3, Na7 added a second b5 defender. Following axb5 I caught that ...axb5 would open Ra1 against the undefended Na7, and instead played ...Nxb5. Material was balanced at stop (all pieces and seven pawns each); White's last c4 attacks Nb5. No continuation or claim that the knight is permanently secure was tested.
+
+## Trial 23 learning phase completed
+Finished 07:44 UTC, before the 08:06:06 deadline. Exactly four declared remembered examples reviewed and exactly two fresh MAX practices, 32 own moves / 65 plies, zero illegal submissions; both drills unfinished. One practice had unanticipated material loss in its first 15, one did not. A few correct pawn/line observations coexist with a missed knight capture, a queen/rook fork, and an initially false rook-support description. No demonstrated strength gain or successful full-game conversion. No extra study, repeat, or replacement. Return to the unchanged predeclared benchmark evaluation 163–168. Pawn focus is an aid to complete move checking, not a reason to ignore other pieces.
+
+## Benchmark 163 — White versus MAX, loss
+Resigned after 24...Nh4+, 24 own moves / 48 plies, zero illegal submissions, 2026-10-03 07:50:50 UTC. Seq 13439; hash 63f7b9ec55bb5a59fe44fb6a8935720d2da5832b3be1b43073ab217692edb04d; snapshot 877693058d43ff64a19e7c222f67fbebf182f3fc8c8c503f898dbb3aecd6bfec. Full PGN read. Cumulative 56W/3D/104L in 163, MAX 0W/2D/53L. Elo unchanged 1450 [1330,1570], MAX excluded. Storage 53,013,635 bytes.
+
+Opening repeated practice 41 through 11...Bb7; chose Rc1 instead of the failed d5. Castled 8, all minors developed 10, Re1 11/Rc1 12. First 15 had no completed unanticipated material loss, but the queen/defender arrangement already contained the next failure. This is a narrow remembered-opening correction, not fresh independent transfer. Bh4 escaped the h6 pawn. Qd3 met ...Nb4; Qe2 retained nominal Bc4 defence but removed d4 defence. ...Bxf3 eliminated the other d4 defender. I chose gxf3 to keep Qe2 defending Bc4 rather than allow ...Rxc4 after Qxf3, but ...Qxd4 then won the pawn. Bg3 saved the other bishop from the queen.
+
+I incorrectly treated Qe2 as sufficient Bc4 defence. Actual ...Qxc4/Qxc4/...Rxc4 exchanged queens while losing the bishop: the c8 rook was the second attacker. This was a whole-exchange/defender-count failure. Ne4, supported by f3, escaped the attacked c3 square and ...Rxc1/Rxc1 exchanged one rook pair. ...Nfd5/...Nd3/...Ne1 attacked the remaining rook and pawns. Rc2 defended b2/f2, but after ...Ne1 I could not preserve f3 with the rook retreat I chose; Re2/...Nxf3+ lost it. Kg2 attacked the knight, which checked again from h4.
+
+Final White Kg2/Re2/Ne4/Bg3/a3/b2/f2/h2 versus Black Kg8/Rf8/Nd5/Nh4/Be7/a7/b6/e6/f7/g7/h6. Practical resignation with an extra enemy minor and two-pawn deficit, not a forced-mate proof. No illegal moves and no piece lost to an omitted pawn capture, but overall defence still failed. Continue the unchanged declared evaluation with 164–168.
+
+## Benchmark 164 — Black versus MAX, loss
+Resigned after 23.bxc5, 22 own moves / 45 plies, zero illegal submissions, 2026-10-03 07:57:44 UTC. Seq 13486; hash 76f601eed90cd239465c640fe3dc68071a08a6d0b2bfca641d3d3f497fe551b9; snapshot b0e959f7a2f1c0eca8d3a232a9af0eb77b9ceb044b7660d46cd662cfdc2f72e6. Full PGN read. Cumulative 56W/3D/105L in 164; MAX 0W/2D/54L. Elo unchanged 1450 [1330,1570], 108 rated / latest 50, 56 MAX excluded. Storage 53,460,525 bytes.
+
+Castled 8, minors developed 9, Re8 10. First 15 clean by immediate material-loss criterion. Opening repeated practice 42 through 11...Bf8, with the rook-line description corrected this time. Chose ...b4, supported initially by Nc6, rather than the earlier ...h6. White a5 fixed the queenside. After Ba4, ...Re7 moved the rook off the bishop diagonal; I also rejected ...Re6 because d5 would fork that rook and Nc6. Actual d5 attacked the knight. I rejected ...Nxa5 because cxb4 would attack it while d5 controlled its c6 return (other retreats were also problematic in my calculation); this was a local manually assessed danger, not an independently proved forced trap. Played ...Nb8/...Nbd7.
+
+Moving Nc6 removed b4's defender, so cxb4 won the pawn. The new white b4 pawn also made ...Nc5 unsafe. I prepared ...c5 with ...Qc8, considering the possible en-passant capture dxc6 and the bishop/queen recaptures on c6. That preparation missed a different consequence: moving c7 also removed d6's pawn defender, after the queen had already moved away from d8. Actual Nxd6 won a second pawn and forked Qc8/Bb7. ...Qc7 defended the bishop and attacked the knight; Nxb7/Qxb7 exchanged them. But Bc6 then forked Qb7/Ra8. ...Qb8/Bxa8/...Qxa8 conceded the exchange, and bxc5 captured another pawn. I did not play ...Nxc5 into the queen on c2.
+
+Final Black Kg8/Qa8/Re7/Bf8/Nd7/Nf6/a6/e5/f7/g7/h6 versus White Kg1/Qc2/Ra1/Re1/Bc1/Nf3/a5/b2/c5/d5/e4/f2/g2/h3. Practical resignation with an exchange and three-pawn deficit and strong connected enemy pawns, not a forced-mate proof. Several pawn-capture/advance checks were correct, but vacated pawn defences and the bishop fork still produced a decisive deterioration. No reliable overall transfer. Continue 165–168 without changing the declared block.
+
+## Benchmark 165 — White versus skill 0, win
+Referee checkmate 28.Qh7#, 28 own moves / 55 plies, zero illegal submissions, 2026-10-03 08:11:35 UTC. Seq 13543; hash a9d1ac20d51618dfaa53f48d237462d8e9e18b57866e2faf690b85b751bb2525; snapshot 1643f9ba5d1395631f22ed5f2ee8f1379ff1c849dbb2648653cbb16654acbc44. Full PGN read. Cumulative 57W/3D/105L in 165; skill 0 44W/1D/10L. Elo 1460 [1340,1580], 109 rated / latest 50; 56 MAX excluded. Storage 53,906,156 bytes.
+
+Castled 6, minors developed 7, Rad1 10. First 15 clean. a3 controlled the b4 advance against Nc3. e5/dxe5/dxe5 was anticipated; ...Nd5 attacked both Nc3 and Be3, so Nxd5/exd5 removed that knight. Qxd5 won the pawn because Nd7 blocked Qd8. e6 was queen-supported, and fxe6/Qxe6+ opened the king attack. Bd3+/...Kh8/Qg6 threatened the supported Qh7, but ...Nf6 defended h7; I explicitly did not play Qh7 into that knight. Ne5/Qc7/Nf7+/...Rxf7/Qxf7 won the exchange. The other rook's line was blocked by Qc7, and the queen's line by Be7.
+
+After ...Qc6 I made h3 for a king escape square and g4 control. ...Be6 attacked the queen; Qg6 escaped, and Qg3 later regrouped on a square supported by f2. Black then gave major material away: ...Bg4 allowed h3xg4, and ...Nh5 allowed g4xh5. I considered the possible recaptures on g4 without assuming that Qxg4 would be safe against Qc8. These actual pawn captures are positive local evidence for the trial focus, but arose from severe skill-0 errors.
+
+...Bd6 attacked Qg3, so Qg6 escaped and renewed Qh7 with the defending knight gone. Black ...Qg4 failed to stop it. Qh7# was supported by Bd3; g7 blocked Ra7 from h7. Both rooks survived; no queen concession or further material loss. My last pre-move commentary incorrectly called Qh7 a capture; h7 was empty, and the move was a non-capturing checkmate (corrected in commentary afterward). No claim that all hypothetical attack branches were proved or that this one win establishes sustained learning. Continue fixed evaluation 166–168.
+
+## Benchmark 166 — Black versus skill 0, loss
+Resigned after 31.Bc2, 30 own moves / 61 plies, zero illegal submissions, 2026-10-03 08:32:42 UTC. Seq 13606; hash 3e26653a18088971ec4d2366bf25b9523579c6e45a9e43c2da8f4516f660ad87; snapshot e2f3396e97f3874d4004b745d39675f9a402cb23b91ea8cb202dd1c4d6a77e5f. Full PGN read. Cumulative 57W/3D/106L in 166; skill 0 44W/1D/11L. Elo 1430 [1310,1550], 110 rated / latest 50, 56 MAX excluded. Storage 54,326,732 bytes.
+
+Castled 7, minors developed 8, Rad8 10. First 15 clean. ...d5/cxd5/...Nxd5 was supported by the queen, ...Be6 added knight support, and ...a6 addressed b5 against Nc6. After ...f5, Nc5 forked Qd7/Be6; ...Bxc5/Qxc5 was an equal minor exchange. ...b6 attacked the queen while Qd7 retained Nc6 defence. ...e4 attacked Nf3/d3 with f5 support; ...h6/Nxe6/...Qxe6 exchanged the other bishop for the remaining white knight. dxe4/fxe4 left a queen-supported e4 pawn.
+
+...b5 attacked Qc4, and White counterattacked my queen with Bg4. I correctly treated ...bxc4/Bxe6+ as a queen exchange, not a free queen win. ...Kh7 escaped. Rd1 added a second attack on Nd5, met by ...Nce7. Rd4 then attacked both c4 and e4. I deliberately advanced ...c3, supported by Nd5, and allowed Rxe4; ...Nf6 attacked the rook, and after Rc4, ...Rd3 defended c3. I then reinforced with ...Ned5, considering the possible Bxd5 recaptures.
+
+The decisive omitted reply was instead Bf5+, forking Kh7 and Rd3. ...Kh8/Bxd3 lost the entire rook, not an exchange. The subsequent ...Nb6/...Nfd5 kept the passer defended and ...Rd8 sought activity, but White moved Bc2 and no material was recovered. Final Black Kh8/Rd8/Nb6/Nd5/a6/c7/c3/g7/h6 versus White Kg1/Ra1/Rc6/Bc1/Bc2/a3/b4/e3/f2/g2/h3. Practical resignation a rook and pawn down, not an independently proved forced loss.
+
+No piece was lost to an omitted pawn capture, and several pawn/queen exchanges were accounted for correctly. However the bishop check/fork defeated a long local defence calculation. This does not demonstrate reliable overall improvement. Trial 23 through four benchmarks: 1W/0D/3L, 104 own moves / 209 plies, zero illegal submissions. Complete 167–168 before assessment or another learning period.
+
+
+## Benchmark 167 — White, nominal 1800, loss
+Finished 2026-10-03 08:54:37 UTC by resignation after 40...Ra2: 40 own moves, 80 plies, zero illegal submissions. Castle 6, minors developed 7, rook centralization 9; no material concession in first 15. Cumulative 57W/3D/107L; provisional Elo 1420 [1290,1540]. Result seq 13688, hash e57b1c4178e082a93141a4a2bbad653980b0221617b1d9d145cdf8f638985bfd, snapshot 6aec2666c55ce6deb4482de56ba8fb5ffcc81bbbf5245ceca08bb78eb84679fe.
+
+The opening kept material balanced. Bf3 answered extra pressure on e4, e5 advanced the f4-supported pawn, and Nxe4/Bxe4 exchanged the central knights. Qf2 defended both c2 and g2 against Be4. The queen exchange was supported by the bishop. However 24.Rf3 allowed ...Be2 to fork both rooks. I considered Nxe2 but calculated back-rank danger after vacating d4; those alternative lines were not mechanically verified or established as best play. Rd2 kept the file blocked, but ...Bxd4 Bxd4 Bxf3 gxf3 left an exchange deficit. This is another missed bishop fork, not a pawn-capture failure.
+
+I continued the ending: exchanged one rook pair, activated the king, and correctly recaptured h4 after the pawn exchange. My note for 37.b3 incorrectly claimed support for c2; it supports c4, and I corrected this explicitly on move 38. ...Rc5 attacked the bishop and ...Rxc2 won a pawn; ...Ra2 attacked a3. Final White Kg3/Bd4/a3,b4,f4 versus Black Kg6/Ra2/a6,b5,e6,h5. I resigned with an exchange and pawn deficit and no concrete recovery found; no forced-mate or independently proved loss claim. The pawn focus did not prevent a decisive error of another kind. Saved PGN read in full.
+
+
+## Benchmark 168 — Black, nominal 1800, loss
+Finished 2026-10-03 09:06:43 UTC, resignation after 41.Bxe2. 40 own moves / 81 plies, zero illegal submissions. Castled 5, remaining bishop developed 9, Rad8 11. First 15 materially clean. Full PGN read. Result seq 13771, hash e983ae164b9a0d1eaea25481e91a6747544e52b64c62510a4eb7c57ee14d1c23, snapshot c9afab28635e05d9ce6d6ae1bc6267bdf75a9ef6e3a848c85fb8a52af46ab223.
+
+Development and several exchanges remained balanced through 29 moves. On 22.axb6 I chose Qxb6 instead of the previously anticipated cxb6 because the queen also defended a6 against Ra1. ...g4/hxg4/...Nxg4 opened the kingside. Rh4 added a second attack on Ng4. I chose ...Ne3+, calling attention to d4 support, but omitted the white f2 pawn: fxe3 simply captured the knight. ...dxe3 recovered a pawn, not the piece. This is a direct failure of the trial's pawn-direction focus.
+
+...Rd2 was supported by e3 and attacked Qh2. White instead played Rxh6+, allowing ...Qxh6/Qxh6+/...Kxh6. The sixth rank had become clear, and this actual sequence recovered material to an exchange advantage. After Rxa6+ I activated the king with ...Kg5/...Kf4, exchanged rooks on g6, and captured the undefended e4 pawn. But after 39.Bb5 I chose ...Rg2 to get behind the passed g6 pawn, completely omitting Kf1xg2. The rook was taken immediately. ...e2/Bxe2 then eliminated my remaining advanced passer. Final Black Ke4/c5,e5 versus White Kg2/Be2/b3,c2,g6. Resigned with a bishop and pawn deficit and White's near-promotion passer; no forced-mate claim. Rg2 was a whole-rook oversight, not a justified simplification.
+
+## Trial 23 fixed evaluation — complete after 168
+Benchmarks 163–168: 1W/0D/5L, 184 own moves / 370 plies, zero illegal submissions. MAX 0/0/2, skill 0 1/0/1, nominal 1800 0/0/2. First 15 materially clean in 6/6 by the immediate-loss criterion (latent defender failure in 163 still mattered later), compared with 3/6 in trial 22. This narrow opening observation did not become improved full-game outcomes. Baseline Elo 1450 [1330,1570] after 162; endpoint 1410 [1280,1530]. Cumulative 57W/3D/108L in 168. Each opponent has 56 scored games: MAX 0W/2D/54L; skill 0 44W/1D/11L; nominal 1800 13W/0D/43L. Storage 55,280,308 bytes. Model uses latest 50 of 112 rated games and excludes 56 MAX games.
+
+Four remembered manual pawn cases and two unfinished MAX opening drills produced some correct local pawn checks and a clean skill-0 attacking win. They did not establish independent transfer: 168 again lost a knight to an omitted pawn capture, while bishop forks and whole-rook losses recurred elsewhere. No queen or rook was lost directly to an omitted pawn capture in this block, but the knight loss and king capture prevent calling the method reliable. Decision: end this focus as the main trial, replace it with a short destination-and-check verification exercise that explicitly includes enemy kings; do not infer improvement from longer notes or remembered repairs.

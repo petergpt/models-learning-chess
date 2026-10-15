@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.01"]
+[Round "89"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "astra"]
+[GameId "astra/benchmark/000089"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "resignation"]
+
+1. e4 d5 2. exd5 Nf6 3. d4 Qxd5 4. Nc3 Qd8 5. Nf3 Nc6 6. d5 Nb4 7. Bc4 Bf5 8. Nd4 Be4 9. O-O Bxd5 10. Nxd5 Nbxd5 11. Nf3 e6 12. Qe2 c6 13. Be3 Qc7 14. Rad1 Nxe3 15. Qxe3 Bd6 16. h3 O-O 17. Rfe1 Rfe8 18. Ne5 b5 19. Bd3 Rad8 20. Qg5 Bb4 21. c3 h6 22. Qg3 Be7 23. f4 Nd7 24. f5 Bd6 25. f6 Nxf6 26. Qe3 Nd5 27. Qe4 f5 28. Qd4 b4 29. Nc4 Bg3 30. Rf1 bxc3 31. bxc3 c5 32. Qe3 Nxe3 33. Nxe3 Bh2+ 0-1

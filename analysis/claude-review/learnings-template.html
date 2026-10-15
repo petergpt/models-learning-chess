@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How the models learned · AI Learning to Play Chess</title>
+<style>
+/* Inter (SIL Open Font License 1.1), Latin subset — same build as the live site. */
+/*__FONT__*/
+:root{
+  color-scheme:dark;
+  --page:#0b0b0d;--surface:#141417;--raised:#1b1b1f;
+  --line:rgba(255,255,255,.075);--line-2:rgba(255,255,255,.13);
+  --grid:#232328;--axis:#3b3b42;
+  --ink:#f4f3f1;--ink-2:#c9c8c3;--ink-3:#95948f;--ink-4:#6b6a66;
+  --up:#4cc77a;--down:#f0766a;--live:#3ccf6e;
+  --radius:16px;
+  --font:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--page)}
+body{margin:0;color:var(--ink);font:14px/1.45 var(--font);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  background:radial-gradient(1100px 520px at 4% -16%,rgba(74,142,232,.11),transparent 70%) no-repeat,radial-gradient(1100px 520px at 96% -16%,rgba(215,115,82,.09),transparent 70%) no-repeat,var(--page)}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0;padding:0}
+:focus{outline:none}
+:focus-visible{outline:2px solid #8fb8ff;outline-offset:2px}
+[hidden]{display:none!important}
+.defs{position:absolute;width:0;height:0;overflow:hidden}
+.tnum{font-variant-numeric:tabular-nums}
+
+.app{height:100vh;height:100dvh;min-height:600px;max-width:1440px;margin:0 auto;padding:14px 24px 20px;display:flex;flex-direction:column;gap:12px}
+.top{flex:none;display:flex;align-items:center;gap:18px;height:42px}
+.brand{display:flex;align-items:center;gap:10px;margin-right:auto;min-width:0}
+.brand h1{margin:0;font-size:18px;font-weight:600;letter-spacing:-.015em;white-space:nowrap}
+.brand .pair{display:flex;gap:4px}
+.tabs{display:flex;gap:2px;padding:3px;border-radius:11px;background:rgba(255,255,255,.035)}
+.tabs button{display:flex;align-items:center;gap:7px;padding:5px 13px;border-radius:8px;font-size:13px;font-weight:500;color:var(--ink-3);transition:color .15s,background .15s}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected=true]{background:rgba(255,255,255,.09);color:var(--ink)}
+.tabs .n{font-size:11px;color:var(--ink-4);font-weight:600}
+.tabs button[aria-selected=true] .n{color:var(--ink-3)}
+.stamp{font-size:12px;color:var(--ink-4);white-space:nowrap}
+
+main{flex:1;min-height:0;position:relative}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;gap:12px;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility 0s linear .25s}
+.slide.on{opacity:1;visibility:visible;transition:opacity .25s ease}
+@media (prefers-reduced-motion:reduce){.slide,.slide.on{transition:none}}
+.head{flex:none;display:flex;align-items:flex-end;gap:16px;min-height:40px}
+.head h2{margin:0 auto 0 0;font-size:30px;line-height:1.1;font-weight:650;letter-spacing:-.025em}
+.head h2 .arrow{font-weight:700}
+.head h2 .u{color:var(--up)}.head h2 .d{color:var(--down)}
+.legend{display:flex;align-items:center;gap:14px;font-size:12.5px;color:var(--ink-2);flex-wrap:wrap;justify-content:flex-end}
+.legend .k{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.legend .k svg{flex:none}
+.toggle{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;color:var(--ink-3);flex:none}
+.toggle:hover{color:var(--ink);background:rgba(255,255,255,.08)}
+.toggle svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card{flex:1;min-height:0;position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.fill{position:absolute;inset:0}
+.pad{position:absolute;inset:18px 20px 14px}
+
+/* logos */
+.logo-tile{flex:none;width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:color-mix(in srgb,var(--c) 16%,#1c1c21)}
+.logo-tile svg{width:16px;height:16px;color:#fff}
+.sw{display:inline-block;width:14px;height:3px;border-radius:2px;background:var(--c)}
+
+/* Elo slide */
+.elo{position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,1fr) 268px}
+.elo .plot{position:relative;min-width:0}
+.roster{border-left:1px solid var(--line);padding:14px 10px;display:flex;flex-direction:column;gap:2px;overflow:auto}
+.who{display:grid;grid-template-columns:28px minmax(0,1fr) auto;align-items:center;gap:11px;padding:10px 10px;border-radius:11px;cursor:default;transition:background .15s}
+.who:hover,.who.hl{background:rgba(255,255,255,.045)}
+.who .nm{min-width:0}
+.who .nm b{display:block;font-weight:550;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.who .nm small{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-3)}
+.who .v{text-align:right}
+.who .v strong{display:block;font-size:22px;font-weight:650;letter-spacing:-.02em;line-height:1.05}
+.who .v span{font-size:12px;font-weight:600}
+.dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--ink-4)}
+.dot.live{background:var(--live)}
+.dot.done{background:var(--ink-2)}
+.up{color:var(--up)}.down{color:var(--down)}.flat{color:var(--ink-3)}
+
+/* Paths slide */
+.paths{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.paths .panel{position:relative;display:flex;flex-direction:column;min-width:0;padding:18px 18px 10px}
+.paths .panel+.panel{border-left:1px solid var(--line)}
+.ptitle{display:flex;align-items:baseline;gap:8px;font-size:14px;font-weight:600;color:var(--ink)}
+.ptitle .hint{font-size:12px;font-weight:500;color:var(--ink-3)}
+.pchart{flex:1;min-height:0;position:relative}
+
+/* Table view */
+.table{position:absolute;inset:0;overflow:auto;padding:14px 18px}
+.table table{border-collapse:collapse;width:100%;font-size:13px}
+.table th,.table td{padding:8px 10px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}
+.table th{font-weight:550;color:var(--ink-3);font-size:12px}
+.table th:first-child,.table td:first-child{text-align:left}
+.table td{font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.table td b{color:var(--ink);font-weight:600}
+.table .m{display:inline-flex;align-items:center;gap:8px}
+
+/* Tooltip */
+.tip{position:fixed;z-index:20;pointer-events:none;min-width:120px;max-width:300px;padding:9px 11px;border-radius:10px;background:#1d1d22;border:1px solid var(--line-2);box-shadow:0 10px 30px rgba(0,0,0,.45);font-size:12px;color:var(--ink-2);opacity:0;transition:opacity .12s}
+.tip.on{opacity:1}
+.tip .t{font-size:11.5px;color:var(--ink-3);margin-bottom:5px}
+.tip .r{display:flex;align-items:center;gap:8px;line-height:1.55}
+.tip .r i{flex:none;width:12px;height:3px;border-radius:2px;background:var(--c)}
+.tip .r b{color:var(--ink);font-weight:650;font-variant-numeric:tabular-nums}
+.tip .r span{color:var(--ink-3)}
+.tip p{margin:0;color:var(--ink-2)}
+
+svg text{font-family:var(--font)}
+.ax{fill:var(--ink-4);font-size:11px;font-variant-numeric:tabular-nums}
+.axt{fill:var(--ink-3);font-size:11.5px}
+.val{fill:var(--ink);font-size:12.5px;font-weight:650;font-variant-numeric:tabular-nums}
+.lbl{fill:var(--ink-2);font-size:12.5px;font-weight:550}
+.mut{fill:var(--ink-3);font-size:12px}
+.hit{cursor:default}
+</style>
+</head>
+<body>
+<svg class="defs" aria-hidden="true">
+<!--__LOGOS__-->
+<symbol id="i-table" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 10h16M4 14.5h16M10 10v9"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 19h16M6.5 15l4-4.5 3 2.5 5-6"/></symbol>
+</svg>
+
+<div class="app">
+  <header class="top">
+    <div class="brand"><h1>How the models learned</h1></div>
+    <nav class="tabs" role="tablist" aria-label="Findings" id="tabs"></nav>
+    <span class="stamp" id="stamp"></span>
+  </header>
+  <main id="slides">
+    <section class="slide" id="elo" role="tabpanel" aria-label="Elo">
+      <div class="head"><h2>Opus improved. Astra declined.</h2><div class="legend" id="elo-legend"></div><button class="toggle" data-toggle aria-label="Show table"></button></div>
+      <div class="card"><div class="elo" data-chart><div class="plot" id="elo-plot"></div><div class="roster" id="roster"></div></div><div class="table" data-table hidden></div></div>
+    </section>
+    <section class="slide" id="paths" role="tabpanel" aria-label="Paths">
+      <div class="head"><h2>Opposite paths</h2><div class="legend" id="paths-legend"></div><button class="toggle" data-toggle aria-label="Show table"></button></div>
+      <div class="card"><div class="paths" data-chart id="paths-grid"></div><div class="table" data-table hidden></div></div>
+    </section>
+    <section class="slide" id="methods" role="tabpanel" aria-label="Methods">
+      <div class="head"><h2>Five ways to learn</h2><div class="legend" id="methods-legend"></div><button class="toggle" data-toggle aria-label="Show table"></button></div>
+      <div class="card"><div class="fill" data-chart id="methods-plot"></div><div class="table" data-table hidden></div></div>
+    </section>
+    <section class="slide" id="weak" role="tabpanel" aria-label="Weak spot">
+      <div class="head"><h2>Blunders start after move 10</h2><div class="legend" id="weak-legend"></div><button class="toggle" data-toggle aria-label="Show table"></button></div>
+      <div class="card"><div class="fill" data-chart id="weak-plot"></div><div class="table" data-table hidden></div></div>
+    </section>
+    <section class="slide" id="setup" role="tabpanel" aria-label="Setup">
+      <div class="head"><h2>Not the same setup</h2><button class="toggle" data-toggle aria-label="Show table"></button></div>
+      <div class="card"><div class="fill" data-chart id="setup-plot"></div><div class="table" data-table hidden></div></div>
+    </section>
+  </main>
+</div>
+<div class="tip" id="tip" role="tooltip"></div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+'use strict';
+const D = JSON.parse(document.getElementById('data').textContent);
+const M = Object.fromEntries(D.models.map(m => [m.id, m]));
+const IDS = D.models.map(m => m.id);
+const SLIDES = [
+  {id: 'elo', tab: 'Elo', draw: drawElo, table: tableElo},
+  {id: 'paths', tab: 'Paths', draw: drawPaths, table: tablePaths},
+  {id: 'methods', tab: 'Methods', draw: drawMethods, table: tableMethods},
+  {id: 'weak', tab: 'Weak spot', draw: drawWeak, table: tableWeak},
+  {id: 'setup', tab: 'Setup', draw: drawSetup, table: tableSetup},
+];
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+const fmt = (n, d = 0) => n == null ? '–' : Number(n).toLocaleString('en-US', {minimumFractionDigits: d, maximumFractionDigits: d});
+const kb = b => b >= 1000 ? (b / 1000).toFixed(1) + ' KB' : b + ' B';
+const ctxLabel = n => n >= 1e6 ? (n / 1e6) + 'M' : Math.round(n / 1000) + 'K';
+const logoUse = (m, s = 16) => `<svg width="${s}" height="${s}" aria-hidden="true"><use href="#${m.logo}"/></svg>`;
+function mix(a, b, t) { const p = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16)); const A = p(a), B = p(b); return '#' + A.map((v, i) => Math.round(v * t + B[i] * (1 - t)).toString(16).padStart(2, '0')).join(''); }
+const tileBg = m => mix(m.color, '#1c1c21', .16);
+const tile = m => `<span class="logo-tile" style="background:${tileBg(m)}">${logoUse(m)}</span>`;
+const svgTile = (m, tx, ty) => `<g transform="translate(${tx} ${ty})"><rect width="28" height="28" rx="8" fill="${tileBg(m)}"/><svg x="6" y="6" width="16" height="16" style="color:#fff"><use href="#${m.logo}"/></svg></g>`;
+const measureCtx = document.createElement('canvas').getContext('2d');
+function textWidth(str, px = 12.5, weight = 400) { measureCtx.font = `${weight} ${px}px Inter, system-ui, sans-serif`; return measureCtx.measureText(str).width; }
+const statusText = m => m.status === 'done' ? 'complete' : m.status === 'paused' ? 'paused' : 'live';
+let current = 0, tableMode = false, highlight = null;
+
+/* ---------- tooltip ---------- */
+const tip = $('tip');
+function showTip(html, x, y) {
+  tip.innerHTML = html; tip.classList.add('on');
+  const r = tip.getBoundingClientRect(), pad = 14;
+  let left = x + pad, top = y + pad;
+  if (left + r.width > innerWidth - 8) left = x - r.width - pad;
+  if (top + r.height > innerHeight - 8) top = y - r.height - pad;
+  tip.style.left = Math.max(8, left) + 'px'; tip.style.top = Math.max(8, top) + 'px';
+}
+function hideTip() { tip.classList.remove('on'); }
+const tipRow = (m, value, note = '') => `<div class="r" style="--c:${m.color}"><i></i><b>${value}</b><span>${esc(m.name)}${note ? ' · ' + note : ''}</span></div>`;
+
+/* ---------- shared svg helpers ---------- */
+function size(el) { const r = el.getBoundingClientRect(); return {w: Math.max(200, r.width), h: Math.max(160, r.height)}; }
+function niceTicks(lo, hi, n = 4) {
+  const span = hi - lo, step0 = span / n, mag = Math.pow(10, Math.floor(Math.log10(step0)));
+  const step = [1, 2, 2.5, 5, 10].map(s => s * mag).find(s => span / s <= n) || mag * 10;
+  const out = []; for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(6)); return out;
+}
+
+/* ---------- 1. Elo ---------- */
+const PHASE_KEY = () => `<span class="k"><svg width="12" height="12"><rect x="2.5" y="2.5" width="7" height="7" transform="rotate(45 6 6)" fill="var(--surface)" stroke="${M.astra.color}" stroke-width="1.6"/></svg>Astra's instructions changed</span>`;
+function drawElo(withRoster = true) {
+  $('elo-legend').innerHTML = PHASE_KEY();
+  const host = $('elo-plot'), {w, h} = size(host);
+  const L = 46, R = 62, T = 22, B = 34, X0 = 0, X1 = 200, Y0 = 1200, Y1 = 2000;
+  const x = g => L + (g - X0) / (X1 - X0) * (w - L - R);
+  const y = e => T + (Y1 - Math.max(Y0, Math.min(Y1, e))) / (Y1 - Y0) * (h - T - B);
+  let s = `<svg width="${w}" height="${h}" role="img" aria-label="Elo over games for each model">`;
+  s += `<defs><clipPath id="eloclip"><rect x="${L}" y="${T}" width="${w - L - R}" height="${h - T - B}"/></clipPath></defs>`;
+  for (let v = Y0; v <= Y1; v += 200) s += `<line x1="${L}" x2="${w - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text class="ax" x="${L - 10}" y="${y(v) + 4}" text-anchor="end">${v}</text>`;
+  for (let g = 0; g <= 200; g += 50) s += `<text class="ax" x="${x(g)}" y="${h - B + 20}" text-anchor="middle">${g}</text>`;
+  s += `<text class="axt" x="${w - R + 24}" y="${h - B + 20}">games</text>`;
+  s += `<text class="axt" x="${L - 10}" y="${T - 8}" text-anchor="end">Elo</text>`;
+  const order = IDS.slice().sort((a, b) => (a === highlight) - (b === highlight));
+  // bands
+  for (const id of order) {
+    const pts = D.elo[id].filter(p => p[4] >= 30); if (pts.length < 2) continue;
+    const show = highlight ? id === highlight : (id === 'astra' || id === 'opus');
+    if (!show) continue;
+    const up = pts.map(p => `${x(p[0]).toFixed(1)},${y(p[3]).toFixed(1)}`), dn = pts.slice().reverse().map(p => `${x(p[0]).toFixed(1)},${y(p[2]).toFixed(1)}`);
+    s += `<polygon points="${up.concat(dn).join(' ')}" fill="${M[id].color}" opacity="${highlight ? .14 : .06}" clip-path="url(#eloclip)"/>`;
+  }
+  // lines
+  for (const id of order) {
+    const m = M[id], pts = D.elo[id].filter(p => p[4] >= 8); if (!pts.length) continue;
+    const dim = highlight && highlight !== id ? .18 : 1;
+    const early = pts.filter(p => p[4] <= 30), mature = pts.filter(p => p[4] >= 30);
+    const path = ps => ps.map((p, i) => `${i ? 'L' : 'M'}${x(p[0]).toFixed(1)},${y(p[1]).toFixed(1)}`).join('');
+    if (early.length > 1) s += `<path d="${path(early)}" fill="none" stroke="${m.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity="${.42 * dim}" clip-path="url(#eloclip)"/>`;
+    if (mature.length > 1) s += `<path d="${path(mature)}" fill="none" stroke="${m.color}" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" opacity="${dim}" clip-path="url(#eloclip)"/>`;
+    const last = pts[pts.length - 1];
+    s += `<circle cx="${x(last[0])}" cy="${y(last[1])}" r="4.5" fill="${m.color}" stroke="var(--surface)" stroke-width="2" opacity="${dim}"/>`;
+    if ((id === 'astra' || id === 'opus') && (!highlight || highlight === id)) s += `<text class="val" x="${x(last[0]) + 9}" y="${y(last[1]) + 4.5}">${last[1]}</text>`;
+  }
+  // Astra instruction changes, marked on its own line
+  const ap = D.elo.astra;
+  for (const ph of D.phases) {
+    const p = ap.filter(q => q[0] <= ph.game).pop(); if (!p) continue;
+    const cx = x(ph.game), cy = y(p[1]), op = highlight && highlight !== 'astra' ? .18 : 1;
+    s += `<rect class="hit" data-phase="${esc(ph.label)}" data-game="${ph.game}" x="${cx - 4.2}" y="${cy - 4.2}" width="8.4" height="8.4" transform="rotate(45 ${cx} ${cy})" fill="var(--surface)" stroke="${M.astra.color}" stroke-width="1.8" opacity="${op}"/>`;
+  }
+  s += `<line id="elo-cross" x1="0" x2="0" y1="${T}" y2="${h - B}" stroke="var(--ink-4)" stroke-width="1" visibility="hidden"/>`;
+  s += `<rect id="elo-hit" x="${L}" y="${T}" width="${w - L - R}" height="${h - T - B}" fill="transparent"/>`;
+  s += '</svg>';
+  host.innerHTML = s;
+  const svg = host.firstChild, cross = svg.querySelector('#elo-cross');
+  svg.querySelector('#elo-hit').addEventListener('pointermove', e => {
+    const r = svg.getBoundingClientRect(), g = Math.round(X0 + (e.clientX - r.left - L) / (w - L - R) * (X1 - X0));
+    const rows = IDS.map(id => { const p = D.elo[id].filter(q => q[4] >= 8 && q[0] <= g).pop(); const last = D.elo[id][D.elo[id].length - 1]; return p && g <= last[0] ? [id, p] : null; }).filter(Boolean);
+    if (!rows.length) { hideTip(); cross.setAttribute('visibility', 'hidden'); return; }
+    cross.setAttribute('x1', x(g)); cross.setAttribute('x2', x(g)); cross.setAttribute('visibility', 'visible');
+    rows.sort((a, b) => b[1][1] - a[1][1]);
+    showTip(`<div class="t">After game ${g}</div>` + rows.map(([id, p]) => tipRow(M[id], p[1], `${p[2]}–${p[3]}`)).join(''), e.clientX, e.clientY);
+  });
+  svg.querySelector('#elo-hit').addEventListener('pointerleave', () => { hideTip(); cross.setAttribute('visibility', 'hidden'); });
+  svg.querySelectorAll('[data-phase]').forEach(el => {
+    el.addEventListener('pointerenter', e => showTip(`<div class="t">Astra · game ${el.dataset.game}</div><p>${esc(el.dataset.phase)}</p>`, e.clientX, e.clientY));
+    el.addEventListener('pointerleave', hideTip);
+  });
+  if (withRoster) drawRoster(); else $('roster').querySelectorAll('.who').forEach(r => r.classList.toggle('hl', r.dataset.id === highlight));
+}
+function drawRoster() {
+  const host = $('roster');
+  host.innerHTML = D.models.map(m => {
+    const c = m.change;
+    const delta = c ? `<span class="${c.delta >= 0 ? 'up' : 'down'}" data-change="${m.id}">${c.delta >= 0 ? '▲' : '▼'} ${Math.abs(c.delta)}</span>` : `<span class="flat">early</span>`;
+    return `<div class="who${highlight === m.id ? ' hl' : ''}" data-id="${m.id}">${tile(m)}<div class="nm"><b>${esc(m.name)}</b><small><i class="dot ${m.status === 'live' ? 'live' : m.status === 'done' ? 'done' : ''}"></i>${m.games} games</small></div><div class="v"><strong>${m.elo ? m.elo.est : '–'}</strong>${delta}</div></div>`;
+  }).join('');
+  host.querySelectorAll('.who').forEach(row => {
+    row.addEventListener('pointerenter', e => { highlight = row.dataset.id; drawElo(false); showRosterTip(row, e); });
+    row.addEventListener('pointermove', e => showRosterTip(row, e));
+    row.addEventListener('pointerleave', () => { highlight = null; drawElo(false); hideTip(); });
+  });
+}
+function showRosterTip(row, e) {
+  const m = M[row.dataset.id], c = m.change;
+  let html = `<div class="t">${esc(m.full)} · ${m.games} games · ${statusText(m)}</div>` + tipRow(m, m.elo.est, `now · ${m.elo.lo}–${m.elo.hi}`);
+  if (c) html += `<div class="r" style="--c:transparent"><i></i><b>${c.before.est}</b><span>games ${c.fromGames[0]}–${c.fromGames[1]} · ${c.before.lo}–${c.before.hi}</span></div><div class="r" style="--c:transparent"><i></i><b>${c.after.est}</b><span>games ${c.toGames[0]}–${c.toGames[1]} · ${c.after.lo}–${c.after.hi}</span></div>`;
+  else html += `<p style="margin-top:4px;color:var(--ink-3)">Too few games for a trend</p>`;
+  showTip(html, e.clientX, e.clientY);
+}
+function tableElo() {
+  return `<table><thead><tr><th>Model</th><th>Games</th><th>Status</th><th>Elo now</th><th>95% range</th><th>First 60 games</th><th>Latest 60 games</th><th>Change</th></tr></thead><tbody>` +
+    D.models.map(m => { const c = m.change; return `<tr><td><span class="m">${tile(m)}${esc(m.full)}</span></td><td>${m.games}</td><td>${statusText(m)}</td><td><b>${m.elo.est}</b></td><td>${m.elo.lo}–${m.elo.hi}</td><td>${c ? `${c.before.est} (${c.before.lo}–${c.before.hi})` : '–'}</td><td>${c ? `${c.after.est} (${c.after.lo}–${c.after.hi})` : '–'}</td><td>${c ? (c.delta > 0 ? '+' : '') + c.delta : '–'}</td></tr>`; }).join('') + '</tbody></table>';
+}
+
+/* ---------- 2. Paths (Astra vs Opus, per 50-game quarter) ---------- */
+const PATH_METRICS = [
+  {key: 'elo', title: 'Elo', hint: '↑ better', get: q => q.elo && q.elo.est, lo: 1300, hi: 1900, fmt: v => String(v)},
+  {key: 'blunders', title: 'Blunders per 100 moves', hint: '↓ better', get: q => q.blunders, lo: 0, hi: 4, fmt: v => fmt(v, 1)},
+  {key: 'seconds', title: 'Seconds per move', hint: '', get: q => q.seconds, lo: 0, hi: 40, fmt: v => fmt(v)},
+];
+const PAIR = ['astra', 'opus'];
+function drawPaths() {
+  $('paths-legend').innerHTML = PAIR.map(id => `<span class="k">${tile(M[id])}${esc(M[id].name)}</span>`).join('');
+  const grid = $('paths-grid');
+  grid.innerHTML = PATH_METRICS.map(mt => `<div class="panel"><div class="ptitle">${esc(mt.title)}${mt.hint ? `<span class="hint">${mt.hint}</span>` : ''}</div><div class="pchart" data-metric="${mt.key}"></div></div>`).join('');
+  grid.querySelectorAll('.pchart').forEach(host => {
+    const mt = PATH_METRICS.find(m => m.key === host.dataset.metric), {w, h} = size(host);
+    const L = 36, R = 30, T = 26, B = 40;
+    const x = i => L + 48 + i / 3 * (w - L - R - 70);
+    const y = v => T + (mt.hi - v) / (mt.hi - mt.lo) * (h - T - B);
+    let s = `<svg width="${w}" height="${h}" role="img" aria-label="${esc(mt.title)} by quarter of the run">`;
+    for (const v of niceTicks(mt.lo, mt.hi, 4)) s += `<line x1="${L}" x2="${w - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--grid)"/><text class="ax" x="${L - 8}" y="${y(v) + 4}" text-anchor="end">${mt.key === 'blunders' ? v.toFixed(v % 1 ? 1 : 0) : v}</text>`;
+    ['1–50', '51–100', '101–150', '151–200'].forEach((t, i) => s += `<text class="ax" x="${x(i)}" y="${h - B + 20}" text-anchor="middle">${t}</text>`);
+    s += `<text class="axt" x="${(L + w - R) / 2}" y="${h - 4}" text-anchor="middle">games</text>`;
+    const ends = [];
+    for (const id of PAIR) {
+      const m = M[id], qs = D.quarters[id] || [];
+      const pts = qs.map((q, i) => [i, mt.get(q), q]).filter(p => p[1] != null);
+      s += `<path d="${pts.map((p, i) => `${i ? 'L' : 'M'}${x(p[0])},${y(p[1])}`).join('')}" fill="none" stroke="${m.color}" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>`;
+      for (const p of pts) {
+        const partial = p[2].partial;
+        s += `<circle class="hit" data-id="${id}" data-q="${p[0]}" cx="${x(p[0])}" cy="${y(p[1])}" r="${partial ? 4.6 : 5.5}" fill="${partial ? 'var(--surface)' : m.color}" stroke="${partial ? m.color : 'var(--surface)'}" stroke-width="${partial ? 2.2 : 2}"/>`;
+        s += `<circle class="hit" data-id="${id}" data-q="${p[0]}" cx="${x(p[0])}" cy="${y(p[1])}" r="14" fill="transparent"/>`;
+      }
+      if (pts.length) { ends.push({side: 'l', id, px: x(pts[0][0]), py: y(pts[0][1]), v: pts[0][1]}); ends.push({side: 'r', id, px: x(pts[pts.length - 1][0]), py: y(pts[pts.length - 1][1]), v: pts[pts.length - 1][1]}); }
+    }
+    for (const side of ['l', 'r']) {
+      const e = ends.filter(q => q.side === side).sort((a, b) => a.py - b.py);
+      for (let i = 1; i < e.length; i++) if (e[i].py - e[i - 1].py < 16) { const mid = (e[i].py + e[i - 1].py) / 2; e[i - 1].ly = mid - 8; e[i].ly = mid + 8; }
+      for (const q of e) s += `<text class="val" x="${q.px + (side === 'l' ? -12 : 12)}" y="${(q.ly ?? q.py) + 4.5}" text-anchor="${side === 'l' ? 'end' : 'start'}">${mt.fmt(q.v)}</text>`;
+    }
+    s += '</svg>';
+    host.innerHTML = s;
+    host.querySelectorAll('[data-q]').forEach(el => {
+      el.addEventListener('pointerenter', e => pathTip(el, mt, e));
+      el.addEventListener('pointermove', e => pathTip(el, mt, e));
+      el.addEventListener('pointerleave', hideTip);
+    });
+  });
+}
+function pathTip(el, mt, e) {
+  const m = M[el.dataset.id], q = D.quarters[el.dataset.id][+el.dataset.q];
+  let html = `<div class="t">${esc(m.name)} · games ${q.lo}–${q.hi}${q.partial ? ' (in progress)' : ''}</div>`;
+  html += tipRow(m, q.elo ? q.elo.est : '–', q.elo ? `Elo · ${q.elo.lo}–${q.elo.hi}` : 'Elo');
+  html += `<div class="r" style="--c:transparent"><i></i><b>${fmt(q.blunders, 2)}</b><span>blunders per 100 moves</span></div>`;
+  html += `<div class="r" style="--c:transparent"><i></i><b>${fmt(q.seconds)}</b><span>seconds per move (median)</span></div>`;
+  html += `<p style="margin-top:4px;color:var(--ink-3)">${q.ratedGames} rated games · ${fmt(q.moves)} moves</p>`;
+  showTip(html, e.clientX, e.clientY);
+}
+function tablePaths() {
+  return `<table><thead><tr><th>Model</th><th>Games</th><th>Elo</th><th>95% range</th><th>Blunders / 100 moves</th><th>Seconds / move</th><th>Rated games</th></tr></thead><tbody>` +
+    PAIR.flatMap(id => D.quarters[id].map(q => `<tr><td><span class="m">${tile(M[id])}${esc(M[id].name)}</span></td><td>${q.lo}–${q.hi}${q.partial ? ' (in progress)' : ''}</td><td><b>${q.elo.est}</b></td><td>${q.elo.lo}–${q.elo.hi}</td><td>${fmt(q.blunders, 2)}</td><td>${fmt(q.seconds)}</td><td>${q.ratedGames}</td></tr>`)).join('') + '</tbody></table>';
+}
+
+/* ---------- 3. Methods timeline ---------- */
+function methodsLegend() {
+  $('methods-legend').innerHTML =
+    `<span class="k"><svg width="10" height="14"><line x1="5" x2="5" y1="2" y2="12" stroke="var(--ink-2)" stroke-width="1.8" stroke-linecap="round"/></svg>Method change</span>` +
+    `<span class="k"><svg width="20" height="14"><circle cx="5" cy="7" r="3" fill="var(--ink-2)"/><circle cx="14" cy="7" r="5.5" fill="var(--ink-2)"/></svg>Practice (size = moves)</span>` +
+    `<span class="k"><svg width="22" height="14"><path d="M1 13 L6 9 L13 6 L21 3 L21 13 Z" fill="var(--ink-2)" opacity=".28"/><path d="M1 13 L6 9 L13 6 L21 3" fill="none" stroke="var(--ink-2)" stroke-width="1.5"/></svg>Rule-list size</span>` + PHASE_KEY();
+}
+function stepAt(points, g) { let v = null; for (const p of points) { if (p[0] <= g) v = p[1]; else break; } return v; }
+function drawMethods() {
+  methodsLegend();
+  const host = $('methods-plot'), {w, h} = size(host);
+  const LW = 196, RW = 214, T = 14, B = 34, x0 = LW, x1 = w - RW;
+  const x = g => x0 + g / 200 * (x1 - x0), rows = IDS.length, rowH = (h - T - B) / rows;
+  let s = `<svg width="${w}" height="${h}" role="img" aria-label="Learning activity over games for each model">`;
+  for (let g = 0; g <= 200; g += 50) {
+    s += `<line x1="${x(g)}" x2="${x(g)}" y1="${T}" y2="${h - B}" stroke="var(--grid)"/>`;
+    s += `<text class="ax" x="${x(g)}" y="${h - B + 20}" text-anchor="middle">${g}</text>`;
+  }
+  s += `<text class="axt" x="${x1 + 24}" y="${h - B + 20}">games</text>`;
+  IDS.forEach((id, i) => {
+    const m = M[id], md = D.method[id], top = T + i * rowH, y0 = top + rowH * .56, rh = rowH * .36;
+    if (i) s += `<line x1="16" x2="${w - 16}" y1="${top}" y2="${top}" stroke="var(--line)"/>`;
+    // label
+    s += svgTile(m, 20, top + rowH / 2 - 14);
+    s += `<text class="lbl" x="60" y="${top + rowH / 2 + 4.5}">${esc(m.name)}</text>`;
+    // rule-list ribbon
+    if (md.rules && md.rules.points.length) {
+      const pts = md.rules.points, max = Math.max(...pts.map(p => p[1])) || 1, gEnd = m.games;
+      let d = `M${x(pts[0][0])},${y0}`;
+      pts.forEach((p, k) => { const nx = k + 1 < pts.length ? pts[k + 1][0] : gEnd + 1; d += ` L${x(p[0])},${y0 - p[1] / max * rh} L${x(nx)},${y0 - p[1] / max * rh}`; });
+      d += ` L${x(gEnd + 1)},${y0} Z`;
+      s += `<path d="${d}" fill="${m.color}" opacity=".2"/>`;
+      let top2 = '';
+      pts.forEach((p, k) => { const nx = k + 1 < pts.length ? pts[k + 1][0] : gEnd + 1; top2 += `${k ? 'L' : 'M'}${x(p[0])},${y0 - p[1] / max * rh} L${x(nx)},${y0 - p[1] / max * rh} `; });
+      s += `<path d="${top2}" fill="none" stroke="${m.color}" stroke-width="1.5" opacity=".9"/>`;
+    }
+    // track
+    s += `<line x1="${x(1)}" x2="${x(m.games)}" y1="${y0}" y2="${y0}" stroke="var(--ink-3)" stroke-width="1.5" opacity=".55"/>`;
+    // method-change ticks
+    for (const g of md.trials) s += `<line x1="${x(g)}" x2="${x(g)}" y1="${y0 + 4}" y2="${y0 + 13}" stroke="${m.color}" stroke-width="1.6" stroke-linecap="round"/>`;
+    // practice dots (sessions between the same two games merged)
+    const merged = new Map();
+    for (const p of md.practice) { const k = p[0]; const e = merged.get(k) || {g: k, moves: 0, n: 0, opps: new Set()}; e.moves += p[1]; e.n += 1; e.opps.add(p[2]); merged.set(k, e); }
+    const cy = y0 + 13 + Math.min(16, rowH * .2);
+    for (const e of merged.values()) {
+      const r = Math.max(2.4, Math.min(11, Math.sqrt(e.moves) * 1.25));
+      s += `<circle cx="${x(e.g)}" cy="${cy}" r="${r}" fill="${m.color}" fill-opacity=".85" stroke="var(--surface)" stroke-width="1.5"/>`;
+    }
+    // Astra's instruction changes
+    if (id === 'astra') for (const ph of D.phases) s += `<rect x="${x(ph.game) - 3.6}" y="${y0 - 3.6}" width="7.2" height="7.2" transform="rotate(45 ${x(ph.game)} ${y0})" fill="var(--surface)" stroke="${M.astra.color}" stroke-width="1.6"/>`;
+    // style + numbers
+    const nTrials = md.trialCount ?? md.trials.length, nPrac = md.practice.length;
+    s += `<text class="lbl" x="${w - RW + 26}" y="${top + rowH / 2 - 4}">${esc(m.style)}</text>`;
+    s += `<text class="mut" x="${w - RW + 26}" y="${top + rowH / 2 + 15}">${nTrials} changes · ${nPrac} practice</text>`;
+    s += `<rect class="hit" data-row="${id}" x="${x0 - 6}" y="${top}" width="${x1 - x0 + 12}" height="${rowH}" fill="transparent"/>`;
+  });
+  s += `<line id="m-cross" x1="0" x2="0" y1="${T}" y2="${h - B}" stroke="var(--ink-4)" visibility="hidden"/>`;
+  s += '</svg>';
+  host.innerHTML = s;
+  const svg = host.firstChild, cross = svg.querySelector('#m-cross');
+  svg.querySelectorAll('[data-row]').forEach(el => {
+    el.addEventListener('pointermove', e => {
+      const id = el.dataset.row, m = M[id], md = D.method[id];
+      const r = svg.getBoundingClientRect(), gf = (e.clientX - r.left - x0) / (x1 - x0) * 200, g = Math.max(1, Math.min(m.games, Math.round(gf)));
+      cross.setAttribute('x1', x(g)); cross.setAttribute('x2', x(g)); cross.setAttribute('visibility', 'visible');
+      let html = `<div class="t">${esc(m.name)} · game ${g}</div>`;
+      const pr = md.practice.filter(p => Math.abs(p[0] - gf) <= 1.6);
+      const tr = md.trials.filter(t => Math.abs(t - gf) <= 1.2);
+      if (tr.length) html += `<div class="r" style="--c:${m.color}"><i></i><b>Method change</b><span>before game ${tr[0]}</span></div>`;
+      if (pr.length) html += `<div class="r" style="--c:${m.color}"><i></i><b>${pr.length} practice</b><span>${pr.reduce((a, p) => a + p[1], 0)} moves · after game ${Math.floor(pr[0][0])} · ${[...new Set(pr.map(p => p[2]))].join(', ')}</span></div>`;
+      if (md.rules) { const v = stepAt(md.rules.points, g); if (v != null) html += `<div class="r" style="--c:transparent"><i></i><b>${kb(v)}</b><span>${esc(md.rules.file)}</span></div>`; }
+      if (id === 'astra') { const ph = D.phases.filter(p => Math.abs(p.game - gf) <= 2)[0]; if (ph) html += `<p style="margin-top:4px">${esc(ph.label)}</p>`; }
+      showTip(html, e.clientX, e.clientY);
+    });
+    el.addEventListener('pointerleave', () => { hideTip(); cross.setAttribute('visibility', 'hidden'); });
+  });
+}
+function tableMethods() {
+  return `<table><thead><tr><th>Model</th><th>Style</th><th>Method changes</th><th>Practice sessions</th><th>Practice moves</th><th>Benchmark moves</th><th>Rule list: start → peak → now</th></tr></thead><tbody>` +
+    D.models.map(m => { const md = D.method[m.id], r = md.rules; const pts = r ? r.points.map(p => p[1]) : []; return `<tr><td><span class="m">${tile(m)}${esc(m.name)}</span></td><td>${esc(m.style)}</td><td><b>${md.trialCount ?? md.trials.length}</b></td><td>${md.practice.length}</td><td>${fmt(md.practiceMoves)}</td><td>${fmt(md.gameMoves)}</td><td>${r ? `${kb(pts.find(v => v > 0) ?? 0)} → ${kb(Math.max(...pts))} → ${kb(pts[pts.length - 1])}` : '–'}</td></tr>`; }).join('') + '</tbody></table>';
+}
+
+/* ---------- 4. Weak spot heatmap ---------- */
+function drawWeak() {
+  const rows = D.where.rows, buckets = D.where.buckets;
+  const vals = IDS.flatMap(id => rows[id].filter(c => c[1] >= 60).map(c => c[0]));
+  const vmax = Math.max(...vals, 1);
+  $('weak-legend').innerHTML = `<span class="k">Blunders per 100 moves</span><span class="k"><span class="tnum" style="color:var(--ink-3)">0</span><svg width="120" height="10"><defs><linearGradient id="wg"><stop offset="0" stop-color="#fff" stop-opacity=".05"/><stop offset="1" stop-color="#fff" stop-opacity=".72"/></linearGradient></defs><rect width="120" height="10" rx="3" fill="url(#wg)"/></svg><span class="tnum" style="color:var(--ink-3)">${fmt(vmax, 1)}</span></span>`;
+  const host = $('weak-plot'), {w, h} = size(host);
+  const LW = 210, T = 46, B = 26, R = 28, cols = buckets.length;
+  const cw = Math.min(150, (w - LW - R) / cols), ch = Math.min(96, (h - T - B) / IDS.length), gap = 6;
+  const ox = LW + Math.max(0, (w - LW - R - cw * cols) / 2) - 0, oy = T + Math.max(0, (h - T - B - ch * IDS.length) / 2);
+  let s = `<svg width="${w}" height="${h}" role="img" aria-label="Blunder rate by move number for each model">`;
+  s += `<text class="axt" x="${ox - 196}" y="${oy - 14}">Move number</text>`;
+  buckets.forEach((b, j) => s += `<text class="ax" x="${ox + j * cw + cw / 2}" y="${oy - 14}" text-anchor="middle" style="font-size:12px;fill:var(--ink-3)">${b}</text>`);
+  IDS.forEach((id, i) => {
+    const m = M[id], cy = oy + i * ch;
+    s += svgTile(m, ox - 196, cy + ch / 2 - 14);
+    s += `<text class="lbl" x="${ox - 156}" y="${cy + ch / 2 + 4.5}">${esc(m.name)}</text>`;
+    rows[id].forEach((c, j) => {
+      const [v, n] = c, cx = ox + j * cw;
+      const ok = v != null && n >= 60, a = ok ? .05 + .67 * (v / vmax) : .02;
+      s += `<rect class="hit" data-id="${id}" data-j="${j}" x="${cx + gap / 2}" y="${cy + gap / 2}" width="${cw - gap}" height="${ch - gap}" rx="10" fill="#fff" fill-opacity="${a}"/>`;
+      s += `<text x="${cx + cw / 2}" y="${cy + ch / 2 + 5}" text-anchor="middle" style="pointer-events:none;font-size:${ok ? 15 : 13}px;font-weight:${ok ? 650 : 500};fill:${ok ? (a > .46 ? '#141417' : 'var(--ink)') : 'var(--ink-4)'};font-variant-numeric:tabular-nums">${ok ? fmt(v, 1) : '·'}</text>`;
+    });
+  });
+  s += '</svg>';
+  host.innerHTML = s;
+  host.querySelectorAll('[data-j]').forEach(el => {
+    const show = e => { const m = M[el.dataset.id], c = D.where.rows[el.dataset.id][+el.dataset.j]; showTip(`<div class="t">${esc(m.name)} · own moves ${buckets[+el.dataset.j]}</div>` + (c[1] >= 60 ? tipRow(m, fmt(c[0], 2), 'blunders per 100 moves') : '') + `<p style="margin-top:4px;color:var(--ink-3)">${fmt(c[1])} moves in rated games${c[1] < 60 ? ' · too few to show' : ''}</p>`, e.clientX, e.clientY); };
+    el.addEventListener('pointerenter', show); el.addEventListener('pointermove', show); el.addEventListener('pointerleave', hideTip);
+  });
+}
+function tableWeak() {
+  const b = D.where.buckets;
+  return `<table><thead><tr><th>Model</th>${b.map(x => `<th>Moves ${x}</th>`).join('')}</tr></thead><tbody>` +
+    D.models.map(m => `<tr><td><span class="m">${tile(m)}${esc(m.name)}</span></td>${D.where.rows[m.id].map(c => `<td>${c[1] ? `<b>${fmt(c[0], 2)}</b> <span style="color:var(--ink-4)">(${fmt(c[1])})</span>` : '–'}</td>`).join('')}</tr>`).join('') + '</tbody></table>';
+}
+
+/* ---------- 5. Setup ---------- */
+const ICONS = {
+  flag: '<path d="M6 21V4m0 0h10l-2 4 2 4H6"/>',
+  clock: '<circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/>',
+  gauge: '<path d="M4.5 16a8 8 0 1 1 15 0"/><path d="M12 16l4-5"/>',
+  resume: '<path d="M8 5.5v13l10-6.5z"/>',
+  memory: '<rect x="5" y="6" width="14" height="12" rx="2"/><path d="M9 6V3.5M15 6V3.5M9 20.5V18M15 20.5V18"/>',
+  pause: '<path d="M9 6v12M15 6v12"/>',
+  bolt: '<path d="M13 3 5 13h6l-1 8 8-10h-6z"/>',
+};
+function drawSetup() {
+  const host = $('setup-plot'), {w, h} = size(host);
+  const T = 44, B = 16, LW = 230, rows = IDS.length, rowH = Math.min(104, (h - T - B) / rows), oy = T + Math.max(0, (h - T - B - rowH * rows) / 2);
+  const colW = Math.min(210, (w - LW) * .22), c1 = LW, c2 = LW + colW + 70, c3 = c2 + colW + 90;
+  let s = `<svg width="${w}" height="${h}" role="img" aria-label="Context window, games played and notable conditions per model">`;
+  s += `<text class="axt" x="${c1}" y="${oy - 18}">Context window</text><text class="axt" x="${c2}" y="${oy - 18}">Games played</text>`;
+  IDS.forEach((id, i) => {
+    const m = M[id], top = oy + i * rowH, cy = top + rowH / 2;
+    if (i) s += `<line x1="16" x2="${w - 16}" y1="${top}" y2="${top}" stroke="var(--line)"/>`;
+    s += svgTile(m, 20, cy - 14);
+    s += `<text class="lbl" x="60" y="${cy + 4.5}">${esc(m.name)}</text>`;
+    const bar = (x0, frac, label, note) => `<rect x="${x0}" y="${cy - 5}" width="${colW}" height="10" rx="5" fill="#fff" fill-opacity=".06"/><rect x="${x0}" y="${cy - 5}" width="${Math.max(10, colW * frac)}" height="10" rx="5" fill="${m.color}"/><text class="val" x="${x0 + colW + 12}" y="${cy + 4.5}">${label}</text>${note ? `<text class="mut" x="${x0 + colW + 12}" y="${cy + 21}">${note}</text>` : ''}`;
+    s += bar(c1, m.context / 1e6, ctxLabel(m.context), '');
+    s += bar(c2, m.games / 200, m.games, statusText(m));
+    const chips = D.setup[id] || [], chipH = 28, chipGap = 6, total = chips.length * chipH + Math.max(0, chips.length - 1) * chipGap;
+    chips.forEach(([icon, text], k) => {
+      const tw = textWidth(text, 12.5) + 44, cyk = cy - total / 2 + k * (chipH + chipGap);
+      s += `<g transform="translate(${c3} ${cyk})"><rect width="${tw}" height="${chipH}" rx="9" fill="#fff" fill-opacity=".055"/><svg x="10" y="6" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--ink-2)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${ICONS[icon]}</svg><text x="33" y="18.5" style="font-size:12.5px;fill:var(--ink-2)">${esc(text)}</text></g>`;
+    });
+  });
+  s += '</svg>';
+  host.innerHTML = s;
+}
+function tableSetup() {
+  return `<table><thead><tr><th>Model</th><th>Context window</th><th>Games played</th><th>Status</th><th>Notes</th></tr></thead><tbody>` +
+    D.models.map(m => `<tr><td><span class="m">${tile(m)}${esc(m.full)}</span></td><td><b>${ctxLabel(m.context)}</b></td><td>${m.games}</td><td>${statusText(m)}</td><td style="text-align:left">${(D.setup[m.id] || []).map(x => esc(x[1])).join(' · ') || '–'}</td></tr>`).join('') + '</tbody></table>';
+}
+
+/* ---------- navigation ---------- */
+const tabs = $('tabs');
+tabs.innerHTML = SLIDES.map((sl, i) => `<button role="tab" id="tab-${sl.id}" aria-controls="${sl.id}" aria-selected="false"><span class="n">${i + 1}</span>${esc(sl.tab)}</button>`).join('');
+tabs.querySelectorAll('button').forEach((b, i) => b.addEventListener('click', () => go(i)));
+document.querySelectorAll('[data-toggle]').forEach(btn => btn.addEventListener('click', () => { tableMode = !tableMode; render(); }));
+$('stamp').textContent = 'Data to ' + new Date(D.generated).toLocaleString('en-GB', {day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'UTC'}) + ' UTC';
+function go(i, push = true) {
+  current = (i + SLIDES.length) % SLIDES.length; highlight = null; hideTip();
+  if (push) try { history.replaceState(null, '', '#' + SLIDES[current].id); } catch (e) { /* sandboxed viewer */ }
+  render();
+}
+function render() {
+  SLIDES.forEach((sl, i) => {
+    const on = i === current, sec = $(sl.id);
+    sec.classList.toggle('on', on);
+    $('tab-' + sl.id).setAttribute('aria-selected', on);
+    const btn = sec.querySelector('[data-toggle]');
+    btn.innerHTML = `<svg viewBox="0 0 24 24"><use href="#${tableMode ? 'i-chart' : 'i-table'}"/></svg>`;
+    btn.setAttribute('aria-label', tableMode ? 'Show chart' : 'Show table');
+    btn.title = tableMode ? 'Chart' : 'Table';
+    sec.querySelector('[data-chart]').hidden = tableMode;
+    const tbl = sec.querySelector('[data-table]'); tbl.hidden = !tableMode;
+    if (on) { if (tableMode) tbl.innerHTML = sl.table(); else sl.draw(); }
+  });
+}
+addEventListener('keydown', e => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.key === 'ArrowRight') go(current + 1);
+  else if (e.key === 'ArrowLeft') go(current - 1);
+  else if (/^[1-5]$/.test(e.key)) go(+e.key - 1);
+});
+let raf = 0;
+addEventListener('resize', () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(render); });
+const start = SLIDES.findIndex(sl => '#' + sl.id === location.hash);
+go(start >= 0 ? start : 0, false);
+</script>
+</body>
+</html>

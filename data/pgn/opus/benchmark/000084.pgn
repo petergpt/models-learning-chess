@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "84"]
+[White "Stockfish 19"]
+[Black "claude-opus-5-5"]
+[Result "1/2-1/2"]
+[Mode "benchmark"]
+[RunId "opus"]
+[GameId "opus/benchmark/000084"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "threefold_repetition"]
+
+1. Nf3 d5 2. e3 Nf6 3. c4 c6 4. Be2 Bf5 5. Nh4 Bg6 6. cxd5 cxd5 7. Qb3 Qc7 8. Qa4+ Nbd7 9. Nc3 e6 10. d4 a6 11. a3 Bd6 12. Nb5 Qb8 13. Nxd6+ Qxd6 14. O-O O-O 15. Bd2 Ne4 16. Bb4 Qc7 17. Nxg6 hxg6 18. Rac1 Qd8 19. Bxf8 Nxf8 20. Qc2 Ra7 21. Bd3 Nd6 22. Rfe1 Qb6 23. g3 Nd7 24. Kg2 Nf6 25. Re2 Nfe4 26. Qd1 f5 27. a4 Kf7 28. f3 Nf6 29. h3 Ra8 30. Rec2 Nde8 31. h4 Qd8 32. Rc3 Rb8 33. b4 Qd6 34. g4 Qxb4 35. Qc2 fxg4 36. Bxg6+ Kf8 37. Rc5 Qb6 38. Qe2 Nd6 39. fxg4 Nfe4 40. Bxe4 dxe4 41. Qa2 Kf7 42. Kh3 Ne8 43. g5 Qd8 44. Rg1 g6 45. Re5 Qd6 46. Qf2+ Kg7 47. Rf1 Qe7 48. h5 gxh5 49. d5 Nc7 50. Rxe4 Nxd5 51. Qf3 Rf8 52. Qxf8+ Qxf8 53. Rxf8 Kxf8 54. a5 Kf7 55. Kh4 Ne7 56. Kxh5 Nf5 57. Rb4 Nd6 58. Rb2 Nc4 59. Rxb7+ Kf8 60. Rb3 Nxa5 61. Rb1 Nc4 62. Rb8+ Kf7 63. g6+ Kg7 64. Rc8 Nxe3 65. Rc7+ Kg8 66. Rc8+ Kg7 67. Rc7+ Kg8 68. Rc6 Kg7 1/2-1/2

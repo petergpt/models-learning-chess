@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.02"]
+[Round "126"]
+[White "Stockfish 19"]
+[Black "gpt-6-astra"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "astra"]
+[GameId "astra/benchmark/000126"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "resignation"]
+
+1. Nf3 d5 2. e3 Nf6 3. a3 Bf5 4. d4 e6 5. Be2 Bd6 6. c4 O-O 7. Nbd2 Nbd7 8. c5 Be7 9. b4 a5 10. Bb2 axb4 11. axb4 Rxa1 12. Qxa1 Qa8 13. O-O Qxa1 14. Rxa1 Rb8 15. Ra7 Ne4 16. Nb3 Bd8 17. Ne5 Nxe5 18. dxe5 b6 19. c6 b5 20. Kf1 Kf8 21. Ba1 Rb6 22. f3 Ng5 23. Na5 f6 24. Ra8 Ke7 25. exf6+ gxf6 26. Bd4 Rxc6 27. Nxc6+ Kd7 28. Rxd8+ Kxc6 29. Bxf6 Nf7 30. Rf8 1-0

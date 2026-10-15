@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.04"]
+[Round "192"]
+[White "Stockfish 19"]
+[Black "claude-opus-5-5"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "opus"]
+[GameId "opus/benchmark/000192"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "checkmate"]
+
+1. c4 Nf6 2. Nc3 e5 3. Nf3 Nc6 4. e3 Bb4 5. Qc2 O-O 6. Nd5 Be7 7. Ng5 g6 8. Nxf6+ Bxf6 9. Ne4 Bg7 10. d3 f5 11. Nd2 d6 12. Be2 Be6 13. O-O Qe7 14. b3 e4 15. Rb1 Nb4 16. Qd1 exd3 17. Bf3 c6 18. Bb2 Nxa2 19. b4 Nc3 20. Bxc3 Bxc3 21. Qb3 Bxd2 22. Qb2 Bxe3 23. Rfe1 Bb6 24. Bd5 Rf6 25. Rxe6 Rxe6 26. Bxe6+ Qxe6 27. c5 Bc7 28. cxd6 Bxd6 29. h3 Be5 30. Re1 Bxb2 31. Rxe6 d2 32. Rd6 Bc3 33. Kf1 Re8 34. f3 Re1+ 35. Kf2 d1=Q 36. Rxd1 Rxd1 37. Ke2 Rd4 38. Kf2 Rxb4 39. Ke2 Rd4 40. Kf2 a5 41. Ke3 a4 42. f4 a3 43. Ke2 a2 44. Ke3 a1=Q 45. g3 Qe1+ 46. Kf3 Rd3+ 47. Kg2 Qe2+ 48. Kg1 Rd1# 0-1

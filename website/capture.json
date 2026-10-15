@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-10-15T22:35:47.167185+00:00",
+  "deployed_url": "https://ailearningchess.ai-learning-chess.workers.dev",
+  "files": [
+    {
+      "url": "https://ailearningchess.ai-learning-chess.workers.dev/",
+      "path": "website/index.html"
+    },
+    {
+      "url": "https://ailearningchess.ai-learning-chess.workers.dev/data",
+      "path": "website/data"
+    }
+  ],
+  "screenshots": [
+    "docs/screenshots/overview.png",
+    "docs/screenshots/tournament.png"
+  ]
+}

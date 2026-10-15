@@ -1,0 +1,13 @@
+# Review176
+
+176/200 scored: 47W8D121L. Full strength 0W0D60L; skill0 39W4D15L; nominal1800 8W4D46L. Provisional engine-relative Elo1500 [1380,1630],95% conditional Bayesian interval,last50 rated;116 rated total,60 full-strength games excluded as uncalibrated. No human-rating claim. Game176 Black full strength lost32Qh4#,63plies,1illegal submission. Receipt13876,2026-10-10T03:14:54.798260+00:00.
+
+Trial298 completed minor development before relocating Ra8-e8; this did not prevent loss. Qe6 was boxed in when18d5 attacked it. Bxd5 exd5 Nxd5 sacrificed a bishop for two pawns. 20Bf5 attacked Qe6;20...Qf6 unrooted Nd5 and21Qxd5 lost it. 24...Qe6 did not make Pe5 cheaply defendable against25Rxe5: Qxe5 would permit Nf3xe5. Opponent then sacrificed Ng3 and Bc1 through Nxg7 and Bxh6+, which I captured with my king; the resulting attack mated, so these captures cannot be counted as useful recovered material or opponent gifts.
+
+30...Kg8 was rejected because Rg5 attacks g8 along its file. Corrected30...Kh8 31Qd4+ f6 32Qh4#. I mentally considered Bf6 but did not submit it; no claimed rescue. Kh8 was on an open h-file, and f6 blocked the queen diagonal while leaving that file available to Qh4. The final mate is established by the recorded game; my alternative assessments remain unverified.
+
+Trial299: revisit the remembered position after30Rg5+ with Black king escape toward f6 instead of h8. Focus on complete rook files and king-destination attacks, rather than assuming a retreat is legal or safe. Up to three accepted own moves, then end if ongoing and review. Observable local success: avoid an illegal king move and retain an escape after the next forcing replies. This remembered drill alone cannot show transfer. Next fresh evaluation: benchmark177, fixed rotation.
+
+Practice158 (max, remembered176ply59) failed:30...Kf6 31Qd4+ Ke6 32Qe5#,4plies,0illegal. Receipt1537,2026-10-10T03:15:59.574229+00:00. Qe5 is rooted by Nf3; my own Qd7, Be7, Pf7 and Pd5 occupy nearby escape squares. The central escape was legal but did not rescue the position. Neither alternative is established as a general defense. The trial did not meet its local safety criterion.
+
+Trial300 before177: reduce early queen activity and avoid putting her behind a wall of own pieces. Keep the queen near her initial square through development unless a concrete tactic requires movement. Before any defender moves, name its currently attacked dependent piece and compare the actual recapture value. Before a king move, check occupied neighboring squares as well as enemy attacks. Fresh benchmark177 is the evaluation point; no loss of a minor specifically through a queen move would be a limited success, not proof of improvement.

@@ -1,0 +1,359 @@
+{
+  "capturedAt": "2026-10-15T22:09:24.019665+00:00",
+  "runs": {
+    "fable": {
+      "name": "Chess - Fable-5.1",
+      "files": {
+        "data/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - Fable-5.1/data/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/fable/data/ledger.jsonl",
+          "bytes": 1458537,
+          "sha256": "67e10667424a1877ca29cf692f95363b4224635c2de8e73e9411668a380acaf8",
+          "sourceMtimeNs": 1791280546450792492,
+          "records": 3524,
+          "starts": 45,
+          "results": 45,
+          "scored": 45,
+          "lastTimestamp": "2026-10-06T09:55:46.451992+00:00",
+          "head": "7b9eef00a69cb89a2b7100c8928cfbd762fa2725c1142d849879f9100d52631d"
+        },
+        "data/practice/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - Fable-5.1/data/practice/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/fable/data/practice/ledger.jsonl",
+          "bytes": 105836,
+          "sha256": "5ef1a4311b9f05b826eb9c931290458f4a6991d787a1ca68d404509a4aaebfbd",
+          "sourceMtimeNs": 1791242149543188416,
+          "records": 258,
+          "starts": 4,
+          "results": 4,
+          "scored": 3,
+          "lastTimestamp": "2026-10-05T23:15:49.543317+00:00",
+          "head": "bcbd645c0d111d58201322f26cbc760046cd03b2a4176354d45900453d2f9304"
+        },
+        "data/rating-cache.json": {
+          "source": "/home/peter/Chess Learning/Chess - Fable-5.1/data/rating-cache.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/fable/data/rating-cache.json",
+          "bytes": 10601,
+          "sha256": "e0732f08312638da613e5eccd7a987476818e1121fa3ac487037cf5c571dad53",
+          "sourceMtimeNs": 1791280546505146969
+        },
+        ".arena/rating.py": {
+          "source": "/home/peter/Chess Learning/Chess - Fable-5.1/.arena/rating.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/fable/.arena/rating.py",
+          "bytes": 5045,
+          "sha256": "7587884239ab4ef98b17b33252df2a405d1247cb7f629362325ae909772242d7",
+          "sourceMtimeNs": 1790722483582559500
+        },
+        ".arena/config.json": {
+          "source": "/home/peter/Chess Learning/Chess - Fable-5.1/.arena/config.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/fable/.arena/config.json",
+          "bytes": 821,
+          "sha256": "9d5b26b1c2164ac993762d5f5005a58632b2071822aa2b19a1dd14f6333d3a0a",
+          "sourceMtimeNs": 1791066955047186759
+        },
+        ".arena/arena.py": {
+          "source": "/home/peter/Chess Learning/Chess - Fable-5.1/.arena/arena.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/fable/.arena/arena.py",
+          "bytes": 15828,
+          "sha256": "e3061238a0ab0fc5f2af327aac7290117e4cb8819dd349ecf8aac3fcb292f551",
+          "sourceMtimeNs": 1790974601331162921
+        }
+      }
+    },
+    "astra": {
+      "name": "Chess - GPT-6-Astra",
+      "files": {
+        "data/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6-Astra/data/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/astra/data/ledger.jsonl",
+          "bytes": 6869732,
+          "sha256": "cec94a01e184831a4f89b2df07e746e9aa54013c6a36b18ab29fe5d1253814cf",
+          "sourceMtimeNs": 1791048623985868900,
+          "records": 16121,
+          "starts": 200,
+          "results": 200,
+          "scored": 200,
+          "lastTimestamp": "2026-10-03T17:30:23.986370+00:00",
+          "head": "217e9632fb0ce4b60b03ec3ef074b3215643c556e95515118244362631f8fa1a"
+        },
+        "data/practice/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6-Astra/data/practice/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/astra/data/practice/ledger.jsonl",
+          "bytes": 645079,
+          "sha256": "1f56a1879f345d509e3292b92aa95fe2a7cf56d7da368f45785a9f638c681d00",
+          "sourceMtimeNs": 1791042429348771735,
+          "records": 1514,
+          "starts": 51,
+          "results": 51,
+          "scored": 19,
+          "lastTimestamp": "2026-10-03T15:47:09.350117+00:00",
+          "head": "754538abc6019deb428ccbafaa0ff88b8d8a0b50263a1c3a374ed5a90bbde030"
+        },
+        "data/rating-cache.json": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6-Astra/data/rating-cache.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/astra/data/rating-cache.json",
+          "bytes": 45033,
+          "sha256": "be4194997162068ebd610fdab517693643835883064bc64050b2e3a1c40aab08",
+          "sourceMtimeNs": 1791048624010357180
+        },
+        ".arena/rating.py": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6-Astra/.arena/rating.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/astra/.arena/rating.py",
+          "bytes": 5045,
+          "sha256": "7587884239ab4ef98b17b33252df2a405d1247cb7f629362325ae909772242d7",
+          "sourceMtimeNs": 1790722483582559500
+        },
+        ".arena/config.json": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6-Astra/.arena/config.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/astra/.arena/config.json",
+          "bytes": 816,
+          "sha256": "f6aa68c8fc211d580c5b930aff8efdec3f3cb6f173f59fb0551acb703381a4f3",
+          "sourceMtimeNs": 1790974660001706498
+        },
+        ".arena/arena.py": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6-Astra/.arena/arena.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/astra/.arena/arena.py",
+          "bytes": 15828,
+          "sha256": "e3061238a0ab0fc5f2af327aac7290117e4cb8819dd349ecf8aac3fcb292f551",
+          "sourceMtimeNs": 1790974660001874863
+        }
+      }
+    },
+    "sol": {
+      "name": "Chess - GPT-6.1-Sol",
+      "files": {
+        "data/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol/data/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol/data/ledger.jsonl",
+          "bytes": 6540350,
+          "sha256": "9fc1b57feca3a2dc0cb962283581714d971211683728a1a5438566899d1d24c3",
+          "sourceMtimeNs": 1791619287766870226,
+          "records": 15727,
+          "starts": 200,
+          "results": 200,
+          "scored": 200,
+          "lastTimestamp": "2026-10-10T08:01:27.767955+00:00",
+          "head": "f3e7ccb4dd85a734680c4d59f7e87d4e3341274697d1d62f1ebfab5beb67df59"
+        },
+        "data/practice/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol/data/practice/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol/data/practice/ledger.jsonl",
+          "bytes": 778405,
+          "sha256": "9b90de5007d82e247cafd2b93f9a6a8211ee9307fc5610b22855c30e46162657",
+          "sourceMtimeNs": 1791615835874860783,
+          "records": 1690,
+          "starts": 181,
+          "results": 181,
+          "scored": 20,
+          "lastTimestamp": "2026-10-10T07:03:55.875522+00:00",
+          "head": "e3a6d97887a44accab907959db9d2331b83a0c1f8e035d0350687e1b894b148e"
+        },
+        "data/rating-cache.json": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol/data/rating-cache.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol/data/rating-cache.json",
+          "bytes": 45042,
+          "sha256": "a808696a4a73cce31ab069c6a5adefd8bae2c2c7a8cd58bc15b0e2bbe31e41b7",
+          "sourceMtimeNs": 1791619287795141122
+        },
+        ".arena/rating.py": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol/.arena/rating.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol/.arena/rating.py",
+          "bytes": 5045,
+          "sha256": "7587884239ab4ef98b17b33252df2a405d1247cb7f629362325ae909772242d7",
+          "sourceMtimeNs": 1790722483582559500
+        },
+        ".arena/config.json": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol/.arena/config.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol/.arena/config.json",
+          "bytes": 816,
+          "sha256": "af617606fa2cbb9a8158480aa8c06e9fb00b656829d229ce00449f58faee6052",
+          "sourceMtimeNs": 1791060104151204446
+        },
+        ".arena/arena.py": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol/.arena/arena.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol/.arena/arena.py",
+          "bytes": 15828,
+          "sha256": "e3061238a0ab0fc5f2af327aac7290117e4cb8819dd349ecf8aac3fcb292f551",
+          "sourceMtimeNs": 1790974601331162921
+        }
+      }
+    },
+    "sol-long": {
+      "name": "Chess - GPT-6.1-Sol - Long Context",
+      "files": {
+        "data/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context/data/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long/data/ledger.jsonl",
+          "bytes": 3066451,
+          "sha256": "66655718d6910c07af7a1f0a60da7d4a71895bee8421e823e74ee9931694e967",
+          "sourceMtimeNs": 1791635205816293062,
+          "records": 7434,
+          "starts": 100,
+          "results": 99,
+          "scored": 99,
+          "lastTimestamp": "2026-10-10T12:26:45.816693+00:00",
+          "head": "1954783dcf327df8972745a1d8a0746b1bafce073d99ce5e22e8a6d7c2c062f1"
+        },
+        "data/practice/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context/data/practice/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long/data/practice/ledger.jsonl",
+          "bytes": 457915,
+          "sha256": "4af7a9b38cba929a826e7c5b3d1c25f3c16570e9ac35dbccb3255448b669f448",
+          "sourceMtimeNs": 1791623490268859847,
+          "records": 1044,
+          "starts": 94,
+          "results": 94,
+          "scored": 12,
+          "lastTimestamp": "2026-10-10T09:11:30.270084+00:00",
+          "head": "c218b57692563d23b3ce857abacfa2af9ca1f19bd9984d6a8f3ad349fd5c71bb"
+        },
+        "data/rating-cache.json": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context/data/rating-cache.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long/data/rating-cache.json",
+          "bytes": 22606,
+          "sha256": "94317fdcd5cb11c8e31d0239214d564cdf09d566cef089509fe185578fb7538d",
+          "sourceMtimeNs": 1791623318593666440
+        },
+        ".arena/rating.py": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context/.arena/rating.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long/.arena/rating.py",
+          "bytes": 5045,
+          "sha256": "7587884239ab4ef98b17b33252df2a405d1247cb7f629362325ae909772242d7",
+          "sourceMtimeNs": 1790722483582559500
+        },
+        ".arena/config.json": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context/.arena/config.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long/.arena/config.json",
+          "bytes": 816,
+          "sha256": "af617606fa2cbb9a8158480aa8c06e9fb00b656829d229ce00449f58faee6052",
+          "sourceMtimeNs": 1791060104151204446
+        },
+        ".arena/arena.py": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context/.arena/arena.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long/.arena/arena.py",
+          "bytes": 15828,
+          "sha256": "e3061238a0ab0fc5f2af327aac7290117e4cb8819dd349ecf8aac3fcb292f551",
+          "sourceMtimeNs": 1790974601331162921
+        }
+      }
+    },
+    "sol-long-max": {
+      "name": "Chess - GPT-6.1-Sol - Long Context - Max",
+      "files": {
+        "data/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context - Max/data/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long-max/data/ledger.jsonl",
+          "bytes": 1943073,
+          "sha256": "24bb578b7c31893f3e229aa5724c2547956cb904c7d8e85f8acf43cbc3f338da",
+          "sourceMtimeNs": 1791634813674160077,
+          "records": 4706,
+          "starts": 64,
+          "results": 63,
+          "scored": 63,
+          "lastTimestamp": "2026-10-10T12:20:13.674925+00:00",
+          "head": "cd1577ad76143d3cd41b63834fbe4354e31b9ab1440bb1549c45c068e4e072e2"
+        },
+        "data/practice/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context - Max/data/practice/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long-max/data/practice/ledger.jsonl",
+          "bytes": 179402,
+          "sha256": "9f7ca8bbca5edaf9c60e711c41e2b3c4810f7498173b116c501ee03775091ae5",
+          "sourceMtimeNs": 1791633148323827386,
+          "records": 405,
+          "starts": 36,
+          "results": 36,
+          "scored": 5,
+          "lastTimestamp": "2026-10-10T11:52:28.324186+00:00",
+          "head": "f35b2a173b90db4ee773b42c101af7076cdf23250d5717fd6ec107f7e363f13e"
+        },
+        "data/rating-cache.json": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context - Max/data/rating-cache.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long-max/data/rating-cache.json",
+          "bytes": 14563,
+          "sha256": "410227510a170af0422b70d96b2b451569bf1822fa664fc9153abdc3d418a772",
+          "sourceMtimeNs": 1791632865023643509
+        },
+        ".arena/rating.py": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context - Max/.arena/rating.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long-max/.arena/rating.py",
+          "bytes": 5045,
+          "sha256": "7587884239ab4ef98b17b33252df2a405d1247cb7f629362325ae909772242d7",
+          "sourceMtimeNs": 1790722483582559500
+        },
+        ".arena/config.json": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context - Max/.arena/config.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long-max/.arena/config.json",
+          "bytes": 816,
+          "sha256": "af617606fa2cbb9a8158480aa8c06e9fb00b656829d229ce00449f58faee6052",
+          "sourceMtimeNs": 1791060104151204446
+        },
+        ".arena/arena.py": {
+          "source": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context - Max/.arena/arena.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/sol-long-max/.arena/arena.py",
+          "bytes": 15828,
+          "sha256": "e3061238a0ab0fc5f2af327aac7290117e4cb8819dd349ecf8aac3fcb292f551",
+          "sourceMtimeNs": 1790974601331162921
+        }
+      }
+    },
+    "opus": {
+      "name": "Chess - Opus-5.5",
+      "files": {
+        "data/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - Opus-5.5/data/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/opus/data/ledger.jsonl",
+          "bytes": 6149130,
+          "sha256": "a3b8b761c8d73ab5d545296c37f27c85fd565d85f95551bce822b6a8e79e8c83",
+          "sourceMtimeNs": 1791163340452037935,
+          "records": 14896,
+          "starts": 200,
+          "results": 200,
+          "scored": 200,
+          "lastTimestamp": "2026-10-05T01:22:20.453109+00:00",
+          "head": "898659a0133208d2acfb37b5fe6000e180e410287e209b6991561bebe3d68ecb"
+        },
+        "data/practice/ledger.jsonl": {
+          "source": "/home/peter/Chess Learning/Chess - Opus-5.5/data/practice/ledger.jsonl",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/opus/data/practice/ledger.jsonl",
+          "bytes": 25923,
+          "sha256": "ffb2eda5a367c547b4bd5ded58e93f4fcbe200043da957734fe78bb7bb425a80",
+          "sourceMtimeNs": 1790982893531865467,
+          "records": 65,
+          "starts": 1,
+          "results": 1,
+          "scored": 0,
+          "lastTimestamp": "2026-10-02T23:14:53.532495+00:00",
+          "head": "e15789d2424ff728e4c66c61dca7eacdcc30cf06fae2273135163c99fe3326c5"
+        },
+        "data/rating-cache.json": {
+          "source": "/home/peter/Chess Learning/Chess - Opus-5.5/data/rating-cache.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/opus/data/rating-cache.json",
+          "bytes": 45032,
+          "sha256": "7a24743b35ddf109d81380294786670b4c9171bdf2d829da8e17796df73ea9a6",
+          "sourceMtimeNs": 1791163219444673596
+        },
+        ".arena/rating.py": {
+          "source": "/home/peter/Chess Learning/Chess - Opus-5.5/.arena/rating.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/opus/.arena/rating.py",
+          "bytes": 5045,
+          "sha256": "7587884239ab4ef98b17b33252df2a405d1247cb7f629362325ae909772242d7",
+          "sourceMtimeNs": 1790722483582559500
+        },
+        ".arena/config.json": {
+          "source": "/home/peter/Chess Learning/Chess - Opus-5.5/.arena/config.json",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/opus/.arena/config.json",
+          "bytes": 820,
+          "sha256": "8f6591ae1078439ebf5353f9ce1389767ef8cfba172a7b36aa675bf6a15c6a3d",
+          "sourceMtimeNs": 1790974601330911282
+        },
+        ".arena/arena.py": {
+          "source": "/home/peter/Chess Learning/Chess - Opus-5.5/.arena/arena.py",
+          "snapshot": "/home/peter/Chess Learning/.operator/audits/learning-hypotheses-20261015/measurement/snapshots/opus/.arena/arena.py",
+          "bytes": 15828,
+          "sha256": "e3061238a0ab0fc5f2af327aac7290117e4cb8819dd349ecf8aac3fcb292f551",
+          "sourceMtimeNs": 1790974601331162921
+        }
+      }
+    }
+  }
+}

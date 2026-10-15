@@ -1,0 +1,114 @@
+{
+  "method": "Pure python-chess mechanical legality and repetition checks; pinned rating posterior on observed results only. No engine, position scoring or move selection.",
+  "opus": {
+    "pinnedFiles": 19,
+    "pinnedFileMismatches": [],
+    "manifestSha256": "d22416d1f0727d3b85d7ff6afa6ba2fd27ab51e52a5dd3c8bf8fdeeffa2bf2f4",
+    "allStartsPinCurrentManifest": true,
+    "agentsSha256": "96006d9856547fcff77f87eefcbc9704807279da4d1252c83f512f5fd1284552",
+    "agentsMtime": 1790974601.3309956,
+    "initialMetricAwareness": [
+      {
+        "firstGame": 1,
+        "timestamp": "2026-10-02T21:03:09.912299+00:00",
+        "snapshot": "114d4635d09218b60d412cfec6d029ed0566a48df5ba55cfb7df627a2e3a5c73",
+        "file": "PLAN.md",
+        "line": 5,
+        "text": "- Elo uses ONLY skill-0 (anchor 1320) and 1800-setting games; rolling window = last 50 rated games."
+      },
+      {
+        "firstGame": 1,
+        "timestamp": "2026-10-02T21:03:09.912299+00:00",
+        "snapshot": "114d4635d09218b60d412cfec6d029ed0566a48df5ba55cfb7df627a2e3a5c73",
+        "file": "PLAN.md",
+        "line": 7,
+        "text": "- Full-strength games are benchmark evidence but excluded from Elo."
+      }
+    ],
+    "repetitionCase": {
+      "game": 186,
+      "recordedResult": {
+        "game": 186,
+        "illegal_attempts": 0,
+        "kind": "result",
+        "plies": 21,
+        "previous": "efc5ca95de7d89d349bc3eba8d44b3b75a4944317e9f1261c0ea6500d239f455",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 13808,
+        "sha256": "a859a72f9e8a993f3df3ddce5add9b075b4c77f8df15903e6accbf36fe407d9d",
+        "snapshot": "f149073d55765a59ecbd319c7b99400dbaeae578d9998d9305703e75decda78d",
+        "timestamp": "2026-10-04T21:57:44.503870+00:00"
+      },
+      "recordedFensMatchReplay": true,
+      "canClaimThreefold": true,
+      "finalPositionAlreadyRepeatedThrice": false,
+      "resultWithClaimDrawTrue": "1/2-1/2",
+      "clarification": "A legal threefold claim can be available before the third occurrence is played; the referee automatically claims available draws."
+    },
+    "game186RatingSensitivity": {
+      "actualLast50": {
+        "estimate": 1760,
+        "lower": 1640,
+        "upper": 1890,
+        "grid_edge_mass": 2.795989964713953e-184
+      },
+      "replaceG186DrawWithLossSameOther49": {
+        "estimate": 1750,
+        "lower": 1630,
+        "upper": 1870,
+        "grid_edge_mass": 4.2734982901890498e-193
+      },
+      "interpretation": "This is a score sensitivity test, not evidence that continuing game 186 would have lost. One draw cannot by itself explain a roughly 250-Elo early-to-late increase."
+    }
+  },
+  "fable": {
+    "pinnedFiles": 19,
+    "pinnedFileMismatches": [],
+    "manifestSha256": "a411a746ce10732633c9120d654fe87ada85fcd844a03121257c5ca07ae2be87",
+    "allStartsPinCurrentManifest": true,
+    "agentsSha256": "96006d9856547fcff77f87eefcbc9704807279da4d1252c83f512f5fd1284552",
+    "agentsMtime": 1791066955.0468693,
+    "initialMetricAwareness": [
+      {
+        "firstGame": 1,
+        "timestamp": "2026-10-03T22:42:28.557685+00:00",
+        "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+        "file": "README.md",
+        "line": 7,
+        "text": "- Elo estimator (rating.py): Bradley-Terry-Davidson posterior, anchors skill-0=1320, elo-1800=1800, prior N(1500,800), **window = last 50 rated games**. Full-strength games are uncalibrated (excluded). Final reported Elo depends on roughly the last 75 benchmark games (50 rated)."
+      },
+      {
+        "firstGame": 1,
+        "timestamp": "2026-10-03T22:42:28.557685+00:00",
+        "snapshot": "19ae8d1abd6e4032fb0facb5b7d6226cc36f4027b1bbc3113cfcd04b6496cc8d",
+        "file": "README.md",
+        "line": 13,
+        "text": "1. Rated games (skill-0, elo-1800) decide Elo: maximize score there. Full-strength games: play solidly, resign only when objectively hopeless; they still count toward 200 but not Elo."
+      }
+    ],
+    "repetitionCase": {
+      "game": 22,
+      "recordedResult": {
+        "game": 22,
+        "illegal_attempts": 1,
+        "kind": "result",
+        "plies": 123,
+        "previous": "1676e79d25f20d69b7c623a593b6c96b760665cbddb6aaecdf5bb3532de61096",
+        "reason": "threefold_repetition",
+        "result": "1/2-1/2",
+        "score": 0.5,
+        "seq": 1826,
+        "sha256": "cf76f0429cb26d4369b375f1105884df6f61e52965c723106af9d9315fd8535d",
+        "snapshot": "abe65706036634f77c976cf1437d2a443da9592e62a1701362ad198e7215fb7c",
+        "timestamp": "2026-10-05T23:06:24.060312+00:00"
+      },
+      "recordedFensMatchReplay": true,
+      "canClaimThreefold": true,
+      "finalPositionAlreadyRepeatedThrice": false,
+      "resultWithClaimDrawTrue": "1/2-1/2",
+      "clarification": "A legal threefold claim can be available before the third occurrence is played; the referee automatically claims available draws."
+    }
+  }
+}

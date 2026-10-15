@@ -1,0 +1,185 @@
+{
+  "verified_at": "2026-10-15T22:14:03.583018+00:00",
+  "snapshot_at": "2026-10-15T22:09:24.019665+00:00",
+  "runs": {
+    "fable": {
+      "starts": 45,
+      "scored": 45,
+      "unscored_results": 0,
+      "active": 0,
+      "benchmark_events": 3524,
+      "benchmark_head": "7b9eef00a69cb89a2b7100c8928cfbd762fa2725c1142d849879f9100d52631d",
+      "practice_head": "bcbd645c0d111d58201322f26cbc760046cd03b2a4176354d45900453d2f9304",
+      "practice_events": 258,
+      "illegal_submissions": 18,
+      "illegal_forfeits": 0,
+      "engine_errors": 0,
+      "terminal_reasons": {
+        "resignation": 15,
+        "checkmate": 29,
+        "threefold_repetition": 1
+      },
+      "pinned_files_verified": 19,
+      "pinned_mismatches": [],
+      "benchmark_schedule_nodes_options_colors_verified": true,
+      "source_ledger_unchanged_since_freeze": true,
+      "operator_events": [],
+      "first_timestamp": "2026-10-03T22:42:28.298315+00:00",
+      "last_timestamp": "2026-10-06T09:55:46.451992+00:00"
+    },
+    "astra": {
+      "starts": 200,
+      "scored": 200,
+      "unscored_results": 0,
+      "active": 0,
+      "benchmark_events": 16121,
+      "benchmark_head": "217e9632fb0ce4b60b03ec3ef074b3215643c556e95515118244362631f8fa1a",
+      "practice_head": "754538abc6019deb428ccbafaa0ff88b8d8a0b50263a1c3a374ed5a90bbde030",
+      "practice_events": 1514,
+      "illegal_submissions": 15,
+      "illegal_forfeits": 0,
+      "engine_errors": 0,
+      "terminal_reasons": {
+        "resignation": 103,
+        "checkmate": 91,
+        "threefold_repetition": 4,
+        "stalemate": 2
+      },
+      "pinned_files_verified": 18,
+      "pinned_mismatches": [],
+      "benchmark_schedule_nodes_options_colors_verified": true,
+      "source_ledger_unchanged_since_freeze": true,
+      "operator_events": [
+        {
+          "kind": "measurement_update",
+          "timestamp": "2026-09-29T22:54:43.582827+00:00",
+          "description": "User-authorized provisional Elo and credible interval observer; no change to learner instructions, opponent settings, game rules, or past results."
+        },
+        {
+          "kind": "learning_protocol_update",
+          "timestamp": "2026-09-30T17:16:56.225243+00:00",
+          "reason": "User authorized deliberate learning with periodic benchmarks and clarified that the objective is to increase Elo."
+        },
+        {
+          "kind": "practice_protocol_update",
+          "timestamp": "2026-10-01T12:22:06.899174+00:00",
+          "reason": "User authorized freely selected opponent practice with periodic fixed benchmarks."
+        },
+        {
+          "kind": "operator_update",
+          "timestamp": "2026-10-02T20:57:40.181797+00:00",
+          "change": "200-game endpoint"
+        }
+      ],
+      "first_timestamp": "2026-09-29T21:50:28.868129+00:00",
+      "last_timestamp": "2026-10-03T17:30:23.986370+00:00"
+    },
+    "sol": {
+      "starts": 200,
+      "scored": 200,
+      "unscored_results": 0,
+      "active": 0,
+      "benchmark_events": 15727,
+      "benchmark_head": "f3e7ccb4dd85a734680c4d59f7e87d4e3341274697d1d62f1ebfab5beb67df59",
+      "practice_head": "e3a6d97887a44accab907959db9d2331b83a0c1f8e035d0350687e1b894b148e",
+      "practice_events": 1690,
+      "illegal_submissions": 41,
+      "illegal_forfeits": 0,
+      "engine_errors": 0,
+      "terminal_reasons": {
+        "resignation": 86,
+        "checkmate": 106,
+        "threefold_repetition": 7,
+        "insufficient_material": 1
+      },
+      "pinned_files_verified": 18,
+      "pinned_mismatches": [],
+      "benchmark_schedule_nodes_options_colors_verified": true,
+      "source_ledger_unchanged_since_freeze": true,
+      "operator_events": [],
+      "first_timestamp": "2026-10-03T20:45:09.772524+00:00",
+      "last_timestamp": "2026-10-10T08:01:27.767955+00:00"
+    },
+    "sol-long": {
+      "starts": 100,
+      "scored": 99,
+      "unscored_results": 0,
+      "active": 1,
+      "benchmark_events": 7434,
+      "benchmark_head": "1954783dcf327df8972745a1d8a0746b1bafce073d99ce5e22e8a6d7c2c062f1",
+      "practice_head": "c218b57692563d23b3ce857abacfa2af9ca1f19bd9984d6a8f3ad349fd5c71bb",
+      "practice_events": 1044,
+      "illegal_submissions": 20,
+      "illegal_forfeits": 0,
+      "engine_errors": 0,
+      "terminal_reasons": {
+        "resignation": 49,
+        "checkmate": 46,
+        "threefold_repetition": 2,
+        "stalemate": 1,
+        "insufficient_material": 1
+      },
+      "pinned_files_verified": 19,
+      "pinned_mismatches": [],
+      "benchmark_schedule_nodes_options_colors_verified": true,
+      "source_ledger_unchanged_since_freeze": true,
+      "operator_events": [],
+      "first_timestamp": "2026-10-04T09:09:33.911629+00:00",
+      "last_timestamp": "2026-10-10T12:26:45.816693+00:00"
+    },
+    "sol-long-max": {
+      "starts": 64,
+      "scored": 63,
+      "unscored_results": 0,
+      "active": 1,
+      "benchmark_events": 4706,
+      "benchmark_head": "cd1577ad76143d3cd41b63834fbe4354e31b9ab1440bb1549c45c068e4e072e2",
+      "practice_head": "f35b2a173b90db4ee773b42c101af7076cdf23250d5717fd6ec107f7e363f13e",
+      "practice_events": 405,
+      "illegal_submissions": 4,
+      "illegal_forfeits": 0,
+      "engine_errors": 0,
+      "terminal_reasons": {
+        "resignation": 35,
+        "threefold_repetition": 4,
+        "checkmate": 24
+      },
+      "pinned_files_verified": 19,
+      "pinned_mismatches": [],
+      "benchmark_schedule_nodes_options_colors_verified": true,
+      "source_ledger_unchanged_since_freeze": true,
+      "operator_events": [],
+      "first_timestamp": "2026-10-05T21:50:22.176822+00:00",
+      "last_timestamp": "2026-10-10T12:20:13.674925+00:00"
+    },
+    "opus": {
+      "starts": 200,
+      "scored": 200,
+      "unscored_results": 0,
+      "active": 0,
+      "benchmark_events": 14896,
+      "benchmark_head": "898659a0133208d2acfb37b5fe6000e180e410287e209b6991561bebe3d68ecb",
+      "practice_head": "e15789d2424ff728e4c66c61dca7eacdcc30cf06fae2273135163c99fe3326c5",
+      "practice_events": 65,
+      "illegal_submissions": 53,
+      "illegal_forfeits": 0,
+      "engine_errors": 0,
+      "terminal_reasons": {
+        "resignation": 97,
+        "checkmate": 93,
+        "stalemate": 1,
+        "insufficient_material": 1,
+        "threefold_repetition": 8
+      },
+      "pinned_files_verified": 19,
+      "pinned_mismatches": [],
+      "benchmark_schedule_nodes_options_colors_verified": true,
+      "source_ledger_unchanged_since_freeze": true,
+      "operator_events": [],
+      "first_timestamp": "2026-10-02T21:03:09.397466+00:00",
+      "last_timestamp": "2026-10-05T01:22:20.453109+00:00"
+    }
+  },
+  "scope": "Frozen-file SHA256, append-only hash chains, all benchmark start settings, current pinned-file hashes. Does not inspect hidden reasoning, invoke engines or modify experiment files.",
+  "limits": "Hash chains and pinned files detect ordinary changes. Shared-account logs are not an adversarial guarantee and do not prove absence of unrecorded activity."
+}

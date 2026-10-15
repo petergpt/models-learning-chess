@@ -1,0 +1,87 @@
+{
+  "reviewedAt": "2026-10-04T20:50:00+00:00",
+  "astra": {
+    "noteFiles": ["learning-journal.md", "move-check.md"],
+    "interpretation": {
+      "observed": "Astra repeatedly revised exchange accounting, blockers, actual defenders and immediate replies. Its completed run shows local corrections without sustained improvement in fresh benchmark results.",
+      "hypothesis": "Remembered corrections were often too specific to the original position. Longer speculative branches and a growing checklist may have competed with maintaining the current board. The logs support recurring execution failures; they do not establish which change caused the decline.",
+      "nextEvidence": "Replicated runs with a stable decision budget, plus fewer repeated errors in fresh positions and better matched-opponent scores. This completed run remains closed."
+    },
+    "changes": [
+      {"title": "Pawn capture geometry", "file": "learning-journal.md", "marker": "# Trial 23 — Pawn capture directions", "target": "Missed pawn captures, forks and pawn support", "method": "Review four own failures, then two capped practices from the initial position."},
+      {"title": "Literal recaptures", "file": "learning-journal.md", "marker": "# Trial25 — literal recaptures", "target": "Imagined recaptures through blockers", "method": "Reconstruct the resulting board and the actual final recapture."},
+      {"title": "Retain the defender", "file": "learning-journal.md", "marker": "## Trial28 — retain the defender", "target": "Moving a sole defender and allowing immediate captures", "method": "Two remembered comparisons and a short check of the moving piece's former duty."}
+    ],
+    "examples": [
+      {"game": 197, "summary": "Promotion ended in stalemate; the journal recognized the missing terminal-position check afterward.", "source": "Chess - GPT-6-Astra/workspace/final-report-200.md:47"},
+      {"game": 198, "summary": "17...Bf5 18.Qxf5 lost a bishop; its own bishop on f6 blocked the imagined rook recapture.", "source": "Chess - GPT-6-Astra/workspace/learning-journal.md:3512"}
+    ]
+  },
+  "opus": {
+    "noteFiles": ["PLAN.md", "PROTOCOL.md", "REPERTOIRE.md"],
+    "interpretation": {
+      "observed": "Opus changed from piece-by-piece checklists to scans from target squares, then added origin, reply and defender checks. It later shortened the accumulated checklist. Its own reviews still record missed paths, forks and discovered attacks.",
+      "hypothesis": "The larger gain against skill 0, with little change in short-term piece losses, suggests the improvement may be in obtaining advantages or exploiting opponent mistakes. Concrete square scans are a candidate mechanism; incomplete execution remains a bottleneck. This run cannot isolate the effect of a checklist.",
+      "nextEvidence": "Retention over the remaining fixed rotations, with lower error recurrence as well as stronger-setting results. A repeated, controlled run would be needed to isolate the strategy's effect."
+    },
+    "changes": [
+      {"title": "Square-based scans", "file": "PLAN.md", "marker": "- T9 (games 55-60)", "target": "Destination attacks, capture endpoints and king flights", "method": "Trace rays outward from the target square rather than enumerate nearby enemy pieces."},
+      {"title": "Slider sweep and recaptures", "file": "PLAN.md", "marker": "- T14 (games 85-90)", "target": "Skewers, double attacks and unsafe recaptures", "method": "Add enemy-slider sweeps, post-exchange attacker checks and explicit paths."},
+      {"title": "Four-step simplification", "file": "PLAN.md", "marker": "- T29 (games 175-180)", "target": "Basic misses despite a long checklist", "method": "Replace the accumulated procedure with PATH, DEST, BOX and LEAF."},
+      {"title": "Loose-piece check", "file": "PLAN.md", "marker": "- T30 (games 181-186)", "target": "Checks and opened lines hitting an undefended piece", "method": "Name loose pieces, then check what each forcing enemy move attacks from its landing square."}
+    ],
+    "examples": [
+      {"game": 178, "summary": "The game review records a queen left on an opened rank after a knight move; the next trial adds a loose-piece check.", "source": "Chess - Opus-5.5/workspace/PLAN.md:303"},
+      {"game": 181, "summary": "Two queen-path attempts crossed its own c3 pawn despite the recently simplified PATH rule.", "source": "Chess - Opus-5.5/workspace/ERRORS.md:830"}
+    ]
+  },
+  "sol": {
+    "noteFiles": ["journal.md"],
+    "interpretation": {
+      "observed": "Sol tests short alternatives from its failed positions, changes opening setups, and repeatedly adds checks for final recaptures, blockers, defenders and knight checks. Successful remembered drills have not eliminated those failures in new games.",
+      "hypothesis": "The practice mostly rehearses known failures over a short horizon. That may repair a specific continuation without transferring the habit to a new board. Long analysis has not reliably prevented the immediate threat it was intended to catch.",
+      "nextEvidence": "More complete rotations, plus fewer fresh-position defender and forcing-reply errors. Keep remembered drill outcomes separate from benchmark transfer."
+    },
+    "changes": [
+      {"title": "Final-position verification", "file": "journal.md", "marker": "## Trial 4: final-position verification", "target": "Missing a final king recapture or the remaining defender", "method": "Revisit a known exchange, then test one short alternative and return to the benchmark."},
+      {"title": "Preserve king shelter", "file": "journal.md", "marker": "Trial 34 for benchmark 30", "target": "Pawn breaks enabling supported queen checks", "method": "Retain f7 when possible and verify occupied king-flight squares."},
+      {"title": "Opening reset and last defenders", "file": "journal.md", "marker": "Trial 36 for benchmark 31", "target": "Abandoned defenders and knight checks around queen exchanges", "method": "Return to 1.e4, prioritize ordinary development, and name the moving piece's former defense."}
+    ],
+    "examples": [
+      {"game": 30, "summary": "A bishop move abandoned d5; a later queen exchange allowed a checking knight fork that won a rook.", "source": "Chess - GPT-6.1-Sol/workspace/journal.md:593"},
+      {"game": 31, "summary": "A queen interposition allowed an intermediate knight check and queen loss, repeating the trial's stated target.", "source": "Chess - GPT-6.1-Sol/workspace/journal.md:603"}
+    ]
+  },
+  "sol-long-context": {
+    "noteFiles": ["learning.md"],
+    "interpretation": {
+      "observed": "The larger-context Sol run reviews exchange bookkeeping and destination safety, using short drills from remembered positions. It recently shortened its safety pass, but fresh games still show removed or blocked defenders and missed king nets.",
+      "hypothesis": "A larger memory window may retain more notes without improving their execution on the current board. At this sample size, the context treatment cannot be separated from opponent variation and different decisions.",
+      "nextEvidence": "Equal game counts and repeated runs of standard and larger context, under the same decision budget. One small pair of runs cannot establish a context-window effect."
+    },
+    "changes": [
+      {"title": "Destination and fork checks", "file": "learning.md", "marker": "Trial 2: destination-square safety", "target": "Knight forks and rook-line captures", "method": "A remembered-position drill, then checks of the destination and opponent replies."},
+      {"title": "Short actual-board safety pass", "file": "learning.md", "marker": "Trial 13, approach change for benchmarks 13", "target": "Long hypothetical lines displacing immediate threats", "method": "Check current threats, the chosen piece's former duties and actual blockers before extending variations."}
+    ],
+    "examples": [
+      {"game": 14, "summary": "A bishop recapture moved the sole defender away from an attacked knight, allowing its immediate capture.", "source": "Chess - GPT-6.1-Sol - Long Context/workspace/learning.md:139"},
+      {"game": 15, "summary": "Its own knight blocked the queen's defense of a bishop; a later promotion and mate still converted the game.", "source": "Chess - GPT-6.1-Sol - Long Context/workspace/learning.md:145"}
+    ]
+  },
+  "fable": {
+    "noteFiles": ["log.md", "procedure.md", "openings.md"],
+    "interpretation": {
+      "observed": "Fable uses a stable d4/Bf4 repertoire as White, a written safety scan, and post-game patches for king flights, exchange arithmetic and forced-reply discoveries. Its early log distinguishes skipped scans from scans filled out incorrectly. The run is paused after 15 games.",
+      "hypothesis": "Making the scan a gate may reduce omissions, while superficial answers inside it can still miss a tactic. Early wins and losses are too few to establish that the procedure has improved strength.",
+      "nextEvidence": "When the user resumes the run, test the reply-discipline method over its originally declared block and further fresh rotations. A practice win or a filled checklist is insufficient."
+    },
+    "changes": [
+      {"title": "Scan before submitting", "file": "procedure.md", "marker": "Rule zero-b", "target": "Quick moves after an interface nudge", "method": "Re-read the board and complete the scan before submitting a move."},
+      {"title": "Reply-consequence discipline", "file": "log.md", "marker": "## Trial 2 — reply-consequence discipline", "target": "Superficial answers to checks and forced replies", "method": "Write actual replies, recheck opened lines, and use explicit exchange values."}
+    ],
+    "examples": [
+      {"game": 11, "summary": "A promotion was followed by back-rank mate; the presumed king flight lay on the rook's checking line.", "source": "Chess - Fable-5.1/workspace/log.md:34"},
+      {"game": 14, "summary": "A pawn capture opened the a-file to its queen; the written scan said the vacated square opened nothing.", "source": "Chess - Fable-5.1/workspace/log.md:53"}
+    ]
+  }
+}

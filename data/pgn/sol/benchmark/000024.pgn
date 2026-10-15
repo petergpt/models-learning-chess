@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.04"]
+[Round "24"]
+[White "Stockfish 19"]
+[Black "gpt-6.1-sol"]
+[Result "1/2-1/2"]
+[Mode "benchmark"]
+[RunId "sol"]
+[GameId "sol/benchmark/000024"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "threefold_repetition"]
+
+1. Nf3 e6 2. c4 d5 3. d4 Nf6 4. Bg5 Be7 5. e3 O-O 6. c5 Nc6 7. Bd3 Bd7 8. Nc3 b6 9. O-O bxc5 10. dxc5 Bxc5 11. a3 Bd6 12. Bh4 Ne5 13. Nxe5 Bxe5 14. e4 d4 15. Na4 Qe8 16. b3 Bc6 17. f4 Bd6 18. e5 Bxe5 19. Rc1 Bd6 20. Bxf6 gxf6 21. Qh5 f5 22. Rxc6 Qxc6 23. Qg5+ Kh8 24. Qf6+ Kg8 25. Qg5+ Kh8 26. Qf6+ Kg8 1/2-1/2

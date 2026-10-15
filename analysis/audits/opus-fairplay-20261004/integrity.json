@@ -1,0 +1,88 @@
+{
+  "events": 11744,
+  "firstAt": "2026-10-02T21:03:09.397466+00:00",
+  "lastAt": "2026-10-04T13:32:18.775226+00:00",
+  "startedGames": 158,
+  "scoredGames": 157,
+  "activeGames": [
+    158
+  ],
+  "missingGameIds": [],
+  "moves": {
+    "model": 5656,
+    "stockfish": 5670
+  },
+  "illegalAttempts": 45,
+  "illegalGameIds": [
+    2,
+    6,
+    9,
+    12,
+    16,
+    17,
+    18,
+    19,
+    21,
+    34,
+    35,
+    36,
+    37,
+    42,
+    44,
+    46,
+    48,
+    50,
+    51,
+    52,
+    55,
+    65,
+    73,
+    76,
+    80,
+    81,
+    83,
+    84,
+    93,
+    100,
+    114,
+    116,
+    117,
+    118,
+    121,
+    131,
+    137,
+    141,
+    143,
+    144,
+    150
+  ],
+  "chainErrors": [],
+  "sequenceErrors": [],
+  "replayOrMeasurementIssues": [],
+  "manifestHashes": {
+    "d22416d1f0727d3b85d7ff6afa6ba2fd27ab51e52a5dd3c8bf8fdeeffa2bf2f4": 158
+  },
+  "allStartManifestHashesMatchCurrent": true,
+  "outcomes": {
+    "full-strength": {
+      "losses": 53
+    },
+    "skill-0": {
+      "wins": 38,
+      "losses": 11,
+      "draws": 3
+    },
+    "elo-1800-setting": {
+      "wins": 19,
+      "losses": 28,
+      "draws": 5
+    }
+  },
+  "resultReasons": {
+    "resignation": 76,
+    "checkmate": 73,
+    "stalemate": 1,
+    "insufficient_material": 1,
+    "threefold_repetition": 6
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "scope": "Mechanical legality of predeclared supplied moves only; no move menu, search, engine, attack map or evaluation.",
+  "results": [
+    {
+      "id": "147-king-takes-bishop",
+      "valid": true,
+      "initial_fen": "3R2k1/5pB1/p1p5/1p5p/8/5N2/PP2RPPP/6K1 b - - 0 24",
+      "supplied_moves": [
+        {
+          "uci": "g8g7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "3R4/5pk1/p1p5/1p5p/8/5N2/PP2RPPP/6K1 w - - 0 25",
+      "all_predictions_match": true
+    },
+    {
+      "id": "147-check-removes-defender",
+      "valid": true,
+      "initial_fen": "3k4/4RR2/p7/1p5p/7N/2p3P1/PP3P1P/6K1 w - - 0 35",
+      "supplied_moves": [
+        {
+          "uci": "f7f8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        },
+        {
+          "uci": "d8e7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "5R2/4k3/p7/1p5p/7N/2p3P1/PP3P1P/6K1 w - - 0 36",
+      "all_predictions_match": true
+    },
+    {
+      "id": "147-controlled-separated-rooks",
+      "valid": true,
+      "initial_fen": "3k4/4RR2/p7/1p5p/7N/2p3P1/PP3P1P/6K1 w - - 0 35",
+      "supplied_moves": [
+        {
+          "uci": "e7a7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "d8e8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "f7h7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "e8f8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "a7a8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        }
+      ],
+      "final_fen": "R4k2/7R/p7/1p5p/7N/2p3P1/PP3P1P/6K1 b - - 5 37",
+      "all_predictions_match": true
+    },
+    {
+      "id": "149-pawn-capture-promotion",
+      "valid": true,
+      "initial_fen": "6r1/8/2p1Pk1p/5P2/3P1P2/1p3K1P/p7/1R6 b - - 1 45",
+      "supplied_moves": [
+        {
+          "uci": "a2b1q",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "6r1/8/2p1Pk1p/5P2/3P1P2/1p3K1P/8/1q6 w - - 0 46",
+      "all_predictions_match": true
+    },
+    {
+      "id": "150-open-d-file",
+      "valid": true,
+      "initial_fen": "2r2rk1/p2q1ppp/1p6/2pb4/2B1pP2/4P3/PPQ3PP/3R1RK1 b - - 1 18",
+      "supplied_moves": [
+        {
+          "uci": "d5c4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "d1d7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        }
+      ],
+      "final_fen": "2r2rk1/p2R1ppp/1p6/2p5/2b1pP2/4P3/PPQ3PP/5RK1 b - - 0 19",
+      "all_predictions_match": true
+    },
+    {
+      "id": "150-remove-f7-defender",
+      "valid": true,
+      "initial_fen": "2r2rk1/3R1ppp/8/p4P2/1p2p1P1/1Q2P3/PPp4P/2K5 b - - 1 29",
+      "supplied_moves": [
+        {
+          "uci": "f8d8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "b3f7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        },
+        {
+          "uci": "g8h8",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "f7g7",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        }
+      ],
+      "final_fen": "2rr3k/3R2Qp/8/p4P2/1p2p1P1/4P3/PPp4P/2K5 b - - 0 31",
+      "all_predictions_match": true
+    },
+    {
+      "id": "148-open-fifth-rank",
+      "valid": true,
+      "initial_fen": "2R5/6p1/pR6/4pk2/6p1/4K3/r7/8 b - - 7 49",
+      "supplied_moves": [
+        {
+          "uci": "e5e4",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": false
+        },
+        {
+          "uci": "c8c5",
+          "expected_legal": true,
+          "actual_legal": true,
+          "matches": true,
+          "resulting_check": true
+        }
+      ],
+      "final_fen": "8/6p1/pR6/2R2k2/4p1p1/4K3/r7/8 b - - 1 50",
+      "all_predictions_match": true
+    },
+    {
+      "id": "practice-A-setup-only",
+      "valid": true,
+      "initial_fen": "8/1p4p1/4k3/8/R6R/8/8/6K1 w - - 0 1",
+      "supplied_moves": [],
+      "final_fen": "8/1p4p1/4k3/8/R6R/8/8/6K1 w - - 0 1",
+      "all_predictions_match": true
+    },
+    {
+      "id": "practice-B-setup-only",
+      "valid": true,
+      "initial_fen": "7k/8/8/1r3r2/8/2K5/P5P1/8 b - - 0 1",
+      "supplied_moves": [],
+      "final_fen": "7k/8/8/1r3r2/8/2K5/P5P1/8 b - - 0 1",
+      "all_predictions_match": true
+    }
+  ]
+}

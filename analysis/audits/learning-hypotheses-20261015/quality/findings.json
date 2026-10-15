@@ -1,0 +1,51 @@
+{
+  "status": "Complete: existing-cache analysis only; no new engine evaluation, match games, learner feedback, or experiment mutations.",
+  "results": "quality-results.json",
+  "reproduction": "/home/peter/.local/bin/t3-job -- python3 .operator/audits/learning-hypotheses-20261015/quality/audit_quality.py",
+  "cache_coverage": {
+    "astra": "200/200 completed games",
+    "opus": "189/200; prefix only",
+    "sol": "33/200; prefix only",
+    "sol-long": "16/99; prefix only",
+    "fable": "15/45; prefix only",
+    "sol-long-max": "0/63"
+  },
+  "validation": "All 453 cached games matched frozen-ledger UCI move sequences, model/opponent actors, learner color, normal starting position, run alias, and continuity of cached evaluation perspective.",
+  "primary_comparison": "First versus second half of each cached prefix. Exclude full-strength games for bounded_halves. Standardize exact opponent/config/color using pooled game-count weights; equal weight per game within strata. Bootstrap games, with six-game-block sensitivity for Astra/Opus.",
+  "findings": [
+    {
+      "hypothesis": "Astra's falling benchmark results reflect deterioration in actual move quality.",
+      "assessment": "Supported observationally, especially after the first 12 own moves; not evidence for a particular causal mechanism.",
+      "evidence": "Matched balanced-position moves losing >=200cp: 4.085% to 6.864%; delta +2.779 percentage points, six-game-block 95% interval +1.295 to +4.306. First/last-third sensitivity: 3.572% to 7.027%, interval for delta +1.864 to +5.165. Opening proxy loss and balanced first12 error changes remain uncertain."
+    },
+    {
+      "hypothesis": "Opus's increasing benchmark results demonstrate broad improvement in chess decision quality.",
+      "assessment": "Only weakly corroborated by the available quality controls.",
+      "evidence": "Matched balanced-position >=200cp errors: 5.207% to 4.204%; delta -1.003 percentage points, six-game-block interval -2.718 to +0.670. First12 proxy loss 2.431 to 2.476, interval for delta -0.637 to +0.730. Legacy all-move clipped ACPL improves 57.257 to 47.863, but interval for delta -21.889 to +2.906 and saturation/position-mix confounding remain. First/last-third all-move metrics improve more clearly; balanced controls still remain uncertain."
+    },
+    {
+      "hypothesis": "All-move average centipawn loss provides a clean learning measure.",
+      "assessment": "Not supported.",
+      "evidence": "The legacy score clips both evaluations to +/-1000cp, making already decided positions appear inexpensive. Opus's first/last-third share of moves already at |eval|>=1000cp rises 12.35% to 19.12%; balanced-position share falls 50.83% to 41.47%. Improved whole-game ACPL can therefore combine better outcomes with more saturated winning positions; it is not a clean estimate of improved decision quality."
+    },
+    {
+      "hypothesis": "A higher nominal Stockfish Elo necessarily transfers to stronger play against other opponents.",
+      "assessment": "The separate head-to-head warns against this interpretation; it does not establish reward hacking.",
+      "evidence": "Astra won the completed public 30-game match 24.5-5.5 (22 wins, 5 draws, 3 losses), scoring 13/15 with White and 11.5/15 with Black. All 3115 public moves replayed legally. Both used declared Max effort, native post-200 conversations, copied notes, and permitted between-game adaptation; the match was untimed and independent of the Stockfish Elo chart."
+    }
+  ],
+  "limits": [
+    "No cache-based claim about the late completed Sol, Sol-long, Fable, or Sol-long-max runs is justified.",
+    "Tiny-prefix strata yield misleadingly narrow or degenerate resampling intervals; diagnostics explicitly flag them.",
+    "Balanced-position selection and later-phase survival depend on prior play. First12 controls include shorter games and explicit exposure counts, but do not randomize positions.",
+    "The cached 200k-node review lacks per-evaluation depth, engine fingerprint, node-count, and date fields; the source script does not explicitly clear engine transposition tables.",
+    "Head-to-head is not a frozen-policy transfer evaluation, has no before-200 baseline, and may reflect styles, retained context, compute differences, and ongoing adaptation.",
+    "These findings do not identify cheating, prohibited tool use, benchmark exploitation, or reward hacking. Legitimate opponent-specific adaptation remains compatible with them."
+  ],
+  "source_lines": {
+    "match_conditions": "Matches/Astra vs Opus - 30 games/MATCH-RULES.md:3,5,9,11",
+    "match_machine_protocol": "Matches/Astra vs Opus - 30 games/protocol.json:15,16,17,18,19,22,26",
+    "public_results": "head-to-head.json",
+    "public_game_events": "public-match-events.json"
+  }
+}

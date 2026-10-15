@@ -1,0 +1,84 @@
+{
+  "at": "2026-10-06T17:06:20.367991+00:00",
+  "nodesPerPosition": 1000000,
+  "method": "Retrospective full-strength Stockfish 19 static endpoint assessment, fresh process per position; no move recommendations exported.",
+  "limitation": "Finite search evaluation is not proof of a forced result, and does not estimate weakened Stockfish conversion probability.",
+  "runs": {
+    "medium": [
+      {
+        "game": 6,
+        "opponent": "elo-1800-setting",
+        "learner": "black",
+        "scoreCentipawns": -1032,
+        "mate": null
+      },
+      {
+        "game": 12,
+        "opponent": "elo-1800-setting",
+        "learner": "black",
+        "scoreCentipawns": -833,
+        "mate": null
+      }
+    ],
+    "max": [
+      {
+        "game": 4,
+        "opponent": "skill-0",
+        "learner": "black",
+        "scoreCentipawns": -773,
+        "mate": null
+      },
+      {
+        "game": 5,
+        "opponent": "elo-1800-setting",
+        "learner": "white",
+        "scoreCentipawns": -836,
+        "mate": null
+      },
+      {
+        "game": 10,
+        "opponent": "skill-0",
+        "learner": "black",
+        "scoreCentipawns": null,
+        "mate": -8
+      },
+      {
+        "game": 11,
+        "opponent": "elo-1800-setting",
+        "learner": "white",
+        "scoreCentipawns": -723,
+        "mate": null
+      },
+      {
+        "game": 15,
+        "opponent": "skill-0",
+        "learner": "white",
+        "scoreCentipawns": -822,
+        "mate": null
+      }
+    ],
+    "standard-max": [
+      {
+        "game": 5,
+        "opponent": "elo-1800-setting",
+        "learner": "white",
+        "scoreCentipawns": -898,
+        "mate": null
+      },
+      {
+        "game": 11,
+        "opponent": "elo-1800-setting",
+        "learner": "white",
+        "scoreCentipawns": -921,
+        "mate": null
+      },
+      {
+        "game": 12,
+        "opponent": "elo-1800-setting",
+        "learner": "black",
+        "scoreCentipawns": -1064,
+        "mate": null
+      }
+    ]
+  }
+}

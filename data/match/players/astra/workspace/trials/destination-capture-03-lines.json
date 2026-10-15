@@ -1,0 +1,15 @@
+{
+  "scope": "Between-game practice. Only explicitly supplied moves; no move generation, search, evaluation or engine interface.",
+  "cases": [
+    {"id":"1_remembered_c7_capture","fen":"5rk1/2p4p/p3R1p1/3qB3/3P4/4b3/PPP1Q1PP/1R5K w - - 0 25","moves":[{"uci":"e6d6","expected_legal":true},{"uci":"c7d6","expected_legal":true},{"uci":"e2e3","expected_legal":true}]},
+    {"id":"2_c7_removed_queen_exchange","fen":"5rk1/7p/p3R1p1/3qB3/3P4/4b3/PPP1Q1PP/1R5K w - - 0 25","moves":[{"uci":"e6d6","expected_legal":true},{"uci":"d5d6","expected_legal":true},{"uci":"e5d6","expected_legal":true}]},
+    {"id":"3a_black_f_pawn","fen":"6k1/5p1p/6p1/8/8/6R1/8/6K1 w - - 0 1","moves":[{"uci":"g3g6","expected_legal":true},{"uci":"f7g6","expected_legal":true}]},
+    {"id":"3b_black_h_pawn","fen":"6k1/5p1p/6p1/8/8/6R1/8/6K1 w - - 0 1","moves":[{"uci":"g3g6","expected_legal":true},{"uci":"h7g6","expected_legal":true}]},
+    {"id":"4a_white_f_pawn","fen":"6k1/8/6r1/8/8/6P1/5P1P/6K1 b - - 0 1","moves":[{"uci":"g6g3","expected_legal":true},{"uci":"f2g3","expected_legal":true}]},
+    {"id":"4b_white_h_pawn","fen":"6k1/8/6r1/8/8/6P1/5P1P/6K1 b - - 0 1","moves":[{"uci":"g6g3","expected_legal":true},{"uci":"h2g3","expected_legal":true}]},
+    {"id":"5a_remembered_king_blocks_rook","fen":"8/3R4/1p3rp1/1P5p/4k2P/5p2/5K2/8 b - - 3 50","moves":[{"uci":"f6e6","expected_legal":true},{"uci":"d7f7","expected_legal":true},{"uci":"e6e2","expected_legal":false}]},
+    {"id":"5b_remembered_supported_rook","fen":"8/3R4/1p3rp1/1P5p/4k2P/5p2/5K2/8 b - - 3 50","moves":[{"uci":"f6e6","expected_legal":true},{"uci":"d7f7","expected_legal":true},{"uci":"e6e5","expected_legal":true},{"uci":"f7f3","expected_legal":true},{"uci":"e4f3","expected_legal":false}]},
+    {"id":"5c_remembered_rook_exchange","fen":"8/3R4/1p3rp1/1P5p/4k2P/5p2/5K2/8 b - - 3 50","moves":[{"uci":"f6e6","expected_legal":true},{"uci":"d7f7","expected_legal":true},{"uci":"e6e5","expected_legal":true},{"uci":"f7f3","expected_legal":true},{"uci":"e5f5","expected_legal":true},{"uci":"f3f5","expected_legal":true},{"uci":"e4f5","expected_legal":true}]},
+    {"id":"6_white_king_on_h2","fen":"8/5R2/1p2r1p1/1P5p/4k2P/5p2/7K/8 b - - 5 51","moves":[{"uci":"e6e5","expected_legal":true},{"uci":"f7f3","expected_legal":true},{"uci":"e4f3","expected_legal":true}]}
+  ]
+}

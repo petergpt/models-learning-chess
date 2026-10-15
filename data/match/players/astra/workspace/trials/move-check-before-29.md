@@ -1,0 +1,1 @@
+Trial28; fixed evaluation193–198. Prefer a move that preserves an attacked piece's actual defender or moves that piece to support. Briefly check the moved king/rook's former duty and the opponent's immediate knight/pawn capture. Keep resulting placement concrete; no longer checklist or speculative branches. Repeated prior method, not proof of improvement.

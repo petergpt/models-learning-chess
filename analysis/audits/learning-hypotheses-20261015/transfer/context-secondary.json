@@ -1,0 +1,2755 @@
+{
+  "context-assessment.json": {
+    "source": "/home/peter/Chess Learning/.operator/audits/astra-context-20261008/context-assessment.json",
+    "sha256": "a3dcecabe0b2d49e054d70fcde69036c8e5585b8e1d8a96e0c860e2ed579ae7a",
+    "data": {
+      "method": {
+        "readOnly": true,
+        "hiddenReasoningOrCompactionTextInspected": false,
+        "usageRecords": 10423,
+        "usageUniqueIds": 10423,
+        "usageSumsMatchFinalThreadCumulative": true,
+        "sourceHashesUnchanged": true,
+        "recordedContextWindow": 258400,
+        "promptMeasure": "Input tokens per native model-response usage record, including cached input. This measures input length, not how much was attended to or retained correctly.",
+        "noteReadDetector": "Statically extract literal cmd arguments and classify nonmutating cat/tail/head/sed/rg or Python printed file reads. No historical commands executed. Dynamic and indirect reads may not be captured.",
+        "noteOutputScope": "Whole observable exec results in note-reading batches; includes accompanying rules/goal/trial/PGN output. Not an exact count of journal tokens.",
+        "postCompactionScope": "Next five accepted own benchmark moves after a compaction, counted globally across benchmark games; practice moves are excluded. Material-loss proxy is not an engine judgment; observations are clustered and exploratory."
+      },
+      "comparisons": [
+        {
+          "games": [
+            1,
+            96
+          ],
+          "ratedGames": 64,
+          "modelResponsesDuringRatedGames": 3283,
+          "pointScore": 0.625,
+          "inputTokensPerResponse": {
+            "count": 3283,
+            "mean": 105157.0612244898,
+            "median": 95184,
+            "p10": 35314.4,
+            "p90": 194711.2,
+            "min": 17659,
+            "max": 248466
+          },
+          "fractionOfResponsesOver180k": 0.139506548888212,
+          "fractionOfResponsesOver200k": 0.08589704538531831,
+          "fractionOfResponsesOver90pctOfWindow": 0.02040816326530612,
+          "reasoningTokensPerAcceptedMove": 1071.7599416271435,
+          "compactionsInWholeBenchmarkPeriod": 41,
+          "noteReadToolCallsIncludingBetweenGameStudy": 104,
+          "noteReadModes": {
+            "learning-journal.md": {
+              "whole-file": 2,
+              "bounded-excerpt": 58,
+              "bounded-python-excerpt": 8
+            },
+            "move-check.md": {
+              "whole-file": 38,
+              "bounded-excerpt": 1,
+              "search": 1,
+              "bounded-python-excerpt": 2
+            },
+            "geometry-cards.md": {
+              "whole-file": 6,
+              "bounded-excerpt": 18,
+              "bounded-python-excerpt": 6
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 223,
+            "mean": 880.2152466367713,
+            "median": 455,
+            "p10": 6.0,
+            "p90": 2576.200000000001,
+            "min": 1,
+            "max": 5530
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 223,
+            "mean": 1531.7085201793723,
+            "median": 967,
+            "p10": 50.0,
+            "p90": 4020.400000000001,
+            "min": 7,
+            "max": 9016
+          },
+          "readCallOutputTruncations": 1
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "ratedGames": 64,
+          "modelResponsesDuringRatedGames": 2902,
+          "pointScore": 0.390625,
+          "inputTokensPerResponse": {
+            "count": 2902,
+            "mean": 118627.32046864231,
+            "median": 108848.5,
+            "p10": 43166.700000000004,
+            "p90": 211626.40000000002,
+            "min": 21402,
+            "max": 251390
+          },
+          "fractionOfResponsesOver180k": 0.20089593383873192,
+          "fractionOfResponsesOver200k": 0.13473466574776016,
+          "fractionOfResponsesOver90pctOfWindow": 0.042384562370778776,
+          "reasoningTokensPerAcceptedMove": 512.8419014084507,
+          "compactionsInWholeBenchmarkPeriod": 22,
+          "noteReadToolCallsIncludingBetweenGameStudy": 23,
+          "noteReadModes": {
+            "learning-journal.md": {
+              "bounded-excerpt": 2,
+              "search": 1
+            },
+            "move-check.md": {
+              "whole-file": 20
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 53,
+            "mean": 593.6981132075472,
+            "median": 164,
+            "p10": 69.2,
+            "p90": 1673.4000000000005,
+            "min": 0,
+            "max": 3753
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 53,
+            "mean": 1075.566037735849,
+            "median": 292,
+            "p10": 135.0,
+            "p90": 2798.8000000000006,
+            "min": 0,
+            "max": 7595
+          },
+          "readCallOutputTruncations": 1
+        },
+        {
+          "games": [
+            1,
+            50
+          ],
+          "ratedGames": 32,
+          "modelResponsesDuringRatedGames": 1630,
+          "pointScore": 0.6875,
+          "inputTokensPerResponse": {
+            "count": 1630,
+            "mean": 100772.19386503067,
+            "median": 92401.5,
+            "p10": 34358.6,
+            "p90": 188961.50000000003,
+            "min": 17659,
+            "max": 247185
+          },
+          "fractionOfResponsesOver180k": 0.11840490797546012,
+          "fractionOfResponsesOver200k": 0.07239263803680981,
+          "fractionOfResponsesOver90pctOfWindow": 0.018404907975460124,
+          "reasoningTokensPerAcceptedMove": 1348.1766342141864,
+          "compactionsInWholeBenchmarkPeriod": 25,
+          "noteReadToolCallsIncludingBetweenGameStudy": 74,
+          "noteReadModes": {
+            "learning-journal.md": {
+              "whole-file": 2,
+              "bounded-excerpt": 45,
+              "bounded-python-excerpt": 8
+            },
+            "move-check.md": {
+              "whole-file": 21,
+              "bounded-excerpt": 1,
+              "search": 1,
+              "bounded-python-excerpt": 2
+            },
+            "geometry-cards.md": {
+              "whole-file": 6,
+              "bounded-excerpt": 18,
+              "bounded-python-excerpt": 6
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 170,
+            "mean": 749.3117647058823,
+            "median": 419.0,
+            "p10": 6.0,
+            "p90": 2141.6999999999994,
+            "min": 2,
+            "max": 4545
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 170,
+            "mean": 1317.5,
+            "median": 920.5,
+            "p10": 50.0,
+            "p90": 3394.7999999999997,
+            "min": 7,
+            "max": 7137
+          },
+          "readCallOutputTruncations": 1
+        },
+        {
+          "games": [
+            51,
+            100
+          ],
+          "ratedGames": 34,
+          "modelResponsesDuringRatedGames": 1756,
+          "pointScore": 0.5882352941176471,
+          "inputTokensPerResponse": {
+            "count": 1756,
+            "mean": 110513.41287015946,
+            "median": 102654.5,
+            "p10": 37031.0,
+            "p90": 197092.5,
+            "min": 17660,
+            "max": 248466
+          },
+          "fractionOfResponsesOver180k": 0.1520501138952164,
+          "fractionOfResponsesOver200k": 0.09339407744874716,
+          "fractionOfResponsesOver90pctOfWindow": 0.021070615034168565,
+          "reasoningTokensPerAcceptedMove": 745.6778093883357,
+          "compactionsInWholeBenchmarkPeriod": 17,
+          "noteReadToolCallsIncludingBetweenGameStudy": 31,
+          "noteReadModes": {
+            "learning-journal.md": {
+              "bounded-excerpt": 13
+            },
+            "move-check.md": {
+              "whole-file": 18
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 55,
+            "mean": 1281.3454545454545,
+            "median": 1267,
+            "p10": 113.6,
+            "p90": 3215.2000000000003,
+            "min": 1,
+            "max": 5530
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 55,
+            "mean": 2185.5454545454545,
+            "median": 2034,
+            "p10": 160.6,
+            "p90": 5351.400000000001,
+            "min": 11,
+            "max": 9016
+          },
+          "readCallOutputTruncations": 0
+        },
+        {
+          "games": [
+            101,
+            150
+          ],
+          "ratedGames": 34,
+          "modelResponsesDuringRatedGames": 1676,
+          "pointScore": 0.36764705882352944,
+          "inputTokensPerResponse": {
+            "count": 1676,
+            "mean": 119090.78579952267,
+            "median": 110918.5,
+            "p10": 43223.0,
+            "p90": 208261.5,
+            "min": 21402,
+            "max": 251390
+          },
+          "fractionOfResponsesOver180k": 0.20704057279236276,
+          "fractionOfResponsesOver200k": 0.12589498806682578,
+          "fractionOfResponsesOver90pctOfWindow": 0.03639618138424821,
+          "reasoningTokensPerAcceptedMove": 644.8279635258359,
+          "compactionsInWholeBenchmarkPeriod": 14,
+          "noteReadToolCallsIncludingBetweenGameStudy": 15,
+          "noteReadModes": {
+            "move-check.md": {
+              "whole-file": 12
+            },
+            "learning-journal.md": {
+              "bounded-excerpt": 2,
+              "search": 1
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 34,
+            "mean": 834.0588235294117,
+            "median": 166.5,
+            "p10": 52.30000000000001,
+            "p90": 2271.2,
+            "min": 4,
+            "max": 3753
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 34,
+            "mean": 1486.7058823529412,
+            "median": 490.5,
+            "p10": 151.0,
+            "p90": 3843.3,
+            "min": 12,
+            "max": 7595
+          },
+          "readCallOutputTruncations": 1
+        },
+        {
+          "games": [
+            151,
+            200
+          ],
+          "ratedGames": 32,
+          "modelResponsesDuringRatedGames": 1316,
+          "pointScore": 0.390625,
+          "inputTokensPerResponse": {
+            "count": 1316,
+            "mean": 118027.30547112462,
+            "median": 103600.0,
+            "p10": 42032.5,
+            "p90": 219557.0,
+            "min": 22222,
+            "max": 246094
+          },
+          "fractionOfResponsesOver180k": 0.20820668693009117,
+          "fractionOfResponsesOver200k": 0.15273556231003038,
+          "fractionOfResponsesOver90pctOfWindow": 0.050911854103343465,
+          "reasoningTokensPerAcceptedMove": 357.6983632112237,
+          "compactionsInWholeBenchmarkPeriod": 9,
+          "noteReadToolCallsIncludingBetweenGameStudy": 10,
+          "noteReadModes": {
+            "move-check.md": {
+              "whole-file": 10
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 26,
+            "mean": 298.96153846153845,
+            "median": 126.0,
+            "p10": 58.5,
+            "p90": 987.0,
+            "min": 0,
+            "max": 1571
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 26,
+            "mean": 568.3461538461538,
+            "median": 177.5,
+            "p10": 131.5,
+            "p90": 1869.0,
+            "min": 0,
+            "max": 2666
+          },
+          "readCallOutputTruncations": 0
+        }
+      ],
+      "compactions": {
+        "count": 65,
+        "firstResponsesAfter": [
+          {
+            "timestamp": "2026-09-29T22:22:43.719000+00:00",
+            "nextBenchmark": 4,
+            "nextInputTokens": 17663,
+            "previousInputTokens": 120523
+          },
+          {
+            "timestamp": "2026-09-29T23:42:41.861000+00:00",
+            "nextBenchmark": 5,
+            "nextInputTokens": 17662,
+            "previousInputTokens": 212718
+          },
+          {
+            "timestamp": "2026-09-30T00:38:37.963000+00:00",
+            "nextBenchmark": 7,
+            "nextInputTokens": 17660,
+            "previousInputTokens": 174314
+          },
+          {
+            "timestamp": "2026-09-30T02:12:34.937000+00:00",
+            "nextBenchmark": 9,
+            "nextInputTokens": 17661,
+            "previousInputTokens": 246716
+          },
+          {
+            "timestamp": "2026-09-30T03:31:19.460000+00:00",
+            "nextBenchmark": 12,
+            "nextInputTokens": 17660,
+            "previousInputTokens": 222045
+          },
+          {
+            "timestamp": "2026-09-30T05:00:11.600000+00:00",
+            "nextBenchmark": 14,
+            "nextInputTokens": 17663,
+            "previousInputTokens": 246905
+          },
+          {
+            "timestamp": "2026-09-30T06:30:38.724000+00:00",
+            "nextBenchmark": 17,
+            "nextInputTokens": 17663,
+            "previousInputTokens": 237258
+          },
+          {
+            "timestamp": "2026-09-30T08:02:37.233000+00:00",
+            "nextBenchmark": 18,
+            "nextInputTokens": 17660,
+            "previousInputTokens": 247185
+          },
+          {
+            "timestamp": "2026-09-30T09:00:04.207000+00:00",
+            "nextBenchmark": 19,
+            "nextInputTokens": 17662,
+            "previousInputTokens": 173651
+          },
+          {
+            "timestamp": "2026-09-30T09:30:58.127000+00:00",
+            "nextBenchmark": 20,
+            "nextInputTokens": 17664,
+            "previousInputTokens": 111693
+          },
+          {
+            "timestamp": "2026-09-30T10:13:27.479000+00:00",
+            "nextBenchmark": 21,
+            "nextInputTokens": 17664,
+            "previousInputTokens": 133552
+          },
+          {
+            "timestamp": "2026-09-30T11:28:40.865000+00:00",
+            "nextBenchmark": 23,
+            "nextInputTokens": 17659,
+            "previousInputTokens": 218258
+          },
+          {
+            "timestamp": "2026-09-30T12:58:18.522000+00:00",
+            "nextBenchmark": 24,
+            "nextInputTokens": 17659,
+            "previousInputTokens": 246228
+          },
+          {
+            "timestamp": "2026-09-30T14:29:55.329000+00:00",
+            "nextBenchmark": 26,
+            "nextInputTokens": 17663,
+            "previousInputTokens": 251609
+          },
+          {
+            "timestamp": "2026-09-30T15:33:21.560000+00:00",
+            "nextBenchmark": 29,
+            "nextInputTokens": 17665,
+            "previousInputTokens": 200848
+          },
+          {
+            "timestamp": "2026-09-30T16:47:54.258000+00:00",
+            "nextBenchmark": 30,
+            "nextInputTokens": 17666,
+            "previousInputTokens": 210214
+          },
+          {
+            "timestamp": "2026-09-30T18:04:12.743000+00:00",
+            "nextBenchmark": 31,
+            "nextInputTokens": 17662,
+            "previousInputTokens": 200620
+          },
+          {
+            "timestamp": "2026-09-30T19:41:09.197000+00:00",
+            "nextBenchmark": 32,
+            "nextInputTokens": 17660,
+            "previousInputTokens": 250801
+          },
+          {
+            "timestamp": "2026-09-30T21:05:11.635000+00:00",
+            "nextBenchmark": 35,
+            "nextInputTokens": 17661,
+            "previousInputTokens": 245403
+          },
+          {
+            "timestamp": "2026-09-30T22:02:58.340000+00:00",
+            "nextBenchmark": 37,
+            "nextInputTokens": 17663,
+            "previousInputTokens": 182178
+          },
+          {
+            "timestamp": "2026-09-30T22:59:16.726000+00:00",
+            "nextBenchmark": 39,
+            "nextInputTokens": 17665,
+            "previousInputTokens": 150148
+          },
+          {
+            "timestamp": "2026-10-01T00:08:47.874000+00:00",
+            "nextBenchmark": 42,
+            "nextInputTokens": 17665,
+            "previousInputTokens": 226737
+          },
+          {
+            "timestamp": "2026-10-01T01:33:09.629000+00:00",
+            "nextBenchmark": 45,
+            "nextInputTokens": 17665,
+            "previousInputTokens": 245858
+          },
+          {
+            "timestamp": "2026-10-01T02:29:52.809000+00:00",
+            "nextBenchmark": 47,
+            "nextInputTokens": 17663,
+            "previousInputTokens": 174138
+          },
+          {
+            "timestamp": "2026-10-01T03:36:47.773000+00:00",
+            "nextBenchmark": 50,
+            "nextInputTokens": 17663,
+            "previousInputTokens": 203311
+          },
+          {
+            "timestamp": "2026-10-01T05:03:14.488000+00:00",
+            "nextBenchmark": 52,
+            "nextInputTokens": 17661,
+            "previousInputTokens": 246196
+          },
+          {
+            "timestamp": "2026-10-01T06:08:03.313000+00:00",
+            "nextBenchmark": 54,
+            "nextInputTokens": 17660,
+            "previousInputTokens": 185712
+          },
+          {
+            "timestamp": "2026-10-01T07:21:59.133000+00:00",
+            "nextBenchmark": 56,
+            "nextInputTokens": 17661,
+            "previousInputTokens": 197486
+          },
+          {
+            "timestamp": "2026-10-01T08:06:15.119000+00:00",
+            "nextBenchmark": 58,
+            "nextInputTokens": 17659,
+            "previousInputTokens": 141508
+          },
+          {
+            "timestamp": "2026-10-01T09:25:10.349000+00:00",
+            "nextBenchmark": 60,
+            "nextInputTokens": 17663,
+            "previousInputTokens": 220830
+          },
+          {
+            "timestamp": "2026-10-01T10:11:57.536000+00:00",
+            "nextBenchmark": 62,
+            "nextInputTokens": 17664,
+            "previousInputTokens": 153596
+          },
+          {
+            "timestamp": "2026-10-01T11:53:02.531000+00:00",
+            "nextBenchmark": 66,
+            "nextInputTokens": 17661,
+            "previousInputTokens": 247510
+          },
+          {
+            "timestamp": "2026-10-01T13:03:10.017000+00:00",
+            "nextBenchmark": 67,
+            "nextInputTokens": 17662,
+            "previousInputTokens": 206788
+          },
+          {
+            "timestamp": "2026-10-01T14:43:58.139000+00:00",
+            "nextBenchmark": 70,
+            "nextInputTokens": 17662,
+            "previousInputTokens": 246720
+          },
+          {
+            "timestamp": "2026-10-01T15:56:50.681000+00:00",
+            "nextBenchmark": 73,
+            "nextInputTokens": 17661,
+            "previousInputTokens": 201924
+          },
+          {
+            "timestamp": "2026-10-01T17:32:27.488000+00:00",
+            "nextBenchmark": 74,
+            "nextInputTokens": 17660,
+            "previousInputTokens": 248916
+          },
+          {
+            "timestamp": "2026-10-01T19:11:54.246000+00:00",
+            "nextBenchmark": 78,
+            "nextInputTokens": 17664,
+            "previousInputTokens": 248466
+          },
+          {
+            "timestamp": "2026-10-01T20:27:59.685000+00:00",
+            "nextBenchmark": 80,
+            "nextInputTokens": 17665,
+            "previousInputTokens": 234708
+          },
+          {
+            "timestamp": "2026-10-01T21:39:39.463000+00:00",
+            "nextBenchmark": 84,
+            "nextInputTokens": 17660,
+            "previousInputTokens": 238363
+          },
+          {
+            "timestamp": "2026-10-01T22:57:18.951000+00:00",
+            "nextBenchmark": 90,
+            "nextInputTokens": 20020,
+            "previousInputTokens": 248351
+          },
+          {
+            "timestamp": "2026-10-02T02:19:29.906000+00:00",
+            "nextBenchmark": 93,
+            "nextInputTokens": 20185,
+            "previousInputTokens": 212476
+          },
+          {
+            "timestamp": "2026-10-02T03:42:52.795000+00:00",
+            "nextBenchmark": 97,
+            "nextInputTokens": 21579,
+            "previousInputTokens": 245490
+          },
+          {
+            "timestamp": "2026-10-02T05:11:19.926000+00:00",
+            "nextBenchmark": 102,
+            "nextInputTokens": 21515,
+            "previousInputTokens": 245633
+          },
+          {
+            "timestamp": "2026-10-02T06:35:19.840000+00:00",
+            "nextBenchmark": 105,
+            "nextInputTokens": 21402,
+            "previousInputTokens": 246068
+          },
+          {
+            "timestamp": "2026-10-02T08:15:53.917000+00:00",
+            "nextBenchmark": 110,
+            "nextInputTokens": 21956,
+            "previousInputTokens": 245181
+          },
+          {
+            "timestamp": "2026-10-02T10:19:08.715000+00:00",
+            "nextBenchmark": 114,
+            "nextInputTokens": 22348,
+            "previousInputTokens": 248960
+          },
+          {
+            "timestamp": "2026-10-02T11:58:04.395000+00:00",
+            "nextBenchmark": 116,
+            "nextInputTokens": 22400,
+            "previousInputTokens": 247011
+          },
+          {
+            "timestamp": "2026-10-02T13:57:54.787000+00:00",
+            "nextBenchmark": 119,
+            "nextInputTokens": 23182,
+            "previousInputTokens": 251390
+          },
+          {
+            "timestamp": "2026-10-02T15:53:31.655000+00:00",
+            "nextBenchmark": 121,
+            "nextInputTokens": 21412,
+            "previousInputTokens": 245239
+          },
+          {
+            "timestamp": "2026-10-02T17:55:11.936000+00:00",
+            "nextBenchmark": 123,
+            "nextInputTokens": 21835,
+            "previousInputTokens": 246867
+          },
+          {
+            "timestamp": "2026-10-02T19:39:35.570000+00:00",
+            "nextBenchmark": 126,
+            "nextInputTokens": 21509,
+            "previousInputTokens": 247092
+          },
+          {
+            "timestamp": "2026-10-02T20:53:00.738000+00:00",
+            "nextBenchmark": 131,
+            "nextInputTokens": 22532,
+            "previousInputTokens": 247275
+          },
+          {
+            "timestamp": "2026-10-02T22:33:00.928000+00:00",
+            "nextBenchmark": 133,
+            "nextInputTokens": 21965,
+            "previousInputTokens": 238940
+          },
+          {
+            "timestamp": "2026-10-03T00:08:13.024000+00:00",
+            "nextBenchmark": 137,
+            "nextInputTokens": 23848,
+            "previousInputTokens": 245363
+          },
+          {
+            "timestamp": "2026-10-03T01:39:51.213000+00:00",
+            "nextBenchmark": 141,
+            "nextInputTokens": 23469,
+            "previousInputTokens": 245704
+          },
+          {
+            "timestamp": "2026-10-03T03:04:56.456000+00:00",
+            "nextBenchmark": 145,
+            "nextInputTokens": 23358,
+            "previousInputTokens": 245386
+          },
+          {
+            "timestamp": "2026-10-03T04:29:02.288000+00:00",
+            "nextBenchmark": 151,
+            "nextInputTokens": 23233,
+            "previousInputTokens": 245677
+          },
+          {
+            "timestamp": "2026-10-03T06:03:10.426000+00:00",
+            "nextBenchmark": 157,
+            "nextInputTokens": 22930,
+            "previousInputTokens": 245386
+          },
+          {
+            "timestamp": "2026-10-03T07:26:13.696000+00:00",
+            "nextBenchmark": 162,
+            "nextInputTokens": 23284,
+            "previousInputTokens": 245329
+          },
+          {
+            "timestamp": "2026-10-03T08:51:39.057000+00:00",
+            "nextBenchmark": 167,
+            "nextInputTokens": 23022,
+            "previousInputTokens": 245860
+          },
+          {
+            "timestamp": "2026-10-03T10:26:37.470000+00:00",
+            "nextBenchmark": 173,
+            "nextInputTokens": 23831,
+            "previousInputTokens": 245880
+          },
+          {
+            "timestamp": "2026-10-03T12:08:16.535000+00:00",
+            "nextBenchmark": 177,
+            "nextInputTokens": 23009,
+            "previousInputTokens": 245465
+          },
+          {
+            "timestamp": "2026-10-03T13:34:35.664000+00:00",
+            "nextBenchmark": 183,
+            "nextInputTokens": 23608,
+            "previousInputTokens": 246094
+          },
+          {
+            "timestamp": "2026-10-03T15:03:59.354000+00:00",
+            "nextBenchmark": 188,
+            "nextInputTokens": 23089,
+            "previousInputTokens": 245417
+          },
+          {
+            "timestamp": "2026-10-03T16:34:43.408000+00:00",
+            "nextBenchmark": 196,
+            "nextInputTokens": 22222,
+            "previousInputTokens": 245655
+          }
+        ]
+      },
+      "gameContextBins": [
+        {
+          "games": [
+            1,
+            96
+          ],
+          "opponent": "skill-0",
+          "measure": "average-game-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                4,
+                10,
+                15,
+                21,
+                27,
+                33,
+                34,
+                39,
+                40,
+                58,
+                75,
+                76,
+                81,
+                82,
+                93,
+                94
+              ],
+              "meanPrompt": 70054.81932554152,
+              "pointScore": 0.9375
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                3,
+                9,
+                16,
+                22,
+                28,
+                45,
+                46,
+                51,
+                52,
+                57,
+                63,
+                64,
+                69,
+                70,
+                87,
+                88
+              ],
+              "meanPrompt": 131469.80499023353,
+              "pointScore": 0.9375
+            }
+          ]
+        },
+        {
+          "games": [
+            1,
+            96
+          ],
+          "opponent": "skill-0",
+          "measure": "first-accepted-move-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                4,
+                10,
+                15,
+                21,
+                27,
+                33,
+                34,
+                39,
+                46,
+                58,
+                75,
+                76,
+                81,
+                82,
+                93,
+                94
+              ],
+              "meanPrompt": 49953.5,
+              "pointScore": 0.9375
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                3,
+                9,
+                16,
+                22,
+                28,
+                40,
+                45,
+                51,
+                52,
+                57,
+                63,
+                64,
+                69,
+                70,
+                87,
+                88
+              ],
+              "meanPrompt": 129033.625,
+              "pointScore": 0.9375
+            }
+          ]
+        },
+        {
+          "games": [
+            1,
+            96
+          ],
+          "opponent": "elo-1800-setting",
+          "measure": "average-game-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                5,
+                6,
+                12,
+                17,
+                23,
+                29,
+                42,
+                47,
+                53,
+                54,
+                60,
+                66,
+                71,
+                78,
+                90,
+                95
+              ],
+              "meanPrompt": 64030.2897546033,
+              "pointScore": 0.4375
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                11,
+                18,
+                24,
+                30,
+                35,
+                36,
+                41,
+                48,
+                59,
+                65,
+                72,
+                77,
+                83,
+                84,
+                89,
+                96
+              ],
+              "meanPrompt": 145330.14944676045,
+              "pointScore": 0.1875
+            }
+          ]
+        },
+        {
+          "games": [
+            1,
+            96
+          ],
+          "opponent": "elo-1800-setting",
+          "measure": "first-accepted-move-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                5,
+                6,
+                12,
+                17,
+                23,
+                29,
+                42,
+                47,
+                54,
+                59,
+                60,
+                66,
+                71,
+                78,
+                90,
+                95
+              ],
+              "meanPrompt": 37452,
+              "pointScore": 0.4375
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                11,
+                18,
+                24,
+                30,
+                35,
+                36,
+                41,
+                48,
+                53,
+                65,
+                72,
+                77,
+                83,
+                84,
+                89,
+                96
+              ],
+              "meanPrompt": 124409.8125,
+              "pointScore": 0.1875
+            }
+          ]
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "opponent": "skill-0",
+          "measure": "average-game-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                106,
+                111,
+                112,
+                117,
+                124,
+                141,
+                142,
+                147,
+                153,
+                154,
+                159,
+                177,
+                178,
+                184,
+                189,
+                190
+              ],
+              "meanPrompt": 68774.28667651034,
+              "pointScore": 0.75
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                105,
+                118,
+                123,
+                129,
+                130,
+                135,
+                136,
+                148,
+                160,
+                165,
+                166,
+                171,
+                172,
+                183,
+                195,
+                196
+              ],
+              "meanPrompt": 155552.66228958894,
+              "pointScore": 0.5
+            }
+          ]
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "opponent": "skill-0",
+          "measure": "first-accepted-move-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                106,
+                111,
+                112,
+                117,
+                118,
+                124,
+                141,
+                142,
+                147,
+                153,
+                154,
+                159,
+                177,
+                178,
+                189,
+                190
+              ],
+              "meanPrompt": 56922.4375,
+              "pointScore": 0.6875
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                105,
+                123,
+                129,
+                130,
+                135,
+                136,
+                148,
+                160,
+                165,
+                166,
+                171,
+                172,
+                183,
+                184,
+                195,
+                196
+              ],
+              "meanPrompt": 161849.1875,
+              "pointScore": 0.5625
+            }
+          ]
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "opponent": "elo-1800-setting",
+          "measure": "average-game-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                107,
+                114,
+                131,
+                137,
+                138,
+                143,
+                162,
+                168,
+                173,
+                174,
+                179,
+                180,
+                191,
+                192,
+                197,
+                198
+              ],
+              "meanPrompt": 94063.30446478554,
+              "pointScore": 0.1875
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                108,
+                113,
+                119,
+                120,
+                125,
+                126,
+                132,
+                144,
+                149,
+                150,
+                155,
+                156,
+                161,
+                167,
+                185,
+                186
+              ],
+              "meanPrompt": 153080.89091272268,
+              "pointScore": 0.125
+            }
+          ]
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "opponent": "elo-1800-setting",
+          "measure": "first-accepted-move-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                107,
+                113,
+                120,
+                125,
+                132,
+                138,
+                143,
+                155,
+                168,
+                174,
+                179,
+                180,
+                191,
+                192,
+                197,
+                198
+              ],
+              "meanPrompt": 81257.5625,
+              "pointScore": 0.1875
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                108,
+                114,
+                119,
+                126,
+                131,
+                137,
+                144,
+                149,
+                150,
+                156,
+                161,
+                162,
+                167,
+                173,
+                185,
+                186
+              ],
+              "meanPrompt": 185181.6875,
+              "pointScore": 0.125
+            }
+          ]
+        }
+      ],
+      "postCompactionMaterialProxy": {
+        "early:other-moves": {
+          "ownMoves": 2606,
+          "shortLossCount": 38,
+          "shortLossPer100OwnMoves": 1.4581734458940905
+        },
+        "early:first-five-after-compaction": {
+          "ownMoves": 135,
+          "shortLossCount": 1,
+          "shortLossPer100OwnMoves": 0.7407407407407407
+        },
+        "late:other-moves": {
+          "ownMoves": 2770,
+          "shortLossCount": 48,
+          "shortLossPer100OwnMoves": 1.7328519855595668
+        },
+        "late:first-five-after-compaction": {
+          "ownMoves": 70,
+          "shortLossCount": 0,
+          "shortLossPer100OwnMoves": 0.0
+        }
+      },
+      "selectedErrorContextExamples": [
+        {
+          "game": 4,
+          "description": "Backward Black-pawn recapture",
+          "kind": "illegal",
+          "uci": "d4c5",
+          "ply": 38,
+          "precedingResponseInputTokens": 43471,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 18,
+          "minutesSinceLastCompaction": 8.190584063529968
+        },
+        {
+          "game": 173,
+          "description": "Backward White-pawn recapture",
+          "kind": "illegal",
+          "uci": "h4g3",
+          "ply": 83,
+          "precedingResponseInputTokens": 46523,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 20,
+          "minutesSinceLastCompaction": 8.055668433507284
+        },
+        {
+          "game": 173,
+          "description": "Rook path blocked by its own king",
+          "kind": "illegal",
+          "uci": "h2h7",
+          "ply": 113,
+          "precedingResponseInputTokens": 65003,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 35,
+          "minutesSinceLastCompaction": 15.409321550528208
+        },
+        {
+          "game": 197,
+          "description": "Queen promotion resulted in stalemate",
+          "kind": "move",
+          "uci": "c7c8q",
+          "ply": 91,
+          "precedingResponseInputTokens": 78908,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 72,
+          "minutesSinceLastCompaction": 17.832379984855653
+        },
+        {
+          "game": 198,
+          "description": "Bishop moved to capturable f5 with blocked imagined rook recapture",
+          "kind": "move",
+          "uci": "e6f5",
+          "ply": 34,
+          "precedingResponseInputTokens": 90379,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 89,
+          "minutesSinceLastCompaction": 20.890784418582918
+        }
+      ],
+      "historicalNoteSizes": [
+        {
+          "game": 1,
+          "sizes": {}
+        },
+        {
+          "game": 31,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 89527,
+              "words": 14407
+            },
+            "move-check.md": {
+              "bytes": 4362,
+              "words": 719
+            }
+          }
+        },
+        {
+          "game": 37,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 108673,
+              "words": 17408
+            },
+            "move-check.md": {
+              "bytes": 4362,
+              "words": 719
+            }
+          }
+        },
+        {
+          "game": 73,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 220140,
+              "words": 34520
+            },
+            "move-check.md": {
+              "bytes": 1439,
+              "words": 219
+            }
+          }
+        },
+        {
+          "game": 97,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 310192,
+              "words": 47686
+            },
+            "move-check.md": {
+              "bytes": 796,
+              "words": 116
+            }
+          }
+        },
+        {
+          "game": 103,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 336999,
+              "words": 51634
+            },
+            "move-check.md": {
+              "bytes": 1170,
+              "words": 170
+            }
+          }
+        },
+        {
+          "game": 133,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 467950,
+              "words": 71168
+            },
+            "move-check.md": {
+              "bytes": 603,
+              "words": 85
+            }
+          }
+        },
+        {
+          "game": 157,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 561545,
+              "words": 84936
+            },
+            "move-check.md": {
+              "bytes": 539,
+              "words": 83
+            }
+          }
+        },
+        {
+          "game": 181,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 635017,
+              "words": 95786
+            },
+            "move-check.md": {
+              "bytes": 518,
+              "words": 76
+            }
+          }
+        },
+        {
+          "game": 199,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 674286,
+              "words": 101204
+            },
+            "move-check.md": {
+              "bytes": 393,
+              "words": 58
+            }
+          }
+        },
+        {
+          "game": 200,
+          "sizes": {
+            "geometry-cards.md": {
+              "bytes": 35525,
+              "words": 5878
+            },
+            "learning-journal.md": {
+              "bytes": 675915,
+              "words": 101407
+            },
+            "move-check.md": {
+              "bytes": 393,
+              "words": 58
+            }
+          }
+        }
+      ],
+      "limitations": [
+        "No randomisation or controlled replay; prompt size, game stage, procedures and game outcome can affect each other.",
+        "Summary fidelity and loss of useful facts cannot be established from timestamps and lengths; summary text is not inspected.",
+        "A large disk journal is not evidence that its entire contents were loaded into each prompt.",
+        "Input-token totals include all model responses during a game and may include compaction/overhead, not solely move decisions.",
+        "This analysis describes one evolving agent and does not show degradation of model weights."
+      ]
+    }
+  },
+  "run-summary.json": {
+    "source": "/home/peter/Chess Learning/.operator/audits/astra-context-20261008/run-summary.json",
+    "sha256": "6856311677863a27899de915d33ff376d7610e2d6986e4ff57effc649d79f1a8",
+    "data": {
+      "method": {
+        "readOnly": true,
+        "hiddenReasoningOrCompactionTextInspected": false,
+        "usageRecords": 10423,
+        "usageUniqueIds": 10423,
+        "usageSumsMatchFinalThreadCumulative": true,
+        "sourceHashesUnchanged": true,
+        "recordedContextWindow": 258400,
+        "promptMeasure": "Input tokens per native model-response usage record, including cached input. This measures input length, not how much was attended to or retained correctly.",
+        "noteReadDetector": "Statically extract literal cmd arguments and classify nonmutating cat/tail/head/sed/rg or Python printed file reads. No historical commands executed. Dynamic and indirect reads may not be captured.",
+        "noteOutputScope": "Whole observable exec results in note-reading batches; includes accompanying rules/goal/trial/PGN output. Not an exact count of journal tokens.",
+        "postCompactionScope": "Next five accepted own benchmark moves after a compaction, counted globally across benchmark games; practice moves are excluded. Material-loss proxy is not an engine judgment; observations are clustered and exploratory."
+      },
+      "comparisons": [
+        {
+          "games": [
+            1,
+            96
+          ],
+          "ratedGames": 64,
+          "modelResponsesDuringRatedGames": 3283,
+          "pointScore": 0.625,
+          "inputTokensPerResponse": {
+            "count": 3283,
+            "mean": 105157.0612244898,
+            "median": 95184,
+            "p10": 35314.4,
+            "p90": 194711.2,
+            "min": 17659,
+            "max": 248466
+          },
+          "fractionOfResponsesOver180k": 0.139506548888212,
+          "fractionOfResponsesOver200k": 0.08589704538531831,
+          "fractionOfResponsesOver90pctOfWindow": 0.02040816326530612,
+          "reasoningTokensPerAcceptedMove": 1071.7599416271435,
+          "compactionsInWholeBenchmarkPeriod": 41,
+          "noteReadToolCallsIncludingBetweenGameStudy": 104,
+          "noteReadModes": {
+            "learning-journal.md": {
+              "whole-file": 2,
+              "bounded-excerpt": 58,
+              "bounded-python-excerpt": 8
+            },
+            "move-check.md": {
+              "whole-file": 38,
+              "bounded-excerpt": 1,
+              "search": 1,
+              "bounded-python-excerpt": 2
+            },
+            "geometry-cards.md": {
+              "whole-file": 6,
+              "bounded-excerpt": 18,
+              "bounded-python-excerpt": 6
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 223,
+            "mean": 880.2152466367713,
+            "median": 455,
+            "p10": 6.0,
+            "p90": 2576.200000000001,
+            "min": 1,
+            "max": 5530
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 223,
+            "mean": 1531.7085201793723,
+            "median": 967,
+            "p10": 50.0,
+            "p90": 4020.400000000001,
+            "min": 7,
+            "max": 9016
+          },
+          "readCallOutputTruncations": 1
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "ratedGames": 64,
+          "modelResponsesDuringRatedGames": 2902,
+          "pointScore": 0.390625,
+          "inputTokensPerResponse": {
+            "count": 2902,
+            "mean": 118627.32046864231,
+            "median": 108848.5,
+            "p10": 43166.700000000004,
+            "p90": 211626.40000000002,
+            "min": 21402,
+            "max": 251390
+          },
+          "fractionOfResponsesOver180k": 0.20089593383873192,
+          "fractionOfResponsesOver200k": 0.13473466574776016,
+          "fractionOfResponsesOver90pctOfWindow": 0.042384562370778776,
+          "reasoningTokensPerAcceptedMove": 512.8419014084507,
+          "compactionsInWholeBenchmarkPeriod": 22,
+          "noteReadToolCallsIncludingBetweenGameStudy": 23,
+          "noteReadModes": {
+            "learning-journal.md": {
+              "bounded-excerpt": 2,
+              "search": 1
+            },
+            "move-check.md": {
+              "whole-file": 20
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 53,
+            "mean": 593.6981132075472,
+            "median": 164,
+            "p10": 69.2,
+            "p90": 1673.4000000000005,
+            "min": 0,
+            "max": 3753
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 53,
+            "mean": 1075.566037735849,
+            "median": 292,
+            "p10": 135.0,
+            "p90": 2798.8000000000006,
+            "min": 0,
+            "max": 7595
+          },
+          "readCallOutputTruncations": 1
+        },
+        {
+          "games": [
+            1,
+            50
+          ],
+          "ratedGames": 32,
+          "modelResponsesDuringRatedGames": 1630,
+          "pointScore": 0.6875,
+          "inputTokensPerResponse": {
+            "count": 1630,
+            "mean": 100772.19386503067,
+            "median": 92401.5,
+            "p10": 34358.6,
+            "p90": 188961.50000000003,
+            "min": 17659,
+            "max": 247185
+          },
+          "fractionOfResponsesOver180k": 0.11840490797546012,
+          "fractionOfResponsesOver200k": 0.07239263803680981,
+          "fractionOfResponsesOver90pctOfWindow": 0.018404907975460124,
+          "reasoningTokensPerAcceptedMove": 1348.1766342141864,
+          "compactionsInWholeBenchmarkPeriod": 25,
+          "noteReadToolCallsIncludingBetweenGameStudy": 74,
+          "noteReadModes": {
+            "learning-journal.md": {
+              "whole-file": 2,
+              "bounded-excerpt": 45,
+              "bounded-python-excerpt": 8
+            },
+            "move-check.md": {
+              "whole-file": 21,
+              "bounded-excerpt": 1,
+              "search": 1,
+              "bounded-python-excerpt": 2
+            },
+            "geometry-cards.md": {
+              "whole-file": 6,
+              "bounded-excerpt": 18,
+              "bounded-python-excerpt": 6
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 170,
+            "mean": 749.3117647058823,
+            "median": 419.0,
+            "p10": 6.0,
+            "p90": 2141.6999999999994,
+            "min": 2,
+            "max": 4545
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 170,
+            "mean": 1317.5,
+            "median": 920.5,
+            "p10": 50.0,
+            "p90": 3394.7999999999997,
+            "min": 7,
+            "max": 7137
+          },
+          "readCallOutputTruncations": 1
+        },
+        {
+          "games": [
+            51,
+            100
+          ],
+          "ratedGames": 34,
+          "modelResponsesDuringRatedGames": 1756,
+          "pointScore": 0.5882352941176471,
+          "inputTokensPerResponse": {
+            "count": 1756,
+            "mean": 110513.41287015946,
+            "median": 102654.5,
+            "p10": 37031.0,
+            "p90": 197092.5,
+            "min": 17660,
+            "max": 248466
+          },
+          "fractionOfResponsesOver180k": 0.1520501138952164,
+          "fractionOfResponsesOver200k": 0.09339407744874716,
+          "fractionOfResponsesOver90pctOfWindow": 0.021070615034168565,
+          "reasoningTokensPerAcceptedMove": 745.6778093883357,
+          "compactionsInWholeBenchmarkPeriod": 17,
+          "noteReadToolCallsIncludingBetweenGameStudy": 31,
+          "noteReadModes": {
+            "learning-journal.md": {
+              "bounded-excerpt": 13
+            },
+            "move-check.md": {
+              "whole-file": 18
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 55,
+            "mean": 1281.3454545454545,
+            "median": 1267,
+            "p10": 113.6,
+            "p90": 3215.2000000000003,
+            "min": 1,
+            "max": 5530
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 55,
+            "mean": 2185.5454545454545,
+            "median": 2034,
+            "p10": 160.6,
+            "p90": 5351.400000000001,
+            "min": 11,
+            "max": 9016
+          },
+          "readCallOutputTruncations": 0
+        },
+        {
+          "games": [
+            101,
+            150
+          ],
+          "ratedGames": 34,
+          "modelResponsesDuringRatedGames": 1676,
+          "pointScore": 0.36764705882352944,
+          "inputTokensPerResponse": {
+            "count": 1676,
+            "mean": 119090.78579952267,
+            "median": 110918.5,
+            "p10": 43223.0,
+            "p90": 208261.5,
+            "min": 21402,
+            "max": 251390
+          },
+          "fractionOfResponsesOver180k": 0.20704057279236276,
+          "fractionOfResponsesOver200k": 0.12589498806682578,
+          "fractionOfResponsesOver90pctOfWindow": 0.03639618138424821,
+          "reasoningTokensPerAcceptedMove": 644.8279635258359,
+          "compactionsInWholeBenchmarkPeriod": 14,
+          "noteReadToolCallsIncludingBetweenGameStudy": 15,
+          "noteReadModes": {
+            "move-check.md": {
+              "whole-file": 12
+            },
+            "learning-journal.md": {
+              "bounded-excerpt": 2,
+              "search": 1
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 34,
+            "mean": 834.0588235294117,
+            "median": 166.5,
+            "p10": 52.30000000000001,
+            "p90": 2271.2,
+            "min": 4,
+            "max": 3753
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 34,
+            "mean": 1486.7058823529412,
+            "median": 490.5,
+            "p10": 151.0,
+            "p90": 3843.3,
+            "min": 12,
+            "max": 7595
+          },
+          "readCallOutputTruncations": 1
+        },
+        {
+          "games": [
+            151,
+            200
+          ],
+          "ratedGames": 32,
+          "modelResponsesDuringRatedGames": 1316,
+          "pointScore": 0.390625,
+          "inputTokensPerResponse": {
+            "count": 1316,
+            "mean": 118027.30547112462,
+            "median": 103600.0,
+            "p10": 42032.5,
+            "p90": 219557.0,
+            "min": 22222,
+            "max": 246094
+          },
+          "fractionOfResponsesOver180k": 0.20820668693009117,
+          "fractionOfResponsesOver200k": 0.15273556231003038,
+          "fractionOfResponsesOver90pctOfWindow": 0.050911854103343465,
+          "reasoningTokensPerAcceptedMove": 357.6983632112237,
+          "compactionsInWholeBenchmarkPeriod": 9,
+          "noteReadToolCallsIncludingBetweenGameStudy": 10,
+          "noteReadModes": {
+            "move-check.md": {
+              "whole-file": 10
+            }
+          },
+          "readCallOutputWordsIncludingOtherBatchedCommands": {
+            "count": 26,
+            "mean": 298.96153846153845,
+            "median": 126.0,
+            "p10": 58.5,
+            "p90": 987.0,
+            "min": 0,
+            "max": 1571
+          },
+          "readCallReportedOutputTokensIncludingOtherBatchedCommands": {
+            "count": 26,
+            "mean": 568.3461538461538,
+            "median": 177.5,
+            "p10": 131.5,
+            "p90": 1869.0,
+            "min": 0,
+            "max": 2666
+          },
+          "readCallOutputTruncations": 0
+        }
+      ],
+      "compactions": {
+        "count": 65,
+        "earlyAfterInputs": {
+          "count": 41,
+          "mean": 17781.19512195122,
+          "median": 17662,
+          "p10": 17660.0,
+          "p90": 17665.0,
+          "min": 17659,
+          "max": 20185
+        },
+        "lateAfterInputs": {
+          "count": 22,
+          "mean": 22702,
+          "median": 22969.5,
+          "p10": 21541.6,
+          "p90": 23594.1,
+          "min": 21402,
+          "max": 23848
+        }
+      },
+      "contextBins": [
+        {
+          "games": [
+            1,
+            96
+          ],
+          "opponent": "skill-0",
+          "measure": "average-game-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                4,
+                10,
+                15,
+                21,
+                27,
+                33,
+                34,
+                39,
+                40,
+                58,
+                75,
+                76,
+                81,
+                82,
+                93,
+                94
+              ],
+              "meanPrompt": 70054.81932554152,
+              "pointScore": 0.9375
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                3,
+                9,
+                16,
+                22,
+                28,
+                45,
+                46,
+                51,
+                52,
+                57,
+                63,
+                64,
+                69,
+                70,
+                87,
+                88
+              ],
+              "meanPrompt": 131469.80499023353,
+              "pointScore": 0.9375
+            }
+          ]
+        },
+        {
+          "games": [
+            1,
+            96
+          ],
+          "opponent": "skill-0",
+          "measure": "first-accepted-move-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                4,
+                10,
+                15,
+                21,
+                27,
+                33,
+                34,
+                39,
+                46,
+                58,
+                75,
+                76,
+                81,
+                82,
+                93,
+                94
+              ],
+              "meanPrompt": 49953.5,
+              "pointScore": 0.9375
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                3,
+                9,
+                16,
+                22,
+                28,
+                40,
+                45,
+                51,
+                52,
+                57,
+                63,
+                64,
+                69,
+                70,
+                87,
+                88
+              ],
+              "meanPrompt": 129033.625,
+              "pointScore": 0.9375
+            }
+          ]
+        },
+        {
+          "games": [
+            1,
+            96
+          ],
+          "opponent": "elo-1800-setting",
+          "measure": "average-game-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                5,
+                6,
+                12,
+                17,
+                23,
+                29,
+                42,
+                47,
+                53,
+                54,
+                60,
+                66,
+                71,
+                78,
+                90,
+                95
+              ],
+              "meanPrompt": 64030.2897546033,
+              "pointScore": 0.4375
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                11,
+                18,
+                24,
+                30,
+                35,
+                36,
+                41,
+                48,
+                59,
+                65,
+                72,
+                77,
+                83,
+                84,
+                89,
+                96
+              ],
+              "meanPrompt": 145330.14944676045,
+              "pointScore": 0.1875
+            }
+          ]
+        },
+        {
+          "games": [
+            1,
+            96
+          ],
+          "opponent": "elo-1800-setting",
+          "measure": "first-accepted-move-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                5,
+                6,
+                12,
+                17,
+                23,
+                29,
+                42,
+                47,
+                54,
+                59,
+                60,
+                66,
+                71,
+                78,
+                90,
+                95
+              ],
+              "meanPrompt": 37452,
+              "pointScore": 0.4375
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                11,
+                18,
+                24,
+                30,
+                35,
+                36,
+                41,
+                48,
+                53,
+                65,
+                72,
+                77,
+                83,
+                84,
+                89,
+                96
+              ],
+              "meanPrompt": 124409.8125,
+              "pointScore": 0.1875
+            }
+          ]
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "opponent": "skill-0",
+          "measure": "average-game-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                106,
+                111,
+                112,
+                117,
+                124,
+                141,
+                142,
+                147,
+                153,
+                154,
+                159,
+                177,
+                178,
+                184,
+                189,
+                190
+              ],
+              "meanPrompt": 68774.28667651034,
+              "pointScore": 0.75
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                105,
+                118,
+                123,
+                129,
+                130,
+                135,
+                136,
+                148,
+                160,
+                165,
+                166,
+                171,
+                172,
+                183,
+                195,
+                196
+              ],
+              "meanPrompt": 155552.66228958894,
+              "pointScore": 0.5
+            }
+          ]
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "opponent": "skill-0",
+          "measure": "first-accepted-move-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                106,
+                111,
+                112,
+                117,
+                118,
+                124,
+                141,
+                142,
+                147,
+                153,
+                154,
+                159,
+                177,
+                178,
+                189,
+                190
+              ],
+              "meanPrompt": 56922.4375,
+              "pointScore": 0.6875
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                105,
+                123,
+                129,
+                130,
+                135,
+                136,
+                148,
+                160,
+                165,
+                166,
+                171,
+                172,
+                183,
+                184,
+                195,
+                196
+              ],
+              "meanPrompt": 161849.1875,
+              "pointScore": 0.5625
+            }
+          ]
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "opponent": "elo-1800-setting",
+          "measure": "average-game-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                107,
+                114,
+                131,
+                137,
+                138,
+                143,
+                162,
+                168,
+                173,
+                174,
+                179,
+                180,
+                191,
+                192,
+                197,
+                198
+              ],
+              "meanPrompt": 94063.30446478554,
+              "pointScore": 0.1875
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                108,
+                113,
+                119,
+                120,
+                125,
+                126,
+                132,
+                144,
+                149,
+                150,
+                155,
+                156,
+                161,
+                167,
+                185,
+                186
+              ],
+              "meanPrompt": 153080.89091272268,
+              "pointScore": 0.125
+            }
+          ]
+        },
+        {
+          "games": [
+            103,
+            198
+          ],
+          "opponent": "elo-1800-setting",
+          "measure": "first-accepted-move-input",
+          "groups": [
+            {
+              "label": "lower-half",
+              "games": [
+                107,
+                113,
+                120,
+                125,
+                132,
+                138,
+                143,
+                155,
+                168,
+                174,
+                179,
+                180,
+                191,
+                192,
+                197,
+                198
+              ],
+              "meanPrompt": 81257.5625,
+              "pointScore": 0.1875
+            },
+            {
+              "label": "upper-half",
+              "games": [
+                108,
+                114,
+                119,
+                126,
+                131,
+                137,
+                144,
+                149,
+                150,
+                156,
+                161,
+                162,
+                167,
+                173,
+                185,
+                186
+              ],
+              "meanPrompt": 185181.6875,
+              "pointScore": 0.125
+            }
+          ]
+        }
+      ],
+      "postCompactionMaterialProxy": {
+        "early:other-moves": {
+          "ownMoves": 2606,
+          "shortLossCount": 38,
+          "shortLossPer100OwnMoves": 1.4581734458940905
+        },
+        "early:first-five-after-compaction": {
+          "ownMoves": 135,
+          "shortLossCount": 1,
+          "shortLossPer100OwnMoves": 0.7407407407407407
+        },
+        "late:other-moves": {
+          "ownMoves": 2770,
+          "shortLossCount": 48,
+          "shortLossPer100OwnMoves": 1.7328519855595668
+        },
+        "late:first-five-after-compaction": {
+          "ownMoves": 70,
+          "shortLossCount": 0,
+          "shortLossPer100OwnMoves": 0.0
+        }
+      },
+      "selectedErrorContextExamples": [
+        {
+          "game": 4,
+          "description": "Backward Black-pawn recapture",
+          "kind": "illegal",
+          "uci": "d4c5",
+          "ply": 38,
+          "precedingResponseInputTokens": 43471,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 18,
+          "minutesSinceLastCompaction": 8.190584063529968
+        },
+        {
+          "game": 173,
+          "description": "Backward White-pawn recapture",
+          "kind": "illegal",
+          "uci": "h4g3",
+          "ply": 83,
+          "precedingResponseInputTokens": 46523,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 20,
+          "minutesSinceLastCompaction": 8.055668433507284
+        },
+        {
+          "game": 173,
+          "description": "Rook path blocked by its own king",
+          "kind": "illegal",
+          "uci": "h2h7",
+          "ply": 113,
+          "precedingResponseInputTokens": 65003,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 35,
+          "minutesSinceLastCompaction": 15.409321550528208
+        },
+        {
+          "game": 197,
+          "description": "Queen promotion resulted in stalemate",
+          "kind": "move",
+          "uci": "c7c8q",
+          "ply": 91,
+          "precedingResponseInputTokens": 78908,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 72,
+          "minutesSinceLastCompaction": 17.832379984855653
+        },
+        {
+          "game": 198,
+          "description": "Bishop moved to capturable f5 with blocked imagined rook recapture",
+          "kind": "move",
+          "uci": "e6f5",
+          "ply": 34,
+          "precedingResponseInputTokens": 90379,
+          "acceptedBenchmarkOwnMovesSinceLastCompaction": 89,
+          "minutesSinceLastCompaction": 20.890784418582918
+        }
+      ],
+      "readToolCalls": 130,
+      "unmatchedReadOrCounterCalls": 0
+    }
+  },
+  "audit.json": {
+    "source": "/home/peter/Chess Learning/.operator/audits/sol-828k-20261006-1646/audit.json",
+    "sha256": "54e0491a6e7d0ad419289526d88c781638b6fa48e8e4eacb775e961a3fc9db1c",
+    "data": {
+      "at": "2026-10-06T16:55:16.092140+00:00",
+      "method": "Read-only hashes, legal move replay, actual metadata, independent Elo calculation; no engine position analysis.",
+      "runs": {
+        "medium": {
+          "folder": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context",
+          "completed": 41,
+          "actualEfforts": {
+            "medium": 37
+          },
+          "appliedSettings": [
+            {
+              "at": "2026-10-04T18:12:54.706Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            },
+            {
+              "at": "2026-10-05T02:09:45.300Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            },
+            {
+              "at": "2026-10-05T09:29:13.055Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            },
+            {
+              "at": "2026-10-05T16:37:03.566Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            },
+            {
+              "at": "2026-10-05T23:25:25.725Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            },
+            {
+              "at": "2026-10-06T04:45:50.062Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            },
+            {
+              "at": "2026-10-06T06:18:36.929Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            },
+            {
+              "at": "2026-10-06T14:30:48.172Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            },
+            {
+              "at": "2026-10-06T14:30:48.260Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            },
+            {
+              "at": "2026-10-06T16:13:54.557Z",
+              "effort": "medium",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "medium"
+            }
+          ],
+          "compactions": [
+            "2026-10-04T18:12:54.705Z",
+            "2026-10-05T02:09:45.299Z",
+            "2026-10-05T09:29:13.054Z",
+            "2026-10-05T16:37:03.566Z",
+            "2026-10-05T23:25:25.725Z",
+            "2026-10-06T04:45:50.061Z"
+          ],
+          "latestOccupancy": {
+            "at": "2026-10-06T16:48:11.737Z",
+            "input": 470331,
+            "window": 828400
+          },
+          "firstGameInputTokenRange": [
+            19014,
+            35279
+          ],
+          "matchedMoveUsage": {
+            "matched": 480,
+            "unmatched": 3,
+            "medianReasoningTokens": 216.5,
+            "meanReasoningTokens": 1333.8541666666667,
+            "longestResponseTokens": 85974,
+            "scope": "Usage for the final completed provider response near each move; excludes earlier work for that decision."
+          }
+        },
+        "max": {
+          "folder": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol - Long Context - Max",
+          "completed": 15,
+          "actualEfforts": {
+            "max": 3
+          },
+          "appliedSettings": [
+            {
+              "at": "2026-10-06T03:20:02.312Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T09:48:44.947Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            }
+          ],
+          "compactions": [
+            "2026-10-06T03:20:02.311Z",
+            "2026-10-06T09:48:44.946Z"
+          ],
+          "latestOccupancy": {
+            "at": "2026-10-06T16:24:34.226Z",
+            "input": 657635,
+            "window": 828400
+          },
+          "firstGameInputTokenRange": [
+            19075,
+            35984
+          ],
+          "matchedMoveUsage": {
+            "matched": 558,
+            "unmatched": 2,
+            "medianReasoningTokens": 865.0,
+            "meanReasoningTokens": 2314.7078853046596,
+            "longestResponseTokens": 39860,
+            "scope": "Usage for the final completed provider response near each move; excludes earlier work for that decision."
+          }
+        },
+        "standard-max": {
+          "folder": "/home/peter/Chess Learning/Chess - GPT-6.1-Sol",
+          "completed": 89,
+          "actualEfforts": {
+            "max": 35
+          },
+          "appliedSettings": [
+            {
+              "at": "2026-10-03T22:43:22.094Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T00:44:10.176Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T02:49:40.646Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T04:54:17.654Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T07:06:32.903Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T09:09:36.984Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T11:29:22.702Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T13:58:04.900Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T16:29:30.219Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T18:56:13.225Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T21:13:54.377Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-04T23:12:50.120Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T01:11:03.642Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T03:15:18.606Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T04:55:59.165Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T07:03:41.020Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T09:18:36.452Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T11:13:41.428Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T13:08:24.252Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T15:15:57.395Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T17:10:06.430Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T19:12:13.814Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T21:09:14.837Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-05T22:53:17.766Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T00:27:13.353Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T01:40:56.291Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T03:06:58.024Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T04:30:35.369Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T05:48:54.895Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T07:22:12.185Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T09:05:41.465Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T10:53:16.676Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T12:42:17.619Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            },
+            {
+              "at": "2026-10-06T15:06:22.324Z",
+              "effort": "max",
+              "model": "gpt-6.1-sol",
+              "collaborationEffort": "max"
+            }
+          ],
+          "compactions": [
+            "2026-10-03T22:43:22.094Z",
+            "2026-10-04T00:44:10.175Z",
+            "2026-10-04T02:49:40.646Z",
+            "2026-10-04T04:54:17.653Z",
+            "2026-10-04T07:06:32.902Z",
+            "2026-10-04T09:09:36.984Z",
+            "2026-10-04T11:29:22.701Z",
+            "2026-10-04T13:58:04.899Z",
+            "2026-10-04T16:29:30.218Z",
+            "2026-10-04T18:56:13.224Z",
+            "2026-10-04T21:13:54.377Z",
+            "2026-10-04T23:12:50.119Z",
+            "2026-10-05T01:11:03.641Z",
+            "2026-10-05T03:15:18.606Z",
+            "2026-10-05T04:55:59.164Z",
+            "2026-10-05T07:03:41.019Z",
+            "2026-10-05T09:18:36.452Z",
+            "2026-10-05T11:13:41.428Z",
+            "2026-10-05T13:08:24.251Z",
+            "2026-10-05T15:15:57.395Z",
+            "2026-10-05T17:10:06.429Z",
+            "2026-10-05T19:12:13.814Z",
+            "2026-10-05T21:09:14.836Z",
+            "2026-10-05T22:53:17.766Z",
+            "2026-10-06T00:27:13.353Z",
+            "2026-10-06T01:40:56.290Z",
+            "2026-10-06T03:06:58.023Z",
+            "2026-10-06T04:30:35.369Z",
+            "2026-10-06T05:48:54.894Z",
+            "2026-10-06T07:22:12.185Z",
+            "2026-10-06T09:05:41.465Z",
+            "2026-10-06T10:53:16.676Z",
+            "2026-10-06T12:42:17.619Z",
+            "2026-10-06T15:06:22.321Z"
+          ],
+          "latestOccupancy": {
+            "at": "2026-10-06T16:52:40.416Z",
+            "input": 215859,
+            "window": 258400
+          },
+          "firstGameInputTokenRange": [
+            18076,
+            34083
+          ],
+          "matchedMoveUsage": {
+            "matched": 591,
+            "unmatched": 0,
+            "medianReasoningTokens": 629,
+            "meanReasoningTokens": 1135.150592216582,
+            "longestResponseTokens": 8544,
+            "scope": "Usage for the final completed provider response near each move; excludes earlier work for that decision."
+          }
+        }
+      }
+    }
+  }
+}

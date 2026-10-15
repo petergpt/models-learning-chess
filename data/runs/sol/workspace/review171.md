@@ -1,0 +1,9 @@
+# Benchmark 171 and learning trial 288
+
+171/200 scored; 46 wins, 8 draws, 117 losses. Full strength 0/0/58; skill 0 38/4/15; nominal 1800 8/4/44 (W/D/L). Referee estimate 1510, 95% credible interval 1390–1640, latest 50 rated games; 113 rated total, 58 uncalibrated full-strength excluded. Conditional nominal anchors, not human Elo. Nine consecutive benchmark losses (163–171) show no sustained improvement.
+
+171 White skill 0: loss by 15...Qxh2#, 30 plies, zero illegal submissions. Receipt seq 13552, 2026-10-10T02:10:52.269590+00:00. After 13 Qxd6 Bxa4, the bishop vacated d7, opening the black queen's d8-d6 line. Routine 14 Nxa4 lost my queen to Qxd6. 15 Rad1 attacked the queen but ignored Qd6-h2 mate, with Ng4 protecting h2. Trial 287's pawn-destination focus did not address these opened lines; no overall transfer.
+
+Trial 288: recorded practice 152, maximum strength White, reconstructed after benchmark 171 ply 26. Own moves Qxd8+, Nxa4, fxe3; actual replies Rxd8, Nxe3, Rd2. Three own moves, six plies, no illegals. Exchanging queens before recapturing retained pieces and a temporary extra pawn, but Rd2 threatened c2 and the position remained unresolved. Remembered partial repair, not fresh transfer or proof of a sound position. End command was issued; subsequent practice status confirms no active practice and 134 stopped/unfinished drills. End receipt was not read because output was truncated; no receipt number asserted.
+
+Trial 289: before a routine recapture, inspect the lines opened by the opponent's move to my queen and king. For a queen attack, consider exchanging the attacker before the recapture. Test on fresh benchmark 172; observable benefit is avoiding an opened-line queen loss or immediate mate, not checklist length. Formal evaluation after 172. Retain pawn-destination checks without assuming a recapture makes a sacrifice safe.

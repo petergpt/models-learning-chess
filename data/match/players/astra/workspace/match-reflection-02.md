@@ -1,0 +1,21 @@
+Formal match, game 2: Astra–Opus, ½–½ by threefold repetition after 56.Kd4.
+
+I read the finished neutral board and public PGN. There were 111 accepted plies: 56 White moves and 55 Black moves. No illegal rejection was observed on my playing turns. The match record is now 0 wins, 1 draw and 1 loss: Astra ½, Opus 1½, with 2 of 30 games completed. The moves are preserved in [match-game-02.pgn](match-game-02.pgn). These match results do not alter the completed 200-game benchmark or its Elo record.
+
+The game reached a rook ending with equal material, then a pawn ending with two pawns each. The final position was White Kd4, pawns a4/b5; Black Kd6, pawns a5/b6, Black to move. This same position occurred after 52.Kd4, 54.Kd4 and 56.Kd4. The referee recorded the third occurrence as the draw. That is the measured outcome; I did not establish that every reasonable alternative continuation would draw.
+
+Several concrete decisions worked locally. After the queen exchange, 18.Rd1 defended d4, and 23.Red3 added protection when Black doubled rooks on the d-file. The king reached e4 while that pawn remained defended. Later, 34.Rh2 Rxg3 35.Rxh5 exchanged my g3-pawn for Black's h5-pawn and left four pawns each. That intended exchange happened on the board, but it does not establish that 34.Rh2 was the strongest move.
+
+The central exchanges also depended on literal king support. After 39.f5 exf5+ 40.Kxf5 and 41.Ke4, the sequence 42.d5 cxd5+ 43.Rxd5+ left the rook protected by Ke4. Although Black's king on d6 was adjacent to d5, ...Kxd5 would enter the white king's attack. Then 44.Rd3 defended a3 along the third rank. These are specific examples of recognizing an available recapture and maintaining a pawn's protection, rather than evidence that the entire ending was accurately evaluated.
+
+The rook exchange exposes a limit in that positive account. The accepted move was 46.Rc3+, followed by ...Rxc3 47.Kxc3. I had recognized the rook's support but did not reliably identify the check before submitting the move; the returned SAN made it explicit. The checking effect cannot be credited as fully anticipated calculation. An accepted move can still come from an incomplete account of its forcing consequences.
+
+In the pawn ending, 48.Kb3 defended both pawns. After ...b6, 49.a4+ displaced the black king and 50.Kc4 brought my king forward. Following ...a5, 51.b5+ fixed the pawn structure. I then kept the king in front of Black's approach and chose the repetitions. I did not demonstrate a winning breakthrough or a stronger alternative to that repetition.
+
+Pawn geometry remained a source of error in the analysis. A white pawn on b4 attacks a5 and c5; after it advances to b5, it attacks a6 and c6 instead. Black's pawn on b6 attacks c5. Some speculative continuations overlooked these restrictions or a king's adjacent squares. Those variations were not played, and they are not reliable evidence about the position. Long consideration did not prevent stale attack maps from recurring.
+
+The useful evidence is therefore narrow: the intended pawn exchange occurred, several actual recaptures and defenses were legal and supported, and the final repetition secured a half-point. Against that, recognizing checks and tracking pawn-controlled squares remained unreliable. One draw after one loss does not establish improved strength, and the absence of illegal submissions does not measure the quality of the decisions. Nor did this game supply a clean repeat test of game 1's specific abandoned king-recapture failures.
+
+Carry forward the existing compact habit, with this clarification: on the resulting board, explicitly identify whether either king is in check before considering replies. Reconstruct pawn attacks after each pawn move, and verify a king recapture against the opposing king as well as the other pieces. This is a reminder to apply in the next real game, not a completed improvement merely because it has been written down.
+
+This review used my own retained notes, conversation and the finished public game. No engine, tablebase, outside advice or automated chess analysis was used. File checks verify the recorded text and counts only; they do not independently replay the chess or prove the assessments above. The next scheduled game is game 3 with Astra Black, started only by the controller.

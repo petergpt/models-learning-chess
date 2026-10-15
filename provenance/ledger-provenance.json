@@ -1,0 +1,105 @@
+[
+  {
+    "path": "data/runs/astra/ledger.jsonl.gz",
+    "source_sha256": "cec94a01e184831a4f89b2df07e746e9aa54013c6a36b18ab29fe5d1253814cf",
+    "source_head": "217e9632fb0ce4b60b03ec3ef074b3215643c556e95515118244362631f8fa1a",
+    "public_head": "217e9632fb0ce4b60b03ec3ef074b3215643c556e95515118244362631f8fa1a",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 16121
+  },
+  {
+    "path": "data/runs/astra/practice/ledger.jsonl.gz",
+    "source_sha256": "1f56a1879f345d509e3292b92aa95fe2a7cf56d7da368f45785a9f638c681d00",
+    "source_head": "754538abc6019deb428ccbafaa0ff88b8d8a0b50263a1c3a374ed5a90bbde030",
+    "public_head": "754538abc6019deb428ccbafaa0ff88b8d8a0b50263a1c3a374ed5a90bbde030",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 1514
+  },
+  {
+    "path": "data/runs/opus/ledger.jsonl.gz",
+    "source_sha256": "a3b8b761c8d73ab5d545296c37f27c85fd565d85f95551bce822b6a8e79e8c83",
+    "source_head": "898659a0133208d2acfb37b5fe6000e180e410287e209b6991561bebe3d68ecb",
+    "public_head": "898659a0133208d2acfb37b5fe6000e180e410287e209b6991561bebe3d68ecb",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 14896
+  },
+  {
+    "path": "data/runs/opus/practice/ledger.jsonl.gz",
+    "source_sha256": "ffb2eda5a367c547b4bd5ded58e93f4fcbe200043da957734fe78bb7bb425a80",
+    "source_head": "e15789d2424ff728e4c66c61dca7eacdcc30cf06fae2273135163c99fe3326c5",
+    "public_head": "e15789d2424ff728e4c66c61dca7eacdcc30cf06fae2273135163c99fe3326c5",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 65
+  },
+  {
+    "path": "data/runs/sol/ledger.jsonl.gz",
+    "source_sha256": "9fc1b57feca3a2dc0cb962283581714d971211683728a1a5438566899d1d24c3",
+    "source_head": "f3e7ccb4dd85a734680c4d59f7e87d4e3341274697d1d62f1ebfab5beb67df59",
+    "public_head": "f3e7ccb4dd85a734680c4d59f7e87d4e3341274697d1d62f1ebfab5beb67df59",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 15727
+  },
+  {
+    "path": "data/runs/sol/practice/ledger.jsonl.gz",
+    "source_sha256": "9b90de5007d82e247cafd2b93f9a6a8211ee9307fc5610b22855c30e46162657",
+    "source_head": "e3a6d97887a44accab907959db9d2331b83a0c1f8e035d0350687e1b894b148e",
+    "public_head": "e3a6d97887a44accab907959db9d2331b83a0c1f8e035d0350687e1b894b148e",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 1690
+  },
+  {
+    "path": "data/runs/sol-long-context/ledger.jsonl.gz",
+    "source_sha256": "66655718d6910c07af7a1f0a60da7d4a71895bee8421e823e74ee9931694e967",
+    "source_head": "1954783dcf327df8972745a1d8a0746b1bafce073d99ce5e22e8a6d7c2c062f1",
+    "public_head": "1954783dcf327df8972745a1d8a0746b1bafce073d99ce5e22e8a6d7c2c062f1",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 7434
+  },
+  {
+    "path": "data/runs/sol-long-context/practice/ledger.jsonl.gz",
+    "source_sha256": "4af7a9b38cba929a826e7c5b3d1c25f3c16570e9ac35dbccb3255448b669f448",
+    "source_head": "c218b57692563d23b3ce857abacfa2af9ca1f19bd9984d6a8f3ad349fd5c71bb",
+    "public_head": "c218b57692563d23b3ce857abacfa2af9ca1f19bd9984d6a8f3ad349fd5c71bb",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 1044
+  },
+  {
+    "path": "data/runs/sol-long-context-max/ledger.jsonl.gz",
+    "source_sha256": "24bb578b7c31893f3e229aa5724c2547956cb904c7d8e85f8acf43cbc3f338da",
+    "source_head": "cd1577ad76143d3cd41b63834fbe4354e31b9ab1440bb1549c45c068e4e072e2",
+    "public_head": "cd1577ad76143d3cd41b63834fbe4354e31b9ab1440bb1549c45c068e4e072e2",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 4706
+  },
+  {
+    "path": "data/runs/sol-long-context-max/practice/ledger.jsonl.gz",
+    "source_sha256": "9f7ca8bbca5edaf9c60e711c41e2b3c4810f7498173b116c501ee03775091ae5",
+    "source_head": "f35b2a173b90db4ee773b42c101af7076cdf23250d5717fd6ec107f7e363f13e",
+    "public_head": "f35b2a173b90db4ee773b42c101af7076cdf23250d5717fd6ec107f7e363f13e",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 405
+  },
+  {
+    "path": "data/runs/fable/ledger.jsonl.gz",
+    "source_sha256": "67e10667424a1877ca29cf692f95363b4224635c2de8e73e9411668a380acaf8",
+    "source_head": "7b9eef00a69cb89a2b7100c8928cfbd762fa2725c1142d849879f9100d52631d",
+    "public_head": "7b9eef00a69cb89a2b7100c8928cfbd762fa2725c1142d849879f9100d52631d",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 3524
+  },
+  {
+    "path": "data/runs/fable/practice/ledger.jsonl.gz",
+    "source_sha256": "5ef1a4311b9f05b826eb9c931290458f4a6991d787a1ca68d404509a4aaebfbd",
+    "source_head": "bcbd645c0d111d58201322f26cbc760046cd03b2a4176354d45900453d2f9304",
+    "public_head": "bcbd645c0d111d58201322f26cbc760046cd03b2a4176354d45900453d2f9304",
+    "redacted_or_referenced_snapshot_changed": false,
+    "records": 258
+  },
+  {
+    "path": "data/match/events.jsonl.gz",
+    "source_head": "6ab8970ab2e75566cf898bcf999d87d4727005fdc12122635c4533e4d1609e55",
+    "public_head": "6ab8970ab2e75566cf898bcf999d87d4727005fdc12122635c4533e4d1609e55",
+    "redacted": false,
+    "records": 3190
+  }
+]

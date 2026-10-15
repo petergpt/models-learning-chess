@@ -1,0 +1,39 @@
+{
+  "protocol": "chess-learning-v1",
+  "model": "claude-opus-5-5",
+  "engine": "stockfish/stockfish/stockfish-linux-x86-64-universal",
+  "nodes_per_move": 1000000,
+  "max_plies": 400,
+  "illegal_attempts_per_turn": 3,
+  "storage_limit_bytes": 2147483648,
+  "opponents": [
+    {
+      "id": "full-strength",
+      "options": {
+        "Threads": 1,
+        "Hash": 64,
+        "Skill Level": 20,
+        "UCI_LimitStrength": false
+      }
+    },
+    {
+      "id": "skill-0",
+      "options": {
+        "Threads": 1,
+        "Hash": 64,
+        "Skill Level": 0,
+        "UCI_LimitStrength": false
+      }
+    },
+    {
+      "id": "elo-1800-setting",
+      "options": {
+        "Threads": 1,
+        "Hash": 64,
+        "UCI_LimitStrength": true,
+        "UCI_Elo": 1800
+      }
+    }
+  ],
+  "benchmark_game_limit": 200
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this dataset and link to the exact release or commit you used."
+title: "Models Learning Chess: autonomous learning trajectories"
+type: dataset
+version: "2026.10.15"
+date-released: "2026-10-15"
+url: "https://ailearningchess.ai-learning-chess.workers.dev/"
+repository-code: "https://github.com/petergpt/models-learning-chess"
+authors:
+  - name: "Chess Learning experiment contributors"

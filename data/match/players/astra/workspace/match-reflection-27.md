@@ -1,0 +1,19 @@
+Game 27 reflection — Black, win by resignation
+
+The neutral board and [public PGN](match-game-27.pgn) confirm 0–1 after 33...Qxb3, with 66 accepted plies. Astra now has 20 wins, 5 draws and 2 losses: 22.5–4.5 after 27 games, with three remaining. The colour records are White 11W/2D/0L and Black 9W/3D/2L. No illegal rejection was observed; acceptance does not measure move quality. All 30 games remain required.
+
+The final position is Black Kh7/Qb3/Ra8/Re8/Nb6 with pawns a6/b5/c6/e5/f7/g6/h6 against White Kg1/Rd2/Re1/Ne3 with pawns b2/b4/c5/e4/f3/g2/h3, White to move and not in check. Its FEN is `r3r3/5p1k/pnp3pp/1pP1p3/1P2P3/1q2NP1P/1P1R2P1/4R1K1 w - - 0 34`. Black has a full extra queen on the recorded board. Nb6 remains attacked by c5, so the unplayed 34.cxb6 would recover a knight and create a b-pawn on b6. White resigned before that capture or further conversion; this was not checkmate.
+
+The public moves matched my saved game 25 through 28.Ne3. Earlier defensive duties remained concrete: Kh7 and Bf8 supplied the h6 recapture arrangement before ...g6, Nd7 supported ...Bc5, and ...b6 later supported that bishop independently. After 27.Bxc5 Nxc5, both bishops were gone. The repeated opening required fresh assessment rather than assuming the previous result would recur.
+
+Actual 28...c6 replaced game 25's ...Qc6. The pawn controlled d5 before White's knight occupied it. After 29.b4 Nd7, White's Qa4 attacked a6 and c6; ...Ra8 defended a6, while Qe6 defended c6 through the empty d6-square. Qe6 also guarded e5, but blocked Re8's direct e-file defense of that pawn. These were specific defensive duties, not redundant protection to assume after moving the queen.
+
+White's 31.Rd2 prepared doubling on the d-file. Final recapture counting mattered in the unplayed candidate 31...Nf6 32.Red1 Red8 33.Rxd8 Rxd8 34.Rxd8: the queen on e6 cannot supply another recapture on d8, so this sequence loses a rook. This is a counterexample to that particular setup, not an actual continuation or proof that every alternative to the played move failed.
+
+The actual 31...b5 attacked Qa4 and c4 with a pawn supported by a6 and c6. Ra8 still defended a6. After 32.Qb3, the c4-pawn stood between Qe6 and Qb3 on the e6–d5–c4–b3 diagonal. The move 32...Nb6 increased pressure on c4 and cleared d7. It did not make White's next move compulsory.
+
+The decisive 33.c5 attacked Nb6 but removed the diagonal's sole blocker. Actual 33...Qxb3 captured the undefended queen instead of retreating the knight. Pb2 could not recapture vertically on b3; neither Ne3 nor the rooks defended that square. The lower-value attack on the knight did not force a response to that attack. This was the concrete material gain and the reason the final position differed from the balanced material before c5.
+
+Retain the existing cue: inspect the immediate forcing reply, changed blockers and actual defenders, then verify the final capture. In queen alignments, inspect the ray opened by a pawn move before treating its attack as a forced tempo. Also distinguish a defended rook from an adequately defended exchange square when two opposing rooks can capture in succession. These checks succeeded locally in the finish, but repeated geometry corrections and excessive speculative continuations persisted. The win does not establish ...c6 as an objectively superior plan, validate every earlier choice, or demonstrate sustained improvement. No further conversion occurred.
+
+This reflection uses only the finished public game, my retained notes and my own reasoning. No engine, tablebase, automated chess analysis, other model, outside advice or opponent private material was used. Game 28 is scheduled with Astra White. End this reflection and let the controller start it; three games remain, and the original 200-game run remains untouched.

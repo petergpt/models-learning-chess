@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "manifest_files_checked": null,
+  "game_sessions": 1206,
+  "accepted_plies_replayed": 67332,
+  "pgn_games_replayed": 1206,
+  "learning_ledger_chains": 12,
+  "learning_ledger_events": 67384,
+  "match_ledger_events": 3190,
+  "workspace_snapshots_verified": 1324,
+  "trace_files": 8,
+  "trace_records_parsed": 551684,
+  "fresh_environment_referee_setup": "passed, verified downloaded rule-library source and supplied checksum-matching Stockfish binary",
+  "original_referee_tests_passed": 28,
+  "referee_installation_manifest": "passed on a fresh empty run",
+  "release_boundary_tests_passed": 3
+}

@@ -1,0 +1,8 @@
+{
+  "scope": "Remembered between-game reconstruction. Supplied move legality and check status only; no search, evaluation, move menu or move selection.",
+  "fen": "r6r/ppp1kp1p/bnp3p1/4P3/2P1N1P1/BP5P/P4P2/R2R2K1 b - - 1 19",
+  "branches": [
+    {"id":"played_mating_line","moves":[{"uci":"e7e8","expected_legal":true,"expected_check_after":false},{"uci":"e4f6","expected_legal":true,"expected_check_after":true}],"supplied_reply_tests":[{"uci":"e8d7","expected_legal":false},{"uci":"e8d8","expected_legal":false},{"uci":"e8e7","expected_legal":false},{"uci":"e8f7","expected_legal":false},{"uci":"e8f8","expected_legal":false},{"uci":"f7f6","expected_legal":false}]},
+    {"id":"king_on_e6_contrast","moves":[{"uci":"e7e6","expected_legal":true,"expected_check_after":false},{"uci":"e4f6","expected_legal":true,"expected_check_after":false}],"supplied_reply_tests":[]}
+  ]
+}

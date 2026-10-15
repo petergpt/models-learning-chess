@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.03"]
+[Round "83"]
+[White "claude-opus-5-5"]
+[Black "Stockfish 19"]
+[Result "1/2-1/2"]
+[Mode "benchmark"]
+[RunId "opus"]
+[GameId "opus/benchmark/000083"]
+[OpponentSetting "elo-1800-setting"]
+[Termination "threefold_repetition"]
+
+1. e4 e5 2. Nf3 Qe7 3. Nc3 d6 4. d4 exd4 5. Nxd4 Nc6 6. Bb5 Qd7 7. O-O a6 8. Bxc6 bxc6 9. Bf4 Ne7 10. Re1 f6 11. Qh5+ g6 12. Qf3 Qg4 13. Qxg4 Bxg4 14. f3 Bd7 15. Rad1 h5 16. Kf2 a5 17. a4 Rb8 18. b3 h4 19. h3 Ra8 20. Nb1 Rh7 21. Nd2 Rh5 22. Nc4 Ra6 23. g4 hxg3+ 24. Kxg3 Rxh3+ 25. Kg2 g5 26. Be3 d5 27. Nd2 Rh6 28. Rh1 Kf7 29. Rxh6 Bxh6 30. Rh1 Bf8 31. Bf2 f5 32. Rh5 dxe4 33. fxe4 Kg6 34. Rh8 Kg7 35. Rh5 Kg6 36. Rh8 Kg7 37. Rh5 1/2-1/2

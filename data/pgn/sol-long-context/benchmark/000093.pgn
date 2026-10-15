@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.10"]
+[Round "93"]
+[White "gpt-6.1-sol"]
+[Black "Stockfish 19"]
+[Result "0-1"]
+[Mode "benchmark"]
+[RunId "sol-long-context"]
+[GameId "sol-long-context/benchmark/000093"]
+[OpponentSetting "skill-0"]
+[Termination "resignation"]
+
+1. e4 d6 2. d4 e6 3. Nf3 Nf6 4. Nc3 a6 5. Bc4 h6 6. O-O Be7 7. Be3 b5 8. Bb3 O-O 9. Qd2 b4 10. Ne2 Nxe4 11. Qd3 Nf6 12. c3 bxc3 13. bxc3 a5 14. Ng3 Nbd7 15. Rfe1 Re8 16. Rad1 Bf8 17. Ne4 Nxe4 18. Qxe4 d5 19. Qh4 Qxh4 20. Nxh4 c5 21. Nf3 Ba6 22. Ne5 Bc8 23. Bf4 cxd4 24. cxd4 a4 25. Bc2 Nxe5 26. dxe5 a3 27. Kf1 g5 28. Bg3 f5 29. exf6 Bb4 30. Re3 Kf7 31. Rf3 Ra7 32. Be5 Rh8 33. Bd4 Rc7 34. Bd3 Bd6 35. Rh3 h5 36. Ke2 e5 37. Be3 Bxh3 38. gxh3 Rhc8 39. Bxg5 Rc2+ 40. Bxc2 Rxc2+ 41. Rd2 Rb2 42. Kd3 e4+ 43. Kc3 Be5+ 44. Rd4 Ke6 45. f4 Bxd4+ 46. Kxd4 Rd2+ 47. Ke3 Rb2 48. Kd4 Rb4+ 49. Kc5 Rb7 50. Kc6 Rb8 51. Kc7 Re8 52. Kb7 h4 53. Bxh4 e3 54. Be1 Kf7 55. Bc3 e2 56. Be1 Rh8 57. Bc3 Rxh3 58. Kc6 Re3 59. Be1 Rd3 60. Kd6 Rd1 0-1

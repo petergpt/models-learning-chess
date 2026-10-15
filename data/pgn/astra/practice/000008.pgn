@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.10.01"]
+[Round "8"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "1-0"]
+[Mode "practice"]
+[RunId "astra"]
+[GameId "astra/practice/000008"]
+[OpponentSetting "practice-elo-1800"]
+[Termination "checkmate"]
+
+1. e4 c5 2. Nf3 Nc6 3. d4 Nxd4 4. Nxd4 cxd4 5. Qxd4 Qc7 6. Nc3 Qa5 7. Bd2 d6 8. O-O-O Bd7 9. Bc4 Rc8 10. Kb1 Qb4 11. Bxf7+ Kxf7 12. Qxb4 d5 13. exd5 Ra8 14. Rhe1 Nf6 15. Ne4 a6 16. Nxf6 a5 17. Qxb7 gxf6 18. Qxa8 h5 19. Qd8 Bg4 20. f3 Bf5 21. Bxa5 Kg8 22. d6 exd6 23. Re8 Kf7 24. Qc7+ Kg6 25. Bc3 h4 26. Qc4 Rh5 27. Rxf8 d5 28. Qd4 Bxc2+ 29. Kxc2 Rg5 30. Qxf6+ Kh7 31. Rh8# 1-0

@@ -1,0 +1,163 @@
+[
+  {
+    "run_id": "astra",
+    "path": "data/traces/astra/events.jsonl.gz",
+    "source_sha256": "55a1ba375043e6ee56fba1b8e0346dd7fb26257da92d6e625c0da452d5209edf",
+    "source_bytes": 171279210,
+    "public_bytes_gzip": 13729628,
+    "records": 93954,
+    "record_types": {
+      "session_meta": 1,
+      "event_msg": 41598,
+      "response_item": 41724,
+      "world_state": 72,
+      "turn_context": 71,
+      "token_usage_record": 10423,
+      "compacted": 65
+    },
+    "inherits_from": null,
+    "format": "normalized native event export; credentials and opaque runtime fields removed"
+  },
+  {
+    "run_id": "opus",
+    "path": "data/traces/opus/events.jsonl.gz",
+    "source_sha256": "0936a8f2556f6c1253ea641c01c6e98ee8444e8793bf6d7f0aabc554fe1c2bcd",
+    "source_bytes": 97047471,
+    "public_bytes_gzip": 8395132,
+    "records": 41911,
+    "record_types": {
+      "queue-operation": 8,
+      "user": 7678,
+      "attachment": 8729,
+      "atis-latch": 2424,
+      "last-prompt": 2425,
+      "ai-title": 2423,
+      "assistant": 16652,
+      "system": 27,
+      "cost-state": 3,
+      "mode": 1542
+    },
+    "inherits_from": null,
+    "format": "normalized native event export; credentials and opaque runtime fields removed"
+  },
+  {
+    "run_id": "sol",
+    "path": "data/traces/sol/events.jsonl.gz",
+    "source_sha256": "5171b3c4c40138597eefddc7eb54fbd858b6a30518071a9b2b3d5a699b712760",
+    "source_bytes": 210517059,
+    "public_bytes_gzip": 14820455,
+    "records": 126311,
+    "record_types": {
+      "session_meta": 1,
+      "event_msg": 56453,
+      "response_item": 55983,
+      "world_state": 98,
+      "turn_context": 592,
+      "token_usage_record": 13102,
+      "compacted": 82
+    },
+    "inherits_from": null,
+    "format": "normalized native event export; credentials and opaque runtime fields removed"
+  },
+  {
+    "run_id": "sol-long-context",
+    "path": "data/traces/sol-long-context/events.jsonl.gz",
+    "source_sha256": "9ed4b00b3df84d27c53ae3ec308fb910c5be8f8e41469a5804d2b101ebefb857",
+    "source_bytes": 163309575,
+    "public_bytes_gzip": 8921040,
+    "records": 97134,
+    "record_types": {
+      "session_meta": 1,
+      "event_msg": 45722,
+      "response_item": 42182,
+      "world_state": 42,
+      "turn_context": 1141,
+      "token_usage_record": 8027,
+      "compacted": 19
+    },
+    "inherits_from": null,
+    "format": "normalized native event export; credentials and opaque runtime fields removed"
+  },
+  {
+    "run_id": "sol-long-context-max",
+    "path": "data/traces/sol-long-context-max/events.jsonl.gz",
+    "source_sha256": "a98b32be6a01bd6e94e4003783eca5e65cef4ce6e2364d2e20d3890ce380f898",
+    "source_bytes": 121555754,
+    "public_bytes_gzip": 5878439,
+    "records": 62290,
+    "record_types": {
+      "session_meta": 1,
+      "event_msg": 29195,
+      "response_item": 28793,
+      "world_state": 26,
+      "turn_context": 237,
+      "token_usage_record": 4022,
+      "compacted": 16
+    },
+    "inherits_from": null,
+    "format": "normalized native event export; credentials and opaque runtime fields removed"
+  },
+  {
+    "run_id": "fable",
+    "path": "data/traces/fable/events.jsonl.gz",
+    "source_sha256": "da5d9f970d9bdc64bb844af7d637394941c8a026442dfe43160838c928f38869",
+    "source_bytes": 41048464,
+    "public_bytes_gzip": 3495702,
+    "records": 16128,
+    "record_types": {
+      "queue-operation": 12,
+      "user": 2140,
+      "attachment": 4513,
+      "atis-latch": 944,
+      "last-prompt": 947,
+      "ai-title": 943,
+      "assistant": 5675,
+      "cost-state": 5,
+      "mode": 942,
+      "system": 7
+    },
+    "inherits_from": null,
+    "format": "normalized native event export; credentials and opaque runtime fields removed"
+  },
+  {
+    "run_id": "match-astra",
+    "path": "data/traces/match-astra/events.jsonl.gz",
+    "source_sha256": "36e04d8a4ab6818b8fe0b7c4baca96f476b84145ea81e4ccd38709620568a304",
+    "source_bytes": 155049271,
+    "public_bytes_gzip": 13556040,
+    "records": 54890,
+    "record_types": {
+      "session_meta": 1,
+      "event_msg": 27348,
+      "response_item": 20741,
+      "world_state": 105,
+      "turn_context": 1669,
+      "token_usage_record": 4960,
+      "compacted": 66
+    },
+    "inherits_from": "astra",
+    "format": "normalized native event export; credentials and opaque runtime fields removed"
+  },
+  {
+    "run_id": "match-opus",
+    "path": "data/traces/match-opus/events.jsonl.gz",
+    "source_sha256": "875a956e462a0cba04ba93d2e3663bec1a47062732341b26831bd617e80c5eac",
+    "source_bytes": 174033413,
+    "public_bytes_gzip": 16009399,
+    "records": 59066,
+    "record_types": {
+      "user": 12730,
+      "attachment": 13933,
+      "assistant": 23194,
+      "system": 37,
+      "atis-latch": 1490,
+      "custom-title": 1490,
+      "queue-operation": 3210,
+      "last-prompt": 1491,
+      "mode": 1488,
+      "cost-state": 3
+    },
+    "inherits_from": "opus",
+    "format": "normalized native event export; credentials and opaque runtime fields removed"
+  }
+]

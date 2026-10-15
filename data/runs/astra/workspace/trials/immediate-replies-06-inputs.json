@@ -1,0 +1,360 @@
+{
+  "scope": "Manual branches and predictions recorded before mechanical verification; not a completeness or best-move test.",
+  "branches": [
+    {
+      "label": "11 rejected retreat and pawn chase",
+      "game": 11,
+      "fen": "r2qr1k1/1b1nbpp1/pp2p2p/n7/3pP3/2NB1NB1/PP2QPPP/3RR1K1 w - - 0 17",
+      "plies": [
+        {
+          "uci": "c3a4",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "b6b5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "final": {
+        "a4": "N",
+        "b5": "p",
+        "c3": null
+      }
+    },
+    {
+      "label": "11 working retreat and bishop response",
+      "game": 11,
+      "fen": "r2qr1k1/1b1nbpp1/pp2p2p/n7/3pP3/2NB1NB1/PP2QPPP/3RR1K1 w - - 0 17",
+      "plies": [
+        {
+          "uci": "c3b1",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "d7c5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "d3c2",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "final": {
+        "b1": "N",
+        "c5": "n",
+        "c2": "B",
+        "d3": null,
+        "e4": "P"
+      }
+    },
+    {
+      "label": "18 pawn exchange and bishop tempo",
+      "game": 18,
+      "fen": "3rr1k1/pppq2p1/1bn1b2p/4pp2/P4P2/2PP2N1/2P1B1PP/R1B1QR1K b - - 0 18",
+      "plies": [
+        {
+          "uci": "e5f4",
+          "legal": true,
+          "captured": "P",
+          "check_after": false
+        },
+        {
+          "uci": "c1f4",
+          "legal": true,
+          "captured": "p",
+          "check_after": false
+        },
+        {
+          "uci": "g7g5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "f4d2",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "final": {
+        "d2": "B",
+        "g5": "p",
+        "h6": "p",
+        "e5": null,
+        "f4": null
+      }
+    },
+    {
+      "label": "23 bishop retreat and open e-file",
+      "game": 23,
+      "fen": "1Nb2rk1/1p2qp2/p2p2p1/2pP4/P1P1P2p/6BP/5PP1/R2QRBK1 w - - 1 21",
+      "plies": [
+        {
+          "uci": "g3f4",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "f7f5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "e4f5",
+          "legal": true,
+          "captured": "p",
+          "check_after": false
+        },
+        {
+          "uci": "e7f7",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "final": {
+        "f4": "B",
+        "f5": "P",
+        "f7": "q",
+        "e4": null,
+        "e7": null
+      }
+    },
+    {
+      "label": "30 knight departure and pawn exchange",
+      "game": 30,
+      "fen": "3rr1k1/ppp1bppp/2n2n2/2P5/1PP5/P3P3/4KPBP/1RB3R1 b - - 4 18",
+      "plies": [
+        {
+          "uci": "c6e5",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "g2b7",
+          "legal": true,
+          "captured": "p",
+          "check_after": false
+        },
+        {
+          "uci": "e5c4",
+          "legal": true,
+          "captured": "P",
+          "check_after": false
+        }
+      ],
+      "final": {
+        "b7": "B",
+        "c4": "n",
+        "c6": null,
+        "g2": null
+      }
+    },
+    {
+      "label": "60 omitted knight check",
+      "game": 60,
+      "fen": "2q2rk1/pp3ppp/5n2/3N4/1Prbp3/PR5P/1B1Q1PP1/4R1K1 b - - 1 20",
+      "plies": [
+        {
+          "uci": "d4b2",
+          "legal": true,
+          "captured": "B",
+          "check_after": false
+        },
+        {
+          "uci": "d5e7",
+          "legal": true,
+          "captured": null,
+          "check_after": true
+        },
+        {
+          "uci": "g8h8",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "e7c8",
+          "legal": true,
+          "captured": "q",
+          "check_after": false
+        }
+      ],
+      "final": {
+        "h8": "k",
+        "c8": "N",
+        "b2": "b",
+        "f6": "n"
+      }
+    },
+    {
+      "label": "60 different checking knight capture",
+      "game": 60,
+      "fen": "2q2rk1/pp3ppp/5n2/3N4/1Prbp3/PR5P/1B1Q1PP1/4R1K1 b - - 1 20",
+      "plies": [
+        {
+          "uci": "d4b2",
+          "legal": true,
+          "captured": "B",
+          "check_after": false
+        },
+        {
+          "uci": "d5f6",
+          "legal": true,
+          "captured": "n",
+          "check_after": true
+        },
+        {
+          "uci": "b2f6",
+          "legal": true,
+          "captured": "N",
+          "check_after": false
+        }
+      ],
+      "final": {
+        "f6": "b",
+        "c8": "q",
+        "g8": "k",
+        "d5": null
+      }
+    },
+    {
+      "label": "60 remove knight before bishop exchange",
+      "game": 60,
+      "fen": "2q2rk1/pp3ppp/5n2/3N4/1Prbp3/PR5P/1B1Q1PP1/4R1K1 b - - 1 20",
+      "plies": [
+        {
+          "uci": "f6d5",
+          "legal": true,
+          "captured": "N",
+          "check_after": false
+        },
+        {
+          "uci": "b2d4",
+          "legal": true,
+          "captured": "b",
+          "check_after": false
+        },
+        {
+          "uci": "c8d7",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "final": {
+        "d5": "n",
+        "d4": "B",
+        "d7": "q",
+        "f6": null
+      }
+    },
+    {
+      "label": "59 played queen loss to pawn",
+      "game": 59,
+      "fen": "5k2/6p1/3nQ3/2qPp1P1/b1P1Pp2/2P2P2/1K6/8 w - - 15 65",
+      "plies": [
+        {
+          "uci": "e6f6",
+          "legal": true,
+          "captured": null,
+          "check_after": true
+        },
+        {
+          "uci": "g7f6",
+          "legal": true,
+          "captured": "Q",
+          "check_after": false
+        }
+      ],
+      "final": {
+        "f6": "p",
+        "g7": null,
+        "e6": null,
+        "g5": "P"
+      }
+    },
+    {
+      "label": "59 newly rejected queen fork",
+      "game": 59,
+      "fen": "5k2/6p1/3nQ3/2qPp1P1/b1P1Pp2/2P2P2/1K6/8 w - - 15 65",
+      "plies": [
+        {
+          "uci": "e6e5",
+          "legal": true,
+          "captured": "p",
+          "check_after": false
+        },
+        {
+          "uci": "d6c4",
+          "legal": true,
+          "captured": "P",
+          "check_after": true
+        },
+        {
+          "uci": "b2b1",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "c4e5",
+          "legal": true,
+          "captured": "Q",
+          "check_after": false
+        }
+      ],
+      "final": {
+        "e5": "n",
+        "b1": "K",
+        "c4": null,
+        "e6": null
+      }
+    },
+    {
+      "label": "59 queen retreat against knight check",
+      "game": 59,
+      "fen": "5k2/6p1/3nQ3/2qPp1P1/b1P1Pp2/2P2P2/1K6/8 w - - 15 65",
+      "plies": [
+        {
+          "uci": "e6h3",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        },
+        {
+          "uci": "d6c4",
+          "legal": true,
+          "captured": "P",
+          "check_after": true
+        },
+        {
+          "uci": "b2b1",
+          "legal": true,
+          "captured": null,
+          "check_after": false
+        }
+      ],
+      "final": {
+        "h3": "Q",
+        "c4": "n",
+        "b1": "K",
+        "e6": null
+      }
+    }
+  ]
+}

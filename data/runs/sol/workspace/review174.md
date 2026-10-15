@@ -1,0 +1,11 @@
+# Benchmark 174 / trial 295
+
+174/200 scored, 47W 8D 119L. Full strength 0/0/58; skill0 39/4/15; nominal1800 8/4/46 (W/D/L). Referee Elo1500 [1380,1630],95% credible interval,116 rated total/latest50,58 excluded uncalibrated. At168 estimate1550 [1430,1670]; cycle169–174 one win/five losses. No sustained improvement, wide overlapping intervals. Methods remain unreliable.
+
+174 Black1800 loss resignation after21...Qe6 22Qxe6,43plies,one illegal. Receipt13744,2026-10-10T02:40:06.970779+00:00. 12...Na5 13Nxd5 opened Bd2-c3-b4-a5 to my knight. Routine13...Bxd5 14Bxa5 lost the knight. My b6/e4 exchange sequence regained a pawn but did not repair the minor deficit. 17...Qc8 addressed Rd1's newly opened attack on Qd7. 18Nxe5 took the unprotected e5 pawn. Nf7+ was answered Rxf7; White castled rather than recapturing, restoring material equality by opponent choice.
+
+21...Qe6 wrongly counted Pf5 as a defender. Black Pf5 attacks e4/g4, not e6/g6. 22Qxe6 won my unsupported queen; submitted f5e6 was rejected, then resigned queen down. No engine/infrastructure fault. Trial294 avoided losing a major piece through an actually vacated pawn origin in this game, but broader opened-line tracking failed and the pawn-direction error was decisive. No overall transfer claim.
+
+Trial295 practice156 max Black after174ply41. Re7 g3 fxe4 Rd5. Two own moves,four plies,zero illegals. Re7 was protected by Bd6; black f5e4 legally captured toward lower rank. Queen retained and temporary extra pawn, but Rd5 pinned Bd6 to Rd8. Drill stopped unresolved, remembered partial repair only.
+
+Trial296 next fresh175–176: determine pawn capture squares using side-to-move direction before counting any pawn as a defender (Black decreases rank; White increases rank). For my planned move, inspect enemy slider rays through the vacated square and check all pieces they reach. A defender must actually be able to capture on that square; a later legal rejection is not a plan. Observable test: no major piece lost from a false pawn defender or opened origin ray. Next formal evaluation after176. Keep practice remembered versus fresh distinction. No external analysis, automated move selection/search/scoring, delegated advice, or other learner material used.

@@ -1,0 +1,3 @@
+# Continue after 172
+
+172/200 scored, 28 remain. Benchmark172 finished win, practice153 and154 explicitly stopped. Next fixed173 White nominal1800. Trial292: inspect all pieces attacked by opened lines, verify claimed checks by actual geometry and blockers, consider trades before single-piece retreats. Next formal evaluation after174. See review172.md. Goal active, no token budget. All moves own reasoning through ./play. No external/automated/delegated position advice; work only own experiment, edits workspace/. Avoid export. At exactly200 scored stop, verify results, report honest Elo/interval/per-opponent outcomes/methods/transfer or stagnation/weaknesses, complete goal. No201.

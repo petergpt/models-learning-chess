@@ -1,0 +1,14 @@
+[Event "Chess Learning"]
+[Site "https://ailearningchess.ai-learning-chess.workers.dev"]
+[Date "2026.09.30"]
+[Round "39"]
+[White "gpt-6-astra"]
+[Black "Stockfish 19"]
+[Result "1-0"]
+[Mode "benchmark"]
+[RunId "astra"]
+[GameId "astra/benchmark/000039"]
+[OpponentSetting "skill-0"]
+[Termination "checkmate"]
+
+1. e4 c5 2. Nf3 d6 3. d4 Nf6 4. Nc3 cxd4 5. Nxd4 Nc6 6. Be2 Bd7 7. O-O Rc8 8. Be3 e6 9. Qd2 Ne5 10. f4 Ng6 11. Rad1 Qc7 12. f5 Ne5 13. fxe6 fxe6 14. Ndb5 Bxb5 15. Bxb5+ Kf7 16. Bg5 a6 17. Be2 Be7 18. Bxf6 Qc5+ 19. Kh1 Bxf6 20. Qxd6 Qxd6 21. Rxd6 Rhf8 22. Rfd1 Ke7 23. h3 Rc7 24. Kh2 b5 25. Rxa6 Rb8 26. a3 Rc6 27. Rxc6 b4 28. axb4 Nxc6 29. b5 Nb4 30. Rd2 Bg5 31. Rd4 Nxc2 32. Ra4 Be3 33. Bd3 Ne1 34. Bc4 g5 35. Rb4 Rd8 36. b6 Nc2 37. Rb3 Na1 38. Rb5 Rb8 39. b7 Kd7 40. Nd1 Bd4 41. Kg3 h6 42. Nf2 Nc2 43. Ng4 h5 44. Ne5+ Ke7 45. Nc6+ Kd6 46. Nxb8 h4+ 47. Kg4 Ba7 48. Na6 Nb4 49. Nxb4 Ke7 50. b8=Q Bf2 51. Rb7+ Kf6 52. Qf8+ Ke5 53. Qxf2 Kd6 54. Qd4# 1-0

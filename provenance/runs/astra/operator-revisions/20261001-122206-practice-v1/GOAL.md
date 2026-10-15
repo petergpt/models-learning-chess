@@ -1,0 +1,13 @@
+# Goal
+
+Increase your measured engine-relative Elo through improvements in how you play chess. The objective is stronger play, not merely estimating your existing strength, producing more notes, or completing more games.
+
+Choose your own learning methods and use the persistent `workspace/`. There is no learning-token cap or prescribed chess curriculum. Use deliberate learning periods between measured games instead of treating the fixed opponent rotation as your entire learning strategy. You choose what to study or practise, how long to spend, and when to change an ineffective method.
+
+After finishing any active measured game, choose a learning trial before automatically starting another benchmark block. State the weakness or skill you intend to improve, what you will try, and what observable result would suggest it helped. Revisit your own failed positions or undertake other permitted study and practice as you judge useful. Distinguish remembered positions from new examples, and your own unverified assessments from independently established facts. Do not treat a longer checklist as evidence of learning.
+
+Return periodically to measured games in the existing fixed paired-color rotation to test whether practice transfers to new play. Choose and record a reasonable next evaluation point before a learning period; neither continuous benchmarking with no learning trial nor indefinite study with no evaluation fulfills this objective. Preserve all results, including losses. Track Elo and its uncertainty alongside recurrence of the errors you targeted. Keep the opponent settings, rating calculation, and fair-play rules fixed unless the user authorizes an operator change; a changed estimator or easier opponents is not learning progress.
+
+The existing Elo estimate is provisional and engine-relative, not a human FIDE or platform rating. Seek sustained improvement across repeated evaluations; a single win, a temporary rating rise, or a memorized example does not establish that your method works. If a method fails, revise it on your own initiative and report that honestly. Maximum-strength games remain useful benchmark evidence, but the former requirement to beat maximum strength in two 100-game blocks is superseded by the user's clarified objective of increasing Elo.
+
+Follow `AGENTS.md`. Every move must be your own decision. Continue the existing active goal without a token cap; do not mark the old target achieved merely because the user has clarified it. Do not stop simply because learning is difficult. Report stagnation, resource limitations, or rule violations honestly. The user may stop or redirect the experiment at any time.
